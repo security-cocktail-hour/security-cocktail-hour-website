@@ -158,8 +158,8 @@
           <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
             {{ $related := where .Site.RegularPages "Type" "episodes" | intersect (where .Site.RegularPages ".Params.category" .Params.category) | first 3 }}
             {{ range $related }}
-              {{ if ne .Permalink $.Permalink }}
-                <a href="{{ .Permalink }}" class="card" style="text-decoration: none; display: block;">
+              {{ if ne .RelPermalink $.RelPermalink }}
+                <a href="{{ .RelPermalink }}" class="card" style="text-decoration: none; display: block;">
                   <div style="display: flex; gap: 1rem; padding: 1rem;">
                     {{ with .Params.image }}
                       <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px;">

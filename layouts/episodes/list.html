@@ -62,7 +62,7 @@
               {{ .Date.Format "January 2, 2006" }}
             </p>
             <p class="card-description">{{ with .Params.description }}{{ . | truncate 120 }}{{ else }}{{ $.Summary | truncate 120 }}{{ end }}</p>
-            <a href="{{ .Permalink }}" class="btn btn-primary">Listen Now</a>
+            <a href="{{ .RelPermalink }}" class="btn btn-primary">Listen Now</a>
           </div>
         </article>
       {{ end }}
