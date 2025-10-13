@@ -23,15 +23,3 @@ With fierce competition and the rise of AI, the job market for information secur
 ### Listen Now
 
 Tune in to hear our discussion on infosec job market: living in the chaotic age.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

@@ -23,15 +23,3 @@ What is threat intelligence, and what makes it so...threat-y? Ryan Westman of eS
 ### Listen Now
 
 Tune in to hear our discussion on threat intelligence with ryan westman.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

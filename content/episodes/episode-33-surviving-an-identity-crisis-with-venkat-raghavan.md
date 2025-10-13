@@ -23,15 +23,3 @@ Your digital identity is more than just your username and password. In fact, as 
 ### Listen Now
 
 Tune in to hear our discussion on surviving an identity crisis with venkat raghavan.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

@@ -23,15 +23,3 @@ Cybersecurity breaches happen for many reasons, but one factor stands out: human
 ### Listen Now
 
 Tune in to hear our discussion on everybody makes mistakes – including cybersecurity pros.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

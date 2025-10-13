@@ -23,15 +23,3 @@ Why are data breaches escalating, even in companies with massive security budget
 ### Listen Now
 
 Tune in to hear our discussion on why data breaches keep getting worse.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

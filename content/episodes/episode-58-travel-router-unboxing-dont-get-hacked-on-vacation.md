@@ -23,15 +23,3 @@ Back in Episode 54 we talked about vacation cybersecurity, including the dangers
 ### Listen Now
 
 Tune in to hear our discussion on travel router unboxing: don't get hacked on vacation!.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

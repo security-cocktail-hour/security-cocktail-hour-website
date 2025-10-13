@@ -23,15 +23,3 @@ People often take a non-traditional path into the field of information  security
 ### Listen Now
 
 Tune in to hear our discussion on hacking your way into a security career with nathali cano.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

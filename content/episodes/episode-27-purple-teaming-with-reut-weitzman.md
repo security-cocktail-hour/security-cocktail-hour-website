@@ -23,15 +23,3 @@ Security consulting executive Reut Weitzman returns to the show to talk about on
 ### Listen Now
 
 Tune in to hear our discussion on purple teaming with reut weitzman.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

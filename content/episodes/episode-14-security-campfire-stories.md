@@ -23,15 +23,3 @@ Joe and Adam gather round the virtual campfire to recount legends more chilling 
 ### Listen Now
 
 Tune in to hear our discussion on security campfire stories.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

@@ -23,15 +23,3 @@ You need experience to get even an entry level job, but how to do you get a job 
 ### Listen Now
 
 Tune in to hear our discussion on landing your first cyber security job | the experience dilemma.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

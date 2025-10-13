@@ -23,15 +23,3 @@ Selling six-figure security solutions isn’t about flashy demos or steak dinner
 ### Listen Now
 
 Tune in to hear our discussion on how do you sell really expensive security software?.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

@@ -23,15 +23,3 @@ Our panel of cyber security all-stars dishes on how the industry is thinking abo
 ### Listen Now
 
 Tune in to hear our discussion on cybersecurity and ai | what the experts are worried about, and what they're doing.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

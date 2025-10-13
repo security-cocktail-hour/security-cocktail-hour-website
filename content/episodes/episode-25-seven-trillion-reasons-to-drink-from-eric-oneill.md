@@ -23,15 +23,3 @@ Legendary spy hunter and security thought leader Eric O’Neill puts the cost of
 ### Listen Now
 
 Tune in to hear our discussion on seven trillion reasons to drink, from eric o’neill.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

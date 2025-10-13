@@ -23,15 +23,3 @@ Adam and Joe cover a lot of ground with the legendary Chris Roberts. We start of
 ### Listen Now
 
 Tune in to hear our discussion on scotch (and tea) with chris roberts.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

@@ -23,15 +23,3 @@ Security veteran Monte Fabiani tells us about the many SOCs (Security Operations
 ### Listen Now
 
 Tune in to hear our discussion on what keeps monte fabiani up at night.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

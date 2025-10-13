@@ -23,15 +23,3 @@ Agentic AI is changing the game—but is it a security nightmare in the making? 
 ### Listen Now
 
 Tune in to hear our discussion on agentic ai security: full speed into the unknown.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

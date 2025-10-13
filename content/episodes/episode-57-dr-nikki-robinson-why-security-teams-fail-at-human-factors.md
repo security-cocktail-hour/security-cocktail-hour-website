@@ -23,15 +23,3 @@ It takes an advanced degree to understand the psychology behind why users hate s
 ### Listen Now
 
 Tune in to hear our discussion on dr. nikki robinson: why security teams fail at human factors.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

@@ -23,15 +23,3 @@ The holidays are a time for joy. It’s also a time when thieves and scammers up
 ### Listen Now
 
 Tune in to hear our discussion on holiday security tips and negronis with reut weitzman.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

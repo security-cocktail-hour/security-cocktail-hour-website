@@ -23,15 +23,3 @@ If you think getting your first job in security is hard, try hiring qualified se
 ### Listen Now
 
 Tune in to hear our discussion on how to hire a security team.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

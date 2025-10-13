@@ -23,15 +23,3 @@ In this episode, leadership trainer, EMT, and former NYPD officer Mike Chanat jo
 ### Listen Now
 
 Tune in to hear our discussion on cybersecurity for emts and first responders | protecting patients and professionals.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

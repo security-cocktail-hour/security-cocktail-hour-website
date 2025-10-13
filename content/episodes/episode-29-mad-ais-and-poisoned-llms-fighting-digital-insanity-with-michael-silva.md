@@ -23,15 +23,3 @@ We jump back into the world of generative AI with CEO and entrepreneur Michael S
 ### Listen Now
 
 Tune in to hear our discussion on mad ais and poisoned llms: fighting digital insanity with michael silva.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

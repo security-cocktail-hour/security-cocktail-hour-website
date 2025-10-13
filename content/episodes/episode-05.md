@@ -23,15 +23,3 @@ Security can stress you out, but once those moments pass, they leave you with so
 ### Listen Now
 
 Tune in to hear our discussion on this topic.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

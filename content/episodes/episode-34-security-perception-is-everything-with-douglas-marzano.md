@@ -23,15 +23,3 @@ When you lead an information security organization, you get asked one question c
 ### Listen Now
 
 Tune in to hear our discussion on (security) perception is everything with douglas marzano.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

@@ -23,15 +23,3 @@ In this episode, industry veteran Gurinder Bhatti tells us how seizing an opport
 ### Listen Now
 
 Tune in to hear our discussion on building a successful cybersecurity career | seizing opportunities and always learning.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

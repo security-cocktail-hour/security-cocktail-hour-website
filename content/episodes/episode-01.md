@@ -23,15 +23,3 @@ Joe and Adam talk about the many ways passwords are dreadful, and how we can liv
 ### Listen Now
 
 Tune in to hear our discussion on this topic.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

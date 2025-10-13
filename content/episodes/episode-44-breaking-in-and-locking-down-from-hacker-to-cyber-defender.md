@@ -23,15 +23,3 @@ Are your organization's security gaps leaving the door wide open for attackers? 
 ### Listen Now
 
 Tune in to hear our discussion on breaking in and locking down: from hacker to cyber defender.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

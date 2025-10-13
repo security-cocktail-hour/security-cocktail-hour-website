@@ -23,15 +23,3 @@ Let’s be honest: Not everyone’s cut out to be the boss, and those who are of
 ### Listen Now
 
 Tune in to hear our discussion on the security career reality check with may brooks-kempler.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

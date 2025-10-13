@@ -23,15 +23,3 @@ Everyone in security says they’re committed to Zero Trust, even if they can’
 ### Listen Now
 
 Tune in to hear our discussion on zero trust and 80 proof bourbon with adam kohler.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

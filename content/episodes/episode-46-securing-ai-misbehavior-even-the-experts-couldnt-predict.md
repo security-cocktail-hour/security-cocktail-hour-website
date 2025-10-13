@@ -23,15 +23,3 @@ Artificial intelligence is revolutionizing industries, and cybersecurity experts
 ### Listen Now
 
 Tune in to hear our discussion on you need experience to get even an entry level job, but how to do you get a job if you don't have experience? for years this classic dilemma didn't apply to cybersecurity, but times have changed. newly minted security consultant jerry sinayuk of nukudo tells us how he got trained and is lining up his first consulting engagements -- all while getting paid. join us to learn about this new approach to breaking into a high-tech industry that's actually centuries old.  and if that isn't enough to hit a lot of keyword searches, jerry also shares his passion for blockchain technology and gives his unvarnished opinion on nft's..
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

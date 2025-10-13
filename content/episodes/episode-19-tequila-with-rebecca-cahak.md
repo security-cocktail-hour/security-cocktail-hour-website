@@ -23,15 +23,3 @@ Guest Rebecca Cahak helps Joe and Adam get in touch with the feminine side of th
 ### Listen Now
 
 Tune in to hear our discussion on tequila with rebecca cahak.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

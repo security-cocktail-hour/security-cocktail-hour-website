@@ -23,15 +23,3 @@ This time around we welcome a native son of Staten Island, Jason Mar-Tang of Pen
 ### Listen Now
 
 Tune in to hear our discussion on free choice with jason mar-tang.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

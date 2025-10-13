@@ -23,15 +23,3 @@ The number of companies that have experienced serious security breaches continue
 ### Listen Now
 
 Tune in to hear our discussion on this topic.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

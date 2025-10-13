@@ -23,15 +23,3 @@ Security incident response veteran John Dwyer joins us for a deep dive into how 
 ### Listen Now
 
 Tune in to hear our discussion on ai and the future of security with john dwyer.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

@@ -23,15 +23,3 @@ We usually talk about information technology, but the real world runs on power, 
 ### Listen Now
 
 Tune in to hear our discussion on going into ot (operational technology) with robert lee.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

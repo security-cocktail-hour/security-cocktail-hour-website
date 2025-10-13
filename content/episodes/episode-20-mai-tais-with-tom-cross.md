@@ -23,15 +23,3 @@ Tom Cross brings us more news from this year’s Black Hat conference, including
 ### Listen Now
 
 Tune in to hear our discussion on mai tais with tom cross.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

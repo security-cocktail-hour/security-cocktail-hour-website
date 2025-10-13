@@ -23,15 +23,3 @@ Attorney and Internet civil liberties pioneer Jennifer Granick introduces us to 
 ### Listen Now
 
 Tune in to hear our discussion on french 75 with jennifer granick.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

@@ -23,15 +23,3 @@ The Chief Information Security Officer (CISO) is a fairly new position in the bu
 ### Listen Now
 
 Tune in to hear our discussion on the future of security leadership with sivan tehila.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

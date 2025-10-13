@@ -23,15 +23,3 @@ Why would a hacker at the top of game who found dozens of zero-days switch to de
 ### Listen Now
 
 Tune in to hear our discussion on from zero-day hunter to cyber defender: cody pierce's journey.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

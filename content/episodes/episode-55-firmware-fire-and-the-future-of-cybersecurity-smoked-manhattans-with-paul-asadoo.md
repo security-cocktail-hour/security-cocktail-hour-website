@@ -23,15 +23,3 @@ Join us for a special episode of the Security Cocktail Hour as co-hosts Joe Patt
 ### Listen Now
 
 Tune in to hear our discussion on firmware, fire and the future of cybersecurity | smoked manhattans with paul asadoorian.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

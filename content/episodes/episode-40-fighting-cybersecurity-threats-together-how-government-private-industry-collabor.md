@@ -23,15 +23,3 @@ Can government and private industry really work together? They can, and nobody k
 ### Listen Now
 
 Tune in to hear our discussion on fighting cybersecurity threats together | how government & private industry collaborate.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

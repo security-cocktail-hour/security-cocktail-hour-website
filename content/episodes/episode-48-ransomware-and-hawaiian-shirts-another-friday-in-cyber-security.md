@@ -23,15 +23,3 @@ Previous guest Jennifer Gold returns for another episode, and this time she's br
 ### Listen Now
 
 Tune in to hear our discussion on ransomware and hawaiian shirts: another friday in cyber security.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

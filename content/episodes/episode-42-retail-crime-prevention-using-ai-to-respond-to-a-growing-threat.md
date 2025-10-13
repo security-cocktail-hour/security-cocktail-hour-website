@@ -23,15 +23,3 @@ Organized retail crime is more complex than you might think—it's not small-tim
 ### Listen Now
 
 Tune in to hear our discussion on retail crime prevention | using ai to respond to a growing threat.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

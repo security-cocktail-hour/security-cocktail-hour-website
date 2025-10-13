@@ -23,15 +23,3 @@ Joe and Adam catch up with top tier security incident responder David Warshavski
 ### Listen Now
 
 Tune in to hear our discussion on cyber warrior.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

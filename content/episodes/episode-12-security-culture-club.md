@@ -23,15 +23,3 @@ Joe and Adam discuss how culture and the human element impact security, with inf
 ### Listen Now
 
 Tune in to hear our discussion on security culture club.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

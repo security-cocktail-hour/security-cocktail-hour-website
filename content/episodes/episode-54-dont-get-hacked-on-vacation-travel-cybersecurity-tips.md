@@ -23,15 +23,3 @@ Got big travel plans this summer? Remember to pack some protection against cyber
 ### Listen Now
 
 Tune in to hear our discussion on don’t get hacked on vacation | travel cybersecurity tips.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

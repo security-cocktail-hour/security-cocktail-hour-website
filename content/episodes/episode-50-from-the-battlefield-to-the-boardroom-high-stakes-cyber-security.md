@@ -23,15 +23,3 @@ Ever wondered what it's like to lead cybersecurity on the front lines? In this e
 ### Listen Now
 
 Tune in to hear our discussion on from the battlefield to the boardroom: high-stakes cyber security.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

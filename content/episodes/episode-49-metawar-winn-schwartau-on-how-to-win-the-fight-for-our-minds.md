@@ -23,15 +23,3 @@ If you thought the tech industry only wanted your money, think again -- they're 
 ### Listen Now
 
 Tune in to hear our discussion on metawar: winn schwartau on how to win the fight for our minds.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-

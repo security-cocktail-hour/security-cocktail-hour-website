@@ -23,15 +23,3 @@ For this episode we’re joined by Idan Wiener, co-founder and CEO of Illustria,
 ### Listen Now
 
 Tune in to hear our discussion on so you want to be a security entrepreneur.
-
-## Key Takeaways
-
-[Episode highlights and key takeaways will be added here]
-
-## Resources Mentioned
-
-[Resources mentioned in this episode will be listed here]
-
-
-
-
