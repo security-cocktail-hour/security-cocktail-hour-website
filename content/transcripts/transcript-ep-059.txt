@@ -1,0 +1,578 @@
+Security Cocktail Hour Podcast
+Episode 59: WiFi Pineapple Unboxing: The Hacker Device From TV Shows!
+Guest: None
+
+0:00
+[Music]
+0:02
+[Applause]
+0:05
+Welcome to the Security Cocktail Hour.
+0:07
+I'm Joe Patti.
+0:08
+I'm Adam Roth.
+0:10
+Adam, it looks like today we are doing
+0:12
+another unboxing. One of our favorite
+0:16
+things to do.
+0:17
+You know how I like to eat healthy with
+0:19
+some grapes.
+0:20
+Yeah,
+0:21
+maybe some cherries,
+0:23
+various fruits and whatnot.
+0:25
+Yeah.
+0:25
+Yeah. Yeah,
+0:26
+but this is a WiFi pineapple.
+0:30
+Oh, what a segue. You're getting good at
+0:32
+this. Awesome.
+0:33
+I'm a certified professional segueist.
+0:36
+Well done.
+0:36
+GPS.
+0:38
+Okay, so the the Wi-Fi pineapple. Now,
+0:40
+this is something that at one time was
+0:43
+very obscure, but a lot of people got to
+0:46
+know about uh because of TV. Something
+0:48
+something on TV that was actually real
+0:50
+for a change, right?
+0:52
+Yeah. I mean, a lot of a lot of these
+0:57
+James Bondish, Jason Bourne, you know,
+1:00
+hacker movies, they they use a lot of
+1:03
+Hack Five um devices and they're
+1:06
+actually really good for pen testing.
+1:08
+That's the company that makes this Hack
+1:10
+Five.
+1:10
+Yes. So, I apologize for not identifying
+1:13
+who they are, but Hack Five has come out
+1:16
+with a lot of different um technology
+1:18
+that's used uh uh like Spider-Man, you
+1:22
+know, um using it for good, you know.
+1:25
+That's right. For good, not evil. These
+1:27
+things are all good. We did an episode
+1:28
+on that
+1:29
+on how to use these ethically.
+1:31
+Um now, I see on the box, cuz I can
+1:34
+read, what does it say? Mark 7 or
+1:36
+something. This
+1:37
+So, these have been around for a while.
+1:39
+This is not anything new, right? And
+1:42
+they've had a lot of iterations.
+1:44
+I mean, they they use a lot of really
+1:46
+playful, good marketing names, rubber
+1:48
+ducky and, you know, turtle and um
+1:52
+things of that nature. And this one is
+1:55
+called the pineapple. Um not sure why it
+1:59
+doesn't look like a pineapple, but they
+2:01
+do use colorful graphics and marketing
+2:04
+to market everything. And this is the
+2:06
+pineapple.
+2:08
+I don't know. I guess I'm outing myself
+2:10
+as a dad. When I see that little
+2:11
+pineapple, I think of as Spongebob, not
+2:13
+hacking, but whatever.
+2:16
+So, I'm going to do my best. Um, I
+2:19
+really haven't done a lot of use uh of
+2:22
+the hacking hack 5 devices, but the
+2:24
+pineapple is supposed to be basically
+2:27
+kind of of a pentest uh device. It's
+2:30
+used to um create um hotspots. People
+2:35
+you hope people connect to them. you uh
+2:38
+you identify the information, you use it
+2:40
+as a man-in-the-middle attack. Uh it can
+2:42
+be used for a lot of different things
+2:43
+with Wi-Fi and uh this is their premier
+2:48
+number one uh Wi-Fi um device. Uh they
+2:53
+have books on it. This is the box.
+2:57
+They they discuss uh uh how to place it,
+3:00
+I believe.
+3:02
+than the pineapple itself. Uh it's just
+3:05
+this is the back of the back of the box
+3:06
+with the antennas. There's more you can
+3:08
+add to this. They have these high pickup
+3:10
+antennas you can buy. Uh it says triple
+3:13
+discrete MT radios power over USB-C
+3:17
+integrated USB Ethernet host port dual
+3:20
+eMMC and SPI flash. Basically what it's
+3:23
+saying is it's basically a high
+3:25
+performance device and it's capable of
+3:28
+uh doing a lot of uh different things.
+3:31
+The standards are 802.11bgn.
+3:34
+The interfaces are Ethernet over USB USB
+3:38
+2 ho 2.0 host wireless AP and the
+3:41
+antennas are RPS SMAs. So it's really
+3:44
+nice USB 5V 2 amp and 2.4 gigahertz. Oh,
+3:50
+I always try to go for the five-fold two
+3:52
+amp. That's very cool. But, uh,
+3:54
+yeah,
+3:54
+but this is as you open as you start to
+3:57
+open that up,
+3:58
+um, you know, we're always talking about
+4:00
+when you go to a public place and you
+4:02
+got to be careful that someone might do
+4:04
+a man-in-the-middle attack, you might
+4:06
+connect to an untrusted network. Um,
+4:09
+this might be what the bad guys are
+4:12
+using that you should be worried about.
+4:13
+This is not the only thing. And this is
+4:15
+kind of the more accessible I don't want
+4:18
+to say consumery version because it's
+4:20
+not really consumer, but this isn't uh
+4:23
+super spy stuff. And and if you really
+4:26
+think about it, right, if there's a high
+4:27
+gain antenna in here and you're using
+4:29
+the SSID of the airport, like you're
+4:31
+walking around and somebody turns around
+4:34
+and puts uh and it says the sticker, it
+4:37
+says uh the the uh kiosk says use
+4:40
+airport open or open airport and then
+4:43
+you do open airport on this and people
+4:45
+connect to it, but you're also connected
+4:47
+to the internet. You're creating a
+4:49
+man-in-the-middle attack and people
+4:50
+think it's a regular device. or if you
+4:52
+go into like a T-Mobile or an AT&T or
+4:56
+something like that and they have and
+4:57
+there really isn't
+4:59
+um a connectivity for there but your Mac
+5:03
+your Windows machine is already knows to
+5:06
+pick up this device and you emulate what
+5:09
+normally those carriers would do. How
+5:12
+you going to know the difference,
+5:13
+right? And you got to be clear to this
+5:15
+thing we're going to see how big it is.
+5:17
+It's not big. um you hide it or you put
+5:19
+in a knapsack or a bag or something. Um
+5:22
+it's not like you're going to actually
+5:23
+see this. You just see the name of the
+5:25
+network. It pops up on your phone or
+5:27
+your laptop or whatever it is.
+5:29
+The first thing we're going to look at,
+5:31
+we're going to look at the beautiful uh
+5:34
+I'm going to try to do my best to pick
+5:35
+it to the camera, but it's um you know,
+5:39
+for clarity, I might just go a little
+5:40
+lower, but it's a it's a little kind of
+5:43
+like business card that folds. And I'm
+5:45
+going to take it to my myself and read
+5:47
+it. It basically tells you how to
+5:49
+connect it to the power source, what
+5:51
+network you can join, and how to
+5:52
+configure it. And then it has a little
+5:56
+bit of information here about what each
+5:58
+of the lights do. There's a blinking
+5:59
+blue means it's starting up. And a solid
+6:02
+blue, it's ready. And a solid red uh red
+6:05
+means invalid USB files and alternating
+6:07
+blue and red. Flashing firmware. Do not
+6:10
+unplug power. So, you don't want to
+6:12
+brick the device.
+6:14
+No. Does it have the FCC compliance on
+6:16
+there? I I always check that.
+6:17
+Oh, that's really important. So, I I'm
+6:19
+sure it's somewhere located here, but
+6:21
+yeah.
+6:22
+And I'll bet you can probably put
+6:23
+illegal firmware on it to actually break
+6:25
+that
+6:26
+like like some people who stuff
+6:29
+who who uh like siloed it, right? So,
+6:32
+now we're going to be ready to uh uh
+6:34
+take it out of the bag.
+6:36
+Yes. Let's see it. It's like Christmas
+6:38
+morning. I'm dying here.
+6:39
+I'm Jewish.
+6:44
+Okay.
+6:44
+All right. It's like I don't know what
+6:45
+night do you get your presents?
+6:46
+It's like holiday night that is. It's
+6:48
+like the holidays.
+6:49
+So, it has locations for the antennas.
+6:53
+Mhm.
+6:54
+It has a USB C and USBA port.
+6:58
+The antennas are in the box. It comes
+6:59
+with antennas, right?
+7:00
+Yes, sir.
+7:01
+Of course.
+7:02
+So, let's start putting them on, right?
+7:05
+All right.
+7:09
+And it And we can't tell on screen, but
+7:11
+is it heavy? I mean, is this something
+7:13
+you can like velcro to the underside of
+7:15
+a table or something?
+7:16
+Absolutely.
+7:17
+Really? Wow, that's nasty.
+7:19
+And then for And then these devices to
+7:21
+these days, these battery packs are so
+7:24
+small that you don't even need to
+7:26
+connect it to, you know, live power. You
+7:28
+just connect it to a battery pack.
+7:29
+Oh, that's right.
+7:31
+Yeah. It could run for quite a while.
+7:33
+Then someone goes
+7:35
+and picks it up.
+7:37
+A lot of people who do pentests, what
+7:39
+they end up doing is they end up putting
+7:42
+this close in proximity to where you
+7:44
+would normally log in.
+7:47
+Maybe they'll shut out the other uh
+7:50
+SSID.
+7:51
+Maybe they'll um maybe they'll uh uh
+7:56
+maybe they'll overpower it with this
+7:58
+device because it's closer. And that's
+8:01
+what you're going to log into. And then
+8:03
+we have the USB itself,
+8:08
+the cable.
+8:09
+Oh, USB cable. That's cool.
+8:12
+USBC. And I believe there's nothing else
+8:15
+in the box.
+8:17
+That's it. That's pretty
+8:17
+straightforward, actually.
+8:19
+Yeah.
+8:20
+Now, I think what we're going to do,
+8:22
+right, is we're going to I have an
+8:24
+abundance of Hack Five devices. And I
+8:27
+think what we're going to do here is uh
+8:29
+the next go around and actually I'm
+8:32
+going to travel soon. So I'm going to
+8:34
+see if I can use this possibly as a
+8:36
+travel router. I haven't tried that yet.
+8:39
+Uh but we'll try that out. And then the
+8:42
+next um episode that we'll come out with
+8:45
+eventually will be how to use it to the
+8:48
+command and control that Hack 5 gives
+8:50
+you and you can pay yearly for to manage
+8:52
+your devices. So, if you took this
+8:54
+device, this pineapple, and you put it
+8:57
+at one location, and then you took
+8:59
+another pineapple and you were able to
+9:01
+connect it to the internet as well in
+9:03
+another location, you can manage these
+9:05
+devices remotely using the command and
+9:06
+control.
+9:08
+Uh, that's scary if you're not using it
+9:10
+for good. But got to understand what
+9:12
+people can do with this stuff. Um, you
+9:15
+know what would be cool if when you're
+9:17
+traveling if you take that travel router
+9:19
+we looked at and see if you can use this
+9:21
+to like break the travel router
+9:24
+and like get on the cool
+9:27
+if you're in the hotel room and got
+9:29
+nothing to do, right?
+9:31
+Yeah, definitely. Or I I and I'm joking.
+9:33
+I was going to say I'm going to see if
+9:34
+the people next door will connect, but
+9:36
+I'm joking. I'm joking.
+9:37
+Yeah, test it on them. Right.
+9:41
+All right. Well, that's pretty cool.
+9:43
+That's interesting. I have heard about
+9:45
+these for years. Obviously, they've been
+9:48
+around, but I've never actually um seen
+9:51
+one. And that new one is pretty slick
+9:54
+and pretty discreet. You know, I don't
+9:56
+think it's accidental that they make
+9:58
+this so it could really look like
+9:59
+anything. People just say, "Oh, it's
+10:00
+just some box or whatever hanging
+10:02
+around." Crazy.
+10:04
+Yes, sir.
+10:05
+Yeah. I'm I'm excited. I'm excited to
+10:08
+try it out and I'm excited to do the
+10:09
+next episode. But hey, if anybody's used
+10:12
+a pineapple before or if anybody has any
+10:15
+questions or if anybody wants to um ask
+10:19
+questions about what it's capable of, uh
+10:22
+we can definitely do a follow-up episode
+10:24
+to some comments um under the episode
+10:26
+and we'll definitely uh respond to you.
+10:29
+Yeah, send us some comments. We can have
+10:30
+some fun with this stuff. All right,
+10:33
+Adam. Very good. This has been fun.
+10:35
+Another interesting uh little toy you
+10:37
+got.
+10:38
+Yes, thank you. and uh looking forward
+10:40
+to uh continuing this series.
+10:43
+That's right. Okay, everyone. Thanks for
+10:44
+watching. Thanks, Adam.
+10:47
+Thank you. Bye. Bye, guys.

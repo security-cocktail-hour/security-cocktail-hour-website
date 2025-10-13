@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<article class="section">
+  <div class="container" style="max-width: 900px;">
+
+    <!-- Page Header (if not About page) -->
+    {{ if ne .Title "About Security Cocktail Hour" }}
+    <header style="margin-bottom: 2rem;">
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}
+        <p style="font-size: 1.125rem; color: rgba(45, 45, 45, 0.7);">{{ . }}</p>
+      {{ end }}
+    </header>
+    {{ end }}
+
+    <!-- Page Content -->
+    <div class="content">
+      {{ .Content }}
+    </div>
+
+  </div>
+</article>
+
+{{ end }}

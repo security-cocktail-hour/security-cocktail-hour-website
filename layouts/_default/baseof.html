@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  {{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+
+  {{ block "head" . }}{{ end }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>

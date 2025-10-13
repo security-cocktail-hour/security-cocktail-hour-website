@@ -1,0 +1,18 @@
+PODCAST PLATFORMS:
+YouTube: https://youtube.com/@SecCocktailHour
+Spotify: https://open.spotify.com/show/7gWweI6mL1oVRU5gKNzzTy
+Apple: https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200
+Amazon: https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour
+RSS: https://anchor.fm/s/ed0bcf14/podcast/rss
+
+SOCIAL MEDIA:
+LinkedIn: https://www.linkedin.com/company/security-cocktail-hour/
+Twitter/X: @SecCocktailHour
+Email: feedback@securitycocktailhour.com
+
+EXTERNAL STORES:
+Store 1 (Clothing): [URL]
+Store 2 (Accessories): [URL]
+
+STRIPE:
+Donation amounts: $25, $50, $100, $500, $1000

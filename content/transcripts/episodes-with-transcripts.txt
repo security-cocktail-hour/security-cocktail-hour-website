@@ -1,0 +1,9 @@
+Episodes with transcripts (ready to migrate):
+- Episode 61: AI attacks need AI defense: Ransomware's new danger and how a top cyber expert is fighting back
+- Episode 60: Crypto Kidnappings, Lost Keys, and Million-Dollar Bug Bounties
+- Episode 59: WiFi Pineapple Unboxing: The Hacker Device From TV Shows!
+- Episode 53: The New Rules of Cyber Incident Response | New attacks, new response
+- Episode 21: Medical Devices, Halloween and Whiskey with Gabrielle Hempel
+
+Total episodes with transcripts: 5
+Total episodes without transcripts: 61-5 = 56

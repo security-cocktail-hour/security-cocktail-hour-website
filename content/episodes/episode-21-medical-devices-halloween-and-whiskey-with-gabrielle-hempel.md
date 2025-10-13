@@ -1,0 +1,1879 @@
+---
+title: "Medical Devices, Halloween and Whiskey with Gabrielle Hempel"
+date: 2023-10-27
+draft: false
+guest: "Gabrielle Hempel"
+category: "General"
+duration: "1:07:35"
+image: "/images/episodes/episode-021.jpg"
+description: >-
+  It's our Halloween episode, and we're covering the scary topic of medical device security with guest Gabrielle Hempel, aka @gabsmashh. Gabrielle talks about her experiences with medical devices and her unconventional path into information security.
+platforms:
+  youtube: "https://youtu.be/s3Ukx4fr1sg"
+  spotify: "https://open.spotify.com/episode/4QVogXYhdAcqlpIsvCauPC?si=463e08788e524d7b"
+  apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000632857008"
+  amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
+guest_bio: "Gabrielle Hempel, Solutions Engineer/Exabeam"
+---
+
+It's our Halloween episode, and we're covering the scary topic of medical device security with guest Gabrielle Hempel, aka @gabsmashh. Gabrielle talks about her experiences with medical devices and her unconventional path into information security.
+
+## Episode Highlights
+
+### Listen Now
+
+Tune in to hear our discussion with Gabrielle Hempel.
+
+## Full Transcript
+
+**[0:00]:**
+[Music]
+
+**[0:05]:**
+okay Adam how you doing today I'm sorry you're talking to me yeah I'm talk I'm talking to you I'm
+
+**[0:11]:**
+talking to you you don't talk you don't talk to Deadpool that way yeah this is the this is the
+
+**[0:16]:**
+Halloween episode and I guess that's the the closest you're going to get to a costume is the Deadpool hat which is
+
+**[0:22]:**
+very you mean the birthday Edition there's two of us who had a birthday or having a birthday where's yours my
+
+**[0:29]:**
+birthday was quite was quite a while ago my costume is I'm like you know I got my old motorcycle jacket this is the
+
+**[0:34]:**
+closest I get to having a costume yeah I wasn't going to Slick my hair back that's like that's like too
+
+**[0:40]:**
+much I don't have that much Spirit what can I tell you but we have a guest who
+
+**[0:46]:**
+is definitely way more in the spirit than we
+
+**[0:51]:**
+are I'm kind of embarrassed for me no for me cuz I I'm
+
+**[0:57]:**
+the one that kind of said let's get costumes yeah this was all your your idea and Gabrielle played along Our
+
+**[1:04]:**
+Guest did I played along and I'm not a costume guy and you well you got
+
+**[1:09]:**
+chocolate martini so that's cool you're fine I did have this at my disposal already though I did not buy it for the
+
+**[1:15]:**
+podcast so oh good I don't know whether that makes me weird or no that's perfect
+
+**[1:20]:**
+because we got we got no expense budget for costumes or anything so we're glad you didn't spend
+
+**[1:27]:**
+anything all right so Gabby why don't you tell us a little bit about yourself
+
+**[1:32]:**
+and and your costume if you if you'd like so yeah I got a cool back oh look it's got like oh it's got like like back
+
+**[1:40]:**
+wings and everything cool all right it's funny you should have seen the look on the like so I got twin 15-year-old boys
+
+**[1:46]:**
+and like walked out of the room and they were like what are you wearing like one of them just like he walked out of the
+
+**[1:51]:**
+door and he like went back in and shut the door he was like nope not today you know what that reminds me of reminds me
+
+**[1:57]:**
+of like a Road Runner cartoon like a like Wile E. Coyote gets the Acme bat suit
+
+**[2:02]:**
+and tries to fly if we if we drink enough can we get you to like you know roof or something well I got mountains
+
+**[2:09]:**
+right outside my window like I live like up on the bench of a mountain I could get some air all right I got to stop
+
+**[2:14]:**
+this here uh full full full disclosure here please do not try any of these stunts at home uh the people in this
+
+**[2:21]:**
+podcast are Professionals of what they do yes well we have yeah professional we
+
+**[2:27]:**
+have no uh by the way we have no costume bug and no health insurance for this so you
+
+**[2:33]:**
+know tun we're not very big on compliance you
+
+**[2:40]:**
+know we're just trying to avoid copyright strikes here so don't don't hum any popular tunes please let me put
+
+**[2:45]:**
+a teaser out there um what we recorded yesterday did
+
+**[2:50]:**
+require protective gear oo what kind of protective gear are we
+
+**[2:58]:**
+talking why you making have you done anything that requires a full hazmat suit yet because I can take you some of those places no I've done that also as
+
+**[3:05]:**
+an EMT but but but um let's just say it
+
+**[3:11]:**
+required headgear gloves and a mouthpiece I and it wasn't Adam just
+
+**[3:18]:**
+going to the supermarket that's not how it usually goes that's not true either I usually go to the supermarket people dep
+
+**[3:25]:**
+on which Supermarket you're going to for real yeah seriously
+
+**[3:31]:**
+but yeah no so I'm I'm Gabby I'm Gabrielle whatever you want to call me a lot of people only know me by my like
+
+**[3:37]:**
+Twitter handle too which is pretty weird um so I get called Gabsmash a lot
+
+**[3:42]:**
+that's my Twitter handle came from a whole J that's awesome like I I used to power lift and like when I would finish
+
+**[3:50]:**
+like a PR lift or something I don't know just instead of Hulk smash I would yell Gab Smash because I thought it was funny and then when I went to make a Twitter I
+
+**[3:57]:**
+couldn't think of a name and put but that as my name and now I I don't think I can undo it so well that's great
+
+**[4:05]:**
+you're living definitely on the internet Gabsmash so yeah I work in security I've
+
+**[4:10]:**
+held a lot of different roles in security my journey into security was pretty freaking weird I think we were
+
+**[4:16]:**
+talking about that a little bit at some point but um yeah well I I definitely
+
+**[4:21]:**
+want to hear about that because uh you know well we've talked on the show a lot we kind of did the requisites so how do
+
+**[4:26]:**
+you get into security and you know there are a lot of people who kind of my own experience or my own take is
+
+**[4:34]:**
+that a lot of people especially the old-timers came in through uh you know originally a networking and then got
+
+**[4:39]:**
+into security and started doing more security stuff more networking like that's how Adam did it um that's how not
+
+**[4:46]:**
+100% sort of and I you know when I kind of came in I was a you know more on the host side it's just the administrator
+
+**[4:52]:**
+doing you know taking care of computers and stuff um but yours was very
+
+**[4:57]:**
+different and very interesting actually much cooler than either of ours not really some of it it was it was really
+
+**[5:04]:**
+funny I was actually on another podcast recently and it was Mo the theme of the episode was how a lot of my career moves
+
+**[5:10]:**
+and like how I've moved in security has been built off of spite spite all right and being and being
+
+**[5:18]:**
+stubborn um because when people tell me I can't do something or that makes me want to go do it so so
+
+**[5:26]:**
+so that's the trick huh okay you you definitely can't jump off the top of a building kidding I
+
+**[5:33]:**
+mean I haven't tried yet so I I would recommend I don't want you to jump but I
+
+**[5:40]:**
+have a funny feeling if anybody I know jump no jumped off of a
+
+**[5:46]:**
+mountain I have a funny feeling you would soar but don't do it please wow
+
+**[5:52]:**
+try to compliment whether it means I'm like actually like some sort of weird witch or something or like just very
+
+**[5:58]:**
+aerodynamic well he didn't say with a broom I mean come on you know it's I
+
+**[6:03]:**
+think it's a little bit of I think it's a little bit of both but you know and I and I'm kind of giving out pii a little
+
+**[6:09]:**
+bit but since my birthday is on Halloween um for me I'm talking about you know I believe in witches you know I
+
+**[6:17]:**
+you know witches were the theme of my birthday I love I love witches I my mom
+
+**[6:26]:**
+is super into genealogy and uh we're very very Irish like my mom is an
+
+**[6:32]:**
+Irish citizen like just a very Irish family and she traced our lineage back
+
+**[6:38]:**
+way back in the day but we were uh some very druidic people in oh really Ireland
+
+**[6:45]:**
+so that's intense okay yeah so I think it's pretty rad I'm like all right
+
+**[6:51]:**
+that's that's that's cool maybe I have some powers or something that I need to try and awake awaken I don't know
+
+**[6:57]:**
+so you know one one year on my
+
+**[7:03]:**
+birthday oh God my decades and decades ago a balloon it was not done by my
+
+**[7:09]:**
+family floated down in front of my window that said happy birthday and it wasn't my family I did it that's some
+
+**[7:16]:**
+horror movie [ __ ] I'm telling you the truth I can't make it up are we allowed to swear on here yeah you can do
+
+**[7:22]:**
+whatever you want okay whatever you want I just got to make sure I've got the mouth of someone that lived in New York for a long time so yeah so the
+
+**[7:32]:**
+point yeah but they don't like that here in Utah that's oh cuz cuz you know you
+
+**[7:37]:**
+respectfully it's a lot of Mormon right so but um it was really scary to see
+
+**[7:42]:**
+that balloon cuz I was mortified I like d Dad Mom you do that did it come out of
+
+**[7:48]:**
+the sewer and was there a clown I had a bedroom it's like like my bedroom now the window was in front of
+
+**[7:55]:**
+it no I didn't see any clowns in this well some of the DPW workers but that's another
+
+**[8:01]:**
+story some of them are my friends so that's wild yeah stuff like that is
+
+**[8:07]:**
+like there's some Supernatural stuff that happens sometimes where I'm like is that a coin like there's no way like I don't know there's just weird stuff
+
+**[8:13]:**
+where I'm just like but I'm also very much a skeptic in many areas of life so I'm just I don't know I I have an
+
+**[8:19]:**
+internal war with myself like what do I believe so are you a we I know I know we
+
+**[8:26]:**
+shouldn't be getting to uh astrology but are you Scorpio I don't remember I'm a
+
+**[8:31]:**
+Libra I'm a Libra just like my wife oh God two of
+
+**[8:37]:**
+you I don't know what that means but whatever not astrology either um I'm a
+
+**[8:45]:**
+it's interesting but it's one of those things where like I won't take it to heart I guess I think that's for
+
+**[8:50]:**
+entertainment purposes only that's what I tell my daughter she you know what's funny F my current my current job I was
+
+**[8:56]:**
+doing some work in in an area of New York City and a woman walked up to me and she said
+
+**[9:02]:**
+something weird like are you a Scorpio I'm not even making this up and I know I just gave you Whole Foods no no no no this was on
+
+**[9:11]:**
+a this was on a street that we were helping to do some work and one walked up and goes you're a Scorpio I looked at
+
+**[9:17]:**
+her like do you know me she goes no I don't know you I go you just walk up to somebody tell me you're a Scorpio she
+
+**[9:22]:**
+goes yeah she goes you're one of those stubborn types I'm like I'm not stubborn at all what are you talking about she
+
+**[9:27]:**
+goes there you go dude that's such a scam she she probably did that to like a hundred people you
+
+**[9:33]:**
+know eventually she's with the husband and her husband's like what are you doing to this guy oh that's a I I don't
+
+**[9:39]:**
+know you did you end up giving her any money let me put it that way no I gave
+
+**[9:45]:**
+him my my social security number CU you said you would help me oh there you go better was she going to like hook you up
+
+**[9:50]:**
+with a Nigerian prince I've really or princess and yes yeah well I mean like
+
+**[9:57]:**
+you know it depends on your pronouns and stuff but yeah she did we're talking
+
+**[10:02]:**
+right now I I've been saving her I've been sending her money to come to New York perfect yeah nice just make sure
+
+**[10:09]:**
+you know if she asked for iTunes gift cards or whatever you got to oblige no I I did that my my old job I bought a
+
+**[10:15]:**
+couple of gift cards and I put it on my company credit card
+
+**[10:20]:**
+nice so Gabsmash tell tell us a bit about your G tell us a bit about your
+
+**[10:28]:**
+interesting Journey into security yeah so my undergraduate degree
+
+**[10:34]:**
+um I studied neuroscience and uh
+
+**[10:39]:**
+psychology and not anything to do with computers so um after that I didn't
+
+**[10:45]:**
+really know what I wanted to do I knew I didn't want to like keep going to school for that it was interesting but it was like Too Much Chemistry classes you had
+
+**[10:54]:**
+enough brain surgery you were like this is this is getting boring I'm done I am good toart was interesting but no uh so
+
+**[11:02]:**
+yeah I ended up working in pharmaceutical regulation for a couple years doing um studies like regulation
+
+**[11:09]:**
+studies for the FDA and stuff like that and um with that also worked on medical
+
+**[11:14]:**
+devices which is kind of how my interest in security was piqued a little bit um
+
+**[11:20]:**
+because I kept dealing with a couple of medical device manufacturers that had vulnerabilities in some of their devices
+
+**[11:28]:**
+and that was not my area of expertise like I could talk all day about some of your compliance with like
+
+**[11:34]:**
+Pharmaceuticals and like Risk analysis informed consent and all kinds of stuff but like when it came to medical device
+
+**[11:40]:**
+vulnerabilities we like everyone at my company was just like how do we even like approach this like we didn't even have a security team at that company oh
+
+**[11:47]:**
+that's frightening I mean like what what kind of devices were these I mean like total life saving things or oh this is
+
+**[11:54]:**
+going to be bad I can tell I tell from that look
+
+**[12:00]:**
+um yeah the one that I worked on the most was a pacemaker um man wow an
+
+**[12:07]:**
+internal defibrillator and so um I think I'm trying to think of what else I think
+
+**[12:12]:**
+it was mostly pacemakers that I worked with like that how vulnerabilities at that point there were a couple of infusion pumps as well like what you see
+
+**[12:18]:**
+in hospital rooms like you give people um drugs and if you read on those read up on those there's a lot of hackers
+
+**[12:24]:**
+that have done some really cool work with some of those too but like I know with the pacemaker stuff it was actually
+
+**[12:30]:**
+the programmer for the pacemaker that had the vulnerability um but you can put anything you wanted on that and then
+
+**[12:35]:**
+just send it to the pacemaker which was not ideal um wait you mean you could like upload whatever code you wanted to
+
+**[12:42]:**
+this like like s it well gab smash I we spoke about this when we we were first
+
+**[12:47]:**
+getting this episode together yeah and my my father-in-law was having some serious
+
+**[12:53]:**
+chest pains and we were like uh what is that and whatever I I don't want to get
+
+**[12:59]:**
+into too much with with him with his medical background but we end up finding out that the pacemaker was
+
+**[13:08]:**
+overclocked and when we started asking who made these changes nobody knew so he
+
+**[13:14]:**
+ended up in the ER they they kind of try to figure out who which because we know that the
+
+**[13:20]:**
+manufacturers allow multiple hospitals and multiple organizations to log in and
+
+**[13:27]:**
+it wasn't they claim I I can't see the data uh a good account
+
+**[13:33]:**
+of who logged in and who did what but we know it the the original setting was one
+
+**[13:38]:**
+and the other setting was another 10 beats permitted which caused him discomfort and almost put him into
+
+**[13:43]:**
+cardiac arrest W and this is evident of how it works and for those who don't know how
+
+**[13:50]:**
+it works also typically if you have a pacemaker they usually put um a
+
+**[13:57]:**
+receiving station in your house house and that receiving station sends data back um I believe via kind of a
+
+**[14:05]:**
+Bluetooth it's not necessarily paired but and then and that unit that's plugged in is usually cellular uh and it
+
+**[14:12]:**
+sends the data back but it's bidirectional so instructions are sent
+
+**[14:17]:**
+back to the pacemaker so when you're within range of the pacemaker they can send a shock I
+
+**[14:23]:**
+believe they can change the beats per minute they could up or make it upper lower as far as stuff so everything's
+
+**[14:30]:**
+remotely controlled are you serious I mean no I'm not I can see the benefit of
+
+**[14:36]:**
+that but the idea of walking around the house and knowing someone's got like a freaking remote control for my heart or something is like maybe I know too much
+
+**[14:43]:**
+about security but that that's really the way these things are and and you have no control over that it's just
+
+**[14:49]:**
+someone else is running that I Thea the Gabsmash I love that name by the way um
+
+**[14:55]:**
+I'll defa the Gabsmash but I don't know if there's a certificate I don't know if it's telet I don't know how you connect
+
+**[15:01]:**
+to it once you're within vicinity I mean I don't know how it's programmed I don't know how you identify who's the right
+
+**[15:07]:**
+receiver I know nothing about that but I do know the basics that is how it
+
+**[15:12]:**
+works yeah I mean it's probably changed a lot since I've looked at them because I haven't and I have one in the closet
+
+**[15:18]:**
+over there actually that I was going to mess with at some point but um I haven't gotten around to playing with it yet I
+
+**[15:24]:**
+keep saying oh that'll be a good winter project and then I have too much stuff to do in the winter so well you've got that in the closet who's got the pace
+
+**[15:31]:**
+maker a random person and oh I think the pacemaker is in that box too I think it's a both the pacemaker and the
+
+**[15:37]:**
+programmer are still in the box oh okay I was I was just gon no no no I wasn't gonna sit here and I wonder if any of my
+
+**[15:44]:**
+neighbors have a pacemaker hey D come here another dis no humans or any
+
+**[15:52]:**
+animals will be hurt during this testing no no no no no no no I would not
+
+**[15:57]:**
+especially having worked in the the compliance part and knowing what what goes into human testing yeah I'm good
+
+**[16:02]:**
+I'm not I'm not touching that with a 10ft pole so um but yeah no so it's
+
+**[16:08]:**
+essentially I think back then it was Bluetooth I think they've changed some of the protocols now I'm really not sure
+
+**[16:14]:**
+what they are have to read myself back up on some of the new pacemaker programmers but um yeah you could you
+
+**[16:20]:**
+could put any kind of code you wanted on there um and there wasn't really you know good access uh like Adam was saying
+
+**[16:27]:**
+too like good logging essentially as to who had done what with that controller
+
+**[16:32]:**
+or there could be multiple multiple controllers that worked with a single face maker things along those lines so
+
+**[16:37]:**
+it gets really really messy um and same with the infusion pumps were my favorite because they had hardcoded credentials
+
+**[16:44]:**
+like a lot of the infusion pumps you see in hospitals have their credentials already hardcoded which is something
+
+**[16:51]:**
+that's kind of fun to play with if I'm ever in the hospital I'm like oh I wonder what this does and then yeah people are like stop don't touch that
+
+**[16:58]:**
+like so credentials is part of it I don't know that being said Gabsmash I have I
+
+**[17:03]:**
+have a lot of friends of mine who are nurses and one nurse in particular told me that she was I'm trying to be careful
+
+**[17:09]:**
+how I say this she was witness to some pumps that were
+
+**[17:15]:**
+changed and what she alluded to was the suspicion that somebody hacked these
+
+**[17:22]:**
+pumps but I was not part again I want to be careful what I say because I was not part of the investigation I have no
+
+**[17:29]:**
+expertise in these pumps she was a nurse they found that a lot of these pumps were changed I don't know what level how
+
+**[17:36]:**
+much if you know it could have been a floor it could have been a patch it could have been an upgrade from what I'm
+
+**[17:42]:**
+aware nobody died uh but it was something that she was um careful to say
+
+**[17:48]:**
+to me but also a witness to it yeah yeah it's one of the things where I think I don't think it's ever
+
+**[17:55]:**
+been a lot of the vulnerabilities were kind of CAU before anything terrible could happen I don't know of any deaths
+
+**[18:01]:**
+that are directly related to any of these vulnerabilities which is good um
+
+**[18:07]:**
+but it sucks that they exist either way I mean that's just it's scary everything's connected I think
+
+**[18:12]:**
+especially in the medical industry I saw things have moved really fast right think about the Innovation just in
+
+**[18:18]:**
+medicine in the last 10 years or so but that same security innovation hasn't
+
+**[18:23]:**
+really caught up to some of that medicine uh medical Innovation or at least the emphasis on security has not
+
+**[18:30]:**
+stayed um you know in neck and neck with the emphasis on the medical um
+
+**[18:37]:**
+Innovation and that's it started to fall behind I think in a lot of different critical infrastructure sectors you could say the same about some of the
+
+**[18:43]:**
+energy sector stuff that's out there I'm sure EMS like some of the EMS infrastructure I'm sure you've seen it
+
+**[18:49]:**
+um and I've been horrified at just thankfully as an EMT we're we're in the
+
+**[18:54]:**
+field and we don't have a lot of remote control to our our equipment thank God
+
+**[19:00]:**
+the only things that have been happening these in previous years is that people would throw fake calls over radios you
+
+**[19:07]:**
+know not the same what we're talking about and no but and maybe send messages through the kdt or mdts keyboard data
+
+**[19:15]:**
+Terminals and mobile data terminals but that was back then different technology but you know it's funny it's not like
+
+**[19:21]:**
+somebody a previous guest once sat in the coach of an airplane and was accused
+
+**[19:29]:**
+of taking over controls of the avionics of an airplane I mean that never happened huh was it Chris I'm not oh
+
+**[19:37]:**
+please everyone knows who it is come on dude he was just a keynote at so my company had our conference this past
+
+**[19:43]:**
+week and he was one of our Keynotes I was so excited I got to actually sit and talk to him for like half an hour and I was so excited because I have followed
+
+**[19:50]:**
+his work forever I mean you know if you're insecurity you know who he is right so like uh I was so excited to get
+
+**[19:56]:**
+to meet him my boss was like I don't even know know who this person is and I was like you have to go talk to me so cool did you see did you guys did you
+
+**[20:01]:**
+tell him you going to be on the show no cuz we didn't talk about I didn't know he had been a guest on the show yet so I'll have to bug him we were we're we're
+
+**[20:09]:**
+Bud best best buddies on LinkedIn now so I'll have to BU Oh I thought you and I would be ffs we are I can have more than
+
+**[20:15]:**
+one it's like Myspace you get a top eight Myspace I don't even Myspace my exist my god wow am I myself am I old
+
+**[20:24]:**
+enough to date myself with us I thought you were trying to cater to us that thinking we're thinking we were to talk about myspace you know whatever so I
+
+**[20:30]:**
+used I used to talk to my friends on bbs's or bulletin board services with a dialup um back then it was a 300 modem
+
+**[20:37]:**
+then I moved to 12200 and then I moved the 2400 and then I really took off and
+
+**[20:43]:**
+got I got the 56k wow you know the sound that that
+
+**[20:48]:**
+1200 modem makes is the sound that my brain makes when I try to think whenever I try to think that's
+
+**[20:55]:**
+just what I hear in my brain I don't know well look here's here's what scares
+
+**[21:00]:**
+me about this medical stuff and I mean I don't know how how how it is but uh you
+
+**[21:06]:**
+know okay you got the hacker side and hopefully the stuff is secure you can't break into some of these stations but
+
+**[21:12]:**
+even even the legitimate use I mean unfortunately I've been spending a lot of time in hospitals lately like you
+
+**[21:17]:**
+know you talk about infusion pumps you go to like a like a like a chemo W or something there's like 20 people there
+
+**[21:24]:**
+you know 20 pumps and all these things you know are they doing a good job of not even the security of it but
+
+**[21:30]:**
+remembering which is which are they make you know what kind of quality control do they have are they making sure that you
+
+**[21:36]:**
+know the right person is with the with the right one if you're saying they don't even have an auto Trail I mean if someone does get sick and they even
+
+**[21:43]:**
+trace it back for diagnosis you know did this person get the right thing did they get the right setting that that really
+
+**[21:49]:**
+that's kind of freaking me out to be honest you know think about that right exactly what you're saying and G correct me if I'm wrong the fact that was
+
+**[21:56]:**
+changed is one big thing the fact that no one detected it at least in my father-in-law two months later is even
+
+**[22:01]:**
+worse what order what controls do you have to check to see what the settings are and you know and by the way gab
+
+**[22:09]:**
+smash I love seeing that he love saying that oh boy W and Joe smash to yeah yeah
+
+**[22:16]:**
+we call we call it Joe Donuts so um don't that that's I'm sorry
+
+**[22:24]:**
+um Jo Donuts Joey Donuts um what's even scarier is is that yeah
+
+**[22:31]:**
+medical equipment is an issue but what about if somebody is
+
+**[22:37]:**
+doing some kind of surgery Robotics and somebody gets on that equipment now once
+
+**[22:43]:**
+in one of the training sessions I've done one of the well-known uh lecturers
+
+**[22:49]:**
+said that they were doing a red team blue team or purple team and they by
+
+**[22:54]:**
+mistake well not by mistake they did it on purpose but they didn't know the IP the IP was not putting a list of restrictions mm and they got onto that
+
+**[23:02]:**
+server during the surgery and when they kind of got access to the camera they're
+
+**[23:07]:**
+like what the hell back off stop everything right away not the surgery
+
+**[23:13]:**
+but no more work CU God forbid you crash that server in the middle of a surgery that's horrible but you know on the
+
+**[23:20]:**
+other hand what if you're a hacker and you traversed to that
+
+**[23:26]:**
+server you know so it's it's bad the nice thing is is a lot of hacker groups
+
+**[23:34]:**
+kind of have their own code of ethics um one that I saw a few years ago kind of in the field while I was working was
+
+**[23:40]:**
+there was a hospital that had been attacked um once the hacking group realized it
+
+**[23:47]:**
+was a hospital it was I think it was attached to a university somewhere so they thought it was the
+
+**[23:52]:**
+University once they realized it was a hospital they backed off unlocked everything they were like no we're not
+
+**[23:57]:**
+touching in something that is touching actual human lives you know like a lot
+
+**[24:03]:**
+of hacking groups I think are out there for financial gain or IP or anything along those lines but once they get to a point where they are harming physical
+
+**[24:10]:**
+people that's where they're they draw the line um not saying that they're good people either way but I'm just saying
+
+**[24:17]:**
+like I I have seen that before where they're definitely they will back off if they realize it's a Medical Institution
+
+**[24:23]:**
+or something along those lines well I've heard that too and we've had people talking about that where they're like you know yes that they're there to make
+
+**[24:30]:**
+money they're they're not there to kill people or anything however we are seeing more and more ransomware attacks um
+
+**[24:37]:**
+against hospitals they they used to be kind of off limits until they realized they could make a lot of money off them
+
+**[24:43]:**
+and they were really good Target and you got to think there that even if they're not intending to hurt someone they can
+
+**[24:49]:**
+make some big mistakes and you know you've heard about these Hospitals now me like I say I've been spending time in hospitals there are no more charts there
+
+**[24:55]:**
+are no there's no more paper there's a PC in every in every room you know everything is is with iPads and all if
+
+**[25:02]:**
+stuff goes down they they can't deliver care they don't know who they're talking to or what their condition is or or
+
+**[25:08]:**
+anything federally there's a mandate to do EMR electronic medical records but not everybody still doing it they
+
+**[25:14]:**
+getting fined when they do so there's still a lot of paper records however eventually supposed to uh end up as EMR
+
+**[25:22]:**
+and the reason why also I think is a lot of entities are now sharing data with each other whether they using um eclipse
+
+**[25:30]:**
+or what's the other ones or um yeah sharing dat with Google too yeah epic epic I'm sorry epic one of the really
+
+**[25:36]:**
+big wies yeah yeah so I I log into epic and I'm like putting 17 organizations
+
+**[25:42]:**
+together and getting the fact that a lot of them don't talk to each other is scary too like I feel like I've I've moved what
+
+**[25:49]:**
+four or five times in the last like six or seven years and it's every time I get
+
+**[25:55]:**
+a new doctor it's like all right time to figure out a new system because I feel like none of them kind of overlap you can't transfer your records very easily
+
+**[26:02]:**
+oh no things like that but no it depends on it really depend regionally sometimes you can but like moving across the
+
+**[26:09]:**
+country was just kind of a new ballpark it seemed like so wow cuz I remember in
+
+**[26:15]:**
+the old days when someone would move you know in medicine you I go to a new doctor or whatever and they'd be like oh
+
+**[26:21]:**
+oh I need your I need your records who's your old doctor and they'd call them and they'd fax it over which I guess
+
+**[26:28]:**
+sounds archaic but sort of works you know but now I guess they got to deal with interoperability and formats and
+
+**[26:35]:**
+all that kind of stuff you know some yeah some people will send the other doctor a link to log in as a as a
+
+**[26:44]:**
+temporary provider and they get access to your records uh one of my
+
+**[26:50]:**
+doctors I told him I was changing and he understood and he s the one pager he
+
+**[26:55]:**
+wrote himself with major like you know these are the these are these are the top hits I'm like that's it but they
+
+**[27:04]:**
+send very he wrote a one pager dude I know you're a mess you need more than a page come on yeah it's
+
+**[27:10]:**
+true but go Ahad I'm sorry one of the crazy things so once I left my job in
+
+**[27:18]:**
+medicine I actually got more access to Medicine in some ways like I moved to security um I was part of getting into
+
+**[27:25]:**
+security was you know my stubbornness because I was was dating a guy at the time who was um he actually had his own
+
+**[27:32]:**
+company in the tech space and they did all right but
+
+**[27:38]:**
+um they he he was a really smart person he just wasn't a good person but um oh
+
+**[27:43]:**
+he basically told me he was like I don't I don't you're not smart enough to ever work in something like security or even
+
+**[27:48]:**
+Tech honestly to and I was just like okay are you serious that's kind of
+
+**[27:55]:**
+shitty so um I went and did it anyway but I got that we talked kind of a little bit at the beginning about your
+
+**[28:01]:**
+average JY into security and I got that from a lot of people people would be like oh well you have to start at help desk and then you have to do sis admin
+
+**[28:08]:**
+then maybe you can do Network stuff then maybe you can do security but you can't just go into security people would tell me that all the time and I was like n
+
+**[28:16]:**
+there's got to be another way I'm going to tell you why that is and and I and I
+
+**[28:21]:**
+I might saying it's a catch roll for everybody the only reason why I sort of believe in it is that a lot of people
+
+**[28:28]:**
+don't have the structure to understand so when I started doing work as I used
+
+**[28:35]:**
+to when I used to go take my original certification test when I used to ride the horse to the testing center um
+
+**[28:42]:**
+that's how old it is was the horse not a dinosaur come on gab Smash and by the
+
+**[28:47]:**
+way start referring to me as chocolate martini so so yeah the be the beginning
+
+**[28:55]:**
+was you had to kind of learn Microsoft because that was the only thing really back then the big thing
+
+**[29:01]:**
+right Linux was around and Unix was around I guess Unix more and Zenix and Banyon Vines whatever but then when I
+
+**[29:10]:**
+learned that I started loading networking and then this woman that was in networking said to me you know I know
+
+**[29:15]:**
+you want to get into the sexiness of networking but you got to get the Baseline of understanding how things
+
+**[29:21]:**
+work and you'd be surprised as a guy that was a a hiring manager and by the
+
+**[29:27]:**
+way you talk about people talking about you know being smart enough a certain person here that was my boss and it
+
+**[29:33]:**
+wasn't you said you know I got to hire everybody else on my team I didn't get to hire you I'm stuck with you oh God we
+
+**[29:39]:**
+hear this every episode yeah so that being said I'm I'm never going to forget y but then you start learning networking
+
+**[29:44]:**
+and you you learned about broadcast domain and you learned about flers and you learned about ports and then when
+
+**[29:50]:**
+you get to security you kind of have to know all of that it doesn't mean that you weren't
+
+**[29:56]:**
+capable of doing it but a lot of people don't have that that um what's the word that drive
+
+**[30:03]:**
+that ambition that um motivation to learn all the aspects of it and I know that you're a security person but it
+
+**[30:09]:**
+doesn't mean what's right for most people is right for you so that's why I kind of see how people build up to that
+
+**[30:16]:**
+and by the way that's how I did it oh no and I think that's that's especially back in you know 20 years ago that's how
+
+**[30:22]:**
+it had to be because right yeah that's old school the only field that security touch was Tech but the interesting I
+
+**[30:30]:**
+think now when you look at it security touches every field whether you're in medicine or Finance or doing some
+
+**[30:37]:**
+critical infrastructure stuff or any field that you're in there's security as part of it because everything's just
+
+**[30:42]:**
+done so largely online at this point and uh that's why I think that now it's a
+
+**[30:48]:**
+little bit friendlier for people to try and get into security different ways than maybe it was back in the day there was kind of only one path back in the
+
+**[30:54]:**
+day and now it's like okay you can take a lot of different paths but but at the same time like you're saying as well
+
+**[31:00]:**
+there's it takes a lot of self-starting and drive and self- auditing is like
+
+**[31:06]:**
+really what I find myself doing a lot because I went straight from not working in Tech at all to being a security analyst and that is a little bit unusual
+
+**[31:14]:**
+unless you I know got some kind of training or got a degree or something why we know she's a witch I did a I did
+
+**[31:21]:**
+a lot of self-study and like kind of brought myself up to speed in a lot of areas to the point where I understood what was going on but
+
+**[31:27]:**
+they also told me they were like you're going to sink or swim if if you can't figure this job out like we're giving
+
+**[31:33]:**
+you we're taking a chance on you essentially uh if you do well in this role then you'll learn a lot and you'll
+
+**[31:39]:**
+have that experience if you don't then you're just not going to do well like you're you're not going to last here so
+
+**[31:45]:**
+it was definitely it was a sinker swim roll where I really had to work and
+
+**[31:51]:**
+prove myself and it was for a consulting company like one of just outside the big four I was with Accenture so
+
+**[31:57]:**
+um worked 24/7 pretty much for a couple years just to bring myself up to some speed and I still I self- audit a lot I
+
+**[32:05]:**
+still have a lot of gaps coming from not working in security to going into security I learned security backwards is
+
+**[32:11]:**
+how I say it a lot of the time I learned all the security stuff I can talk all day about um a lot of your security
+
+**[32:18]:**
+topics malware um like encryption things like that if you ask me like you were
+
+**[32:23]:**
+saying networking questions I'm like God good luck like here's the thing
+
+**[32:28]:**
+you're right that's the old school thing you know now there actually is training there are even degrees you know when we
+
+**[32:34]:**
+started out there was nothing like that um so you know so you can get get into it although you jump right from uh you
+
+**[32:40]:**
+know something totally different to analyst is still a little unusual um but
+
+**[32:45]:**
+uh yeah but you know at at the same time don't feel bad that you have gaps
+
+**[32:51]:**
+ever because security has gotten security has gotten so wide you can't oh
+
+**[32:57]:**
+yeah know everything I mean I mean even even as a manager I go and go and look at these things I'll look at a job
+
+**[33:03]:**
+description and they basically list that like we want someone who's who's even not even done but managed all these
+
+**[33:08]:**
+Technologies I'm like nobody's done all of I mean czy yeah everything I mean so
+
+**[33:14]:**
+yeah so we want um cyber security engineer needed must have 20 years of
+
+**[33:20]:**
+experience um must understand uh networking OGB you know SPF BGP uh is
+
+**[33:27]:**
+able to speak Cantonese for out Cantonese people um the best the best is
+
+**[33:32]:**
+uh entry level 20 years experience oh yeah I see that all the time lot like 20
+
+**[33:38]:**
+years in cyber I mean I know cyber's been around longer than 20 maybe not 20 for entry level but you know no but I
+
+**[33:44]:**
+think a lot like we it's still like 8 to 10 for level and I'm like are you serious dude like most people I know
+
+**[33:49]:**
+that have 8 to 10 years of experience are pretty squarely senior level at this point um you know I I have a masters in
+
+**[33:56]:**
+cyber security and I well it's but here's a point and and Joey was like
+
+**[34:02]:**
+what are you doing aren't you both you the background yeah what you do you got so I actually want to go for a PhD me
+
+**[34:09]:**
+too so we'll hang out together but the reason why I want to do it is for only one reason I wanted people to say doctor
+
+**[34:17]:**
+doctor doctor doctor same and I want to teach that was the reason I got my masters was mostly cuz I want to teach I
+
+**[34:22]:**
+uh that and I kind of wanted some sort of degree in cyber security because my undergrad was not at all and wanted to
+
+**[34:30]:**
+get that on my resume too so I went to NYU um had I did it's uh Global Security
+
+**[34:37]:**
+conflict and cyber crime is actually the name of the Masters program but it's a for all intensive purposes it's a global
+
+**[34:43]:**
+uh like Global Affairs and cyber security oh you went to NYU in in in Brooklyn
+
+**[34:48]:**
+there what what was ply yeah no I was in a I was actually
+
+**[34:54]:**
+Woolworth Building so I was squarely all right 220 22 233 Broadway so yeah
+
+**[35:01]:**
+yeah yeah so the real good for you wow so there's three things I want to say really quickly not for that anyway from
+
+**[35:08]:**
+Brooklyn's the engineering school right isn't T yeah exactly yeah that's it used to beook of the other schools but it
+
+**[35:15]:**
+still was an MS but I liked that it had like the global Affairs side of things too cuz like my my end goal right like I
+
+**[35:21]:**
+would love to either like work for a while and then soft retire someday and go work for Department of State doing
+
+**[35:28]:**
+like really cool stuff in cyber security with some of the stuff that's going on in the world but I mean short term not
+
+**[35:35]:**
+short term I guess like in private sector though like I want to be in that like CISO kind of role and I know a lot of
+
+**[35:41]:**
+people roll their eyes and they're like oh my God I like having the blame on me a time but I also like that picture of
+
+**[35:48]:**
+everything I like understanding how all of the different pieces of a cyber security program work together and what those outside pieces are that influence
+
+**[35:54]:**
+the cyber security program and that's why I kind of want to in that Ty role believe yeah you know I I can understand
+
+**[36:01]:**
+I mean I can tell you a little bit from experience I can understand wanting to get the the seeso thing out of your system it's like yeah I want to sit in
+
+**[36:07]:**
+the big chair I want to do this yeah yeah I I I can tell you um it's it's a
+
+**[36:13]:**
+lot more fun to to say that you're the CISO than need to be the CISO I know
+
+**[36:18]:**
+I've heard that from many it's not an easy job totally get that that's the case and I know it's not an easy job but I like I
+
+**[36:26]:**
+like the big pi strategy side of things and um right now I'm just biting my I'm
+
+**[36:31]:**
+only I've only been in security for 5 years so that's a lifetime almost already for a lot of people yeah but
+
+**[36:37]:**
+most like most like that's the issue I'm having right now I've worked in engineering I've worked in quite a few different roles in cyber security I have
+
+**[36:43]:**
+a lot of experience but at this point it's the time like I don't have enough
+
+**[36:48]:**
+time on paper yet to be in that like director level role or anything along those line I'm going tell you this I'll
+
+**[36:54]:**
+tell you this I want I want to go on a ramp for one second right number one my cyber security degree even though I
+
+**[37:01]:**
+value the institution really didn't didn't do anything for me other than challenge me a lot of my a lot of my
+
+**[37:08]:**
+learning came from my certifications that I went really hard into and I learned and and I I spent a lot of time
+
+**[37:14]:**
+so the point I'm making is there's nothing wrong with getting a degree I a lot of people in my classes had no
+
+**[37:20]:**
+formal experience in cyber security I've first of all number one God Bless America lot of them were
+
+**[37:27]:**
+military they were going on the uh what they deserved and they got paid to to doe to the degrees and I respect that
+
+**[37:33]:**
+and they and I value their them tremendously but that's what they did they they went into cyber security
+
+**[37:39]:**
+hoping to get into cyber security eventually when they got out the military and I hope they do because
+
+**[37:45]:**
+there's such a shortage of cyber Security Professionals the second part of that rant is they're hiring everybody
+
+**[37:51]:**
+these days because they don't get enough cyber security people not every
+
+**[37:58]:**
+no that that depends things have changed quite a bit there's actually been a lot of talk on LinkedIn about this that
+
+**[38:04]:**
+believe it or not makes makes some sense you know the the cyber security shortage is not at all levels you know a lot of
+
+**[38:11]:**
+it is you know yeah is is entry level getting those getting those people in
+
+**[38:17]:**
+and and it boils down to like you know someone you know like yourself Gap smash can do uh you know really well if you're
+
+**[38:24]:**
+a self-starter and want to learn because a lot of companies just don't want to teach people they they don't want to invest the time they don't want to
+
+**[38:30]:**
+invest the money and they know that if they do they're probably going to you know skip out somewhere else um you know
+
+**[38:36]:**
+so there's a lot of you know shortages there but as you go to the uh you know
+
+**[38:41]:**
+more more senior and especially you know the the direct you the manager director
+
+**[38:47]:**
+levels there's there's actually um a lot there and until the Market opens up a
+
+**[38:52]:**
+little bit it's going to be really tough to find out opportunities there I mean
+
+**[38:57]:**
+like a a couple years ago if you had you know managed a security team for like
+
+**[39:02]:**
+you know two years or something you could be a ceso or you could be direct they just needed anyone who who and and
+
+**[39:08]:**
+people would take a chance on you now that things are tighter not so much but that's going to change over time you
+
+**[39:13]:**
+know well I still need that management experience I have like management experience like way back in the day when I worked in retail and stuff but it's
+
+**[39:19]:**
+it's a different ball game with security and I don't have that management experience in security yet I've been an
+
+**[39:24]:**
+individual contributor of most of the roles I've and so well I can tell you I
+
+**[39:30]:**
+can tell you as a longtime security manager security people are pain in the ass oh yeah I know they are not it's
+
+**[39:37]:**
+like it's like managing like a like a sports team or you know yeah it's it's
+
+**[39:42]:**
+not easy the other thing I'm going to add as the last part of my rant is that a lot of the
+
+**[39:48]:**
+opportunities I have seen in cyber security is through a vast uh your vast
+
+**[39:55]:**
+networking mhm and the people that really think my LinkedIn looks the way it does so the point I'm making is is is
+
+**[40:03]:**
+that you know you know Joe and I have had this conversation about who do you add on LinkedIn who do you don't and
+
+**[40:09]:**
+I've been selective but I still have thousands of people and when I look for
+
+**[40:14]:**
+opportunities I typically start reaching out to people I know hey how's it going you know do you have any opportunities
+
+**[40:21]:**
+and sometimes people reach out to me and this is how I Got U my last position um
+
+**[40:27]:**
+my my the CEO of my current company incredible guy military guy was asking me to join other organizations and
+
+**[40:33]:**
+finally became to the consensus that the right opportunity the right time everything worked out but my position
+
+**[40:41]:**
+before when I when I when I worked for Joe was because my friend brought me in there and the position before that I
+
+**[40:47]:**
+believe was because my other friend brought me in so my point I making is it's not always easy when you start
+
+**[40:53]:**
+going to recruiters and God bless recruiters but but a lot of the opportunities you're going to want to
+
+**[40:58]:**
+get in management is somebody that knows you personally that can vouch for you personally that that knows what your
+
+**[41:04]:**
+worth is because a lot of times it's more personal than not with recruiters I'm not saying there's not good
+
+**[41:09]:**
+recruiters out there there are no some of the recruiters are are trying to make money and they have a hard job but there
+
+**[41:16]:**
+are recruiters out there that really know you and they can place you in the right opportunities that's what I'm
+
+**[41:22]:**
+talking about you'll get a management position when you want but it's got to be somebody probably that you know that
+
+**[41:27]:**
+make it easier well I can also tell you just let me let you know the best way to break into management is to get promoted
+
+**[41:34]:**
+into it you know because because still it's it's crazy it makes no sense but the top Tech person on a team who knows
+
+**[41:41]:**
+absolutely nothing about management we'll get promoted to management or supervisor or whatever I I feel like my
+
+**[41:47]:**
+last organization was not the place for that my current organization is a fantastic place for that they are very
+
+**[41:53]:**
+big like a lot of people have worked their way up up from being support and are now like managers and stuff like
+
+**[42:00]:**
+that they're just very big on promoting from within they're also they listen to their employees which I really like um
+
+**[42:05]:**
+if I come up with a suggestion for uh like the program that I'm working in or whatever like I end up with a skip level
+
+**[42:13]:**
+with a VP and hang out and talk about that and then they implement it and it's really it's kind of cool to see that
+
+**[42:20]:**
+level of listening from Management in a company too so feel like I'm in a good place to do that and potentially move
+
+**[42:26]:**
+into management there and then going get my feet wet at that point but um yeah
+
+**[42:32]:**
+it's it's definitely one of those things where um
+
+**[42:38]:**
+I'm just kind of biding my time at this point and until I have the experience and stuff but same like you know Adam
+
+**[42:44]:**
+you were saying as well with knowing people I think after that first cyber security role that I finally got with no
+
+**[42:50]:**
+experience I worked there for a couple years worked my way up to a senior level analyst and stuff like that and then uh
+
+**[42:57]:**
+every single job I think I've had since then has been through social media or Word of Mouth um either somebody saw
+
+**[43:04]:**
+that I spoke at a conference and they liked what I spoke about and they wanted to talk about a role or somebody um knew
+
+**[43:11]:**
+me wanted to introduce me to someone like every single role I think I've gotten since that first one has been like on a personal basis somewhere which
+
+**[43:18]:**
+is huge so wow um so here's the other thing
+
+**[43:25]:**
+think about going to management this is Joe's Joe's School of Management when you when you get into that you got to
+
+**[43:30]:**
+learn to manage yeah and and you need to put the same kind of you know effort and
+
+**[43:36]:**
+whatever project into it um that you did when you went into security and learned security it's not it's not the same but
+
+**[43:43]:**
+by every management book read it and realize that 90% of it is going to be crap but yeah but yeah you know learn
+
+**[43:49]:**
+from people I've got a couple I've got a couple of them what's the one that I
+
+**[43:54]:**
+have oh EX extreme ownership by the guy that was the Navy SEAL that's a really good one I read that one recently Jocko
+
+**[44:01]:**
+something right I think I read that one what is his name is that his name see yeah something similar to that you
+
+**[44:07]:**
+forget a name like that vision sucks I know I'm the worst but it's really good it's wait wait you're a bat that's right
+
+**[44:14]:**
+Vision does suck with bats aren't they they're pretty much blind blind is a bat you know game smash you know I'll
+
+**[44:20]:**
+get you glasses I man I need to get my brother just got Las sick and I'm so jealous uh
+
+**[44:27]:**
+I want to get Lasik so I can see again I'm too chicken [ __ ] to get Lasik I've been avoiding I thought I get Lasik but
+
+**[44:33]:**
+I'm afraid somebody will get access to the equipment and then shoot my eyes out that was in a a final destination
+
+**[44:39]:**
+movie don't watch that one if you ever want to get Las it's pretty scarring but
+
+**[44:45]:**
+he has a government job opportunity that he needs vision for so yes he had to
+
+**[44:51]:**
+have corrected Vision to go do that so nice I know no yeah he sees not you see
+
+**[44:58]:**
+he sees so there's one other part that I rant I missed sorry I have to finish
+
+**[45:04]:**
+this rant so the other part is is this rant going to go on are we going to need another episode for this rant that just k no no this the last part of the rant I
+
+**[45:10]:**
+think so the other part is being in cyber security is kind of like being a doctor right you have a general
+
+**[45:16]:**
+practitioner um not to take away from the school from doctors so I'm just so you could be uh a general practitioner
+
+**[45:24]:**
+in cyber security you know and then someone will say oh we need a networking security engineer which is kind of what
+
+**[45:29]:**
+I was at one point so anybody who thinks they need to know everything and cyber security is wrong there's only one thing
+
+**[45:36]:**
+you need to know especially if you're managing people in cyber security is you need to know you're not the smartest person in the room say smartest guy
+
+**[45:42]:**
+you're not the smartest person in the room you just need to surround yourself with smart people so you need an endpoint engineer like Joe would Joe did
+
+**[45:49]:**
+in the past you need a cyber security networking engineer you need um maybe uh
+
+**[45:55]:**
+a cloud engineer those are the things that you need and bigger Enterprise organizations you need a lot of people
+
+**[46:01]:**
+that are kind of sort of siloed but know a little bit of everything so there's no way you can know everything you can't
+
+**[46:07]:**
+know networking and you know like like there are people that want cyber security Engineers to understand how to
+
+**[46:14]:**
+you know take over routing protocols I mean who does that it's very rare that you find somebody you have to be in a
+
+**[46:21]:**
+like a a major financial institution they find somebody does exactly
+
+**[46:27]:**
+that yeah yeah no I uh I pride myself in
+
+**[46:33]:**
+consistently being the dumbest person in the room that's I don't do it yourself no I I love it though like I I don't I
+
+**[46:41]:**
+love being like my team at work especially every single one of them is so good at like something very specific
+
+**[46:48]:**
+and that's what makes our team the team at work awesome because if there's something very like there's one guy who's like a Dr ha architecture or
+
+**[46:55]:**
+wizard oh wow yeah so like anytime I have a question drha in in in in
+
+**[47:03]:**
+operating systems like you know servers or drha in networking or drha in Cloud
+
+**[47:08]:**
+because they all three different things too yeah uh mostly having to do with our product since we're a Sim tool so
+
+**[47:15]:**
+anything surrounding our product uh that has to do with like architecting it in a drha environment he's very good with
+
+**[47:21]:**
+there's like another person who was a support manager for years and years and years so any like weird question I have
+
+**[47:27]:**
+about the tool I can be like hey have you ever seen this and chances are he's like yeah I have uh here's how you fix
+
+**[47:32]:**
+it just one point I want so Joe usually does this for those who are watching that are not normally in networking and
+
+**[47:39]:**
+cyber Dr is disaster recovery ha's High availability and and what makes this
+
+**[47:45]:**
+important is if you're a person that's using a computer and they trying to connect to a website or something and
+
+**[47:51]:**
+then you see that you pretty much have access to that website all the time if one server goes down the other server
+
+**[47:56]:**
+gets up if one router goes down the other router comes up so that high availability means you pretty much have
+
+**[48:04]:**
+99.99% availability yeah like all of my uh CER most of my certifications were
+
+**[48:09]:**
+done AWS either architecting or security and that's a big Hallmark of that exam
+
+**[48:15]:**
+too is just understanding how to create infrastructure so that like if uh your availability Zone in one
+
+**[48:21]:**
+area goes down that it'll just fail over to another one and not having a ton of angry people calling that their
+
+**[48:27]:**
+website's not working all the that's what makes Amazon so attractive these days and Google and Micosoft to yeah
+
+**[48:34]:**
+well you got to design it right but then realize also it's not quite as redundant as they say it is they haven't had an
+
+**[48:40]:**
+outage in a while but in any case now here's the other thing here's the other bit of bad news okay I'm going to get a
+
+**[48:46]:**
+little uh a little I don't know philosophical remember all those all those skills that you build and all
+
+**[48:52]:**
+these things that you do now they have a finite lifetime time with you yeah about two months yeah not two months but you
+
+**[48:58]:**
+know you got to be looking forward to what's going to be here next cuz you know as we look at our very depressingly
+
+**[49:06]:**
+long careers you know things have changed quite a bit and and and it's amazing insecurity because the things
+
+**[49:11]:**
+that you know we're working on even you know that were hot two years ago are not
+
+**[49:17]:**
+so hot and now ai came from out of nowhere no every was like he you know the end of the world um so you know you
+
+**[49:23]:**
+got to keep as as seductive as it can be be I want to be the ultimate expert in
+
+**[49:28]:**
+this it's like okay you can be for a while yeah for now but you got to keep moving you know I am not one to speak in
+
+**[49:35]:**
+absolutes but I the one I will say is if you're not willing to continue to learn or adapt to a changing environment then
+
+**[49:42]:**
+you will fail insecurity yeah yeah it's it's an everyday learning experience and
+
+**[49:48]:**
+that's what I see a lot of my friends and colleagues do oh I don't know this boom boom boom but I'm going to argue
+
+**[49:53]:**
+with Joe because because AWS Amazon Azure their products change
+
+**[50:01]:**
+sometimes within two months or a month or three months and they change the names and they change the way and they change the licensing oh it's E5 it's E3
+
+**[50:08]:**
+it's E2 it's E1000 you know that Li every you need to keep up to date like
+
+**[50:13]:**
+you're saying constantly so yeah Joe's Joe's correct the overall technology said the same thing I said what are you
+
+**[50:18]:**
+working yeah you agreeing with them was I yeah crap I know now you got to find a
+
+**[50:24]:**
+new angle man you just want to you just want to argue with me you want to show your Joe I did all my arguing fighting
+
+**[50:31]:**
+yesterday New Yorker just trying to find something to argue about oh you want to fight yeah I do all right come down
+
+**[50:36]:**
+we'll go to the gym I'll be there I'm down let's do it oh okay we know how to film it we're good at it now so it's
+
+**[50:43]:**
+been a while since I've been in the ring I lived when I was in Connecticut I lived like right across the street from a place that did like crossray kind of
+
+**[50:49]:**
+stuff and then they also had an MMA school there and because it was during the pandemic and I literally didn't have
+
+**[50:54]:**
+anything else to do or go anywhere else I would walk across the street every day and train at these places so part of the
+
+**[51:00]:**
+teaser is that we did three rounds of boxing that's going to come out eventually on one of our after hours and
+
+**[51:07]:**
+um I can respectfully say when I did the three rounds
+
+**[51:15]:**
+yesterday I lost I got my ass kicked by somebody half my age hey that's important though
+
+**[51:22]:**
+to be able to admit that I give you a lot of credit for doing it because I was just standing there holding the camera
+
+**[51:27]:**
+yeah that's a lot man like that's three rounds three minutes nine minutes total fighting dude three minute rounds are
+
+**[51:34]:**
+rough like that sounds easy until you get in there and you're like like usually after 2 minutes I'm like I'm going to die like I was being a wise guy
+
+**[51:40]:**
+I was keep my hands down trying to say come yes go okay thanks we did two minute rounds and that was that is the
+
+**[51:47]:**
+longest two minutes of your life he he was half my he was half my weight and I and one of the bad things
+
+**[51:54]:**
+about me is when I get in the ring I tend to use a lot of my weight like I'll move people or come in and I I said
+
+**[52:01]:**
+let me this regular fight let me regular fight and I even went up to my trainer friend owner and I said it's very
+
+**[52:08]:**
+humbling because when I don't use my weight you're going to kick the [ __ ] out of me every single time so that's
+
+**[52:14]:**
+something I really had to learn with MMA stuff is like tawo especially being a tall person I was always really good at
+
+**[52:23]:**
+the kicks and I put this between me and a person and kick and like I'm able to keep them kind of at legs length if you
+
+**[52:29]:**
+will like because that's that's what I do best so getting into MMA and being forced to get comfortable with being up
+
+**[52:36]:**
+close to someone and in up in your up in your Zone and using your hands a lot more was really different um so ta
+
+**[52:45]:**
+window when I sparred A lot of it was just point sparring right you're like boom Point stop yeah and then but but
+
+**[52:52]:**
+doing three minute rounds I'm sitting there looking at the clock like is it over yet please I'm like let me not look
+
+**[52:59]:**
+so stupid in front of Joe in front of Joe's son in front of my wife in front of the gym in front of the millions of
+
+**[53:05]:**
+people that going to watch us on our podcast Millions I'll share it out there we'll get it to a
+
+**[53:11]:**
+million let's let's get it let's get it there Adam Adam you showed more heart yesterday than I can I us
+
+**[53:20]:**
+say what I'm challenging Ryan Reynolds to three two-minute r
+
+**[53:27]:**
+well Ryan I'm sure he going to see what when he watches every episode as he does watches this one you know that that you
+
+**[53:32]:**
+got the Deadpool hat on so you know um oh actually we have a new segment on the show but we've been trying to get Ryan
+
+**[53:39]:**
+Reynolds on on the show that's like Adam's uh I don't know aspirational guest so what's the uh what's the Ryan
+
+**[53:46]:**
+stalking report for this week you've been a chasing him at all or we been no but we have an attorney remember they
+
+**[53:52]:**
+said if I'm not successful then it's not stalking that's right so so far you're in the clear legally all right so I
+
+**[53:58]:**
+found his email address I believe and I emailed a lot of the people that work for him and I know they read it but they
+
+**[54:05]:**
+have not responded did you try reaching out to Blake his wife yeah then that's
+
+**[54:10]:**
+really going to be stalking but you weird you know no I know of her I know
+
+**[54:15]:**
+they were all at the Chiefs game because they're all friends with oh yeah oh yeah you know we can get to him through
+
+**[54:21]:**
+Taylor Swift that'll be much easier easy wait wait wait wait wait wait wait though there's like a whole like degrees
+
+**[54:28]:**
+of Kevin Bacon here I went to college I went to college with Travis
+
+**[54:34]:**
+Kelce I was I don't know him but like I went to UC the same time that he did he was on our football team when I was
+
+**[54:39]:**
+there so so here's Here's the the the uh 14,000 Degrees of Separation Taylor
+
+**[54:46]:**
+Swift has an Israeli bodyguard I have Israeli friends my Israeli friends are on the IDF one of my Israeli friends our
+
+**[54:55]:**
+Israeli friend might have the capability through a certain group within the IDF
+
+**[55:01]:**
+maybe be able to find the uh Israeli bodyguard that Israeli bodyguard can go
+
+**[55:07]:**
+back to Taylor Swift Taylor Swift can go and and this goes laterally okay this is kind of like uh
+
+**[55:16]:**
+you know it's it's kind of like it's kind of like pen testing you know you got to keep just moving from one to the next
+
+**[55:23]:**
+lateral movement we're laterally moving through Ryan's uh I really emailed I really emailed them some of these people
+
+**[55:29]:**
+that work for maximum effort live in Brooklyn oh there you go well you know
+
+**[55:35]:**
+you know everyone who lives in Brooklyn so you got to know someone who knows them I don't think I have any like cool
+
+**[55:40]:**
+connects with him the only like my only claim to fame is on Twitter John Santa follows me on Twitter for some reason
+
+**[55:47]:**
+don't know why um it is actually John Cena he wow God bless really he went he
+
+**[55:53]:**
+went it's the only reason the kids think I'm cool um but he went on like this following spree of people in infosec
+
+**[55:59]:**
+for some reason so there's like a handful of people that work in our industry that he follows for you know and I thought it was a joke at first and
+
+**[56:05]:**
+then I clicked on his profile and I was like oh God that's actually like so Joe I'm surprised Joe didn't Joe
+
+**[56:13]:**
+didn't get mad at me I emailed a certain very famous celebrity and I said something nasty
+
+**[56:20]:**
+that was in that was involved with our business this what and did you tell
+
+**[56:27]:**
+me about this Joe like I do not recall this Joe you know disav all knowledge of what
+
+**[56:33]:**
+what I'm gonna say is Canada oh jeez remember that what anyway
+
+**[56:42]:**
+uh he's like let's pivot yeah um next topic no yeah actually especially since
+
+**[56:49]:**
+we're now since we've done the stalking update um this kind of brings us to last call we're kind of getting to the end
+
+**[56:55]:**
+here oh you said last cold we didn't talk about about alcohol did we I can tell you what I'm drinking I
+
+**[57:02]:**
+filled my cup up really and I'm like trying to detox now man I've been traveling for work for the last two weeks you know how much I've drank I've
+
+**[57:07]:**
+drank more in the last two weeks than I think I have in the last year wow congratulations all right thank you what
+
+**[57:13]:**
+what do you have there I have Basil Hayden on the Rocks so drinking some
+
+**[57:19]:**
+bourbon today have you ever had Basil Hayden I have never heard of Basil Hayden I thought I'd least heard of most
+
+**[57:26]:**
+bourbon it is a really good bourbon um I will have to send you some because my
+
+**[57:31]:**
+brother lives in Kentucky and I was I've always been a whiskey person but I was
+
+**[57:36]:**
+exposed to some of the really good bourbon that they have there because it's everywhere and The Bourbon Trail is there and all kinds of stuff you know we
+
+**[57:43]:**
+should do a security cocktail hour and do the Bourbon Trail yes on the road there we go one
+
+**[57:49]:**
+because it would be fun to try Bourbon but two it would be hilarious to see the
+
+**[57:54]:**
+two New York guys in the hills of Kentucky because it is just oh we blend
+
+**[58:00]:**
+don't worry an adventure I sure you do I
+
+**[58:05]:**
+am once I open my M they know exactly where I'm from yeah and well they love it like people in New York or people in
+
+**[58:12]:**
+uh Kentucky are awesome but like yeah it's it's just funny very different different culture one of my companies I
+
+**[58:19]:**
+had to traveled to Arkansas though it was interesting because when I went to the airport the woman said oh can you
+
+**[58:25]:**
+use the kiosk she worked for the airline and I'm like she goes where you going I go Arkansas she goes is that an
+
+**[58:31]:**
+international destination and then the guy well be honestly say metaphorically I don't know
+
+**[58:37]:**
+so the guy next to me just sitting there going mhm I go no it's a state called Arkansas
+
+**[58:46]:**
+she's like never heard of it and they're flying there so she was a she was like a a kiosk uh
+
+**[58:54]:**
+Airline person at the line that says can you go to the kiosk please I don't know
+
+**[59:00]:**
+man people in New York don't realize that places outside of New York exist sometimes oh I I know they exist that is
+
+**[59:06]:**
+true well some stuff exists it depends on the person there's definitely some people that like New York is the center
+
+**[59:12]:**
+of the universe it is the center of the universe we know that already so but that being said um when I did go to
+
+**[59:18]:**
+Arkansas this is what I was bringing up I'm like how you doing to go oh what's up New Yorker the second open my mouth
+
+**[59:24]:**
+oh where you from I bet you're from Brooklyn I'm like N I grew up in Queens lived in Brooklyn and now I'm in ston
+
+**[59:32]:**
+they like yeah but you're from New York I can tell even the UK they made fun of me why why so so here's a quick funny
+
+**[59:39]:**
+story we had a little issue with a with a vendor we were dealing with a uh with a with a with a call center ad Adam
+
+**[59:46]:**
+about that Adam Adam was on call and so like he gets the call whatever and
+
+**[59:52]:**
+there's this big blow up the information doesn't go through whatever we have a problem with with this alert so I got to
+
+**[59:58]:**
+get involved I talk to the I talk to the manager and I'm like what the hell's going on what's the deal and the um
+1:00:06
+analyst on the phone who is in Canada claimed that he couldn't understand Adam's Brooklyn
+1:00:13
+accent he got an earful for that you know like what the I'm complain about I
+1:00:18
+understand him go take calls in PR roll because I'm gonna start prank calling you yeah you
+1:00:23
+can prank call me okay I'll be like I'll be like what is everyone else
+1:00:29
+drinking French 75 in in a Mickey Mouse cup nice a Mickey Mouse cup wow well
+1:00:36
+finished mine but I was drinking a scotch cuz we're uh we're doing bourbon shortly we we got another recording to
+1:00:42
+do so I want to get into scotch and I met a very nice gentleman from Wales
+1:00:47
+when I was at a conference last week and we had a long conversation about the best beer on Earth which is Guinness and
+1:00:53
+um also you know whiskey and stuff like that but he's a scotch connoisseur and he was
+1:00:59
+telling me all these kinds of scotch to try that I don't remember what any of them are not a scotch connoisseur it's
+1:01:06
+God it's very complicated you know I mean there's all this stuff I want to try it I like whiskey and whiskey bourbon are my favorites so like Scotch
+1:01:12
+is naturally kind of like the third Horseman there right third musketeer but I was going to try to be fancy and
+1:01:19
+say you know you're drinking guano I don't know if you know what guano is but that's
+1:01:25
+yeah yeah oh that's disgusting I'm not bad why would I not know what that is is that cannibalism I don't know
+1:01:33
+but have you heard of that coffee though that they make out of like it's like certain monkeys eat the beans and then
+1:01:40
+[ __ ] them out and they make coffee out of the beans that they like take out of their [ __ ] and it's supposedly like the best coffee in the world I'm not eating
+1:01:47
+monkey [ __ ] yeah I know it's really expensive it's one of those things where I was like I think I heard about it in
+1:01:52
+Singapore when I was there and now it's like I'm going to have to trust you up
+1:01:59
+if I would like try that like I don't know I'm kind of curious that sounds like a barbett that some marketing guys
+1:02:04
+get together and they say what is the most ridiculous most disgusting thing we can get people to pay a premium for yeah
+1:02:10
+monkey [ __ ] why not so like last weekend we were in southern Utah and we rented some side by sides you know those like
+1:02:16
+crazy like off-road like little things that people use we had some of those and
+1:02:21
+we were in southern Utah and we were on the dirt bike and I'm I'm the wor like you should not ever go with me on one of
+1:02:28
+those cuz I'll be like if we roll it we're fine as long as we don't like die right so but we we kept taking it off of
+1:02:34
+dirt bike jumps and my boyfriend was like are you serious you want to do this I was like yeah let's do it like what are you scared and like obviously you
+1:02:41
+know when you say that to someone that's just egging it on especially for someone as competitive as he is so wow we went
+1:02:47
+over a couple jumps definitely tipped did not roll but tipped a couple times
+1:02:53
+and uh the it the night ended with uh one of my friends we found this little Lake thing
+1:02:59
+that definitely had like quicksand at the bottom oh God and I was like you
+1:03:06
+should try and drive yours through that one of my friends he just bought a new machine and those things are expensive right like they I don't know if you know how much they cost but they're like 35
+1:03:12
+Grand how much 35 oh I I thought the expense they cost like what a car costs
+1:03:17
+like literally I just bought a new SUV and my SUV cost that so I was like why why are people spending 35, 40 Grand on
+1:03:24
+them dune buggy and drive it into quicksand that makes sense you know but I was like you should see if you can drive it through the lake and not get
+1:03:30
+stuck and he was like okay and like and he got stuck so I have a picture of it
+1:03:35
+it's really funny um I can pull it up and show it to you actually on here because that's hilarious but um a
+1:03:42
+picture of it in all of its Glory sitting in the water um beautiful scenery
+1:03:49
+though nice oh wow I I I um oh man I
+1:03:55
+invented a dune buggy in the Middle East oh fun went through a desert and stuff
+1:04:01
+with my family was really cool and then you pick a place to eat lunch and we ate lunch and uh it was very nice I um the
+1:04:08
+problem is people don't realize when you're renting a Dune buggy and you're going in the desert you got to wear
+1:04:16
+goggles we had to get goggles cuz and my goggles were covered yeah covered I had
+1:04:21
+to keep them WIP I had to stop wipe my goggles stop my goggles even out there it was like that just with the red dirt
+1:04:27
+and stuff it's Utah's crazy cuz I live up North so I'm actually like on the bench of a mountain so um I live like
+1:04:33
+half an hour from Snow Basin so lots of skiing and fun stuff out here but then if you go that's 3 hours south just all
+1:04:40
+the Mesa and we ride outside of Zion so it's a cool state if you like doing stuff Outdoors if you guys are ever out
+1:04:45
+here and want to get into some trouble let me know yeah we we do our outdoor stuff you know yeah rooftop bars you
+1:04:52
+know New York I'll come out there and then we'll then we'll go to the gym and fight sounds good there we go all right
+1:04:59
+fighting on the road okay or we can go out there and fight that's what I'm saying nature fight yeah nature fight
+1:05:06
+was get in there we we'll get like four cones big tall con we do on the edge of a cliff that's it no when why I won't do
+1:05:14
+in the middle of nowhere unsanctioned uncivilized so if I hit you you would just be able to fly off the cliff yeah
+1:05:22
+if you hit me I'm going to Plum it to my death we can put a parachute on you or something yeah I safety first I can't even
+1:05:30
+I can't even operate a remote control I think we're there right Joe we
+1:05:36
+we we this a good episode here huh all right location shoots there we go we need a
+1:05:42
+sponsor get Ryan on the horn all right Ryan dune buggies dcom there we go all
+1:05:49
+right Gabby Gabsmash Thank you so much for joining this has been a blast a lot
+1:05:56
+of fun she has a she has a what's a clo plant in the back I have like 12 of those a plant what oh she has succulent
+1:06:02
+or one of these guys Alo plants is an aloe yeah I love Aloe plants so the Aloe
+1:06:09
+PL I know we were supposed to end it right here but the Alo eplants have pups Joe they have pups they have pups so
+1:06:14
+little they have little pups in the plant and they keep on reproducing so we've been trying to give away aloe do
+1:06:20
+you want one is that like a thing they put in Czech off's year that made him like you know no that Al plants are
+1:06:25
+awesome though cuz if you ever have sunburn like you can break off a leaf of the aloe plant and just like the rub the
+1:06:31
+gel on you and it's the same thing that's in the sun like Aloe after sun Aloe it's the best I was going to say why did why do that when you can go to the the
+1:06:38
+drugstore but whatever you keep them reproducing and I have now I have like 10 Aloe plants in my house the all one
+1:06:45
+Aloe plant's like this big you got invasive species man you better watch out it's going to take over you guys got
+1:06:51
+Lantern flies we can have it in we got those those things are nasty I've been
+1:06:57
+eating them in order to stop them oh God all right now you're gr okay all right
+1:07:02
+on that note the lantern flies Okay well Gabby thanks again for
+1:07:08
+joining we have had a blast yes thank you happy Halloween everyone yeah happy Halloween G smash
+1:07:16
+wings that wings I can't show them well here there you go all right take care
+1:07:22
+all right see y
+1:07:33
+yeah

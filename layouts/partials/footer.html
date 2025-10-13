@@ -1,0 +1,48 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Security Cocktail Hour</h4>
+        <p>{{ .Site.Params.description }}</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Episodes</h4>
+        <ul>
+          <li><a href="{{ "episodes" | relURL }}">All Episodes</a></li>
+          <li><a href="{{ "episodes" | relURL }}">Recent</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>About</h4>
+        <ul>
+          <li><a href="{{ "about" | relURL }}">About the Show</a></li>
+          <li><a href="{{ "contact" | relURL }}">Contact</a></li>
+          <li><a href="{{ "resources" | relURL }}">Resources</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Listen On</h4>
+        <ul>
+          <li><a href="https://youtube.com/@SecCocktailHour" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://open.spotify.com/show/7gWweI6mL1oVRU5gKNzzTy" target="_blank" rel="noopener">Spotify</a></li>
+          <li><a href="https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200" target="_blank" rel="noopener">Apple Podcasts</a></li>
+          <li><a href="https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour" target="_blank" rel="noopener">Amazon Music</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ now.Year }} Security Mixologists LLC. All rights reserved. |
+        <a href="{{ "privacy" | relURL }}">Privacy Policy</a> |
+        <a href="{{ "terms" | relURL }}">Terms of Service</a>
+      </p>
+      <p>
+        <a href="https://twitter.com/SecCocktailHour" target="_blank" rel="noopener">@SecCocktailHour</a> |
+        <a href="mailto:feedback@securitycocktailhour.com">feedback@securitycocktailhour.com</a>
+      </p>
+    </div>
+  </div>
+</footer>

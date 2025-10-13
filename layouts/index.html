@@ -1,0 +1,150 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero section" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%);">
+  <div class="container" style="color: white; text-align: center; padding: 4rem 1rem;">
+    <h1 style="color: white; font-size: 3rem; margin-bottom: 1rem;">Security Cocktail Hour Podcast</h1>
+    <p style="font-size: 1.25rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+      Cybersecurity pros talking shop at the virtual bar.
+    </p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="https://youtube.com/@SecCocktailHour" class="btn btn-primary" target="_blank" rel="noopener">Listen Now</a>
+      <a href="{{ "episodes" | relURL }}" class="btn btn-secondary" style="background: white; color: #436098; border-color: white;">Browse Episodes</a>
+    </div>
+
+    <!-- Platform Icons -->
+    <div style="margin-top: 2rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+      <a href="https://youtube.com/@SecCocktailHour" target="_blank" rel="noopener" style="color: white; opacity: 0.9;">YouTube</a>
+      <a href="https://open.spotify.com/show/7gWweI6mL1oVRU5gKNzzTy" target="_blank" rel="noopener" style="color: white; opacity: 0.9;">Spotify</a>
+      <a href="https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200" target="_blank" rel="noopener" style="color: white; opacity: 0.9;">Apple Podcasts</a>
+      <a href="https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour" target="_blank" rel="noopener" style="color: white; opacity: 0.9;">Amazon Music</a>
+    </div>
+  </div>
+</section>
+
+<!-- Latest Episode Section -->
+<section class="section">
+  <div class="container">
+    <h2>Latest Episode</h2>
+    {{ $latest := where .Site.RegularPages "Type" "episodes" | first 1 }}
+    {{ range $latest }}
+      <div class="card" style="max-width: 800px; margin: 0 auto;">
+        {{ with .Params.image }}
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image">
+        {{ end }}
+        <div class="card-content">
+          {{ with .Params.category }}
+            <span class="category-tag">{{ . }}</span>
+          {{ end }}
+          <h3 class="card-title">{{ .Title }}</h3>
+          <p class="card-meta">
+            {{ with .Params.guest }}{{ . }} | {{ end }}
+            {{ .Date.Format "January 2, 2006" }}
+            {{ with .Params.duration }} | {{ . }}{{ end }}
+          </p>
+          <div class="card-description">
+            {{ $content := .Content }}
+            {{ $content = replaceRE `(?s)<h2[^>]*>Resources Mentioned</h2>.*` "" $content }}
+            {{ $content = replaceRE `(?s)<h2[^>]*>Full Transcript</h2>.*` "" $content }}
+            {{ $content | safeHTML }}
+          </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="{{ .Permalink }}" class="btn btn-primary">Show Notes</a>
+            <a href="https://youtube.com/@SecCocktailHour" class="btn btn-secondary" target="_blank" rel="noopener">Listen Now</a>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</section>
+
+<!-- Recent Episodes Grid -->
+<section class="section" style="background: #F5F5F5;">
+  <div class="container">
+    <h2>Recent Episodes</h2>
+    <div class="grid grid-3">
+      {{ $recent := where .Site.RegularPages "Type" "episodes" | first 6 }}
+      {{ range after 1 $recent }}
+        <article class="card episode-card">
+          {{ with .Params.image }}
+            <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="card-image" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); display: none;"></div>
+          {{ else }}
+            <div class="card-image" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%);"></div>
+          {{ end }}
+          <div class="card-content">
+            {{ with .Params.category }}
+              <span class="category-tag">{{ . }}</span>
+            {{ end }}
+            <h3 class="card-title">{{ .Title }}</h3>
+            <p class="card-meta">
+              {{ with .Params.guest }}{{ . }} | {{ end }}
+              {{ with .Params.duration }}{{ . }}{{ end }}
+            </p>
+            <p class="card-description">{{ with .Params.description }}{{ . | truncate 120 }}{{ else }}{{ $.Summary | truncate 120 }}{{ end }}</p>
+            <a href="{{ .Permalink }}" class="btn btn-primary">Listen Now</a>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="{{ "episodes" | relURL }}" class="btn btn-secondary">View All Episodes</a>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="align-items: center; gap: 3rem;">
+      <div>
+        <h2>About the Show</h2>
+        <p>
+          Cybersecurity is a diverse and fast-changing field. Reading and training are good,
+          but there's nothing like hearing what's really happening from the people who are doing it.
+          We created the Security Cocktail Hour Podcast to bring you those conversations with practitioners
+          who share their journeys, insights, and lessons learned beyond the headlines.
+        </p>
+        <p>
+          Whether you're building your security career, leading a team, or working alongside security pros,
+          join us for candid conversations with pros across the field.
+        </p>
+        <a href="{{ "about" | relURL }}" class="btn btn-secondary">Learn More</a>
+      </div>
+      <div style="text-align: center;">
+        <p style="font-weight: 600; margin-bottom: 1rem;">Hosted by</p>
+        <p><strong>Joe Patti</strong> &amp; <strong>Adam Roth</strong></p>
+        <p style="font-size: 0.875rem; color: rgba(45, 45, 45, 0.7);">
+          Hosts Joe Patti and Adam Roth have spent their careers in cybersecurity navigating everything from SOC operations to executive leadership. Now they're sharing the lessons they've learned along the way—and bringing on guests to share theirs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Email Signup CTA -->
+<section class="section" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white;">
+  <div class="container" style="max-width: 600px; text-align: center;">
+    <h2 style="color: white;">Join Our Newsletter</h2>
+    <p style="margin-bottom: 2rem;">
+      Get exclusive insights, show news and more delivered to your inbox.
+    </p>
+    <form action="#" method="POST" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+      <input
+        type="email"
+        name="email"
+        placeholder="Your email address"
+        required
+        style="flex: 1; min-width: 250px;"
+      >
+      <button type="submit" class="btn btn-primary" style="background: white; color: #436098;">
+        Subscribe
+      </button>
+    </form>
+    <p style="font-size: 0.75rem; margin-top: 1rem; opacity: 0.8;">
+      We respect your privacy. Unsubscribe at any time.
+    </p>
+  </div>
+</section>
+
+{{ end }}
