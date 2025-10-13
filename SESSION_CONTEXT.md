@@ -1,19 +1,18 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: October 8, 2025
+**Last Updated**: October 13, 2025
 **Hugo Version**: v0.151.0
-**Session Status**: Ready for staging deployment
+**Session Status**: Deployed to Netlify staging - ready for team review
 
 ---
 
 ## Project Overview
 
-Building a static website for the Security Cocktail Hour podcast using Hugo static site generator. The site will be deployed to GoDaddy cPanel hosting as static HTML files.
+Building a static website for the Security Cocktail Hour podcast using Hugo static site generator. The site is currently deployed to Netlify for staging/testing and will ultimately be deployed to GoDaddy cPanel hosting as static HTML files.
 
-**Live Dev Server**: http://localhost:1313/
-**Hugo Server Processes**:
-- Background shell a90180 (running)
-- Background shell 23d25d (running)
+**Staging Site**: https://[your-site-name].netlify.app/
+**GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
+**Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
 
 ---
 
@@ -44,6 +43,7 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
 - Episode images (43 of 64 present, graceful fallbacks for missing)
 - Host photos (Joe Patti, Adam Roth)
 - Logo and branding assets
+- Placeholder sections removed from episode pages (Key Takeaways, Resources Mentioned)
 
 **Technical:**
 - SEO optimization (meta tags, Open Graph, schema.org markup)
@@ -51,6 +51,14 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
 - Lazy loading images
 - Fallback gradient placeholders for missing episode images
 - Client-side search/filter with vanilla JavaScript
+- Relative URLs for internal navigation (works on any domain)
+- Absolute URLs preserved for SEO/social sharing
+
+**Deployment:**
+- Netlify staging environment configured
+- GitHub repository with automatic deployments
+- Netlify build configuration (`netlify.toml`)
+- Git workflow established
 
 ### ⏳ Pending Integration
 
@@ -59,15 +67,158 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
 - Contact form submission (needs Formspree or PHP handler)
 - Google Analytics (optional, can add anytime)
 
-### ❌ Known Issues
+### ✅ Fixed Issues
 
-**Episode 7 Display Problem** (Deferred for later investigation):
-- Episode 7 ("The Mandatory AI Security Episode") displays as truncated "Episode ..." on homepage cards
-- Markdown file is correct
-- Not a browser cache issue
-- Attempted fix: Hugo server restart - did not resolve
-- Potential causes: Hugo summary generation, character encoding, front matter parsing
-- **Action**: Investigate later, possibly check Hugo's `.Summary` generation settings
+**Episode 7 Display Problem** (RESOLVED - October 13, 2025):
+- **Issue**: Episode 7 description was not truncating on homepage/episode list
+- **Root Cause**: Episode 7's description (104 chars) was shorter than the 120-char truncation limit, plus templates were using Hugo's auto-generated `.Summary` instead of explicit `.Params.description`
+- **Fix**: Changed templates to use `.Params.description` (from front matter) instead of `.Summary`
+- **Files Changed**:
+  - `layouts/episodes/list.html:64`
+  - `layouts/index.html:52,85`
+  - `layouts/episodes/single.html:161-162`
+
+**Absolute URL Problem** (RESOLVED - October 13, 2025):
+- **Issue**: Internal navigation links used `.Permalink` (absolute URLs with production domain), causing 404s on staging
+- **Fix**: Changed internal navigation to `.RelPermalink` (relative URLs) while keeping absolute URLs for SEO/social sharing
+- **Result**: Site now works on any domain (staging, production, localhost)
+
+**Placeholder Content** (RESOLVED - October 13, 2025):
+- **Issue**: 55 episode pages had placeholder sections for "Key Takeaways" and "Resources Mentioned"
+- **Fix**: Removed all placeholder sections using batch script
+- **Preserved**: 4 episodes with actual Key Takeaways content (episodes 53, 59, 60, 61)
+- **Result**: 715 lines of placeholder content removed
+
+---
+
+## Git & Netlify Workflow
+
+### Repository Information
+
+**GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
+**Branch**: `main`
+**Remote**: `origin`
+
+### Making Changes & Deploying
+
+Netlify is configured for **automatic deployments**. Every push to the `main` branch triggers a new build and deployment.
+
+**Workflow:**
+
+1. **Make changes locally**:
+   ```bash
+   # Navigate to project directory
+   cd "/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/website/redesign 2025-10/security-cocktail-hour-website"
+
+   # Start dev server to preview changes
+   hugo server -D
+   # View at http://localhost:1313/
+   ```
+
+2. **Test changes locally**:
+   - Browse the site at http://localhost:1313/
+   - Test all pages, navigation, search/filter
+   - Check responsive design (resize browser)
+
+3. **Commit and push changes**:
+   ```bash
+   # Stage all changes
+   git add -A
+
+   # Commit with descriptive message
+   git commit -m "Your descriptive commit message"
+
+   # Push to GitHub
+   git push
+   ```
+
+4. **Automatic deployment**:
+   - Netlify detects the push automatically
+   - Builds site using `hugo --minify` (from `netlify.toml`)
+   - Deploys to staging URL
+   - Takes ~1-2 minutes
+
+5. **Verify deployment**:
+   - Go to https://app.netlify.com/
+   - Check deployment status (Building → Published)
+   - Test staging site
+
+### Netlify Dashboard Access
+
+**URL**: https://app.netlify.com/
+**Site**: Security Cocktail Hour Website
+
+**Dashboard features:**
+- View deployment history
+- See build logs
+- Configure custom domain
+- Monitor site analytics
+- Manage environment variables
+
+### Useful Git Commands
+
+```bash
+# Check current status
+git status
+
+# View commit history
+git log --oneline -10
+
+# See what changed in a file
+git diff path/to/file
+
+# Undo local changes (before commit)
+git checkout -- path/to/file
+
+# View remote URL
+git remote -v
+
+# Pull latest changes
+git pull
+```
+
+### Build Configuration
+
+**File**: `netlify.toml`
+
+```toml
+[build]
+  command = "hugo --minify"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.151.0"
+  HUGO_ENV = "production"
+```
+
+This file tells Netlify:
+- How to build the site (`hugo --minify`)
+- Which directory to deploy (`public/`)
+- Which Hugo version to use (0.151.0)
+
+### Rollback Procedure
+
+If a deployment breaks something:
+
+1. **Via Netlify Dashboard**:
+   - Go to https://app.netlify.com/
+   - Click "Deploys" tab
+   - Find the last good deployment
+   - Click "Publish deploy" to roll back
+
+2. **Via Git**:
+   ```bash
+   # View recent commits
+   git log --oneline -10
+
+   # Revert to previous commit (creates new commit)
+   git revert HEAD
+   git push
+
+   # Or reset to specific commit (rewrite history - use with caution)
+   git reset --hard <commit-hash>
+   git push --force
+   ```
 
 ---
 
@@ -131,7 +282,10 @@ Previous color palette saved in: `static/css/main.css.backup`
 
 ```
 /
-├── hugo.toml                 # Main configuration
+├── .git/                    # Git repository
+├── .gitignore               # Git ignore file
+├── netlify.toml             # Netlify build configuration
+├── hugo.toml                # Main Hugo configuration
 ├── static/
 │   ├── css/
 │   │   ├── main.css         # Design system with CSS variables
@@ -141,7 +295,7 @@ Previous color palette saved in: `static/css/main.css.backup`
 │       ├── logo.png
 │       ├── logo-white.png
 │       ├── joe-patti.jpg
-│       └── adam-hertzel.jpg
+│       └── adam-roth.jpg
 ├── layouts/
 │   ├── _default/
 │   │   ├── baseof.html      # Master template
@@ -164,6 +318,7 @@ Previous color palette saved in: `static/css/main.css.backup`
 │   ├── sch_website_requirements.md
 │   ├── hosting_requirements.md
 │   └── SESSION_CONTEXT.md   # This file
+├── public/                  # Generated site (ignored by git)
 └── convert_episodes.py      # Python script for CSV to markdown conversion
 ```
 
@@ -228,12 +383,7 @@ Created `convert_episodes.py` to batch convert 7 CSV files to Hugo markdown form
 **Episodes 1-10**: CSV had empty title column, guest field contained actual title
 - Removed "Episode X:" prefix from titles
 - Cleared guest and guest_bio fields for episodes without guests
-- Fixed with batch sed commands:
-  ```bash
-  sed -i '' 's/^title: "Episode [0-9]*: /title: "/' "$file"
-  sed -i '' 's/^guest: ".*"$/guest: ""/' "$file"
-  sed -i '' 's/^guest_bio: ".*"$/guest_bio: ""/' "$file"
-  ```
+- Fixed with batch sed commands
 
 **Episode 8**: Guest field incorrect
 - Changed from "Small Business Security" to "Sal Toner"
@@ -292,6 +442,22 @@ Location: `layouts/episodes/list.html`
 - Descriptive page titles and meta descriptions
 - Semantic HTML structure
 
+### 5. Relative vs Absolute URLs
+
+**Internal Navigation** (uses `.RelPermalink`):
+- Episode list "Listen Now" buttons
+- Homepage episode cards
+- Related episodes links
+- Navigation menu links
+
+**SEO/Social Sharing** (uses `.Permalink`):
+- Open Graph `og:url` tags
+- Canonical links
+- Schema.org JSON-LD
+- Social share buttons (Twitter, LinkedIn, Email)
+
+This ensures the site works on any domain (staging, production, localhost) while maintaining proper SEO.
+
 ---
 
 ## Hugo Configuration
@@ -301,32 +467,38 @@ Location: `layouts/episodes/list.html`
 ```toml
 baseURL = 'https://securitycocktailhour.com/'
 languageCode = 'en-us'
-title = 'Security Cocktail Hour'
+title = 'Security Cocktail Hour Podcast'
 
 [params]
-  description = "Expanding cybersecurity knowledge beyond your specialty, one conversation at a time."
+  description = "Cybersecurity pros talking shop at the virtual bar."
+  author = "Joe Patti and Adam Roth"
 
 [menu]
   [[menu.main]]
-    name = "Episodes"
-    url = "/episodes/"
-    weight = 1
+    name = 'Episodes'
+    pageRef = '/episodes'
+    weight = 10
   [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
+    name = 'About'
+    pageRef = '/about'
+    weight = 20
   [[menu.main]]
-    name = "Resources"
-    url = "/resources/"
-    weight = 3
+    name = 'Resources'
+    pageRef = '/resources'
+    weight = 30
   [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 4
+    name = 'Contact'
+    pageRef = '/contact'
+    weight = 40
 
 [taxonomies]
   category = 'categories'
   tag = 'tags'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 ```
 
 ---
@@ -389,36 +561,30 @@ Desktop:                  1200px+
 
 ## Hugo Server Management
 
-### Current Status
+### Start Development Server
 
-Two background processes running:
-- Process a90180: Initial server
-- Process 23d25d: Restarted server (attempted fix for episode 7 issue)
-
-### Management Commands
-
-**Check running processes:**
 ```bash
-/bashes
-```
-
-**View output:**
-Use BashOutput tool with bash_id
-
-**Kill process:**
-Use KillShell tool with shell_id
-
-**Start server:**
-```bash
+cd "/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/website/redesign 2025-10/security-cocktail-hour-website"
 hugo server -D
 ```
 
-**Build for production:**
+Server runs at: http://localhost:1313/
+
+### Build for Production
+
 ```bash
 hugo --minify
 ```
 
 Output directory: `public/`
+
+### Check Hugo Version
+
+```bash
+hugo version
+```
+
+Current: `hugo v0.151.0+extended+withdeploy darwin/arm64`
 
 ---
 
@@ -438,27 +604,39 @@ This creates a new episode file with the correct front matter template.
 1. Edit markdown file in `content/episodes/`
 2. Hugo dev server auto-reloads
 3. Check changes at http://localhost:1313/
+4. When satisfied, commit and push to deploy to staging
 
 ### Adding Episode Images
 
 1. Add image file to `static/images/episodes/`
 2. Update episode markdown: `image: "/images/episodes/episode-XXX.png"`
 3. Recommended format: PNG or JPG, optimized for web
+4. Commit and push changes
 
 ---
 
-## Deployment Process
+## Deployment Options
 
-### Build for Production
+### Staging (Current - Netlify)
 
+**Automatic deployment from GitHub:**
+1. Push changes to GitHub `main` branch
+2. Netlify automatically builds and deploys
+3. View at staging URL
+4. Build time: ~1-2 minutes
+
+**Manual deployment from local:**
+1. Build site: `hugo --minify`
+2. Use Netlify CLI: `netlify deploy --prod` (requires setup)
+
+### Production (Future - GoDaddy)
+
+**Build for Production:**
 ```bash
-cd /Users/joe/Library/CloudStorage/Dropbox/Security\ Cocktail\ Hour/website/redesign\ 2025-10/security-cocktail-hour-website
 hugo --minify
 ```
 
-This generates optimized static files in the `public/` directory.
-
-### What to Upload to GoDaddy
+**What to Upload to GoDaddy:**
 
 Upload **only** the contents of the `public/` directory to your web root:
 
@@ -475,48 +653,14 @@ public/
 └── robots.txt
 ```
 
-### What NOT to Upload
-
+**What NOT to Upload:**
 - `content/` directory (source markdown)
 - `layouts/` directory (Hugo templates)
 - `static/` directory (pre-build assets)
 - `hugo.toml` (configuration)
 - `docs/` directory
 - `.git/` directory
-
----
-
-## Staging and Testing
-
-### Recommended Staging Setup
-
-**Option 1: Netlify (Easiest)**
-- Free tier
-- Automatic builds from Git
-- Free SSL
-- Custom subdomain
-- Deploy previews
-- Setup time: 5 minutes
-
-**Option 2: GoDaddy Subdomain**
-- Create `staging.securitycocktailhour.com`
-- Same environment as production
-- Manual deployment
-- Setup time: 30 minutes
-
-### Pre-Launch Checklist
-
-- [ ] Test all pages on staging
-- [ ] Test contact form (with backend integration)
-- [ ] Test newsletter signup (with backend integration)
-- [ ] Verify mobile responsiveness
-- [ ] Test in Chrome, Firefox, Safari
-- [ ] Check page load speed (< 3 seconds)
-- [ ] Verify all images load
-- [ ] Test search/filter functionality
-- [ ] Proofread all content
-- [ ] Test social sharing
-- [ ] Submit sitemap to Google Search Console
+- `netlify.toml` (Netlify-specific)
 
 ---
 
@@ -600,6 +744,13 @@ Check:
 - Test with valid email address
 - Check service dashboard (Formspree, Mailchimp)
 
+**Netlify Build Failing**
+
+- Check Netlify dashboard for build logs
+- Verify Hugo version in `netlify.toml` matches local
+- Check for syntax errors in templates
+- Verify all file paths are correct
+
 ---
 
 ## File Locations Reference
@@ -608,6 +759,8 @@ Check:
 
 **Configuration:**
 - `hugo.toml` - Main Hugo config
+- `netlify.toml` - Netlify build config
+- `.gitignore` - Git ignore rules
 
 **Templates:**
 - `layouts/_default/baseof.html` - Master template
@@ -628,7 +781,7 @@ Check:
 - `docs/sch_design_spec.md` - Design specification
 - `docs/sch_website_requirements.md` - Requirements
 - `docs/hosting_requirements.md` - Hosting and deployment guide
-- `docs/SESSION_CONTEXT.md` - This file
+- `SESSION_CONTEXT.md` - This file (in root)
 
 **Scripts:**
 - `convert_episodes.py` - CSV to markdown converter
@@ -637,23 +790,43 @@ Check:
 
 ## Next Steps
 
-### Immediate (Before Launch)
+### Current (Team Review Phase)
 
-1. **Set up staging environment**
-   - Recommended: Netlify for easy testing
-   - Alternative: GoDaddy subdomain
+1. **Review staging site**
+   - Test all pages and functionality
+   - Check mobile responsiveness
+   - Verify content accuracy
+   - Test search/filter on episodes page
+   - Review episode pages for completeness
 
-2. **Integrate backend services**
+2. **Gather feedback**
+   - Collect feedback from team members
+   - Create list of issues or changes needed
+   - Prioritize fixes and enhancements
+
+3. **Make adjustments**
+   - Use Git workflow to make changes
+   - Test locally before pushing
+   - Verify changes on staging after deployment
+
+### Before Production Launch
+
+1. **Integrate backend services**
    - Newsletter: Mailchimp (or alternative)
    - Contact form: Formspree (or alternative)
    - Test both thoroughly on staging
 
-3. **Final testing**
-   - Complete pre-launch checklist
-   - Test on multiple devices and browsers
-   - Fix any issues found
+2. **Final testing**
+   - Test all pages on staging
+   - Verify mobile responsiveness
+   - Test in Chrome, Firefox, Safari
+   - Check page load speed (< 3 seconds)
+   - Verify all images load
+   - Test search/filter functionality
+   - Proofread all content
+   - Test social sharing
 
-4. **Deploy to production**
+3. **Deploy to production**
    - Build with `hugo --minify`
    - Upload `public/` to GoDaddy
    - Test live site
@@ -668,7 +841,7 @@ Check:
 
 2. **Content**
    - Add missing episode images (21 episodes)
-   - Complete episode show notes (highlights, key takeaways, resources)
+   - Add episode show notes as time permits
    - Regular episode updates
 
 3. **Features (Phase 2)**
@@ -676,10 +849,6 @@ Check:
    - Enhanced search features
    - Additional resources
    - Performance optimizations
-
-4. **Resolve Outstanding Issues**
-   - Investigate Episode 7 display problem
-   - Check for any other similar issues
 
 ---
 
@@ -695,13 +864,17 @@ The color palette has been changed twice during development:
 
 Backup of previous palette available in `static/css/main.css.backup`.
 
-### Episode 7 Issue
-
-This issue is **deferred** and does not block launch. Episode 7 shows truncated "Episode ..." on homepage despite correct markdown. Investigate Hugo summary generation settings after launch.
-
 ### Form Placeholders
 
-Contact form and newsletter subscriptions are **placeholder forms only**. They display correctly but do not function until backend services are integrated. This is **expected** and will be resolved during staging setup.
+Contact form and newsletter subscriptions are **placeholder forms only**. They display correctly but do not function until backend services are integrated. This is **expected** and will be resolved before production launch.
+
+### Git Best Practices
+
+- Always test changes locally before pushing
+- Write descriptive commit messages
+- Commit related changes together
+- Push to GitHub when ready to deploy to staging
+- Don't push broken code (test first!)
 
 ---
 
@@ -710,13 +883,16 @@ Contact form and newsletter subscriptions are **placeholder forms only**. They d
 **Project Owner**: Joe
 **Project Location**: `/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/website/redesign 2025-10/security-cocktail-hour-website`
 **Hugo Version**: v0.151.0
-**Last Session**: October 8, 2025
+**Last Session**: October 13, 2025
 
 ---
 
 ## Quick Reference Commands
 
 ```bash
+# Navigate to project
+cd "/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/website/redesign 2025-10/security-cocktail-hour-website"
+
 # Start development server
 hugo server -D
 
@@ -729,15 +905,24 @@ hugo new episodes/episode-XX-title-slug.md
 # Check Hugo version
 hugo version
 
-# View directory structure
-tree -L 2 -I 'public|resources'
+# Git workflow
+git status                    # Check what changed
+git add -A                    # Stage all changes
+git commit -m "Description"   # Commit changes
+git push                      # Push to GitHub (triggers Netlify deploy)
 
 # Check running Hugo servers
 ps aux | grep hugo
+
+# Install/update Netlify CLI
+npm install -g netlify-cli
+
+# Login to Netlify
+netlify login
 ```
 
 ---
 
 **Session Context Complete**
-**Status**: Ready for staging deployment and backend integration
-**Next Action**: Set up staging environment and integrate Mailchimp/Formspree
+**Status**: Deployed to Netlify staging - awaiting team review
+**Next Action**: Team reviews staging site, provides feedback for any adjustments needed
