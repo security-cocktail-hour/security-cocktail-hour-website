@@ -27,6 +27,15 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QL8F8JKNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8QL8F8JKNR');
+  </script>
+
   {{ block "head" . }}{{ end }}
 </head>
 <body>
