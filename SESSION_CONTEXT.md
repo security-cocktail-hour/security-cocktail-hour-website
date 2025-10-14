@@ -71,10 +71,20 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
 - Forms include honeypot field for bot protection
 - Submissions open in new tab for Mailchimp confirmation
 
+**Contact Form Integration:**
+- Formspree account created and configured
+- Contact form integrated with AJAX submission
+- Form endpoint: https://formspree.io/f/mrbyrgrv
+- Features:
+  - Name, email, subject dropdown, message fields
+  - Real-time success/error messages
+  - Loading state during submission
+  - No page redirect (stays on same page)
+  - Proper error handling with fallback to direct email
+
 ### ⏳ Pending Integration
 
 **Backend Services (waiting for hosting setup):**
-- Contact form submission (needs Formspree or PHP handler)
 - Google Analytics (optional, can add anytime)
 
 ### ✅ Fixed Issues
@@ -114,6 +124,21 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
   - Forms open in new tab for confirmation
   - Email field name changed to "EMAIL" (Mailchimp standard)
 - **Result**: All newsletter forms now fully functional with Mailchimp
+
+**Contact Form Integration** (COMPLETED - October 14, 2025):
+- **Task**: Integrate Formspree for contact form submissions
+- **Implementation**: Updated contact form with Formspree endpoint and AJAX submission handler
+- **Location**: Contact page ([layouts/_default/contact.html:22](layouts/_default/contact.html#L22))
+- **Features Added**:
+  - Formspree form action (https://formspree.io/f/mrbyrgrv)
+  - AJAX submission with fetch API
+  - Real-time success/error messages displayed on page
+  - Loading state ("Sending...") during submission
+  - Form stays on same page (no redirect)
+  - Proper error handling with user-friendly messages
+  - Fallback message with direct email if submission fails
+- **Form Fields**: Name, Email, Subject (dropdown with 6 options), Message
+- **Result**: Contact form fully functional with professional UX
 
 ---
 
