@@ -19,7 +19,7 @@
       <!-- Contact Form -->
       <div>
         <h2>Send Us a Message</h2>
-        <form action="#" method="POST" class="contact-form">
+        <form action="https://formspree.io/f/mrbyrgrv" method="POST" class="contact-form">
 
           <div class="form-group">
             <label for="name">Name *</label>
@@ -48,6 +48,9 @@
             <label for="message">Message *</label>
             <textarea id="message" name="message" rows="6" required></textarea>
           </div>
+
+          <!-- Formspree status messages will appear here -->
+          <div id="form-status" style="margin-bottom: 1rem;"></div>
 
           <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
 
@@ -108,25 +111,50 @@
 
 {{ define "scripts" }}
 <script>
-// Form submission handler (placeholder - integrate with your backend)
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
+// Enhanced Formspree submission handler with AJAX
+document.querySelector('.contact-form').addEventListener('submit', async function(e) {
   e.preventDefault();
 
-  // Get form data
-  const formData = new FormData(e.target);
+  const form = e.target;
+  const formData = new FormData(form);
+  const submitButton = form.querySelector('button[type="submit"]');
+  const statusDiv = document.getElementById('form-status');
 
-  // TODO: Replace with your actual form submission logic
-  // Options:
-  // 1. Formspree (https://formspree.io)
-  // 2. Netlify Forms
-  // 3. Custom backend endpoint
-  // 4. Email service API
+  // Disable submit button and show loading state
+  submitButton.disabled = true;
+  submitButton.textContent = 'Sending...';
+  statusDiv.innerHTML = '';
 
-  console.log('Form submitted with data:', Object.fromEntries(formData));
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
 
-  // Show success message (replace with actual submission)
-  alert('Thank you for your message! We\'ll get back to you within 2-3 business days.');
-  e.target.reset();
+    if (response.ok) {
+      // Success
+      statusDiv.innerHTML = '<div style="padding: 1rem; background: #d4edda; color: #155724; border-radius: 4px; margin-bottom: 1rem;">✓ Thank you! Your message has been sent successfully. We\'ll get back to you within 2-3 business days.</div>';
+      form.reset();
+    } else {
+      // Error from Formspree
+      const data = await response.json();
+      if (data.errors) {
+        statusDiv.innerHTML = '<div style="padding: 1rem; background: #f8d7da; color: #721c24; border-radius: 4px; margin-bottom: 1rem;">⚠ ' + data.errors.map(error => error.message).join(', ') + '</div>';
+      } else {
+        throw new Error('Form submission failed');
+      }
+    }
+  } catch (error) {
+    // Network or other error
+    statusDiv.innerHTML = '<div style="padding: 1rem; background: #f8d7da; color: #721c24; border-radius: 4px; margin-bottom: 1rem;">⚠ There was a problem sending your message. Please try again or email us directly at feedback@securitycocktailhour.com</div>';
+  } finally {
+    // Re-enable submit button
+    submitButton.disabled = false;
+    submitButton.textContent = 'Send Message';
+  }
 });
 </script>
 {{ end }}
