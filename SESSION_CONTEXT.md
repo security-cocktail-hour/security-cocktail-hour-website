@@ -60,10 +60,20 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
 - Netlify build configuration (`netlify.toml`)
 - Git workflow established
 
+**Newsletter Integration:**
+- Mailchimp account created with audience
+- Newsletter forms integrated on all pages:
+  - Homepage newsletter section
+  - Footer newsletter form (all pages)
+  - Episode page sidebar
+  - About page
+  - Resources page
+- Forms include honeypot field for bot protection
+- Submissions open in new tab for Mailchimp confirmation
+
 ### ⏳ Pending Integration
 
 **Backend Services (waiting for hosting setup):**
-- Newsletter subscription form (needs Mailchimp or similar)
 - Contact form submission (needs Formspree or PHP handler)
 - Google Analytics (optional, can add anytime)
 
@@ -88,6 +98,22 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
 - **Fix**: Removed all placeholder sections using batch script
 - **Preserved**: 4 episodes with actual Key Takeaways content (episodes 53, 59, 60, 61)
 - **Result**: 715 lines of placeholder content removed
+
+**Newsletter Integration** (COMPLETED - October 14, 2025):
+- **Task**: Integrate Mailchimp newsletter subscription functionality
+- **Implementation**: Updated all newsletter forms across the site with Mailchimp form action URL
+- **Locations Updated**:
+  - Homepage newsletter section ([layouts/index.html:132](layouts/index.html#L132))
+  - Footer newsletter form ([layouts/partials/footer.html:39](layouts/partials/footer.html#L39))
+  - Episode page sidebar ([layouts/episodes/single.html:140](layouts/episodes/single.html#L140))
+  - About page ([layouts/_default/about.html:161](layouts/_default/about.html#L161))
+  - Resources page ([layouts/_default/resources.html:204](layouts/_default/resources.html#L204))
+- **Features Added**:
+  - Mailchimp form action with audience ID
+  - Honeypot field for bot protection
+  - Forms open in new tab for confirmation
+  - Email field name changed to "EMAIL" (Mailchimp standard)
+- **Result**: All newsletter forms now fully functional with Mailchimp
 
 ---
 
