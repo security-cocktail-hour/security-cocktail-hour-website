@@ -222,12 +222,34 @@ a:hover {
   border: none;
   cursor: pointer;
   padding: var(--space-sm);
+  z-index: 1001;
+  position: relative;
 }
 
 @media (min-width: 900px) {
   .menu-toggle {
     display: none;
   }
+}
+
+/* Mobile menu styles */
+.site-nav.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: var(--space-lg);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  gap: var(--space-md);
+}
+
+.site-nav.active a {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
 }
 
 /* ===================================
