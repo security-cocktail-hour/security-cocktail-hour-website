@@ -5,7 +5,7 @@ draft: false
 guest: "Dr. Nikki Robinson"
 category: "Users"
 duration: "57:52"
-image: "/images/episodes/episode-057.png"
+image: "/images/episodes/episode-057.jpg"
 description: >-
   It takes an advanced degree to understand the psychology behind why users hate security controls, so we got someone with two: Dr. Nikki Robinson, DSc Cybersecurity, PhD Human Factors. Nikki joins us to break down the real reasons security implementations fail—and how to fix them.
 platforms:

@@ -5,7 +5,7 @@ draft: false
 guest: "Winn Schwartau"
 category: "General"
 duration: "1:03:57"
-image: "/images/episodes/episode-049.png"
+image: "/images/episodes/episode-049.jpg"
 description: >-
   If you thought the tech industry only wanted your money, think again -- they're coming after your mind. Guest Winn Schwartau describes how in his new book "The Art and Science of Metawar: How to Coexist With AI-Driven Reality Distortion, Disinformation, & Addiction". Join us to learn what Metawar is, how we can protect ourselves with cognitive defenses and why immediate action is crucial, because it's already begun.
 platforms:

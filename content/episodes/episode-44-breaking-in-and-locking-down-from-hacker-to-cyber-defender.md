@@ -5,7 +5,7 @@ draft: false
 guest: "Jason Luttrell"
 category: "Career Bio"
 duration: "1:02:41"
-image: "/images/episodes/episode-044.png"
+image: "/images/episodes/episode-044.jpg"
 description: >-
   Are your organization's security gaps leaving the door wide open for attackers? In this  episode of the Security Cocktail Hour podcast, co-hosts Joe Patti and Adam Roth sit down with seasoned penetration tester and identity security expert Jason Luttrell.  Jason shares fascinating stories from his days of hacking banks, infiltrating data centers, and even dumpster diving, all legitimate work for his customers, to expose the vulnerabilities they never knew existed. Discover why physical security is just as critical as digital defenses and how attackers exploit overlooked entry points.  Later, the discussion shifts to the evolving landscape of identity management and why protecting access credentials is the cornerstone of modern cybersecurity. Learn about the latest best practices for managing passwords, including the use of password managers, multi-factor authentication (MFA), and techniques to avoid common pitfalls you may be using. Plus, hear Jason's take on emerging alternatives like passkeys and why they might still be a long way from replacing passwords entirely.
 platforms:

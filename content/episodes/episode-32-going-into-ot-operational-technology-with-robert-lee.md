@@ -5,7 +5,7 @@ draft: false
 guest: "Robert Lee"
 category: "Operational Technology (OT)"
 duration: ""
-image: "/images/episodes/episode-032.png"
+image: "/images/episodes/episode-032.jpg"
 description: >-
   We usually talk about information technology, but the real world runs on power, water and factories – and protecting them from attack is a whole different ballgame. Robert Lee, CEO of Dragos, gives us a fascinating introduction to Operational Technology (OT) cyber security. Listen in to learn about how Robert and colleagues secure the infrastructure that keeps civilization running. Spoiler Alert: It’s not what you expect, even if you’re an IT security expert.
 platforms:

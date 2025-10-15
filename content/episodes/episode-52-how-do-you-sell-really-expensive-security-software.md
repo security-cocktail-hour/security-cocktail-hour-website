@@ -5,7 +5,7 @@ draft: false
 guest: "Trevor Marcotte"
 category: "Sales"
 duration: "58:50"
-image: "/images/episodes/episode-052.png"
+image: "/images/episodes/episode-052.jpg"
 description: >-
   Selling six-figure security solutions isn’t about flashy demos or steak dinners—it’s about trust, relationships, and delivering real value. In this episode of the Security Cocktail Hour, we go inside the world of cybersecurity sales with Trevor Marcotte, founder of TnK Tech and a longtime industry insider.  Trevor reveals how deals actually get done in the high-stakes world of cybersecurity—from building trust with IT buyers and CISOs to navigating complex vendor relationships and solving real problems for clients. Alongside co-hosts Joe Patti and Adam Roth, Trevor shares why people matter more than products, and how trust beats tools every time.
 platforms:

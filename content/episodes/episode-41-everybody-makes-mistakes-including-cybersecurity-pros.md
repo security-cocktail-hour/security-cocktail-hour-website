@@ -5,7 +5,7 @@ draft: false
 guest: "Andy Esterman, Yehuda Kirschenbaum"
 category: "General"
 duration: "50:10"
-image: "/images/episodes/episode-041.png"
+image: "/images/episodes/episode-041.jpg"
 description: >-
   Cybersecurity breaches happen for many reasons, but one factor stands out: human error. In this episode, we gather top experts from across the security field to share their personal stories of mistakes made, how they recovered, and the hard-earned lessons that followed. Tune in for practical advice and insights from seasoned professionals who know that no one is immune to making a mistake — no matter how experienced.
 platforms:

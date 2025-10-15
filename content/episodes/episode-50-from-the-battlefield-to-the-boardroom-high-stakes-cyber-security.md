@@ -5,7 +5,7 @@ draft: false
 guest: "Keren de Via"
 category: "Career Bio"
 duration: "59:26"
-image: "/images/episodes/episode-050.png"
+image: "/images/episodes/episode-050.jpg"
 description: >-
   Ever wondered what it's like to lead cybersecurity on the front lines? In this episode of Security Cocktail Hour, we sit down with Keren de Via, a former IDF officer and trailblazing Chief Information Security Officer (CISO), who shares her extraordinary journey from military leadership to navigating the complex world of corporate cybersecurity.
 platforms:

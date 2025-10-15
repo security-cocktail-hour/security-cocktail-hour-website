@@ -5,7 +5,7 @@ draft: false
 guest: "Francie Dudrey, Mike Pedrick, Chris Roberts"
 category: "AI"
 duration: ""
-image: "/images/episodes/episode-037.png"
+image: "/images/episodes/episode-037.jpg"
 description: >-
   Our panel of cyber security all-stars dishes on how the industry is thinking about and handling artificial intelligence (AI). Get ready for surprising insights on hot topics like deepfakes, privacy and the real dangers and promise of AI. What they believe everyone should worry about most will surprise you.  Thanks to guests Francie Dudrey, Mike Pedrick and Chris Roberts.
 platforms:

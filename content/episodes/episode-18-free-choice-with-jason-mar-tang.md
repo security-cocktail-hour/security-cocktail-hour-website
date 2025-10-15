@@ -5,7 +5,7 @@ draft: false
 guest: "Jason Mar-tang"
 category: "General"
 duration: "1:02:41"
-image: "/images/episodes/episode-018.png"
+image: "/images/episodes/episode-018.jpg"
 description: >-
   This time around we welcome a native son of Staten Island, Jason Mar-Tang of Pentera. Jason tells us about the recent BlackHat conference, and we discuss the always tricky topic of how far to let a security incident progress before shutting it down. We also talk about attacking your own systems to improve your defenses, and the latest challenges in that long-established practice.
 platforms:

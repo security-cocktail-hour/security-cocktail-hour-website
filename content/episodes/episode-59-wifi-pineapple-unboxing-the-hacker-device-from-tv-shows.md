@@ -5,7 +5,7 @@ draft: false
 guest: ""
 category: "Unboxing"
 duration: "10:59"
-image: "/images/episodes/episode-059.png"
+image: "/images/episodes/episode-059.jpg"
 description: >-
   Ever wondered what that mysterious "WiFi Pineapple" device from hacker movies actually does? Today we're unboxing the Hak5 WiFi Pineapple Mark 7 - the real penetration testing tool that's been featured in countless TV shows and movies!
 platforms:

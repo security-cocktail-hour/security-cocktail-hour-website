@@ -5,7 +5,7 @@ draft: false
 guest: ""
 category: "Unboxing"
 duration: "14:12"
-image: "/images/episodes/episode-058.png"
+image: "/images/episodes/episode-058.jpg"
 description: >-
   Back in Episode 54 we talked about vacation cybersecurity, including the dangers of hotel WiFi and public networks. Today we're unboxing the travel router that could save your digital life while traveling (or at least save you a lot of grief).
 platforms:

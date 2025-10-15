@@ -5,7 +5,7 @@ draft: false
 guest: ""
 category: "General"
 duration: ""
-image: "/images/episodes/episode-038.png"
+image: "/images/episodes/episode-038.jpg"
 description: >-
   Why are data breaches escalating, even in companies with massive security budgets? In this episode, we reveal the hidden factors fueling the rise of breaches that expose the data of hundreds of millions of people at a time. Has this become the new normal, or will things get better? Tune in to learn what’s really going on behind the scenes in cybersecurity, and how companies keep failing to protect your personal information.
 platforms:

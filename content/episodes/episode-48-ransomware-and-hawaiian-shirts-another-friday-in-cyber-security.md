@@ -5,7 +5,7 @@ draft: false
 guest: "Jennifer Gold, Patrick Arvidson, Roger Hockenberry"
 category: "General"
 duration: "1:26:19"
-image: "/images/episodes/episode-048.png"
+image: "/images/episodes/episode-048.jpg"
 description: >-
   Previous guest Jennifer Gold returns for another episode, and this time she's brought friends: cyber and intelligence veterans Patrick Arvidson and Roger Hockenberry. Together, they delve into the evolving world of cybersecurity, sharing insider perspectives from the CIA, NSA, and the private sector.  Learn how attackers exploit weekends, discover the real cost of third-party risks, and uncover why “intelligence” might not always mean what you think. Plus, hear about the creative side of coding, retro hacking nostalgia, and the challenges of managing risk in a hyperconnected world.
 platforms:
