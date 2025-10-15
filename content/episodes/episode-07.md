@@ -5,7 +5,7 @@ draft: false
 guest: ""
 category: "AI"
 duration: "51:26"
-image: "/images/episodes/episode-007.png"
+image: "/images/episodes/episode-001-013.png"
 description: >-
   Joe and Adam jump into the world of AI, and the new (and not so new) security risks we need to deal with.
 platforms:

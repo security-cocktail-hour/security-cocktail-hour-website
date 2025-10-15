@@ -5,7 +5,7 @@ draft: false
 guest: "Idan Weiner"
 category: "General"
 duration: "56:57"
-image: "/images/episodes/episode-013.png"
+image: "/images/episodes/episode-001-013.png"
 description: >-
   For this episode we’re joined by Idan Wiener, co-founder and CEO of Illustria, an innovative startup in the software supply chain security space. Idan shares his thoughts and experiences from the startup world, and the things he wishes he’d known when he first set out on this journey.
 platforms:

@@ -5,7 +5,7 @@ draft: false
 guest: ""
 category: "Educational"
 duration: "45:45"
-image: "/images/episodes/episode-002.png"
+image: "/images/episodes/episode-001-013.png"
 description: >-
   Joe and Adam talk about keeping your own security house in order: home network security, home surveillance and your car as the next cyber battleground.
 platforms:

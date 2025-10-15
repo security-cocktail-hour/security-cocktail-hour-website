@@ -5,7 +5,7 @@ draft: false
 guest: ""
 category: "General"
 duration: "42:16"
-image: "/images/episodes/episode-003.png"
+image: "/images/episodes/episode-001-013.png"
 description: >-
   The number of companies that have experienced serious security breaches continues to grow. At this point a company you use has almost certainly joined that club. Maybe they even lost your data. Joe and Adam talk about the less than obvious realities around whether you should keep using them, or take your business elsewhere.
 platforms:

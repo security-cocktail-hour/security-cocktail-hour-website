@@ -5,7 +5,7 @@ draft: false
 guest: ""
 category: "General"
 duration: "42:54"
-image: "/images/episodes/episode-005.png"
+image: "/images/episodes/episode-001-013.png"
 description: >-
   Security can stress you out, but once those moments pass, they leave you with some good stories. Today we share a few to give you an idea of how a security team really works.
 platforms:

@@ -5,7 +5,7 @@ draft: false
 guest: ""
 category: "General"
 duration: "46:00"
-image: "/images/episodes/episode-001.png"
+image: "/images/episodes/episode-001-013.png"
 description: >-
   Joe and Adam talk about the many ways passwords are dreadful, and how we can live with them until they die the death they deserve.
 platforms:

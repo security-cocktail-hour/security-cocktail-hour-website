@@ -5,7 +5,7 @@ draft: false
 guest: ""
 category: "Educational"
 duration: "46:08"
-image: "/images/episodes/episode-004.png"
+image: "/images/episodes/episode-001-013.png"
 description: >-
   These days it seems like you can't watch YouTube without seeing an ad for a VPN service. Do you really need one? Of course, it depends…
 platforms:
