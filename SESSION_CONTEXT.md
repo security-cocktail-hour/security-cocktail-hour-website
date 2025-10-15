@@ -1,15 +1,16 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: October 13, 2025
+**Last Updated**: October 15, 2025
 **Hugo Version**: v0.151.0
-**Session Status**: Deployed to Netlify staging - ready for team review
+**Session Status**: MVP COMPLETE - Deployed to production on GoDaddy, ready for DNS cutover
 
 ---
 
 ## Project Overview
 
-Building a static website for the Security Cocktail Hour podcast using Hugo static site generator. The site is currently deployed to Netlify for staging/testing and will ultimately be deployed to GoDaddy cPanel hosting as static HTML files.
+Building a static website for the Security Cocktail Hour podcast using Hugo static site generator. The site is deployed to both Netlify (staging) and GoDaddy cPanel (production).
 
+**Production Site**: https://securitycocktailhour.com/ (GoDaddy cPanel - awaiting DNS cutover)
 **Staging Site**: https://[your-site-name].netlify.app/
 **GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
 **Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
@@ -55,21 +56,23 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
 - Absolute URLs preserved for SEO/social sharing
 
 **Deployment:**
-- Netlify staging environment configured
-- GitHub repository with automatic deployments
+- **Production**: GoDaddy cPanel hosting with static HTML files
+- **Staging**: Netlify with automatic deployments from GitHub
+- GitHub repository with automatic deployments to staging
 - Netlify build configuration (`netlify.toml`)
+- GoDaddy deployment via production-deployment.zip file
 - Git workflow established
 
 **Newsletter Integration:**
 - Mailchimp account created with audience
-- Newsletter forms integrated on all pages:
+- Newsletter forms integrated on key pages:
   - Homepage newsletter section
-  - Footer newsletter form (all pages)
   - Episode page sidebar
   - About page
   - Resources page
 - Forms include honeypot field for bot protection
 - Submissions open in new tab for Mailchimp confirmation
+- **Note**: Footer newsletter form removed per user request (newsletter should only be on specific pages)
 
 **Contact Form Integration:**
 - Formspree account created and configured
@@ -82,10 +85,29 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
   - No page redirect (stays on same page)
   - Proper error handling with fallback to direct email
 
-### ⏳ Pending Integration
+**Google Analytics:**
+- GA4 tracking implemented (Measurement ID: G-8QL8F8JKNR)
+- Added to baseof.html template
+- Tracks all pages across the site
 
-**Backend Services (waiting for hosting setup):**
-- Google Analytics (optional, can add anytime)
+**Legal Pages:**
+- Privacy Policy page created (GDPR/CCPA compliant)
+- Terms of Service page created (Governing law: New Jersey)
+- Both accessible via footer links
+
+**Cookie Consent:**
+- GDPR-compliant cookie consent banner implemented
+- Accept/Decline buttons
+- Integrates with Google Analytics (enables/disables tracking)
+- User choice stored for 365 days
+- Links to Privacy Policy
+
+**Performance Optimization:**
+- Episode images optimized: PNG to JPG conversion (episodes 18, 20, 24, 32, 36-46, 48-50, 52, 54-55, 57-61)
+- Episodes 1-13 share single optimized image (episode-001-013.png, 35KB)
+- Bio page images optimized (adam-roth.jpg: 34KB, joe-patti.jpg: 25KB)
+- Total site size reduced from 49MB to 7.7MB (84% reduction!)
+- Pages load virtually instantly
 
 ### ✅ Fixed Issues
 
@@ -139,6 +161,70 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
   - Fallback message with direct email if submission fails
 - **Form Fields**: Name, Email, Subject (dropdown with 6 options), Message
 - **Result**: Contact form fully functional with professional UX
+
+**Google Analytics Integration** (COMPLETED - October 14, 2025):
+- **Task**: Add GA4 tracking to all pages
+- **Implementation**: Added Google Analytics script to baseof.html template
+- **Measurement ID**: G-8QL8F8JKNR
+- **Location**: [layouts/_default/baseof.html](layouts/_default/baseof.html) in <head> section
+- **Result**: All pages tracked with GA4
+
+**Legal Pages** (COMPLETED - October 14, 2025):
+- **Task**: Create Privacy Policy and Terms of Service pages
+- **Implementation**: Created comprehensive legal pages
+- **Files**:
+  - [content/privacy.md](content/privacy.md) - GDPR/CCPA compliant privacy policy
+  - [content/terms.md](content/terms.md) - Complete terms of service (Governing law: New Jersey)
+- **Result**: Legal pages accessible via footer links
+
+**Cookie Consent Banner** (COMPLETED - October 14, 2025):
+- **Task**: Add GDPR-compliant cookie consent banner
+- **Implementation**: Added consent banner to baseof.html
+- **Location**: [layouts/_default/baseof.html](layouts/_default/baseof.html)
+- **Features**:
+  - Accept/Decline buttons
+  - Integrates with Google Analytics (enables/disables tracking based on choice)
+  - Stores user choice in cookie for 365 days
+  - Links to Privacy Policy
+- **Result**: GDPR-compliant cookie consent implemented
+
+**Production Deployment** (COMPLETED - October 15, 2025):
+- **Task**: Deploy to GoDaddy cPanel hosting
+- **Implementation**: Created production-deployment.zip with complete built site
+- **Deployment Method**: Manual upload via cPanel File Manager
+- **Documentation**: [GODADDY-DEPLOYMENT-INSTRUCTIONS.md](GODADDY-DEPLOYMENT-INSTRUCTIONS.md)
+- **Domain**: securitycocktailhour.com (with SSL)
+- **Result**: Site deployed and tested on production, awaiting DNS cutover
+
+**Episode 41 Date Bug** (FIXED - October 15, 2025):
+- **Issue**: Episode 41 showing as latest episode instead of Episode 61
+- **Root Cause**: Episode 41 had date `2025-10-15` (today) instead of actual publication date
+- **Fix**: Updated date to `2024-10-15` (correct year)
+- **File**: [content/episodes/episode-41-everybody-makes-mistakes-including-cybersecurity-pros.md](content/episodes/episode-41-everybody-makes-mistakes-including-cybersecurity-pros.md)
+- **Result**: Episode 61 now correctly displays as latest episode
+
+**Image Optimization - Episodes 1-13** (COMPLETED - October 15, 2025):
+- **Task**: Reduce page load time for episode images
+- **Implementation**: Created single shared optimized image for episodes 1-13
+- **File**: episode-001-013.png (300x300px, 35KB, reduced from 2.7MB per image)
+- **Updates**: Updated episodes 01-13 to reference shared image
+- **Savings**: ~32MB reduction in total page load
+
+**Image Optimization - PNG to JPG Conversion** (COMPLETED - October 15, 2025):
+- **Task**: Further reduce page load time by converting large PNG files to JPG
+- **Implementation**: Converted 27 episode PNGs to optimized JPG format
+- **Episodes Converted**: 18, 20, 24, 32, 36-46, 48-50, 52, 54-55, 57-61
+- **Original Size Range**: 217KB to 1.2MB per PNG
+- **Optimized Size**: Significantly smaller JPG files
+- **Total Reduction**: Site deployment size reduced from 49MB to 7.7MB (84% reduction!)
+- **Result**: Episodes page and About page load virtually instantly
+
+**Episode 43 Image Reference Bug** (FIXED - October 15, 2025):
+- **Issue**: Episode 43 image not displaying on production
+- **Root Cause**: Markdown file still referenced .png instead of .jpg
+- **Fix**: Updated image reference from episode-043.png to episode-043.jpg
+- **File**: [content/episodes/episode-43-cybersecurity-for-emts-and-first-responders-protecting-patients-and-professional.md:8](content/episodes/episode-43-cybersecurity-for-emts-and-first-responders-protecting-patients-and-professional.md#L8)
+- **Result**: Episode 43 image now displays correctly
 
 ---
 
@@ -841,65 +927,46 @@ Check:
 
 ## Next Steps
 
-### Current (Team Review Phase)
+### ✅ MVP COMPLETE - Ready for DNS Cutover (October 15, 2025)
 
-1. **Review staging site**
-   - Test all pages and functionality
-   - Check mobile responsiveness
-   - Verify content accuracy
-   - Test search/filter on episodes page
-   - Review episode pages for completeness
+**Current Status:**
+- All MVP features completed and tested
+- Site deployed to GoDaddy cPanel production hosting
+- All backend services integrated and functional:
+  - ✅ Mailchimp newsletter forms
+  - ✅ Formspree contact form
+  - ✅ Google Analytics GA4
+  - ✅ Privacy Policy & Terms of Service
+  - ✅ Cookie consent banner
+- Performance optimized (7.7MB total, pages load instantly)
+- Tested and verified on production
 
-2. **Gather feedback**
-   - Collect feedback from team members
-   - Create list of issues or changes needed
-   - Prioritize fixes and enhancements
+**Next Action:**
+- User will cutover DNS to make production site live at securitycocktailhour.com
 
-3. **Make adjustments**
-   - Use Git workflow to make changes
-   - Test locally before pushing
-   - Verify changes on staging after deployment
+**Production Deployment File:**
+- Location: `production-deployment.zip` in project root
+- Size: 7.7 MB (optimized)
+- Ready for future updates via cPanel File Manager
 
-### Before Production Launch
-
-1. **Integrate backend services**
-   - Newsletter: Mailchimp (or alternative)
-   - Contact form: Formspree (or alternative)
-   - Test both thoroughly on staging
-
-2. **Final testing**
-   - Test all pages on staging
-   - Verify mobile responsiveness
-   - Test in Chrome, Firefox, Safari
-   - Check page load speed (< 3 seconds)
-   - Verify all images load
-   - Test search/filter functionality
-   - Proofread all content
-   - Test social sharing
-
-3. **Deploy to production**
-   - Build with `hugo --minify`
-   - Upload `public/` to GoDaddy
-   - Test live site
-   - Submit sitemap to search engines
-
-### Post-Launch
+### Post-Launch (Future)
 
 1. **Monitoring**
-   - Set up Google Analytics (optional)
-   - Monitor uptime (UptimeRobot, Pingdom)
-   - Check Google Search Console for indexing
+   - Monitor Google Analytics for traffic and behavior
+   - Check Google Search Console for indexing and SEO
+   - Monitor uptime and performance
 
-2. **Content**
-   - Add missing episode images (21 episodes)
-   - Add episode show notes as time permits
-   - Regular episode updates
+2. **Content Updates**
+   - Add new episodes as they're released
+   - Optionally add missing episode images for older episodes
+   - Update show notes and resources as needed
 
-3. **Features (Phase 2)**
+3. **Future Enhancements (Phase 2)**
    - Blog/articles section
-   - Enhanced search features
-   - Additional resources
-   - Performance optimizations
+   - Enhanced search features (filters, categories)
+   - Additional resources and content
+   - Further performance optimizations
+   - Additional podcast platforms
 
 ---
 
