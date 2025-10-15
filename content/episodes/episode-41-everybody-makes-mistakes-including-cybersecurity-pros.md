@@ -1,6 +1,6 @@
 ---
 title: "Everybody Makes Mistakes – Including Cybersecurity Pros"
-date: 2025-10-15
+date: 2024-10-15
 draft: false
 guest: "Andy Esterman, Yehuda Kirschenbaum"
 category: "General"
