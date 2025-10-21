@@ -25,8 +25,14 @@
       >
       <select id="category-filter" style="padding: 12px 16px; border-radius: 8px; border: 1px solid #D0D0D0;">
         <option value="">All Topics</option>
-        {{ range .Site.Taxonomies.categories }}
-          <option value="{{ .Page.Title }}">{{ .Page.Title }}</option>
+        {{ $categories := slice }}
+        {{ range .Pages }}
+          {{ with .Params.category }}
+            {{ $categories = $categories | append . }}
+          {{ end }}
+        {{ end }}
+        {{ range sort (uniq $categories) }}
+          <option value="{{ . }}">{{ . }}</option>
         {{ end }}
       </select>
       <select id="sort-filter" style="padding: 12px 16px; border-radius: 8px; border: 1px solid #D0D0D0;">
