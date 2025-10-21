@@ -522,7 +522,22 @@ Episodes are organized into groups of 10:
 - Recently viewed episodes
 - Customizable user dashboard
 
-### 3.4 Integration Requirements
+### 3.4 Error Handling
+
+**Must Have:**
+- Custom 404 error page
+- User-friendly error message
+- Navigation options (links to homepage, episodes page)
+- Automatic redirect to homepage after countdown
+- Consistent site design (header, footer)
+- Prevents showing server default error pages
+
+**Should Have:**
+- Search box on 404 page
+- List of popular pages
+- Sitemap link
+
+### 3.5 Integration Requirements
 
 **Must Have:**
 - Google Analytics integration
@@ -965,6 +980,12 @@ Each episode page must support:
   - Simple implementation (no e-commerce)
 - [ ] **Privacy Policy** and **Terms of Service**
 - [ ] **Cookie Consent Banner**
+- [ ] **Custom 404 Error Page**
+  - User-friendly error message
+  - Automatic redirect to homepage (5-second countdown)
+  - Manual navigation buttons (Homepage, Episodes)
+  - Consistent site design
+  - Configured in hosting (cPanel Error Pages)
 
 **New Functionality (From Marketing Plan):**
 - [ ] **Email Capture Forms** (Mailchimp integration)

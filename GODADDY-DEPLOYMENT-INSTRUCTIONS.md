@@ -104,14 +104,29 @@ public_html/
 5. Check **Recurse into subdirectories**
 6. Click **Change Permissions**
 
-### Step 6: Verify SSL Certificate
+### Step 6: Configure Custom 404 Error Page
+
+1. In cPanel main dashboard, search for **Error Pages** (use the search box at top)
+2. Click on **Error Pages** in the results
+3. **Step 1** - Select Domain to Manage Error Pages:
+   - Choose **securitycocktailhour.com** from the dropdown
+4. **Step 2** - Edit Error Pages:
+   - Under "Edit Common Error Codes", click on **404 (Not found)**
+5. You'll see a code editor with the current 404 page
+6. Open your local file: `/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/website/redesign 2025-10/security-cocktail-hour-website/public/404.html`
+7. Copy the **entire contents** of the 404.html file
+8. Paste it into the cPanel editor (replacing any existing content)
+9. Click **Save** at the bottom of the page
+10. The custom 404 page is now active!
+
+### Step 7: Verify SSL Certificate
 
 1. In cPanel main dashboard, find **SSL/TLS Status**
 2. Verify **securitycocktailhour.com** has a green checkmark
 3. If not, click **Run AutoSSL** and wait for it to complete
 4. This may take 5-10 minutes
 
-### Step 7: Test Your Website
+### Step 8: Test Your Website
 
 1. Open browser (use Incognito/Private mode to avoid cache)
 2. Visit: **https://securitycocktailhour.com**
@@ -131,7 +146,12 @@ public_html/
    - Episode search and filtering
    - Social sharing buttons
 
-### Step 8: Clear DNS Cache (If Needed)
+5. **Test 404 page:**
+   - Visit a non-existent page: https://securitycocktailhour.com/this-page-does-not-exist
+   - Should show custom 404 page with countdown
+   - Should redirect to homepage after 5 seconds
+
+### Step 9: Clear DNS Cache (If Needed)
 
 If the site doesn't load:
 1. Wait 10-15 minutes for DNS propagation
@@ -143,7 +163,7 @@ If the site doesn't load:
 
 ## Important Files & Features Included
 
-### Core Pages (73 total)
+### Core Pages (74 total)
 - Homepage with latest episodes
 - Episode library (64 episodes) with search/filter
 - Individual episode pages
@@ -152,6 +172,7 @@ If the site doesn't load:
 - Resources page
 - Privacy Policy
 - Terms of Service
+- Custom 404 Error Page (with auto-redirect to homepage)
 
 ### Integrations
 ✅ **Mailchimp Newsletter** - Forms on homepage, episodes, about, resources pages
@@ -220,6 +241,7 @@ After deployment, verify:
 - [ ] All images display correctly
 - [ ] Search and filter work on episodes page
 - [ ] Privacy Policy and Terms pages are accessible
+- [ ] Custom 404 page works (test by visiting non-existent URL)
 
 ---
 

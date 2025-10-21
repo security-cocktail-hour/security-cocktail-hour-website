@@ -1,3 +1,27 @@
+{{ define "head" }}
+<!-- Podcast Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "name": "Security Cocktail Hour",
+  "description": "A cybersecurity podcast featuring conversations with security practitioners on data breach prevention, threat intelligence, incident response, AI security, and industry insights.",
+  "url": "{{ .Site.BaseURL }}",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Joe Patti"
+    },
+    {
+      "@type": "Person",
+      "name": "Adam Roth"
+    }
+  ],
+  "webFeed": "{{ .Site.BaseURL }}index.xml"
+}
+</script>
+{{ end }}
+
 {{ define "main" }}
 
 <!-- Hero Section -->
