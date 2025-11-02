@@ -1017,6 +1017,8 @@ Check:
 - `docs/sch_website_requirements.md` - Requirements
 - `docs/hosting_requirements.md` - Hosting and deployment guide
 - `SESSION_CONTEXT.md` - This file (in root)
+- `NEW-EPISODE-DEPLOYMENT.md` - New episode deployment workflow (in root)
+- `GODADDY-DEPLOYMENT-INSTRUCTIONS.md` - GoDaddy deployment instructions (in root)
 
 **Scripts:**
 - `convert_episodes.py` - CSV to markdown converter
@@ -1046,11 +1048,19 @@ Check:
 
 **Production Deployment File:**
 - Location: `production-deployment.zip` in project root
-- Size: 7.7 MB (optimized, includes category filter fix and SEO improvements)
+- Size: 7.8 MB (includes Episode 62)
 - Ready for deployment via cPanel File Manager
-- Last Updated: October 21, 2025
+- Last Updated: November 2, 2025
 
-**Recent Updates (October 21, 2025):**
+**Recent Updates (November 2, 2025):**
+1. Added Episode 62: "AI in Cybersecurity: How CISOs Are Actually Using LLMs with Myke Lyons"
+2. Fixed homepage template to show only description for latest episode (no timestamps/topics)
+3. Standardized episode format documentation (bulleted timestamps and topics)
+4. Created NEW-EPISODE-DEPLOYMENT.md with complete deployment workflow
+5. Updated SESSION_CONTEXT.md with episode content structure
+6. **Deployed to production** - Episode 62 will appear on November 3, 2025
+
+**Previous Updates (October 21, 2025):**
 1. Fixed category filter dropdown on Episodes page (16 categories now visible)
 2. Implemented Phase 1 SEO optimizations for cybersecurity podcast keywords
 3. Added PodcastSeries structured data markup
@@ -1119,7 +1129,7 @@ Contact form and newsletter subscriptions are **placeholder forms only**. They d
 **Project Owner**: Joe
 **Project Location**: `/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/website/redesign 2025-10/security-cocktail-hour-website`
 **Hugo Version**: v0.151.0
-**Last Session**: October 13, 2025
+**Last Session**: November 2, 2025
 
 ---
 
