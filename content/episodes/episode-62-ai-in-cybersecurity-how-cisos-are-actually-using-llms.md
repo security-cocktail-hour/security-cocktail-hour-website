@@ -1,0 +1,52 @@
+---
+title: "AI in Cybersecurity: How CISOs Are Actually Using LLMs with Myke Lyons (Cribl CISO)"
+date: 2025-11-03
+draft: false
+guest: "Myke Lyons"
+category: "AI"
+duration: "57:50"
+image: "/images/episodes/episode-062.jpg"
+description: >-
+  Join Security Cocktail Hour hosts Joe Patti and Adam Roth for an in-depth conversation with Myke Lyons, Chief Information Security Officer at Cribl, about AI in cybersecurity operations. Discover how modern CISOs are actually using LLMs and AI tools in their daily work, handling the data explosion (28% CAGR growth in logs), and transforming security operations with smarter telemetry management.
+platforms:
+  youtube: "https://youtu.be/lnbMS2B8lWk"
+  spotify: "https://open.spotify.com/episode/0w3upGjniAzaGiHoBeg9HW?si=JNPxSgByS7a17enrcy2ZEw"
+  apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200"
+  amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
+guest_bio: "Myke Lyons, CISO, Cribl"
+---
+
+Join Security Cocktail Hour hosts Joe Patti and Adam Roth for an in-depth conversation with Myke Lyons, Chief Information Security Officer at Cribl, about AI in cybersecurity operations. Discover how modern CISOs are actually using LLMs and AI tools in their daily work, handling the data explosion (28% CAGR growth in logs), and transforming security operations with smarter telemetry management. Myke shares practical AI adoption strategies, prompt engineering techniques, and his unique perspective on threat hunting with modern data architectures. From his non-traditional background (Culinary Institute of America graduate) to leading security at companies like Snyk, Collibra, and ServiceNow, Myke offers real-world insights on the future of AI in security.
+
+## Episode Timestamps
+
+- 00:00 Intro
+- 00:38 Welcome Myke Lyons
+- 02:42 The Evolution of Logging and Telemetry
+- 06:21 Data Ownership and Access
+- 10:37 The Importance of Schema in Data Management
+- 14:36 The Future of Data Queries and AI
+- 21:30 Privacy Concerns in the Digital Age
+- 29:09 The Evolving Landscape of Security and Data Privacy
+- 31:43 Navigating Security Questionnaires and AI Integration
+- 34:12 Leveraging AI for Enhanced Security Practices
+- 37:29 The Role of AI in Data Management and Analysis
+- 42:37 Future of AI in the Workplace and Its Implications
+- 54:21 Final Thoughts on AI's Impact and Future Directions
+
+## Topics Discussed
+
+- AI
+- LLM
+- Cybersecurity
+- CISO
+- Data Security
+- Telemetry Management
+- Threat Hunting
+- Prompt Engineering
+- Security Operations
+- Log Management
+- GenAI
+- Machine Learning
+- Security Leadership
+- Cribl

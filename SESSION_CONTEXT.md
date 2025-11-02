@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: October 21, 2025
+**Last Updated**: November 2, 2025
 **Hugo Version**: v0.151.0
 **Session Status**: LIVE IN PRODUCTION - DNS cutover complete, all features functional
 
@@ -39,12 +39,12 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
 - Consistent spacing, shadows, border radius
 
 **Content:**
-- 64 episodes migrated from CSV to Hugo markdown
+- 65 episodes (64 migrated from CSV, Episode 62 added November 2, 2025)
 - All episode metadata (title, date, guest, category, duration, description)
-- Episode images (43 of 64 present, graceful fallbacks for missing)
+- Episode images (44 of 65 present, graceful fallbacks for missing)
 - Host photos (Joe Patti, Adam Roth)
 - Logo and branding assets
-- Placeholder sections removed from episode pages (Key Takeaways, Resources Mentioned)
+- Standardized episode format with timestamps and topics (bulleted lists)
 
 **Technical:**
 - SEO optimization (meta tags, Open Graph, schema.org markup)
@@ -530,7 +530,7 @@ draft: false
 guest: "Guest Name"
 category: "Category"
 duration: "HH:MM:SS"
-image: "/images/episodes/episode-XXX.png"
+image: "/images/episodes/episode-XXX.jpg"
 description: >-
   Episode description (uses YAML block scalar for quotes)
 platforms:
@@ -549,6 +549,47 @@ episode-[number]-[title-slug].md
 ```
 - Number: Two digits with leading zero (01, 02, ... 64)
 - Title slug: Lowercase, hyphenated, max 80 chars total filename
+
+### Episode Content Body Format (Updated November 2, 2025)
+
+After the front matter, the episode markdown should contain the following sections:
+
+1. **Opening Paragraph** - Full description of the episode (can be expanded version of description field)
+
+2. **Episode Timestamps** - Use bulleted list format:
+```markdown
+## Episode Timestamps
+
+- 00:00 Intro
+- 00:38 Welcome Guest Name
+- 02:42 Topic description
+- etc.
+```
+
+3. **Topics Discussed** - Use bulleted list format (no hashtags):
+```markdown
+## Topics Discussed
+
+- AI
+- Cybersecurity
+- CISO
+- Data Security
+- etc.
+```
+
+**Important Notes:**
+- Use **bullet points** (dashes) for both timestamps and topics
+- Do NOT use hashtags (#) in Topics Discussed section
+- Homepage displays only the description field from front matter
+- Individual episode pages show all sections (timestamps, topics, etc.)
+- Template automatically filters out timestamps and topics from homepage ([layouts/index.html:70](layouts/index.html#L70))
+
+### Episode Image Format
+
+- **File Location**: `/static/images/episodes/episode-XXX.jpg`
+- **Format**: JPG preferred (optimized for web, smaller file size than PNG)
+- **Naming**: `episode-XXX.jpg` where XXX is the episode number with leading zeros (e.g., episode-062.jpg)
+- Missing images automatically display gradient fallback placeholders
 
 ### Missing Episode Images
 

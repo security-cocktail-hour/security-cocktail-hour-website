@@ -67,10 +67,7 @@
             {{ with .Params.duration }} | {{ . }}{{ end }}
           </p>
           <div class="card-description">
-            {{ $content := .Content }}
-            {{ $content = replaceRE `(?s)<h2[^>]*>Resources Mentioned</h2>.*` "" $content }}
-            {{ $content = replaceRE `(?s)<h2[^>]*>Full Transcript</h2>.*` "" $content }}
-            {{ $content | safeHTML }}
+            <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
           </div>
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
             <a href="{{ .RelPermalink }}" class="btn btn-primary">Show Notes</a>
