@@ -1,8 +1,8 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: November 2, 2025
+**Last Updated**: November 3, 2025
 **Hugo Version**: v0.151.0
-**Session Status**: LIVE IN PRODUCTION - DNS cutover complete, all features functional
+**Session Status**: LIVE IN PRODUCTION - Episode 62 deployed and visible
 
 ---
 
@@ -39,9 +39,9 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
 - Consistent spacing, shadows, border radius
 
 **Content:**
-- 65 episodes (64 migrated from CSV, Episode 62 added November 2, 2025)
+- 65 episodes (64 migrated from CSV, Episode 62 added November 2, 2025, deployed November 3, 2025)
 - All episode metadata (title, date, guest, category, duration, description)
-- Episode images (44 of 65 present, graceful fallbacks for missing)
+- Episode images (45 of 65 present, graceful fallbacks for missing)
 - Host photos (Joe Patti, Adam Roth)
 - Logo and branding assets
 - Standardized episode format with timestamps and topics (bulleted lists)
@@ -1048,17 +1048,23 @@ Check:
 
 **Production Deployment File:**
 - Location: `production-deployment.zip` in project root
-- Size: 7.8 MB (includes Episode 62)
+- Size: 7.8 MB (includes Episode 62 with updated platform URLs)
 - Ready for deployment via cPanel File Manager
-- Last Updated: November 2, 2025
+- Last Updated: November 3, 2025
+- Status: Deployed to production - Episode 62 live on site
 
-**Recent Updates (November 2, 2025):**
+**Recent Updates (November 3, 2025):**
+1. Updated Episode 62 platform URLs (Apple and Amazon episode-specific links)
+2. Fixed Episode 62 visibility issue - rebuilt site to make episode appear on production
+3. Episode 62 now live and visible on https://securitycocktailhour.com/
+4. All platform links functional (YouTube, Spotify, Apple, Amazon)
+
+**Previous Updates (November 2, 2025):**
 1. Added Episode 62: "AI in Cybersecurity: How CISOs Are Actually Using LLMs with Myke Lyons"
 2. Fixed homepage template to show only description for latest episode (no timestamps/topics)
 3. Standardized episode format documentation (bulleted timestamps and topics)
 4. Created NEW-EPISODE-DEPLOYMENT.md with complete deployment workflow
 5. Updated SESSION_CONTEXT.md with episode content structure
-6. **Deployed to production** - Episode 62 will appear on November 3, 2025
 
 **Previous Updates (October 21, 2025):**
 1. Fixed category filter dropdown on Episodes page (16 categories now visible)
@@ -1129,7 +1135,7 @@ Contact form and newsletter subscriptions are **placeholder forms only**. They d
 **Project Owner**: Joe
 **Project Location**: `/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/website/redesign 2025-10/security-cocktail-hour-website`
 **Hugo Version**: v0.151.0
-**Last Session**: November 2, 2025
+**Last Session**: November 3, 2025
 
 ---
 
