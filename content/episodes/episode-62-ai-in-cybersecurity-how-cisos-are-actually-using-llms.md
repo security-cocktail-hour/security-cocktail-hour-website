@@ -11,8 +11,8 @@ description: >-
 platforms:
   youtube: "https://youtu.be/lnbMS2B8lWk"
   spotify: "https://open.spotify.com/episode/0w3upGjniAzaGiHoBeg9HW?si=JNPxSgByS7a17enrcy2ZEw"
-  apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200"
-  amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
+  apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000735033209"
+  amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/episodes/bd443930-3349-400e-b348-36500610cb00/security-cocktail-hour-ai-in-cybersecurity-how-cisos-are-actually-using-llms-with-myke-lyons-cribl-ciso"
 guest_bio: "Myke Lyons, CISO, Cribl"
 ---
 
