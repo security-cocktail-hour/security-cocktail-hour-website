@@ -1,9 +1,10 @@
 # Security Cocktail Hour Website
-## Design Specification v1.0
+## Design Specification v1.1
 
-**Date:** October 3, 2025  
-**Status:** For Implementation  
+**Date:** November 6, 2025
+**Status:** For Implementation
 **Based On:** Requirements Document v1.0
+**Updated:** Color palette updated to current production colors (October 8, 2025 palette)
 
 ---
 
@@ -37,70 +38,61 @@
 
 ### 2.1 Color Palette
 
+**Updated: October 8, 2025**
+
 **Primary Colors**
 
 ```
-Security Red (Primary Brand)
-- Hex: #C8534B
-- RGB: 200, 83, 75
-- Use: Primary CTAs, headers, links, emphasis
+Primary (Dark Blue)
+- Hex: #192A56
+- RGB: 25, 42, 86
+- Use: Main text, primary navigation, footers, dark backgrounds
+- Accessibility: Very readable on light backgrounds (AAA compliant with white)
+
+Secondary (Cool Grey)
+- Hex: #8D99AE
+- RGB: 141, 153, 174
+- Use: Secondary text, borders, dividers, subtle backgrounds, category tags
+- Accessibility: Subtle, professional
+
+Base/Background (Off-white)
+- Hex: #F8F9FA
+- RGB: 248, 249, 250
+- Use: Main page background
+- Accessibility: Cleaner than pure white
+
+Action/Button (Professional Blue)
+- Hex: #436098
+- RGB: 67, 96, 152
+- Use: Most buttons, CTAs, gradients, interactive elements
+- Accessibility: Distinct and professional (AA compliant with white text)
+
+Accent/Highlight (Bright Red)
+- Hex: #CE1F2C
+- RGB: 206, 31, 44
+- Use: "Listen Now" button only, key highlights (used sparingly for emphasis)
 - Accessibility: Use with white text (AA compliant)
-
-Deep Security Blue (Primary Dark)
-- Hex: #1E4D8B
-- RGB: 30, 77, 139
-- Use: Dark backgrounds, headers, primary text on light
-- Accessibility: Use with white text (AAA compliant)
-
-Spotlight Cyan (Primary Light)
-- Hex: #3BA0D4
-- RGB: 59, 160, 212
-- Use: Interactive elements, links, highlights
-- Accessibility: Use with dark text or white text carefully
 ```
 
-**Secondary Colors**
+**CSS Variable Mapping**
 
-```
-Light Cyan (Secondary)
-- Hex: #81C9E8
-- RGB: 129, 201, 232
-- Use: Gradients, hover states, subtle backgrounds
-- Accessibility: Use with dark text
-
-Olive Green (Accent)
-- Hex: #7BA956
-- RGB: 123, 169, 86
-- Use: Success states, accent elements, category tags
-- Accessibility: Use with dark text or white text
-
-Charcoal (Text Primary)
-- Hex: #2D2D2D
-- RGB: 45, 45, 45
-- Use: Body text, paragraphs
-- Accessibility: AAA compliant on white
-
-Light Gray (Background Secondary)
-- Hex: #F5F5F5
-- RGB: 245, 245, 245
-- Use: Alternate backgrounds, card backgrounds
-- Accessibility: Provides subtle depth
-
-White/Off-White
-- Hex: #FFFFFF / #FEFEFE
-- RGB: 255, 255, 255
-- Use: Primary backgrounds, text on dark
+```css
+--color-primary: #192A56           /* Dark Blue */
+--color-secondary: #8D99AE         /* Cool Grey */
+--color-background: #F8F9FA        /* Off-white */
+--color-action: #436098            /* Professional Blue */
+--color-accent: #CE1F2C            /* Bright Red */
 ```
 
 **Gradient Options**
 
 ```
-Spotlight Effect (inspired by logo)
-- Linear gradient: Deep Security Blue → Spotlight Cyan
-- Use: Headers, hero sections, featured content cards
+Professional Blue Gradient (for cards, hero sections)
+- Linear gradient: Action Blue (#436098) → Lighter variant (#6A8CC7)
+- Use: Headers, hero sections, featured content cards, missing image placeholders
 
 Subtle Background
-- Linear gradient: White → Light Gray
+- Linear gradient: White → Base/Background (#F8F9FA)
 - Use: Page backgrounds, subtle depth
 ```
 
@@ -132,42 +124,42 @@ H1 (Page Titles)
 - Size: 2.5rem (40px) desktop, 2rem (32px) mobile
 - Weight: 700
 - Line Height: 1.2
-- Color: Deep Security Blue or Security Red
+- Color: Primary (#192A56) or Accent (#CE1F2C)
 - Usage: Page headlines, hero titles
 
 H2 (Section Headings)
 - Size: 2rem (32px) desktop, 1.75rem (28px) mobile
 - Weight: 700
 - Line Height: 1.3
-- Color: Deep Security Blue
+- Color: Primary (#192A56)
 - Usage: Major sections
 
 H3 (Subsection Headings)
 - Size: 1.5rem (24px) desktop, 1.375rem (22px) mobile
 - Weight: 600
 - Line Height: 1.4
-- Color: Deep Security Blue
+- Color: Primary (#192A56)
 - Usage: Episode titles, card headings
 
 H4 (Minor Headings)
 - Size: 1.25rem (20px)
 - Weight: 600
 - Line Height: 1.4
-- Color: Charcoal
+- Color: Primary (#192A56)
 - Usage: Sidebar headings, metadata labels
 
 Body Text
 - Size: 1rem (16px)
 - Weight: 400
 - Line Height: 1.6
-- Color: Charcoal
+- Color: Primary (#192A56)
 - Max width: 70ch for readability
 
 Small Text
 - Size: 0.875rem (14px)
 - Weight: 400
 - Line Height: 1.5
-- Color: Charcoal or 70% opacity
+- Color: Primary (#192A56) or Secondary (#8D99AE) at 70% opacity
 - Usage: Metadata, captions, footnotes
 ```
 
@@ -220,7 +212,7 @@ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 
 **Primary Button (Main CTAs)**
 ```
-Background: Security Red (#C8534B)
+Background: Action Blue (#436098)
 Text: White
 Padding: 12px 24px
 Border Radius: 8px
@@ -228,45 +220,67 @@ Font Weight: 600
 Font Size: 1rem (16px)
 
 Hover State:
-- Background: Darken 10% (#B34740)
-- Box Shadow: 0 4px 12px rgba(200, 83, 75, 0.3)
+- Background: Darken 10% (#3A5282)
+- Box Shadow: 0 4px 12px rgba(67, 96, 152, 0.3)
 - Transform: translateY(-2px)
 - Transition: all 0.2s ease
 
 Active State:
 - Transform: translateY(0)
-- Box Shadow: 0 2px 8px rgba(200, 83, 75, 0.3)
+- Box Shadow: 0 2px 8px rgba(67, 96, 152, 0.3)
 
-Examples: "Listen Now", "Subscribe", "Join Newsletter"
+Examples: "Subscribe", "Join Newsletter", "View All Episodes"
+```
+
+**Accent Button ("Listen Now" only)**
+```
+Background: Accent Red (#CE1F2C)
+Text: White
+Padding: 12px 24px
+Border Radius: 8px
+Font Weight: 600
+Font Size: 1rem (16px)
+
+Hover State:
+- Background: Darken 10% (#B41A26)
+- Box Shadow: 0 4px 12px rgba(206, 31, 44, 0.3)
+- Transform: translateY(-2px)
+- Transition: all 0.2s ease
+
+Active State:
+- Transform: translateY(0)
+- Box Shadow: 0 2px 8px rgba(206, 31, 44, 0.3)
+
+Examples: "Listen Now" (header button only - used sparingly)
 ```
 
 **Secondary Button (Alternative Actions)**
 ```
 Background: Transparent
-Border: 2px solid Deep Security Blue (#1E4D8B)
-Text: Deep Security Blue
+Border: 2px solid Action Blue (#436098)
+Text: Action Blue (#436098)
 Padding: 10px 24px (adjusted for border)
 Border Radius: 8px
 Font Weight: 600
 Font Size: 1rem (16px)
 
 Hover State:
-- Background: Deep Security Blue
+- Background: Action Blue (#436098)
 - Text: White
 - Transition: all 0.2s ease
 
-Examples: "Learn More", "View All Episodes", "Browse Resources"
+Examples: "Learn More", "Browse Resources"
 ```
 
 **Tertiary Button (Subtle Actions)**
 ```
 Background: Transparent
-Text: Spotlight Cyan (#3BA0D4)
+Text: Action Blue (#436098)
 Font Weight: 600
 Font Size: 1rem (16px)
 
 Hover State:
-- Text: Deep Security Blue
+- Text: Primary (#192A56)
 - Text Decoration: underline
 - Transition: all 0.2s ease
 
@@ -303,7 +317,7 @@ Cover Image:
 - Border Radius: 8px 8px 0 0
 
 Category Tag:
-- Background: Olive Green (or other color by category)
+- Background: Secondary Grey (#8D99AE) (or other color by category)
 - Text: White
 - Padding: 4px 12px
 - Border Radius: 4px
@@ -342,18 +356,18 @@ Style:
 - Background: White
 
 Focus State:
-- Border: 2px solid Spotlight Cyan
-- Box Shadow: 0 0 0 3px rgba(59, 160, 212, 0.1)
+- Border: 2px solid Action Blue (#436098)
+- Box Shadow: 0 0 0 3px rgba(67, 96, 152, 0.1)
 - Outline: none
 
 Error State:
-- Border: 2px solid Security Red
-- Box Shadow: 0 0 0 3px rgba(200, 83, 75, 0.1)
+- Border: 2px solid Accent Red (#CE1F2C)
+- Box Shadow: 0 0 0 3px rgba(206, 31, 44, 0.1)
 
 Labels:
 - Font Size: 0.875rem (14px)
 - Font Weight: 600
-- Color: Charcoal
+- Color: Primary (#192A56)
 - Margin Bottom: 8px
 ```
 
@@ -390,10 +404,10 @@ Style:
 - Navigation Links:
   - Font Size: 1rem (16px)
   - Font Weight: 500
-  - Color: Charcoal
-  - Hover: Security Red
-  - Active: Security Red with underline
-- Listen Now Button: Primary button style
+  - Color: Primary (#192A56)
+  - Hover: Accent Red (#CE1F2C)
+  - Active: Accent Red (#CE1F2C) with underline
+- Listen Now Button: Accent button style (red)
 ```
 
 **Mobile Navigation**
@@ -408,7 +422,7 @@ Expanded State:
 - Social icons at bottom
 
 Style:
-- Background: Deep Security Blue
+- Background: Primary Blue (#192A56)
 - Links: White text
 - Font Size: 1.25rem (20px)
 - Padding: 16px between links
@@ -434,7 +448,7 @@ Structure (Desktop):
 └─────────────────────────────────────────────────────┘
 
 Style:
-- Background: Deep Security Blue
+- Background: Primary Blue (#192A56)
 - Text: White (80% opacity for links)
 - Padding: 48px 0
 - Link Hover: Full white opacity
@@ -780,7 +794,7 @@ Active (Click):
 - Transition: 0.1s ease
 
 Focus (Keyboard):
-- Outline: 2px solid Spotlight Cyan
+- Outline: 2px solid Action Blue (#436098)
 - Outline Offset: 2px
 ```
 
@@ -822,7 +836,7 @@ Use for:
 
 Style:
 - Circular spinner
-- Spotlight Cyan color
+- Action Blue (#436098) color
 - Centered in container
 ```
 
@@ -872,7 +886,7 @@ Style:
 ```
 Normal Text (< 18px):
 - Contrast ratio: 4.5:1 minimum
-- Example: Charcoal on White (16:1) ✓
+- Example: Primary (#192A56) on White (12.6:1) ✓
 
 Large Text (≥ 18px or bold ≥ 14px):
 - Contrast ratio: 3:1 minimum
@@ -898,7 +912,7 @@ UI Components:
 **Focus Indicators:**
 ```
 Style:
-- Outline: 2px solid Spotlight Cyan
+- Outline: 2px solid Action Blue (#436098)
 - Outline Offset: 2px
 - Border Radius: matches element
 ```
