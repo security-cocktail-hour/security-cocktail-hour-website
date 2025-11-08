@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partnership Opportunities - Security Cocktail Hour Podcast</title>
+    <meta name="description" content="Support the Security Cocktail Hour podcast through partnership opportunities. Connect with cybersecurity professionals and support cybersecurity education.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #192A56;
+            background: #F8F9FA;
+        }
+        
+        /* Navigation */
+        .nav {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #192A56;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #192A56;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: #436098;
+        }
+        
+        .btn-primary {
+            background: #CE1F2C;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            background: #B41A26;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(206, 31, 44, 0.3);
+        }
+        
+        .btn-secondary {
+            background: #436098;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-secondary:hover {
+            background: #3A5282;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(67, 96, 152, 0.3);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #192A56 0%, #436098 100%);
+            color: white;
+            padding: 4rem 1.5rem 3rem;
+            text-align: center;
+        }
+        
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-style: italic;
+        }
+        
+        .hero p {
+            font-size: 1.125rem;
+            margin-bottom: 0;
+            opacity: 0.9;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        /* Section Styling */
+        .section {
+            padding: 3rem 0;
+        }
+        
+        .section-white {
+            background: white;
+        }
+        
+        .section-gray {
+            background: #F8F9FA;
+        }
+        
+        /* About & Audience Section */
+        .about-audience {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .about-box, .audience-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-box h2, .audience-box h2 {
+            font-size: 2rem;
+            color: #192A56;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .about-box p {
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        .audience-box ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        
+        .audience-box li {
+            padding: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .audience-box li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #436098;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .audience-note {
+            font-style: italic;
+            color: #CE1F2C;
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+        
+        /* Partnership Levels */
+        .partnership-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .partnership-header h2 {
+            font-size: 2.5rem;
+            color: #192A56;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .partnership-levels {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .partnership-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .partnership-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+        
+        .partnership-header-section {
+            background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .partnership-card.featured .partnership-header-section {
+            background: linear-gradient(135deg, #192A56 0%, #436098 100%);
+        }
+        
+        .partnership-card.premier .partnership-header-section {
+            background: linear-gradient(135deg, #CE1F2C 0%, #B41A26 100%);
+        }
+        
+        .partnership-tier {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        
+        .partnership-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .partnership-body {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .partnership-body ul {
+            list-style: none;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+        
+        .partnership-body li {
+            padding: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.5;
+            border-bottom: 1px solid #F8F9FA;
+        }
+        
+        .partnership-body li:last-child {
+            border-bottom: none;
+        }
+        
+        .partnership-body li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #436098;
+            font-weight: bold;
+        }
+        
+        .custom-note {
+            text-align: center;
+            font-style: italic;
+            color: #8D99AE;
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #F8F9FA;
+            border-radius: 8px;
+        }
+        
+        /* Why Support Section */
+        .why-support {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .why-support h2 {
+            font-size: 2rem;
+            color: #192A56;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        
+        .benefit-card h3 {
+            color: #436098;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .benefit-card p {
+            color: #192A56;
+            line-height: 1.6;
+        }
+        
+        /* Metrics Section */
+        .metrics-section {
+            text-align: center;
+        }
+        
+        .metrics-section h2 {
+            font-size: 2rem;
+            color: #192A56;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto 2rem;
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .metric-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .metric-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .metrics-note {
+            font-size: 0.875rem;
+            color: #8D99AE;
+            font-style: italic;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #192A56 0%, #436098 100%);
+            color: white;
+        }
+        
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .cta-section p {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-white {
+            background: white;
+            color: #192A56;
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+        
+        .btn-white:hover {
+            background: #F8F9FA;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Footer */
+        .footer {
+            background: #192A56;
+            color: white;
+            padding: 2rem 0 1rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .footer p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.875rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .about-audience {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .partnership-levels {
+                grid-template-columns: 1fr;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.125rem;
+            }
+            
+            .partnership-header h2 {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-white {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">🍸</div>
+                <span>Security Cocktail Hour</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/episodes">Episodes</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="#" class="btn-primary">Listen Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Partnership Opportunities</h1>
+            <p class="subtitle">Support the Podcast that Supports You</p>
+        </div>
+    </section>
+
+    <!-- About & Audience Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="about-audience">
+                <div class="about-box">
+                    <h2>About the Podcast</h2>
+                    <p>Hosted by Joe Patti and Adam Roth, the Security Cocktail Hour features candid, in-depth discussions about the latest security topics and current events with expert guests from across the industry.</p>
+                    <p>With 62+ episodes, we've built a dedicated community of security practitioners who trust our insights and recommendations.</p>
+                </div>
+                
+                <div class="audience-box">
+                    <h2>Our Audience</h2>
+                    <ul>
+                        <li>Cybersecurity professionals (CISOs, Security Engineers, SOC Analysts)</li>
+                        <li>Technology leaders and decision-makers</li>
+                        <li>Cybersecurity vendors and consultants</li>
+                        <li>IT professionals and others transitioning into security</li>
+                    </ul>
+                    <p class="audience-note">Highly engaged professionals who value deep discussions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Levels Section -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="partnership-header">
+                <h2>Partnership Levels</h2>
+            </div>
+            
+            <div class="partnership-levels">
+                <!-- Supporter Tier -->
+                <div class="partnership-card">
+                    <div class="partnership-header-section">
+                        <div class="partnership-tier">Supporter</div>
+                        <div class="partnership-price">$500</div>
+                    </div>
+                    <div class="partnership-body">
+                        <ul>
+                            <li>Company mention during episode</li>
+                            <li>Link & CTA in episode description</li>
+                            <li>Social media recognition</li>
+                        </ul>
+                        <a href="/contact" class="btn-secondary" style="width: 100%;">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Featured Partner Tier -->
+                <div class="partnership-card featured">
+                    <div class="partnership-header-section">
+                        <div class="partnership-tier">Featured Partner</div>
+                        <div class="partnership-price">$1,000</div>
+                    </div>
+                    <div class="partnership-body">
+                        <ul>
+                            <li>Everything in Supporter</li>
+                            <li>15-second ad read</li>
+                            <li>Featured paragraph in episode description</li>
+                        </ul>
+                        <a href="/contact" class="btn-secondary" style="width: 100%;">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Episode Sponsor Tier -->
+                <div class="partnership-card premier">
+                    <div class="partnership-header-section">
+                        <div class="partnership-tier">Episode Sponsor</div>
+                        <div class="partnership-price">$2,500</div>
+                    </div>
+                    <div class="partnership-body">
+                        <ul>
+                            <li>Everything in Featured Partner</li>
+                            <li>60-second ad read</li>
+                            <li>Logo featured in episode intro</li>
+                            <li>Dedicated social media post</li>
+                        </ul>
+                        <a href="/contact" class="btn-primary" style="width: 100%;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="custom-note">
+                Custom packages available — let's discuss what works for your team.
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Support Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="why-support">
+                <h2>Why Support Your Team Member's Appearance?</h2>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Professional Development Visibility</h3>
+                        <p>Showcase your team members as industry thought leaders and support their professional growth.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <h3>Industry Thought Leadership Positioning</h3>
+                        <p>Position your organization at the forefront of cybersecurity conversations and innovations.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <h3>Authentic Connection with Security Practitioners</h3>
+                        <p>Build genuine relationships with cybersecurity professionals through meaningful content.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <h3>Support for Cybersecurity Education</h3>
+                        <p>Contribute to the advancement of cybersecurity knowledge and help elevate the entire industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="metrics-section">
+                <h2>Podcast Metrics</h2>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-number">44,000</div>
+                        <div class="metric-label">Total Views</div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-number">81,000</div>
+                        <div class="metric-label">Impressions</div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-number">407</div>
+                        <div class="metric-label">Subscribers</div>
+                    </div>
+                </div>
+                
+                <p class="metrics-note">Stats for YouTube, 11/7/2024-11/7/2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to Partner With Us?</h2>
+            <p>Let's discuss how we can work together to support cybersecurity education and connect with engaged professionals.</p>
+            
+            <div class="cta-buttons">
+                <a href="/contact" class="btn-white">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Security Cocktail Hour Podcast. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
