@@ -1014,7 +1014,8 @@ Check:
 - `content/episodes/` - All episode markdown files
 
 **Documentation:**
-- `docs/sch_design_spec.md` - Design specification
+- `docs/design_specs/sch_design_spec_v1_2.md` - Master design specification (v1.2)
+- `docs/design_specs/partnership_page_spec.md` - Partnership page specification
 - `docs/sch_website_requirements.md` - Requirements
 - `docs/hosting_requirements.md` - Hosting and deployment guide
 - `SESSION_CONTEXT.md` - This file (in root)
@@ -1099,6 +1100,19 @@ Check:
    - Second deployment: Added footer Partnership link (deployed successfully)
    - All Partnership page features live and accessible
    - Site URL: https://securitycocktailhour.com/partnership
+
+8. **Design Specification Documentation**
+   - Created new `docs/design_specs/` folder for centralized design documentation
+   - Master design spec: `sch_design_spec_v1_2.md` (1,474 lines, updated from v1.1)
+   - Page-specific spec: `partnership_page_spec.md` (693 lines)
+   - Updated gradient documentation with all three production gradients:
+     - Professional Blue gradient (primary - general use)
+     - Dark Blue gradient (emphasis - featured items)
+     - Red gradient (premium - accent items)
+   - Both documents cross-reference each other
+   - Partnership spec references master design system v1.2
+   - Master spec lists Partnership as "Implemented & Deployed"
+   - Documentation matches production implementation
 
 **Previous Updates (November 6, 2025):**
 1. Updated Design Specification to v1.1 with current color palette
