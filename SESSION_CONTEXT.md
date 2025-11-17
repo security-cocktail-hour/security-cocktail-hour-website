@@ -1,8 +1,8 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: November 12, 2025
+**Last Updated**: November 17, 2025
 **Hugo Version**: v0.151.0
-**Session Status**: LIVE IN PRODUCTION - Episode 51 enhanced with highlights, Shadow AI content, and full transcript
+**Session Status**: LIVE IN PRODUCTION - Episode 63 deployed with full transcript
 
 ---
 
@@ -40,12 +40,13 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
 - Consistent spacing, shadows, border radius
 
 **Content:**
-- 65 episodes (64 migrated from CSV, Episode 62 added November 2, 2025, deployed November 3, 2025)
+- 66 episodes (64 migrated from CSV, Episode 62 added November 2, 2025, Episode 63 added November 17, 2025)
 - All episode metadata (title, date, guest, category, duration, description)
-- Episode images (45 of 65 present, graceful fallbacks for missing)
+- Episode images (46 of 66 present, graceful fallbacks for missing)
 - Host photos (Joe Patti, Adam Roth)
 - Logo and branding assets
 - Standardized episode format with timestamps and topics (bulleted lists)
+- Full transcripts with proper speaker formatting (hosts in bold with square brackets, guests in regular text with parentheses)
 
 **Technical:**
 - SEO optimization (meta tags, Open Graph, schema.org markup)
@@ -1050,12 +1051,40 @@ Check:
 
 **Production Deployment File:**
 - Location: `production-deployment.zip` in project root
-- Size: 7.8 MB (76 pages)
+- Size: 7.9 MB (77 pages)
 - Ready for deployment via cPanel File Manager
-- Last Updated: November 12, 2025
-- Status: DEPLOYED TO PRODUCTION - Episode 51 enhanced content live on site
+- Last Updated: November 17, 2025
+- Status: READY FOR DEPLOYMENT - Episode 63 with full 60-minute transcript
 
-**Recent Updates (November 12, 2025):**
+**Recent Updates (November 17, 2025):**
+1. **Episode 63 Deployment: "Cybersecurity at Nanosecond Speed | Securing High Frequency Trading"**
+   - Added Episode 63 with guest Jatin Mannepalli (Information Security Officer, IMC Trading)
+   - Complete 60-minute transcript with proper speaker formatting
+   - Episode thumbnail: episode-063.jpg (63KB)
+   - Platform links: YouTube, Spotify, Apple Podcasts (episode-specific), Amazon Music
+   - File: `content/episodes/episode-63-cybersecurity-at-nanosecond-speed-securing-high-frequency-trading.md`
+
+2. **Transcript Formatting Standard Established**
+   - Hosts formatted as: `**Joe [00:06]:**` (bold with square brackets)
+   - Guests formatted as: `Jatin (00:00)` (regular text with parentheses)
+   - Based on Episode 60 format as the standard template
+   - Applied to Episode 63 transcript for consistency
+
+3. **Episode Content Highlights**
+   - High-frequency trading security challenges
+   - Nanosecond-level performance requirements
+   - Radio-based data transmission security
+   - Custom hardware and OS security considerations
+   - Information sharing among HFT firms
+   - Incident response in time-critical environments
+
+4. **Production Build**
+   - Built with `hugo --minify` (175ms build time)
+   - Total pages: 77 (up from 76)
+   - Package size: 7.9 MB
+   - Status: Ready for GoDaddy cPanel deployment
+
+**Previous Updates (November 12, 2025):**
 1. **Episode 51 Content Enhancement**
    - Added comprehensive "Episode Highlights" section with bullet-point summary
    - Added "Shadow AI" thought leadership content section
