@@ -95,12 +95,25 @@ public_html/
 
 ### Step 5: Set File Permissions
 
+**Important:** The zip file contains Unix permissions (755 for directories, 644 for files), but cPanel extraction may not preserve them correctly.
+
+#### Option A: Using Shell Script (Recommended)
+
+1. Upload the `fix-permissions.sh` script from the project root to `public_html`
+2. In cPanel, go to **Terminal** (or **SSH Access**)
+3. Navigate to public_html: `cd public_html`
+4. Make script executable: `chmod +x fix-permissions.sh`
+5. Run the script: `./fix-permissions.sh`
+6. Delete the script when done: `rm fix-permissions.sh`
+
+#### Option B: Using cPanel File Manager (Alternative)
+
 1. In cPanel File Manager, still in `public_html`
 2. Select all files and folders
 3. Click **Permissions** (or **Change Permissions**)
 4. Set:
-   - **Folders:** 755
-   - **Files:** 644
+   - **Folders:** 755 (rwxr-xr-x)
+   - **Files:** 644 (rw-r--r--)
 5. Check **Recurse into subdirectories**
 6. Click **Change Permissions**
 
