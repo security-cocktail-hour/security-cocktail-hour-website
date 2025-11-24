@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: November 17, 2025
+**Last Updated**: November 23, 2025
 **Hugo Version**: v0.151.0
 **Session Status**: LIVE IN PRODUCTION - Episode 63 deployed with full transcript
 
@@ -514,6 +514,8 @@ Previous color palette saved in: `static/css/main.css.backup`
 │   ├── sch_website_requirements.md
 │   ├── hosting_requirements.md
 │   └── SESSION_CONTEXT.md   # This file
+├── scripts/                 # Utility scripts directory
+│   └── format_transcript.py # Transcript formatting utility
 ├── public/                  # Generated site (ignored by git)
 └── convert_episodes.py      # Python script for CSV to markdown conversion
 ```
@@ -1025,6 +1027,7 @@ Check:
 
 **Scripts:**
 - `convert_episodes.py` - CSV to markdown converter
+- `scripts/format_transcript.py` - Transcript formatting utility for episodes
 
 ---
 
@@ -1056,7 +1059,22 @@ Check:
 - Last Updated: November 17, 2025
 - Status: READY FOR DEPLOYMENT - Episode 63 with full 60-minute transcript
 
-**Recent Updates (November 17, 2025):**
+**Recent Updates (November 23, 2025):**
+1. **Repository Cleanup and Organization**
+   - Created new `scripts/` directory for utility scripts
+   - Moved `format_transcript.py` from temp/ to scripts/ for better organization
+   - Cleaned up obsolete Episode 63 working files:
+     - Removed: 63-content-answers.txt
+     - Removed: Jatin Mannepalli thumb 2.jpg
+     - Removed: jatin-mannepalli-transcript-edit-3.txt
+   - Cleaned up obsolete Episode 51 transcript files:
+     - Removed: shadow ai post.txt
+     - Removed: transcript-ep-051.txt and all formatted variants
+   - Updated file permissions on 8 episode images (episodes 15, 16, 19, 21, 26, 30, 31, 33)
+   - Commit: "Clean up temp directory and reorganize transcript formatting script"
+   - Pushed to GitHub - triggers automatic Netlify staging deployment
+
+**Previous Updates (November 17, 2025):**
 1. **Episode 63 Deployment: "Cybersecurity at Nanosecond Speed | Securing High Frequency Trading"**
    - Added Episode 63 with guest Jatin Mannepalli (Information Security Officer, IMC Trading)
    - Complete 60-minute transcript with proper speaker formatting
@@ -1254,7 +1272,7 @@ Contact form and newsletter subscriptions are **placeholder forms only**. They d
 **Project Owner**: Joe
 **Project Location**: `/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/website/redesign 2025-10/security-cocktail-hour-website`
 **Hugo Version**: v0.151.0
-**Last Session**: November 8, 2025
+**Last Session**: November 23, 2025
 
 ---
 
