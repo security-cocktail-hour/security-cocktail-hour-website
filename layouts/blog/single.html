@@ -1,0 +1,248 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "head" }}
+<!-- Article Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ with .Params.author }}{{ . }}{{ else }}Security Cocktail Hour{{ end }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}",
+  "url": "{{ .Permalink }}"
+  {{ with .Params.image }},"image": "{{ . | absURL }}"{{ end }}
+}
+</script>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+{{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ .Permalink }}">
+<meta property="twitter:title" content="{{ .Title }}">
+<meta property="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+{{ with .Params.image }}<meta property="twitter:image" content="{{ . | absURL }}">{{ end }}
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Article Header -->
+<section class="section" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white; padding: 2rem 0;">
+  <div class="container">
+    <nav aria-label="Breadcrumb" style="margin-bottom: 1rem; font-size: 0.875rem;">
+      <a href="{{ "/" | relURL }}" style="color: rgba(255, 255, 255, 0.8);">Home</a> &gt;
+      <a href="{{ "blog" | relURL }}" style="color: rgba(255, 255, 255, 0.8);">Blog</a> &gt;
+      <span style="color: white;">{{ .Title }}</span>
+    </nav>
+
+    <div style="margin-bottom: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+      {{ with .Params.category }}
+        <span class="category-tag" style="background: rgba(255, 255, 255, 0.3);">{{ . }}</span>
+      {{ end }}
+      {{ with .Params.tags }}
+        {{ range first 3 . }}
+          <span class="category-tag" style="background: rgba(255, 255, 255, 0.2);">#{{ . }}</span>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <h1 style="color: white; margin-bottom: 1rem;">{{ .Title }}</h1>
+
+    <p style="font-size: 1rem; margin-bottom: 0; opacity: 0.95;">
+      {{ with .Params.author }}<strong>{{ . }}</strong> | {{ end }}
+      {{ .Date.Format "January 2, 2006" }}
+      {{ if ne (.Date.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
+        <span style="opacity: 0.8;"> | Updated {{ .Lastmod.Format "January 2, 2006" }}</span>
+      {{ end }}
+    </p>
+  </div>
+</section>
+
+<!-- Main Content with Sidebar -->
+<section class="section">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+
+      <!-- Main Content Column -->
+      <div style="grid-column: 1;">
+
+        <!-- Article Description/Summary -->
+        {{ with .Params.description }}
+          <div style="background: #F5F5F5; padding: 1.5rem; border-left: 4px solid #436098; margin-bottom: 2rem; border-radius: 4px;">
+            <p style="margin: 0; font-size: 1.125rem; font-weight: 500; color: #192A56;">{{ . }}</p>
+          </div>
+        {{ end }}
+
+        <!-- Article Content -->
+        <div class="article-content" style="margin-bottom: 2rem;">
+          {{ .Content }}
+        </div>
+
+        <!-- Tags Section -->
+        {{ with .Params.tags }}
+          <div style="border-top: 1px solid #E5E5E5; padding-top: 1.5rem; margin-top: 2rem; margin-bottom: 2rem;">
+            <h4 style="margin-bottom: 1rem;">Tags</h4>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              {{ range . }}
+                <a href="{{ "blog" | relURL }}?tag={{ . | urlquery }}" style="font-size: 0.875rem; color: #436098; background: rgba(67, 96, 152, 0.1); padding: 0.5rem 1rem; border-radius: 20px; text-decoration: none; transition: all 0.2s;">#{{ . }}</a>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+
+        <!-- Social Sharing -->
+        <div style="border-top: 1px solid #E5E5E5; padding-top: 1.5rem; margin-top: 2rem;">
+          <h4>Share This Post</h4>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+            <a href="https://twitter.com/intent/tweet?text={{ .Title | urlquery }}&url={{ .Permalink | urlquery }}" target="_blank" rel="noopener" class="btn btn-secondary">Twitter</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | urlquery }}" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+            <a href="mailto:?subject={{ .Title | urlquery }}&body={{ .Permalink | urlquery }}" class="btn btn-secondary">Email</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sidebar Column (Desktop) -->
+      <aside style="grid-column: 1;">
+
+        <!-- Email Signup -->
+        <div class="card" style="margin-bottom: 2rem; background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white;">
+          <div class="card-content">
+            <h4 style="color: white;">Join Our Newsletter</h4>
+            <p style="font-size: 0.875rem; margin-bottom: 1rem;">
+              Get exclusive insights, show news and more delivered to your inbox.
+            </p>
+            <form action="https://securitycocktailhour.us4.list-manage.com/subscribe/post?u=5a12cbfb41bc7e9e08b7af3c6&amp;id=2eddec8bf9&amp;f_id=0098d0edf0" method="POST" target="_blank">
+              <input
+                type="email"
+                name="EMAIL"
+                placeholder="Your email"
+                required
+                style="width: 100%; margin-bottom: 0.5rem;"
+              >
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_5a12cbfb41bc7e9e08b7af3c6_2eddec8bf9" tabindex="-1" value="">
+              </div>
+              <button type="submit" name="subscribe" class="btn btn-primary" style="width: 100%; background: white; color: #436098;">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Link to All Blog Posts -->
+        <div>
+          <a href="{{ "blog" | relURL }}" class="btn btn-secondary" style="width: 100%; text-align: center;">View All Posts</a>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- Responsive Grid for Desktop -->
+<style>
+@media (min-width: 900px) {
+  .section .container > div {
+    grid-template-columns: 2fr 1fr !important;
+  }
+  .section .container > div > div:first-child {
+    grid-column: 1 !important;
+  }
+  .section .container > div > aside {
+    grid-column: 2 !important;
+  }
+}
+
+/* Article Content Styling */
+.article-content h2 {
+  color: #192A56;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.article-content h3 {
+  color: #192A56;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.article-content h4 {
+  color: #192A56;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.article-content p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.article-content ul,
+.article-content ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.article-content blockquote {
+  border-left: 4px solid #436098;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: rgba(45, 45, 45, 0.8);
+}
+
+.article-content code {
+  background: #F5F5F5;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: monospace;
+}
+
+.article-content pre {
+  background: #F5F5F5;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.article-content pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+</style>
+
+{{ end }}

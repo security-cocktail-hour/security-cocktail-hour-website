@@ -16,6 +16,10 @@ title = 'Security Cocktail Hour Podcast'
     pageRef = '/episodes'
     weight = 10
   [[menu.main]]
+    name = 'Blog'
+    pageRef = '/blog'
+    weight = 15
+  [[menu.main]]
     name = 'About'
     pageRef = '/about'
     weight = 20

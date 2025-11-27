@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direction 2: Neon Cyberpunk Bar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=IBM+Plex+Mono:wght@400;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Cyberpunk Palette */
+      --color-black: #0D0D0D;
+      --color-cyan: #00F5FF;
+      --color-magenta: #FF006E;
+      --color-purple: #8B5CF6;
+      --color-green: #10F4B1;
+      --color-dark-bg: #1A1A2E;
+      --color-grid: #2A2A4E;
+
+      --font-display: 'Teko', sans-serif;
+      --font-body: 'Rajdhani', sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--color-black);
+      color: var(--color-cyan);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Scan lines effect */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 245, 255, 0.03) 0px,
+        transparent 1px,
+        transparent 2px,
+        rgba(0, 245, 255, 0.03) 3px
+      );
+      pointer-events: none;
+      z-index: 9999;
+      animation: scan 8s linear infinite;
+    }
+
+    @keyframes scan {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(10px); }
+    }
+
+    /* Grid background */
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image:
+        linear-gradient(var(--color-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+      background-size: 50px 50px;
+      opacity: 0.1;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Header */
+    .site-header {
+      background: rgba(26, 26, 46, 0.95);
+      border-bottom: 2px solid var(--color-cyan);
+      padding: 1rem 0;
+      position: relative;
+    }
+
+    .site-header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg,
+        transparent,
+        var(--color-magenta) 20%,
+        var(--color-cyan) 50%,
+        var(--color-green) 80%,
+        transparent
+      );
+      animation: slideGlow 3s ease-in-out infinite;
+    }
+
+    @keyframes slideGlow {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-logo {
+      height: 60px;
+      filter: drop-shadow(0 0 10px var(--color-cyan));
+    }
+
+    .site-nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .site-nav a {
+      font-family: var(--font-display);
+      color: var(--color-cyan);
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      position: relative;
+      text-shadow: 0 0 10px var(--color-cyan);
+      transition: all 0.3s;
+    }
+
+    .site-nav a:hover {
+      color: var(--color-magenta);
+      text-shadow: 0 0 20px var(--color-magenta);
+    }
+
+    /* Hero - Glitch Effect */
+    .hero {
+      background: linear-gradient(135deg, var(--color-dark-bg) 0%, var(--color-black) 100%);
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Diagonal neon bars */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 200%;
+      background: linear-gradient(90deg,
+        transparent,
+        var(--color-cyan) 50%,
+        transparent
+      );
+      opacity: 0.1;
+      transform: rotate(15deg);
+      animation: pulse 4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.05; }
+      50% { opacity: 0.15; }
+    }
+
+    .hero-content {
+      max-width: 800px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 10vw, 7rem);
+      font-weight: 700;
+      line-height: 0.9;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-cyan);
+      text-shadow:
+        0 0 20px var(--color-cyan),
+        0 0 40px var(--color-cyan),
+        0 0 60px var(--color-cyan);
+      animation: glitchText 5s infinite;
+    }
+
+    @keyframes glitchText {
+      0%, 90%, 100% { text-shadow: 0 0 20px var(--color-cyan), 0 0 40px var(--color-cyan); }
+      92% { text-shadow: 3px 0 20px var(--color-magenta), -3px 0 40px var(--color-green); }
+      94% { text-shadow: -3px 0 20px var(--color-green), 3px 0 40px var(--color-cyan); }
+    }
+
+    .hero-tagline {
+      font-family: var(--font-mono);
+      font-size: 1.3rem;
+      color: var(--color-green);
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+    }
+
+    .hero-tagline::before {
+      content: '> ';
+      color: var(--color-magenta);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+
+    .btn-primary {
+      background: transparent;
+      color: var(--color-magenta);
+      border: 3px solid var(--color-magenta);
+      box-shadow: 0 0 20px var(--color-magenta);
+    }
+
+    .btn-primary:hover {
+      background: var(--color-magenta);
+      color: var(--color-black);
+      box-shadow: 0 0 40px var(--color-magenta);
+      transform: translateY(-3px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-cyan);
+      border: 3px solid var(--color-cyan);
+      box-shadow: 0 0 20px var(--color-cyan);
+    }
+
+    .btn-secondary:hover {
+      background: var(--color-cyan);
+      color: var(--color-black);
+      box-shadow: 0 0 40px var(--color-cyan);
+      transform: translateY(-3px);
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .platforms {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .platforms a {
+      font-family: var(--font-mono);
+      color: var(--color-purple);
+      font-size: 0.9rem;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border: 2px solid var(--color-purple);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.3s;
+    }
+
+    .platforms a:hover {
+      color: var(--color-black);
+      background: var(--color-purple);
+      box-shadow: 0 0 20px var(--color-purple);
+    }
+
+    /* Latest Episode - Holographic Card */
+    .latest-episode {
+      padding: 4rem 0;
+      background: var(--color-dark-bg);
+    }
+
+    .section-header {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--color-cyan);
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow: 0 0 30px var(--color-cyan);
+    }
+
+    .episode-card-main {
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid var(--color-cyan);
+      box-shadow:
+        0 0 30px var(--color-cyan),
+        inset 0 0 30px rgba(0, 245, 255, 0.1);
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .episode-card-main::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(0, 245, 255, 0.05),
+        transparent
+      );
+      animation: hologram 3s linear infinite;
+    }
+
+    @keyframes hologram {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .episode-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-right: 2px solid var(--color-cyan);
+      filter: saturate(1.2) contrast(1.1);
+    }
+
+    .episode-content {
+      padding: 2.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .category-badge {
+      display: inline-block;
+      background: var(--color-magenta);
+      color: var(--color-black);
+      padding: 0.4rem 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      box-shadow: 0 0 15px var(--color-magenta);
+    }
+
+    .episode-title {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      color: var(--color-cyan);
+      text-transform: uppercase;
+      text-shadow: 0 0 15px var(--color-cyan);
+    }
+
+    .episode-meta {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--color-green);
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .episode-description {
+      margin-bottom: 2rem;
+      line-height: 1.8;
+      color: #CCCCCC;
+    }
+
+    /* Recent Episodes */
+    .recent-episodes {
+      background: var(--color-black);
+      padding: 4rem 0;
+    }
+
+    .recent-episodes h2 {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: var(--color-magenta);
+      text-shadow: 0 0 30px var(--color-magenta);
+      text-transform: uppercase;
+    }
+
+    .episodes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .episode-card-small {
+      background: rgba(26, 26, 46, 0.8);
+      border: 2px solid var(--color-purple);
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .episode-card-small::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg,
+        transparent,
+        rgba(139, 92, 246, 0.3),
+        transparent
+      );
+      transition: left 0.5s;
+    }
+
+    .episode-card-small:hover::before {
+      left: 100%;
+    }
+
+    .episode-card-small:hover {
+      transform: translateY(-10px);
+      border-color: var(--color-cyan);
+      box-shadow: 0 0 40px var(--color-cyan);
+    }
+
+    .episode-card-small .episode-content {
+      padding: 1.5rem;
+    }
+
+    .episode-card-small .episode-title {
+      font-size: 1.6rem;
+      color: var(--color-green);
+      text-shadow: 0 0 10px var(--color-green);
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 4rem 0;
+      background: var(--color-dark-bg);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .about-section h2 {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      color: var(--color-cyan);
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      text-shadow: 0 0 30px var(--color-cyan);
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      color: #CCCCCC;
+    }
+
+    .hosts-panel {
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid var(--color-magenta);
+      padding: 2.5rem;
+      box-shadow: 0 0 30px var(--color-magenta);
+      position: relative;
+    }
+
+    .hosts-panel::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(45deg,
+        var(--color-cyan),
+        var(--color-magenta),
+        var(--color-purple),
+        var(--color-green)
+      );
+      z-index: -1;
+      opacity: 0.5;
+      filter: blur(10px);
+    }
+
+    .hosts-label {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--color-green);
+      margin-bottom: 1rem;
+    }
+
+    .hosts-names {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--color-cyan);
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-shadow: 0 0 15px var(--color-cyan);
+    }
+
+    /* Newsletter */
+    .newsletter {
+      background: var(--color-black);
+      padding: 4rem 0;
+      border-top: 2px solid var(--color-cyan);
+      border-bottom: 2px solid var(--color-magenta);
+    }
+
+    .newsletter h2 {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--color-green);
+      text-shadow: 0 0 30px var(--color-green);
+      text-transform: uppercase;
+    }
+
+    .newsletter-form {
+      max-width: 600px;
+      margin: 2rem auto 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 1rem 1.5rem;
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      border: 2px solid var(--color-cyan);
+      background: rgba(0, 0, 0, 0.8);
+      color: var(--color-cyan);
+    }
+
+    .newsletter-form input:focus {
+      outline: none;
+      box-shadow: 0 0 20px var(--color-cyan);
+    }
+
+    .newsletter-form button {
+      padding: 1rem 2rem;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: transparent;
+      color: var(--color-magenta);
+      border: 2px solid var(--color-magenta);
+      cursor: pointer;
+      transition: all 0.3s;
+      text-transform: uppercase;
+    }
+
+    .newsletter-form button:hover {
+      background: var(--color-magenta);
+      color: var(--color-black);
+      box-shadow: 0 0 30px var(--color-magenta);
+    }
+
+    .design-note {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.95);
+      color: var(--color-cyan);
+      padding: 1rem 1.5rem;
+      border: 2px solid var(--color-cyan);
+      border-radius: 4px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      max-width: 300px;
+      z-index: 10000;
+      box-shadow: 0 0 20px var(--color-cyan);
+    }
+
+    @media (max-width: 899px) {
+      .episode-card-main,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      .newsletter-form {
+        flex-direction: column;
+      }
+      .site-nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <img src="../static/images/logo.png" alt="Security Cocktail Hour" class="site-logo">
+      <nav class="site-nav">
+        <a href="#">Episodes</a>
+        <a href="#">About</a>
+        <a href="#">Resources</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>SECURITY<br>COCKTAIL<br>HOUR</h1>
+        <p class="hero-tagline">Cyber pros at the virtual bar</p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary">Listen Now</a>
+          <a href="#" class="btn btn-secondary">Browse</a>
+        </div>
+
+        <div class="platforms">
+          <a href="#">YouTube</a>
+          <a href="#">Spotify</a>
+          <a href="#">Apple</a>
+          <a href="#">Amazon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="latest-episode">
+    <div class="container">
+      <h2 class="section-header">Latest Episode</h2>
+
+      <div class="episode-card-main">
+        <img src="https://via.placeholder.com/400x300/FF006E/00F5FF?text=EP.63" class="episode-image" alt="Episode 63">
+        <div class="episode-content">
+          <span class="category-badge">High Frequency Trading</span>
+          <h3 class="episode-title">Nanosecond Speed</h3>
+          <p class="episode-meta">Jatin Mannepalli · Nov 17 · 60:42</p>
+          <p class="episode-description">
+            High-frequency trading security where operations happen at nanosecond speed and
+            traditional approaches need complete reimagining.
+          </p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="#" class="btn btn-primary" style="font-size: 1.3rem; padding: 0.7rem 1.5rem;">Notes</a>
+            <a href="#" class="btn btn-secondary" style="font-size: 1.3rem; padding: 0.7rem 1.5rem;">Listen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recent-episodes">
+    <div class="container">
+      <h2>Recent Episodes</h2>
+      <div class="episodes-grid">
+        <article class="episode-card-small">
+          <img src="https://via.placeholder.com/320x180/8B5CF6/10F4B1?text=EP.62" class="episode-image" alt="Episode 62">
+          <div class="episode-content">
+            <span class="category-badge">AI Security</span>
+            <h3 class="episode-title">CISOs & LLMs</h3>
+            <p class="episode-meta" style="color: var(--color-cyan);">Myke Lyons · 58:12</p>
+          </div>
+        </article>
+
+        <article class="episode-card-small">
+          <img src="https://via.placeholder.com/320x180/10F4B1/FF006E?text=EP.61" class="episode-image" alt="Episode 61">
+          <div class="episode-content">
+            <span class="category-badge">Incident Response</span>
+            <h3 class="episode-title">Crisis Management</h3>
+            <p class="episode-meta" style="color: var(--color-cyan);">Sarah Chen · 52:30</p>
+          </div>
+        </article>
+
+        <article class="episode-card-small">
+          <img src="https://via.placeholder.com/320x180/00F5FF/FF006E?text=EP.60" class="episode-image" alt="Episode 60">
+          <div class="episode-content">
+            <span class="category-badge">Career</span>
+            <h3 class="episode-title">SOC to CISO</h3>
+            <p class="episode-meta" style="color: var(--color-cyan);">Marcus Johnson · 45:18</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <h2>About</h2>
+          <p>
+            Cybersecurity is fast-changing. Nothing beats hearing from the people doing the work.
+          </p>
+          <p>
+            Security Cocktail Hour brings you conversations with practitioners sharing journeys,
+            insights, and lessons beyond the headlines.
+          </p>
+          <a href="#" class="btn btn-primary" style="font-size: 1.5rem; padding: 0.8rem 2rem;">Learn More</a>
+        </div>
+
+        <div class="hosts-panel">
+          <p class="hosts-label">Hosted By</p>
+          <h3 class="hosts-names">Joe Patti<br>&<br>Adam Roth</h3>
+          <p style="font-size: 0.95rem; line-height: 1.7; color: #AAAAAA;">
+            Two cyber veterans from SOC ops to exec leadership.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <h2>Newsletter</h2>
+      <p style="text-align: center; font-family: var(--font-mono); color: var(--color-cyan); margin-bottom: 2rem;">
+        &gt; INSIGHTS.DELIVERED
+      </p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="EMAIL_ADDRESS" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="design-note">
+    <strong>Direction 2: Neon Cyberpunk</strong><br>
+    Blade Runner bar · Glitch effects · Cyan/magenta/purple
+  </div>
+
+</body>
+</html>

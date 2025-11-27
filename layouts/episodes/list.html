@@ -14,34 +14,43 @@
 </section>
 
 <!-- Search and Filters -->
-<section class="section" style="padding: 2rem 0; background: #F5F5F5;">
+<div style="background: white; border-bottom: 1px solid #E5E5E5; padding: 1rem 0;">
   <div class="container">
-    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-      <input
-        type="search"
-        id="episode-search"
-        placeholder="🔍 Search episodes by title, guest, or topic..."
-        style="flex: 1; min-width: 300px; padding: 12px 16px; border-radius: 8px; border: 1px solid #D0D0D0;"
-      >
-      <select id="category-filter" style="padding: 12px 16px; border-radius: 8px; border: 1px solid #D0D0D0;">
-        <option value="">All Topics</option>
-        {{ $categories := slice }}
-        {{ range .Pages }}
-          {{ with .Params.category }}
-            {{ $categories = $categories | append . }}
+    <div style="display: flex; gap: 0.75rem; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+      <div style="position: relative; flex: 1; min-width: 200px; max-width: 400px;">
+        <svg style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 14px; height: 14px; color: #8D99AE; pointer-events: none;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+        <input
+          type="search"
+          id="episode-search"
+          placeholder="Search episodes..."
+          style="width: 100%; padding: 6px 10px 6px 32px; font-size: 0.8125rem; border: none; border-bottom: 1px solid #E5E5E5; background: transparent; color: #192A56; transition: border-color 0.2s;"
+          onfocus="this.style.borderBottomColor='#436098'"
+          onblur="this.style.borderBottomColor='#E5E5E5'"
+        >
+      </div>
+      <div style="display: flex; gap: 0.75rem; align-items: center;">
+        <select id="category-filter" style="padding: 6px 24px 6px 10px; font-size: 0.8125rem; border: none; border-bottom: 1px solid #E5E5E5; background: transparent; color: #192A56; cursor: pointer; appearance: none; background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width=%2710%27 height=%276%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M0 0l5 6 5-6z%27 fill=%27%238D99AE%27/%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 6px center;">
+          <option value="">Topic</option>
+          {{ $categories := slice }}
+          {{ range .Pages }}
+            {{ with .Params.category }}
+              {{ $categories = $categories | append . }}
+            {{ end }}
           {{ end }}
-        {{ end }}
-        {{ range sort (uniq $categories) }}
-          <option value="{{ . }}">{{ . }}</option>
-        {{ end }}
-      </select>
-      <select id="sort-filter" style="padding: 12px 16px; border-radius: 8px; border: 1px solid #D0D0D0;">
-        <option value="newest">Newest First</option>
-        <option value="oldest">Oldest First</option>
-      </select>
+          {{ range sort (uniq $categories) }}
+            <option value="{{ . }}">{{ . }}</option>
+          {{ end }}
+        </select>
+        <select id="sort-filter" style="padding: 6px 24px 6px 10px; font-size: 0.8125rem; border: none; border-bottom: 1px solid #E5E5E5; background: transparent; color: #192A56; cursor: pointer; appearance: none; background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width=%2710%27 height=%276%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M0 0l5 6 5-6z%27 fill=%27%238D99AE%27/%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 6px center;">
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+        </select>
+      </div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- Episodes Grid -->
 <section class="section">

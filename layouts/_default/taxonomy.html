@@ -1,0 +1,52 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+
+<!-- Page Header -->
+<section class="section" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white; padding: 3rem 0;">
+  <div class="container">
+    <h1 style="color: white;">{{ .Title }}</h1>
+    <p style="font-size: 1.125rem;">
+      {{ .Data.Plural | humanize }} in {{ .Title }}
+    </p>
+  </div>
+</section>
+
+<!-- Content Grid -->
+<section class="section">
+  <div class="container">
+    <div class="grid grid-3">
+      {{ range .Pages }}
+        <article class="card">
+          {{ with .Params.image }}
+            <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="card-image" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); display: none;"></div>
+          {{ else }}
+            <div class="card-image" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%);"></div>
+          {{ end }}
+          <div class="card-content">
+            {{ with .Params.category }}
+              <span class="category-tag">{{ . }}</span>
+            {{ end }}
+            <h3 class="card-title">{{ .Title }}</h3>
+            <p class="card-meta">
+              {{ if eq .Type "episodes" }}
+                {{ with .Params.guest }}{{ . }} | {{ end }}
+                {{ with .Params.duration }}{{ . }}{{ end }}
+              {{ else }}
+                {{ with .Params.author }}{{ . }} | {{ end }}
+                {{ .Date.Format "January 2, 2006" }}
+              {{ end }}
+            </p>
+            <p class="card-description">{{ with .Params.description }}{{ . | truncate 120 }}{{ else }}{{ $.Summary | truncate 120 }}{{ end }}</p>
+            <a href="{{ .RelPermalink }}" class="btn btn-primary">
+              {{ if eq .Type "episodes" }}Listen Now{{ else }}Read More{{ end }}
+            </a>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Layout: Hero with Featured Episode</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Using logo colors */
+      --color-red: #CE1F2C;
+      --color-dark-blue: #1E4D8B;
+      --color-cyan: #47B5D4;
+      --color-olive: #7FA560;
+      --color-charcoal: #2C2C2C;
+      --color-cream: #FDF8F3;
+
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-body: 'Work Sans', sans-serif;
+      --font-mono: 'Space Mono', monospace;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--color-cream);
+      color: var(--color-charcoal);
+      line-height: 1.6;
+    }
+
+    /* Grain texture */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulance type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      opacity: 0.035;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Header */
+    .site-header {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-bottom: 4px solid var(--color-red);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .site-logo { height: 60px; }
+
+    .site-nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .site-nav a {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--color-charcoal);
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      position: relative;
+    }
+
+    .site-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: var(--color-cyan);
+      transition: width 0.3s;
+    }
+
+    .site-nav a:hover {
+      color: var(--color-red);
+    }
+
+    .site-nav a:hover::after {
+      width: 100%;
+    }
+
+    /* NEW HERO LAYOUT - Split with Featured Episode */
+    .hero {
+      background: var(--color-dark-blue);
+      min-height: 600px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 3rem 0;
+      position: relative;
+    }
+
+    /* Top accent stripe */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: var(--color-cyan);
+    }
+
+    .hero-left {
+      padding-left: 4rem;
+      color: white;
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 7vw, 5rem);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-tagline {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 2.5rem;
+      opacity: 0.95;
+    }
+
+    .hero-platforms {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-platforms a {
+      font-family: var(--font-mono);
+      color: white;
+      font-size: 0.9rem;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      border-radius: 4px;
+      transition: all 0.3s;
+    }
+
+    .hero-platforms a:hover {
+      background: white;
+      color: var(--color-dark-blue);
+      border-color: white;
+      transform: translateY(-2px);
+    }
+
+    /* FEATURED EPISODE CARD - Right Side */
+    .hero-right {
+      padding-right: 4rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .featured-episode {
+      background: white;
+      border: 4px solid var(--color-charcoal);
+      box-shadow:
+        12px 12px 0 var(--color-cyan),
+        0 12px 30px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 500px;
+      position: relative;
+      transition: all 0.3s;
+    }
+
+    .featured-episode:hover {
+      transform: translateY(-5px);
+      box-shadow:
+        16px 16px 0 var(--color-cyan),
+        0 16px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .featured-badge {
+      position: absolute;
+      top: -15px;
+      left: 20px;
+      background: var(--color-red);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      z-index: 2;
+      clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+    }
+
+    .featured-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-bottom: 4px solid var(--color-charcoal);
+    }
+
+    .featured-content {
+      padding: 2rem;
+    }
+
+    .category-tag {
+      display: inline-block;
+      background: var(--color-olive);
+      color: white;
+      padding: 0.4rem 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+
+    .featured-title {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--color-charcoal);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+
+    .featured-meta {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--color-red);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #A81820;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(206, 31, 44, 0.3);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-charcoal);
+      border: 3px solid var(--color-charcoal);
+      margin-left: 0.5rem;
+    }
+
+    .btn-secondary:hover {
+      background: var(--color-charcoal);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* Recent Episodes Section */
+    .recent-episodes {
+      padding: 4rem 0;
+      background: white;
+    }
+
+    .section-header {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      color: var(--color-charcoal);
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      border-left: 6px solid var(--color-cyan);
+      padding-left: 1.5rem;
+    }
+
+    .episodes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .episode-card {
+      background: var(--color-cream);
+      border: 3px solid var(--color-charcoal);
+      transition: all 0.3s;
+    }
+
+    .episode-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--color-cyan);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    .episode-card:hover {
+      transform: translateY(-8px);
+      box-shadow:
+        8px 8px 0 var(--color-cyan),
+        0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .episode-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .episode-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 3px solid var(--color-charcoal);
+    }
+
+    .episode-content {
+      padding: 1.5rem;
+    }
+
+    .episode-title {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--color-charcoal);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .episode-meta {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 4rem 0;
+      background: var(--color-dark-blue);
+      color: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 3rem;
+    }
+
+    .about-section h2 {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      color: var(--color-cyan);
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .hosts-box {
+      background: rgba(0, 0, 0, 0.3);
+      border: 4px solid var(--color-cyan);
+      padding: 2.5rem;
+      text-align: center;
+    }
+
+    .hosts-label {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--color-cyan);
+      margin-bottom: 1rem;
+    }
+
+    .hosts-names {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    /* Newsletter */
+    .newsletter {
+      background: var(--color-cyan);
+      padding: 4rem 0;
+    }
+
+    .newsletter h2 {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      color: var(--color-charcoal);
+    }
+
+    .newsletter-form {
+      max-width: 600px;
+      margin: 2rem auto;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 1rem 1.5rem;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      border: 3px solid var(--color-charcoal);
+      background: white;
+    }
+
+    .newsletter-form button {
+      padding: 1rem 2rem;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      background: var(--color-red);
+      color: white;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .design-note {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      max-width: 350px;
+      z-index: 10000;
+    }
+
+    @media (max-width: 1200px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .hero-left {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+      .hero-right {
+        padding-right: 2rem;
+        padding-left: 2rem;
+      }
+
+      .featured-episode {
+        max-width: none;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 899px) {
+      .site-nav { display: none; }
+      .newsletter-form { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <img src="../static/images/logo.png" alt="Security Cocktail Hour" class="site-logo">
+      <nav class="site-nav">
+        <a href="#">Episodes</a>
+        <a href="#">About</a>
+        <a href="#">Resources</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- NEW HERO: Split Layout with Featured Episode -->
+  <section class="hero">
+    <!-- LEFT: Branding & Platform Links -->
+    <div class="hero-left">
+      <h1>Security<br>Cocktail Hour</h1>
+      <p class="hero-tagline">Cybersecurity pros talking shop at the virtual bar.</p>
+
+      <div class="hero-platforms">
+        <a href="#">YouTube</a>
+        <a href="#">Spotify</a>
+        <a href="#">Apple Podcasts</a>
+        <a href="#">Amazon Music</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Featured Episode Card -->
+    <div class="hero-right">
+      <div class="featured-episode">
+        <span class="featured-badge">Latest Episode</span>
+        <img src="https://via.placeholder.com/500x350/1E4D8B/FFFFFF?text=Episode+63" class="featured-image" alt="Episode 63">
+
+        <div class="featured-content">
+          <span class="category-tag">High Frequency Trading</span>
+          <h3 class="featured-title">Cybersecurity at Nanosecond Speed</h3>
+          <p class="featured-meta">Jatin Mannepalli • November 17, 2025 • 60:42</p>
+
+          <div style="display: flex; gap: 0.5rem; margin-top: 1.5rem;">
+            <a href="#" class="btn btn-primary">Listen Now</a>
+            <a href="#" class="btn btn-secondary">Show Notes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Episodes -->
+  <section class="recent-episodes">
+    <div class="container">
+      <h2 class="section-header">Recent Episodes</h2>
+
+      <div class="episodes-grid">
+        <article class="episode-card">
+          <img src="https://via.placeholder.com/320x200/47B5D4/FFFFFF?text=Episode+62" class="episode-image" alt="Episode 62">
+          <div class="episode-content">
+            <span class="category-tag">AI Security</span>
+            <h3 class="episode-title">How CISOs Use LLMs</h3>
+            <p class="episode-meta">Myke Lyons • 58:12</p>
+          </div>
+        </article>
+
+        <article class="episode-card">
+          <img src="https://via.placeholder.com/320x200/7FA560/FFFFFF?text=Episode+61" class="episode-image" alt="Episode 61">
+          <div class="episode-content">
+            <span class="category-tag">Incident Response</span>
+            <h3 class="episode-title">Crisis Management</h3>
+            <p class="episode-meta">Sarah Chen • 52:30</p>
+          </div>
+        </article>
+
+        <article class="episode-card">
+          <img src="https://via.placeholder.com/320x200/CE1F2C/FFFFFF?text=Episode+60" class="episode-image" alt="Episode 60">
+          <div class="episode-content">
+            <span class="category-tag">Career</span>
+            <h3 class="episode-title">SOC Analyst to CISO</h3>
+            <p class="episode-meta">Marcus Johnson • 45:18</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <h2>About the Show</h2>
+          <p>
+            Cybersecurity is diverse and fast-changing. Reading and training are good,
+            but nothing beats hearing from the people doing the work.
+          </p>
+          <p>
+            We created Security Cocktail Hour to bring you conversations with practitioners
+            sharing journeys, insights, and lessons beyond the headlines.
+          </p>
+        </div>
+
+        <div class="hosts-box">
+          <p class="hosts-label">Hosted By</p>
+          <h3 class="hosts-names">Joe Patti<br>&<br>Adam Roth</h3>
+          <p style="font-size: 0.95rem; line-height: 1.7;">
+            Two cybersecurity veterans sharing lessons from SOC operations to executive leadership.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Join Our Newsletter</h2>
+      <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
+        Get exclusive insights and show news delivered to your inbox
+      </p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="design-note">
+    <strong>NEW LAYOUT CONCEPT:</strong><br>
+    Hero split 50/50 - Left: Branding & platforms | Right: Featured latest episode card<br><br>
+    No wasted space - the "featured" area is now purposeful content
+  </div>
+
+</body>
+</html>

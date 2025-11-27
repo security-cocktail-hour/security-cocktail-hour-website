@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direction 1: Dark Academia Podcast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Source+Serif+Pro:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Dark Academia Palette */
+      --color-navy: #1A2332;
+      --color-burgundy: #6B2737;
+      --color-cream: #F4EFE6;
+      --color-brass: #C19A6B;
+      --color-charcoal: #2C2825;
+      --color-forest: #2D4A3E;
+
+      --font-display: 'Playfair Display', serif;
+      --font-body: 'Source Serif Pro', serif;
+      --font-mono: 'Space Mono', monospace;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--color-cream);
+      color: var(--color-charcoal);
+      line-height: 1.7;
+    }
+
+    /* Leather texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.03) 2px, rgba(0,0,0,.03) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,.03) 2px, rgba(0,0,0,.03) 4px);
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.4;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Header */
+    .site-header {
+      background: var(--color-charcoal);
+      border-bottom: 3px solid var(--color-brass);
+      padding: 1rem 0;
+    }
+
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-logo { height: 60px; }
+
+    .site-nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .site-nav a {
+      font-family: var(--font-display);
+      color: var(--color-cream);
+      font-size: 1.1rem;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s;
+    }
+
+    .site-nav a:hover {
+      border-bottom-color: var(--color-brass);
+    }
+
+    /* Hero - Vintage Library */
+    .hero {
+      background: linear-gradient(165deg, var(--color-navy) 0%, var(--color-burgundy) 100%);
+      padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Book spine decoration */
+    .hero::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 200px;
+      height: 100%;
+      background: repeating-linear-gradient(
+        0deg,
+        var(--color-brass) 0px,
+        var(--color-brass) 40px,
+        var(--color-charcoal) 40px,
+        var(--color-charcoal) 42px
+      );
+      opacity: 0.2;
+    }
+
+    .hero-content {
+      max-width: 700px;
+      color: var(--color-cream);
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-tagline {
+      font-size: 1.4rem;
+      font-style: italic;
+      margin-bottom: 2.5rem;
+      opacity: 0.95;
+      font-weight: 400;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: all 0.3s;
+      border: 2px solid;
+    }
+
+    .btn-primary {
+      background: var(--color-burgundy);
+      color: var(--color-cream);
+      border-color: var(--color-burgundy);
+    }
+
+    .btn-primary:hover {
+      background: transparent;
+      border-color: var(--color-cream);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(107, 39, 55, 0.4);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-cream);
+      border-color: var(--color-brass);
+    }
+
+    .btn-secondary:hover {
+      background: var(--color-brass);
+      color: var(--color-charcoal);
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .platforms {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .platforms a {
+      color: var(--color-brass);
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--color-brass);
+      transition: all 0.3s;
+    }
+
+    .platforms a:hover {
+      background: var(--color-brass);
+      color: var(--color-charcoal);
+    }
+
+    /* Latest Episode - Book Style Card */
+    .latest-episode {
+      padding: 4rem 0;
+      background: var(--color-cream);
+    }
+
+    .section-header {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--color-burgundy);
+      margin-bottom: 2rem;
+      font-style: italic;
+      border-left: 6px solid var(--color-brass);
+      padding-left: 1.5rem;
+    }
+
+    .episode-card-main {
+      background: white;
+      border: 3px solid var(--color-charcoal);
+      box-shadow:
+        12px 12px 0 var(--color-brass),
+        0 8px 24px rgba(0, 0, 0, 0.15);
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      overflow: hidden;
+    }
+
+    .episode-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-right: 3px solid var(--color-charcoal);
+    }
+
+    .episode-content {
+      padding: 2.5rem;
+    }
+
+    .category-badge {
+      display: inline-block;
+      background: var(--color-forest);
+      color: var(--color-cream);
+      padding: 0.4rem 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+
+    .episode-title {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: var(--color-charcoal);
+    }
+
+    .episode-meta {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .episode-description {
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+
+    /* Recent Episodes */
+    .recent-episodes {
+      background: var(--color-navy);
+      padding: 4rem 0;
+      color: var(--color-cream);
+    }
+
+    .recent-episodes h2 {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      font-style: italic;
+      color: var(--color-brass);
+    }
+
+    .episodes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .episode-card-small {
+      background: rgba(244, 239, 230, 0.05);
+      border: 2px solid var(--color-brass);
+      transition: all 0.3s;
+    }
+
+    .episode-card-small:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(193, 154, 107, 0.3);
+      border-color: var(--color-cream);
+    }
+
+    .episode-card-small .episode-content {
+      padding: 1.5rem;
+    }
+
+    .episode-card-small .episode-title {
+      font-size: 1.4rem;
+      color: var(--color-cream);
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 4rem 0;
+      background: var(--color-cream);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .about-section h2 {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      color: var(--color-burgundy);
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+
+    .hosts-panel {
+      background: var(--color-charcoal);
+      color: var(--color-cream);
+      padding: 2.5rem;
+      border: 3px solid var(--color-brass);
+      box-shadow: 8px 8px 0 var(--color-burgundy);
+    }
+
+    .hosts-label {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--color-brass);
+      margin-bottom: 1rem;
+    }
+
+    .hosts-names {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+
+    /* Newsletter */
+    .newsletter {
+      background: var(--color-burgundy);
+      padding: 4rem 0;
+      color: var(--color-cream);
+    }
+
+    .newsletter h2 {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .newsletter-form {
+      max-width: 600px;
+      margin: 2rem auto 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 1rem 1.5rem;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      border: 2px solid var(--color-brass);
+      background: rgba(244, 239, 230, 0.1);
+      color: var(--color-cream);
+    }
+
+    .newsletter-form input::placeholder {
+      color: rgba(244, 239, 230, 0.5);
+    }
+
+    .newsletter-form button {
+      padding: 1rem 2rem;
+      font-family: var(--font-display);
+      font-weight: 700;
+      background: var(--color-brass);
+      color: var(--color-charcoal);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .newsletter-form button:hover {
+      background: var(--color-cream);
+      transform: translateY(-2px);
+    }
+
+    .design-note {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      max-width: 300px;
+      z-index: 10000;
+    }
+
+    @media (max-width: 899px) {
+      .episode-card-main,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      .newsletter-form {
+        flex-direction: column;
+      }
+      .site-nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <img src="../static/images/logo.png" alt="Security Cocktail Hour" class="site-logo">
+      <nav class="site-nav">
+        <a href="#">Episodes</a>
+        <a href="#">About</a>
+        <a href="#">Resources</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Security<br>Cocktail Hour</h1>
+        <p class="hero-tagline">Cybersecurity wisdom shared over virtual drinks</p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary">Listen Now</a>
+          <a href="#" class="btn btn-secondary">Browse Episodes</a>
+        </div>
+
+        <div class="platforms">
+          <a href="#">YouTube</a>
+          <a href="#">Spotify</a>
+          <a href="#">Apple Podcasts</a>
+          <a href="#">Amazon Music</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="latest-episode">
+    <div class="container">
+      <h2 class="section-header">Latest Episode</h2>
+
+      <div class="episode-card-main">
+        <img src="https://via.placeholder.com/350x400/6B2737/F4EFE6?text=Episode+63" class="episode-image" alt="Episode 63">
+        <div class="episode-content">
+          <span class="category-badge">High Frequency Trading</span>
+          <h3 class="episode-title">Cybersecurity at Nanosecond Speed</h3>
+          <p class="episode-meta">with Jatin Mannepalli · November 17, 2025 · 60:42</p>
+          <p class="episode-description">
+            Join us for a deep dive into the unique security challenges of high-frequency trading,
+            where operations happen at nanosecond speed and traditional security approaches need
+            complete reimagining.
+          </p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="#" class="btn btn-primary">Show Notes</a>
+            <a href="#" class="btn btn-secondary">Listen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recent-episodes">
+    <div class="container">
+      <h2>Recent Episodes</h2>
+      <div class="episodes-grid">
+        <article class="episode-card-small">
+          <img src="https://via.placeholder.com/320x180/C19A6B/1A2332?text=Ep+62" class="episode-image" alt="Episode 62">
+          <div class="episode-content">
+            <span class="category-badge">AI Security</span>
+            <h3 class="episode-title">How CISOs Are Actually Using LLMs</h3>
+            <p class="episode-meta">Myke Lyons · 58:12</p>
+          </div>
+        </article>
+
+        <article class="episode-card-small">
+          <img src="https://via.placeholder.com/320x180/2D4A3E/F4EFE6?text=Ep+61" class="episode-image" alt="Episode 61">
+          <div class="episode-content">
+            <span class="category-badge">Incident Response</span>
+            <h3 class="episode-title">Crisis Management in Real Time</h3>
+            <p class="episode-meta">Sarah Chen · 52:30</p>
+          </div>
+        </article>
+
+        <article class="episode-card-small">
+          <img src="https://via.placeholder.com/320x180/6B2737/F4EFE6?text=Ep+60" class="episode-image" alt="Episode 60">
+          <div class="episode-content">
+            <span class="category-badge">Career</span>
+            <h3 class="episode-title">From SOC Analyst to CISO</h3>
+            <p class="episode-meta">Marcus Johnson · 45:18</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <h2>About the Show</h2>
+          <p>
+            Cybersecurity is a diverse and fast-changing field. Reading and training are good,
+            but there's nothing like hearing what's really happening from the people doing the work.
+          </p>
+          <p>
+            We created Security Cocktail Hour to bring you conversations with practitioners who
+            share their journeys, insights, and lessons learned beyond the headlines.
+          </p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <div class="hosts-panel">
+          <p class="hosts-label">Hosted By</p>
+          <h3 class="hosts-names">Joe Patti<br>&<br>Adam Roth</h3>
+          <p style="font-size: 0.95rem; line-height: 1.7;">
+            Two cybersecurity veterans sharing lessons from SOC operations to executive leadership.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <h2>Join Our Newsletter</h2>
+      <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
+        Insights and show news delivered to your inbox
+      </p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="design-note">
+    <strong>Direction 1: Dark Academia</strong><br>
+    Vintage library meets speakeasy · Serif typography · Navy, burgundy, brass
+  </div>
+
+</body>
+</html>
