@@ -19,8 +19,38 @@
     "url": "{{ .Site.BaseURL }}"
   },
   "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}",
-  "url": "{{ .Permalink }}"
+  "url": "{{ .Permalink }}",
+  "wordCount": {{ .WordCount }},
+  "timeRequired": "PT{{ math.Round (div (float .WordCount) 200) }}M"
   {{ with .Params.image }},"image": "{{ . | absURL }}"{{ end }}
+}
+</script>
+
+<!-- Breadcrumb Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "{{ "blog" | absURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+  ]
 }
 </script>
 
@@ -70,6 +100,10 @@
         <span style="opacity: 0.8;"> | Updated {{ .Lastmod.Format "January 2, 2006" }}</span>
       {{ end }}
     </p>
+
+    <p style="font-size: 0.875rem; margin-top: 0.5rem; margin-bottom: 0; opacity: 0.9;">
+      {{ .ReadingTime }} min read • {{ .WordCount }} words
+    </p>
   </div>
 </section>
 
@@ -86,6 +120,30 @@
           <div style="background: #F5F5F5; padding: 1.5rem; border-left: 4px solid #436098; margin-bottom: 2rem; border-radius: 4px;">
             <p style="margin: 0; font-size: 1.125rem; font-weight: 500; color: #192A56;">{{ . }}</p>
           </div>
+        {{ end }}
+
+        <!-- Related Episode Component -->
+        {{ with .Params.related_episode }}
+          {{ $episodePath := printf "/episodes/%s" . }}
+          {{ with $.Site.GetPage $episodePath }}
+            <div class="related-episode" style="margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, #F8F9FB 0%, #FFFFFF 100%); border-left: 4px solid #436098; border-radius: 8px; box-shadow: 0 2px 12px rgba(67, 96, 152, 0.08); transition: all 0.3s ease;">
+              <div style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #436098; background: rgba(67, 96, 152, 0.1); padding: 0.375rem 0.75rem; border-radius: 20px; margin-bottom: 0.75rem;">
+                🎙️ Related Episode
+              </div>
+              <div style="font-size: 1.125rem; font-weight: 700; color: #192A56; margin-bottom: 0.5rem; line-height: 1.3;">
+                {{ .Title }}
+              </div>
+              {{ with .Params.guest }}
+                <div style="font-size: 0.875rem; color: #8D99AE; margin-bottom: 0.875rem;">
+                  Guest: {{ . }}
+                </div>
+              {{ end }}
+              <a href="{{ .Permalink }}" style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; font-weight: 600; color: #436098; text-decoration: none; transition: all 0.2s ease;">
+                Listen to Full Episode
+                <span style="font-size: 1.25rem; transition: transform 0.2s ease;">→</span>
+              </a>
+            </div>
+          {{ end }}
         {{ end }}
 
         <!-- Article Content -->
@@ -242,6 +300,21 @@
   height: auto;
   border-radius: 8px;
   margin: 1.5rem 0;
+}
+
+/* Related Episode Component Hover Effects */
+.related-episode:hover {
+  box-shadow: 0 4px 20px rgba(67, 96, 152, 0.15);
+  transform: translateY(-2px);
+}
+
+.related-episode a:hover {
+  color: #CE1F2C;
+  gap: 0.75rem;
+}
+
+.related-episode a:hover span {
+  transform: translateX(4px);
 }
 </style>
 

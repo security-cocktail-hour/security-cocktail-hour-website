@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://securitycocktailhour.com/sitemap.xml

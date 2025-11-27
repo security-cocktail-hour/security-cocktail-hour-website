@@ -1716,4 +1716,8 @@ up. There's a lot of work to do. We believe in you. Thank you, Joe. Thank you, A
 
 ### Cheers, everyone. Thanks, Kevin. Take care.
 
+---
+
+**Related Blog Post**: [Shadow AI: When Innovation Outpaces Security Governance](/blog/ai-innovation-outpaces-security-governance/)
+
   

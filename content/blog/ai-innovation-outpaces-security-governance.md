@@ -5,8 +5,9 @@ draft: false
 author: "Joe Patti"
 category: "AI"
 tags: ["artificial-intelligence", "governance", "compliance", "shadow-it", "data-protection"]
-description: "Employees are deploying AI tools and autonomous agents in minutes—bypassing months of security reviews. Here's how to build AI governance frameworks that enable productivity without sacrificing compliance or control."
+description: "Employees are deploying AI tools in minutes, bypassing security reviews. Learn how to build AI governance frameworks that enable productivity while maintaining compliance."
 featured: true
+related_episode: "episode-51-agentic-ai-security-full-speed-into-the-unknown"
 ---
 
 An IT organization can invest months making sure new systems have the security controls they need to hit their compliance goals. And while they're doing that, a business user discovers they can solve that same problem in minutes with generative AI.
