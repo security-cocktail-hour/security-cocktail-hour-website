@@ -445,5 +445,5 @@ Like, subscribe, comment.
 ---
 
 **Related Blog Posts**:
-- [When Nanoseconds Matter: Security for Performance-Critical Environments](/blog/when-nanoseconds-matter-security-for-performance-critical-environments/)
-- [Why Security Always Gets Blamed (And How to Change That)](/blog/why-security-always-gets-blamed-and-how-to-change-that/)
+- [When Nanoseconds Matter: Security for Performance-Critical Environments](/blog/when-nanoseconds-matter/)
+- [Why Security Always Gets Blamed (And How to Change That)](/blog/why-security-always-gets-blamed/)
