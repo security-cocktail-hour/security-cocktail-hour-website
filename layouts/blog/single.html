@@ -12,6 +12,12 @@
   "author": {
     "@type": "Person",
     "name": "{{ with .Params.author }}{{ . }}{{ else }}Security Cocktail Hour{{ end }}"
+    {{ with .Params.author_bio }},"description": "{{ . }}"{{ end }}
+    {{ if or .Params.author_twitter .Params.author_linkedin }},"sameAs": [
+      {{ if .Params.author_twitter }}"https://twitter.com/{{ replace .Params.author_twitter "@" "" }}"{{ end }}
+      {{ if and .Params.author_twitter .Params.author_linkedin }},{{ end }}
+      {{ if .Params.author_linkedin }}"{{ .Params.author_linkedin }}"{{ end }}
+    ]{{ end }}
   },
   "publisher": {
     "@type": "Organization",

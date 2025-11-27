@@ -3,6 +3,9 @@ title: "Shadow AI: When Innovation Outpaces Security Governance"
 date: 2025-11-26
 draft: false
 author: "Joe Patti"
+author_bio: "Joe Patti is a cybersecurity practitioner with over 30 years of experience securing highly visible organizations in the Fortune 500, AmLaw 100 and government. He is co-host of the Security Cocktail Hour podcast."
+author_twitter: "@SecCocktailHour"
+author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
 category: "AI"
 tags: ["artificial-intelligence", "governance", "compliance", "shadow-it", "data-protection"]
 description: "Employees are deploying AI tools in minutes, bypassing security reviews. Learn how to build AI governance frameworks that enable productivity while maintaining compliance."

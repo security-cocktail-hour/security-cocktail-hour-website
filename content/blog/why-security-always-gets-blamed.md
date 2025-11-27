@@ -3,6 +3,9 @@ title: "Why Security Always Gets Blamed (And How to Change That)"
 date: 2025-11-26
 draft: false
 author: "Joe Patti"
+author_bio: "Joe Patti is a cybersecurity practitioner with over 30 years of experience securing highly visible organizations in the Fortune 500, AmLaw 100 and government. He is co-host of the Security Cocktail Hour podcast."
+author_twitter: "@SecCocktailHour"
+author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
 category: "General"
 tags: ["security-operations", "leadership", "communication", "incident-response"]
 description: "Security teams often get blamed when systems fail. Here's how to break the cycle with proactive documentation, communication, and stakeholder trust building."

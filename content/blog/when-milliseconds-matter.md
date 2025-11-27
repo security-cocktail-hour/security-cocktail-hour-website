@@ -3,6 +3,9 @@ title: "When Nanoseconds Matter: Security for Performance-Critical Environments"
 date: 2025-11-26
 draft: false
 author: "Joe Patti"
+author_bio: "Joe Patti is a cybersecurity practitioner with over 30 years of experience securing highly visible organizations in the Fortune 500, AmLaw 100 and government. He is co-host of the Security Cocktail Hour podcast."
+author_twitter: "@SecCocktailHour"
+author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
 category: "General"
 tags: ["performance", "network-security", "risk-management", "high-frequency-trading"]
 description: "In high-speed industries where latency directly impacts business value, traditional security architectures often don't fit. Learn how to place security controls without sacrificing the performance that drives competitive advantage."
