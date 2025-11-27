@@ -13,6 +13,18 @@
   HUGO_VERSION = "0.151.0"
   HUGO_ENV = "production"
 
+# Block search engines on deploy previews (staging/branch deploys)
+# Production builds will NOT have this header, so they can be indexed
+[context.deploy-preview.headers]
+  for = "/*"
+  [context.deploy-preview.headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[context.branch-deploy.headers]
+  for = "/*"
+  [context.branch-deploy.headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
 # Redirect rules (optional - for cleaner URLs if needed)
 [[redirects]]
   from = "/*"
