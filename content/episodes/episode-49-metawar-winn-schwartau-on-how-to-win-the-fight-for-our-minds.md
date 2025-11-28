@@ -13,6 +13,7 @@ platforms:
   apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000692256201"
   amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
 guest_bio: "Winn Schwartau, Author & Speaker"
+seo_title: "Winn Schwartau on How to Win the Fight for Our Minds"
 ---
 
 If you thought the tech industry only wanted your money, think again -- they're coming after your mind. Guest Winn Schwartau describes how in his new book "The Art and Science of Metawar: How to Coexist With AI-Driven Reality Distortion, Disinformation, & Addiction". Join us to learn what Metawar is, how we can protect ourselves with cognitive defenses and why immediate action is crucial, because it's already begun.

@@ -13,6 +13,7 @@ platforms:
   apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000671425138"
   amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
 guest_bio: "Gurinder Bhatti, Field CISO/Okta"
+seo_title: "Building a Successful Cybersecurity Career"
 ---
 
 In this episode, industry veteran Gurinder Bhatti tells us how seizing an opportunity propelled him from an internship to a thriving career in cybersecurity.   From navigating unexpected outages to landing a spot on NBC News, Gurinder recounts the lessons learned and takeaways from his experiences in his varied career. He discusses the importance of learning through experience, constantly adapting, and the bold moves that accelerated his career forward.

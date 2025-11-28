@@ -13,6 +13,7 @@ platforms:
   apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000737112271"
   amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/episodes/08ce4c4e-6f40-403b-9102-c59b59df37bd/security-cocktail-hour-cybersecurity-at-nanosecond-speed-securing-high-frequency-trading"
 guest_bio: "Jatin Mannepalli, Information Security Officer, IMC Trading"
+seo_title: "Cybersecurity at Nanosecond Speed | Securing HFT"
 ---
 
 In this episode of the Security Cocktail Hour, guest Jatin Mannepalli introduces co-hosts Joe Patti and Adam Roth to the high-speed, high stakes world of high frequency trading (HFT) and its many security challenges. The conversation delves into the intricacies of high frequency trading, the stress of incident response, and the importance of redundancy in connectivity. They discuss the evolution of data transmission methods, the challenges of security in trading environments, and the role of custom hardware. The episode also touches on the current job market in cyber security and the necessity of collaboration among firms to enhance security measures.

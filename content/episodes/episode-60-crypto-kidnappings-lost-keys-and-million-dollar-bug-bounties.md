@@ -13,6 +13,7 @@ platforms:
   apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000725711707"
   amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
 guest_bio: "Yevheniia Broshevan, CEO/Hacken"
+seo_title: "Crypto Kidnappings, Lost Keys, & Million-Dollar Bug Bounties"
 ---
 
 Forbes 30 Under 30 cybersecurity expert Yevheniia Broshevan discusses crypto security challenges, bug bounty programs, and the reality that 95% of Bitcoin has been mined while 11-18% is lost forever.

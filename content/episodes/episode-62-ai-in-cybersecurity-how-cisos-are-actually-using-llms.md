@@ -13,6 +13,7 @@ platforms:
   apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000735033209"
   amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/episodes/bd443930-3349-400e-b348-36500610cb00/security-cocktail-hour-ai-in-cybersecurity-how-cisos-are-actually-using-llms-with-myke-lyons-cribl-ciso"
 guest_bio: "Myke Lyons, CISO, Cribl"
+seo_title: "AI in Cybersecurity: How CISOs Are Actually Using LLMs"
 ---
 
 Join Security Cocktail Hour hosts Joe Patti and Adam Roth for an in-depth conversation with Myke Lyons, Chief Information Security Officer at Cribl, about AI in cybersecurity operations. Discover how modern CISOs are actually using LLMs and AI tools in their daily work, handling the data explosion (28% CAGR growth in logs), and transforming security operations with smarter telemetry management. Myke shares practical AI adoption strategies, prompt engineering techniques, and his unique perspective on threat hunting with modern data architectures. From his non-traditional background (Culinary Institute of America graduate) to leading security at companies like Snyk, Collibra, and ServiceNow, Myke offers real-world insights on the future of AI in security.

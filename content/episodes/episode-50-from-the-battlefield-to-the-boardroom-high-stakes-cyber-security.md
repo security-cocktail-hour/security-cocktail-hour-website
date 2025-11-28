@@ -13,6 +13,7 @@ platforms:
   apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000696805990"
   amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
 guest_bio: "Keren de Via, Executive Consultant/Keren de Via LLC"
+seo_title: "From the Battlefield to Boardroom: High-Stakes Security"
 ---
 
 Ever wondered what it's like to lead cybersecurity on the front lines? In this episode of Security Cocktail Hour, we sit down with Keren de Via, a former IDF officer and trailblazing Chief Information Security Officer (CISO), who shares her extraordinary journey from military leadership to navigating the complex world of corporate cybersecurity.

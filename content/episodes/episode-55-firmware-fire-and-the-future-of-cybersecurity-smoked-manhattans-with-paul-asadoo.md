@@ -13,6 +13,7 @@ platforms:
   apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000710115038"
   amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
 guest_bio: "Paul Asadoorian, Principle Security Researcher/Eclypsium"
+seo_title: "Firmware, Fire & the Future of Cybersecurity | Paul Asadoorian"
 ---
 
 Join us for a special episode of the Security Cocktail Hour as co-hosts Joe Patti and Adam Roth sit down with cybersecurity legend Paul Asadoorian—founder of Security Weekly and Principal Security Evangelist at Eclypsium. With more than two decades of experience, Paul brings his unique mix of deep technical knowledge and podcasting charisma to discuss firmware vulnerabilities, supply chain risks, and the overlooked attack surfaces hiding in your hardware. And he literally--and we do mean literally--brings fire to the show.

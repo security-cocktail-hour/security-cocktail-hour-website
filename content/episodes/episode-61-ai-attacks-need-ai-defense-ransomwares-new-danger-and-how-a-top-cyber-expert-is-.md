@@ -13,6 +13,7 @@ platforms:
   apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000728053274"
   amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
 guest_bio: "Karen Lagziel, Director of Cybersecurity Services/Sygnia"
+seo_title: "AI attacks need AI defense: Ransomware's new danger"
 ---
 
 Everyone's using AI, including ransomware gangs. Podcast guest Karin Lagziel, Director Cybersecurity at consulting firm Sygnia, gives us the news and her cyber defense strategies for fighting back: With more AI, as well as a focus on fundamentals.

@@ -13,6 +13,7 @@ platforms:
   apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000689646801"
   amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
 guest_bio: "Jennifer Gold, Patrick Arvidson, Roger Hockenberry, CISO/Risk Aperture, CTO/Risk Aperture, CEO/Risk Aperture"
+seo_title: "Ransomware & Hawaiian Shirts: Friday in Cybersecurity"
 ---
 
 Previous guest Jennifer Gold returns for another episode, and this time she's brought friends: cyber and intelligence veterans Patrick Arvidson and Roger Hockenberry. Together, they delve into the evolving world of cybersecurity, sharing insider perspectives from the CIA, NSA, and the private sector.  Learn how attackers exploit weekends, discover the real cost of third-party risks, and uncover why “intelligence” might not always mean what you think. Plus, hear about the creative side of coding, retro hacking nostalgia, and the challenges of managing risk in a hyperconnected world.

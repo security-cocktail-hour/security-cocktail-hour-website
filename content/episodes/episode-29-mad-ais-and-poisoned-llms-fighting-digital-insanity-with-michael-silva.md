@@ -13,6 +13,7 @@ platforms:
   apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000652617535"
   amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
 guest_bio: "Michael Silva, Founder & CEO/Emely AI"
+seo_title: "Mad AIs & Poisoned LLMs: Fighting Digital Insanity"
 ---
 
 We jump back into the world of generative AI with CEO and entrepreneur Michael Silva. Michael gives us his take on how a large language model (LLM) can steer you wrong and how to stay on a path to reality.

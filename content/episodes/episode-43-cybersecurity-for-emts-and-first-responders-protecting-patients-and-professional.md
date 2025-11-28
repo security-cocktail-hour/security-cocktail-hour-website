@@ -13,6 +13,7 @@ platforms:
   apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000676071354"
   amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
 guest_bio: "Mike Chanat, Owner/Mike Chanat Leadership Development"
+seo_title: "Cybersecurity for EMTs and First Responders"
 ---
 
 In this episode, leadership trainer, EMT, and former NYPD officer Mike Chanat joins us for a dive into the unique cybersecurity challenges facing EMTs and other first responders. Mike flips the script on hosts Adam Roth and Joe Patti, asking them to share realistic cybersecurity tips that protect both medical responders and their patients. And Mike shows us how the focus on communication, mindset and empathy he brings to his students will also make a difference in cybersecurity.
