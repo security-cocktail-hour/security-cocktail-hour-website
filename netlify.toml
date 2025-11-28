@@ -21,7 +21,17 @@
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
 
-# Redirect rules (optional - for cleaner URLs if needed)
+# Enforce trailing slashes for SEO consistency
+# Redirect non-trailing-slash URLs to trailing-slash versions (301 permanent)
+# This prevents duplicate content issues
+[[redirects]]
+  from = "/:splat"
+  to = "/:splat/"
+  status = 301
+  force = false
+  conditions = {path = ["!*.*", "!/"]}
+
+# 404 redirect (must come after trailing slash redirect)
 [[redirects]]
   from = "/*"
   to = "/404.html"

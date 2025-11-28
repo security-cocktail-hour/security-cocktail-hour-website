@@ -60,6 +60,15 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
 
 ## Recent Updates
 
+### November 28, 2025 - Trailing Slash SEO Fix Implemented
+- **Issue Identified**: Duplicate content risk from URLs accessible with and without trailing slashes
+- **Solution Implemented**: Enforce trailing slashes site-wide with 301 redirects
+  - Updated `netlify.toml` with redirect rules for staging
+  - Created `static/.htaccess` with Apache rules for GoDaddy production
+  - Documented decision in `docs/reports/trailing-slash-seo-fix-2025-11-28.md`
+- **SEO Benefits**: Eliminates duplicate content, preserves link equity, improves crawl efficiency
+- **Status**: Netlify ready (auto-deploys), GoDaddy requires manual `.htaccess` upload
+
 ### November 28, 2025 - SEO Audit Complete + Documentation Cleanup
 - **SEO Status Verified**: All technical SEO tasks complete (Priority 1-4)
   - Blog list page already has full SEO implementation (custom meta, Schema.org Blog, Open Graph, Twitter Cards)
