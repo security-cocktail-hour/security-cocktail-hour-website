@@ -100,8 +100,8 @@ Located in `/scripts/` directory:
 # Check all meta descriptions
 python3 scripts/audit_meta_descriptions.py
 
-# View audit results
-cat temp/meta-description-audit-report.txt
+# View audit results (latest in temp/, historical in docs/reports/)
+cat docs/reports/meta-description-audit-report-2025-11-27.txt
 ```
 
 ---

@@ -118,7 +118,7 @@ Manually upload `production-deployment.zip` to GoDaddy cPanel:
 3. Upload and extract `production-deployment.zip`
 4. Verify deployment
 
-See [GODADDY-DEPLOYMENT-INSTRUCTIONS.md](GODADDY-DEPLOYMENT-INSTRUCTIONS.md) for detailed instructions.
+See [GODADDY-DEPLOYMENT-INSTRUCTIONS.md](../GODADDY-DEPLOYMENT-INSTRUCTIONS.md) for detailed instructions.
 
 ---
 
@@ -169,7 +169,7 @@ See [GODADDY-DEPLOYMENT-INSTRUCTIONS.md](GODADDY-DEPLOYMENT-INSTRUCTIONS.md) for
 
 **Tools Available:**
 - Run `python3 scripts/audit_meta_descriptions.py` to check all descriptions
-- See `temp/meta-description-complete-summary.md` for standards documentation
+- See `reports/meta-description-audit-2025-11-27.md` for complete audit results
 
 ### Episode Format Standards
 

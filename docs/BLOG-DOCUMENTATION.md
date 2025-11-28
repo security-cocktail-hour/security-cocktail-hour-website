@@ -342,7 +342,7 @@ description: "Employees are deploying AI tools in minutes, bypassing security re
 
 **Tools to Verify:**
 - Run `python3 scripts/audit_meta_descriptions.py` to check all meta descriptions
-- See `temp/meta-description-complete-summary.md` for detailed standards
+- See `reports/meta-description-audit-2025-11-27.md` for complete audit results
 
 **Impact:**
 Properly optimized meta descriptions:
@@ -566,5 +566,5 @@ hugo version
 
 ---
 
-**For overall site documentation, see SESSION_CONTEXT.md**
-**For deployment instructions, see GODADDY-DEPLOYMENT-INSTRUCTIONS.md**
+**For overall site documentation, see ../SESSION_CONTEXT.md**
+**For deployment instructions, see ../GODADDY-DEPLOYMENT-INSTRUCTIONS.md**

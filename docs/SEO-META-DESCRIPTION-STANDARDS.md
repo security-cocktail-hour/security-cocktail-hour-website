@@ -279,7 +279,7 @@ When properly implemented, optimized meta descriptions provide:
 ## References
 
 - **Google Search Central**: [Meta descriptions best practices](https://developers.google.com/search/docs/appearance/snippet)
-- **Project Documentation**: `temp/meta-description-complete-summary.md`
+- **Project Documentation**: `reports/meta-description-audit-2025-11-27.md`
 - **Blog Guidelines**: `BLOG-DOCUMENTATION.md`
 - **Episode Guidelines**: `NEW-EPISODE-DEPLOYMENT.md`
 
@@ -296,4 +296,4 @@ When properly implemented, optimized meta descriptions provide:
 
 **Status**: ACTIVE - These standards are mandatory for all new content and should be applied when updating existing content.
 
-**Questions?** See `temp/meta-description-complete-summary.md` for the complete audit report and implementation details.
+**Questions?** See `reports/meta-description-audit-2025-11-27.md` for the complete audit report and implementation details.
