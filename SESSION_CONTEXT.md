@@ -1,8 +1,8 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: November 28, 2025 (Evening Session Complete)
+**Last Updated**: November 28, 2025 (Late Evening Session Complete)
 **Hugo Version**: v0.151.0
-**Session Status**: Phase 2 (Blog) Complete with Full SEO - Deployed to Staging
+**Session Status**: Phase 2 (Blog) Complete with Full SEO - Additional SEO Fixes Deployed
 
 ---
 
@@ -59,6 +59,21 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
 ---
 
 ## Recent Updates
+
+### November 28, 2025 - About Page Meta Description & URL Generation Fix
+- **About Page Meta Description Updated**: Fixed duplicate content issue
+  - Old: Same generic description as homepage (136 chars)
+  - New: "Meet Joe Patti and Adam Roth, hosts of Security Cocktail Hour. Learn about our mission to share cybersecurity insights from experts." (138 chars)
+  - SEO Impact: Differentiates About page from Homepage in search results
+- **URL Generation Bug Fixed**: Corrected incorrect relURL usage in templates
+  - Issue: `{{ "path" | relURL }}` was treating paths as filenames
+  - Fix: Changed to `{{ "/path" | relURL }}` with leading slashes
+  - Affected: 22 instances across 7 layout files (footer, header, index, partnership, blog, episodes, baseof)
+  - Paths fixed: /episodes, /blog, /about, /contact, /resources, /partnership, /privacy, /terms
+  - Prevents potential duplicate URL path issues
+- **Clean Rebuild**: Removed old generated directories (when-milliseconds-matter, sample-welcome-to-blog)
+- **Commit**: e2f0154 - "Fix SEO issues: Update About page meta description and correct URL generation"
+- **Status**: Pushed to GitHub, automatic Netlify deployment triggered
 
 ### November 28, 2025 - Trailing Slash SEO Fix Implemented
 - **Issue Identified**: Duplicate content risk from URLs accessible with and without trailing slashes
@@ -579,11 +594,11 @@ ps aux | grep hugo
 ---
 
 **Session Context Complete**
-**Status**: Phase 1 (MVP) & Phase 2 (Blog) Complete - Staged for Production
+**Status**: Phase 1 (MVP) & Phase 2 (Blog) Complete - Additional SEO Fixes Deployed
 **Next Action**: Content updates (new episodes, blog posts, transcripts, images)
 **Project Owner**: Joe
 **Project Location**: `/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/website/redesign 2025-10/security-cocktail-hour-website`
-**Last Session**: November 28, 2025 (Evening - SEO Optimization Complete)
+**Last Session**: November 28, 2025 (Late Evening - About Page Meta + URL Fix Complete)
 
 ---
 
