@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Documentation Index
 
-**Last Updated**: November 27, 2025
+**Last Updated**: November 28, 2025
 
 ---
 
@@ -8,7 +8,7 @@
 
 - **Adding New Episodes**: [NEW-EPISODE-DEPLOYMENT.md](NEW-EPISODE-DEPLOYMENT.md)
 - **Creating Blog Posts**: [BLOG-DOCUMENTATION.md](BLOG-DOCUMENTATION.md)
-- **SEO Standards**: [SEO-META-DESCRIPTION-STANDARDS.md](SEO-META-DESCRIPTION-STANDARDS.md)
+- **SEO Standards**: [SEO-META-DESCRIPTION-STANDARDS.md](SEO-META-DESCRIPTION-STANDARDS.md) & [SEO-TITLE-TAG-STANDARDS.md](SEO-TITLE-TAG-STANDARDS.md)
 
 ---
 
@@ -41,6 +41,11 @@
   - Writing guidelines with examples
   - Common mistakes to avoid
   - Validation tools
+- **[SEO-TITLE-TAG-STANDARDS.md](SEO-TITLE-TAG-STANDARDS.md)** - OPTIONAL standards for episode title tags
+  - Character limits (50-60 chars)
+  - Dual-title system implementation
+  - When and how to use seo_title field
+  - Examples from production
 
 ---
 
@@ -115,6 +120,7 @@ docs/
 ├── BLOG-DOCUMENTATION.md
 ├── BLOG-SEO-PLAN.md
 ├── SEO-META-DESCRIPTION-STANDARDS.md
+├── SEO-TITLE-TAG-STANDARDS.md
 ├── sch_website_requirements.md
 ├── hosting_requirements.md
 ├── immediate_action_plan.md
@@ -123,10 +129,15 @@ docs/
 ├── web-project-launch-checklist.md
 ├── color palette 2025-10-08.md
 ├── color palette 2025-10-08.png
-└── design_specs/
-    ├── sch_design_spec_v1_2.md
-    ├── blog_page_spec.md
-    └── partnership_page_spec.md
+├── design_specs/
+│   ├── sch_design_spec_v1_2.md
+│   ├── blog_page_spec.md
+│   └── partnership_page_spec.md
+└── reports/
+    ├── README.md
+    ├── meta-description-audit-2025-11-27.md
+    ├── meta-description-audit-report-2025-11-27.txt
+    └── trailing-slash-seo-fix-2025-11-28.md
 
 Root directory:
 ├── SESSION_CONTEXT.md (current working context)
@@ -169,7 +180,7 @@ Root directory:
 
 1. **Adding Episodes**: docs/NEW-EPISODE-DEPLOYMENT.md
 2. **Writing Blog Posts**: docs/BLOG-DOCUMENTATION.md
-3. **Meta Description Rules**: docs/SEO-META-DESCRIPTION-STANDARDS.md
+3. **SEO Standards**: docs/SEO-META-DESCRIPTION-STANDARDS.md & docs/SEO-TITLE-TAG-STANDARDS.md
 4. **Current Status**: SESSION_CONTEXT.md (root)
 5. **Design System**: docs/design_specs/sch_design_spec_v1_2.md
 
@@ -184,8 +195,9 @@ Root directory:
 
 1. **Episode Workflow**: docs/NEW-EPISODE-DEPLOYMENT.md
 2. **Blog Workflow**: docs/BLOG-DOCUMENTATION.md
-3. **SEO Standards**: docs/SEO-META-DESCRIPTION-STANDARDS.md
-4. **Writing Guidelines**: Built into workflow docs
+3. **SEO Meta Descriptions**: docs/SEO-META-DESCRIPTION-STANDARDS.md (required)
+4. **SEO Title Tags**: docs/SEO-TITLE-TAG-STANDARDS.md (optional)
+5. **Writing Guidelines**: Built into workflow docs
 
 ---
 

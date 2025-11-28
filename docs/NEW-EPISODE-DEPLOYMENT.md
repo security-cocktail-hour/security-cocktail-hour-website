@@ -1,6 +1,6 @@
 # New Episode Deployment Process
 
-**Last Updated**: November 27, 2025
+**Last Updated**: November 28, 2025
 
 ---
 
@@ -143,9 +143,11 @@ See [GODADDY-DEPLOYMENT-INSTRUCTIONS.md](../GODADDY-DEPLOYMENT-INSTRUCTIONS.md) 
 - Claude always starts dev server with `-F` flag to show future posts
 - You can preview future-dated episodes locally before they go live
 
-### Meta Description SEO Standards
+### SEO Standards
 
-**CRITICAL REQUIREMENT**: All episode descriptions must comply with SEO standards.
+**CRITICAL REQUIREMENTS**: All episodes must comply with SEO standards.
+
+#### Meta Description Standards
 
 **Character Limits:**
 - **Target**: 120 characters (optimal for mobile)
@@ -167,9 +169,35 @@ See [GODADDY-DEPLOYMENT-INSTRUCTIONS.md](../GODADDY-DEPLOYMENT-INSTRUCTIONS.md) 
 **Bad Example (656 chars - WAY too long):**
 > "In this episode of the Security Cocktail Hour, guest Jatin Mannepalli introduces co-hosts Joe Patti and Adam Roth the high-speed, high stakes world of high frequency trading (HFT) and its many security challenges..."
 
+**Reference:** See `docs/SEO-META-DESCRIPTION-STANDARDS.md` for complete guidelines.
+
+#### Title Tag Standards (Optional)
+
+**When to Add**: If the full episode title exceeds 60 characters, consider adding an optional `seo_title` field.
+
+**Character Limits:**
+- **Target**: 50-60 characters (optimal for search results)
+- **Maximum**: 60 characters (Google truncates around 60-70 chars)
+
+**Implementation:**
+```yaml
+---
+title: "Full Episode Title with Guest Name and Context"
+seo_title: "Shortened Title for Search Results"  # Optional, only if title > 60 chars
+---
+```
+
+**Benefits:**
+- ✅ Better search result appearance
+- ✅ No truncation on mobile devices
+- ✅ Full title preserved for page display and Schema.org
+- ✅ SEO title used only in HTML `<title>` tag
+
+**Reference:** See `docs/SEO-TITLE-TAG-STANDARDS.md` for complete guidelines and examples.
+
 **Tools Available:**
 - Run `python3 scripts/audit_meta_descriptions.py` to check all descriptions
-- See `reports/meta-description-audit-2025-11-27.md` for complete audit results
+- See `docs/reports/meta-description-audit-2025-11-27.md` for complete audit results
 
 ### Episode Format Standards
 
