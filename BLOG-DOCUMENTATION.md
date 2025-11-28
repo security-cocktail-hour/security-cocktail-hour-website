@@ -1,6 +1,6 @@
 # Security Cocktail Hour Blog - Documentation
 
-**Last Updated**: November 25, 2025
+**Last Updated**: November 27, 2025
 
 ---
 
@@ -44,11 +44,15 @@ title: "Your Article Title"
 date: 2025-11-25
 draft: false
 author: "Joe Patti"
+author_bio: "Joe Patti is a cybersecurity practitioner with over 30 years of experience."
+author_twitter: "@SecCocktailHour"
+author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
 category: "Cloud Security"
 tags: ["AWS", "Zero Trust", "Compliance"]
 image: "/images/blog/article-image.jpg"
 description: "A compelling summary of the article that will appear in search results and social media shares (150-160 characters recommended)."
 featured: false
+related_episode: "episode-63-cybersecurity-at-nanosecond-speed-securing-high-frequency-trading"
 ---
 ```
 
@@ -60,11 +64,15 @@ featured: false
 | `date` | Yes | Publication date in YYYY-MM-DD format |
 | `draft` | Yes | Set to `false` to publish, `true` to hide |
 | `author` | Optional | Author name (e.g., "Joe Patti", "Adam Roth") |
+| `author_bio` | Optional | Author biography for E-E-A-T SEO signals (added Nov 27, 2025) |
+| `author_twitter` | Optional | Twitter handle for social verification (added Nov 27, 2025) |
+| `author_linkedin` | Optional | LinkedIn profile URL for professional verification (added Nov 27, 2025) |
 | `category` | Optional | Single category for the article |
 | `tags` | Optional | Array of tags for detailed topic classification |
 | `image` | Optional | Path to featured image (relative to `/static/`) - **Not currently used** |
-| `description` | Recommended | Meta description for SEO and social sharing |
+| `description` | Recommended | Meta description for SEO and social sharing (150-160 characters) |
 | `featured` | Optional | Set to `true` to show on homepage (max 2 shown) |
+| `related_episode` | Optional | Episode filename to link related podcast episode (added Nov 27, 2025) |
 
 ---
 
@@ -160,21 +168,73 @@ To feature an article on the homepage:
 
 ---
 
+## Related Episode Feature
+
+**Added**: November 27, 2025
+
+### Purpose
+Links blog posts to their related podcast episodes, creating bidirectional topic clusters for improved SEO and user navigation.
+
+### Usage
+
+Add the `related_episode` parameter to your blog post front matter with the episode filename:
+
+```yaml
+related_episode: "episode-63-cybersecurity-at-nanosecond-speed-securing-high-frequency-trading"
+```
+
+### How It Works
+
+1. **Front Matter**: Add `related_episode` with the episode filename (without `.md` extension)
+2. **Auto-Population**: The component automatically fetches episode data (title, guest) from the episode's front matter
+3. **Display**: Shows a professional card component with:
+   - Episode title
+   - Guest name (if available)
+   - Link to full episode page
+   - Hover effects for interactivity
+
+### Design
+
+The related episode component appears near the top of the blog post (after description box, before article content) with:
+- Professional card styling with gradient background
+- Compact design that doesn't dominate article content
+- "🎙️ Related Episode" badge
+- Arrow icon that animates on hover
+
+### Reverse Linking
+
+For best SEO results, also add a link from the episode transcript back to the blog post:
+
+```markdown
+**Related Blog Post**: [Post Title](/blog/post-slug/)
+```
+
+This creates bidirectional links that improve crawlability and user navigation.
+
+---
+
 ## Author Information
 
-### Setting Author
+**Enhanced**: November 27, 2025
+
+### Setting Author Profile
 
 ```yaml
 author: "Joe Patti"
+author_bio: "Joe Patti is a cybersecurity practitioner with over 30 years of experience securing highly visible organizations in the Fortune 500, AmLaw 100 and government. He is co-host of the Security Cocktail Hour podcast."
+author_twitter: "@SecCocktailHour"
+author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
 ```
 
-### Optional Author Bio (in front matter)
+### E-E-A-T Signals
 
-```yaml
-author_bio: "Joe Patti is a cybersecurity executive with over 15 years of experience in incident response, threat intelligence, and security operations."
-```
+The author fields provide E-E-A-T (Experience, Expertise, Authoritativeness, Trust) signals for search engines:
 
-The author bio will display in the sidebar of the blog post.
+- **author_bio**: Establishes credentials and expertise
+- **author_twitter**: Social media verification via Schema.org sameAs
+- **author_linkedin**: Professional verification via Schema.org sameAs
+
+These fields enhance the Schema.org Person markup for the post author, which can improve search engine understanding and potentially enhance search result display.
 
 ---
 
@@ -231,12 +291,31 @@ def example_function():
 
 ## SEO Optimization
 
-### Meta Description
+### Schema.org Markup
 
-- Length: 150-160 characters
-- Include primary keyword
-- Make it compelling and actionable
-- Shown in search results and social shares
+**Enhanced**: November 27, 2025
+
+Every blog post automatically includes:
+
+1. **BlogPosting Schema** with:
+   - Title, dates (published/modified), URL
+   - Author information (Person schema with bio and social profiles)
+   - Publisher information (Organization schema)
+   - Reading time and word count
+   - Description and image (if available)
+
+2. **BreadcrumbList Schema** with:
+   - Home > Blog > [Post Title] hierarchy
+   - Improves search result display
+
+3. **Open Graph and Twitter Card** meta tags for social sharing
+
+### Meta Description Best Practices
+
+- **Length**: 150-160 characters (strictly enforced as of Nov 27, 2025)
+- **Include primary keyword** early in the description
+- **Make it compelling and actionable** to improve click-through rates
+- **Shown in**: Search results, social shares, blog archive cards
 
 ```yaml
 description: "Learn how to implement zero trust architecture in AWS with practical examples and security best practices from industry experts."
@@ -244,10 +323,30 @@ description: "Learn how to implement zero trust architecture in AWS with practic
 
 ### Title Best Practices
 
-- Length: 50-60 characters
-- Include primary keyword
-- Make it descriptive and engaging
-- Avoid clickbait
+- **Length**: 50-60 characters
+- **Include primary keyword** near the beginning
+- **Make it descriptive and engaging**
+- **Avoid clickbait** - be accurate and specific
+- **URL slug** is auto-generated from title
+
+### Content Structure for SEO
+
+**Added**: November 27, 2025
+
+Best practices for blog post content:
+
+1. **H2 Headings**: Use at least 2-3 H2 headings to structure your content
+   - Improves readability and scannability
+   - Helps search engines understand content structure
+   - Increases chances of featured snippets
+
+2. **Key Takeaways Section**: Include a summary list (good for featured snippets)
+
+3. **Internal Links**: Link to related episodes and other blog posts
+
+4. **Paragraph Length**: Keep paragraphs short (3-4 sentences) for readability
+
+5. **Lists**: Use bullet points and numbered lists for easy scanning
 
 ---
 

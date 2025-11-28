@@ -1,8 +1,8 @@
 # Blog Pages Design Specification
 
-**Version**: 1.0
-**Date**: November 26, 2025
-**Status**: Implemented
+**Version**: 1.1
+**Date**: November 27, 2025
+**Status**: Implemented with Full SEO
 **Parent Design System**: [sch_design_spec_v1_2.md](./sch_design_spec_v1_2.md)
 
 ---
@@ -282,6 +282,13 @@ Three dropdowns in a row:
    - Date format: "January 2, 2006"
    - Updated date shown only if different from publish date
 
+5. **Reading Time** (added November 27, 2025):
+   - Font size: 0.875rem
+   - Margin-top: 0.5rem
+   - Opacity: 0.9
+   - Format: "X min read • Y words"
+   - Calculated from word count (200 words per minute)
+
 ### 4.2 Main Content Layout
 **Grid System**:
 - Mobile: 1 column
@@ -305,7 +312,68 @@ Three dropdowns in a row:
 - Color: #192A56 (Primary Dark Blue)
 - Margin: 0
 
-#### 4.2.2 Article Content
+#### 4.2.2 Related Episode Component
+**Added**: November 27, 2025
+**Conditional Display**: Only if post has `related_episode` parameter
+
+**Purpose**: Creates bidirectional links between blog posts and podcast episodes for improved SEO and user navigation.
+
+**Front Matter**:
+```yaml
+related_episode: "episode-63-cybersecurity-at-nanosecond-speed-securing-high-frequency-trading"
+```
+
+**Style**:
+- Margin: 2rem 0
+- Padding: 1.5rem
+- Background: linear-gradient(135deg, #F8F9FB 0%, #FFFFFF 100%)
+- Border-left: 4px solid #436098
+- Border-radius: 8px
+- Box-shadow: 0 2px 12px rgba(67, 96, 152, 0.08)
+- Transition: all 0.3s ease
+
+**Hover State**:
+- Box-shadow: 0 4px 20px rgba(67, 96, 152, 0.15)
+- Transform: translateY(-2px)
+
+**Content Elements**:
+1. **Badge**: "🎙️ Related Episode"
+   - Display: inline-flex with centered alignment
+   - Font-size: 0.75rem
+   - Font-weight: 600
+   - Text-transform: uppercase
+   - Letter-spacing: 0.05em
+   - Color: #436098
+   - Background: rgba(67, 96, 152, 0.1)
+   - Padding: 0.375rem 0.75rem
+   - Border-radius: 20px
+
+2. **Episode Title**:
+   - Font-size: 1.125rem
+   - Font-weight: 700
+   - Color: #192A56
+   - Line-height: 1.3
+   - Auto-populated from episode front matter
+
+3. **Guest Name** (conditional):
+   - Font-size: 0.875rem
+   - Color: #8D99AE
+   - Format: "Guest: [Name]"
+   - Only shown if episode has guest parameter
+
+4. **Link**:
+   - Text: "Listen to Full Episode"
+   - Display: inline-flex with arrow icon
+   - Font-size: 0.9375rem
+   - Font-weight: 600
+   - Color: #436098
+   - Hover color: #CE1F2C
+   - Arrow (→) animates translateX(4px) on hover
+
+**Implementation**:
+Uses Hugo's GetPage function to fetch episode data from front matter, ensuring single source of truth.
+
+#### 4.2.3 Article Content
 **Container**: `.article-content`
 **Margin bottom**: 2rem
 
@@ -368,7 +436,7 @@ Three dropdowns in a row:
 - Border-radius: 8px
 - Margin: 1.5rem 0
 
-#### 4.2.3 Tags Section
+#### 4.2.4 Tags Section
 **Conditional Display**: Only if post has tags
 
 **Style**:
@@ -392,7 +460,7 @@ Three dropdowns in a row:
      - Transition: All 0.2s
    - Prefix: "#"
 
-#### 4.2.4 Social Sharing Section
+#### 4.2.5 Social Sharing Section
 **Style**:
 - Border-top: 1px solid #E5E5E5
 - Padding-top: 1.5rem
@@ -509,17 +577,29 @@ Three dropdowns in a row:
 
 ### 6.2 Individual Blog Post SEO
 
-**Schema.org Markup** (JSON-LD):
+**Enhanced**: November 27, 2025
+
+**BlogPosting Schema Markup** (JSON-LD):
 - **Type**: `BlogPosting`
 - **Properties**:
   - headline: Post title
   - datePublished: ISO format date
   - dateModified: ISO format modified date
-  - author: Person object (uses author parameter or "Security Cocktail Hour")
+  - author: Person object with enhanced E-E-A-T fields (NEW)
+    - name: Author name
+    - description: Author bio (from `author_bio` parameter)
+    - sameAs: Array of social profiles (Twitter, LinkedIn)
   - publisher: Organization object
   - description: Post description or summary
   - url: Post permalink
+  - wordCount: Total word count (NEW)
+  - timeRequired: Reading time in ISO 8601 duration format (PT{minutes}M) (NEW)
   - image: Optional post image (absolute URL)
+
+**BreadcrumbList Schema Markup** (JSON-LD) (NEW):
+- **Type**: `BreadcrumbList`
+- **Structure**: Home > Blog > [Post Title]
+- **Purpose**: Improves search engine understanding and potential breadcrumb display in search results
 
 **Open Graph Tags**:
 - `og:type`: "article"
@@ -545,21 +625,34 @@ Three dropdowns in a row:
 ## 7. Content Architecture
 
 ### 7.1 Blog Post Front Matter
+
+**Enhanced**: November 27, 2025
+
 ```yaml
 ---
 title: "Post Title"
 date: YYYY-MM-DD
 draft: false
 author: "Author Name"  # Optional, defaults to "Security Cocktail Hour"
+author_bio: "Author biography for E-E-A-T signals"  # NEW (Nov 27, 2025)
+author_twitter: "@username"  # NEW (Nov 27, 2025)
+author_linkedin: "https://www.linkedin.com/in/username/"  # NEW (Nov 27, 2025)
 category: "Category Name"
 tags: ["tag1", "tag2", "tag3"]
 description: >-
-  Post summary/description for meta tags and card display.
+  Post summary/description for meta tags and card display (150-160 characters).
   Uses YAML block scalar for multi-line content.
 featured: true  # Optional, includes in homepage featured section
+related_episode: "episode-filename"  # NEW (Nov 27, 2025) - Links to related podcast episode
 image: "/images/blog/image.jpg"  # Optional, for social sharing
 ---
 ```
+
+**New Fields (November 27, 2025)**:
+- `author_bio`: Author biography providing E-E-A-T signals for search engines
+- `author_twitter`: Twitter handle for social verification via Schema.org sameAs
+- `author_linkedin`: LinkedIn profile URL for professional verification via Schema.org sameAs
+- `related_episode`: Episode filename (without .md) to create bidirectional content links
 
 ### 7.2 Taxonomy Support
 **Categories**:
@@ -870,11 +963,22 @@ Uses design system spacing scale:
 
 ## 13. Version History
 
+**Version 1.1** (November 27, 2025)
+- Added SEO enhancements documentation:
+  - BreadcrumbList schema markup
+  - Reading time and word count display
+  - Enhanced author profiles with E-E-A-T signals
+  - Related episode cross-linking component
+  - Staging/production indexing separation
+- Updated front matter template with new optional fields
+- Documented all November 27, 2025 SEO work
+- All Priority 2, 3, and 4 items from BLOG-SEO-PLAN.md now complete
+
 **Version 1.0** (November 26, 2025)
 - Initial specification created
 - Documented implemented blog feature
 - Covers blog archive, single posts, and homepage integration
-- Includes Priority 1 SEO enhancements
+- Includes initial SEO implementation
 - Documents CSS scoping fix for footer conflicts
 - Terminology standardized to "blog post" throughout
 
