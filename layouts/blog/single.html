@@ -82,7 +82,7 @@
   <div class="container">
     <nav aria-label="Breadcrumb" style="margin-bottom: 1rem; font-size: 0.875rem;">
       <a href="{{ "/" | relURL }}" style="color: rgba(255, 255, 255, 0.8);">Home</a> &gt;
-      <a href="{{ "blog" | relURL }}" style="color: rgba(255, 255, 255, 0.8);">Blog</a> &gt;
+      <a href="{{ "/blog" | relURL }}" style="color: rgba(255, 255, 255, 0.8);">Blog</a> &gt;
       <span style="color: white;">{{ .Title }}</span>
     </nav>
 
@@ -163,7 +163,7 @@
             <h4 style="margin-bottom: 1rem;">Tags</h4>
             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
               {{ range . }}
-                <a href="{{ "blog" | relURL }}?tag={{ . | urlquery }}" style="font-size: 0.875rem; color: #436098; background: rgba(67, 96, 152, 0.1); padding: 0.5rem 1rem; border-radius: 20px; text-decoration: none; transition: all 0.2s;">#{{ . }}</a>
+                <a href="{{ "/blog" | relURL }}?tag={{ . | urlquery }}" style="font-size: 0.875rem; color: #436098; background: rgba(67, 96, 152, 0.1); padding: 0.5rem 1rem; border-radius: 20px; text-decoration: none; transition: all 0.2s;">#{{ . }}</a>
               {{ end }}
             </div>
           </div>
@@ -211,7 +211,7 @@
 
         <!-- Link to All Blog Posts -->
         <div>
-          <a href="{{ "blog" | relURL }}" class="btn btn-secondary" style="width: 100%; text-align: center;">View All Posts</a>
+          <a href="{{ "/blog" | relURL }}" class="btn btn-secondary" style="width: 100%; text-align: center;">View All Posts</a>
         </div>
 
       </aside>

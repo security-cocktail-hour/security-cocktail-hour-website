@@ -33,7 +33,7 @@
     </p>
     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
       <a href="https://youtube.com/@SecCocktailHour" class="btn btn-primary" target="_blank" rel="noopener">Listen Now</a>
-      <a href="{{ "episodes" | relURL }}" class="btn btn-secondary" style="background: white; color: #436098; border-color: white;">Browse Episodes</a>
+      <a href="{{ "/episodes" | relURL }}" class="btn btn-secondary" style="background: white; color: #436098; border-color: white;">Browse Episodes</a>
     </div>
 
     <!-- Platform Icons -->
@@ -109,7 +109,7 @@
       {{ end }}
     </div>
     <div style="text-align: center; margin-top: 2rem;">
-      <a href="{{ "episodes" | relURL }}" class="btn btn-secondary">View All Episodes</a>
+      <a href="{{ "/episodes" | relURL }}" class="btn btn-secondary">View All Episodes</a>
     </div>
   </div>
 </section>
@@ -121,7 +121,7 @@
   <div class="container">
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
       <h2 style="margin: 0;">Featured Blog Posts</h2>
-      <a href="{{ "blog" | relURL }}" style="color: #436098; font-weight: 600; text-decoration: none;">View All →</a>
+      <a href="{{ "/blog" | relURL }}" style="color: #436098; font-weight: 600; text-decoration: none;">View All →</a>
     </div>
     <div class="grid grid-2">
       {{ range $featuredPosts }}
@@ -161,7 +161,7 @@
           Whether you're building your security career, leading a team, or working alongside security pros,
           join us for candid conversations with pros across the field.
         </p>
-        <a href="{{ "about" | relURL }}" class="btn btn-secondary">Learn More</a>
+        <a href="{{ "/about" | relURL }}" class="btn btn-secondary">Learn More</a>
       </div>
       <div style="text-align: center;">
         <p style="font-weight: 600; margin-bottom: 1rem;">Hosted by</p>
