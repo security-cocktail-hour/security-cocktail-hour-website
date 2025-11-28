@@ -79,7 +79,12 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
   - ✅ robots.txt created with sitemap reference
   - ✅ Sitemap.xml verified (all blog posts included)
   - ✅ Build performance: 110 pages in 172ms
-- **Commits**: 3b4f612, 2fc23f1, ff47729
+  - ✅ Staging indexing blocked: X-Robots-Tag header prevents duplicate content
+- **Staging vs Production Configuration**:
+  - Netlify (staging): X-Robots-Tag: noindex, nofollow applied globally
+  - GoDaddy (production): No blocking headers, full indexing enabled
+  - Prevents duplicate content issues between staging and production
+- **Commits**: 3b4f612, 2fc23f1, ff47729, 670c7b0, 8bd5238, ed427e9
 - **Status**: Deployed to Netlify staging, ready for production
 
 ### November 26, 2025 - Blog Implementation Complete + Design Documentation
