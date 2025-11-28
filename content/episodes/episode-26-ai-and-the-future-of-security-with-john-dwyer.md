@@ -6,8 +6,7 @@ guest: "John Dwyer"
 category: "AI"
 duration: "1:04:27"
 image: "/images/episodes/episode-026.jpg"
-description: >-
-  Security incident response veteran John Dwyer joins us for a deep dive into how AI is poised to bend reality, and what that means for both attackers and defenders. We also cover how security incidents are now straddling the cyber and real worlds. Join us for some fresh thinking on where security is headed.
+description: "John Dwyer on how AI will bend reality and what that means for attackers and defenders. The future of security incidents."
 platforms:
   youtube: "https://youtu.be/Zwcu46n8fTk"
   spotify: "https://open.spotify.com/episode/62TXDtVaDjOHtE8PacX5EL?si=4955d17164874812"

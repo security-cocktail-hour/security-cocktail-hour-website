@@ -639,9 +639,7 @@ author_twitter: "@username"  # NEW (Nov 27, 2025)
 author_linkedin: "https://www.linkedin.com/in/username/"  # NEW (Nov 27, 2025)
 category: "Category Name"
 tags: ["tag1", "tag2", "tag3"]
-description: >-
-  Post summary/description for meta tags and card display (150-160 characters).
-  Uses YAML block scalar for multi-line content.
+description: "Post summary/description for meta tags and card display (120-155 characters REQUIRED - see SEO standards below)"
 featured: true  # Optional, includes in homepage featured section
 related_episode: "episode-filename"  # NEW (Nov 27, 2025) - Links to related podcast episode
 image: "/images/blog/image.jpg"  # Optional, for social sharing
@@ -666,7 +664,39 @@ image: "/images/blog/image.jpg"  # Optional, for social sharing
 - Archive pages generated at `/tags/[tag]/`
 - First 3 tags shown on cards and post headers
 
-### 7.3 File Structure
+### 7.3 Meta Description SEO Standards
+
+**CRITICAL REQUIREMENT** (Enforced as of Nov 27, 2025)
+
+All blog post descriptions must comply with strict SEO standards. See [SEO-META-DESCRIPTION-STANDARDS.md](../SEO-META-DESCRIPTION-STANDARDS.md) for complete details.
+
+**Character Limits:**
+- **Target**: 120 characters (optimal for mobile)
+- **Maximum**: 155 characters (hard limit - Google truncates beyond this)
+- **Never exceed 155** - descriptions will be cut off in search results
+
+**Quick Reference:**
+- ✅ Concise and compelling (every word counts)
+- ✅ Front-load important keywords
+- ✅ Active voice, action-oriented
+- ✅ Complete sentences (no truncation)
+- ❌ No filler phrases ("In this article", "Learn about")
+- ❌ Never exceed 155 characters
+
+**Example - Good (139 chars):**
+```yaml
+description: "Employees deploy AI tools in minutes, bypassing security. Build governance frameworks that enable productivity while maintaining compliance."
+```
+
+**Example - Bad (171 chars - TOO LONG):**
+```yaml
+description: "Employees are deploying AI tools in minutes, bypassing security reviews. Learn how to build AI governance frameworks that enable productivity while maintaining compliance."
+```
+
+**Validation:**
+Run `python3 scripts/audit_meta_descriptions.py` to check all descriptions.
+
+### 7.4 File Structure
 ```
 content/
 └── blog/

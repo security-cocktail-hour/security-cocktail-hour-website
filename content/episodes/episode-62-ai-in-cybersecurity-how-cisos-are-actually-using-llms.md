@@ -6,8 +6,7 @@ guest: "Myke Lyons"
 category: "AI"
 duration: "57:50"
 image: "/images/episodes/episode-062.jpg"
-description: >-
-  Join Security Cocktail Hour hosts Joe Patti and Adam Roth for an in-depth conversation with Myke Lyons, Chief Information Security Officer at Cribl, about AI in cybersecurity operations. Discover how modern CISOs are actually using LLMs and AI tools in their daily work, handling the data explosion (28% CAGR growth in logs), and transforming security operations with smarter telemetry management.
+description: "CISO Myke Lyons reveals how security leaders actually use LLMs and AI tools. Handling data explosion and transforming security operations."
 platforms:
   youtube: "https://youtu.be/lnbMS2B8lWk"
   spotify: "https://open.spotify.com/episode/0w3upGjniAzaGiHoBeg9HW?si=JNPxSgByS7a17enrcy2ZEw"

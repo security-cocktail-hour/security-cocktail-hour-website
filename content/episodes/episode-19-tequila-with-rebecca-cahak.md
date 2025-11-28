@@ -6,8 +6,7 @@ guest: "Rebecca Cahak"
 category: "Career Bio"
 duration: "1:03:24"
 image: "/images/episodes/episode-019.jpg"
-description: >-
-  Guest Rebecca Cahak helps Joe and Adam get in touch with the feminine side of the business and IT worlds. We talk about her advocacy for women’s careers and leadership for women, including through her organization FIERCE. We even toss in a discussion of work-life balance and a quick zoology lesson.
+description: "Rebecca Cahak discusses women's leadership, her organization FIERCE, and work-life balance in business and IT."
 platforms:
   youtube: "https://youtu.be/zibouLz2u24"
   spotify: "https://open.spotify.com/episode/17OwSTcquRgCdbbCIJO6KW?si=db1ede8d000a4f9e"

@@ -6,8 +6,7 @@ guest: "Reut Weitzman"
 category: "General"
 duration: "42:13"
 image: "/images/episodes/episode-027.jpg"
-description: >-
-  Security consulting executive Reut Weitzman returns to the show to talk about one of our favorite topics, conducting a purple team exercise. Join us to learn what happens when attackers square off against defenders to test a security team’s capabilities.
+description: "Security consultant Reut Weitzman returns to discuss purple team exercises and testing security team capabilities."
 platforms:
   youtube: "https://youtu.be/ViXpfTN7yV8"
   spotify: "https://open.spotify.com/episode/1PNhME9pkB9BsBxDwyxCnl?si=2e2876b5be8346ba"

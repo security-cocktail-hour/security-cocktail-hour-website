@@ -6,8 +6,7 @@ guest: "Alec Crawford"
 category: "AI"
 duration: "57:58"
 image: "/images/episodes/episode-046.jpg"
-description: >-
-  Artificial intelligence is revolutionizing industries, and cybersecurity experts are navigating uncharted territory to keep pace. In this episode of the Security Cocktail Hour podcast, Alec Crawford, Founder and CEO of AI Risk, Inc., joins co-hosts Joe Patti and Adam Roth for a dive into the practical, technical, and ethical challenges of AI - including some surprises nobody saw coming, as well as what an adversary can do with a drone. From early work with neural networks to cutting edge large language models, Alec shares the challenges he's taking on to secure today's generative AI models.
+description: "Alec Crawford explores AI security challenges nobody predicted. From neural networks to LLMs, learn what it takes to secure generative AI."
 platforms:
   youtube: "https://youtu.be/Rr6g0ThBy1k"
   spotify: "https://open.spotify.com/episode/6yDrSfRCwaO94wYHUfFKo4?si=26c8809d0b27438f"

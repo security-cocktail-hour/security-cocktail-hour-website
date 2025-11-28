@@ -6,8 +6,7 @@ guest: ""
 category: "Educational"
 duration: "47:32"
 image: "/images/episodes/episode-045.jpg"
-description: >-
-  This holiday season, don’t let scams ruin the festive spirit! In this special holiday episode of the Security Cocktail Hour, co-hosts Joe Patti and Adam Roth break down the most common holiday scams, from the classics to the sneaky new ones you’ve never heard of. From fake gift card requests to sophisticated AI-driven scams, we’ll teach you how to stay one step ahead of the scammers.
+description: "Joe and Adam break down holiday scams from classics to new AI-driven schemes. Stay ahead of scammers this season."
 platforms:
   youtube: "https://youtu.be/svDXKMEpbPc"
   spotify: "https://open.spotify.com/episode/7rXiUrdJGG5h0MpZE0rpco?si=b4f455d1300e49eb"

@@ -6,8 +6,7 @@ guest: "Michael Silva"
 category: "AI"
 duration: "48:35"
 image: "/images/episodes/episode-029.jpg"
-description: >-
-  We jump back into the world of generative AI with CEO and entrepreneur Michael Silva. Michael gives us his take on how a large language model (LLM) can steer you wrong and how to stay on a path to reality.
+description: "CEO Michael Silva explains how large language models can steer you wrong and how to stay on track."
 platforms:
   youtube: "https://youtu.be/QssUoSGq7Vs"
   spotify: "https://open.spotify.com/episode/1zFfxlPAL7a3ssp4iAntUh?si=f8ca5bb02d2948d0"

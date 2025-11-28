@@ -6,8 +6,7 @@ guest: "Gabrielle Hempel"
 category: "General"
 duration: "1:07:35"
 image: "/images/episodes/episode-021.jpg"
-description: >-
-  It's our Halloween episode, and we're covering the scary topic of medical device security with guest Gabrielle Hempel, aka @gabsmashh. Gabrielle talks about her experiences with medical devices and her unconventional path into information security.
+description: "Halloween episode covering medical device security with Gabrielle Hempel and her unconventional path into infosec."
 platforms:
   youtube: "https://youtu.be/s3Ukx4fr1sg"
   spotify: "https://open.spotify.com/episode/4QVogXYhdAcqlpIsvCauPC?si=463e08788e524d7b"

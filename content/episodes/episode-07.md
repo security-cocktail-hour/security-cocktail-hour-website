@@ -6,8 +6,7 @@ guest: ""
 category: "AI"
 duration: "51:26"
 image: "/images/episodes/episode-001-013.png"
-description: >-
-  Joe and Adam jump into the world of AI, and the new (and not so new) security risks we need to deal with.
+description: "Generative AI is everywhere. Joe and Adam discuss security implications, risks, and opportunities of this technology."
 platforms:
   youtube: "https://youtu.be/eDbEvnbxklU"
   spotify: "https://open.spotify.com/episode/7HMb8MGIR8Ugflye4Tnep4?si=74929e183bc44d5e"

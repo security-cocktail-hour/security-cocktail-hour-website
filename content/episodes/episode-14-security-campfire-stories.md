@@ -6,8 +6,7 @@ guest: ""
 category: "Career Bio"
 duration: "1:04:01"
 image: "/images/episodes/episode-014.jpg"
-description: >-
-  Joe and Adam gather round the virtual campfire to recount legends more chilling than any tired old monster story. Hear about the Stuxnet and Target hacks, and how these classic tales from the past are still relevant to how we detect and defend against intrusions today.
+description: "Joe and Adam recount chilling legends: the Stuxnet and Target hacks, and why these classic tales still matter today."
 platforms:
   youtube: "https://youtu.be/Ivn6BEr04TQ"
   spotify: "https://open.spotify.com/episode/2XBJwTaWArlmSXMZV28mxa?si=496fcb915d0d4f22"

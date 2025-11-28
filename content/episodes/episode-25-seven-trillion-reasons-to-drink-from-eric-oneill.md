@@ -6,8 +6,7 @@ guest: "Eric O’Neill"
 category: "General"
 duration: "1:03:27"
 image: "/images/episodes/episode-025.jpg"
-description: >-
-  Legendary spy hunter and security thought leader Eric O’Neill puts the cost of cybercrime worldwide at seven trillion dollars. Eric joins us to share his sobering thoughts about that and other topics including the Dark Web, ransomware and infrastructure vulnerability. Plus some bonus tips for driving in DC.
+description: "Spy hunter Eric O'Neill on cybercrime costing $7 trillion, the Dark Web, ransomware, and infrastructure vulnerability."
 platforms:
   youtube: "https://youtu.be/FeGrQ54AX_M"
   spotify: "https://open.spotify.com/episode/06K1eyAGWKMuWoBWGSf3Xt?si=5b59d5fa60b9493d"

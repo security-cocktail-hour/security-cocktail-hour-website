@@ -6,8 +6,7 @@ guest: "Monte Fabiani"
 category: "General"
 duration: "1:11:15"
 image: "/images/episodes/episode-024.jpg"
-description: >-
-  Security veteran Monte Fabiani tells us about the many SOCs (Security Operations Centers) he’s built and run, and how being in that end of the business can make it hard to sleep at night. We also get meta about how we started podcasting and brainstorm some future ideas.
+description: "Security veteran Monte Fabiani on building and running SOCs, and why being in security operations makes it hard to sleep."
 platforms:
   youtube: "https://youtu.be/GgKfwgEMx2k"
   spotify: "https://open.spotify.com/episode/5LynvmXIezoE6g0wZ2jwry?si=54453e442f004fe7"

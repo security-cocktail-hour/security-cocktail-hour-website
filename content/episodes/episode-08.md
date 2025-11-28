@@ -6,8 +6,7 @@ guest: "Sal Toner"
 category: "Small Business"
 duration: "49:01"
 image: "/images/episodes/episode-001-013.png"
-description: >-
-  Joe and Adam welcome their first guest, Sal Toner of F.C. Chaos Boxing and Fitness, to talk about his security challenges as a small business owner and how to solve them without the big corporate price tag.
+description: "Small business owner Sal Toner discusses security challenges and solutions without the big corporate price tag."
 platforms:
   youtube: "https://youtu.be/cfGgoYNQdkM"
   spotify: "https://open.spotify.com/episode/06P4U9JAkVDibK96y85jzV?si=2795ea54b5a74299"

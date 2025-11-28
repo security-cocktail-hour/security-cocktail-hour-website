@@ -6,8 +6,7 @@ guest: "Kevin O’Connor"
 category: "AI"
 duration: "56:18"
 image: "/images/episodes/episode-051.jpg"
-description: >-
-  Agentic AI is changing the game—but is it a security nightmare in the making? In this episode of the Security Cocktail Hour, co-hosts Joe Patti and Adam Roth sit down with Kevin O’Connor to dive into one of the hottest (and most misunderstood) topics in cybersecurity: Agentic AI Security.
+description: "Is agentic AI a security nightmare? Kevin O'Connor discusses autonomous AI security with Joe and Adam."
 platforms:
   youtube: "https://youtu.be/GQ8ztgprOD0"
   spotify: "https://open.spotify.com/episode/4yCYOlxkypik2qC0OJNRiu?si=18935eda432e4b7c"

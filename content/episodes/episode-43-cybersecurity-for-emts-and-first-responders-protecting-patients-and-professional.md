@@ -6,8 +6,7 @@ guest: "Mike Chanat"
 category: "General"
 duration: "57:18"
 image: "/images/episodes/episode-043.jpg"
-description: >-
-  In this episode, leadership trainer, EMT, and former NYPD officer Mike Chanat joins us for a dive into the unique cybersecurity challenges facing EMTs and other first responders. Mike flips the script on hosts Adam Roth and Joe Patti, asking them to share realistic cybersecurity tips that protect both medical responders and their patients. And Mike shows us how the focus on communication, mindset and empathy he brings to his students will also make a difference in cybersecurity.
+description: "Former NYPD officer and EMT Mike Chanat explores cybersecurity for first responders and how to protect patients and medical professionals."
 platforms:
   youtube: "https://youtu.be/NF2YtuX07Gc"
   spotify: "https://open.spotify.com/episode/6RmBYsEWDW3AlmAVFprC1O?si=ac5b3c9e013f40ea"

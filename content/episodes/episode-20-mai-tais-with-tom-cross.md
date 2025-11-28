@@ -6,8 +6,7 @@ guest: "Tom Cross"
 category: "General"
 duration: "57:00"
 image: "/images/episodes/episode-020.jpg"
-description: >-
-  Tom Cross brings us more news from this year’s Black Hat conference, including details on the headline-grabbing satellite hacking challenge. It’s a fascinating look into a side of security even most cyber professionals don’t know well.
+description: "Tom Cross brings news from Black Hat including the headline-grabbing satellite hacking challenge."
 platforms:
   youtube: "https://youtu.be/lsEuQXu6Ypg"
   spotify: "https://open.spotify.com/episode/7KbhhUNOYOGHFpjhSvxvns?si=ada1d9bfa01d4173"

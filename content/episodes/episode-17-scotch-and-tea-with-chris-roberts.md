@@ -6,8 +6,7 @@ guest: "Chris Roberts"
 category: "General"
 duration: "59:00"
 image: "/images/episodes/episode-017.png"
-description: >-
-  Adam and Joe cover a lot of ground with the legendary Chris Roberts. We start off with reports of dolphins off Staten Island and end with how to wreck a classic Porsche, plus a little bit of security talk in between. It’s a fun discussion you won’t want to miss.
+description: "Security legend Chris Roberts discusses dolphins, Porsches, and security in a wide-ranging conversation."
 platforms:
   youtube: "https://youtu.be/nD8yRbexouU"
   spotify: "https://open.spotify.com/episode/7pzk54TN557eTVSFW4jU46?si=32e2ecb873fd43b4"

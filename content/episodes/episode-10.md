@@ -6,8 +6,7 @@ guest: ""
 category: "Educational"
 duration: "49:39"
 image: "/images/episodes/episode-001-013.png"
-description: >-
-  For part two of our series on Internet privacy, we talk about playing in the big leagues: How dissidents, journalists, whistleblowers and others with tough adversaries can protect themselves with tools like Tor and Tails.
+description: "Internet privacy part 2: How dissidents, journalists, and whistleblowers protect themselves with Tor and Tails."
 platforms:
   youtube: "https://youtu.be/stsy_73q2T8"
   spotify: "https://open.spotify.com/episode/1SFZ43gTWALRA9aWsSW13X?si=31033fc17bcc4b9f"

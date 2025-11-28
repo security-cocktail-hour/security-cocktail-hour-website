@@ -6,8 +6,7 @@ guest: ""
 category: "General"
 duration: "42:54"
 image: "/images/episodes/episode-001-013.png"
-description: >-
-  Security can stress you out, but once those moments pass, they leave you with some good stories. Today we share a few to give you an idea of how a security team really works.
+description: "Security can stress you out, but it leaves you with good stories. Hear how a security team really works."
 platforms:
   youtube: "https://youtu.be/-8E47hD2nJg"
   spotify: "https://open.spotify.com/episode/4HO25BthUx5o5Pgc8nARNF?si=e97c674b8ff848ae"

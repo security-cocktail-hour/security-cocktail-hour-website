@@ -6,8 +6,7 @@ guest: "Karen Lagziel"
 category: "AI"
 duration: "57:33:00"
 image: "/images/episodes/episode-061.jpg"
-description: >-
-  Everyone's using AI, including ransomware gangs. Podcast guest Karin Lagziel, Director Cybersecurity at consulting firm Sygnia, gives us the news and her cyber defense strategies for fighting back: With more AI, as well as a focus on fundamentals.
+description: "Karin Lagziel on ransomware gangs using AI and defense strategies: fighting back with AI and fundamentals."
 platforms:
   youtube: "https://youtu.be/iYf6ZS7HTzg"
   spotify: "https://tinyurl.com/4rbpye89"

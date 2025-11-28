@@ -6,8 +6,7 @@ guest: "Jennifer Gold"
 category: "General"
 duration: ""
 image: "/images/episodes/episode-040.jpg"
-description: >-
-  Can government and private industry really work together? They can, and nobody knows this better than Jennifer Gold, president of New York Metro InfraGard and Chief Information Security Officer of Risk Aperture. In this episode, Jennifer helps us understand how cybercriminals are innovating, the new challenges AI and deep fakes present, and how leaders like her are bringing together public and private security experts to counter those threats. Closer to home, Jennifer shares her insights on how you can protect your family from cyber risks.
+description: "Jennifer Gold on public-private collaboration against cyber threats. Learn how InfraGard bridges government and industry security expertise."
 platforms:
   youtube: "https://youtu.be/QTGtYHbvHf0"
   spotify: "https://open.spotify.com/episode/4eAFlTugmRjyTartfuIVBt?si=5962deb865a54678"

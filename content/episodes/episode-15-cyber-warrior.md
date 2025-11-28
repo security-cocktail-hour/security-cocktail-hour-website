@@ -6,8 +6,7 @@ guest: "David Warshavski"
 category: "Incident Response"
 duration: "1:07:09"
 image: "/images/episodes/episode-015.jpg"
-description: >-
-  Joe and Adam catch up with top tier security incident responder David Warshavski. David shares his latest insights on trends in what attackers are doing, cyber defense and the emerging security issues around AI.
+description: "Top security incident responder David Warshavski shares insights on attacker trends, cyber defense, and AI security issues."
 platforms:
   youtube: "https://youtu.be/CpGlXwuE7b4"
   spotify: "https://open.spotify.com/episode/4qLVcdrRwBrg1DahCwfkc9?si=0f74b1d3f31e44dd"

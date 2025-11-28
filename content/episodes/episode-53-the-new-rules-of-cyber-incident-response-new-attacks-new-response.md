@@ -6,8 +6,7 @@ guest: "Lisa Landau and Tim Shipp"
 category: "Incident Response"
 duration: "51:44"
 image: "/images/episodes/episode-053.png"
-description: >-
-  In this episode of Security Cocktail Hour, we go deep into the high-stakes world of modern cyber incident response (IR) with Lisa Landau and Tim Shipp of ThreatLight—two top-tier experts redefining how breaches are handled today.  Discover how IR has evolved—and why the old playbook no longer works.
+description: "ThreatLight experts Lisa Landau and Tim Shipp on how incident response has evolved and why the old playbook no longer works."
 platforms:
   youtube: "https://youtu.be/xilVhM0ZInU"
   spotify: "https://open.spotify.com/episode/2vGLhgkE4enl4J6I2s2UG9?si=8df7b0473f8642e8"

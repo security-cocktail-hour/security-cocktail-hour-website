@@ -1,0 +1,664 @@
+================================================================================
+META DESCRIPTION AUDIT REPORT
+================================================================================
+
+Total Pages Analyzed: 72
+Pages EXCEEDING limit (>155 chars): 63
+Pages COMPLIANT (≤155 chars): 9
+
+================================================================================
+PAGES EXCEEDING 155 CHARACTER LIMIT
+================================================================================
+
+1. Episode: Breaking In and Locking Down: From Hacker to Cyber Defender
+   File: content/episodes/episode-44-breaking-in-and-locking-down-from-hacker-to-cyber-defender.md
+   Current Length: 1080 characters (OVER by 925)
+   Current Description:
+   "Are your organization's security gaps leaving the door wide open for attackers? In this episode of the Security Cocktail Hour podcast, co-hosts Joe Patti and Adam Roth sit down with seasoned penetration tester and identity security expert Jason Luttrell. Jason shares fascinating stories from his days of hacking banks, infiltrating data centers, and even dumpster diving, all legitimate work for his customers, to expose the vulnerabilities they never knew existed. Discover why physical security is just as critical as digital defenses and how attackers exploit overlooked entry points. Later, the discussion shifts to the evolving landscape of identity management and why protecting access credentials is the cornerstone of modern cybersecurity. Learn about the latest best practices for managing passwords, including the use of password managers, multi-factor authentication (MFA), and techniques to avoid common pitfalls you may be using. Plus, hear Jason's take on emerging alternatives like passkeys and why they might still be a long way from replacing passwords entirely."
+
+   Suggested Description (79 characters):
+   "Are your organization's security gaps leaving the door wide open for attackers?"
+--------------------------------------------------------------------------------
+
+2. Episode: Cybersecurity at Nanosecond Speed | Securing High Frequency Trading
+   File: content/episodes/episode-63-cybersecurity-at-nanosecond-speed-securing-high-frequency-trading.md
+   Current Length: 656 characters (OVER by 501)
+   Current Description:
+   "In this episode of the Security Cocktail Hour, guest Jatin Mannepalli introduces co-hosts Joe Patti and Adam Roth the high-speed, high stakes world of high frequency trading (HFT) and its many security challenges. The conversation delves into the intricacies of high frequency trading, the stress of incident response, and the importance of redundancy in connectivity. They discuss the evolution of data transmission methods, the challenges of security in trading environments, and the role of custom hardware. The episode also touches on the current job market in cyber security and the necessity of collaboration among firms to enhance security measures."
+
+   Suggested Description (150 characters):
+   "In this episode of the Security Cocktail Hour, guest Jatin Mannepalli introduces co-hosts Joe Patti and Adam Roth the high-speed, high stakes world of"
+--------------------------------------------------------------------------------
+
+3. Episode: How Do You Sell Really Expensive Security Software?
+   File: content/episodes/episode-52-how-do-you-sell-really-expensive-security-software.md
+   Current Length: 653 characters (OVER by 498)
+   Current Description:
+   "Selling six-figure security solutions isn’t about flashy demos or steak dinners—it’s about trust, relationships, and delivering real value. In this episode of the Security Cocktail Hour, we go inside the world of cybersecurity sales with Trevor Marcotte, founder of TnK Tech and a longtime industry insider. Trevor reveals how deals actually get done in the high-stakes world of cybersecurity—from building trust with IT buyers and CISOs to navigating complex vendor relationships and solving real problems for clients. Alongside co-hosts Joe Patti and Adam Roth, Trevor shares why people matter more than products, and how trust beats tools every time."
+
+   Suggested Description (139 characters):
+   "Selling six-figure security solutions isn’t about flashy demos or steak dinners—it’s about trust, relationships, and delivering real value."
+--------------------------------------------------------------------------------
+
+4. Episode: Retail Crime Prevention | Using AI to Respond to a Growing Threat
+   File: content/episodes/episode-42-retail-crime-prevention-using-ai-to-respond-to-a-growing-threat.md
+   Current Length: 645 characters (OVER by 490)
+   Current Description:
+   "Organized retail crime is more complex than you might think—it's not small-time shoplifting, it's big business run by bad people. In this episode, Doug Horsting, a loss prevention expert from a major retail chain, and Dean Takacs, CEO of Detective Analytics, join hosts Joe and Adam to reveal how they're using technology to enhance traditional investigation techniques to keep up with increasingly bold and sophisticated criminals. Discover how AI, data, and most importantly, trust and collaboration with law enforcement are transforming retail loss prevention, and what cybersecurity experts in the digital world can learn from their success."
+
+   Suggested Description (129 characters):
+   "Organized retail crime is more complex than you might think—it's not small-time shoplifting, it's big business run by bad people."
+--------------------------------------------------------------------------------
+
+5. Episode: Landing Your First Cyber Security Job | The Experience Dilemma
+   File: content/episodes/episode-47-landing-your-first-cyber-security-job-the-experience-dilemma.md
+   Current Length: 626 characters (OVER by 471)
+   Current Description:
+   "You need experience to get even an entry level job, but how to do you get a job if you don't have experience? For years this classic dilemma didn't apply to cybersecurity, but times have changed. Newly minted security consultant Jerry Sinayuk of NukuDo tells us how he got trained and is lining up his first consulting engagements -- all while getting paid. Join us to learn about this new approach to breaking into a high-tech industry that's actually centuries old. And if that isn't enough to hit a lot of keyword searches, Jerry also shares his passion for blockchain technology and gives his unvarnished opinion on NFT's."
+
+   Suggested Description (109 characters):
+   "You need experience to get even an entry level job, but how to do you get a job if you don't have experience?"
+--------------------------------------------------------------------------------
+
+6. Episode: Securing AI: Misbehavior Even the Experts Couldn't Predict
+   File: content/episodes/episode-46-securing-ai-misbehavior-even-the-experts-couldnt-predict.md
+   Current Length: 597 characters (OVER by 442)
+   Current Description:
+   "Artificial intelligence is revolutionizing industries, and cybersecurity experts are navigating uncharted territory to keep pace. In this episode of the Security Cocktail Hour podcast, Alec Crawford, Founder and CEO of AI Risk, Inc., joins co-hosts Joe Patti and Adam Roth for a dive into the practical, technical, and ethical challenges of AI - including some surprises nobody saw coming, as well as what an adversary can do with a drone. From early work with neural networks to cutting edge large language models, Alec shares the challenges he's taking on to secure today's generative AI models."
+
+   Suggested Description (129 characters):
+   "Artificial intelligence is revolutionizing industries, and cybersecurity experts are navigating uncharted territory to keep pace."
+--------------------------------------------------------------------------------
+
+7. Episode: Ransomware and Hawaiian Shirts: Another Friday in Cyber Security
+   File: content/episodes/episode-48-ransomware-and-hawaiian-shirts-another-friday-in-cyber-security.md
+   Current Length: 587 characters (OVER by 432)
+   Current Description:
+   "Previous guest Jennifer Gold returns for another episode, and this time she's brought friends: cyber and intelligence veterans Patrick Arvidson and Roger Hockenberry. Together, they delve into the evolving world of cybersecurity, sharing insider perspectives from the CIA, NSA, and the private sector. Learn how attackers exploit weekends, discover the real cost of third-party risks, and uncover why “intelligence” might not always mean what you think. Plus, hear about the creative side of coding, retro hacking nostalgia, and the challenges of managing risk in a hyperconnected world."
+
+   Suggested Description (147 characters):
+   "Previous guest Jennifer Gold returns for another episode, and this time she's brought friends: cyber and intelligence veterans Patrick Arvidson and"
+--------------------------------------------------------------------------------
+
+8. Episode: (Security) Perception is Everything with Douglas Marzano
+   File: content/episodes/episode-34-security-perception-is-everything-with-douglas-marzano.md
+   Current Length: 545 characters (OVER by 390)
+   Current Description:
+   "When you lead an information security organization, you get asked one question constantly: Are we secure? Veteran Chief Information Security Officer (CISO) Douglas Marzano joins us to discuss how to answer this seemingly simple question, which cuts to the core of the security leader’s job of managing perceptions and expectations. Whether you’re a ‘civilian’ looking to understand the real art of security or a security technologist who wonders what the boss does all day, tune in for an episode that might change the way you look at the field."
+
+   Suggested Description (105 characters):
+   "When you lead an information security organization, you get asked one question constantly: Are we secure?"
+--------------------------------------------------------------------------------
+
+9. Episode: Fighting Cybersecurity Threats Together | How Government & Private Industry Collaborate
+   File: content/episodes/episode-40-fighting-cybersecurity-threats-together-how-government-private-industry-collabor.md
+   Current Length: 545 characters (OVER by 390)
+   Current Description:
+   "Can government and private industry really work together? They can, and nobody knows this better than Jennifer Gold, president of New York Metro InfraGard and Chief Information Security Officer of Risk Aperture. In this episode, Jennifer helps us understand how cybercriminals are innovating, the new challenges AI and deep fakes present, and how leaders like her are bringing together public and private security experts to counter those threats. Closer to home, Jennifer shares her insights on how you can protect your family from cyber risks."
+
+   Suggested Description (57 characters):
+   "Can government and private industry really work together?"
+--------------------------------------------------------------------------------
+
+10. Episode: Firmware, Fire and the Future of Cybersecurity | Smoked Manhattans with Paul Asadoorian
+   File: content/episodes/episode-55-firmware-fire-and-the-future-of-cybersecurity-smoked-manhattans-with-paul-asadoo.md
+   Current Length: 528 characters (OVER by 373)
+   Current Description:
+   "Join us for a special episode of the Security Cocktail Hour as co-hosts Joe Patti and Adam Roth sit down with cybersecurity legend Paul Asadoorian—founder of Security Weekly and Principal Security Evangelist at Eclypsium. With more than two decades of experience, Paul brings his unique mix of deep technical knowledge and podcasting charisma to discuss firmware vulnerabilities, supply chain risks, and the overlooked attack surfaces hiding in your hardware. And he literally--and we do mean literally--brings fire to the show."
+
+   Suggested Description (135 characters):
+   "Join us for a special episode of the Security Cocktail Hour as co-hosts Joe Patti and Adam Roth sit down with cybersecurity legend Paul"
+--------------------------------------------------------------------------------
+
+11. Episode: Cybersecurity for EMTs and First Responders | Protecting Patients and Professionals
+   File: content/episodes/episode-43-cybersecurity-for-emts-and-first-responders-protecting-patients-and-professional.md
+   Current Length: 483 characters (OVER by 328)
+   Current Description:
+   "In this episode, leadership trainer, EMT, and former NYPD officer Mike Chanat joins us for a dive into the unique cybersecurity challenges facing EMTs and other first responders. Mike flips the script on hosts Adam Roth and Joe Patti, asking them to share realistic cybersecurity tips that protect both medical responders and their patients. And Mike shows us how the focus on communication, mindset and empathy he brings to his students will also make a difference in cybersecurity."
+
+   Suggested Description (150 characters):
+   "In this episode, leadership trainer, EMT, and former NYPD officer Mike Chanat joins us for a dive into the unique cybersecurity challenges facing EMTs"
+--------------------------------------------------------------------------------
+
+12. Episode: The Security Career Reality Check with May Brooks-Kempler
+   File: content/episodes/episode-30-the-security-career-reality-check-with-may-brooks-kempler.md
+   Current Length: 473 characters (OVER by 318)
+   Current Description:
+   "Let’s be honest: Not everyone’s cut out to be the boss, and those who are often don’t want the job. That’s especially true in security, where many people consider the role of Chief Information Security Officer (CISO) more of a sentence than a promotion. Executive, author, podcaster and recovering CISO May Brooks-Kempler gives us her take on whether sitting in the big chair is all it’s cracked up to be, as well as her unorthodox take on privacy that’ll get you thinking."
+
+   Suggested Description (99 characters):
+   "Let’s be honest: Not everyone’s cut out to be the boss, and those who are often don’t want the job."
+--------------------------------------------------------------------------------
+
+13. Episode: Surviving an Identity Crisis with Venkat Raghavan
+   File: content/episodes/episode-33-surviving-an-identity-crisis-with-venkat-raghavan.md
+   Current Length: 467 characters (OVER by 312)
+   Current Description:
+   "Your digital identity is more than just your username and password. In fact, as AI continues to evolve, how we define identity online is changing, and so is how we prove who we are.In this episode, we delve into the future of digital identity with Venkat Raghavan, the CEO of Stack Identity and a seasoned expert in the field. Venkat breaks down the latest challenges and their real-world implications for all of us, from how we sign in to how hackers breach systems."
+
+   Suggested Description (67 characters):
+   "Your digital identity is more than just your username and password."
+--------------------------------------------------------------------------------
+
+14. Episode: Hacking Your Way into a Security Career with Nathali Cano
+   File: content/episodes/episode-35-hacking-your-way-into-a-security-career-with-nathali-cano.md
+   Current Length: 465 characters (OVER by 310)
+   Current Description:
+   "People often take a non-traditional path into the field of information security, and Nathali Cano’s journey is one of the most unique we’ve ever encountered. How she became “a social worker that happens to be a cybersecurity engineer” is a fascinating story of a single mom making opportunities for herself out of nothing but hard work and determination, and how she continues to give back to the community. Join us for an episode you’ll want to hear until the end."
+
+   Suggested Description (144 characters):
+   "People often take a non-traditional path into the field of information security, and Nathali Cano’s journey is one of the most unique we’ve ever"
+--------------------------------------------------------------------------------
+
+15. Episode: Going into OT (Operational Technology) with Robert Lee
+   File: content/episodes/episode-32-going-into-ot-operational-technology-with-robert-lee.md
+   Current Length: 463 characters (OVER by 308)
+   Current Description:
+   "We usually talk about information technology, but the real world runs on power, water and factories – and protecting them from attack is a whole different ballgame. Robert Lee, CEO of Dragos, gives us a fascinating introduction to Operational Technology (OT) cyber security. Listen in to learn about how Robert and colleagues secure the infrastructure that keeps civilization running. Spoiler Alert: It’s not what you expect, even if you’re an IT security expert."
+
+   Suggested Description (144 characters):
+   "We usually talk about information technology, but the real world runs on power, water and factories – and protecting them from attack is a whole"
+--------------------------------------------------------------------------------
+
+16. Episode: Building a Successful Cybersecurity Career | Seizing Opportunities and Always Learning
+   File: content/episodes/episode-39-building-a-successful-cybersecurity-career-seizing-opportunities-and-always-lear.md
+   Current Length: 455 characters (OVER by 300)
+   Current Description:
+   "In this episode, industry veteran Gurinder Bhatti tells us how seizing an opportunity propelled him from an internship to a thriving career in cybersecurity. From navigating unexpected outages to landing a spot on NBC News, Gurinder recounts the lessons learned and takeaways from his experiences in his varied career. He discusses the importance of learning through experience, constantly adapting, and the bold moves that accelerated his career forward."
+
+   Suggested Description (142 characters):
+   "In this episode, industry veteran Gurinder Bhatti tells us how seizing an opportunity propelled him from an internship to a thriving career in"
+--------------------------------------------------------------------------------
+
+17. Episode: Why Data Breaches Keep Getting Worse
+   File: content/episodes/episode-38-why-data-breaches-keep-getting-worse.md
+   Current Length: 427 characters (OVER by 272)
+   Current Description:
+   "Why are data breaches escalating, even in companies with massive security budgets? In this episode, we reveal the hidden factors fueling the rise of breaches that expose the data of hundreds of millions of people at a time. Has this become the new normal, or will things get better? Tune in to learn what’s really going on behind the scenes in cybersecurity, and how companies keep failing to protect your personal information."
+
+   Suggested Description (82 characters):
+   "Why are data breaches escalating, even in companies with massive security budgets?"
+--------------------------------------------------------------------------------
+
+18. Episode: Everybody Makes Mistakes – Including Cybersecurity Pros
+   File: content/episodes/episode-41-everybody-makes-mistakes-including-cybersecurity-pros.md
+   Current Length: 420 characters (OVER by 265)
+   Current Description:
+   "Cybersecurity breaches happen for many reasons, but one factor stands out: human error. In this episode, we gather top experts from across the security field to share their personal stories of mistakes made, how they recovered, and the hard-earned lessons that followed. Tune in for practical advice and insights from seasoned professionals who know that no one is immune to making a mistake — no matter how experienced."
+
+   Suggested Description (87 characters):
+   "Cybersecurity breaches happen for many reasons, but one factor stands out: human error."
+--------------------------------------------------------------------------------
+
+19. Episode: Metawar: Winn Schwartau on How to Win the Fight for Our Minds
+   File: content/episodes/episode-49-metawar-winn-schwartau-on-how-to-win-the-fight-for-our-minds.md
+   Current Length: 419 characters (OVER by 264)
+   Current Description:
+   "If you thought the tech industry only wanted your money, think again -- they're coming after your mind. Guest Winn Schwartau describes how in his new book "The Art and Science of Metawar: How to Coexist With AI-Driven Reality Distortion, Disinformation, & Addiction". Join us to learn what Metawar is, how we can protect ourselves with cognitive defenses and why immediate action is crucial, because it's already begun."
+
+   Suggested Description (103 characters):
+   "If you thought the tech industry only wanted your money, think again -- they're coming after your mind."
+--------------------------------------------------------------------------------
+
+20. Episode: InfoSec Job Market: Living in the Chaotic Age
+   File: content/episodes/episode-36-infosec-job-market-living-in-the-chaotic-age.md
+   Current Length: 405 characters (OVER by 250)
+   Current Description:
+   "With fierce competition and the rise of AI, the job market for information security sure ain't what it used to be. Security recruiter Alexandra Nickoli shares her advice for landing a job in this tough market. Plus, get her veteran insights on: How today compares to the dark days of 2009; When we'll pull out of this tailspin; Whether AI will prove a benefit or a challenge for job seekers in the future."
+
+   Suggested Description (114 characters):
+   "With fierce competition and the rise of AI, the job market for information security sure ain't what it used to be."
+--------------------------------------------------------------------------------
+
+21. Episode: AI in Cybersecurity: How CISOs Are Actually Using LLMs with Myke Lyons (Cribl CISO)
+   File: content/episodes/episode-62-ai-in-cybersecurity-how-cisos-are-actually-using-llms.md
+   Current Length: 397 characters (OVER by 242)
+   Current Description:
+   "Join Security Cocktail Hour hosts Joe Patti and Adam Roth for an in-depth conversation with Myke Lyons, Chief Information Security Officer at Cribl, about AI in cybersecurity operations. Discover how modern CISOs are actually using LLMs and AI tools in their daily work, handling the data explosion (28% CAGR growth in logs), and transforming security operations with smarter telemetry management."
+
+   Suggested Description (148 characters):
+   "Join Security Cocktail Hour hosts Joe Patti and Adam Roth for an in-depth conversation with Myke Lyons, Chief Information Security Officer at Cribl,"
+--------------------------------------------------------------------------------
+
+22. Episode: Holiday Scams Unwrapped | Tips to Stay Safe This Season
+   File: content/episodes/episode-45-holiday-scams-unwrapped-tips-to-stay-safe-this-season.md
+   Current Length: 386 characters (OVER by 231)
+   Current Description:
+   "This holiday season, don’t let scams ruin the festive spirit! In this special holiday episode of the Security Cocktail Hour, co-hosts Joe Patti and Adam Roth break down the most common holiday scams, from the classics to the sneaky new ones you’ve never heard of. From fake gift card requests to sophisticated AI-driven scams, we’ll teach you how to stay one step ahead of the scammers."
+
+   Suggested Description (61 characters):
+   "This holiday season, don’t let scams ruin the festive spirit!"
+--------------------------------------------------------------------------------
+
+23. Episode: From Zero-Day Hunter to Cyber Defender: Cody Pierce's Journey
+   File: content/episodes/episode-56-from-zero-day-hunter-to-cyber-defender-cody-pierces-journey.md
+   Current Length: 384 characters (OVER by 229)
+   Current Description:
+   "Why would a hacker at the top of game who found dozens of zero-days switch to defense? The answer is a lot more complicated than you think. In this fascinating episode, we sit down with Cody Pierce, co-founder and CEO of Neon Cyber and former Zero Day Initiative researcher. Cody gives us an insider view into the exploit marketplace, and tells us why he went from offense to defense."
+
+   Suggested Description (139 characters):
+   "Why would a hacker at the top of game who found dozens of zero-days switch to defense? The answer is a lot more complicated than you think."
+--------------------------------------------------------------------------------
+
+24. Episode: Free Choice with Jason Mar-Tang
+   File: content/episodes/episode-18-free-choice-with-jason-mar-tang.md
+   Current Length: 382 characters (OVER by 227)
+   Current Description:
+   "This time around we welcome a native son of Staten Island, Jason Mar-Tang of Pentera. Jason tells us about the recent BlackHat conference, and we discuss the always tricky topic of how far to let a security incident progress before shutting it down. We also talk about attacking your own systems to improve your defenses, and the latest challenges in that long-established practice."
+
+   Suggested Description (85 characters):
+   "This time around we welcome a native son of Staten Island, Jason Mar-Tang of Pentera."
+--------------------------------------------------------------------------------
+
+25. Episode: Cybersecurity and AI | What the Experts Are Worried About, and What They're Doing
+   File: content/episodes/episode-37-cybersecurity-and-ai-what-the-experts-are-worried-about-and-what-theyre-doing.md
+   Current Length: 372 characters (OVER by 217)
+   Current Description:
+   "Our panel of cyber security all-stars dishes on how the industry is thinking about and handling artificial intelligence (AI). Get ready for surprising insights on hot topics like deepfakes, privacy and the real dangers and promise of AI. What they believe everyone should worry about most will surprise you. Thanks to guests Francie Dudrey, Mike Pedrick and Chris Roberts."
+
+   Suggested Description (125 characters):
+   "Our panel of cyber security all-stars dishes on how the industry is thinking about and handling artificial intelligence (AI)."
+--------------------------------------------------------------------------------
+
+26. Episode: From the Battlefield to the Boardroom: High-Stakes Cyber Security
+   File: content/episodes/episode-50-from-the-battlefield-to-the-boardroom-high-stakes-cyber-security.md
+   Current Length: 347 characters (OVER by 192)
+   Current Description:
+   "Ever wondered what it's like to lead cybersecurity on the front lines? In this episode of Security Cocktail Hour, we sit down with Keren de Via, a former IDF officer and trailblazing Chief Information Security Officer (CISO), who shares her extraordinary journey from military leadership to navigating the complex world of corporate cybersecurity."
+
+   Suggested Description (70 characters):
+   "Ever wondered what it's like to lead cybersecurity on the front lines?"
+--------------------------------------------------------------------------------
+
+27. Episode: Internet Privacy - Everyone Edition
+   File: content/episodes/episode-09.md
+   Current Length: 340 characters (OVER by 185)
+   Current Description:
+   "Joe and Adam deliver a primer on Internet privacy focusing on Big Tech and other commercial players: Who wants your data, how they get it and how to protect your own interests when they won’t (which is always). This is the first episode of a two-part series on Internet privacy. Next up: Dealing with tougher adversaries like nation states."
+
+   Suggested Description (148 characters):
+   "Joe and Adam deliver a primer on Internet privacy focusing on Big Tech and other commercial players: Who wants your data, how they get it and how to"
+--------------------------------------------------------------------------------
+
+28. Episode: Zero Trust and 80 Proof Bourbon with Adam Kohler
+   File: content/episodes/episode-22-zero-trust-and-80-proof-bourbon-with-adam-kohler.md
+   Current Length: 332 characters (OVER by 177)
+   Current Description:
+   "Everyone in security says they’re committed to Zero Trust, even if they can’t agree on what it means. We take on the challenge of explaining the security industry’s favorite buzzword and the bizarre mythology around it, with the help of guest Adam Kohler and a few sips of bourbon. (Well, maybe not sips. And maybe more than a few.)"
+
+   Suggested Description (101 characters):
+   "Everyone in security says they’re committed to Zero Trust, even if they can’t agree on what it means."
+--------------------------------------------------------------------------------
+
+29. Episode: Can You Trust a Hacked Company?
+   File: content/episodes/episode-03.md
+   Current Length: 325 characters (OVER by 170)
+   Current Description:
+   "The number of companies that have experienced serious security breaches continues to grow. At this point a company you use has almost certainly joined that club. Maybe they even lost your data. Joe and Adam talk about the less than obvious realities around whether you should keep using them, or take your business elsewhere."
+
+   Suggested Description (90 characters):
+   "The number of companies that have experienced serious security breaches continues to grow."
+--------------------------------------------------------------------------------
+
+30. Episode: Don’t Get Hacked on Vacation | Travel Cybersecurity Tips
+   File: content/episodes/episode-54-dont-get-hacked-on-vacation-travel-cybersecurity-tips.md
+   Current Length: 321 characters (OVER by 166)
+   Current Description:
+   "Got big travel plans this summer? Remember to pack some protection against cyber threats. In this episode of the Security Cocktail Hour podcast, hosts Joe Patti and Adam Roth break down the real cybersecurity threats you face when using hotel Wi-Fi, airport chargers, and public networks—and what you can do to stay safe."
+
+   Suggested Description (89 characters):
+   "Got big travel plans this summer? Remember to pack some protection against cyber threats."
+--------------------------------------------------------------------------------
+
+31. Episode: The Future of Security Leadership with Sivan Tehila
+   File: content/episodes/episode-31-the-future-of-security-leadership-with-sivan-tehila.md
+   Current Length: 317 characters (OVER by 162)
+   Current Description:
+   "The Chief Information Security Officer (CISO) is a fairly new position in the business world, and changing as rapidly as any other facet of information security. We talk with former CISO Sivan Tehila about the challenges of the role, and how they inspired her to found security startup Onyxia where she serves as CEO."
+
+   Suggested Description (151 characters):
+   "The Chief Information Security Officer (CISO) is a fairly new position in the business world, and changing as rapidly as any other facet of information"
+--------------------------------------------------------------------------------
+
+32. Episode: Security Culture Club
+   File: content/episodes/episode-12-security-culture-club.md
+   Current Length: 314 characters (OVER by 159)
+   Current Description:
+   "Joe and Adam discuss how culture and the human element impact security, with infrastructure and disaster recovery expert Leticia Espinosa. We cover the harsh realities that go beyond technology, including what security people really think of that security awareness training your company makes you take every year."
+
+   Suggested Description (138 characters):
+   "Joe and Adam discuss how culture and the human element impact security, with infrastructure and disaster recovery expert Leticia Espinosa."
+--------------------------------------------------------------------------------
+
+33. Episode: Seven Trillion Reasons to Drink, from Eric O’Neill
+   File: content/episodes/episode-25-seven-trillion-reasons-to-drink-from-eric-oneill.md
+   Current Length: 308 characters (OVER by 153)
+   Current Description:
+   "Legendary spy hunter and security thought leader Eric O’Neill puts the cost of cybercrime worldwide at seven trillion dollars. Eric joins us to share his sobering thoughts about that and other topics including the Dark Web, ransomware and infrastructure vulnerability. Plus some bonus tips for driving in DC."
+
+   Suggested Description (126 characters):
+   "Legendary spy hunter and security thought leader Eric O’Neill puts the cost of cybercrime worldwide at seven trillion dollars."
+--------------------------------------------------------------------------------
+
+34. Episode: AI and the Future of Security with John Dwyer
+   File: content/episodes/episode-26-ai-and-the-future-of-security-with-john-dwyer.md
+   Current Length: 307 characters (OVER by 152)
+   Current Description:
+   "Security incident response veteran John Dwyer joins us for a deep dive into how AI is poised to bend reality, and what that means for both attackers and defenders. We also cover how security incidents are now straddling the cyber and real worlds. Join us for some fresh thinking on where security is headed."
+
+   Suggested Description (148 characters):
+   "Security incident response veteran John Dwyer joins us for a deep dive into how AI is poised to bend reality, and what that means for both attackers"
+--------------------------------------------------------------------------------
+
+35. Episode: Tequila with Rebecca Cahak
+   File: content/episodes/episode-19-tequila-with-rebecca-cahak.md
+   Current Length: 299 characters (OVER by 144)
+   Current Description:
+   "Guest Rebecca Cahak helps Joe and Adam get in touch with the feminine side of the business and IT worlds. We talk about her advocacy for women’s careers and leadership for women, including through her organization FIERCE. We even toss in a discussion of work-life balance and a quick zoology lesson."
+
+   Suggested Description (105 characters):
+   "Guest Rebecca Cahak helps Joe and Adam get in touch with the feminine side of the business and IT worlds."
+--------------------------------------------------------------------------------
+
+36. Episode: The New Rules of Cyber Incident Response | New attacks, new response
+   File: content/episodes/episode-53-the-new-rules-of-cyber-incident-response-new-attacks-new-response.md
+   Current Length: 299 characters (OVER by 144)
+   Current Description:
+   "In this episode of Security Cocktail Hour, we go deep into the high-stakes world of modern cyber incident response (IR) with Lisa Landau and Tim Shipp of ThreatLight—two top-tier experts redefining how breaches are handled today. Discover how IR has evolved—and why the old playbook no longer works."
+
+   Suggested Description (150 characters):
+   "In this episode of Security Cocktail Hour, we go deep into the high-stakes world of modern cyber incident response (IR) with Lisa Landau and Tim Shipp"
+--------------------------------------------------------------------------------
+
+37. Episode: Agentic AI Security: Full Speed into the Unknown
+   File: content/episodes/episode-51-agentic-ai-security-full-speed-into-the-unknown.md
+   Current Length: 289 characters (OVER by 134)
+   Current Description:
+   "Agentic AI is changing the game—but is it a security nightmare in the making? In this episode of the Security Cocktail Hour, co-hosts Joe Patti and Adam Roth sit down with Kevin O’Connor to dive into one of the hottest (and most misunderstood) topics in cybersecurity: Agentic AI Security."
+
+   Suggested Description (77 characters):
+   "Agentic AI is changing the game—but is it a security nightmare in the making?"
+--------------------------------------------------------------------------------
+
+38. Episode: So You Want to Be a Security Entrepreneur
+   File: content/episodes/episode-13-so-you-want-to-be-a-security-entrepreneur.md
+   Current Length: 285 characters (OVER by 130)
+   Current Description:
+   "For this episode we’re joined by Idan Wiener, co-founder and CEO of Illustria, an innovative startup in the software supply chain security space. Idan shares his thoughts and experiences from the startup world, and the things he wishes he’d known when he first set out on this journey."
+
+   Suggested Description (145 characters):
+   "For this episode we’re joined by Idan Wiener, co-founder and CEO of Illustria, an innovative startup in the software supply chain security space."
+--------------------------------------------------------------------------------
+
+39. Episode: Dr. Nikki Robinson: Why Security Teams Fail at Human Factors
+   File: content/episodes/episode-57-dr-nikki-robinson-why-security-teams-fail-at-human-factors.md
+   Current Length: 280 characters (OVER by 125)
+   Current Description:
+   "It takes an advanced degree to understand the psychology behind why users hate security controls, so we got someone with two: Dr. Nikki Robinson, DSc Cybersecurity, PhD Human Factors. Nikki joins us to break down the real reasons security implementations fail—and how to fix them."
+
+   Suggested Description (129 characters):
+   "It takes an advanced degree to understand the psychology behind why users hate security controls, so we got someone with two: Dr."
+--------------------------------------------------------------------------------
+
+40. Episode: What Keeps Monte Fabiani Up at Night
+   File: content/episodes/episode-24-what-keeps-monte-fabiani-up-at-night.md
+   Current Length: 270 characters (OVER by 115)
+   Current Description:
+   "Security veteran Monte Fabiani tells us about the many SOCs (Security Operations Centers) he’s built and run, and how being in that end of the business can make it hard to sleep at night. We also get meta about how we started podcasting and brainstorm some future ideas."
+
+   Suggested Description (151 characters):
+   "Security veteran Monte Fabiani tells us about the many SOCs (Security Operations Centers) he’s built and run, and how being in that end of the business"
+--------------------------------------------------------------------------------
+
+41. Episode: Security Campfire Stories
+   File: content/episodes/episode-14-security-campfire-stories.md
+   Current Length: 269 characters (OVER by 114)
+   Current Description:
+   "Joe and Adam gather round the virtual campfire to recount legends more chilling than any tired old monster story. Hear about the Stuxnet and Target hacks, and how these classic tales from the past are still relevant to how we detect and defend against intrusions today."
+
+   Suggested Description (113 characters):
+   "Joe and Adam gather round the virtual campfire to recount legends more chilling than any tired old monster story."
+--------------------------------------------------------------------------------
+
+42. Episode: Holiday Security Tips and Negronis with Reut Weitzman
+   File: content/episodes/episode-23-holiday-security-tips-and-negronis-with-reut-weitzman.md
+   Current Length: 266 characters (OVER by 111)
+   Current Description:
+   "The holidays are a time for joy. It’s also a time when thieves and scammers up their game in the cyber world, looking to put a damper on everyone’s good cheer. Security consultant Reut Weitzman joins us to share tips to keep the bad guys from spoiling your holidays."
+
+   Suggested Description (32 characters):
+   "The holidays are a time for joy."
+--------------------------------------------------------------------------------
+
+43. Episode: Scotch (and Tea) with Chris Roberts
+   File: content/episodes/episode-17-scotch-and-tea-with-chris-roberts.md
+   Current Length: 262 characters (OVER by 107)
+   Current Description:
+   "Adam and Joe cover a lot of ground with the legendary Chris Roberts. We start off with reports of dolphins off Staten Island and end with how to wreck a classic Porsche, plus a little bit of security talk in between. It’s a fun discussion you won’t want to miss."
+
+   Suggested Description (68 characters):
+   "Adam and Joe cover a lot of ground with the legendary Chris Roberts."
+--------------------------------------------------------------------------------
+
+44. Episode: Flipper Zero and Other Totally Legit Hacking Tools
+   File: content/episodes/episode-06.md
+   Current Length: 258 characters (OVER by 103)
+   Current Description:
+   "Joe and Adam decode the hype around the Flipper Zero, the latest testing device (i.e. hacker tool) to generate buzz in the security community. We go through what it does, how it fits into the wider security world and the proper use and ethics of these tools."
+
+   Suggested Description (142 characters):
+   "Joe and Adam decode the hype around the Flipper Zero, the latest testing device (i.e. hacker tool) to generate buzz in the security community."
+--------------------------------------------------------------------------------
+
+45. Episode: Purple Teaming with Reut Weitzman
+   File: content/episodes/episode-27-purple-teaming-with-reut-weitzman.md
+   Current Length: 254 characters (OVER by 99)
+   Current Description:
+   "Security consulting executive Reut Weitzman returns to the show to talk about one of our favorite topics, conducting a purple team exercise. Join us to learn what happens when attackers square off against defenders to test a security team’s capabilities."
+
+   Suggested Description (140 characters):
+   "Security consulting executive Reut Weitzman returns to the show to talk about one of our favorite topics, conducting a purple team exercise."
+--------------------------------------------------------------------------------
+
+46. Episode: Medical Devices, Halloween and Whiskey with Gabrielle Hempel
+   File: content/episodes/episode-21-medical-devices-halloween-and-whiskey-with-gabrielle-hempel.md
+   Current Length: 248 characters (OVER by 93)
+   Current Description:
+   "It's our Halloween episode, and we're covering the scary topic of medical device security with guest Gabrielle Hempel, aka @gabsmashh. Gabrielle talks about her experiences with medical devices and her unconventional path into information security."
+
+   Suggested Description (134 characters):
+   "It's our Halloween episode, and we're covering the scary topic of medical device security with guest Gabrielle Hempel, aka @gabsmashh."
+--------------------------------------------------------------------------------
+
+47. Episode: AI attacks need AI defense: Ransomware's new danger and how a top cyber expert is fighting back
+   File: content/episodes/episode-61-ai-attacks-need-ai-defense-ransomwares-new-danger-and-how-a-top-cyber-expert-is-.md
+   Current Length: 247 characters (OVER by 92)
+   Current Description:
+   "Everyone's using AI, including ransomware gangs. Podcast guest Karin Lagziel, Director Cybersecurity at consulting firm Sygnia, gives us the news and her cyber defense strategies for fighting back: With more AI, as well as a focus on fundamentals."
+
+   Suggested Description (48 characters):
+   "Everyone's using AI, including ransomware gangs."
+--------------------------------------------------------------------------------
+
+48. Episode: Travel Router Unboxing: Don't Get Hacked on Vacation!
+   File: content/episodes/episode-58-travel-router-unboxing-dont-get-hacked-on-vacation.md
+   Current Length: 243 characters (OVER by 88)
+   Current Description:
+   "Back in Episode 54 we talked about vacation cybersecurity, including the dangers of hotel WiFi and public networks. Today we're unboxing the travel router that could save your digital life while traveling (or at least save you a lot of grief)."
+
+   Suggested Description (115 characters):
+   "Back in Episode 54 we talked about vacation cybersecurity, including the dangers of hotel WiFi and public networks."
+--------------------------------------------------------------------------------
+
+49. Episode: Mai Tais with Tom Cross
+   File: content/episodes/episode-20-mai-tais-with-tom-cross.md
+   Current Length: 235 characters (OVER by 80)
+   Current Description:
+   "Tom Cross brings us more news from this year’s Black Hat conference, including details on the headline-grabbing satellite hacking challenge. It’s a fascinating look into a side of security even most cyber professionals don’t know well."
+
+   Suggested Description (140 characters):
+   "Tom Cross brings us more news from this year’s Black Hat conference, including details on the headline-grabbing satellite hacking challenge."
+--------------------------------------------------------------------------------
+
+50. Episode: WiFi Pineapple Unboxing: The Hacker Device From TV Shows!
+   File: content/episodes/episode-59-wifi-pineapple-unboxing-the-hacker-device-from-tv-shows.md
+   Current Length: 235 characters (OVER by 80)
+   Current Description:
+   "Ever wondered what that mysterious "WiFi Pineapple" device from hacker movies actually does? Today we're unboxing the Hak5 WiFi Pineapple Mark 7 - the real penetration testing tool that's been featured in countless TV shows and movies!"
+
+   Suggested Description (92 characters):
+   "Ever wondered what that mysterious "WiFi Pineapple" device from hacker movies actually does?"
+--------------------------------------------------------------------------------
+
+51. Episode: Internet Privacy - Hardcore Edition
+   File: content/episodes/episode-10.md
+   Current Length: 221 characters (OVER by 66)
+   Current Description:
+   "For part two of our series on Internet privacy, we talk about playing in the big leagues: How dissidents, journalists, whistleblowers and others with tough adversaries can protect themselves with tools like Tor and Tails."
+
+   Suggested Description (149 characters):
+   "For part two of our series on Internet privacy, we talk about playing in the big leagues: How dissidents, journalists, whistleblowers and others with"
+--------------------------------------------------------------------------------
+
+52. Episode: French 75 with Jennifer Granick
+   File: content/episodes/episode-16-french-75-with-jennifer-granick.md
+   Current Length: 212 characters (OVER by 57)
+   Current Description:
+   "Attorney and Internet civil liberties pioneer Jennifer Granick introduces us to a new cocktail and talks about the latest in the battle to protect our rights in a world of ever-increasing government surveillance."
+
+   Suggested Description (150 characters):
+   "Attorney and Internet civil liberties pioneer Jennifer Granick introduces us to a new cocktail and talks about the latest in the battle to protect our"
+--------------------------------------------------------------------------------
+
+53. Episode: Cyber Warrior
+   File: content/episodes/episode-15-cyber-warrior.md
+   Current Length: 211 characters (OVER by 56)
+   Current Description:
+   "Joe and Adam catch up with top tier security incident responder David Warshavski. David shares his latest insights on trends in what attackers are doing, cyber defense and the emerging security issues around AI."
+
+   Suggested Description (81 characters):
+   "Joe and Adam catch up with top tier security incident responder David Warshavski."
+--------------------------------------------------------------------------------
+
+54. Episode: Small Business Security
+   File: content/episodes/episode-08.md
+   Current Length: 206 characters (OVER by 51)
+   Current Description:
+   "Joe and Adam welcome their first guest, Sal Toner of F.C. Chaos Boxing and Fitness, to talk about his security challenges as a small business owner and how to solve them without the big corporate price tag."
+
+   Suggested Description (57 characters):
+   "Joe and Adam welcome their first guest, Sal Toner of F.C."
+--------------------------------------------------------------------------------
+
+55. Episode: Mad AIs and Poisoned LLMs: Fighting Digital Insanity with Michael Silva
+   File: content/episodes/episode-29-mad-ais-and-poisoned-llms-fighting-digital-insanity-with-michael-silva.md
+   Current Length: 205 characters (OVER by 50)
+   Current Description:
+   "We jump back into the world of generative AI with CEO and entrepreneur Michael Silva. Michael gives us his take on how a large language model (LLM) can steer you wrong and how to stay on a path to reality."
+
+   Suggested Description (85 characters):
+   "We jump back into the world of generative AI with CEO and entrepreneur Michael Silva."
+--------------------------------------------------------------------------------
+
+56. Layout: Blog Archive Page
+   File: layouts/blog/list.html
+   Current Length: 205 characters (OVER by 50)
+   Current Description:
+   "Browse our complete archive of cybersecurity insights, analysis, and practical guidance. Blog posts from Security Cocktail Hour covering industry trends, security operations, and practitioner perspectives."
+
+   Suggested Description (88 characters):
+   "Browse our complete archive of cybersecurity insights, analysis, and practical guidance."
+--------------------------------------------------------------------------------
+
+57. Episode: How to Hire a Security Team
+   File: content/episodes/episode-11-how-to-hire-a-security-team.md
+   Current Length: 201 characters (OVER by 46)
+   Current Description:
+   "If you think getting your first job in security is hard, try hiring qualified security people. Joe and Adam open up their bag of tricks on hiring hard-to-find talent to build a top-notch security team."
+
+   Suggested Description (94 characters):
+   "If you think getting your first job in security is hard, try hiring qualified security people."
+--------------------------------------------------------------------------------
+
+58. Episode: Threat Intelligence with Ryan Westman
+   File: content/episodes/episode-28-threat-intelligence-with-ryan-westman.md
+   Current Length: 200 characters (OVER by 45)
+   Current Description:
+   "What is threat intelligence, and what makes it so...threat-y? Ryan Westman of eSentire explains it to us, and also shows us a neat Mac trick that'll make you feel better about overpaying for a laptop."
+
+   Suggested Description (61 characters):
+   "What is threat intelligence, and what makes it so...threat-y?"
+--------------------------------------------------------------------------------
+
+59. Episode: Crypto Kidnappings, Lost Keys, and Million-Dollar Bug Bounties
+   File: content/episodes/episode-60-crypto-kidnappings-lost-keys-and-million-dollar-bug-bounties.md
+   Current Length: 199 characters (OVER by 44)
+   Current Description:
+   "Forbes 30 Under 30 cybersecurity expert Yevheniia Broshevan discusses crypto security challenges, bug bounty programs, and the reality that 95% of Bitcoin has been mined while 11-18% is lost forever."
+
+   Suggested Description (146 characters):
+   "Forbes 30 Under 30 cybersecurity expert Yevheniia Broshevan discusses crypto security challenges, bug bounty programs, and the reality that 95% of"
+--------------------------------------------------------------------------------
+
+60. Page: Cybersecurity Podcast | Security Cocktail Hour - Expert Interviews & Insights
+   File: content/_index.md
+   Current Length: 190 characters (OVER by 35)
+   Current Description:
+   "Security Cocktail Hour is a cybersecurity podcast featuring conversations with security practitioners on data breach prevention, threat intelligence, incident response, and more. Listen now!"
+
+   Suggested Description (149 characters):
+   "Security Cocktail Hour is a cybersecurity podcast featuring conversations with security practitioners on data breach prevention, threat intelligence,"
+--------------------------------------------------------------------------------
+
+61. Episode: Security Can Be Fun
+   File: content/episodes/episode-05.md
+   Current Length: 174 characters (OVER by 19)
+   Current Description:
+   "Security can stress you out, but once those moments pass, they leave you with some good stories. Today we share a few to give you an idea of how a security team really works."
+
+   Suggested Description (96 characters):
+   "Security can stress you out, but once those moments pass, they leave you with some good stories."
+--------------------------------------------------------------------------------
+
+62. Blog Post: Shadow AI: When Innovation Outpaces Security Governance
+   File: content/blog/ai-innovation-outpaces-security-governance.md
+   Current Length: 171 characters (OVER by 16)
+   Current Description:
+   "Employees are deploying AI tools in minutes, bypassing security reviews. Learn how to build AI governance frameworks that enable productivity while maintaining compliance."
+
+   Suggested Description (72 characters):
+   "Employees are deploying AI tools in minutes, bypassing security reviews."
+--------------------------------------------------------------------------------
+
+63. Page: About the Cybersecurity Podcast | Security Cocktail Hour
+   File: content/about.md
+   Current Length: 161 characters (OVER by 6)
+   Current Description:
+   "Security Cocktail Hour is a cybersecurity podcast where hosts Joe Patti and Adam Roth interview security practitioners about real-world challenges and solutions."
+
+   Suggested Description (150 characters):
+   "Security Cocktail Hour is a cybersecurity podcast where hosts Joe Patti and Adam Roth interview security practitioners about real-world challenges and"
+--------------------------------------------------------------------------------
+
+================================================================================
+COMPLIANT PAGES (≤155 characters)
+================================================================================
+
+Pages (3):
+  ✅ Resources (89 chars)
+  ✅ Contact Us (98 chars)
+  ✅ Partnership Opportunities - Security Cocktail Hour Podcast (155 chars)
+
+Blog Posts (2):
+  ✅ When Nanoseconds Matter: Security for Performance-Critical Environments (116 chars)
+  ✅ Why Security Always Gets Blamed (And How to Change That) (55 chars)
+
+Episodes (4):
+  ✅ Passwords Must Die (130 chars)
+  ✅ Security Begins at Home (151 chars)
+  ✅ We'll Never Get a VPN Sponsor After This (135 chars)
+  ✅ The Mandatory AI Security Episode (105 chars)
+
+================================================================================
+SUMMARY: 63 pages need attention
+================================================================================

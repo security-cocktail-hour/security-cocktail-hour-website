@@ -6,8 +6,7 @@ guest: ""
 category: "Educational"
 duration: "1:07:58"
 image: "/images/episodes/episode-001-013.png"
-description: >-
-  Joe and Adam deliver a primer on Internet privacy focusing on Big Tech and other commercial players: Who wants your data, how they get it and how to protect your own interests when they won’t (which is always).  This is the first episode of a two-part series on Internet privacy. Next up: Dealing with tougher adversaries like nation states.
+description: "Joe and Adam cover internet privacy basics: who wants your data, how they get it, and how to protect yourself from Big Tech."
 platforms:
   youtube: "https://youtu.be/DU8jBdpKkAY"
   spotify: "https://open.spotify.com/episode/7JrOnWyjQcca03Xgq5PvFa?si=fccfa2081c6e4e75"

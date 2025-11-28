@@ -6,8 +6,7 @@ guest: "Cody Pierce"
 category: "Career Bio"
 duration: "01:03:55"
 image: "/images/episodes/episode-056.png"
-description: >-
-  Why would a hacker at the top of game who found dozens of zero-days switch to defense? The answer is a lot more complicated than you think. In this fascinating episode, we sit down with Cody Pierce, co-founder and CEO of Neon Cyber and former Zero Day Initiative researcher. Cody gives us an insider view into the exploit marketplace, and tells us why he went from offense to defense.
+description: "Why would a top hacker switch to defense? Cody Pierce shares his journey from Zero Day Initiative to founding Neon Cyber."
 platforms:
   youtube: "https://youtu.be/3pQ17c0wKh4"
   spotify: "https://open.spotify.com/episode/3J5cPQq8xmyr70AQ9ioU3q?si=75045aef67124416"

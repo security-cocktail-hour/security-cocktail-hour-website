@@ -6,8 +6,7 @@ guest: "Jennifer Granick"
 category: "Legal"
 duration: "58:19"
 image: "/images/episodes/episode-016.jpg"
-description: >-
-  Attorney and Internet civil liberties pioneer Jennifer Granick introduces us to a new cocktail and talks about the latest in the battle to protect our rights in a world of ever-increasing government surveillance.
+description: "Internet civil liberties pioneer Jennifer Granick discusses protecting our rights in an age of government surveillance."
 platforms:
   youtube: "https://youtu.be/ttXfdLl8LIA"
   spotify: "https://open.spotify.com/episode/44Q27QkkYn8sOHYzuKVYPk?si=47a5a1acfbc64fd3"

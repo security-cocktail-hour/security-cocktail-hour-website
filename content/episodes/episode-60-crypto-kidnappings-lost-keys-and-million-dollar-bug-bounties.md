@@ -6,8 +6,7 @@ guest: "Yevheniia Broshevan"
 category: "Cryptocurrency Security"
 duration: "01:05:09"
 image: "/images/episodes/episode-060.jpg"
-description: >-
-  Forbes 30 Under 30 cybersecurity expert Yevheniia Broshevan discusses crypto security challenges, bug bounty programs, and the reality that 95% of Bitcoin has been mined while 11-18% is lost forever.
+description: "Yevheniia Broshevan discusses crypto security, bug bounties, and the reality that 11-18% of Bitcoin is lost forever."
 platforms:
   youtube: "https://youtu.be/erF3zC0a1hM"
   spotify: "https://tinyurl.com/4u6myrb8"

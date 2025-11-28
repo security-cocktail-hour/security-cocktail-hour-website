@@ -6,8 +6,7 @@ guest: "Sivan Tehila"
 category: "General"
 duration: ""
 image: "/images/episodes/episode-031.jpg"
-description: >-
-  The Chief Information Security Officer (CISO) is a fairly new position in the business world, and changing as rapidly as any other facet of information security. We talk with former CISO Sivan Tehila about the challenges of the role, and how they inspired her to found security startup Onyxia where she serves as CEO.
+description: "Former CISO Sivan Tehila on the evolving role of security leadership and why she founded security startup Onyxia."
 platforms:
   youtube: "https://youtu.be/tOArb_v1a2M"
   spotify: "https://open.spotify.com/episode/1RCIMFkRrNDwOk5m7j048V?si=7ff638acdafe4e00"

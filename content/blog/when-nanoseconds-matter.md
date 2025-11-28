@@ -8,7 +8,7 @@ author_twitter: "@SecCocktailHour"
 author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
 category: "General"
 tags: ["performance", "network-security", "risk-management", "high-frequency-trading"]
-description: "In high-speed industries where latency directly impacts business value, traditional security architectures often don't fit. Learn how to place security controls without sacrificing the performance that drives competitive advantage."
+description: "Where latency impacts business value, traditional security often doesn't fit. Learn to place controls without sacrificing performance."
 featured: true
 related_episode: "episode-63-cybersecurity-at-nanosecond-speed-securing-high-frequency-trading"
 ---

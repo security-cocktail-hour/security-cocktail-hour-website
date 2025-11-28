@@ -6,8 +6,7 @@ guest: "Gurinder Bhatti"
 category: "Career Bio"
 duration: ""
 image: "/images/episodes/episode-039.jpg"
-description: >-
-  In this episode, industry veteran Gurinder Bhatti tells us how seizing an opportunity propelled him from an internship to a thriving career in cybersecurity.   From navigating unexpected outages to landing a spot on NBC News, Gurinder recounts the lessons learned and takeaways from his experiences in his varied career. He discusses the importance of learning through experience, constantly adapting, and the bold moves that accelerated his career forward.
+description: "Gurinder Bhatti shares how he went from intern to thriving cybersecurity career by seizing opportunities, adapting, and taking bold moves."
 platforms:
   youtube: "https://youtu.be/ZJQLSNH0XEA"
   spotify: "https://open.spotify.com/episode/0d5B7SxN0IxCc7Kp9cY91h?si=96f848667a4c4e9b"

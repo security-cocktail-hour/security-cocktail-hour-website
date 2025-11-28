@@ -6,8 +6,7 @@ guest: "Jatin Mannepalli"
 category: "General"
 duration: "59:59"
 image: "/images/episodes/episode-063.jpg"
-description: >-
-  In this episode of the Security Cocktail Hour, guest Jatin Mannepalli introduces co-hosts Joe Patti and Adam Roth the high-speed, high stakes world of high frequency trading (HFT) and its many security challenges. The conversation delves into the intricacies of high frequency trading, the stress of incident response, and the importance of redundancy in connectivity. They discuss the evolution of data transmission methods, the challenges of security in trading environments, and the role of custom hardware. The episode also touches on the current job market in cyber security and the necessity of collaboration among firms to enhance security measures.
+description: "Jatin Mannepalli explores high-frequency trading security challenges, incident response, and custom hardware with Joe and Adam."
 platforms:
   youtube: "https://youtu.be/LFvm6aHARak"
   spotify: "https://open.spotify.com/episode/2nanQ96nOpxOihgrXTnSxZ?si=lODg2Y9cRe2iSmsG9srohw"

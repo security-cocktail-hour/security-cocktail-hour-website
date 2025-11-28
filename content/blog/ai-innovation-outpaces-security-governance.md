@@ -8,7 +8,7 @@ author_twitter: "@SecCocktailHour"
 author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
 category: "AI"
 tags: ["artificial-intelligence", "governance", "compliance", "shadow-it", "data-protection"]
-description: "Employees are deploying AI tools in minutes, bypassing security reviews. Learn how to build AI governance frameworks that enable productivity while maintaining compliance."
+description: "Employees deploy AI tools in minutes, bypassing security. Build governance frameworks that enable productivity while maintaining compliance."
 featured: true
 related_episode: "episode-51-agentic-ai-security-full-speed-into-the-unknown"
 ---

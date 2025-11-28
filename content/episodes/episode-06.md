@@ -6,8 +6,7 @@ guest: ""
 category: "Educational"
 duration: "38:04"
 image: "/images/episodes/episode-001-013.png"
-description: >-
-  Joe and Adam decode the hype around the Flipper Zero, the latest testing device (i.e. hacker tool) to generate buzz in the security community. We go through what it does, how it fits into the wider security world and the proper use and ethics of these tools.
+description: "Joe and Adam decode the Flipper Zero hype: what it does, how it fits in security, and the ethics of hacker tools."
 platforms:
   youtube: "https://youtu.be/BVca3X8wE_c"
   spotify: "https://open.spotify.com/episode/0olsN2LKLn09wOLpnxqeIH?si=ea00fe99013b48ca"

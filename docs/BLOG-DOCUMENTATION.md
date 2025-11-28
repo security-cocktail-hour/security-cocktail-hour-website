@@ -70,7 +70,7 @@ related_episode: "episode-63-cybersecurity-at-nanosecond-speed-securing-high-fre
 | `category` | Optional | Single category for the article |
 | `tags` | Optional | Array of tags for detailed topic classification |
 | `image` | Optional | Path to featured image (relative to `/static/`) - **Not currently used** |
-| `description` | Recommended | Meta description for SEO and social sharing (150-160 characters) |
+| `description` | **REQUIRED** | Meta description for SEO and social sharing (**120-155 characters - see standards below**) |
 | `featured` | Optional | Set to `true` to show on homepage (max 2 shown) |
 | `related_episode` | Optional | Episode filename to link related podcast episode (added Nov 27, 2025) |
 
@@ -310,16 +310,46 @@ Every blog post automatically includes:
 
 3. **Open Graph and Twitter Card** meta tags for social sharing
 
-### Meta Description Best Practices
+### Meta Description SEO Standards
 
-- **Length**: 150-160 characters (strictly enforced as of Nov 27, 2025)
-- **Include primary keyword** early in the description
-- **Make it compelling and actionable** to improve click-through rates
-- **Shown in**: Search results, social shares, blog archive cards
+**CRITICAL REQUIREMENT** (Enforced as of Nov 27, 2025)
 
+All blog post descriptions must comply with strict SEO standards:
+
+**Character Limits:**
+- **Target**: 120 characters (optimal for mobile display)
+- **Maximum**: 155 characters (hard limit - Google truncates beyond this)
+- **Never exceed 155** - descriptions over this limit will be cut off in search results
+
+**Requirements:**
+- ✅ **Concise and compelling** - Every word counts
+- ✅ **Front-load keywords** - Put important terms at the beginning
+- ✅ **Active voice** - Action-oriented language
+- ✅ **Complete sentences** - No awkward truncation
+- ✅ **Unique** - Different from all other pages
+- ❌ **No filler** - Avoid phrases like "In this article", "Learn about", "This post covers"
+- ❌ **Never generic** - Be specific about value provided
+
+**Good Example (139 chars):**
 ```yaml
-description: "Learn how to implement zero trust architecture in AWS with practical examples and security best practices from industry experts."
+description: "Employees deploy AI tools in minutes, bypassing security. Build governance frameworks that enable productivity while maintaining compliance."
 ```
+
+**Bad Example (171 chars - TOO LONG):**
+```yaml
+description: "Employees are deploying AI tools in minutes, bypassing security reviews. Learn how to build AI governance frameworks that enable productivity while maintaining compliance."
+```
+
+**Tools to Verify:**
+- Run `python3 scripts/audit_meta_descriptions.py` to check all meta descriptions
+- See `temp/meta-description-complete-summary.md` for detailed standards
+
+**Impact:**
+Properly optimized meta descriptions:
+- Improve click-through rates from search results
+- Display completely on mobile devices
+- Enhance social media sharing appearance
+- Contribute to better SEO performance
 
 ### Title Best Practices
 

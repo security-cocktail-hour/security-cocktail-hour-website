@@ -6,8 +6,7 @@ guest: "Nathalie Cano"
 category: "Career Bio"
 duration: ""
 image: "/images/episodes/episode-035.jpg"
-description: >-
-  People often take a non-traditional path into the field of information  security, and Nathali Cano’s journey is one of the most unique we’ve  ever encountered. How she became “a social worker that happens to be a  cybersecurity engineer” is a fascinating story of a single mom making  opportunities for herself out of nothing but hard work and  determination, and how she continues to give back to the community. Join  us for an episode you’ll want to hear until the end.
+description: "From social worker to cybersecurity engineer. Nathali Cano's inspiring journey into security through hard work and determination."
 platforms:
   youtube: "https://youtu.be/w_AFADk0y08"
   spotify: "https://open.spotify.com/episode/0uMRr1FaPnPhz6XyZ3MIZy?si=d0ef42d0b03b492e"

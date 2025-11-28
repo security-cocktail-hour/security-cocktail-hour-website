@@ -6,8 +6,7 @@ guest: "Alexandra Nickoli"
 category: "Career"
 duration: ""
 image: "/images/episodes/episode-036.jpg"
-description: >-
-  With fierce competition and the rise of AI, the job market for information security sure ain't what it used to be. Security recruiter Alexandra Nickoli shares her advice for landing a job in this tough market. Plus, get her veteran insights on:  How today compares to the dark days of 2009; When we'll pull out of this tailspin; Whether AI will prove a benefit or a challenge for job seekers in the future.
+description: "Recruiter Alexandra Nickoli on landing a security job in a tough market. How AI is changing hiring and when conditions will improve."
 platforms:
   youtube: "https://youtu.be/eICBIj29sKI"
   spotify: "https://open.spotify.com/episode/4E54hGQl52lRCYIC2fg9Fb?si=157ec869758b460e"

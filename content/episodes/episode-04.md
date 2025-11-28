@@ -6,8 +6,7 @@ guest: ""
 category: "Educational"
 duration: "46:08"
 image: "/images/episodes/episode-001-013.png"
-description: >-
-  These days it seems like you can't watch YouTube without seeing an ad for a VPN service. Do you really need one? Of course, it depends…
+description: "Why VPN marketing is misleading. Joe and Adam explain what VPNs actually do and when you really need one."
 platforms:
   youtube: "https://youtu.be/D76NnFLnp3U"
   spotify: "https://open.spotify.com/episode/1TytE8RjWMeHLC9yjfDIbP?si=b54f4eb75d4b4b23"

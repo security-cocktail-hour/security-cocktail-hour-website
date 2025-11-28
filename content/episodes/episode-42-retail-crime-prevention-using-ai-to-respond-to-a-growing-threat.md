@@ -6,8 +6,7 @@ guest: "Doug Horsted, Dean Takacs"
 category: "General"
 duration: "56:48"
 image: "/images/episodes/episode-042.jpg"
-description: >-
-  Organized retail crime is more complex than you might think—it's not small-time shoplifting, it's big business run by bad people. In this episode, Doug Horsting, a loss prevention expert from a major retail chain, and Dean Takacs,  CEO of Detective Analytics, join hosts Joe and Adam to reveal how they're using technology to enhance traditional investigation techniques to keep up with increasingly bold and sophisticated criminals. Discover how AI, data, and most importantly, trust and collaboration with law enforcement are transforming retail loss prevention, and what cybersecurity experts in the digital world can learn from their success.
+description: "How AI and data analytics are transforming retail loss prevention. Doug Horsting and Dean Takacs reveal tactics against organized retail crime."
 platforms:
   youtube: "https://youtu.be/Bjo7qk-Rcno"
   spotify: "https://open.spotify.com/episode/7nMyH1CueY09fWBNrE0dPW?si=aa130115970d41e5"

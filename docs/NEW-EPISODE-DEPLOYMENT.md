@@ -1,6 +1,6 @@
 # New Episode Deployment Process
 
-**Last Updated**: November 2, 2025
+**Last Updated**: November 27, 2025
 
 ---
 
@@ -24,7 +24,7 @@ Place the episode details in a text file (e.g., `working/content-answers.txt`) w
 5. [Guest Bio - can be short form like "Guest Name, Title, Company"]
 6. [Category - must be one of: AI, Career, Career Bio, Cryptocurrency Security, Educational, General, Hardware Security, Identity, Incident Response, Legal, Operational Technology (OT), Sales, Small Business, Threat Intel, Unboxing, Users]
 7. [Duration in HH:MM:SS or MM:SS format]
-8. [Episode Description - full paragraph including timestamps and hashtags if provided]
+8. [Episode Description - SEO-optimized meta description, 120-155 characters maximum]
 
 9. Platform URLs:
 YouTube: [URL]
@@ -143,9 +143,37 @@ See [GODADDY-DEPLOYMENT-INSTRUCTIONS.md](GODADDY-DEPLOYMENT-INSTRUCTIONS.md) for
 - Claude always starts dev server with `-F` flag to show future posts
 - You can preview future-dated episodes locally before they go live
 
+### Meta Description SEO Standards
+
+**CRITICAL REQUIREMENT**: All episode descriptions must comply with SEO standards.
+
+**Character Limits:**
+- **Target**: 120 characters (optimal for mobile)
+- **Maximum**: 155 characters (hard limit - Google truncates beyond this)
+
+**Requirements:**
+- ✅ Concise and compelling
+- ✅ Include guest name if applicable
+- ✅ Mention key topics covered
+- ✅ Active voice, action-oriented
+- ✅ Front-load important keywords
+- ✅ Complete sentences (no truncation)
+- ❌ No filler words or redundant phrases
+- ❌ Never exceed 155 characters
+
+**Good Example (127 chars):**
+> "Jatin Mannepalli explores high-frequency trading security challenges, incident response, and custom hardware with Joe and Adam."
+
+**Bad Example (656 chars - WAY too long):**
+> "In this episode of the Security Cocktail Hour, guest Jatin Mannepalli introduces co-hosts Joe Patti and Adam Roth the high-speed, high stakes world of high frequency trading (HFT) and its many security challenges..."
+
+**Tools Available:**
+- Run `python3 scripts/audit_meta_descriptions.py` to check all descriptions
+- See `temp/meta-description-complete-summary.md` for standards documentation
+
 ### Episode Format Standards
 
-All episodes follow the standardized format documented in [SESSION_CONTEXT.md](SESSION_CONTEXT.md#episode-content-structure):
+All episodes follow the standardized format documented in [SESSION_CONTEXT.md](../SESSION_CONTEXT.md#episode-content-structure):
 
 **Episode Timestamps:**
 ```markdown
@@ -299,4 +327,4 @@ Current package size: ~7.8MB (optimized)
 
 **Need Help?**
 
-Refer to [SESSION_CONTEXT.md](SESSION_CONTEXT.md) for detailed project documentation and technical details.
+Refer to [SESSION_CONTEXT.md](../SESSION_CONTEXT.md) for detailed project documentation and technical details.

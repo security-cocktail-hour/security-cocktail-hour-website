@@ -6,8 +6,7 @@ guest: "Adam Kohler"
 category: "General"
 duration: "56:11"
 image: "/images/episodes/episode-022.jpg"
-description: >-
-  Everyone in security says they’re committed to Zero Trust, even if they can’t agree on what it means. We take on the challenge of explaining the security industry’s favorite buzzword and the bizarre mythology around it, with the help of guest Adam Kohler and a few sips of bourbon. (Well, maybe not sips. And maybe more than a few.)
+description: "What is Zero Trust security? Adam Kohler helps demystify the buzzword over bourbon. Security concepts explained practically."
 platforms:
   youtube: "https://youtu.be/rcMFV2REdQM"
   spotify: "https://open.spotify.com/episode/0HzwMC3pPyOEm8DfEeZBL7?si=4cdcea50f246406b"

@@ -6,8 +6,7 @@ guest: "Reut Weitzman"
 category: "Educational"
 duration: "31:03"
 image: "/images/episodes/episode-023.jpg"
-description: >-
-  The holidays are a time for joy. It’s also a time when thieves and scammers up their game in the cyber world, looking to put a damper on everyone’s good cheer. Security consultant Reut Weitzman joins us to share tips to keep the bad guys from spoiling your holidays.
+description: "Security consultant Reut Weitzman shares tips to keep cyber thieves and scammers from spoiling your holidays."
 platforms:
   youtube: "https://youtu.be/vAqbH2qIWdk"
   spotify: "https://open.spotify.com/episode/2eEgkgYofgidGy1gA0rDEC?si=8d1386044d534c4d"

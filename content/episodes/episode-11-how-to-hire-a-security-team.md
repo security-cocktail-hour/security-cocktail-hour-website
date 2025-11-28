@@ -6,8 +6,7 @@ guest: ""
 category: "Career"
 duration: "54:35"
 image: "/images/episodes/episode-001-013.png"
-description: >-
-  If you think getting your first job in security is hard, try hiring qualified security people. Joe and Adam open up their bag of tricks on hiring hard-to-find talent to build a top-notch security team.
+description: "Joe and Adam share their tricks for hiring hard-to-find talent to build a top-notch security team."
 platforms:
   youtube: "https://youtu.be/YPA4oXwDz7A"
   spotify: "https://open.spotify.com/episode/1cXl0YlAjJtJXQKl51qcm5?si=9f8cdb853325474f"
