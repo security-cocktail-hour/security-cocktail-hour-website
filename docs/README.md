@@ -97,15 +97,20 @@
 
 Located in `/scripts/` directory:
 
-- **audit_meta_descriptions.py** - Scans all pages for meta description compliance
+- **audit_meta_descriptions.py** - Scans all pages for meta description compliance (120-155 char limit)
+- **audit_title_tags.py** - Scans all pages for title tag compliance (≤60 char target)
 - **fix_all_meta_descriptions.py** - Batch updates meta descriptions
+- **format_transcript.py** - Formats episode transcripts with proper speaker formatting
 
 ### Usage:
 ```bash
 # Check all meta descriptions
 python3 scripts/audit_meta_descriptions.py
 
-# View audit results (latest in temp/, historical in docs/reports/)
+# Check all title tags
+python3 scripts/audit_title_tags.py
+
+# View audit results (historical in docs/reports/)
 cat docs/reports/meta-description-audit-report-2025-11-27.txt
 ```
 

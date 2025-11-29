@@ -130,6 +130,20 @@ Every SEO title should be:
 
 ## Testing & Verification
 
+### Audit Script
+Use the automated audit script to check all title tags:
+
+```bash
+python3 scripts/audit_title_tags.py
+```
+
+The script will report:
+- Titles exceeding 70 characters (likely truncated)
+- Titles in acceptable range (61-70 chars)
+- Optimal titles (≤60 chars)
+- Episodes using SEO titles
+- Suggestions for improvement
+
 ### Manual Testing
 1. Start Hugo server: `hugo server -D`
 2. View episode page in browser
@@ -137,7 +151,7 @@ Every SEO title should be:
 4. View page source - verify `<title>` tag contains SEO title
 5. Verify H1 heading still shows full original title
 
-### Automated Testing
+### Command Line Testing
 Use browser DevTools or curl:
 
 ```bash
@@ -207,13 +221,18 @@ description: ""
 
 ## Reference
 
-**Current Implementation**: 17 episodes with SEO titles (as of November 28, 2025)
+**Current Implementation**: 20 pages with SEO titles (as of November 29, 2025)
 
-Episodes: 17, 29, 37, 39, 40, 42, 43, 47, 48, 49, 50, 53, 55, 60, 61, 62, 63
+- **Episodes**: 17, 29, 37, 39, 40, 42, 43, 47, 48, 49, 50, 53, 55, 60, 61, 62, 63
+- **Blog Posts**: when-nanoseconds-matter.md
+- **Pages**: _index.md (homepage)
 
-**Template File**: `layouts/episodes/single.html:1`
+**Template Files**:
+- Episodes: `layouts/episodes/single.html:1`
+- Blog Posts: `layouts/blog/single.html:1` (uses same baseof.html template)
+- Pages: `layouts/_default/baseof.html:4` (fallback for all content)
 
-**Commit**: 8c26e4d - "Implement SEO-optimized title tags for episode pages"
+**Audit Script**: `scripts/audit_title_tags.py` - Comprehensive audit tool for all content types
 
 **Related Documentation**:
 - `docs/SEO-META-DESCRIPTION-STANDARDS.md` - Meta description guidelines

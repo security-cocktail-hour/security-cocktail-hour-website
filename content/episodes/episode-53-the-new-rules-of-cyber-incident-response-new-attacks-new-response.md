@@ -13,7 +13,7 @@ platforms:
   apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000703154455"
   amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
 guest_bio: "Lisa Landau and Tim Shipp, CEO/ThreatLight, CTO/ThreatLight"
-seo_title: "New Rules of Cyber Incident Response | Lisa Landau & Tim Shipp"
+seo_title: "New Rules of Cyber Incident Response | Lisa Landau,Tim Shipp"
 ---
 
 In this episode of Security Cocktail Hour, we go deep into the high-stakes world of modern cyber incident response (IR) with Lisa Landau and Tim Shipp of ThreatLight—two top-tier experts redefining how breaches are handled today.  Discover how IR has evolved—and why the old playbook no longer works.

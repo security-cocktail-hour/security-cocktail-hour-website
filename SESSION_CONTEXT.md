@@ -1,8 +1,8 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: November 28, 2025 (SEO Title Optimization Complete)
+**Last Updated**: November 29, 2025 (Title Tag Audit Script Complete)
 **Hugo Version**: v0.151.0
-**Session Status**: Phase 2 (Blog) Complete with Full SEO - Episode Title Tag Optimization Deployed
+**Session Status**: Phase 2 (Blog) Complete with Full SEO - Title Tag Optimization Extended to All Content
 
 ---
 
@@ -115,6 +115,34 @@ Building a static website for the Security Cocktail Hour podcast using Hugo stat
   - Updated BLOG-SEO-PLAN.md to reflect completion status
   - No outstanding technical SEO work remaining
 - **Next SEO Steps**: Content creation, quarterly audits, Google Search Console monitoring
+
+### November 29, 2025 - Title Tag Audit Script and Additional SEO Title Optimizations
+- **Created Title Tag Audit Script**: `scripts/audit_title_tags.py`
+  - Comprehensive audit tool for all content types (episodes, blog posts, pages)
+  - Checks both `title` and optional `seo_title` fields
+  - Only validates effective title (what appears in HTML `<title>` tag) against 60/70 char limits
+  - Detects identical titles (wasteful duplication)
+  - Includes comprehensive "HOW TITLES WORK" section explaining:
+    - `title` field: Full title for display, Schema.org indexing, RSS feeds (≤150 chars optimal)
+    - `seo_title` field: Shortened version for search engine display (55-60 chars optimal, 60 max)
+  - Shows both full and SEO titles side-by-side in summary for easy comparison
+  - Provides suggestions for shortening overly long titles
+- **Extended SEO Title Support**: Added `seo_title` to non-episode content
+  - Homepage: `seo_title: "Security Cocktail Hour Podcast"` (36 chars)
+  - Episode 40: Updated to `seo_title: "Fighting Cybersecurity Threats Together"` (39 chars)
+  - Episode 53: Updated to `seo_title: "New Rules of Cyber Incident Response | Lisa Landau,Tim Shipp"` (67 chars)
+  - Episode 55: Updated to `seo_title: "Firmware, Fire & the Future of Cyber | Paul Asadoorian"` (60 chars)
+  - Blog post (when-nanoseconds-matter): `seo_title: "When Nanoseconds Matter: Securing High-Performance Environments"` (64 chars)
+- **Script Features Enhanced**:
+  - Fixed to properly check `seo_title` for blog posts and pages (was hardcoded to None)
+  - Changed terminology from "Episodes" to "Pages" throughout to reflect all content types
+  - SEO Title Implementation Summary now covers all pages, not just episodes
+  - Shows character savings when using SEO titles
+- **Documentation Updated**:
+  - Updated `docs/SEO-TITLE-TAG-STANDARDS.md` reference section with current implementation (20 pages)
+  - Added audit script reference to tools list
+  - Updated `docs/README.md` to document new audit script
+- **Status**: 20 pages now have optimized SEO titles (17 episodes, 1 blog post, 1 homepage, 1 other page)
 
 ### November 28, 2025 - Documentation Cleanup and Organization
 - **Documentation Structure Improved**: Created `docs/reports/` directory for permanent audit records

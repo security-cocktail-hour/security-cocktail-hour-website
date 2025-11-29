@@ -1,5 +1,6 @@
 ---
 title: "When Nanoseconds Matter: Security for Performance-Critical Environments"
+seo_title: "When Nanoseconds Matter: Securing High-Performance Environments"
 date: 2025-11-26
 draft: false
 author: "Joe Patti"
