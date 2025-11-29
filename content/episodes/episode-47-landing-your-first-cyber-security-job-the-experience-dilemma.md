@@ -5,7 +5,7 @@ draft: false
 guest: "Jerry Sinayuk"
 category: "Career Bio"
 duration: "56:12"
-image: "/images/episodes/episode-047.png"
+image: "/images/episodes/episode-047.jpg"
 description: "How do you get a job without experience? Jerry Sinayuk shares how he's breaking into cybersecurity consulting while getting paid."
 platforms:
   youtube: "https://youtu.be/wiu6dz_NWu8"

@@ -5,7 +5,7 @@ draft: false
 guest: "Chris Roberts"
 category: "General"
 duration: "59:00"
-image: "/images/episodes/episode-017.png"
+image: "/images/episodes/episode-017.jpg"
 description: "Security legend Chris Roberts discusses dolphins, Porsches, and security in a wide-ranging conversation."
 platforms:
   youtube: "https://youtu.be/nD8yRbexouU"

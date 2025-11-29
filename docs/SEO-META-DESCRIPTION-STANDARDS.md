@@ -294,6 +294,47 @@ When properly implemented, optimized meta descriptions provide:
 
 ---
 
+## Future Enhancements
+
+### Optional: schema_description Field
+
+**Status**: Under consideration, not currently needed
+
+Similar to how we implemented `seo_title` as an optional shortened version of `title`, we could add an optional `schema_description` field:
+
+**Current Implementation (Good)**:
+- Single `description` field (120-155 chars)
+- Used for META tag, Schema.org, Open Graph, Twitter Cards
+- 100% compliant and working well
+
+**Future Option (If Needed)**:
+```yaml
+---
+description: "Short description for META tag and search results (120-155 chars)"
+schema_description: "Longer, more detailed description for Schema.org markup (250-300 chars optimal)"
+---
+```
+
+**Where each would be used**:
+- `description` → META description tag, Open Graph, Twitter Cards (search results display)
+- `schema_description` → Schema.org PodcastEpisode/BlogPosting description field (indexing/context)
+
+**Benefits of adding this**:
+- More detailed episode summaries for podcast apps consuming Schema.org data
+- Better context for search engines indexing full content
+- Richer information for voice assistants and knowledge graphs
+- Maintains optimized 120-155 char descriptions for search result display
+
+**Why not implement now**:
+- Current implementation follows best practices
+- No immediate SEO benefit
+- Simpler to maintain one field
+- Can add later without breaking anything
+
+**Implementation pattern**: Would follow the same approach as `title`/`seo_title` system.
+
+---
+
 **Status**: ACTIVE - These standards are mandatory for all new content and should be applied when updating existing content.
 
 **Questions?** See `reports/meta-description-audit-2025-11-27.md` for the complete audit report and implementation details.
