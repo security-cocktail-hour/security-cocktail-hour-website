@@ -1,8 +1,8 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: November 29, 2025 (SEO Optimization + Image Optimization + Production Fixes Complete)
+**Last Updated**: December 2, 2025 (Episode 64 + Transcript Enhancement)
 **Hugo Version**: v0.151.0
-**Session Status**: Site Live with Full SEO Optimization - Submitted to Search Engines
+**Session Status**: Site Live + Hero Redesign Development
 
 ---
 
@@ -13,11 +13,142 @@
 **GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
 **Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
 
-**Current Stats**: 110 pages (63 episodes, 3 blog posts, main pages) | 5.9MB images | 7.6MB production package
+**Current Stats**: 111 pages (64 episodes, 3 blog posts, main pages) | 5.9MB images | 7.7MB production package
 
 ---
 
-## Recent Updates (November 28-29, 2025)
+## Recent Updates (December 2, 2025 & November 28-29, 2025)
+
+### December 2, 2025 - Episode 64 + Enhanced Features Deployment
+
+**Episode 64 Published**: "Bonus: Holiday Scams Unwrapped: Tips to Stay Safe this Season"
+- **Published**: December 2, 2025
+- **Category**: Educational
+- **Duration**: 32:38
+- **Description**: Holiday scam protection tips: gift card fraud, phone payments for teens, seasonal cybersecurity threats
+- **SEO Optimized**:
+  - Title: 53 characters (optimized with `seo_title`)
+  - Description: 145 characters (within 120-155 range)
+- **Features**: Full transcript with collapsible accordion
+- **Related Episodes**: Manually specified (Episodes 61 & 58)
+
+**🆕 Feature 1: Collapsible Transcript Accordion**
+- **File**: `layouts/episodes/single.html` (lines 93-176)
+- **Implementation**: Native HTML `<details>` element
+- **Functionality**:
+  - Auto-detects episodes with "Full Episode Transcript" heading
+  - Renders transcript in collapsible accordion (collapsed by default)
+  - Blue gradient header matching site design
+  - Max height with scroll (600px desktop, 400px mobile)
+  - Smooth animations, hover effects
+  - Episodes without transcripts unaffected
+- **SEO Benefits**:
+  - ✅ Content remains in DOM for full indexing
+  - ✅ Google officially supports `<details>` (no hidden content penalty)
+  - ✅ All transcript text searchable and rankable
+  - ✅ Direct link available: `#transcript`
+- **UX Benefits**:
+  - ✅ Page not overwhelmingly long on load
+  - ✅ User controls when to view transcript
+  - ✅ Accessible (keyboard nav, screen readers)
+  - ✅ Mobile-friendly
+
+**🆕 Feature 2: Manual Related Episodes**
+- **File**: `layouts/episodes/single.html` (lines 162-174)
+- **Functionality**:
+  - Episodes can specify custom related episodes via frontmatter
+  - Uses `related_episodes` array field
+  - Falls back to auto-generated category matching if not specified
+- **Use Cases**:
+  - Series episodes
+  - Thematic connections across categories
+  - Cross-promotion
+  - Featured episodes
+- **Example**:
+  ```yaml
+  related_episodes:
+    - "episode-61-ai-attacks-need-ai-defense.md"
+    - "episode-58-travel-router-unboxing.md"
+  ```
+
+**Commits**:
+- `07c1c90` - Publish Episode 64: Holiday Scams Unwrapped bonus episode
+- `a9b7612` - Add collapsible transcript accordion for episode pages
+
+**Production Package**: `production-deployment.zip` (7.7MB)
+- Ready for GoDaddy deployment
+- Includes Episode 64 + both new features
+- All 111 pages built and minified
+
+---
+
+### December 2, 2025 - Hero Section Redesign Initiative (PAUSED)
+
+**Problem Identified**: Current hero sections don't match the professional logo's design DNA
+- Logo features retro badge aesthetic (1950s-60s style), red as primary color, geometric art deco patterns
+- Current website uses generic blue gradients, ignores logo's red color and vintage aesthetic
+- All 6 hero sections are nearly identical (just text on blue gradient)
+- Zero visual differentiation between pages
+
+**Analysis Phase**:
+- Created Playwright screenshot automation script (`scripts/capture_hero_sections.py`)
+- Captured all 6 hero sections for design analysis
+- Identified logo design DNA:
+  - **Red** (#D74444) as primary brand color
+  - **Navy** (#2B4D7D) as supporting color
+  - **Cyan** (#5DADE2) and **Olive** (#7B9B6E) as accents
+  - **Cream** (#F5F1E8) backgrounds (not harsh white)
+  - Retro badge/emblem aesthetic (mid-century modern)
+  - Geometric/art deco radiating ray patterns
+  - Circular motifs echoing logo badge shape
+
+**Design Exploration**:
+- Created 6 initial hero redesign concepts in `temp/hero-redesigns/`:
+  1. Home: Radiating badge with rays pattern
+  2. Episodes: Vintage label with art deco corners
+  3. Blog: Editorial magazine style
+  4. About: Warm concentric circles
+  5. Partnership: Premium art deco framed design
+  6. Contact: Friendly geometric with speech bubble
+
+**User Feedback on Initial Concepts**:
+- #1, #4: Nice typography but too text-heavy and dull
+- #2: Possible direction but crosshatch pattern doesn't work
+- #3: Diagonal wedge shape doesn't work, flat background wastes space
+- #5: Good direction, needs cleanup (text obscuring badge)
+- #6: Word bubble feels cheap, striped background too simplistic
+
+**Decision**: Pursue Premium Art Deco aesthetic (#5) as unified visual system
+
+**Home Hero Refinement** (v2):
+- **Created**: `temp/hero-redesigns/home-hero-v2.html`
+- **Layout**: Asymmetric grid (text left, latest episode card right)
+- **Visual Elements**:
+  - Navy gradient background with subtle art deco geometric pattern
+  - Red corner ornaments (art deco style)
+  - Latest episode card with episode image, number badge, guest info
+  - No overlapping elements (fixed from v1)
+- **Design Principles**:
+  - Red as primary brand color
+  - Premium art deco aesthetic
+  - Cream/warm color palette
+  - Circular badge motifs from logo
+  - Sophisticated backgrounds (not flat)
+
+**Status**: Home hero refined, awaiting feedback before extending to other 5 pages
+
+**Next Steps**:
+1. Get approval on home hero design
+2. Apply unified Premium Art Deco system to remaining pages:
+   - Episodes, Blog, About, Partnership, Contact
+3. Integrate with Hugo templates
+4. Test responsive breakpoints
+5. Deploy to staging
+
+**Tools Created**:
+- `scripts/capture_hero_sections.py` - Playwright automation for hero screenshots
+
+---
 
 ### November 29, 2025 - Title Tag Audit Script and Additional SEO Title Optimizations
 - **Created Title Tag Audit Script**: `scripts/audit_title_tags.py`
@@ -177,6 +308,9 @@ git push origin main  # Triggers Netlify staging deployment
 python scripts/audit_title_tags.py
 python scripts/audit_meta_descriptions.py
 
+# Capture hero section screenshots (requires Playwright)
+python3 scripts/capture_hero_sections.py
+
 # Image optimization (if ImageMagick installed)
 magick input.jpg -quality 85 -strip output.jpg
 ```
@@ -200,7 +334,13 @@ magick input.jpg -quality 85 -strip output.jpg
 **Scripts:**
 - `scripts/audit_title_tags.py` - Title tag audit tool
 - `scripts/audit_meta_descriptions.py` - Meta description audit tool
+- `scripts/capture_hero_sections.py` - Playwright automation to capture hero section screenshots
 - `scripts/format_transcript.py` - Transcript formatting utility
+
+**Design Prototypes:**
+- `temp/hero-redesigns/` - Hero section redesign mockups
+  - `index.html` - Gallery view of all 6 initial concepts
+  - `home-hero-v2.html` - Refined home hero (Premium Art Deco aesthetic)
 
 ---
 
@@ -209,7 +349,7 @@ magick input.jpg -quality 85 -strip output.jpg
 **Phase 1 (MVP)**: ✅ Complete
 - All core pages live
 - All integrations working
-- 63 episodes published
+- 64 episodes published
 
 **Phase 2 (Blog)**: ✅ Complete
 - Blog feature implemented
@@ -223,11 +363,26 @@ magick input.jpg -quality 85 -strip output.jpg
 - Images optimized (123KB saved)
 - Sitemap submitted to Google & Bing
 
-**Production Status**: ✅ Live
+**Phase 3.5 (UX Enhancements)**: ✅ Complete (December 2, 2025)
+- Collapsible transcript accordion (SEO-friendly)
+- Manual related episodes override
+- Episode 64 published with full transcript
+- Production package ready for deployment
+
+**Phase 4 (Hero Redesign)**: ⏸️ Paused
+- Logo design DNA analysis complete
+- 6 initial design concepts created
+- Premium Art Deco aesthetic selected
+- Home hero refined (v2) - awaiting approval
+- Remaining 5 pages pending (will resume later)
+
+**Production Status**: ✅ Ready to Deploy
 - Site: https://securitycocktailhour.com/
 - All SEO optimizations active
 - Submitted to search engines
-- Ready for indexing
+- New features: Transcript accordion, manual related episodes
+- Episode 64 ready to go live
+- Production package: `production-deployment.zip` (7.7MB)
 
 ---
 

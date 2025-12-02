@@ -1,6 +1,6 @@
 # New Episode Deployment Process
 
-**Last Updated**: November 28, 2025
+**Last Updated**: December 2, 2025
 
 ---
 
@@ -198,6 +198,77 @@ seo_title: "Shortened Title for Search Results"  # Optional, only if title > 60 
 **Tools Available:**
 - Run `python3 scripts/audit_meta_descriptions.py` to check all descriptions
 - See `docs/reports/meta-description-audit-2025-11-27.md` for complete audit results
+
+### Episode Transcripts (Optional)
+
+**New Feature (December 2, 2025)**: Episode transcripts are now automatically displayed in a collapsible accordion for better user experience while maintaining full SEO benefits.
+
+**How It Works:**
+- If your episode markdown includes a section with heading `## Full Episode Transcript`, it will automatically be converted to a collapsible accordion
+- Content before the transcript displays normally
+- Transcript is collapsed by default, expands when user clicks
+- All transcript content remains in HTML DOM for full search engine indexing (SEO-friendly)
+
+**Adding a Transcript:**
+```markdown
+## Topics Discussed
+
+- Topic 1
+- Topic 2
+
+## Full Episode Transcript
+
+**Speaker Name [00:00]:**
+Transcript text here...
+
+**Another Speaker [01:30]:**
+More transcript text...
+```
+
+**SEO Benefits:**
+- ✅ Google fully indexes content within `<details>` elements
+- ✅ No "hidden content" penalty
+- ✅ Transcripts improve keyword ranking
+- ✅ Better UX (page not overwhelmingly long)
+
+**Design:**
+- Matches current site aesthetic (blue gradient header)
+- Mobile responsive (scrollable content area)
+- Smooth animations
+- Accessible (keyboard navigation, screen readers)
+
+### Related Episodes
+
+**New Feature (December 2, 2025)**: Episodes can now specify custom related episodes instead of using auto-generated recommendations.
+
+**Auto-Generated (Default):**
+- By default, related episodes are selected based on matching category
+- Shows up to 3 related episodes in sidebar
+
+**Manual Override (Optional):**
+If you want to specify which episodes should be shown as related, add this to the episode frontmatter:
+
+```yaml
+---
+title: "Episode Title"
+date: 2025-12-02
+category: "Educational"
+related_episodes:
+  - "episode-61-ai-attacks-need-ai-defense-ransomwares-new-danger-and-how-a-top-cyber-expert-is-.md"
+  - "episode-58-travel-router-unboxing-dont-get-hacked-on-vacation.md"
+---
+```
+
+**How to Find Episode Filenames:**
+```bash
+ls content/episodes/ | grep -i "topic-keyword"
+```
+
+**Use Cases:**
+- Episode is part of a series
+- Want to link thematically related episodes
+- Cross-promote different categories
+- Feature flagship episodes
 
 ### Episode Format Standards
 
