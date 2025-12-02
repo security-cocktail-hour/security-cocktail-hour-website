@@ -159,7 +159,19 @@
         <div>
           <h4>Related Episodes</h4>
           <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
-            {{ $related := where .Site.RegularPages "Type" "episodes" | intersect (where .Site.RegularPages ".Params.category" .Params.category) | first 3 }}
+            {{ $related := slice }}
+            {{ if .Params.related_episodes }}
+              <!-- Use manually specified related episodes -->
+              {{ range .Params.related_episodes }}
+                {{ $episodePath := printf "episodes/%s" . }}
+                {{ with $.Site.GetPage $episodePath }}
+                  {{ $related = $related | append . }}
+                {{ end }}
+              {{ end }}
+            {{ else }}
+              <!-- Auto-generate related episodes by category -->
+              {{ $related = where .Site.RegularPages "Type" "episodes" | intersect (where .Site.RegularPages ".Params.category" .Params.category) | first 3 }}
+            {{ end }}
             {{ range $related }}
               {{ if ne .RelPermalink $.RelPermalink }}
                 <a href="{{ .RelPermalink }}" class="card" style="text-decoration: none; display: block;">
