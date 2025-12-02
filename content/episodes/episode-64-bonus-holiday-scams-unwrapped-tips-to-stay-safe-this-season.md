@@ -9,9 +9,9 @@ image: "/images/episodes/episode-064.jpg"
 description: "Holiday scam protection tips: recognize fake gift card fraud, secure phone payments for teens, and defend against seasonal cybersecurity threats."
 platforms:
   youtube: "https://youtu.be/BdiHfxcg1P4"
-  spotify: "https://open.spotify.com/episode/4XTsM9knHwhWQwRX3uIzqw?si=5_8EVQodQ5Cz9aOTI1-K4g"
-  apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200"
-  amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour"
+  spotify: "https://tinyurl.com/3dzccabe"
+  apple: "https://tinyurl.com/3emej8hy"
+  amazon: "https://tinyurl.com/3w3cfke9"
 related_episodes:
   - "episode-61-ai-attacks-need-ai-defense-ransomwares-new-danger-and-how-a-top-cyber-expert-is-.md"
   - "episode-58-travel-router-unboxing-dont-get-hacked-on-vacation.md"

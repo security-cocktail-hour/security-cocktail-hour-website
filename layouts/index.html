@@ -71,7 +71,9 @@
           </div>
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
             <a href="{{ .RelPermalink }}" class="btn btn-primary">Show Notes</a>
-            <a href="https://youtube.com/@SecCocktailHour" class="btn btn-secondary" target="_blank" rel="noopener">Listen Now</a>
+            {{ with .Params.platforms.youtube }}
+              <a href="{{ . }}" class="btn btn-secondary" target="_blank" rel="noopener">Listen Now</a>
+            {{ end }}
           </div>
         </div>
       </div>
