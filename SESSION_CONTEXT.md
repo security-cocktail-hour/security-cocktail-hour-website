@@ -1,8 +1,8 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 2, 2025 (Episode 64 + Transcript Enhancement)
+**Last Updated**: December 2, 2025 (Episode 64 Platform Links Updated & Homepage Fix Deployed)
 **Hugo Version**: v0.151.0
-**Session Status**: Site Live + Hero Redesign Development
+**Session Status**: Production Deployment Complete + Hero Redesign Development Paused
 
 ---
 
@@ -71,14 +71,33 @@
     - "episode-58-travel-router-unboxing.md"
   ```
 
+**🆕 Episode 64 Platform Links Update + Homepage Fix** (December 2, 2025 - Later)
+- **Updated Episode 64 Platform URLs**:
+  - YouTube: https://youtu.be/BdiHfxcg1P4 (unchanged)
+  - Spotify: https://tinyurl.com/3dzccabe (updated to tinyurl)
+  - Apple: https://tinyurl.com/3emej8hy (updated to tinyurl)
+  - Amazon: https://tinyurl.com/3w3cfke9 (updated to tinyurl)
+- **Fixed Homepage "Listen Now" Button**:
+  - Changed from hardcoded YouTube channel link to episode-specific YouTube URL
+  - File: `layouts/index.html` (line 74-76)
+  - Now uses `{{ .Params.platforms.youtube }}` for dynamic episode links
+  - Applies to all current and future episodes automatically
+
 **Commits**:
 - `07c1c90` - Publish Episode 64: Holiday Scams Unwrapped bonus episode
 - `a9b7612` - Add collapsible transcript accordion for episode pages
+- `1f43f64` - Update documentation for Episode 64 and new features
+- `f1a29d6` - Update design spec with collapsible transcript and manual related episodes
+- `6d64a53` - Update Episode 64 platform links and fix homepage Listen Now button
+- `546abf8` - Update production deployment package
 
 **Production Package**: `production-deployment.zip` (7.7MB)
-- Ready for GoDaddy deployment
-- Includes Episode 64 + both new features
-- All 111 pages built and minified
+- ✅ Deployed to GoDaddy production (December 2, 2025)
+- ✅ Episode 64 live with updated platform links
+- ✅ Homepage "Listen Now" button links to episode-specific YouTube URLs
+- ✅ Collapsible transcript accordion active
+- ✅ Manual related episodes feature active
+- ✅ All 111 pages built and minified
 
 ---
 
@@ -376,13 +395,14 @@ magick input.jpg -quality 85 -strip output.jpg
 - Home hero refined (v2) - awaiting approval
 - Remaining 5 pages pending (will resume later)
 
-**Production Status**: ✅ Ready to Deploy
+**Production Status**: ✅ LIVE (Deployed December 2, 2025)
 - Site: https://securitycocktailhour.com/
+- Episode 64 live and accessible
+- Collapsible transcript accordion working across all episode pages
+- Manual related episodes feature active
 - All SEO optimizations active
-- Submitted to search engines
-- New features: Transcript accordion, manual related episodes
-- Episode 64 ready to go live
-- Production package: `production-deployment.zip` (7.7MB)
+- Submitted to search engines (Google & Bing)
+- 111 pages live (64 episodes + blog posts + main pages)
 
 ---
 
