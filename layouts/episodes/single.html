@@ -92,7 +92,87 @@
 
         <!-- Episode Description -->
         <div style="margin-bottom: 2rem;">
-          {{ .Content }}
+          {{ $content := .Content }}
+          {{ $transcriptHeading := "<h2 id=\"full-episode-transcript\">Full Episode Transcript</h2>" }}
+
+          {{ if in $content $transcriptHeading }}
+            <!-- Split content at transcript heading -->
+            {{ $parts := split $content $transcriptHeading }}
+            {{ $beforeTranscript := index $parts 0 }}
+            {{ $transcriptContent := index $parts 1 }}
+
+            <!-- Render content before transcript -->
+            {{ $beforeTranscript | safeHTML }}
+
+            <!-- Transcript Accordion -->
+            <div style="margin: 3rem 0;">
+              <details id="transcript" style="border: 2px solid #436098; border-radius: 8px; background: white; box-shadow: 0 2px 8px rgba(67, 96, 152, 0.1); overflow: hidden;">
+                <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white; font-size: 1.25rem; font-weight: 600; user-select: none; transition: all 0.2s ease;">
+                  <span>📝 Full Episode Transcript</span>
+                  <span style="font-size: 1.5rem; transition: transform 0.3s ease;">▼</span>
+                </summary>
+                <div style="padding: 2rem 1.5rem; line-height: 1.8; max-height: 600px; overflow-y: auto; border-top: 3px solid #E5E5E5;">
+                  {{ $transcriptContent | safeHTML }}
+                </div>
+              </details>
+            </div>
+
+            <style>
+              /* Rotate arrow when open */
+              details[open] > summary span:last-child {
+                transform: rotate(180deg);
+              }
+
+              /* Hover effect */
+              details summary:hover {
+                background: linear-gradient(135deg, #5874AD 0%, #7A9AD6 100%);
+              }
+
+              /* Hide default marker */
+              details summary::-webkit-details-marker {
+                display: none;
+              }
+
+              /* Smooth scroll for transcript */
+              details[open] {
+                scroll-margin-top: 2rem;
+              }
+
+              /* Transcript speaker styling */
+              #transcript strong {
+                color: #436098;
+                display: inline-block;
+                margin-top: 1rem;
+              }
+
+              /* Mobile responsive */
+              @media (max-width: 768px) {
+                details summary {
+                  font-size: 1rem;
+                  padding: 1rem;
+                }
+                details div {
+                  padding: 1.5rem 1rem;
+                  max-height: 400px;
+                }
+              }
+            </style>
+
+            <script>
+              // Smooth scroll when opening transcript
+              document.querySelector('#transcript')?.addEventListener('toggle', function(e) {
+                if (this.open) {
+                  setTimeout(() => {
+                    this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }, 100);
+                }
+              });
+            </script>
+
+          {{ else }}
+            <!-- No transcript, render content normally -->
+            {{ .Content }}
+          {{ end }}
         </div>
 
         <!-- Social Sharing -->
