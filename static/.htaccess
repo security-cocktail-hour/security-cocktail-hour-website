@@ -1,6 +1,48 @@
 # Security Cocktail Hour - Apache Configuration for GoDaddy cPanel
 # This file enforces trailing slashes for SEO consistency
 
+# ============================================================================
+# 301 Redirects for old URLs (from previous site)
+# Added: December 5, 2025
+# Note: These can be updated/removed when new pages are created
+# ============================================================================
+
+# Old transcript pages → New episode pages
+Redirect 301 /transcript-ep-59 /episodes/episode-59-wifi-pineapple-unboxing-the-hacker-device-from-tv-shows/
+Redirect 301 /transcript-ep-60 /episodes/episode-60-crypto-kidnappings-lost-keys-and-million-dollar-bug-bounties/
+Redirect 301 /transcript-ep-61 /episodes/episode-61-ai-attacks-need-ai-defense-ransomwares-new-danger-and-how-a-top-cyber-expert-is-/
+Redirect 301 /transcript-ep-21 /episodes/episode-21-medical-devices-halloween-and-whiskey-with-gabrielle-hempel/
+Redirect 301 /transcript-ep-53 /episodes/episode-53-the-new-rules-of-cyber-incident-response-new-attacks-new-response/
+Redirect 301 /transcript-hak5-unboxing /episodes/
+
+# Old episode list pages → New episodes page
+Redirect 301 /episodes-1-10 /episodes/
+Redirect 301 /episodes-11-20 /episodes/
+Redirect 301 /episodes-21-30 /episodes/
+Redirect 301 /episodes-31-40 /episodes/
+Redirect 301 /episodes-41-50-1 /episodes/
+Redirect 301 /episodes-51-60 /episodes/
+Redirect 301 /episodes-51-60-1 /episodes/
+Redirect 301 /episodes-61-70 /episodes/
+
+# Old info pages → New about page
+Redirect 301 /consulting /about/
+Redirect 301 /bios /about/
+Redirect 301 /guest-appearances /about/
+
+# Old support page → Partnership page
+Redirect 301 /support-us /partnership/
+
+# Old store/merchandise pages → Partnership page (update when store is created)
+Redirect 301 /store /partnership/
+Redirect 301 /store-2 /partnership/
+Redirect 301 /store-|-pens%2C-mugs-%26-more /partnership/
+Redirect 301 /store-|-clothing /partnership/
+Redirect 301 /merchandise /partnership/
+Redirect 301 /merchandise1 /partnership/
+
+# ============================================================================
+
 # Enable mod_rewrite for URL manipulation
 <IfModule mod_rewrite.c>
     RewriteEngine On
