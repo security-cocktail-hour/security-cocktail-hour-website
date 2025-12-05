@@ -55,12 +55,18 @@
   - `content/episodes/episode-61-ai-attacks-need-ai-defense-ransomwares-new-danger-and-how-a-top-cyber-expert-is-.md`
 - **Result**: All episodes with transcripts now show collapsible accordion with blue gradient header
 
-**Commit**: `94bcf9d` - "Add episode numbers to cards and fix transcript headings for collapsible feature"
+**Commits**:
+- `94bcf9d` - Add episode numbers to cards and fix transcript headings for collapsible feature
+- `733e1a4` - Update SESSION_CONTEXT.md documentation
+- `e837062` - Add 301 redirects for old URLs from previous site
 
-**Status**: ✅ Complete - Ready for production deployment
+**Status**: ✅ DEPLOYED TO PRODUCTION (December 5, 2025)
 - Episode numbers displayed consistently across all episode cards
 - Search functionality enhanced with episode number support
 - All transcript accordions working correctly
+- 23 301 redirects active for old URLs to fix Google Search Console 404 errors
+- Production package: 7.7MB (111 pages)
+- Pushed to GitHub and auto-deployed to Netlify staging
 
 ---
 
