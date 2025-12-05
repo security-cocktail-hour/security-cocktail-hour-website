@@ -59,7 +59,7 @@ Key components include:
 Organizations that proactively build AI governance frameworks position themselves to leverage AI's benefits while managing its risks.
 
 
-## Transcript
+## Full Episode Transcript
 
 
 **0:00**  

@@ -52,6 +52,13 @@
     <h2>Latest Episode</h2>
     {{ $latest := where .Site.RegularPages "Type" "episodes" | first 1 }}
     {{ range $latest }}
+      {{ $episodeNum := "" }}
+      {{ $filename := .File.BaseFileName }}
+      {{ if hasPrefix $filename "episode-" }}
+        {{ $parts := split (strings.TrimPrefix "episode-" $filename) "-" }}
+        {{ $episodeNum = index $parts 0 }}
+      {{ end }}
+
       <div class="card" style="max-width: 800px; margin: 0 auto;">
         {{ with .Params.image }}
           <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image">
@@ -63,7 +70,7 @@
           <h3 class="card-title">{{ .Title }}</h3>
           <p class="card-meta">
             {{ with .Params.guest }}{{ . }} | {{ end }}
-            {{ .Date.Format "January 2, 2006" }}
+            {{ if $episodeNum }}Episode {{ $episodeNum }} | {{ end }}{{ .Date.Format "January 2, 2006" }}
             {{ with .Params.duration }} | {{ . }}{{ end }}
           </p>
           <div class="card-description">
@@ -88,6 +95,13 @@
     <div class="grid grid-3">
       {{ $recent := where .Site.RegularPages "Type" "episodes" | first 6 }}
       {{ range after 1 $recent }}
+        {{ $episodeNum := "" }}
+        {{ $filename := .File.BaseFileName }}
+        {{ if hasPrefix $filename "episode-" }}
+          {{ $parts := split (strings.TrimPrefix "episode-" $filename) "-" }}
+          {{ $episodeNum = index $parts 0 }}
+        {{ end }}
+
         <article class="card episode-card">
           {{ with .Params.image }}
             <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
@@ -103,6 +117,9 @@
             <p class="card-meta">
               {{ with .Params.guest }}{{ . }} | {{ end }}
               {{ with .Params.duration }}{{ . }}{{ end }}
+            </p>
+            <p class="card-meta" style="font-size: 0.75rem;">
+              {{ if $episodeNum }}Episode {{ $episodeNum }} | {{ end }}{{ .Date.Format "January 2, 2006" }}
             </p>
             <p class="card-description">{{ with .Params.description }}{{ . | truncate 120 }}{{ else }}{{ $.Summary | truncate 120 }}{{ end }}</p>
             <a href="{{ .RelPermalink }}" class="btn btn-primary">Listen Now</a>

@@ -57,13 +57,21 @@
   <div class="container">
     <div class="grid grid-3" id="episodes-grid">
       {{ range .Pages }}
-        <article class="card episode-card" data-title="{{ .Title | lower }}" data-guest="{{ with .Params.guest }}{{ . | lower }}{{ end }}" data-category="{{ with .Params.category }}{{ . }}{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}">
+        {{ $episodeNum := "" }}
+        {{ $filename := .File.BaseFileName }}
+        {{ if hasPrefix $filename "episode-" }}
+          {{ $parts := split (strings.TrimPrefix "episode-" $filename) "-" }}
+          {{ $episodeNum = index $parts 0 }}
+        {{ end }}
+
+        <article class="card episode-card" data-title="{{ .Title | lower }}" data-guest="{{ with .Params.guest }}{{ . | lower }}{{ end }}" data-category="{{ with .Params.category }}{{ . }}{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}" data-episode="{{ $episodeNum }}">
           {{ with .Params.image }}
             <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <div class="card-image" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); display: none;"></div>
           {{ else }}
             <div class="card-image" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%);"></div>
           {{ end }}
+
           <div class="card-content">
             {{ with .Params.category }}
               <span class="category-tag">{{ . }}</span>
@@ -74,7 +82,7 @@
               {{ with .Params.duration }}{{ . }}{{ end }}
             </p>
             <p class="card-meta" style="font-size: 0.75rem;">
-              {{ .Date.Format "January 2, 2006" }}
+              {{ if $episodeNum }}Episode {{ $episodeNum }} | {{ end }}{{ .Date.Format "January 2, 2006" }}
             </p>
             <p class="card-description">{{ with .Params.description }}{{ . | truncate 120 }}{{ else }}{{ $.Summary | truncate 120 }}{{ end }}</p>
             <a href="{{ .RelPermalink }}" class="btn btn-primary">Listen Now</a>
@@ -112,8 +120,12 @@ function filterEpisodes() {
     const title = episode.dataset.title;
     const guest = episode.dataset.guest;
     const category = episode.dataset.category;
+    const episodeNum = episode.dataset.episode;
 
-    const matchesSearch = !searchTerm || title.includes(searchTerm) || guest.includes(searchTerm);
+    const matchesSearch = !searchTerm ||
+      title.includes(searchTerm) ||
+      guest.includes(searchTerm) ||
+      episodeNum.includes(searchTerm);
     const matchesCategory = !selectedCategory || category === selectedCategory;
 
     if (matchesSearch && matchesCategory) {

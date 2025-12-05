@@ -23,7 +23,7 @@ It's our Halloween episode, and we're covering the scary topic of medical device
 
 Tune in to hear our discussion with Gabrielle Hempel.
 
-## Full Transcript
+## Full Episode Transcript
 
 **[0:00]:**
 [Music]

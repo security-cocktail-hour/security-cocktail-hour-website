@@ -36,7 +36,7 @@ Why speed is everything in breach response
 
 ThreatLight: https://www.threatlight.com
 
-## Full Transcript
+## Full Episode Transcript
 
 **Joe [00:02]:** Okay, Lisa, so you have been in cyber for a while and your background is actually a little unique compared to a lot of the other people we often hang out with, right?
 

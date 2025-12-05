@@ -32,7 +32,7 @@ Tune in to hear our discussion on crypto kidnappings, lost keys, and million-dol
 * The industry lost $2.5 billion last year, $3 billion this year - trend is accelerating
 * Phishing and social engineering remain the weakest links in crypto security
 
-## Full Transcript
+## Full Episode Transcript
 
 **Joe [00:05]:**
 Welcome to the Security Cocktail Hour. I'm Joe Patti.

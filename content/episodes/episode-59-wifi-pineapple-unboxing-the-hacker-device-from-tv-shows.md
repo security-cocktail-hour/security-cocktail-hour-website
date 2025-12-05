@@ -31,7 +31,7 @@ Tune in to watch us unbox a Hak5 WiFi Pineapple and discuss its use.
 * Real-world scenarios where this could be deployed
 * Ethical penetration testing applications
 
-## Full Transcript
+## Full Episode Transcript
 
 **[0:00]** *[Music]*
 

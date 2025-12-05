@@ -54,7 +54,7 @@ Albania's AI corruption minister: https://apnews.com/article/albania-new-cabinet
 
 AI surgery: https://healthjournalism.org/blog/2025/09/ai-is-enabling-robots-to-assist-in-surgery-what-to-know/
 
-## Full Transcript
+## Full Episode Transcript
 
 **Karin [00:00]:**
 Every organization eventually must defend their organization with AI,
