@@ -1,8 +1,8 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 2, 2025 (Episode 64 Platform Links Updated & Homepage Fix Deployed)
+**Last Updated**: December 5, 2025 (Episode Number Display + Transcript Fixes)
 **Hugo Version**: v0.151.0
-**Session Status**: Production Deployment Complete + Hero Redesign Development Paused
+**Session Status**: Production Deployment Complete + Development Improvements In Progress
 
 ---
 
@@ -17,7 +17,187 @@
 
 ---
 
-## Recent Updates (December 2, 2025 & November 28-29, 2025)
+## Recent Updates (December 5, 2025 & December 3, 2025 & December 2, 2025 & November 28-29, 2025)
+
+### December 5, 2025 - Episode Number Display + Transcript Accordion Fixes
+
+**Feature: Episode Number Display on Episode Cards**
+- **Problem**: Episode numbers only visible in thumbnails (when present), making it hard to find episodes by number
+- **Solution**: Added episode number to date line on all episode cards across the site
+- **Display Format**: "Episode X | Date" (e.g., "Episode 62 | November 3, 2025")
+- **Locations Updated**:
+  - Episodes page (all episode cards)
+  - Homepage "Latest Episode" section
+  - Homepage "Recent Episodes" grid
+- **Files Modified**: `layouts/episodes/list.html`, `layouts/index.html`
+- **Implementation**: Extracts episode number from filename pattern `episode-XX-...` using Hugo template logic
+
+**Enhancement: Episode Number Search**
+- **Problem**: Searching for episode numbers returned no results
+- **Solution**: Added episode number to searchable data attributes
+- **Functionality**: Users can now search by:
+  - Episode number (e.g., "47", "64", "01")
+  - Episode title (existing)
+  - Guest name (existing)
+- **File Modified**: `layouts/episodes/list.html` (JavaScript search function)
+
+**Bug Fix: Collapsible Transcript Accordion**
+- **Problem**: 6 episodes with transcripts didn't show collapsible accordion (Episodes 21, 51, 53, 59, 60, 61)
+- **Root Cause**: Episodes used heading "## Full Transcript" or "## Transcript" instead of "## Full Episode Transcript"
+- **Template Requirement**: `layouts/episodes/single.html` looks for exact heading "Full Episode Transcript"
+- **Solution**: Updated transcript headings in all 6 episodes to "## Full Episode Transcript"
+- **Files Modified**:
+  - `content/episodes/episode-21-medical-devices-halloween-and-whiskey-with-gabrielle-hempel.md`
+  - `content/episodes/episode-51-agentic-ai-security-full-speed-into-the-unknown.md`
+  - `content/episodes/episode-53-the-new-rules-of-cyber-incident-response-new-attacks-new-response.md`
+  - `content/episodes/episode-59-wifi-pineapple-unboxing-the-hacker-device-from-tv-shows.md`
+  - `content/episodes/episode-60-crypto-kidnappings-lost-keys-and-million-dollar-bug-bounties.md`
+  - `content/episodes/episode-61-ai-attacks-need-ai-defense-ransomwares-new-danger-and-how-a-top-cyber-expert-is-.md`
+- **Result**: All episodes with transcripts now show collapsible accordion with blue gradient header
+
+**Commit**: `94bcf9d` - "Add episode numbers to cards and fix transcript headings for collapsible feature"
+
+**Status**: ✅ Complete - Ready for production deployment
+- Episode numbers displayed consistently across all episode cards
+- Search functionality enhanced with episode number support
+- All transcript accordions working correctly
+
+---
+
+### December 3, 2025 - Hero Redesign Page Mockups + Font Selection Complete
+
+**Hero Redesign Work**: Completed full-page mockups for all major pages (Episodes, About, Contact, Blog, Home) and finalized typography system with PT Serif selection
+
+**Design System Finalized**:
+- **Typography**:
+  - **Oswald** (sans-serif, weights 600/700) - Main headings, page titles, section titles (uppercase, bold)
+  - **PT Serif** (serif, weights 400/700) - Body text, descriptions, paragraphs (confident, readable, substantial feel)
+  - **Bebas Neue** (sans-serif condensed) - Labels, buttons, UI elements (uppercase, compact)
+- **Color Palette** (updated from initial exploration):
+  - **Primary Red**: #D74444 (brand color, CTAs, accents)
+  - **Navy**: #2B4D7D (primary dark), #3A5F99 (light), #1F3859 (darker)
+  - **Teal**: #4A9B9B (primary accent), #6BB8B8 (light) - replaced gold/cyan from initial concepts
+  - **Silver**: #C0C0C0 (secondary accent)
+  - **Cream**: #F5F1E8 (backgrounds), #E8E0D0 (darker variant)
+- **Design Principles**:
+  - Premium art deco aesthetic (1950s-60s retro badge style)
+  - Compact hero sections (learned from Episodes page feedback)
+  - Art deco geometric patterns and corner accents
+  - Gradient backgrounds (navy, red) with teal accents
+  - Circular badge motifs from logo
+  - Consistent visual language across all pages
+
+**Font Selection Process**:
+- **Initial Font**: Crimson Pro (serif body font)
+- **User Feedback**: "Hard to read", "too ornate", "too dainty" - needed more confident, substantial feel
+- **Requirements**: Better readability, less ornate, still distinctive (avoid generic AI look), complements art deco aesthetic
+- **Fonts Tested**:
+  1. **Lora** - Traditional serif, too similar to Crimson Pro
+  2. **Source Serif Pro** - Better readability, user feedback: "It's better"
+  3. **Merriweather** - Screen-optimized serif, user feedback: "best so far", "easiest to read", "less dainty", "more confident"
+  4. **PT Serif** - Substantial, grounded, screen-designed - user feedback: "I like it"
+  5. **Bitter** - Slab serif, bold geometric (shown for comparison)
+  6. **Spectral** - Google's digital reading font (shown for comparison)
+- **Final Selection**: **PT Serif** - Selected for confident, substantial feel with excellent screen readability
+- **All Mockups Updated**: All 5 HTML mockup files updated from Crimson Pro to PT Serif
+- **Font Test Files Created**: 6 test files created for side-by-side comparison
+
+**Pages Completed**:
+
+1. **Episodes Page v3** (`temp/hero-redesigns/episodes-page-v3.html`)
+   - **User Feedback Addressed**:
+     - Reduced hero height dramatically (episode thumbnails now immediately visible)
+     - Removed all icons/emojis from platform buttons (YouTube, Spotify, Apple, Amazon)
+   - **Features**:
+     - Compact hero with stats bar (65 Episodes, 50+ Guests, 60hrs Content)
+     - Search input + Category/Sort dropdowns
+     - Vertical episode cards with 16:9 thumbnail aspect ratio
+     - Episode number badges, category tags, platform buttons
+     - Two-column responsive grid
+   - **Status**: ✅ Approved ("satisfactory")
+
+2. **About Page** (`temp/hero-redesigns/about-page-mockup.html`)
+   - **Sections**:
+     - Compact hero with tagline
+     - Our Story section (centered narrative)
+     - Meet Your Hosts (Joe Patti & Adam Roth) - two-column card layout
+     - What You'll Get (3 benefits with icon circles)
+     - Stats section (65+ Episodes, 50+ Guests, 60hrs Content)
+     - Newsletter signup (red gradient background)
+   - **Features**:
+     - Square host images with "Co-Host" badges
+     - Icon circles with double-border treatment
+     - LinkedIn links for hosts
+     - Responsive grid layouts
+   - **Status**: ✅ Approved ("satisfactory")
+
+3. **Contact Page** (`temp/hero-redesigns/contact-page-mockup.html`)
+   - **Layout**: Two-column (contact form left, info cards right)
+   - **Features**:
+     - Compact hero section
+     - Full contact form (Name, Email, Subject dropdown, Message textarea)
+     - Formspree integration with AJAX submission
+     - Success/error status messages
+     - Contact info cards (Email, Social Media, Response Time)
+     - "Interested in Being a Guest?" section with red left border
+   - **Form Fields**: 6 subject options (Guest Submission, Partnership, Consulting, Sponsorship, Press, General)
+   - **Status**: ✅ Approved ("acceptable")
+
+4. **Blog Page** (`temp/hero-redesigns/blog-page-mockup.html`)
+   - **Layout**: Two-column (blog grid left, newsletter sidebar right)
+   - **Controls**: Search + Category dropdown + Tag dropdown + Sort dropdown
+   - **Features**:
+     - Compact hero section
+     - Blog cards with vertical left accent bar (appears on hover)
+     - Red category tags (vs teal for episodes)
+     - Tag pills below metadata
+     - "Read More" buttons with arrow animation
+     - Sticky newsletter sidebar (red gradient)
+   - **Sample Content**: 6 blog posts across different categories
+   - **Status**: ✅ Approved ("acceptable")
+
+5. **Homepage** (`temp/hero-redesigns/homepage-full-mockup-v2.html`)
+   - **Sections**:
+     - Full hero with animated accents, stats badges, platform links
+     - Featured Episodes section (3 episode cards)
+     - Featured Blog Posts section (3 blog cards)
+     - About teaser section
+     - Newsletter signup (red gradient)
+   - **Features**:
+     - Premium art deco hero with geometric patterns
+     - Consistent card styling across sections
+     - Episode/blog cards with hover effects
+     - Platform links with underline animations
+   - **Status**: ✅ Complete (updated to PT Serif)
+
+**Files Created**:
+- `temp/hero-redesigns/episodes-page-v3.html` (updated to PT Serif)
+- `temp/hero-redesigns/about-page-mockup.html` (updated to PT Serif)
+- `temp/hero-redesigns/contact-page-mockup.html` (updated to PT Serif)
+- `temp/hero-redesigns/blog-page-mockup.html` (updated to PT Serif)
+- `temp/hero-redesigns/homepage-full-mockup-v2.html` (updated to PT Serif)
+- Font test files (for comparison):
+  - `temp/hero-redesigns/homepage-lora-font-test.html`
+  - `temp/hero-redesigns/homepage-source-serif-test.html`
+  - `temp/hero-redesigns/homepage-merriweather-test.html`
+  - `temp/hero-redesigns/homepage-pt-serif-test.html`
+  - `temp/hero-redesigns/homepage-bitter-test.html`
+  - `temp/hero-redesigns/homepage-spectral-test.html`
+
+**Remaining Work**:
+- Partnership page mockup
+- Individual episode page redesign (if needed)
+- Individual blog post page redesign (if needed)
+- Integration with Hugo templates (convert mockups to Hugo layouts)
+- Responsive testing across breakpoints
+- Deploy to staging for review
+
+**Typography Reference**:
+- Display/Headers: Oswald (uppercase, bold, geometric art deco feel)
+- Body/Content: PT Serif (sentence case, confident serif, substantial readability)
+- UI Elements: Bebas Neue (uppercase, condensed, utilitarian)
+
+---
 
 ### December 2, 2025 - Episode 64 + Enhanced Features Deployment
 
@@ -98,74 +278,6 @@
 - ✅ Collapsible transcript accordion active
 - ✅ Manual related episodes feature active
 - ✅ All 111 pages built and minified
-
----
-
-### December 2, 2025 - Hero Section Redesign Initiative (PAUSED)
-
-**Problem Identified**: Current hero sections don't match the professional logo's design DNA
-- Logo features retro badge aesthetic (1950s-60s style), red as primary color, geometric art deco patterns
-- Current website uses generic blue gradients, ignores logo's red color and vintage aesthetic
-- All 6 hero sections are nearly identical (just text on blue gradient)
-- Zero visual differentiation between pages
-
-**Analysis Phase**:
-- Created Playwright screenshot automation script (`scripts/capture_hero_sections.py`)
-- Captured all 6 hero sections for design analysis
-- Identified logo design DNA:
-  - **Red** (#D74444) as primary brand color
-  - **Navy** (#2B4D7D) as supporting color
-  - **Cyan** (#5DADE2) and **Olive** (#7B9B6E) as accents
-  - **Cream** (#F5F1E8) backgrounds (not harsh white)
-  - Retro badge/emblem aesthetic (mid-century modern)
-  - Geometric/art deco radiating ray patterns
-  - Circular motifs echoing logo badge shape
-
-**Design Exploration**:
-- Created 6 initial hero redesign concepts in `temp/hero-redesigns/`:
-  1. Home: Radiating badge with rays pattern
-  2. Episodes: Vintage label with art deco corners
-  3. Blog: Editorial magazine style
-  4. About: Warm concentric circles
-  5. Partnership: Premium art deco framed design
-  6. Contact: Friendly geometric with speech bubble
-
-**User Feedback on Initial Concepts**:
-- #1, #4: Nice typography but too text-heavy and dull
-- #2: Possible direction but crosshatch pattern doesn't work
-- #3: Diagonal wedge shape doesn't work, flat background wastes space
-- #5: Good direction, needs cleanup (text obscuring badge)
-- #6: Word bubble feels cheap, striped background too simplistic
-
-**Decision**: Pursue Premium Art Deco aesthetic (#5) as unified visual system
-
-**Home Hero Refinement** (v2):
-- **Created**: `temp/hero-redesigns/home-hero-v2.html`
-- **Layout**: Asymmetric grid (text left, latest episode card right)
-- **Visual Elements**:
-  - Navy gradient background with subtle art deco geometric pattern
-  - Red corner ornaments (art deco style)
-  - Latest episode card with episode image, number badge, guest info
-  - No overlapping elements (fixed from v1)
-- **Design Principles**:
-  - Red as primary brand color
-  - Premium art deco aesthetic
-  - Cream/warm color palette
-  - Circular badge motifs from logo
-  - Sophisticated backgrounds (not flat)
-
-**Status**: Home hero refined, awaiting feedback before extending to other 5 pages
-
-**Next Steps**:
-1. Get approval on home hero design
-2. Apply unified Premium Art Deco system to remaining pages:
-   - Episodes, Blog, About, Partnership, Contact
-3. Integrate with Hugo templates
-4. Test responsive breakpoints
-5. Deploy to staging
-
-**Tools Created**:
-- `scripts/capture_hero_sections.py` - Playwright automation for hero screenshots
 
 ---
 
@@ -359,7 +471,12 @@ magick input.jpg -quality 85 -strip output.jpg
 **Design Prototypes:**
 - `temp/hero-redesigns/` - Hero section redesign mockups
   - `index.html` - Gallery view of all 6 initial concepts
-  - `home-hero-v2.html` - Refined home hero (Premium Art Deco aesthetic)
+  - `home-hero-v2.html` through `home-hero-v5.html` - Home hero iterations
+  - `homepage-full-mockup.html` and `homepage-full-mockup-v2.html` - Full homepage mockups
+  - `episodes-page-v2.html` and `episodes-page-v3.html` - Episodes page mockups (v3 approved)
+  - `about-page-mockup.html` - About page mockup (approved)
+  - `contact-page-mockup.html` - Contact page mockup (approved)
+  - `blog-page-mockup.html` - Blog page mockup (approved)
 
 ---
 
@@ -388,12 +505,19 @@ magick input.jpg -quality 85 -strip output.jpg
 - Episode 64 published with full transcript
 - Production package ready for deployment
 
-**Phase 4 (Hero Redesign)**: ⏸️ Paused
+**Phase 4 (Hero Redesign)**: 🔄 In Progress (December 3, 2025)
 - Logo design DNA analysis complete
-- 6 initial design concepts created
-- Premium Art Deco aesthetic selected
-- Home hero refined (v2) - awaiting approval
-- Remaining 5 pages pending (will resume later)
+- 6 initial design concepts created and reviewed
+- Premium Art Deco aesthetic selected and finalized
+- Design system established (Oswald/Crimson Pro/Bebas Neue typography, Red/Navy/Teal palette)
+- ✅ Episodes page mockup complete (v3)
+- ✅ About page mockup complete
+- ✅ Contact page mockup complete
+- ✅ Blog page mockup complete
+- ⏳ Home page full mockup pending (hero v5 exists)
+- ⏳ Partnership page mockup pending
+- ⏳ Hugo template integration pending
+- ⏳ Staging deployment pending
 
 **Production Status**: ✅ LIVE (Deployed December 2, 2025)
 - Site: https://securitycocktailhour.com/
