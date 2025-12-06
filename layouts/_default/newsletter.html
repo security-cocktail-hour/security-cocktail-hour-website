@@ -1,0 +1,72 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="section" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white; padding: 4rem 0; text-align: center;">
+  <div class="container">
+    <h1 style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">{{ .Title }}</h1>
+    <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto; opacity: 0.95;">
+      {{ .Description }}
+    </p>
+  </div>
+</section>
+
+<!-- Newsletter Signup Section -->
+<section class="section">
+  <div class="container" style="max-width: 700px;">
+
+    <!-- Content from markdown -->
+    <div style="margin-bottom: 3rem;">
+      {{ .Content }}
+    </div>
+
+    <!-- Newsletter Signup Form -->
+    <div style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white; padding: 2rem; border-radius: 8px; text-align: center;">
+      <form action="https://securitycocktailhour.us4.list-manage.com/subscribe/post?u=5a12cbfb41bc7e9e08b7af3c6&amp;id=2eddec8bf9&amp;f_id=0098d0edf0" method="POST" target="_blank" style="display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center;">
+        <input
+          type="email"
+          name="EMAIL"
+          placeholder="Your email address"
+          required
+          style="flex: 1; min-width: 250px; max-width: 400px; padding: 0.875rem 1rem; font-size: 1rem; border: none; border-radius: 4px;"
+        >
+        <!-- Bot protection honeypot -->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_5a12cbfb41bc7e9e08b7af3c6_2eddec8bf9" tabindex="-1" value="">
+        </div>
+        <button type="submit" name="subscribe" class="btn btn-primary" style="background: white; color: #436098; padding: 0.875rem 2.5rem; font-size: 1rem; font-weight: 600; border: none; border-radius: 4px; cursor: pointer; transition: all 0.2s;">
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+    <p style="font-size: 0.875rem; margin-top: 1rem; text-align: center; color: rgba(45, 45, 45, 0.6);">
+      We respect your privacy. Unsubscribe at any time.
+    </p>
+
+    <!-- Additional Trust Signals -->
+    <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #E5E5E5;">
+      <p style="color: rgba(45, 45, 45, 0.7); margin-bottom: 1.5rem;">
+        Already a subscriber? <a href="{{ "/" | relURL }}" style="color: #436098; font-weight: 600;">Return to homepage</a>
+      </p>
+      <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; color: rgba(45, 45, 45, 0.6); font-size: 0.875rem;">
+        <div>
+          <strong style="color: #436098; font-size: 1.5rem; display: block;">64+</strong>
+          Episodes
+        </div>
+        <div>
+          <strong style="color: #436098; font-size: 1.5rem; display: block;">50+</strong>
+          Expert Guests
+        </div>
+        <div>
+          <strong style="color: #436098; font-size: 1.5rem; display: block;">60+</strong>
+          Hours of Content
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{{ end }}

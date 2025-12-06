@@ -1,8 +1,8 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 5, 2025 (Episode Number Display + Transcript Fixes)
+**Last Updated**: December 5, 2025 (Newsletter Page + Episode Number Display + Transcript Fixes)
 **Hugo Version**: v0.151.0
-**Session Status**: Production Deployment Complete + Development Improvements In Progress
+**Session Status**: Production Deployment Complete + Newsletter Page Ready for Deployment
 
 ---
 
@@ -18,6 +18,36 @@
 ---
 
 ## Recent Updates (December 5, 2025 & December 3, 2025 & December 2, 2025 & November 28-29, 2025)
+
+### December 5, 2025 - Newsletter Signup Page Created
+
+**New Feature: Dedicated Newsletter Signup Page**
+- **Purpose**: Clean landing page for social media newsletter promotion
+- **URL**: `/newsletter/` (https://securitycocktailhour.com/newsletter/)
+- **Design**: Simplified, focused conversion-optimized layout
+- **Content**:
+  - Blue gradient hero section with title and description
+  - Opening paragraph about joining the community
+  - Three bullet points: Early episode notifications, Exclusive insights, No spam
+  - Streamlined blue signup box with email field + Subscribe button only
+  - Privacy statement below the form (outside blue box for visual balance)
+  - Trust signals section: 64+ Episodes, 50+ Expert Guests, 60+ Hours of Content
+- **Integration**:
+  - Mailchimp signup form (same as homepage)
+  - Added to footer "About" section (between "About the Show" and "Contact")
+  - Not added to header navigation (keeping header simple)
+- **Files Created**:
+  - `content/newsletter.md` - Page content
+  - `layouts/_default/newsletter.html` - Custom template
+- **Files Modified**:
+  - `layouts/partials/footer.html` - Added newsletter link
+
+**Status**: ✅ Complete - Ready for production deployment
+- Clean, professional landing page for social media sharing
+- Functional Mailchimp integration
+- Accessible from footer on all pages
+
+---
 
 ### December 5, 2025 - Episode Number Display + Transcript Accordion Fixes
 
