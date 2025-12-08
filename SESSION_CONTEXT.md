@@ -1,9 +1,9 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 8, 2025 (Episode 65 + Homepage/Episode Page Fixes)
+**Last Updated**: December 8, 2025 (Episode 65 + Production Deployment Ready)
 **Hugo Version**: v0.151.0
-**Session Status**: Episode 65 Published + Multiple Page Fixes on Dev Server
-**Branch**: hero-redesign
+**Session Status**: Episode 65 + Cache-Busting Fix - Ready for Production Deployment
+**Branch**: main (merged from hero-redesign)
 
 ---
 
@@ -14,7 +14,7 @@
 **GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
 **Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
 
-**Current Stats**: 112 pages (64 episodes, 3 blog posts, newsletter page, main pages) | 5.9MB images | 7.7MB production package
+**Current Stats**: 113 pages (65 episodes, 3 blog posts, newsletter page, main pages) | 5.9MB images | 7.9MB production package
 
 ---
 
@@ -73,28 +73,65 @@
    - **File Modified**: `static/css/main.css` (lines 1020-1022)
    - **Result**: Images now display at full aspect ratio without cropping, cards adjust height to accommodate images
 
-**Files Modified**:
+5. **Homepage Recent Episodes** (`layouts/index.html`)
+   - **Change**: Reduced from 5 to 4 episodes in "Recent Episodes" section
+   - **Reason**: Better layout balance on homepage
+   - **File Modified**: `layouts/index.html` (line 164: changed `first 6` to `first 5`)
+
+6. **CSS Cache-Busting Fix** (`layouts/_default/baseof.html`, `layouts/index.html`)
+   - **Problem**: Production site showed old design in regular browsers but worked in incognito mode
+   - **Root Cause**: Browsers cached old CSS files, serving outdated styles
+   - **Solution**: Added `?v={{ now.Unix }}` timestamp parameter to CSS file links
+   - **Files Modified**:
+     - `layouts/_default/baseof.html` (line 33)
+     - `layouts/index.html` (line 33)
+   - **Result**: Each build generates unique CSS URL, forcing browsers to fetch updated files instead of using cache
+
+**All Files Modified**:
 1. `content/episodes/episode-65-job-scams-are-getting-worse-four-of-the-most-dangerous.md` (created)
 2. `static/images/episodes/episode-065.jpg` (created)
-3. `layouts/episodes/single.html` (newsletter box styling)
-4. `static/css/main.css` (4 separate fixes):
+3. `layouts/episodes/single.html` (newsletter box styling - lines 214-236)
+4. `static/css/main.css` (4 CSS fixes):
    - Line 1020-1022: Episode card image sizing
    - Line 1763: Removed episode content background
    - Line 2966: Removed about section white background
-5. `SESSION_CONTEXT.md` (this update)
+5. `layouts/index.html` (homepage recent episodes count + cache-busting)
+6. `layouts/_default/baseof.html` (cache-busting)
+7. `SESSION_CONTEXT.md` (this update)
+
+**Git Workflow**:
+- Worked on `hero-redesign` branch
+- Merged to `main` branch (fast-forward merge)
+- Pushed to GitHub (triggers Netlify staging deployment)
+- All changes committed with proper commit messages
+
+**Production Deployment Package**:
+- **File**: `production-deployment-20251208-143839.zip`
+- **Size**: 7.9MB
+- **Pages**: 113 pages
+- **Location**: Project root directory
 
 **Status**:
 - ✅ Episode 65 live on dev server (http://localhost:1313/)
 - ✅ Newsletter box rendering correctly on episode pages (red background, white text)
 - ✅ About section text readable on homepage (navy background)
-- ✅ Episode cards displaying correctly on homepage (full images, no white space)
-- ⏳ Ready for review and production deployment
+- ✅ Episode cards displaying correctly on homepage (full images, no cropping)
+- ✅ Homepage shows 4 episodes in Recent Episodes section
+- ✅ Cache-busting implemented (browsers will fetch new CSS on each deployment)
+- ✅ All changes committed to `main` branch and pushed to GitHub
+- ✅ Production package built and ready for GoDaddy deployment
+- ✅ Cache-busting fix verified (works in both regular and incognito browsers after hard refresh)
 
-**Next Steps**:
-1. Review episode 65 content and layout
-2. Test all pages for any remaining issues
-3. Commit changes to git
-4. Deploy to production when approved
+**Deployment Instructions**:
+1. Download `production-deployment-20251208-143839.zip` from project root
+2. Login to GoDaddy cPanel File Manager
+3. Navigate to `public_html/`
+4. (Optional) Backup existing files
+5. Delete old files in `public_html/`
+6. Upload and extract the ZIP file
+7. Verify `.htaccess` permissions are 644
+8. Test site at https://securitycocktailhour.com/
+9. Hard refresh browser if needed (`Cmd + Shift + R` or `Ctrl + Shift + R`)
 
 ---
 
