@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Accordion - Premium Art Deco Style</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --red: #D74444;
+            --navy: #2B4D7D;
+            --cyan: #5DADE2;
+            --olive: #7B9B6E;
+            --cream: #F5F1E8;
+            --charcoal: #2D2D2D;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: var(--cream);
+            color: var(--charcoal);
+            padding: 2rem;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Premium Art Deco Transcript Accordion */
+        .transcript-wrapper {
+            margin: 3rem 0;
+            position: relative;
+        }
+
+        .transcript-details {
+            border: 2px solid var(--navy);
+            border-radius: 4px;
+            background: white;
+            box-shadow: 0 8px 24px rgba(43, 77, 125, 0.08);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .transcript-details[open] {
+            box-shadow: 0 12px 32px rgba(43, 77, 125, 0.12);
+        }
+
+        .transcript-summary {
+            padding: 1.75rem 2rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, var(--navy) 0%, #436098 100%);
+            color: white;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            user-select: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .transcript-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .transcript-summary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.03) 50%, transparent 100%),
+                repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(255,255,255,0.02) 40px, rgba(255,255,255,0.02) 80px);
+            pointer-events: none;
+        }
+
+        .transcript-summary:hover {
+            background: linear-gradient(135deg, #436098 0%, #5874AD 100%);
+        }
+
+        .transcript-icon {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            margin-left: 1rem;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            position: relative;
+        }
+
+        .transcript-icon::before,
+        .transcript-icon::after {
+            content: '';
+            position: absolute;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .transcript-icon::before {
+            width: 14px;
+            height: 2px;
+        }
+
+        .transcript-icon::after {
+            width: 2px;
+            height: 14px;
+        }
+
+        .transcript-details[open] .transcript-icon {
+            transform: rotate(180deg);
+            background: rgba(215, 68, 68, 0.2);
+        }
+
+        .transcript-details[open] .transcript-icon::after {
+            opacity: 0;
+        }
+
+        /* Art Deco Corner Ornaments */
+        .transcript-summary::after {
+            content: '';
+            position: absolute;
+            top: 1rem;
+            right: 5rem;
+            width: 40px;
+            height: 40px;
+            background-image:
+                linear-gradient(45deg, transparent 48%, var(--red) 48%, var(--red) 52%, transparent 52%),
+                linear-gradient(-45deg, transparent 48%, var(--red) 48%, var(--red) 52%, transparent 52%);
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .transcript-content {
+            padding: 2.5rem 2rem;
+            background: white;
+            animation: slideDown 0.4s ease;
+            border-top: 3px solid var(--cream);
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .transcript-meta {
+            display: flex;
+            gap: 2rem;
+            padding: 1.25rem 1.75rem;
+            background: linear-gradient(90deg, var(--cream) 0%, rgba(245, 241, 232, 0.5) 100%);
+            border-bottom: 1px solid rgba(43, 77, 125, 0.1);
+            font-size: 0.875rem;
+            color: var(--navy);
+            margin: -2.5rem -2rem 2rem -2rem;
+        }
+
+        .transcript-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .transcript-meta-icon {
+            width: 18px;
+            height: 18px;
+            opacity: 0.6;
+        }
+
+        /* Speaker Styling */
+        .speaker-line {
+            margin-bottom: 1.5rem;
+            padding-left: 0;
+        }
+
+        .speaker-line strong {
+            color: var(--navy);
+            font-weight: 600;
+            font-size: 0.9375rem;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .speaker-line p {
+            margin: 0;
+            padding-left: 1.25rem;
+            border-left: 3px solid var(--cream);
+        }
+
+        /* Timestamp Links (if added later) */
+        .timestamp {
+            color: var(--red);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .timestamp:hover {
+            color: var(--navy);
+            text-decoration: underline;
+        }
+
+        /* Search Feature (optional enhancement) */
+        .transcript-search {
+            position: sticky;
+            top: 1rem;
+            background: white;
+            padding: 1rem;
+            border: 1px solid var(--cream);
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            z-index: 10;
+        }
+
+        .transcript-search input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--navy);
+            border-radius: 4px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.9375rem;
+            transition: all 0.2s ease;
+        }
+
+        .transcript-search input:focus {
+            outline: none;
+            border-color: var(--red);
+            box-shadow: 0 0 0 3px rgba(215, 68, 68, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .transcript-summary {
+                font-size: 1.25rem;
+                padding: 1.5rem 1.25rem;
+            }
+
+            .transcript-content {
+                padding: 1.75rem 1.25rem;
+            }
+
+            .transcript-meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+        }
+
+        /* Demo styling */
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .demo-note {
+            background: var(--cyan);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            font-size: 0.9375rem;
+        }
+
+        .episode-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Episode 64: Holiday Scams Unwrapped</h1>
+
+        <div class="demo-note">
+            <strong>Design Demo:</strong> This shows the Premium Art Deco transcript accordion. Click below to expand/collapse. Content remains in DOM for full SEO indexing.
+        </div>
+
+        <div class="episode-content">
+            <h2>Topics Discussed</h2>
+            <ul>
+                <li>Holiday Scams</li>
+                <li>AI Voice & Video Cloning</li>
+                <li>Gift Card Fraud</li>
+            </ul>
+            <p>Whether you're buying gifts, traveling, or just enjoying the holidays with family, these practical tips will help you protect yourself and your loved ones...</p>
+        </div>
+
+        <!-- THE TRANSCRIPT ACCORDION -->
+        <div class="transcript-wrapper">
+            <details class="transcript-details" id="transcript">
+                <summary class="transcript-summary">
+                    <span>
+                        <span style="display: block; font-size: 0.875rem; opacity: 0.9; font-family: 'Raleway', sans-serif; font-weight: 400; margin-bottom: 0.25rem;">READ THE</span>
+                        Full Episode Transcript
+                    </span>
+                    <div class="transcript-icon"></div>
+                </summary>
+
+                <div class="transcript-content">
+                    <!-- Optional: Add search functionality -->
+                    <!--
+                    <div class="transcript-search">
+                        <input type="text" placeholder="Search transcript..." id="transcript-search">
+                    </div>
+                    -->
+
+                    <div class="transcript-meta">
+                        <div class="transcript-meta-item">
+                            <svg class="transcript-meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>32:38 minutes</span>
+                        </div>
+                        <div class="transcript-meta-item">
+                            <svg class="transcript-meta-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/>
+                                <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"/>
+                            </svg>
+                            <span>Hosts: Joe Patti & Adam</span>
+                        </div>
+                    </div>
+
+                    <div class="transcript-text">
+                        <!-- Transcript content with speaker formatting -->
+                        <div class="speaker-line">
+                            <strong>Joe Patti <span class="timestamp">[00:00]</span>:</strong>
+                            <p>My kids know nothing about technology. They have phones, they use them, they play video games and all, but they do not know how it works, which means they also don't know about a lot of these scams. So, if you're giving them this gear and especially if you're giving them payments, you gotta tell your kids about that stuff.</p>
+                            <p>All right, welcome to the Security Cocktail Hour. I'm Joe Patti.</p>
+                        </div>
+
+                        <div class="speaker-line">
+                            <strong>Adam <span class="timestamp">[00:29]</span>:</strong>
+                            <p>I'm Santa Claus.</p>
+                        </div>
+
+                        <div class="speaker-line">
+                            <strong>Joe Patti <span class="timestamp">[00:31]</span>:</strong>
+                            <p>So let's start with the hot stuff. And we've talked about AI a lot on the show and AI scams, but this is when they're gonna ramp up, don't you think? We've talked a lot about the voice and video cloning.</p>
+                            <p>Which kind of is sort of like the scam you were talking about, but even taking it to the next level of, you know, that's actually what I was thinking of. Were you going to say that there was like a video of the guy sitting next to him, supposedly calling him and it looked real? That would be crazy.</p>
+                        </div>
+
+                        <div class="speaker-line">
+                            <strong>Adam <span class="timestamp">[01:01]</span>:</strong>
+                            <p>Yeah, you know what's funny? I think if I understand correctly, there's a new malware for your phone. When you go to call out to your bank, it redirects it to a different phone number. I forgot what malware that was, but like you're calling, I'm calling Chase. And meanwhile, it's calling the fake Chase. It re-diverts the numbers now.</p>
+                        </div>
+
+                        <div class="speaker-line">
+                            <strong>Joe Patti <span class="timestamp">[01:14]</span>:</strong>
+                            <p>Really? That's terrible. That's really...</p>
+                        </div>
+
+                        <!-- Add more transcript content here -->
+                        <div style="padding: 2rem; background: var(--cream); border-radius: 4px; text-align: center; margin-top: 2rem; font-style: italic; color: var(--navy);">
+                            [Full transcript continues...]
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- Content continues after transcript -->
+        <div class="episode-content">
+            <h2>Related Episodes</h2>
+            <p>More content follows naturally after the transcript...</p>
+        </div>
+    </div>
+
+    <script>
+        // Optional: Add smooth scroll when opening
+        document.querySelector('.transcript-details').addEventListener('toggle', function(e) {
+            if (this.open) {
+                setTimeout(() => {
+                    this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        });
+
+        // Optional: Add transcript search functionality
+        /*
+        const searchInput = document.getElementById('transcript-search');
+        const transcriptText = document.querySelector('.transcript-text');
+
+        searchInput?.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const speakers = transcriptText.querySelectorAll('.speaker-line');
+
+            speakers.forEach(line => {
+                const text = line.textContent.toLowerCase();
+                if (searchTerm && !text.includes(searchTerm)) {
+                    line.style.opacity = '0.3';
+                } else {
+                    line.style.opacity = '1';
+                }
+            });
+        });
+        */
+    </script>
+</body>
+</html>

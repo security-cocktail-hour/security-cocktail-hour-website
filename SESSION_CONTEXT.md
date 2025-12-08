@@ -1,8 +1,8 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 5, 2025 (Newsletter Page + Episode Number Display + Transcript Fixes)
+**Last Updated**: December 6, 2025 (Newsletter Page Production Deployment)
 **Hugo Version**: v0.151.0
-**Session Status**: Production Deployment Complete + Newsletter Page Ready for Deployment
+**Session Status**: Production Deployment Complete - Newsletter Page Live
 
 ---
 
@@ -13,7 +13,7 @@
 **GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
 **Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
 
-**Current Stats**: 111 pages (64 episodes, 3 blog posts, main pages) | 5.9MB images | 7.7MB production package
+**Current Stats**: 112 pages (64 episodes, 3 blog posts, newsletter page, main pages) | 5.9MB images | 7.7MB production package
 
 ---
 
@@ -42,10 +42,11 @@
 - **Files Modified**:
   - `layouts/partials/footer.html` - Added newsletter link
 
-**Status**: ✅ Complete - Ready for production deployment
-- Clean, professional landing page for social media sharing
+**Status**: ✅ DEPLOYED TO PRODUCTION (December 6, 2025)
+- Clean, professional landing page for social media sharing at https://securitycocktailhour.com/newsletter/
 - Functional Mailchimp integration
 - Accessible from footer on all pages
+- Production package: 7.7MB (112 pages)
 
 ---
 
@@ -431,11 +432,11 @@
 
 ## Production Deployment
 
-**Production Deployment File**: `production-deployment.zip` (7.6MB)
+**Production Deployment File**: `production-deployment-20251206-154540.zip` (7.7MB)
 - Location: Project root directory
-- Contents: All 110 pages + optimized images + SEO fixes
-- Status: READY FOR DEPLOYMENT
-- Last Updated: November 29, 2025
+- Contents: All 112 pages + newsletter signup page + optimized images + SEO fixes
+- Status: ✅ DEPLOYED TO PRODUCTION
+- Last Updated: December 6, 2025
 
 **Deployment Process**:
 1. Download `production-deployment.zip`
@@ -555,14 +556,17 @@ magick input.jpg -quality 85 -strip output.jpg
 - ⏳ Hugo template integration pending
 - ⏳ Staging deployment pending
 
-**Production Status**: ✅ LIVE (Deployed December 2, 2025)
+**Production Status**: ✅ LIVE (Deployed December 6, 2025)
 - Site: https://securitycocktailhour.com/
+- Newsletter page live at https://securitycocktailhour.com/newsletter/ (accessible from footer)
 - Episode 64 live and accessible
+- Episode numbers displayed on all episode cards (Episodes page and Homepage)
+- Search functionality enhanced with episode number support
 - Collapsible transcript accordion working across all episode pages
 - Manual related episodes feature active
 - All SEO optimizations active
 - Submitted to search engines (Google & Bing)
-- 111 pages live (64 episodes + blog posts + main pages)
+- 112 pages live (64 episodes + 3 blog posts + newsletter + main pages)
 
 ---
 
