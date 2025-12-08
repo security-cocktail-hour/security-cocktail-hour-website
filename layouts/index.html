@@ -161,7 +161,7 @@
         </div>
 
         <div class="episodes-grid">
-          {{ $recent := where .Site.RegularPages "Type" "episodes" | first 6 }}
+          {{ $recent := where .Site.RegularPages "Type" "episodes" | first 5 }}
           {{ range after 1 $recent }}
             {{ $episodeNum := "" }}
             {{ $filename := .File.BaseFileName }}
