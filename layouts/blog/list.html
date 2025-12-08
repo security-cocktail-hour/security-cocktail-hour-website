@@ -46,36 +46,46 @@
 
 {{ define "main" }}
 
-<!-- Page Header -->
-<section class="section" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white; padding: 3rem 0;">
+<!-- Blog Hero -->
+<section class="blog-hero">
+  <div class="art-deco-pattern"></div>
+  <div class="corner-accent corner-accent-tl"></div>
+  <div class="corner-accent corner-accent-tr"></div>
+
   <div class="container">
-    <h1 style="color: white;">Blog</h1>
-    <p style="font-size: 1.125rem; max-width: 600px;">
-      Insights, analysis, and deep dives into cybersecurity topics from the Security Cocktail Hour team.
-    </p>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span>Blog</span>
+      </h1>
+      <p class="hero-subtitle">
+        Insights, analysis, and deep dives into cybersecurity topics from the Security Cocktail Hour team.
+      </p>
+    </div>
   </div>
 </section>
 
-<!-- Search and Filters -->
-<div style="background: white; border-bottom: 1px solid #E5E5E5; padding: 1rem 0;">
+<!-- Controls Section -->
+<section class="controls-section">
   <div class="container">
-    <div style="display: flex; gap: 0.75rem; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-      <div style="position: relative; flex: 1; min-width: 200px; max-width: 320px;">
-        <svg style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 14px; height: 14px; color: #8D99AE; pointer-events: none;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div class="controls-grid-blog">
+      <!-- Search -->
+      <div class="search-container">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
         </svg>
         <input
           type="search"
           id="blog-search"
-          placeholder="Search..."
-          style="width: 100%; padding: 6px 10px 6px 32px; font-size: 0.8125rem; border: none; border-bottom: 1px solid #E5E5E5; background: transparent; color: #192A56; transition: border-color 0.2s;"
-          onfocus="this.style.borderBottomColor='#436098'"
-          onblur="this.style.borderBottomColor='#E5E5E5'"
+          class="search-input"
+          placeholder="Search blog posts by title or content..."
         >
       </div>
-      <div style="display: flex; gap: 0.75rem; align-items: center;">
-        <select id="category-filter" style="padding: 6px 24px 6px 10px; font-size: 0.8125rem; border: none; border-bottom: 1px solid #E5E5E5; background: transparent; color: #192A56; cursor: pointer; appearance: none; background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width=%2710%27 height=%276%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M0 0l5 6 5-6z%27 fill=%27%238D99AE%27/%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 6px center;">
-          <option value="">Category</option>
+
+      <!-- Category Filter -->
+      <div class="select-group">
+        <span class="select-label">Category:</span>
+        <select id="category-filter" class="custom-select">
+          <option value="">All Categories</option>
           {{ $categories := slice }}
           {{ range .Pages }}
             {{ with .Params.category }}
@@ -86,8 +96,13 @@
             <option value="{{ . }}">{{ . }}</option>
           {{ end }}
         </select>
-        <select id="tag-filter" style="padding: 6px 24px 6px 10px; font-size: 0.8125rem; border: none; border-bottom: 1px solid #E5E5E5; background: transparent; color: #192A56; cursor: pointer; appearance: none; background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width=%2710%27 height=%276%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M0 0l5 6 5-6z%27 fill=%27%238D99AE%27/%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 6px center;">
-          <option value="">Tag</option>
+      </div>
+
+      <!-- Tag Filter -->
+      <div class="select-group">
+        <span class="select-label">Tag:</span>
+        <select id="tag-filter" class="custom-select">
+          <option value="">All Tags</option>
           {{ $allTags := slice }}
           {{ range .Pages }}
             {{ with .Params.tags }}
@@ -98,168 +113,159 @@
             <option value="{{ . }}">{{ . }}</option>
           {{ end }}
         </select>
-        <select id="sort-filter" style="padding: 6px 24px 6px 10px; font-size: 0.8125rem; border: none; border-bottom: 1px solid #E5E5E5; background: transparent; color: #192A56; cursor: pointer; appearance: none; background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width=%2710%27 height=%276%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M0 0l5 6 5-6z%27 fill=%27%238D99AE%27/%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 6px center;">
-          <option value="newest">Newest</option>
-          <option value="oldest">Oldest</option>
+      </div>
+
+      <!-- Sort Order -->
+      <div class="select-group">
+        <span class="select-label">Sort:</span>
+        <select id="sort-filter" class="custom-select">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
         </select>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Blog Posts with Sidebar -->
-<section class="section">
+<!-- Blog Section -->
+<section class="blog-section">
   <div class="container">
-    <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+    <div class="blog-layout">
 
-      <!-- Main Content -->
-      <div>
-        <div class="grid grid-3" id="blog-grid">
-      {{ range .Pages }}
-        <article class="card blog-card" data-title="{{ .Title | lower }}" data-category="{{ with .Params.category }}{{ . }}{{ end }}" data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}">
-          <div class="card-content">
-            {{ with .Params.category }}
-              <span class="category-tag">{{ . }}</span>
-            {{ end }}
-            <h3 class="card-title">{{ .Title }}</h3>
-            <p class="card-meta">
-              {{ with .Params.author }}{{ . }} | {{ end }}
-              {{ .Date.Format "January 2, 2006" }}
-            </p>
-            {{ with .Params.tags }}
-              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
-                {{ range first 3 . }}
-                  <span style="font-size: 0.75rem; color: #8D99AE; background: rgba(141, 153, 174, 0.1); padding: 0.25rem 0.5rem; border-radius: 4px;">#{{ . }}</span>
-                {{ end }}
-              </div>
-            {{ end }}
-            <p class="card-description">{{ with .Params.description }}{{ . | truncate 120 }}{{ else }}{{ $.Summary | truncate 120 }}{{ end }}</p>
-            <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
-          </div>
-        </article>
-      {{ end }}
-    </div>
-
-        <!-- No Results Message -->
-        <div id="no-results" style="display: none; text-align: center; padding: 3rem 0;">
-          <p style="font-size: 1.25rem; color: rgba(45, 45, 45, 0.6);">No blog posts found matching your search.</p>
-          <button onclick="resetFilters()" class="btn btn-secondary" style="margin-top: 1rem;">Clear Filters</button>
-        </div>
+      <!-- Blog Grid -->
+      <div class="blog-grid" id="blog-grid">
+        {{ range .Pages }}
+          <article class="blog-card" data-title="{{ .Title | lower }}" data-category="{{ with .Params.category }}{{ . }}{{ end }}" data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}">
+            <div class="blog-content">
+              {{ with .Params.category }}
+                <span class="blog-category">{{ . }}</span>
+              {{ end }}
+              <h2 class="blog-title">{{ .Title }}</h2>
+              <p class="blog-meta">
+                {{ with .Params.author }}{{ . }} | {{ end }}
+                {{ .Date.Format "January 2, 2006" }}
+              </p>
+              {{ with .Params.tags }}
+                <div class="blog-tags">
+                  {{ range first 3 . }}
+                    <span class="blog-tag">#{{ . }}</span>
+                  {{ end }}
+                </div>
+              {{ end }}
+              <p class="blog-description">
+                {{ with .Params.description }}{{ . | truncate 120 }}{{ else }}{{ $.Summary | truncate 120 }}{{ end }}
+              </p>
+              <a href="{{ .RelPermalink }}" class="read-more-btn">Read More</a>
+            </div>
+          </article>
+        {{ end }}
       </div>
 
       <!-- Sidebar -->
-      <aside>
-        <!-- Newsletter Signup -->
-        <div class="card" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white; position: sticky; top: 2rem;">
-          <div class="card-content">
-            <h4 style="color: white;">Join Our Newsletter</h4>
-            <p style="font-size: 0.875rem; margin-bottom: 1rem;">
-              Get exclusive insights, show news and more delivered to your inbox.
-            </p>
-            <form action="https://securitycocktailhour.us4.list-manage.com/subscribe/post?u=5a12cbfb41bc7e9e08b7af3c6&amp;id=2eddec8bf9&amp;f_id=0098d0edf0" method="POST" target="_blank">
-              <input
-                type="email"
-                name="EMAIL"
-                placeholder="Your email"
-                required
-                style="width: 100%; margin-bottom: 0.5rem;"
-              >
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_5a12cbfb41bc7e9e08b7af3c6_2eddec8bf9" tabindex="-1" value="">
-              </div>
-              <button type="submit" name="subscribe" class="btn btn-primary" style="width: 100%; background: white; color: #436098;">
-                Subscribe
-              </button>
-            </form>
-          </div>
+      <aside class="sidebar">
+        <div class="newsletter-card">
+          <h3 class="newsletter-title">Join Our Newsletter</h3>
+          <p class="newsletter-description">
+            Get exclusive insights, show news and more delivered to your inbox.
+          </p>
+
+          <form action="https://securitycocktailhour.us4.list-manage.com/subscribe/post?u=5a12cbfb41bc7e9e08b7af3c6&amp;id=2eddec8bf9&amp;f_id=0098d0edf0" method="POST" target="_blank" class="newsletter-form">
+            <input
+              type="email"
+              name="EMAIL"
+              placeholder="Your email address"
+              required
+              class="newsletter-input-blog"
+            >
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_5a12cbfb41bc7e9e08b7af3c6_2eddec8bf9" tabindex="-1" value="">
+            </div>
+            <button type="submit" name="subscribe" class="newsletter-button">
+              Subscribe
+            </button>
+          </form>
+
+          <p class="newsletter-privacy">
+            We respect your privacy. Unsubscribe at any time.
+          </p>
         </div>
       </aside>
 
     </div>
+
+    <!-- No Results Message -->
+    <div id="no-results" style="display: none; text-align: center; padding: 3rem 0;">
+      <p style="font-size: 1.25rem; color: rgba(45, 45, 45, 0.6);">No blog posts found matching your search.</p>
+      <button onclick="resetFilters()" class="btn btn-secondary" style="margin-top: 1rem;">Clear Filters</button>
+    </div>
   </div>
 </section>
-
-<!-- Responsive Grid for Desktop -->
-<style>
-@media (min-width: 900px) {
-  .section .container > div {
-    grid-template-columns: 2fr 1fr !important;
-  }
-  #blog-grid.grid-3 {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-</style>
 
 {{ end }}
 
 {{ define "scripts" }}
 <script>
-// Simple client-side search and filter
-const searchInput = document.getElementById('blog-search');
-const categoryFilter = document.getElementById('category-filter');
-const tagFilter = document.getElementById('tag-filter');
-const sortFilter = document.getElementById('sort-filter');
-const blogGrid = document.getElementById('blog-grid');
-const noResults = document.getElementById('no-results');
-const articles = Array.from(document.querySelectorAll('.blog-card'));
+// Blog search and filter functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('blog-search');
+  const categoryFilter = document.getElementById('category-filter');
+  const tagFilter = document.getElementById('tag-filter');
+  const sortFilter = document.getElementById('sort-filter');
+  const blogGrid = document.getElementById('blog-grid');
+  const noResults = document.getElementById('no-results');
 
-function filterArticles() {
-  const searchTerm = searchInput.value.toLowerCase();
-  const selectedCategory = categoryFilter.value;
-  const selectedTag = tagFilter.value;
-  let visibleCount = 0;
+  function filterArticles() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const selectedCategory = categoryFilter.value;
+    const selectedTag = tagFilter.value;
+    const sortOrder = sortFilter.value;
 
-  articles.forEach(article => {
-    const title = article.dataset.title;
-    const category = article.dataset.category;
-    const tags = article.dataset.tags.toLowerCase();
+    const articles = Array.from(blogGrid.querySelectorAll('.blog-card'));
+    let visibleCount = 0;
 
-    const matchesSearch = !searchTerm || title.includes(searchTerm);
-    const matchesCategory = !selectedCategory || category === selectedCategory;
-    const matchesTag = !selectedTag || tags.includes(selectedTag.toLowerCase());
+    articles.forEach(article => {
+      const title = article.dataset.title || '';
+      const category = article.dataset.category || '';
+      const tags = article.dataset.tags || '';
 
-    if (matchesSearch && matchesCategory && matchesTag) {
-      article.style.display = '';
-      visibleCount++;
-    } else {
-      article.style.display = 'none';
-    }
-  });
+      const matchesSearch = title.includes(searchTerm);
+      const matchesCategory = !selectedCategory || category === selectedCategory;
+      const matchesTag = !selectedTag || tags.toLowerCase().includes(selectedTag.toLowerCase());
 
-  // Show/hide no results message
-  if (visibleCount === 0) {
-    blogGrid.style.display = 'none';
-    noResults.style.display = 'block';
-  } else {
-    blogGrid.style.display = 'grid';
-    noResults.style.display = 'none';
+      if (matchesSearch && matchesCategory && matchesTag) {
+        article.style.display = '';
+        visibleCount++;
+      } else {
+        article.style.display = 'none';
+      }
+    });
+
+    // Sort articles
+    const visibleArticles = articles.filter(article => article.style.display !== 'none');
+    visibleArticles.sort((a, b) => {
+      const dateA = new Date(a.dataset.date);
+      const dateB = new Date(b.dataset.date);
+      return sortOrder === 'newest' ? dateB - dateA : dateA - dateB;
+    });
+
+    visibleArticles.forEach(article => blogGrid.appendChild(article));
+
+    // Show/hide no results message
+    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
   }
-}
 
-function sortArticles() {
-  const sortValue = sortFilter.value;
-  const sortedArticles = [...articles].sort((a, b) => {
-    const dateA = new Date(a.dataset.date);
-    const dateB = new Date(b.dataset.date);
-    return sortValue === 'newest' ? dateB - dateA : dateA - dateB;
-  });
+  searchInput.addEventListener('input', filterArticles);
+  categoryFilter.addEventListener('change', filterArticles);
+  tagFilter.addEventListener('change', filterArticles);
+  sortFilter.addEventListener('change', filterArticles);
 
-  sortedArticles.forEach(article => blogGrid.appendChild(article));
-}
-
-function resetFilters() {
-  searchInput.value = '';
-  categoryFilter.value = '';
-  tagFilter.value = '';
-  sortFilter.value = 'newest';
-  filterArticles();
-  sortArticles();
-}
-
-searchInput.addEventListener('input', filterArticles);
-categoryFilter.addEventListener('change', filterArticles);
-tagFilter.addEventListener('change', filterArticles);
-sortFilter.addEventListener('change', sortArticles);
+  window.resetFilters = function() {
+    searchInput.value = '';
+    categoryFilter.value = '';
+    tagFilter.value = '';
+    sortFilter.value = 'newest';
+    filterArticles();
+  };
+});
 </script>
 {{ end }}

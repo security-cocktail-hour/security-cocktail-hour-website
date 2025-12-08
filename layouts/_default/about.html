@@ -1,181 +1,193 @@
+{{ define "title" }}About | Security Cocktail Hour{{ end }}
+
 {{ define "main" }}
 
-<!-- Hero Section -->
-<section class="section" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white; text-align: center; padding: 3rem 0;">
+<!-- About Hero -->
+<section class="about-hero">
+  <div class="art-deco-pattern"></div>
+  <div class="corner-accent corner-accent-tl"></div>
+  <div class="corner-accent corner-accent-tr"></div>
+
   <div class="container">
-    <h1 style="color: white; margin-bottom: 1rem;">About the Security Cocktail Hour</h1>
-    <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto;">
-      Cybersecurity pros talking shop at the virtual bar.
-    </p>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        About the <span>Security Cocktail Hour</span>
+      </h1>
+      <p class="hero-subtitle">
+        Cybersecurity pros talking shop at the virtual bar.
+      </p>
+    </div>
   </div>
 </section>
 
 <!-- Our Story Section -->
-<section class="section">
-  <div class="container" style="max-width: 800px;">
-    <h2>Our Story</h2>
-    <p>
-      Hosts Joe Patti and Adam Roth realized years ago that some of the best professional development
-      they ever received came from conversations with fellow cybersecurity pros—often over a drink or two.
-    </p>
-    <p>
-      Even the most experienced cybersecurity veterans only ever work in a handful of areas of this broad field.
-      The Security Cocktail Hour Podcast showcases their journeys, insights, and lessons from across the
-      cybersecurity spectrum, shared by the people who learned them in the kind of relaxed atmosphere you'll
-      find at a conference bar. There are always new colleagues to meet and new insights to hear, as well as
-      great stories you'll want to pass on.
-    </p>
-    <p>
-      Whether you're building your security career, leading a team, or working alongside security pros,
-      join us for candid conversations with pros across the field.
-    </p>
+<section class="story-section">
+  <div class="container">
+    <div class="story-content">
+      <h2 class="section-title">Our Story</h2>
+      <p>
+        Hosts Joe Patti and Adam Roth realized years ago that some of the best professional development
+        they ever received came from conversations with fellow cybersecurity pros—often over a drink or two.
+      </p>
+      <p>
+        Even the most experienced cybersecurity veterans only ever work in a handful of areas of this broad field.
+        The Security Cocktail Hour Podcast showcases their journeys, insights, and lessons from across the
+        cybersecurity spectrum, shared by the people who learned them in the kind of relaxed atmosphere you'll
+        find at a conference bar. There are always new colleagues to meet and new insights to hear, as well as
+        great stories you'll want to pass on.
+      </p>
+      <p>
+        Whether you're building your security career, leading a team, or working alongside security pros,
+        join us for candid conversations with pros across the field.
+      </p>
+    </div>
   </div>
 </section>
 
-<!-- Meet Your Hosts -->
-<section class="section" style="background: #F5F5F5;">
+<!-- Meet Your Hosts Section -->
+<section class="hosts-section">
   <div class="container">
-    <h2 style="text-align: center; margin-bottom: 3rem;">Meet Your Hosts</h2>
+    <h2 class="section-title">Meet Your Hosts</h2>
 
-    <div class="grid grid-2" style="gap: 3rem; max-width: 1000px; margin: 0 auto;">
-
+    <div class="hosts-grid">
       <!-- Joe Patti -->
-      <div class="card">
-        <div class="card-content" style="text-align: center;">
-          <img src="/images/joe-patti.jpg" alt="Joe Patti" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; display: block;">
-          <h3>Joe Patti</h3>
-          <p style="font-weight: 600; color: #436098; margin-bottom: 1rem;">Co-Host</p>
+      <div class="host-card">
+        <div class="host-image-container">
+          <img src="/images/joe-patti.jpg" alt="Joe Patti" class="host-image">
+          <div class="host-badge">Co-Host</div>
+        </div>
+        <div class="host-content">
+          <h3 class="host-name">Joe Patti</h3>
+          <div class="host-role">Co-Host</div>
 
-          <p style="text-align: left; margin-bottom: 1rem;">
+          <p class="host-bio">
             Joe brings over thirty years of cybersecurity experience, doing everything from handling alerts to leading security programs. He has worked with organizations in financial services, legal, defense and technology, as well as in consulting roles.
           </p>
 
-          <p style="text-align: left; margin-bottom: 1rem;">
+          <p class="host-bio">
             When he's not on the podcast you can find him driving around northern New Jersey (always within the speed limit) or roaming around archeological sites in Italy.
           </p>
 
-          <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
-            <a href="https://www.linkedin.com/in/joe-patti-infosec/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
-          </div>
+          <a href="https://www.linkedin.com/in/joe-patti-infosec/" target="_blank" rel="noopener" class="host-linkedin">
+            LinkedIn →
+          </a>
         </div>
       </div>
 
       <!-- Adam Roth -->
-      <div class="card">
-        <div class="card-content" style="text-align: center;">
-          <img src="/images/adam-roth.jpg" alt="Adam Roth" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; display: block;">
-          <h3>Adam Roth</h3>
-          <p style="font-weight: 600; color: #436098; margin-bottom: 1rem;">Co-Host</p>
+      <div class="host-card">
+        <div class="host-image-container">
+          <img src="/images/adam-roth.jpg" alt="Adam Roth" class="host-image">
+          <div class="host-badge">Co-Host</div>
+        </div>
+        <div class="host-content">
+          <h3 class="host-name">Adam Roth</h3>
+          <div class="host-role">Co-Host</div>
 
-          <p style="text-align: left; margin-bottom: 1rem;">
+          <p class="host-bio">
             Adam has over thirty years of experience in not just cybersecurity but also physical security and surveillance. He's worked hands on and in management, as well as in sales, customer relations and other areas.
           </p>
 
-          <p style="text-align: left; margin-bottom: 1rem;">
+          <p class="host-bio">
             And that's just in security. Adam is also an EMT, drone pilot, licensed locksmith, boxing cornerman and Coast Guard Auxiliary volunteer.
           </p>
 
-          <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
-            <a href="https://www.linkedin.com/in/adamsroth/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
-          </div>
+          <a href="https://www.linkedin.com/in/adamsroth/" target="_blank" rel="noopener" class="host-linkedin">
+            LinkedIn →
+          </a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- What You'll Get Section -->
-<section class="section">
+<section class="benefits-section">
   <div class="container">
-    <h2 style="text-align: center; margin-bottom: 3rem;">What You'll Get From This Podcast</h2>
+    <h2 class="section-title">What You'll Get From This Podcast</h2>
 
-    <div class="grid grid-3" style="max-width: 1000px; margin: 0 auto;">
-
-      <div style="text-align: center;">
-        <div style="width: 80px; height: 80px; border-radius: 50%; background: #436098; color: white; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 2rem;">
-          🎓
-        </div>
-        <h4>Broad Knowledge</h4>
-        <p style="font-size: 0.875rem;">
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🎓</div>
+        <h3 class="benefit-title">Broad Knowledge</h3>
+        <p class="benefit-description">
           Discover topics from around the diverse world of cybersecurity, areas you don't know well or haven't yet encountered.
         </p>
       </div>
 
-      <div style="text-align: center;">
-        <div style="width: 80px; height: 80px; border-radius: 50%; background: #192A56; color: white; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 2rem;">
-          👥
-        </div>
-        <h4>Real Practitioners</h4>
-        <p style="font-size: 0.875rem;">
+      <div class="benefit-card">
+        <div class="benefit-icon">👥</div>
+        <h3 class="benefit-title">Real Practitioners</h3>
+        <p class="benefit-description">
           Learn from experienced professionals sharing actual challenges, solutions,
           and lessons from the field—not just theory.
         </p>
       </div>
 
-      <div style="text-align: center;">
-        <div style="width: 80px; height: 80px; border-radius: 50%; background: #8D99AE; color: white; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 2rem;">
-          🎙️
-        </div>
-        <h4>Great People</h4>
-        <p style="font-size: 0.875rem;">
+      <div class="benefit-card">
+        <div class="benefit-icon">🎙️</div>
+        <h3 class="benefit-title">Great People</h3>
+        <p class="benefit-description">
           Everyone in cybersecurity has a story behind where they are, and most of them aren't what you'd expect.
         </p>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- Stats Section (Optional) -->
-<section class="section" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white;">
+<!-- Stats Section -->
+<section class="stats-section">
+  <div class="art-deco-pattern"></div>
   <div class="container">
-    <div class="grid grid-3" style="text-align: center; max-width: 800px; margin: 0 auto;">
-
-      <div>
-        <p style="font-size: 3rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">70+</p>
-        <p style="font-size: 1.125rem; opacity: 0.9;">Episodes</p>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">65+</div>
+        <div class="stat-label">Episodes</div>
       </div>
 
-      <div>
-        <p style="font-size: 3rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">50+</p>
-        <p style="font-size: 1.125rem; opacity: 0.9;">Expert Guests</p>
+      <div class="stat-item">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Expert Guests</div>
       </div>
 
-      <div>
-        <p style="font-size: 3rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">25+</p>
-        <p style="font-size: 1.125rem; opacity: 0.9;">Topics Covered</p>
+      <div class="stat-item">
+        <div class="stat-number">60hrs</div>
+        <div class="stat-label">Content</div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- Email Signup CTA -->
-<section class="section">
-  <div class="container" style="max-width: 600px; text-align: center;">
-    <h2>Stay Connected</h2>
-    <p style="margin-bottom: 2rem;">
-      Get exclusive insights, show news and more delivered to your inbox.
-    </p>
-    <form action="https://securitycocktailhour.us4.list-manage.com/subscribe/post?u=5a12cbfb41bc7e9e08b7af3c6&amp;id=2eddec8bf9&amp;f_id=0098d0edf0" method="POST" target="_blank" style="display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
-      <input
-        type="email"
-        name="EMAIL"
-        placeholder="Your email address"
-        required
-        style="flex: 1; min-width: 250px;"
-      >
-      <div style="position: absolute; left: -5000px;" aria-hidden="true">
-        <input type="text" name="b_5a12cbfb41bc7e9e08b7af3c6_2eddec8bf9" tabindex="-1" value="">
-      </div>
-      <button type="submit" name="subscribe" class="btn btn-primary">
-        Subscribe
-      </button>
-    </form>
-    <p style="font-size: 0.75rem; margin-top: 1rem; color: rgba(45, 45, 45, 0.6);">
-      We respect your privacy. Unsubscribe at any time.
-    </p>
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+  <div class="art-deco-pattern"></div>
+  <div class="container">
+    <div class="newsletter-content">
+      <h2 class="newsletter-title">Stay Connected</h2>
+      <p class="newsletter-subtitle">
+        Get exclusive insights, show news and more delivered to your inbox.
+      </p>
+
+      <form action="https://securitycocktailhour.us4.list-manage.com/subscribe/post?u=5a12cbfb41bc7e9e08b7af3c6&amp;id=2eddec8bf9&amp;f_id=0098d0edf0" method="POST" target="_blank" class="newsletter-form">
+        <input
+          type="email"
+          name="EMAIL"
+          placeholder="Your email address"
+          required
+          class="newsletter-input"
+        >
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_5a12cbfb41bc7e9e08b7af3c6_2eddec8bf9" tabindex="-1" value="">
+        </div>
+        <button type="submit" name="subscribe" class="newsletter-button">
+          Subscribe
+        </button>
+      </form>
+
+      <p class="newsletter-privacy">
+        We respect your privacy. Unsubscribe at any time.
+      </p>
+    </div>
   </div>
 </section>
 

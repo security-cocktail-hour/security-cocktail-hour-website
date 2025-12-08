@@ -1,12 +1,20 @@
 {{ define "main" }}
 
-<!-- Page Header -->
-<section class="section" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white; padding: 3rem 0;">
-  <div class="container" style="max-width: 800px; text-align: center;">
-    <h1 style="color: white; margin-bottom: 1rem;">Cybersecurity Resources</h1>
-    <p style="font-size: 1.125rem;">
-      Curated tools, guides, and resources to help you grow as an information security professional.
-    </p>
+<!-- Resources Hero -->
+<section class="resources-hero">
+  <div class="art-deco-pattern"></div>
+  <div class="corner-accent corner-accent-tl"></div>
+  <div class="corner-accent corner-accent-tr"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Cybersecurity <span>Resources</span>
+      </h1>
+      <p class="hero-subtitle">
+        Curated tools, guides, and resources to help you grow as an information security professional.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -195,32 +203,38 @@
       </div>
     </div>
 
-    <!-- Newsletter Signup CTA -->
-    <div style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white; padding: 2rem; border-radius: 8px; text-align: center;">
-      <h3 style="color: white; margin-bottom: 1rem;">Stay Connected</h3>
-      <p style="margin-bottom: 1.5rem; text-align: center; max-width: none; margin-left: auto; margin-right: auto;">
+  </div>
+</section>
+
+<!-- Newsletter Signup Section -->
+<section class="resources-newsletter-signup">
+  <div class="container">
+    <div class="newsletter-signup-content">
+      <h3 class="newsletter-signup-title">Stay Connected</h3>
+      <p class="newsletter-signup-subtitle">
         Get exclusive insights, show news and more delivered to your inbox.
       </p>
-      <form action="https://securitycocktailhour.us4.list-manage.com/subscribe/post?u=5a12cbfb41bc7e9e08b7af3c6&amp;id=2eddec8bf9&amp;f_id=0098d0edf0" method="POST" target="_blank" style="display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center; max-width: 600px; margin: 0 auto;">
-        <input
-          type="email"
-          name="EMAIL"
-          placeholder="Your email address"
-          required
-          style="flex: 1; min-width: 250px;"
-        >
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          <input type="text" name="b_5a12cbfb41bc7e9e08b7af3c6_2eddec8bf9" tabindex="-1" value="">
-        </div>
-        <button type="submit" name="subscribe" class="btn btn-primary" style="background: white; color: #436098;">
-          Subscribe
-        </button>
-      </form>
-      <p style="font-size: 0.75rem; margin-top: 1rem; opacity: 0.8; text-align: center; max-width: none; margin-left: auto; margin-right: auto;">
-        We respect your privacy. Unsubscribe at any time.
-      </p>
+      <div class="newsletter-signup-form-container">
+        <form action="https://securitycocktailhour.us4.list-manage.com/subscribe/post?u=5a12cbfb41bc7e9e08b7af3c6&amp;id=2eddec8bf9&amp;f_id=0098d0edf0" method="POST" target="_blank" class="newsletter-signup-form">
+          <input
+            type="email"
+            name="EMAIL"
+            placeholder="Your email address"
+            required
+            class="newsletter-signup-input"
+          >
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_5a12cbfb41bc7e9e08b7af3c6_2eddec8bf9" tabindex="-1" value="">
+          </div>
+          <button type="submit" name="subscribe" class="newsletter-signup-button">
+            <span>Subscribe</span>
+          </button>
+        </form>
+        <p class="newsletter-signup-privacy">
+          We respect your privacy. Unsubscribe at any time.
+        </p>
+      </div>
     </div>
-
   </div>
 </section>
 

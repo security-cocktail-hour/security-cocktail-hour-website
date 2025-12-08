@@ -1,225 +1,378 @@
-{{ define "head" }}
-<!-- Podcast Schema Markup -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "PodcastSeries",
-  "name": "Security Cocktail Hour",
-  "description": "A cybersecurity podcast featuring conversations with security practitioners on data breach prevention, threat intelligence, incident response, AI security, and industry insights.",
-  "url": "{{ .Site.BaseURL }}",
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Joe Patti"
-    },
-    {
-      "@type": "Person",
-      "name": "Adam Roth"
-    }
-  ],
-  "webFeed": "{{ .Site.BaseURL }}index.xml"
-}
-</script>
-{{ end }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-{{ define "main" }}
+  <title>{{ if or (eq .RelPermalink "/") (strings.Contains .Title "Cybersecurity Podcast") }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
-<!-- Hero Section -->
-<section class="hero section" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%);">
-  <div class="container" style="color: white; text-align: center; padding: 4rem 1rem;">
-    <h1 style="color: white; font-size: 3rem; margin-bottom: 1rem;">Security Cocktail Hour Podcast</h1>
-    <p style="font-size: 1.25rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-      Cybersecurity pros talking shop at the virtual bar.
-    </p>
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-      <a href="https://youtube.com/@SecCocktailHour" class="btn btn-primary" target="_blank" rel="noopener">Listen Now</a>
-      <a href="{{ "/episodes" | relURL }}" class="btn btn-secondary" style="background: white; color: #436098; border-color: white;">Browse Episodes</a>
-    </div>
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
 
-    <!-- Platform Icons -->
-    <div style="margin-top: 2rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-      <a href="https://youtube.com/@SecCocktailHour" target="_blank" rel="noopener" style="color: white; opacity: 0.9;">YouTube</a>
-      <a href="https://open.spotify.com/show/7gWweI6mL1oVRU5gKNzzTy" target="_blank" rel="noopener" style="color: white; opacity: 0.9;">Spotify</a>
-      <a href="https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200" target="_blank" rel="noopener" style="color: white; opacity: 0.9;">Apple Podcasts</a>
-      <a href="https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour" target="_blank" rel="noopener" style="color: white; opacity: 0.9;">Amazon Music</a>
-    </div>
-  </div>
-</section>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  {{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
 
-<!-- Latest Episode Section -->
-<section class="section">
-  <div class="container">
-    <h2>Latest Episode</h2>
-    {{ $latest := where .Site.RegularPages "Type" "episodes" | first 1 }}
-    {{ range $latest }}
-      {{ $episodeNum := "" }}
-      {{ $filename := .File.BaseFileName }}
-      {{ if hasPrefix $filename "episode-" }}
-        {{ $parts := split (strings.TrimPrefix "episode-" $filename) "-" }}
-        {{ $episodeNum = index $parts 0 }}
-      {{ end }}
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ .Permalink }}">
 
-      <div class="card" style="max-width: 800px; margin: 0 auto;">
-        {{ with .Params.image }}
-          <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image">
-        {{ end }}
-        <div class="card-content">
-          {{ with .Params.category }}
-            <span class="category-tag">{{ . }}</span>
-          {{ end }}
-          <h3 class="card-title">{{ .Title }}</h3>
-          <p class="card-meta">
-            {{ with .Params.guest }}{{ . }} | {{ end }}
-            {{ if $episodeNum }}Episode {{ $episodeNum }} | {{ end }}{{ .Date.Format "January 2, 2006" }}
-            {{ with .Params.duration }} | {{ . }}{{ end }}
-          </p>
-          <div class="card-description">
-            <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QL8F8JKNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8QL8F8JKNR');
+  </script>
+
+  <!-- Podcast Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    "name": "Security Cocktail Hour",
+    "description": "A cybersecurity podcast featuring conversations with security practitioners on data breach prevention, threat intelligence, incident response, AI security, and industry insights.",
+    "url": "{{ .Site.BaseURL }}",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Joe Patti"
+      },
+      {
+        "@type": "Person",
+        "name": "Adam Roth"
+      }
+    ],
+    "webFeed": "{{ .Site.BaseURL }}index.xml"
+  }
+  </script>
+
+  <style>
+    /* Override to ensure clean rendering */
+    body { margin: 0; padding: 0; }
+  </style>
+</head>
+<body>
+  {{ partial "header.html" . }}
+
+  <main>
+    <!-- Hero Section with Art Deco Design -->
+    <section class="hero">
+      <div class="art-deco-pattern"></div>
+      <div class="corner-ornament corner-tl"></div>
+      <div class="corner-ornament corner-br"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Security<br>
+              <span class="highlight">Cocktail Hour</span>
+            </h1>
+
+            <div class="divider">
+              <div class="divider-center"></div>
+            </div>
+
+            <p class="hero-tagline">
+              Cybersecurity pros talking shop at the virtual bar.
+            </p>
+
+            <div class="cta-container">
+              <a href="https://youtube.com/@SecCocktailHour" class="btn btn-primary" target="_blank" rel="noopener">Listen Now</a>
+              <a href="{{ "/episodes" | relURL }}" class="btn btn-secondary">Browse Episodes</a>
+            </div>
+
+            <div class="platform-links">
+              <span class="platform-label">Listen on:</span>
+              <a href="https://youtube.com/@SecCocktailHour" class="platform-link" target="_blank" rel="noopener">YouTube</a>
+              <a href="https://open.spotify.com/show/7gWweI6mL1oVRU5gKNzzTy" class="platform-link" target="_blank" rel="noopener">Spotify</a>
+              <a href="https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200" class="platform-link" target="_blank" rel="noopener">Apple Podcasts</a>
+              <a href="https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/security-cocktail-hour" class="platform-link" target="_blank" rel="noopener">Amazon Music</a>
+            </div>
           </div>
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="{{ .RelPermalink }}" class="btn btn-primary">Show Notes</a>
-            {{ with .Params.platforms.youtube }}
-              <a href="{{ . }}" class="btn btn-secondary" target="_blank" rel="noopener">Listen Now</a>
+
+          <!-- Latest Episode Card -->
+          <div class="episode-wrapper">
+            {{ $latest := where .Site.RegularPages "Type" "episodes" | first 1 }}
+            {{ range $latest }}
+              {{ $episodeNum := "" }}
+              {{ $filename := .File.BaseFileName }}
+              {{ if hasPrefix $filename "episode-" }}
+                {{ $parts := split (strings.TrimPrefix "episode-" $filename) "-" }}
+                {{ $episodeNum = index $parts 0 }}
+              {{ end }}
+
+              <div class="latest-label">Latest Episode</div>
+              <div class="episode-card">
+                {{ if $episodeNum }}
+                <div class="episode-badge">
+                  <div class="episode-number">{{ $episodeNum }}</div>
+                  <div class="episode-label">EP</div>
+                </div>
+                {{ end }}
+
+                {{ with .Params.image }}
+                  <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="episode-image">
+                {{ else }}
+                  <div class="episode-image"></div>
+                {{ end }}
+
+                <div class="episode-content">
+                  {{ with .Params.category }}
+                    <span class="episode-category">{{ . }}</span>
+                  {{ end }}
+                  <h3 class="episode-title">{{ .Title }}</h3>
+                  <div class="episode-meta">
+                    {{ with .Params.guest }}<div class="episode-guest">{{ . }}</div>{{ end }}
+                    <div>{{ .Date.Format "January 2, 2006" }}{{ with .Params.duration }} | {{ . }}{{ end }}</div>
+                  </div>
+                  <a href="{{ .RelPermalink }}" class="episode-cta">Listen Now</a>
+                </div>
+              </div>
             {{ end }}
           </div>
         </div>
       </div>
-    {{ end }}
-  </div>
-</section>
+    </section>
 
-<!-- Recent Episodes Grid -->
-<section class="section" style="background: #F5F5F5;">
-  <div class="container">
-    <h2>Recent Episodes</h2>
-    <div class="grid grid-3">
-      {{ $recent := where .Site.RegularPages "Type" "episodes" | first 6 }}
-      {{ range after 1 $recent }}
-        {{ $episodeNum := "" }}
-        {{ $filename := .File.BaseFileName }}
-        {{ if hasPrefix $filename "episode-" }}
-          {{ $parts := split (strings.TrimPrefix "episode-" $filename) "-" }}
-          {{ $episodeNum = index $parts 0 }}
-        {{ end }}
+    <!-- Recent Episodes Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Recent Episodes</h2>
+          <a href="{{ "/episodes" | relURL }}" class="view-all-link">View All →</a>
+        </div>
 
-        <article class="card episode-card">
-          {{ with .Params.image }}
-            <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <div class="card-image" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); display: none;"></div>
-          {{ else }}
-            <div class="card-image" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%);"></div>
+        <div class="episodes-grid">
+          {{ $recent := where .Site.RegularPages "Type" "episodes" | first 6 }}
+          {{ range after 1 $recent }}
+            {{ $episodeNum := "" }}
+            {{ $filename := .File.BaseFileName }}
+            {{ if hasPrefix $filename "episode-" }}
+              {{ $parts := split (strings.TrimPrefix "episode-" $filename) "-" }}
+              {{ $episodeNum = index $parts 0 }}
+            {{ end }}
+
+            <article class="episode-card-small">
+              {{ with .Params.image }}
+                <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="episode-image">
+              {{ else }}
+                <div class="episode-image"></div>
+              {{ end }}
+              <div class="episode-content">
+                {{ with .Params.category }}
+                  <span class="episode-category">{{ . }}</span>
+                {{ end }}
+                <h3 class="episode-title">{{ .Title }}</h3>
+                <div class="episode-meta">
+                  {{ with .Params.guest }}<div>{{ . }}</div>{{ end }}
+                  <div>{{ if $episodeNum }}Episode {{ $episodeNum }} | {{ end }}{{ .Date.Format "January 2, 2006" }}{{ with .Params.duration }} | {{ . }}{{ end }}</div>
+                </div>
+                <a href="{{ .RelPermalink }}" class="episode-cta">Listen Now</a>
+              </div>
+            </article>
           {{ end }}
-          <div class="card-content">
-            {{ with .Params.category }}
-              <span class="category-tag">{{ . }}</span>
-            {{ end }}
-            <h3 class="card-title">{{ .Title }}</h3>
-            <p class="card-meta">
-              {{ with .Params.guest }}{{ . }} | {{ end }}
-              {{ with .Params.duration }}{{ . }}{{ end }}
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Blog Posts Section -->
+    {{ $featuredPosts := where (where .Site.RegularPages "Type" "blog") ".Params.featured" true | first 2 }}
+    {{ if $featuredPosts }}
+    <section class="section blog-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Blog Posts</h2>
+          <a href="{{ "/blog" | relURL }}" class="view-all-link">View All →</a>
+        </div>
+
+        <div class="blog-grid">
+          {{ range $featuredPosts }}
+            <article class="blog-card">
+              {{ with .Params.category }}
+                <span class="blog-category">{{ . }}</span>
+              {{ end }}
+              <h3 class="blog-title">{{ .Title }}</h3>
+              <p class="blog-meta">
+                {{ with .Params.author }}{{ . }} | {{ end }}
+                {{ .Date.Format "January 2, 2006" }}
+              </p>
+              <p class="blog-description">{{ with .Params.description }}{{ . | truncate 160 }}{{ else }}{{ $.Summary | truncate 160 }}{{ end }}</p>
+              <a href="{{ .RelPermalink }}" class="episode-cta">Read More</a>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    {{ end }}
+
+    <!-- About Section -->
+    <section class="section about-section">
+      <div class="art-deco-pattern"></div>
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2>About the <span>Show</span></h2>
+            <p>
+              Cybersecurity is a diverse and fast-changing field. Reading and training are good,
+              but there's nothing like hearing what's really happening from the people who are doing it.
             </p>
-            <p class="card-meta" style="font-size: 0.75rem;">
-              {{ if $episodeNum }}Episode {{ $episodeNum }} | {{ end }}{{ .Date.Format "January 2, 2006" }}
+            <p>
+              We created the Security Cocktail Hour Podcast to bring you those conversations with practitioners
+              who share their journeys, insights, and lessons learned beyond the headlines.
             </p>
-            <p class="card-description">{{ with .Params.description }}{{ . | truncate 120 }}{{ else }}{{ $.Summary | truncate 120 }}{{ end }}</p>
-            <a href="{{ .RelPermalink }}" class="btn btn-primary">Listen Now</a>
+            <p>
+              Whether you're building your security career, leading a team, or working alongside security pros,
+              join us for candid conversations with professionals across the field.
+            </p>
           </div>
-        </article>
-      {{ end }}
-    </div>
-    <div style="text-align: center; margin-top: 2rem;">
-      <a href="{{ "/episodes" | relURL }}" class="btn btn-secondary">View All Episodes</a>
-    </div>
-  </div>
-</section>
 
-<!-- Featured Blog Posts Section -->
-{{ $featuredPosts := where (where .Site.RegularPages "Type" "blog") ".Params.featured" true | first 2 }}
-{{ if $featuredPosts }}
-<section class="section" style="background: #F5F5F5;">
-  <div class="container">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
-      <h2 style="margin: 0;">Featured Blog Posts</h2>
-      <a href="{{ "/blog" | relURL }}" style="color: #436098; font-weight: 600; text-decoration: none;">View All →</a>
-    </div>
-    <div class="grid grid-2">
-      {{ range $featuredPosts }}
-        <article class="card">
-          <div class="card-content">
-            {{ with .Params.category }}
-              <span class="category-tag">{{ . }}</span>
-            {{ end }}
-            <h3 class="card-title">{{ .Title }}</h3>
-            <p class="card-meta">
-              {{ with .Params.author }}{{ . }} | {{ end }}
-              {{ .Date.Format "January 2, 2006" }}
+          <div class="hosts-info">
+            <h3>Hosted by</h3>
+            <p style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--white);">
+              Joe Patti &amp; Adam Roth
             </p>
-            <p class="card-description">{{ with .Params.description }}{{ . | truncate 120 }}{{ else }}{{ $.Summary | truncate 120 }}{{ end }}</p>
-            <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
+            <p>
+              Hosts Joe Patti and Adam Roth have spent their careers in cybersecurity navigating everything
+              from SOC operations to executive leadership. Now they're sharing the lessons they've learned
+              along the way—and bringing on guests to share theirs.
+            </p>
           </div>
-        </article>
-      {{ end }}
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter-section">
+      <div class="container">
+        <h2>Join Our Newsletter</h2>
+        <p>Get exclusive insights, show news and more delivered to your inbox.</p>
+
+        <form action="https://securitycocktailhour.us4.list-manage.com/subscribe/post?u=5a12cbfb41bc7e9e08b7af3c6&amp;id=2eddec8bf9&amp;f_id=0098d0edf0" method="POST" target="_blank" class="newsletter-form">
+          <input type="email" name="EMAIL" class="newsletter-input" placeholder="Your email address" required>
+          <!-- Bot protection honeypot -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_5a12cbfb41bc7e9e08b7af3c6_2eddec8bf9" tabindex="-1" value="">
+          </div>
+          <button type="submit" name="subscribe" class="btn btn-primary newsletter-btn">Subscribe</button>
+        </form>
+        <p style="font-size: 0.875rem; margin-top: 1.5rem; opacity: 0.8;">
+          We respect your privacy. Unsubscribe at any time.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-consent" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #192A56; color: white; padding: 1.5rem; z-index: 9999; box-shadow: 0 -2px 10px rgba(0,0,0,0.2);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 300px;">
+        <p style="margin: 0; font-size: 0.875rem;">
+          We use cookies to analyze website traffic and optimize your experience. By accepting, you consent to our use of cookies.
+          <a href="{{ "/privacy" | relURL }}" style="color: #81C9E8; text-decoration: underline;">Learn more</a>
+        </p>
+      </div>
+      <div style="display: flex; gap: 1rem;">
+        <button onclick="acceptCookies()" style="padding: 0.5rem 1.5rem; background: #CE1F2C; color: white; border: none; border-radius: 4px; font-weight: 600; cursor: pointer;">
+          Accept
+        </button>
+        <button onclick="declineCookies()" style="padding: 0.5rem 1.5rem; background: transparent; color: white; border: 2px solid white; border-radius: 4px; font-weight: 600; cursor: pointer;">
+          Decline
+        </button>
+      </div>
     </div>
   </div>
-</section>
-{{ end }}
 
-<!-- About Section -->
-<section class="section">
-  <div class="container">
-    <div class="grid grid-2" style="align-items: center; gap: 3rem;">
-      <div>
-        <h2>About the Show</h2>
-        <p>
-          Cybersecurity is a diverse and fast-changing field. Reading and training are good,
-          but there's nothing like hearing what's really happening from the people who are doing it.
-          We created the Security Cocktail Hour Podcast to bring you those conversations with practitioners
-          who share their journeys, insights, and lessons learned beyond the headlines.
-        </p>
-        <p>
-          Whether you're building your security career, leading a team, or working alongside security pros,
-          join us for candid conversations with pros across the field.
-        </p>
-        <a href="{{ "/about" | relURL }}" class="btn btn-secondary">Learn More</a>
-      </div>
-      <div style="text-align: center;">
-        <p style="font-weight: 600; margin-bottom: 1rem;">Hosted by</p>
-        <p><strong>Joe Patti</strong> &amp; <strong>Adam Roth</strong></p>
-        <p style="font-size: 0.875rem; color: rgba(45, 45, 45, 0.7);">
-          Hosts Joe Patti and Adam Roth have spent their careers in cybersecurity navigating everything from SOC operations to executive leadership. Now they're sharing the lessons they've learned along the way—and bringing on guests to share theirs.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+  <script>
+    // Mobile menu toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const siteNav = document.querySelector('.site-nav');
 
-<!-- Email Signup CTA -->
-<section class="section" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white;">
-  <div class="container" style="max-width: 600px; text-align: center;">
-    <h2 style="color: white;">Join Our Newsletter</h2>
-    <p style="margin-bottom: 2rem;">
-      Get exclusive insights, show news and more delivered to your inbox.
-    </p>
-    <form action="https://securitycocktailhour.us4.list-manage.com/subscribe/post?u=5a12cbfb41bc7e9e08b7af3c6&amp;id=2eddec8bf9&amp;f_id=0098d0edf0" method="POST" target="_blank" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-      <input
-        type="email"
-        name="EMAIL"
-        placeholder="Your email address"
-        required
-        style="flex: 1; min-width: 250px;"
-      >
-      <!-- Bot protection honeypot -->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true">
-        <input type="text" name="b_5a12cbfb41bc7e9e08b7af3c6_2eddec8bf9" tabindex="-1" value="">
-      </div>
-      <button type="submit" name="subscribe" class="btn btn-primary" style="background: white; color: #436098;">
-        Subscribe
-      </button>
-    </form>
-    <p style="font-size: 0.75rem; margin-top: 1rem; opacity: 0.8;">
-      We respect your privacy. Unsubscribe at any time.
-    </p>
-  </div>
-</section>
+      if (menuToggle && siteNav) {
+        menuToggle.addEventListener('click', function() {
+          siteNav.classList.toggle('active');
+          menuToggle.classList.toggle('active');
+          const isExpanded = siteNav.classList.contains('active');
+          menuToggle.setAttribute('aria-expanded', isExpanded);
+        });
 
-{{ end }}
+        document.addEventListener('click', function(event) {
+          if (!event.target.closest('.site-header')) {
+            siteNav.classList.remove('active');
+            menuToggle.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        const navLinks = siteNav.querySelectorAll('a');
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            siteNav.classList.remove('active');
+            menuToggle.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    });
+
+    // Cookie consent functionality
+    function setCookie(name, value, days) {
+      const d = new Date();
+      d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+      document.cookie = name + "=" + value + ";expires=" + d.toUTCString() + ";path=/";
+    }
+
+    function getCookie(name) {
+      const nameEQ = name + "=";
+      const ca = document.cookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+
+    function acceptCookies() {
+      setCookie('cookie-consent', 'accepted', 365);
+      document.getElementById('cookie-consent').style.display = 'none';
+      window['ga-disable-G-8QL8F8JKNR'] = false;
+    }
+
+    function declineCookies() {
+      setCookie('cookie-consent', 'declined', 365);
+      document.getElementById('cookie-consent').style.display = 'none';
+      window['ga-disable-G-8QL8F8JKNR'] = true;
+    }
+
+    window.addEventListener('load', function() {
+      const consent = getCookie('cookie-consent');
+      if (!consent) {
+        document.getElementById('cookie-consent').style.display = 'block';
+      } else if (consent === 'declined') {
+        window['ga-disable-G-8QL8F8JKNR'] = true;
+      }
+    });
+  </script>
+</body>
+</html>

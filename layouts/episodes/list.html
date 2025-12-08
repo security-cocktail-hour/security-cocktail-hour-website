@@ -2,37 +2,57 @@
 
 {{ define "main" }}
 
-<!-- Page Header -->
-<section class="section" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); color: white; padding: 3rem 0;">
+<!-- Episodes Hero - Compact -->
+<section class="episodes-hero">
+  <div class="art-deco-pattern"></div>
+  <div class="corner-accent corner-accent-tl"></div>
+  <div class="corner-accent corner-accent-tr"></div>
+
   <div class="container">
-    <h1 style="color: white;">All Episodes</h1>
-    <p style="font-size: 1.125rem; max-width: 600px;">
-      Browse our complete archive of conversations with cybersecurity practitioners
-      covering the full breadth of the field.
-    </p>
+    <div class="hero-content">
+      <h1 class="hero-title">All <span>Episodes</span></h1>
+      <p class="hero-subtitle">
+        Browse our complete archive of conversations with cybersecurity practitioners
+        covering the full breadth of the field.
+      </p>
+
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-number">{{ len .Pages }}</div>
+          <div class="stat-label">Episodes</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Guests</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">60hrs</div>
+          <div class="stat-label">Content</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- Search and Filters -->
-<div style="background: white; border-bottom: 1px solid #E5E5E5; padding: 1rem 0;">
+<!-- Controls Section -->
+<section class="controls-section">
   <div class="container">
-    <div style="display: flex; gap: 0.75rem; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-      <div style="position: relative; flex: 1; min-width: 200px; max-width: 400px;">
-        <svg style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 14px; height: 14px; color: #8D99AE; pointer-events: none;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div class="controls-grid">
+      <div class="search-container">
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
         </svg>
         <input
           type="search"
           id="episode-search"
-          placeholder="Search episodes..."
-          style="width: 100%; padding: 6px 10px 6px 32px; font-size: 0.8125rem; border: none; border-bottom: 1px solid #E5E5E5; background: transparent; color: #192A56; transition: border-color 0.2s;"
-          onfocus="this.style.borderBottomColor='#436098'"
-          onblur="this.style.borderBottomColor='#E5E5E5'"
+          class="search-input"
+          placeholder="Search episodes, guests, topics..."
         >
       </div>
-      <div style="display: flex; gap: 0.75rem; align-items: center;">
-        <select id="category-filter" style="padding: 6px 24px 6px 10px; font-size: 0.8125rem; border: none; border-bottom: 1px solid #E5E5E5; background: transparent; color: #192A56; cursor: pointer; appearance: none; background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width=%2710%27 height=%276%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M0 0l5 6 5-6z%27 fill=%27%238D99AE%27/%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 6px center;">
-          <option value="">Topic</option>
+
+      <div class="select-group">
+        <select id="category-filter" class="custom-select">
+          <option value="">All Topics</option>
           {{ $categories := slice }}
           {{ range .Pages }}
             {{ with .Params.category }}
@@ -43,19 +63,20 @@
             <option value="{{ . }}">{{ . }}</option>
           {{ end }}
         </select>
-        <select id="sort-filter" style="padding: 6px 24px 6px 10px; font-size: 0.8125rem; border: none; border-bottom: 1px solid #E5E5E5; background: transparent; color: #192A56; cursor: pointer; appearance: none; background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width=%2710%27 height=%276%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M0 0l5 6 5-6z%27 fill=%27%238D99AE%27/%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 6px center;">
+
+        <select id="sort-filter" class="custom-select">
           <option value="newest">Newest</option>
           <option value="oldest">Oldest</option>
         </select>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- Episodes Grid -->
-<section class="section">
+<section class="episodes-section">
   <div class="container">
-    <div class="grid grid-3" id="episodes-grid">
+    <div class="episodes-grid" id="episodes-grid">
       {{ range .Pages }}
         {{ $episodeNum := "" }}
         {{ $filename := .File.BaseFileName }}
@@ -64,28 +85,55 @@
           {{ $episodeNum = index $parts 0 }}
         {{ end }}
 
-        <article class="card episode-card" data-title="{{ .Title | lower }}" data-guest="{{ with .Params.guest }}{{ . | lower }}{{ end }}" data-category="{{ with .Params.category }}{{ . }}{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}" data-episode="{{ $episodeNum }}">
-          {{ with .Params.image }}
-            <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-image" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <div class="card-image" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%); display: none;"></div>
-          {{ else }}
-            <div class="card-image" style="background: linear-gradient(135deg, #436098 0%, #6A8CC7 100%);"></div>
-          {{ end }}
+        <article class="episode-card" data-title="{{ .Title | lower }}" data-guest="{{ with .Params.guest }}{{ . | lower }}{{ end }}" data-category="{{ with .Params.category }}{{ . }}{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}" data-episode="{{ $episodeNum }}">
 
-          <div class="card-content">
-            {{ with .Params.category }}
-              <span class="category-tag">{{ . }}</span>
+          <!-- Episode Image with 16:9 ratio -->
+          <div class="episode-image-container">
+            {{ with .Params.image }}
+              <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="episode-image" loading="lazy">
+            {{ else }}
+              <div class="episode-image"></div>
             {{ end }}
-            <h3 class="card-title">{{ .Title }}</h3>
-            <p class="card-meta">
-              {{ with .Params.guest }}{{ . }} | {{ end }}
-              {{ with .Params.duration }}{{ . }}{{ end }}
+          </div>
+
+          <!-- Episode Content -->
+          <div class="episode-content">
+            {{ with .Params.category }}
+              <span class="episode-category">{{ . }}</span>
+            {{ end }}
+
+            <h3 class="episode-title">{{ .Title }}</h3>
+
+            <div class="episode-meta">
+              <div>{{ with .Params.guest }}{{ . }}{{ with $.Params.duration }} | {{ . }}{{ end }}{{ else }}{{ with .Params.duration }}{{ . }}{{ end }}{{ end }}</div>
+              <div>{{ if $episodeNum }}Episode {{ $episodeNum }} | {{ end }}{{ .Date.Format "January 2, 2006" }}</div>
+            </div>
+
+            <p class="episode-description">
+              {{ with .Params.description }}{{ . | truncate 150 }}{{ else }}{{ $.Summary | truncate 150 }}{{ end }}
             </p>
-            <p class="card-meta" style="font-size: 0.75rem;">
-              {{ if $episodeNum }}Episode {{ $episodeNum }} | {{ end }}{{ .Date.Format "January 2, 2006" }}
-            </p>
-            <p class="card-description">{{ with .Params.description }}{{ . | truncate 120 }}{{ else }}{{ $.Summary | truncate 120 }}{{ end }}</p>
-            <a href="{{ .RelPermalink }}" class="btn btn-primary">Listen Now</a>
+
+            <!-- Episode Footer -->
+            <div class="episode-footer">
+              {{ if or .Params.platforms.youtube .Params.platforms.spotify .Params.platforms.apple .Params.platforms.amazon }}
+              <div class="episode-platforms">
+                {{ with .Params.platforms.youtube }}
+                  <a href="{{ . }}" class="platform-btn" target="_blank" rel="noopener">YouTube</a>
+                {{ end }}
+                {{ with .Params.platforms.spotify }}
+                  <a href="{{ . }}" class="platform-btn" target="_blank" rel="noopener">Spotify</a>
+                {{ end }}
+                {{ with .Params.platforms.apple }}
+                  <a href="{{ . }}" class="platform-btn" target="_blank" rel="noopener">Apple</a>
+                {{ end }}
+                {{ with .Params.platforms.amazon }}
+                  <a href="{{ . }}" class="platform-btn" target="_blank" rel="noopener">Amazon</a>
+                {{ end }}
+              </div>
+              {{ end }}
+
+              <a href="{{ .RelPermalink }}" class="listen-btn">Listen Now</a>
+            </div>
           </div>
         </article>
       {{ end }}
@@ -99,74 +147,67 @@
   </div>
 </section>
 
-{{ end }}
-
-{{ define "scripts" }}
 <script>
-// Simple client-side search and filter
-const searchInput = document.getElementById('episode-search');
-const categoryFilter = document.getElementById('category-filter');
-const sortFilter = document.getElementById('sort-filter');
-const episodesGrid = document.getElementById('episodes-grid');
-const noResults = document.getElementById('no-results');
-const episodes = Array.from(document.querySelectorAll('.episode-card'));
+// Episode search and filter functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('episode-search');
+  const categoryFilter = document.getElementById('category-filter');
+  const sortFilter = document.getElementById('sort-filter');
+  const episodesGrid = document.getElementById('episodes-grid');
+  const noResults = document.getElementById('no-results');
 
-function filterEpisodes() {
-  const searchTerm = searchInput.value.toLowerCase();
-  const selectedCategory = categoryFilter.value;
-  let visibleCount = 0;
+  function filterEpisodes() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const selectedCategory = categoryFilter.value;
+    const sortOrder = sortFilter.value;
 
-  episodes.forEach(episode => {
-    const title = episode.dataset.title;
-    const guest = episode.dataset.guest;
-    const category = episode.dataset.category;
-    const episodeNum = episode.dataset.episode;
+    const episodes = Array.from(episodesGrid.querySelectorAll('.episode-card'));
+    let visibleCount = 0;
 
-    const matchesSearch = !searchTerm ||
-      title.includes(searchTerm) ||
-      guest.includes(searchTerm) ||
-      episodeNum.includes(searchTerm);
-    const matchesCategory = !selectedCategory || category === selectedCategory;
+    episodes.forEach(episode => {
+      const title = episode.dataset.title || '';
+      const guest = episode.dataset.guest || '';
+      const category = episode.dataset.category || '';
+      const episodeNum = episode.dataset.episode || '';
 
-    if (matchesSearch && matchesCategory) {
-      episode.style.display = '';
-      visibleCount++;
-    } else {
-      episode.style.display = 'none';
-    }
-  });
+      const matchesSearch = title.includes(searchTerm) ||
+                           guest.includes(searchTerm) ||
+                           episodeNum.includes(searchTerm);
+      const matchesCategory = !selectedCategory || category === selectedCategory;
 
-  // Show/hide no results message
-  if (visibleCount === 0) {
-    episodesGrid.style.display = 'none';
-    noResults.style.display = 'block';
-  } else {
-    episodesGrid.style.display = 'grid';
-    noResults.style.display = 'none';
+      if (matchesSearch && matchesCategory) {
+        episode.style.display = '';
+        visibleCount++;
+      } else {
+        episode.style.display = 'none';
+      }
+    });
+
+    // Sort episodes
+    const visibleEpisodes = episodes.filter(ep => ep.style.display !== 'none');
+    visibleEpisodes.sort((a, b) => {
+      const dateA = new Date(a.dataset.date);
+      const dateB = new Date(b.dataset.date);
+      return sortOrder === 'newest' ? dateB - dateA : dateA - dateB;
+    });
+
+    visibleEpisodes.forEach(ep => episodesGrid.appendChild(ep));
+
+    // Show/hide no results message
+    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
   }
-}
 
-function sortEpisodes() {
-  const sortValue = sortFilter.value;
-  const sortedEpisodes = [...episodes].sort((a, b) => {
-    const dateA = new Date(a.dataset.date);
-    const dateB = new Date(b.dataset.date);
-    return sortValue === 'newest' ? dateB - dateA : dateA - dateB;
-  });
+  searchInput.addEventListener('input', filterEpisodes);
+  categoryFilter.addEventListener('change', filterEpisodes);
+  sortFilter.addEventListener('change', filterEpisodes);
 
-  sortedEpisodes.forEach(episode => episodesGrid.appendChild(episode));
-}
-
-function resetFilters() {
-  searchInput.value = '';
-  categoryFilter.value = '';
-  sortFilter.value = 'newest';
-  filterEpisodes();
-  sortEpisodes();
-}
-
-searchInput.addEventListener('input', filterEpisodes);
-categoryFilter.addEventListener('change', filterEpisodes);
-sortFilter.addEventListener('change', sortEpisodes);
+  window.resetFilters = function() {
+    searchInput.value = '';
+    categoryFilter.value = '';
+    sortFilter.value = 'newest';
+    filterEpisodes();
+  };
+});
 </script>
+
 {{ end }}
