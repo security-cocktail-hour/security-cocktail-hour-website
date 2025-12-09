@@ -1,9 +1,9 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 8, 2025 (Episode 65 + Production Deployment Ready)
+**Last Updated**: December 9, 2025 (Design Specifications Updated to v1.3)
 **Hugo Version**: v0.151.0
-**Session Status**: Episode 65 + Cache-Busting Fix - Ready for Production Deployment
-**Branch**: main (merged from hero-redesign)
+**Session Status**: Episode 65 + Cache-Busting Fix - DEPLOYED TO PRODUCTION
+**Branch**: main
 
 ---
 
@@ -18,11 +18,98 @@
 
 ---
 
-## Recent Updates (December 8, 2025 & December 5, 2025 & December 3, 2025 & December 2, 2025 & November 28-29, 2025)
+## Recent Updates (December 9, 2025 & December 8, 2025 & December 5, 2025 & December 3, 2025 & December 2, 2025 & November 28-29, 2025)
+
+### December 9, 2025 - Design Specification Documentation Updated to v1.3
+
+**✅ CURRENT STATUS: DESIGN DOCUMENTATION SYNCHRONIZED WITH ART DECO REDESIGN**
+
+**Documentation Updates**: All design specifications updated to reflect the Art Deco redesign work completed in December 2025.
+
+**Files Created**:
+
+1. **docs/design_specs/sch_design_spec_v1_3.md** (NEW - 2333 lines)
+   - Comprehensive master design system specification documenting Art Deco redesign
+   - Complete color palette section (Art Deco: Red #D74444, Navy #2B4D7D, Teal #4A9B9B, Cream #F5F1E8)
+   - Extended palette documented (Red Dark, Navy Light/Dark, Teal Light, Cream Dark, Silver)
+   - Complete typography section (Google Fonts: Oswald 600/700, PT Serif 400/700, Bebas Neue 400)
+   - Typography scale with responsive clamp() values
+   - Detailed Art Deco hero section design specifications
+   - Art deco pattern CSS implementation
+   - Episode badge positioning fix documentation (floating effect)
+   - "Recent Implementation Fixes" section documenting December 8, 2025 fixes:
+     - Newsletter signup box fix (episode single pages)
+     - About section text visibility fix
+     - Episode card images fix
+     - CSS cache-busting implementation
+     - Homepage recent episodes count reduction
+   - All sections from v1.2 appended and updated with Art Deco colors
+
+**Files Updated**:
+
+2. **docs/design_specs/blog_page_spec.md** (v1.1 → v1.2)
+   - Updated header: version to 1.2, date to December 9, 2025
+   - Updated parent design system reference to v1.3
+   - Section 8.1 Colors: Complete Art Deco palette with gradient documentation
+   - Section 8.2 Typography: Complete Google Fonts documentation
+   - Added version history section
+
+3. **docs/design_specs/partnership_page_spec.md** (v1.0 → v1.1)
+   - Updated header: version to 1.1, date to December 9, 2025
+   - Added parent design system reference to v1.3
+   - Section 8 Color Reference: Complete Art Deco palette with gradients
+   - Added "Partnership Page Usage" subsection documenting color application
+   - Section 9 Typography Reference: Complete Google Fonts documentation with usage examples
+   - Section 10: Updated reference from v1.2 to v1.3
+   - Added version history section
+
+4. **docs/README.md** (Documentation Index)
+   - Updated "Last Updated" date to December 9, 2025
+   - Updated master design system reference: v1.2 → v1.3 (line 55)
+   - Added Art Deco details to design system description
+   - Updated file organization tree with version numbers (line 138)
+   - Updated quick reference section (line 190, 194)
+   - Added deprecation warnings for old color palette files (lines 91-92)
+
+5. **docs/color palette 2025-10-08.md** (DEPRECATED)
+   - Added prominent deprecation notice at top of file
+   - Documented deprecation date: December 9, 2025
+   - Added reference to current Art Deco palette in v1.3
+   - Listed current Art Deco colors for quick reference
+   - Preserved original content as "Historical Reference: Original Color Palette (October 2025)"
+
+**Version Summary**:
+- Master Design Spec: v1.2 → **v1.3** (Art Deco)
+- Blog Page Spec: v1.1 → **v1.2**
+- Partnership Page Spec: v1.0 → **v1.1**
+- Color Palette (October 2025): **DEPRECATED** (replaced by Art Deco palette in v1.3)
+
+**Git Commit**:
+- Commit: 29aa6c4 - "Update design specifications to v1.3 documenting Art Deco redesign"
+- Files changed: 5 files, 2487 insertions(+), 63 deletions(-)
+- Status: ✅ Committed and pushed to GitHub
+
+**Documentation Status**:
+- ✅ All design specifications synchronized with Art Deco implementation
+- ✅ Color palette fully documented (primary + extended colors)
+- ✅ Typography system fully documented (3 Google Fonts with weights)
+- ✅ All gradient patterns documented (135deg diagonal)
+- ✅ Recent fixes documented in v1.3
+- ✅ Old color palette deprecated with migration path
+- ✅ All cross-references updated to v1.3
+
+**Purpose**: Ensures design specifications accurately reflect the Art Deco redesign implemented in December 2025, providing authoritative reference for:
+- Current color palette and usage
+- Typography system and scales
+- Component styling standards
+- Recent implementation fixes
+- Design decision history
+
+---
 
 ### December 8, 2025 (Later) - Episode 65 Published + Homepage/Episode Page Fixes
 
-**✅ CURRENT STATUS: EPISODE 65 LIVE ON DEV + MULTIPLE PAGE FIXES COMPLETE**
+**✅ CURRENT STATUS: EPISODE 65 DEPLOYED TO PRODUCTION + MULTIPLE PAGE FIXES COMPLETE**
 
 **Episode 65: "Job Scams Are Getting Worse | Four of the Most Dangerous"**
 - **Published**: December 8, 2025
@@ -112,26 +199,21 @@
 - **Location**: Project root directory
 
 **Status**:
-- ✅ Episode 65 live on dev server (http://localhost:1313/)
+- ✅ Episode 65 DEPLOYED TO PRODUCTION (https://securitycocktailhour.com/)
 - ✅ Newsletter box rendering correctly on episode pages (red background, white text)
 - ✅ About section text readable on homepage (navy background)
 - ✅ Episode cards displaying correctly on homepage (full images, no cropping)
 - ✅ Homepage shows 4 episodes in Recent Episodes section
 - ✅ Cache-busting implemented (browsers will fetch new CSS on each deployment)
 - ✅ All changes committed to `main` branch and pushed to GitHub
-- ✅ Production package built and ready for GoDaddy deployment
+- ✅ Production package deployed to GoDaddy
 - ✅ Cache-busting fix verified (works in both regular and incognito browsers after hard refresh)
+- ✅ Production site live with all fixes
 
-**Deployment Instructions**:
-1. Download `production-deployment-20251208-143839.zip` from project root
-2. Login to GoDaddy cPanel File Manager
-3. Navigate to `public_html/`
-4. (Optional) Backup existing files
-5. Delete old files in `public_html/`
-6. Upload and extract the ZIP file
-7. Verify `.htaccess` permissions are 644
-8. Test site at https://securitycocktailhour.com/
-9. Hard refresh browser if needed (`Cmd + Shift + R` or `Ctrl + Shift + R`)
+**Production Package Deployed**:
+- File: `production-deployment-20251208-143839.zip` (7.9MB)
+- Deployed: December 8, 2025
+- Status: ✅ LIVE on https://securitycocktailhour.com/
 
 ---
 
@@ -639,11 +721,11 @@
 
 ## Production Deployment
 
-**Production Deployment File**: `production-deployment-20251206-154540.zip` (7.7MB)
+**Production Deployment File**: `production-deployment-20251208-143839.zip` (7.9MB)
 - Location: Project root directory
-- Contents: All 112 pages + newsletter signup page + optimized images + SEO fixes
+- Contents: All 113 pages (Episode 65) + newsletter signup page + optimized images + SEO fixes + cache-busting
 - Status: ✅ DEPLOYED TO PRODUCTION
-- Last Updated: December 6, 2025
+- Last Updated: December 8, 2025
 
 **Deployment Process**:
 1. Download `production-deployment.zip`
@@ -703,8 +785,9 @@ magick input.jpg -quality 85 -strip output.jpg
 - `GODADDY-DEPLOYMENT-INSTRUCTIONS.md` - Production deployment guide
 
 **Design Documentation:**
-- `docs/design_specs/sch_design_spec_v1_2.md` - Master design specification
-- `docs/design_specs/blog_page_spec.md` - Blog design specification
+- `docs/design_specs/sch_design_spec_v1_3.md` - Master design specification (Art Deco - December 2025)
+- `docs/design_specs/blog_page_spec.md` - Blog design specification (v1.2)
+- `docs/design_specs/partnership_page_spec.md` - Partnership page specification (v1.1)
 
 **Scripts:**
 - `scripts/audit_title_tags.py` - Title tag audit tool
@@ -771,17 +854,18 @@ magick input.jpg -quality 85 -strip output.jpg
 - ⏳ Responsive testing pending
 - ⏳ Staging/production deployment pending (awaiting user approval)
 
-**Production Status**: ✅ LIVE (Deployed December 6, 2025)
+**Production Status**: ✅ LIVE (Deployed December 8, 2025)
 - Site: https://securitycocktailhour.com/
 - Newsletter page live at https://securitycocktailhour.com/newsletter/ (accessible from footer)
-- Episode 64 live and accessible
+- Episode 65 live and accessible (Job Scams - December 8, 2025)
 - Episode numbers displayed on all episode cards (Episodes page and Homepage)
 - Search functionality enhanced with episode number support
 - Collapsible transcript accordion working across all episode pages
 - Manual related episodes feature active
 - All SEO optimizations active
+- Cache-busting implemented (CSS updates load properly)
 - Submitted to search engines (Google & Bing)
-- 112 pages live (64 episodes + 3 blog posts + newsletter + main pages)
+- 113 pages live (65 episodes + 3 blog posts + newsletter + main pages)
 
 ---
 
