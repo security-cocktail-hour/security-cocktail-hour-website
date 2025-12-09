@@ -1,10 +1,12 @@
 # Partnership Page Design Specification
 ## Security Cocktail Hour Website
 
-**Date:** November 8, 2025  
-**Status:** Implemented & Deployed  
-**Page Type:** Static Marketing Page  
-**URL:** `/partnership` or `/sponsorship`  
+**Version:** 1.1
+**Date:** December 9, 2025
+**Status:** Implemented & Deployed (Art Deco Design Update)
+**Page Type:** Static Marketing Page
+**URL:** `/partnership` or `/sponsorship`
+**Parent Design System:** [sch_design_spec_v1_3.md](./sch_design_spec_v1_3.md)  
 
 ---
 
@@ -631,48 +633,85 @@ Consider adding:
 
 ---
 
-## 8. Color Reference (Production Palette)
+## 8. Color Reference (Art Deco Palette)
+
+**Updated: December 9, 2025** - Aligned with Design Spec v1.3
 
 ```css
-/* Primary Colors */
---color-primary: #192A56           /* Dark Blue - main text, headers */
---color-secondary: #8D99AE         /* Cool Grey - secondary text, borders */
---color-background: #F8F9FA        /* Off-white - page backgrounds */
---color-action: #436098            /* Professional Blue - buttons, CTAs */
---color-accent: #CE1F2C            /* Bright Red - highlights, Listen Now */
+/* Art Deco Primary Colors */
+--red: #D74444                     /* Art Deco Accent - primary CTAs, highlights */
+--red-dark: #A63333                /* Red Dark - hover states */
+--navy: #2B4D7D                    /* Navy - main text, headers, backgrounds */
+--navy-light: #3A5F99              /* Navy Light - lighter accents */
+--navy-dark: #1F3859               /* Navy Dark - darker accents */
+--teal: #4A9B9B                    /* Teal - links, interactive elements */
+--teal-light: #6BB8B8              /* Teal Light - hover states */
+--cream: #F5F1E8                   /* Cream - main background */
+--cream-dark: #E8E0D0              /* Cream Dark - subtle backgrounds */
+--white: #FFFFFF                   /* White - pure white elements */
 
-/* Gradients */
-/* Note: These gradients are now documented in the main Design Spec v1.2 */
-Action Blue Gradient: linear-gradient(135deg, #436098, #6A8CC7)
-Dark Blue Gradient: linear-gradient(135deg, #192A56, #436098)
-Red Gradient: linear-gradient(135deg, #CE1F2C, #B41A26)
+/* Gradients (135deg diagonal) */
+/* Note: These gradients are documented in Design Spec v1.3 */
+Navy Gradient: linear-gradient(135deg, #1F3859, #2B4D7D, #3A5F99)
+Red Gradient: linear-gradient(135deg, #A63333, #D74444)
+Teal Gradient: linear-gradient(135deg, #4A9B9B, #6BB8B8)
 ```
+
+**Partnership Page Usage:**
+- **Hero Section**: Navy gradient background
+- **Featured Partner Card**: Navy to Navy Light gradient header
+- **Episode Sponsor Card**: Red gradient header (premium tier)
+- **Supporter Card**: Navy gradient header (base tier)
+- **Metrics Cards**: Navy gradient backgrounds
+- **CTA Section**: Navy gradient background
+- **Buttons**: Red (primary), Navy (secondary)
 
 ---
 
-## 9. Typography Reference
+## 9. Typography Reference (Art Deco Fonts)
+
+**Updated: December 9, 2025** - Aligned with Design Spec v1.3
+
+Referenced from main design system (Art Deco fonts):
 
 ```css
-/* Font Family (System Fonts) */
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", 
-             Roboto, "Helvetica Neue", Arial, sans-serif;
+/* Google Fonts - Art Deco Typography */
+--font-heading: 'Oswald', sans-serif;        /* Headings, titles */
+--font-body: 'PT Serif', serif;              /* Body text, descriptions */
+--font-ui: 'Bebas Neue', cursive;            /* UI elements, badges */
 
-/* Heading Weights */
-H1, H2: font-weight: 700 (Bold)
-H3: font-weight: 600 (Semi-bold)
+/* Font Weights */
+Oswald: 600 (semi-bold), 700 (bold)
+PT Serif: 400 (regular), 700 (bold)
+Bebas Neue: 400 (regular)
 
-/* Body Text */
-Body: font-weight: 400 (Regular)
-Emphasis: font-weight: 500 (Medium)
-Buttons/Links: font-weight: 600 (Semi-bold)
+/* Typography Scale */
+H1: 2.5rem (desktop), 2rem (mobile) - Oswald Bold (700)
+H2: 2rem (desktop), 1.75rem (mobile) - Oswald Bold (700)
+H3: 1.5rem - Oswald Semi-bold (600)
+Body: 1rem, line-height 1.7 - PT Serif Regular (400)
+Buttons/Links: 1rem, font-weight 600 - Oswald Semi-bold
+
+/* Line Height */
+Headings: 1.2-1.3
+Body Text: 1.7 (serif requires more spacing)
+UI Elements: 1.5
 ```
+
+**Partnership Page Usage:**
+- **Hero Title**: Oswald Bold, 2.5rem (desktop)
+- **Section Headings**: Oswald Bold, 2rem
+- **Card Titles**: Oswald Semi-bold, 1.5rem
+- **Body Text**: PT Serif Regular, 1rem with 1.7 line-height
+- **Buttons**: Oswald Semi-bold, 1rem
+- **Tier Labels**: Bebas Neue Regular (uppercase)
 
 ---
 
 ## 10. Files to Reference
 
 When implementing this page, reference these existing project files:
-- `sch_design_spec_v1_2.md` - Main design system
+- `sch_design_spec_v1_3.md` - Main design system (Art Deco)
 - `sch_website_requirements.md` - Technical requirements
 - Existing navigation component
 - Existing footer component
@@ -687,6 +726,21 @@ When implementing this page, reference these existing project files:
 2. **Metrics Updates:** How will podcast metrics be updated over time?
 3. **Form Integration:** Should there be a contact form on this page, or is link to contact page sufficient?
 4. **A/B Testing:** Any plans to test different CTAs or layouts?
+
+---
+
+## 12. Version History
+
+**Version 1.1** (December 9, 2025)
+- Updated color palette to Art Deco scheme
+- Updated typography to Google Fonts (Oswald, PT Serif, Bebas Neue)
+- Updated parent design system reference to v1.3
+- All color and typography references updated throughout document
+- Added detailed color usage documentation for partnership page
+
+**Version 1.0** (November 8, 2025)
+- Initial specification
+- Original color scheme and system fonts
 
 ---
 

@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Documentation Index
 
-**Last Updated**: November 28, 2025
+**Last Updated**: December 9, 2025
 
 ---
 
@@ -52,9 +52,9 @@
 ## Design Specifications
 
 ### Master Design System
-- **[design_specs/sch_design_spec_v1_2.md](design_specs/sch_design_spec_v1_2.md)** - Complete design system specification
-  - Color palette
-  - Typography
+- **[design_specs/sch_design_spec_v1_3.md](design_specs/sch_design_spec_v1_3.md)** - Complete design system specification (Art Deco)
+  - Art Deco color palette (Red, Navy, Teal, Cream)
+  - Google Fonts typography (Oswald, PT Serif, Bebas Neue)
   - Components library
   - Layout system
   - All page implementations
@@ -88,8 +88,8 @@
 - **[transcript_strategy.md](transcript_strategy.md)** - Strategy for episode transcripts
 
 ### Design Assets
-- **[color palette 2025-10-08.md](color palette 2025-10-08.md)** - Current color palette specification
-- **[color palette 2025-10-08.png](color palette 2025-10-08.png)** - Visual color palette reference
+- **[color palette 2025-10-08.md](color palette 2025-10-08.md)** - ⚠️ DEPRECATED (Historical reference only - see v1.3 design spec for current Art Deco palette)
+- **[color palette 2025-10-08.png](color palette 2025-10-08.png)** - ⚠️ DEPRECATED (Historical reference only)
 
 ---
 
@@ -132,12 +132,12 @@ docs/
 ├── Project Handoff Document.md
 ├── transcript_strategy.md
 ├── web-project-launch-checklist.md
-├── color palette 2025-10-08.md
-├── color palette 2025-10-08.png
+├── color palette 2025-10-08.md (deprecated)
+├── color palette 2025-10-08.png (deprecated)
 ├── design_specs/
-│   ├── sch_design_spec_v1_2.md
-│   ├── blog_page_spec.md
-│   └── partnership_page_spec.md
+│   ├── sch_design_spec_v1_3.md (Art Deco - current)
+│   ├── blog_page_spec.md (v1.2)
+│   └── partnership_page_spec.md (v1.1)
 └── reports/
     ├── README.md
     ├── meta-description-audit-2025-11-27.md
@@ -187,13 +187,13 @@ Root directory:
 2. **Writing Blog Posts**: docs/BLOG-DOCUMENTATION.md
 3. **SEO Standards**: docs/SEO-META-DESCRIPTION-STANDARDS.md & docs/SEO-TITLE-TAG-STANDARDS.md
 4. **Current Status**: SESSION_CONTEXT.md (root)
-5. **Design System**: docs/design_specs/sch_design_spec_v1_2.md
+5. **Design System**: docs/design_specs/sch_design_spec_v1_3.md
 
 ### For Developers
 
-1. **Master Design Spec**: docs/design_specs/sch_design_spec_v1_2.md
-2. **Blog Implementation**: docs/design_specs/blog_page_spec.md
-3. **Partnership Page**: docs/design_specs/partnership_page_spec.md
+1. **Master Design Spec**: docs/design_specs/sch_design_spec_v1_3.md
+2. **Blog Implementation**: docs/design_specs/blog_page_spec.md (v1.2)
+3. **Partnership Page**: docs/design_specs/partnership_page_spec.md (v1.1)
 4. **Requirements**: docs/sch_website_requirements.md
 
 ### For Content Creators

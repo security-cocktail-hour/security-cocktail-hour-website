@@ -1,9 +1,9 @@
 # Blog Pages Design Specification
 
-**Version**: 1.1
-**Date**: November 27, 2025
-**Status**: Implemented with Full SEO
-**Parent Design System**: [sch_design_spec_v1_2.md](./sch_design_spec_v1_2.md)
+**Version**: 1.2
+**Date**: December 9, 2025
+**Status**: Implemented with Full SEO & Art Deco Colors
+**Parent Design System**: [sch_design_spec_v1_3.md](./sch_design_spec_v1_3.md)
 
 ---
 
@@ -721,25 +721,34 @@ archetypes/
 ## 8. Design System References
 
 ### 8.1 Colors
-All colors reference the main design system (`sch_design_spec_v1_2.md`):
+All colors reference the main design system (`sch_design_spec_v1_3.md` - Art Deco palette):
 
-- **Primary (Dark Blue)**: #192A56 - Headings, body text
-- **Secondary (Cool Grey)**: #8D99AE - Tags, meta text, borders
-- **Background (Off-white)**: #F8F9FA - Page backgrounds
-- **Action (Professional Blue)**: #436098 - Buttons, CTAs, gradients
-- **Accent (Bright Red)**: #CE1F2C - Not used in blog (reserved for "Listen Now")
+- **Red (Art Deco Accent)**: #D74444 - Primary CTAs, "Read More" buttons, category badges
+- **Navy (Primary Dark)**: #2B4D7D - Headings, body text, header/footer backgrounds
+- **Teal (Accent/Interactive)**: #4A9B9B - Links, tag colors, interactive elements
+- **Cream (Base/Background)**: #F5F1E8 - Main page background, subtle contrast
+- **White (Pure)**: #FFFFFF - Card backgrounds, text on dark backgrounds
+
+**Extended Palette**:
+- **Red Dark**: #A63333 - Red hover states
+- **Navy Light**: #3A5F99 - Lighter navy accents
+- **Navy Dark**: #1F3859 - Darker navy accents
+- **Teal Light**: #6BB8B8 - Lighter teal accents, hover states
+- **Cream Dark**: #E8E0D0 - Darker cream accents
 
 **Gradient Usage**:
-- Headers: `linear-gradient(135deg, #436098 0%, #6A8CC7 100%)`
-- Newsletter cards: Same gradient
+- Blog Page Header: `linear-gradient(135deg, #2B4D7D 0%, #3A5F99 100%)` [Navy gradient]
+- Newsletter Sidebar: `linear-gradient(135deg, #A63333 0%, #D74444 100%)` [Red gradient]
+- Newsletter cards: Same red gradient
 
 ### 8.2 Typography
-Referenced from main design system:
+Referenced from main design system (Art Deco fonts):
 
-- **Font Family**: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif
+- **Headings**: 'Oswald', sans-serif (weights: 600 semi-bold, 700 bold)
+- **Body Text**: 'PT Serif', serif (weights: 400 regular, 700 bold)
+- **UI Elements**: 'Bebas Neue', cursive (weight: 400 regular)
 - **Base Font Size**: 16px (1rem)
-- **Line Height**: 1.6 (body), 1.7 (article content)
-- **Headings**: Uses design system heading sizes and weights
+- **Line Height**: 1.6 (body), 1.7 (article content, serif requires more)
 
 ### 8.3 Components
 All components inherit from main design system:
@@ -992,6 +1001,15 @@ Uses design system spacing scale:
 ---
 
 ## 13. Version History
+
+**Version 1.2** (December 9, 2025)
+- Updated color palette to Art Deco scheme:
+  - Red (#D74444), Navy (#2B4D7D), Teal (#4A9B9B), Cream (#F5F1E8)
+  - Updated gradient definitions for headers and newsletter cards
+- Updated typography to Google Fonts:
+  - Oswald (headings), PT Serif (body), Bebas Neue (UI elements)
+- Updated parent design system reference to v1.3
+- All color and typography references updated throughout document
 
 **Version 1.1** (November 27, 2025)
 - Added SEO enhancements documentation:
