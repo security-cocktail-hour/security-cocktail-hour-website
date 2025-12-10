@@ -1,9 +1,9 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 9, 2025 (UX Improvements - Card Interaction Patterns)
+**Last Updated**: December 10, 2025 (Episode 65 & Job Scams Blog Post - PRODUCTION DEPLOYED)
 **Hugo Version**: v0.151.0
-**Session Status**: Card Clickability & Blog Page Updates - LOCAL DEVELOPMENT
-**Branch**: hero-redesign
+**Session Status**: Episode 65 and Blog Post Production Deployment Complete
+**Branch**: main
 
 ---
 
@@ -14,11 +14,100 @@
 **GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
 **Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
 
-**Current Stats**: 113 pages (65 episodes, 3 blog posts, newsletter page, main pages) | 5.9MB images | 7.9MB production package
+**Current Stats**: 134 pages (65 episodes, 4 blog posts, newsletter page, main pages) | 5.9MB images | 7.9MB production package
 
 ---
 
-## Recent Updates (December 9, 2025 & December 8, 2025 & December 5, 2025 & December 3, 2025 & December 2, 2025 & November 28-29, 2025)
+## Recent Updates (December 10, 2025 & December 9, 2025 & December 8, 2025 & December 5, 2025 & December 3, 2025 & December 2, 2025 & November 28-29, 2025)
+
+### December 10, 2025 - Episode 65 & Job Scams Blog Post - PRODUCTION DEPLOYED ✅
+
+**✅ STATUS: PRODUCTION DEPLOYMENT COMPLETE**
+
+**Deployment Package**: `production-deployment-20251210-124818.zip` (7.9MB)
+**Git Commits**:
+- `9dfaae4` - Add Episode 65 blog post on job scams and update featured posts
+- `59877b8` - Optimize SEO metadata for Episode 65 and job scams blog post
+
+**Content Additions**:
+
+1. **Episode 65: Job Scams Are Getting Worse | Four of the Most Dangerous**
+   - **File**: `content/episodes/episode-65-job-scams-are-getting-worse-four-of-the-most-dangerous.md`
+   - **Date**: December 8, 2025
+   - **Duration**: 31:58
+   - **Category**: Educational
+   - **Description**: "AI deepfakes, malware, and crypto scams are targeting job seekers. Learn to spot these 4 dangerous employment scams in 2025 and protect yourself." (158 chars)
+   - **Platform Links**: YouTube, Spotify, Apple Podcasts, Amazon Music
+   - **Full Transcript**: Included (~5,000 words)
+   - **Topics Covered**:
+     - AI-Enhanced Interview Fraud with deepfakes
+     - Package Reshipping/Processing Scams
+     - Mystery Shopper Check Scams
+     - Gamified Cryptocurrency Task Scams
+
+2. **Blog Post: 4 Dangerous Job Scams Targeting Professionals in 2025**
+   - **File**: `content/blog/dangerous-job-scams-2025-complete-guide.md`
+   - **Date**: December 10, 2025
+   - **Author**: Joe Patti
+   - **Category**: Scam Awareness
+   - **Featured**: Yes (first featured post)
+   - **Related Episode**: episode-65
+   - **Word Count**: ~5,800 words
+   - **SEO Optimizations**:
+     - Title: "4 Dangerous Job Scams Targeting Professionals in 2025: A Complete Guide" (71 chars)
+     - SEO Title: "4 Dangerous Job Scams Targeting Professionals in 2025" (55 chars - optimized)
+     - Description: "AI deepfakes, malware, and crypto scams are targeting job seekers. Learn to spot these 4 dangerous employment scams in 2025 and protect yourself." (158 chars - optimized)
+   - **Content Sections**:
+     1. AI-Enhanced Interview Fraud: The Deepfake Nightmare
+     2. Packaging and Processing Scams: Becoming an Unwitting Accomplice
+     3. Secret Shopper Check Scams: The Bounced Check Trap
+     4. Gamified Task Scams: The Fastest-Growing Threat
+     5. Conclusion: Universal Protection Measures
+   - **Tags**: job-scams, employment-fraud, AI-deepfakes, cryptocurrency-scams, malware, interview-fraud, reshipping-scams, mystery-shopper-scams, career-safety, cybersecurity-awareness
+   - **External Authority Links**: FTC, FBI IC3, VirusTotal, Better Business Bureau
+   - **Schema Markup**: BlogPosting, BreadcrumbList, Open Graph, Twitter Cards
+
+3. **Featured Posts Update**
+   - **File**: `content/blog/when-nanoseconds-matter.md`
+   - **Change**: Updated `featured: true` to `featured: false`
+   - **Reason**: Made room for new job scams blog post as featured content on homepage
+
+**SEO Optimizations Applied**:
+
+| File | Field | Before | After | Reason |
+|------|-------|--------|-------|--------|
+| Episode 65 | description | 124 chars | 158 chars | Extended to optimal length for search snippets |
+| Blog Post | seo_title | 69 chars | 55 chars | Shortened to prevent truncation in Google results |
+| Blog Post | description | 124 chars | 158 chars | Extended to optimal length for better CTR |
+
+**SEO Compliance Review Results**:
+- Episode 65: 8.5/10 (excellent, minor description length improvement)
+- Blog Post: 8/10 → 9/10 after optimizations (title length fixed, description extended)
+
+**Cleanup Actions**:
+- Removed temporary test files from `static/` directory:
+  - `static/test-hero.html`
+  - `static/test-hero-with-main.html`
+  - `static/episode-number-options.html`
+  - `static/css/main.css.backup`
+- Static files reduced from 66 to 62 in production build
+
+**Build Statistics**:
+- Pages: 134
+- Non-page files: 23
+- Static files: 62
+- Build time: 185ms
+- Minified: Yes
+- Production package: 7.9MB
+
+**Files Modified for Production**:
+- `content/episodes/episode-65-job-scams-are-getting-worse-four-of-the-most-dangerous.md` (created)
+- `content/blog/dangerous-job-scams-2025-complete-guide.md` (created)
+- `content/blog/when-nanoseconds-matter.md` (featured status removed)
+
+**Production Deployment Ready**: ✅ `production-deployment-20251210-124818.zip`
+
+---
 
 ### December 9, 2025 - UX Improvements: Card Interaction Patterns & Blog Page Fixes
 
