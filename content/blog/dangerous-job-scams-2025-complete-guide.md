@@ -1,6 +1,6 @@
 ---
 title: "4 Dangerous Job Scams Targeting Professionals in 2025: A Complete Guide"
-seo_title: "4 Dangerous Job Scams Targeting Professionals in 2025: Complete Guide"
+seo_title: "4 Dangerous Job Scams Targeting Professionals in 2025"
 date: 2025-12-10
 draft: false
 author: "Joe Patti"
@@ -9,7 +9,7 @@ author_twitter: "@SecCocktailHour"
 author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
 category: "Scam Awareness"
 tags: ["job-scams", "employment-fraud", "AI-deepfakes", "cryptocurrency-scams", "malware", "interview-fraud", "reshipping-scams", "mystery-shopper-scams", "career-safety", "cybersecurity-awareness"]
-description: "AI deepfakes, malware, and crypto scams are targeting job seekers. Learn to spot these 4 dangerous employment scams in 2025."
+description: "AI deepfakes, malware, and crypto scams are targeting job seekers. Learn to spot these 4 dangerous employment scams in 2025 and protect yourself."
 featured: true
 related_episode: "episode-65-job-scams-are-getting-worse-four-of-the-most-dangerous"
 ---

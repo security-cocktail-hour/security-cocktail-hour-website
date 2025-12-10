@@ -6,7 +6,7 @@ draft: false
 category: "Educational"
 duration: "31:58"
 image: "/images/episodes/episode-065.jpg"
-description: "AI deepfakes, malware, and crypto scams are targeting job seekers. Learn to spot these 4 dangerous employment scams in 2025."
+description: "AI deepfakes, malware, and crypto scams are targeting job seekers. Learn to spot these 4 dangerous employment scams in 2025 and protect yourself."
 platforms:
   youtube: "https://youtu.be/OfOjvn8KfdQ"
   spotify: "https://tinyurl.com/2cyespeb"
