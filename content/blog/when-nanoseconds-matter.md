@@ -10,7 +10,7 @@ author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
 category: "General"
 tags: ["performance", "network-security", "risk-management", "high-frequency-trading"]
 description: "Where latency impacts business value, traditional security often doesn't fit. Learn to place controls without sacrificing performance."
-featured: true
+featured: false
 related_episode: "episode-63-cybersecurity-at-nanosecond-speed-securing-high-frequency-trading"
 ---
 
