@@ -85,57 +85,39 @@
           {{ $episodeNum = index $parts 0 }}
         {{ end }}
 
-        <article class="episode-card" data-title="{{ .Title | lower }}" data-guest="{{ with .Params.guest }}{{ . | lower }}{{ end }}" data-category="{{ with .Params.category }}{{ . }}{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}" data-episode="{{ $episodeNum }}">
+        <a href="{{ .RelPermalink }}" class="episode-card-link">
+          <article class="episode-card" data-title="{{ .Title | lower }}" data-guest="{{ with .Params.guest }}{{ . | lower }}{{ end }}" data-category="{{ with .Params.category }}{{ . }}{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}" data-episode="{{ $episodeNum }}">
 
-          <!-- Episode Image with 16:9 ratio -->
-          <div class="episode-image-container">
-            {{ with .Params.image }}
-              <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="episode-image" loading="lazy">
-            {{ else }}
-              <div class="episode-image"></div>
-            {{ end }}
-          </div>
-
-          <!-- Episode Content -->
-          <div class="episode-content">
-            {{ with .Params.category }}
-              <span class="episode-category">{{ . }}</span>
-            {{ end }}
-
-            <h3 class="episode-title">{{ .Title }}</h3>
-
-            <div class="episode-meta">
-              <div>{{ with .Params.guest }}{{ . }}{{ with $.Params.duration }} | {{ . }}{{ end }}{{ else }}{{ with .Params.duration }}{{ . }}{{ end }}{{ end }}</div>
-              <div>{{ if $episodeNum }}Episode {{ $episodeNum }} | {{ end }}{{ .Date.Format "January 2, 2006" }}</div>
+            <!-- Episode Image with 16:9 ratio -->
+            <div class="episode-image-container">
+              {{ with .Params.image }}
+                <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="episode-image" loading="lazy">
+              {{ else }}
+                <div class="episode-image"></div>
+              {{ end }}
             </div>
 
-            <p class="episode-description">
-              {{ with .Params.description }}{{ . | truncate 150 }}{{ else }}{{ $.Summary | truncate 150 }}{{ end }}
-            </p>
-
-            <!-- Episode Footer -->
-            <div class="episode-footer">
-              {{ if or .Params.platforms.youtube .Params.platforms.spotify .Params.platforms.apple .Params.platforms.amazon }}
-              <div class="episode-platforms">
-                {{ with .Params.platforms.youtube }}
-                  <a href="{{ . }}" class="platform-btn" target="_blank" rel="noopener">YouTube</a>
-                {{ end }}
-                {{ with .Params.platforms.spotify }}
-                  <a href="{{ . }}" class="platform-btn" target="_blank" rel="noopener">Spotify</a>
-                {{ end }}
-                {{ with .Params.platforms.apple }}
-                  <a href="{{ . }}" class="platform-btn" target="_blank" rel="noopener">Apple</a>
-                {{ end }}
-                {{ with .Params.platforms.amazon }}
-                  <a href="{{ . }}" class="platform-btn" target="_blank" rel="noopener">Amazon</a>
-                {{ end }}
-              </div>
+            <!-- Episode Content -->
+            <div class="episode-content">
+              {{ with .Params.category }}
+                <span class="episode-category">{{ . }}</span>
               {{ end }}
 
-              <a href="{{ .RelPermalink }}" class="listen-btn">Listen Now</a>
+              <h3 class="episode-title">{{ .Title }}</h3>
+
+              <div class="episode-meta">
+                <div>{{ with .Params.guest }}{{ . }}{{ with $.Params.duration }} | {{ . }}{{ end }}{{ else }}{{ with .Params.duration }}{{ . }}{{ end }}{{ end }}</div>
+                <div>{{ if $episodeNum }}Episode {{ $episodeNum }} | {{ end }}{{ .Date.Format "January 2, 2006" }}</div>
+              </div>
+
+              <p class="episode-description">
+                {{ with .Params.description }}{{ . | truncate 150 }}{{ else }}{{ $.Summary | truncate 150 }}{{ end }}
+              </p>
+
+              <span class="episode-cta">Listen Now</span>
             </div>
-          </div>
-        </article>
+          </article>
+        </a>
       {{ end }}
     </div>
 

@@ -135,29 +135,31 @@
       <!-- Blog Grid -->
       <div class="blog-grid" id="blog-grid">
         {{ range .Pages }}
-          <article class="blog-card" data-title="{{ .Title | lower }}" data-category="{{ with .Params.category }}{{ . }}{{ end }}" data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}">
-            <div class="blog-content">
-              {{ with .Params.category }}
-                <span class="blog-category">{{ . }}</span>
-              {{ end }}
-              <h2 class="blog-title">{{ .Title }}</h2>
-              <p class="blog-meta">
-                {{ with .Params.author }}{{ . }} | {{ end }}
-                {{ .Date.Format "January 2, 2006" }}
-              </p>
-              {{ with .Params.tags }}
-                <div class="blog-tags">
-                  {{ range first 3 . }}
-                    <span class="blog-tag">#{{ . }}</span>
-                  {{ end }}
-                </div>
-              {{ end }}
-              <p class="blog-description">
-                {{ with .Params.description }}{{ . | truncate 120 }}{{ else }}{{ $.Summary | truncate 120 }}{{ end }}
-              </p>
-              <a href="{{ .RelPermalink }}" class="read-more-btn">Read More</a>
-            </div>
-          </article>
+          <a href="{{ .RelPermalink }}" class="blog-card-link">
+            <article class="blog-card" data-title="{{ .Title | lower }}" data-category="{{ with .Params.category }}{{ . }}{{ end }}" data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}" data-date="{{ .Date.Format "2006-01-02" }}">
+              <div class="blog-content">
+                {{ with .Params.category }}
+                  <span class="blog-category">{{ . }}</span>
+                {{ end }}
+                <h2 class="blog-title">{{ .Title }}</h2>
+                <p class="blog-meta">
+                  {{ with .Params.author }}{{ . }} | {{ end }}
+                  {{ .Date.Format "January 2, 2006" }}
+                </p>
+                {{ with .Params.tags }}
+                  <div class="blog-tags">
+                    {{ range first 3 . }}
+                      <span class="blog-tag">#{{ . }}</span>
+                    {{ end }}
+                  </div>
+                {{ end }}
+                <p class="blog-description">
+                  {{ with .Params.description }}{{ . | truncate 120 }}{{ else }}{{ $.Summary | truncate 120 }}{{ end }}
+                </p>
+                <span class="read-more-btn">Read More</span>
+              </div>
+            </article>
+          </a>
         {{ end }}
       </div>
 

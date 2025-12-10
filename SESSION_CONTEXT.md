@@ -1,9 +1,9 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 9, 2025 (Design Specifications Updated to v1.3)
+**Last Updated**: December 9, 2025 (UX Improvements - Card Interaction Patterns)
 **Hugo Version**: v0.151.0
-**Session Status**: Episode 65 + Cache-Busting Fix - DEPLOYED TO PRODUCTION
-**Branch**: main
+**Session Status**: Card Clickability & Blog Page Updates - LOCAL DEVELOPMENT
+**Branch**: hero-redesign
 
 ---
 
@@ -19,6 +19,104 @@
 ---
 
 ## Recent Updates (December 9, 2025 & December 8, 2025 & December 5, 2025 & December 3, 2025 & December 2, 2025 & November 28-29, 2025)
+
+### December 9, 2025 - UX Improvements: Card Interaction Patterns & Blog Page Fixes
+
+**✅ CURRENT STATUS: UX CONSISTENCY IMPROVEMENTS IMPLEMENTED**
+
+**Objective**: Standardize card interaction patterns across all pages following UX best practices, fix blog page layout issues, and update individual blog pages with Art Deco design.
+
+**Key Changes**:
+
+1. **Blog Page Column Layout Fix**
+   - **Problem**: Blog cards displayed with inconsistent column widths and wasted space at various browser widths
+   - **Root Cause**: CSS using `repeat(auto-fill, minmax(320px, 1fr))` created too many narrow columns
+   - **Solution**: Changed to `repeat(auto-fit, minmax(min(100%, 400px), 1fr))`
+   - **File**: `static/css/main.css` (lines 2377-2380)
+   - **Result**: Cards now properly fill available space without awkward gaps
+
+2. **Episode Card Hover Behavior Standardization**
+   - **Problem**: Hero Latest Episode card had image zoom on hover; Recent Episodes cards didn't
+   - **Reason**: Inconsistency creates confusing user experience
+   - **Solution**: Removed image scale effect from hero card to match simpler hover behavior
+   - **File**: `static/css/main.css` (lines 1739-1746)
+   - **Result**: All episode cards now have consistent jump + outline + shadow behavior
+
+3. **Entire Card Clickability Implementation** (UX Best Practice)
+   - **Problem**: Cards showed hover effects but only "Listen Now"/"Read More" button was clickable (false affordance)
+   - **Analysis**: Violates UX principles (Fitts's Law, Principle of Least Surprise)
+   - **Industry Standard**: Material Design, Apple HIG, YouTube, Netflix all use fully clickable cards for single-action items
+   - **Implementation**:
+     - **Homepage** (`layouts/index.html`):
+       - Lines 122-150: Wrapped hero latest episode card in `<a class="episode-card-link">`
+       - Lines 175-194: Wrapped recent episodes cards in `<a class="episode-card-link">`
+       - Lines 212-227: Wrapped featured blog cards in `<a class="blog-card-link">`
+       - Changed nested `<a>` to `<span>` for "Listen Now" and "Read More"
+     - **Blog Archive Page** (`layouts/blog/list.html`):
+       - Lines 137-163: Wrapped blog cards in `<a class="blog-card-link">`
+       - Changed `<a class="read-more-btn">` to `<span class="read-more-btn">`
+     - **Episodes Archive Page** (`layouts/episodes/list.html`):
+       - Lines 88-120: Wrapped episode cards in `<a class="episode-card-link">`
+       - Removed platform buttons (YouTube, Spotify, etc.) to avoid nested links
+       - Changed `<a class="listen-btn">` to `<span class="episode-cta">`
+     - **CSS Updates** (`static/css/main.css`):
+       - Lines 1004-1030: Added `.episode-card-link` wrapper styles with hover states
+       - Lines 1492-1512: Added `.hero .episode-card-link` hover states
+       - Lines 1721-1725: Added `.episode-card-link:hover .episode-card` for archive page
+       - Lines 1862-1895: Added `.episode-cta` button styles with hover effects
+       - Lines 2404-2450: Added `.blog-card-link` wrapper styles with hover states
+   - **Result**: Entire cards now clickable, matching user expectations and industry standards
+
+4. **Featured Blog Posts Styling Fix**
+   - **Problem**: After making cards clickable, "Read More" lost styling and margins disappeared
+   - **Root Cause**: Used `.episode-cta` class which didn't exist in CSS; missing `.blog-content` wrapper
+   - **Solution**:
+     - Changed class from `episode-cta` to `read-more-btn` (line 223)
+     - Added `.blog-content` wrapper div (lines 214-225)
+   - **File**: `layouts/index.html`
+   - **Result**: Proper button styling and internal padding restored
+
+5. **Blog Single Pages Art Deco Update**
+   - **Problem**: Individual blog pages still using old blue color scheme
+   - **Solution**: Updated all color references to Art Deco palette
+   - **File**: `layouts/blog/single.html`
+   - **Changes**:
+     - Line 81: Hero gradient changed to `linear-gradient(135deg, var(--navy) 0%, #3A6199 100%)`
+     - Line 126: Description callout - teal border, cream background
+     - Line 135: Related episode component - teal accents, cream gradient
+     - Line 188: Newsletter card - replaced inline blue styles with `.newsletter-card` class (proper red gradient)
+     - Line 166: Tags section - updated to teal color
+     - Lines 238-325: Article content styling - navy-dark headings, teal blockquotes, cream code blocks
+   - **Result**: Blog single pages now match Art Deco design system
+
+**Files Modified**:
+- `layouts/index.html` - Homepage card clickability
+- `layouts/blog/list.html` - Blog archive card clickability
+- `layouts/blog/single.html` - Art Deco color updates
+- `layouts/episodes/list.html` - Episodes archive card clickability
+- `static/css/main.css` - Card wrapper styles, hover states, button styles, grid fixes
+
+**UX Improvements Summary**:
+- ✅ Consistent card interaction patterns across all pages
+- ✅ Entire cards clickable (following industry best practices)
+- ✅ Standardized hover behavior (jump + outline + shadow)
+- ✅ Removed false affordances
+- ✅ Better adherence to Fitts's Law (larger click targets)
+- ✅ Blog page layout properly responsive
+- ✅ Art Deco design consistently applied to all blog pages
+
+**Testing Status**:
+- ✅ Homepage episode cards: Clickable with proper hover
+- ✅ Homepage blog cards: Clickable with proper hover
+- ✅ Blog archive page: Clickable with proper hover
+- ✅ Episodes archive page: Clickable with proper hover
+- ✅ Blog single pages: Art Deco styling applied
+- ✅ Newsletter card visibility: Fixed on blog single pages
+- ✅ All pages render correctly at various viewport widths
+
+**Branch Status**: Changes on `hero-redesign` branch, ready for testing/deployment
+
+---
 
 ### December 9, 2025 - Design Specification Documentation Updated to v1.3
 

@@ -120,32 +120,34 @@
               {{ end }}
 
               <div class="latest-label">Latest Episode</div>
-              <div class="episode-card">
-                {{ if $episodeNum }}
-                <div class="episode-badge">
-                  <div class="episode-number">{{ $episodeNum }}</div>
-                  <div class="episode-label">EP</div>
-                </div>
-                {{ end }}
-
-                {{ with .Params.image }}
-                  <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="episode-image">
-                {{ else }}
-                  <div class="episode-image"></div>
-                {{ end }}
-
-                <div class="episode-content">
-                  {{ with .Params.category }}
-                    <span class="episode-category">{{ . }}</span>
-                  {{ end }}
-                  <h3 class="episode-title">{{ .Title }}</h3>
-                  <div class="episode-meta">
-                    {{ with .Params.guest }}<div class="episode-guest">{{ . }}</div>{{ end }}
-                    <div>{{ .Date.Format "January 2, 2006" }}{{ with .Params.duration }} | {{ . }}{{ end }}</div>
+              <a href="{{ .RelPermalink }}" class="episode-card-link">
+                <div class="episode-card">
+                  {{ if $episodeNum }}
+                  <div class="episode-badge">
+                    <div class="episode-number">{{ $episodeNum }}</div>
+                    <div class="episode-label">EP</div>
                   </div>
-                  <a href="{{ .RelPermalink }}" class="episode-cta">Listen Now</a>
+                  {{ end }}
+
+                  {{ with .Params.image }}
+                    <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="episode-image">
+                  {{ else }}
+                    <div class="episode-image"></div>
+                  {{ end }}
+
+                  <div class="episode-content">
+                    {{ with .Params.category }}
+                      <span class="episode-category">{{ . }}</span>
+                    {{ end }}
+                    <h3 class="episode-title">{{ .Title }}</h3>
+                    <div class="episode-meta">
+                      {{ with .Params.guest }}<div class="episode-guest">{{ . }}</div>{{ end }}
+                      <div>{{ .Date.Format "January 2, 2006" }}{{ with .Params.duration }} | {{ . }}{{ end }}</div>
+                    </div>
+                    <span class="episode-cta">Listen Now</span>
+                  </div>
                 </div>
-              </div>
+              </a>
             {{ end }}
           </div>
         </div>
@@ -170,24 +172,26 @@
               {{ $episodeNum = index $parts 0 }}
             {{ end }}
 
-            <article class="episode-card-small">
-              {{ with .Params.image }}
-                <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="episode-image">
-              {{ else }}
-                <div class="episode-image"></div>
-              {{ end }}
-              <div class="episode-content">
-                {{ with .Params.category }}
-                  <span class="episode-category">{{ . }}</span>
+            <a href="{{ .RelPermalink }}" class="episode-card-link">
+              <article class="episode-card-small">
+                {{ with .Params.image }}
+                  <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="episode-image">
+                {{ else }}
+                  <div class="episode-image"></div>
                 {{ end }}
-                <h3 class="episode-title">{{ .Title }}</h3>
-                <div class="episode-meta">
-                  {{ with .Params.guest }}<div>{{ . }}</div>{{ end }}
-                  <div>{{ if $episodeNum }}Episode {{ $episodeNum }} | {{ end }}{{ .Date.Format "January 2, 2006" }}{{ with .Params.duration }} | {{ . }}{{ end }}</div>
+                <div class="episode-content">
+                  {{ with .Params.category }}
+                    <span class="episode-category">{{ . }}</span>
+                  {{ end }}
+                  <h3 class="episode-title">{{ .Title }}</h3>
+                  <div class="episode-meta">
+                    {{ with .Params.guest }}<div>{{ . }}</div>{{ end }}
+                    <div>{{ if $episodeNum }}Episode {{ $episodeNum }} | {{ end }}{{ .Date.Format "January 2, 2006" }}{{ with .Params.duration }} | {{ . }}{{ end }}</div>
+                  </div>
+                  <span class="episode-cta">Listen Now</span>
                 </div>
-                <a href="{{ .RelPermalink }}" class="episode-cta">Listen Now</a>
-              </div>
-            </article>
+              </article>
+            </a>
           {{ end }}
         </div>
       </div>
@@ -205,18 +209,22 @@
 
         <div class="blog-grid">
           {{ range $featuredPosts }}
-            <article class="blog-card">
-              {{ with .Params.category }}
-                <span class="blog-category">{{ . }}</span>
-              {{ end }}
-              <h3 class="blog-title">{{ .Title }}</h3>
-              <p class="blog-meta">
-                {{ with .Params.author }}{{ . }} | {{ end }}
-                {{ .Date.Format "January 2, 2006" }}
-              </p>
-              <p class="blog-description">{{ with .Params.description }}{{ . | truncate 160 }}{{ else }}{{ $.Summary | truncate 160 }}{{ end }}</p>
-              <a href="{{ .RelPermalink }}" class="episode-cta">Read More</a>
-            </article>
+            <a href="{{ .RelPermalink }}" class="blog-card-link">
+              <article class="blog-card">
+                <div class="blog-content">
+                  {{ with .Params.category }}
+                    <span class="blog-category">{{ . }}</span>
+                  {{ end }}
+                  <h3 class="blog-title">{{ .Title }}</h3>
+                  <p class="blog-meta">
+                    {{ with .Params.author }}{{ . }} | {{ end }}
+                    {{ .Date.Format "January 2, 2006" }}
+                  </p>
+                  <p class="blog-description">{{ with .Params.description }}{{ . | truncate 160 }}{{ else }}{{ $.Summary | truncate 160 }}{{ end }}</p>
+                  <span class="read-more-btn">Read More</span>
+                </div>
+              </article>
+            </a>
           {{ end }}
         </div>
       </div>

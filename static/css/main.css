@@ -1001,6 +1001,18 @@ a:focus-visible {
   margin-bottom: 3rem;
 }
 
+/* Episode Card Link Wrapper */
+.episode-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+.episode-card-link:hover {
+  text-decoration: none;
+}
+
 .episode-card-small {
   background: var(--white);
   border-radius: 8px;
@@ -1008,9 +1020,10 @@ a:focus-visible {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  height: 100%;
 }
 
-.episode-card-small:hover {
+.episode-card-link:hover .episode-card-small {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
   border-color: var(--teal);
@@ -1034,44 +1047,7 @@ a:focus-visible {
   background: var(--cream-dark);
 }
 
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 3rem;
-}
-
-.blog-card {
-  background: var(--white);
-  border-radius: 8px;
-  padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-  position: relative;
-}
-
-.blog-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(180deg, var(--red) 0%, var(--teal) 100%);
-  border-radius: 8px 0 0 8px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.blog-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-  border-color: var(--teal);
-}
-
-.blog-card:hover::before {
-  opacity: 1;
-}
+/* Old blog card styles - kept for reference but hover moved to .blog-card-link wrapper */
 
 .blog-category {
   display: inline-block;
@@ -1483,12 +1459,26 @@ input.newsletter-input:focus {
    HERO EPISODE CARD FIX
    Constrain episode card image to prevent overflow
    =================================== */
+.hero .episode-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .hero .episode-card {
   background: var(--white);
   border-radius: 8px;
   overflow: visible;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   position: relative;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.hero .episode-card-link:hover .episode-card {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border-color: var(--teal);
 }
 
 .hero .episode-card .episode-image {
@@ -1727,7 +1717,8 @@ input.newsletter-input:focus {
   height: 100%;
 }
 
-.episode-card:hover {
+/* Episode card hover moved to .episode-card-link wrapper */
+.episode-card-link:hover .episode-card {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
   border-color: var(--teal);
@@ -1749,11 +1740,6 @@ input.newsletter-input:focus {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.episode-card:hover .episode-image {
-  transform: scale(1.05);
 }
 
 /* Episode Content */
@@ -1869,6 +1855,42 @@ input.newsletter-input:focus {
 }
 
 .listen-btn:hover::after {
+  transform: translateX(5px);
+}
+
+/* Episode CTA (for card links) */
+.episode-cta {
+  font-family: var(--font-ui);
+  font-size: 1.0625rem;
+  letter-spacing: 0.08em;
+  color: var(--red);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 2px solid var(--red);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.episode-card-link:hover .episode-cta {
+  background: var(--red);
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(215, 68, 68, 0.3);
+}
+
+.episode-cta::after {
+  content: '→';
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.episode-card-link:hover .episode-cta::after {
   transform: translateX(5px);
 }
 
@@ -2382,8 +2404,20 @@ input.newsletter-input:focus {
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
   gap: 2rem;
+}
+
+/* Blog Card Link Wrapper */
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.blog-card-link:hover {
+  text-decoration: none;
 }
 
 /* Blog Card */
@@ -2400,7 +2434,7 @@ input.newsletter-input:focus {
   position: relative;
 }
 
-.blog-card:hover {
+.blog-card-link:hover .blog-card {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
   border-color: var(--teal);
@@ -2418,7 +2452,7 @@ input.newsletter-input:focus {
   transition: opacity 0.4s ease;
 }
 
-.blog-card:hover::before {
+.blog-card-link:hover .blog-card::before {
   opacity: 1;
 }
 
@@ -2582,7 +2616,7 @@ input.newsletter-input:focus {
   }
 
   .blog-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
   }
 }
 
