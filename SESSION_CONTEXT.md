@@ -20,6 +20,17 @@
 
 ## Recent Updates (December 8-12, 2025)
 
+### ⏳ Outstanding Tasks
+
+**Git Push Pending** (December 12, 2025)
+- Commit `78c5b47` created locally: "Reorganize context files: reduce SESSION_CONTEXT.md by 50% and archive historical content"
+- Changes: SESSION_CONTEXT.md (1,059→524 lines), ARCHIVE.md (700→1,205 lines)
+- **Action Required**: Push to GitHub from host with SSH credentials
+- Command: `git push origin main`
+- This will trigger Netlify staging deployment
+
+---
+
 ### December 10, 2025 - Episode 65 & Job Scams Blog Post - PRODUCTION DEPLOYED ✅
 
 **✅ STATUS: PRODUCTION DEPLOYMENT COMPLETE**
