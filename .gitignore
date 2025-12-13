@@ -22,3 +22,9 @@
 # Local environment files
 .env
 .env.local
+
+# Deployment packages
+*.zip
+
+# Playwright MCP
+.playwright-mcp/
