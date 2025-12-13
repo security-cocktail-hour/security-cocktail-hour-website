@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 10, 2025 (Episode 65 & Job Scams Blog Post - PRODUCTION DEPLOYED)
+**Last Updated**: December 12, 2025 (Context File Reorganization)
 **Hugo Version**: v0.151.0
 **Session Status**: Episode 65 and Blog Post Production Deployment Complete
 **Branch**: main
@@ -18,7 +18,7 @@
 
 ---
 
-## Recent Updates (December 10, 2025 & December 9, 2025 & December 8, 2025 & December 5, 2025 & December 3, 2025 & December 2, 2025 & November 28-29, 2025)
+## Recent Updates (December 8-12, 2025)
 
 ### December 10, 2025 - Episode 65 & Job Scams Blog Post - PRODUCTION DEPLOYED ✅
 
@@ -203,8 +203,6 @@
 - ✅ Newsletter card visibility: Fixed on blog single pages
 - ✅ All pages render correctly at various viewport widths
 
-**Branch Status**: Changes on `hero-redesign` branch, ready for testing/deployment
-
 ---
 
 ### December 9, 2025 - Design Specification Documentation Updated to v1.3
@@ -224,13 +222,7 @@
    - Detailed Art Deco hero section design specifications
    - Art deco pattern CSS implementation
    - Episode badge positioning fix documentation (floating effect)
-   - "Recent Implementation Fixes" section documenting December 8, 2025 fixes:
-     - Newsletter signup box fix (episode single pages)
-     - About section text visibility fix
-     - Episode card images fix
-     - CSS cache-busting implementation
-     - Homepage recent episodes count reduction
-   - All sections from v1.2 appended and updated with Art Deco colors
+   - "Recent Implementation Fixes" section documenting December 8, 2025 fixes
 
 **Files Updated**:
 
@@ -284,123 +276,6 @@
 - ✅ Recent fixes documented in v1.3
 - ✅ Old color palette deprecated with migration path
 - ✅ All cross-references updated to v1.3
-
-**Purpose**: Ensures design specifications accurately reflect the Art Deco redesign implemented in December 2025, providing authoritative reference for:
-- Current color palette and usage
-- Typography system and scales
-- Component styling standards
-- Recent implementation fixes
-- Design decision history
-
----
-
-### December 8, 2025 (Later) - Episode 65 Published + Homepage/Episode Page Fixes
-
-**✅ CURRENT STATUS: EPISODE 65 DEPLOYED TO PRODUCTION + MULTIPLE PAGE FIXES COMPLETE**
-
-**Episode 65: "Job Scams Are Getting Worse | Four of the Most Dangerous"**
-- **Published**: December 8, 2025
-- **Category**: Educational
-- **Duration**: 31:58
-- **Description**: "AI deepfakes, malware, and crypto scams are targeting job seekers. Learn to spot these 4 dangerous employment scams in 2025."
-- **Full Description**: Job scams are getting scary good. We're talking AI deepfakes, fake recruiters, and cryptocurrency traps that are fooling even tech-savvy professionals. In this Security Cocktail Hour holiday special, Joe and Adam break down four of the most dangerous job scams hitting people right now.
-- **Platforms**:
-  - YouTube: https://youtu.be/OfOjvn8KfdQ
-  - Spotify: https://tinyurl.com/2cyespeb
-  - Apple: https://tinyurl.com/4dxufbmj
-  - Amazon: https://tinyurl.com/bdd3nx4h
-- **Related Episodes**: Episode 64 (Holiday Scams), Episode 45 (Holiday Scams 2023)
-- **Features**: Full transcript with collapsible accordion
-- **File Created**: `content/episodes/episode-65-job-scams-are-getting-worse-four-of-the-most-dangerous.md`
-- **Image**: `static/images/episodes/episode-065.jpg` (copied from temp folder)
-
-**CSS Fixes Implemented**:
-
-1. **Newsletter Signup Box on Episode Single Page** (`layouts/episodes/single.html`)
-   - **Problem**: Newsletter box on individual episode pages had white background (from `.card` and `.card-content` classes), making white text invisible
-   - **Root Cause**: Both `.card` (line 387 in CSS) and `.card-content` (line 413 in CSS) had white/cream background gradients that needed to be overridden
-   - **Solution**: Added inline styles with `!important` to force red gradient background on both card and card-content divs
-   - **Changes**:
-     - Card div: `background: linear-gradient(135deg, #B33333 0%, #D74444 100%) !important`
-     - Card-content div: Same red gradient with `!important`
-     - Email input: White background with proper padding, borders, and dark text color
-     - Button: White background with red text (#D74444)
-   - **File Modified**: `layouts/episodes/single.html` (lines 214-236)
-
-2. **About Section Text Visibility** (`static/css/main.css`)
-   - **Problem**: About section on homepage had unreadable text (light text on light background)
-   - **Root Cause**: Duplicate `.about-section` definition at line 2964 was overriding the correct navy gradient background (line 1111) with white background
-   - **Solution**: Removed `background: var(--white)` from duplicate definition
-   - **File Modified**: `static/css/main.css` (line 2966 - removed background property)
-   - **Result**: Navy gradient background now shows correctly with white/cream text visible
-
-3. **Episode Content Background Layering** (`static/css/main.css`)
-   - **Problem**: Episode cards had unnecessary background gradient on content area
-   - **Root Cause**: `.episode-content` class (line 1763) had `background: linear-gradient(180deg, var(--white) 0%, var(--cream) 100%)` that was redundant since parent card already has white background
-   - **Solution**: Removed background gradient from `.episode-content` class
-   - **File Modified**: `static/css/main.css` (line 1763 - removed background property)
-
-4. **Episode Card Images on Homepage** (`static/css/main.css`)
-   - **Problem**: Episode card images in "Recent Episodes" section didn't fill full width, leaving white space on right side and making cards unbalanced
-   - **Root Cause**: `.episode-card-small .episode-image` (line 1019) only had `height: 180px`, causing images to crop top/bottom and not fill width
-   - **Solution**: Changed to `width: 100%; height: auto; display: block;` to show full images at natural aspect ratio
-   - **File Modified**: `static/css/main.css` (lines 1020-1022)
-   - **Result**: Images now display at full aspect ratio without cropping, cards adjust height to accommodate images
-
-5. **Homepage Recent Episodes** (`layouts/index.html`)
-   - **Change**: Reduced from 5 to 4 episodes in "Recent Episodes" section
-   - **Reason**: Better layout balance on homepage
-   - **File Modified**: `layouts/index.html` (line 164: changed `first 6` to `first 5`)
-
-6. **CSS Cache-Busting Fix** (`layouts/_default/baseof.html`, `layouts/index.html`)
-   - **Problem**: Production site showed old design in regular browsers but worked in incognito mode
-   - **Root Cause**: Browsers cached old CSS files, serving outdated styles
-   - **Solution**: Added `?v={{ now.Unix }}` timestamp parameter to CSS file links
-   - **Files Modified**:
-     - `layouts/_default/baseof.html` (line 33)
-     - `layouts/index.html` (line 33)
-   - **Result**: Each build generates unique CSS URL, forcing browsers to fetch updated files instead of using cache
-
-**All Files Modified**:
-1. `content/episodes/episode-65-job-scams-are-getting-worse-four-of-the-most-dangerous.md` (created)
-2. `static/images/episodes/episode-065.jpg` (created)
-3. `layouts/episodes/single.html` (newsletter box styling - lines 214-236)
-4. `static/css/main.css` (4 CSS fixes):
-   - Line 1020-1022: Episode card image sizing
-   - Line 1763: Removed episode content background
-   - Line 2966: Removed about section white background
-5. `layouts/index.html` (homepage recent episodes count + cache-busting)
-6. `layouts/_default/baseof.html` (cache-busting)
-7. `SESSION_CONTEXT.md` (this update)
-
-**Git Workflow**:
-- Worked on `hero-redesign` branch
-- Merged to `main` branch (fast-forward merge)
-- Pushed to GitHub (triggers Netlify staging deployment)
-- All changes committed with proper commit messages
-
-**Production Deployment Package**:
-- **File**: `production-deployment-20251208-143839.zip`
-- **Size**: 7.9MB
-- **Pages**: 113 pages
-- **Location**: Project root directory
-
-**Status**:
-- ✅ Episode 65 DEPLOYED TO PRODUCTION (https://securitycocktailhour.com/)
-- ✅ Newsletter box rendering correctly on episode pages (red background, white text)
-- ✅ About section text readable on homepage (navy background)
-- ✅ Episode cards displaying correctly on homepage (full images, no cropping)
-- ✅ Homepage shows 4 episodes in Recent Episodes section
-- ✅ Cache-busting implemented (browsers will fetch new CSS on each deployment)
-- ✅ All changes committed to `main` branch and pushed to GitHub
-- ✅ Production package deployed to GoDaddy
-- ✅ Cache-busting fix verified (works in both regular and incognito browsers after hard refresh)
-- ✅ Production site live with all fixes
-
-**Production Package Deployed**:
-- File: `production-deployment-20251208-143839.zip` (7.9MB)
-- Deployed: December 8, 2025
-- Status: ✅ LIVE on https://securitycocktailhour.com/
 
 ---
 
@@ -489,437 +364,25 @@
 **Git Status**:
 - Branch: `hero-redesign`
 - Modified: SESSION_CONTEXT.md, layouts/index.html, layouts/_default/baseof.html, static/css/main.css
-- Untracked: static/test-hero.html, static/test-hero-with-main.html, temp/ (various test files)
 
 **Hugo Server**: Running on http://localhost:1313/
 
 ---
 
-### December 5, 2025 - Newsletter Signup Page Created
-
-**New Feature: Dedicated Newsletter Signup Page**
-- **Purpose**: Clean landing page for social media newsletter promotion
-- **URL**: `/newsletter/` (https://securitycocktailhour.com/newsletter/)
-- **Design**: Simplified, focused conversion-optimized layout
-- **Content**:
-  - Blue gradient hero section with title and description
-  - Opening paragraph about joining the community
-  - Three bullet points: Early episode notifications, Exclusive insights, No spam
-  - Streamlined blue signup box with email field + Subscribe button only
-  - Privacy statement below the form (outside blue box for visual balance)
-  - Trust signals section: 64+ Episodes, 50+ Expert Guests, 60+ Hours of Content
-- **Integration**:
-  - Mailchimp signup form (same as homepage)
-  - Added to footer "About" section (between "About the Show" and "Contact")
-  - Not added to header navigation (keeping header simple)
-- **Files Created**:
-  - `content/newsletter.md` - Page content
-  - `layouts/_default/newsletter.html` - Custom template
-- **Files Modified**:
-  - `layouts/partials/footer.html` - Added newsletter link
-
-**Status**: ✅ DEPLOYED TO PRODUCTION (December 6, 2025)
-- Clean, professional landing page for social media sharing at https://securitycocktailhour.com/newsletter/
-- Functional Mailchimp integration
-- Accessible from footer on all pages
-- Production package: 7.7MB (112 pages)
-
----
-
-### December 5, 2025 - Episode Number Display + Transcript Accordion Fixes
-
-**Feature: Episode Number Display on Episode Cards**
-- **Problem**: Episode numbers only visible in thumbnails (when present), making it hard to find episodes by number
-- **Solution**: Added episode number to date line on all episode cards across the site
-- **Display Format**: "Episode X | Date" (e.g., "Episode 62 | November 3, 2025")
-- **Locations Updated**:
-  - Episodes page (all episode cards)
-  - Homepage "Latest Episode" section
-  - Homepage "Recent Episodes" grid
-- **Files Modified**: `layouts/episodes/list.html`, `layouts/index.html`
-- **Implementation**: Extracts episode number from filename pattern `episode-XX-...` using Hugo template logic
-
-**Enhancement: Episode Number Search**
-- **Problem**: Searching for episode numbers returned no results
-- **Solution**: Added episode number to searchable data attributes
-- **Functionality**: Users can now search by:
-  - Episode number (e.g., "47", "64", "01")
-  - Episode title (existing)
-  - Guest name (existing)
-- **File Modified**: `layouts/episodes/list.html` (JavaScript search function)
-
-**Bug Fix: Collapsible Transcript Accordion**
-- **Problem**: 6 episodes with transcripts didn't show collapsible accordion (Episodes 21, 51, 53, 59, 60, 61)
-- **Root Cause**: Episodes used heading "## Full Transcript" or "## Transcript" instead of "## Full Episode Transcript"
-- **Template Requirement**: `layouts/episodes/single.html` looks for exact heading "Full Episode Transcript"
-- **Solution**: Updated transcript headings in all 6 episodes to "## Full Episode Transcript"
-- **Files Modified**:
-  - `content/episodes/episode-21-medical-devices-halloween-and-whiskey-with-gabrielle-hempel.md`
-  - `content/episodes/episode-51-agentic-ai-security-full-speed-into-the-unknown.md`
-  - `content/episodes/episode-53-the-new-rules-of-cyber-incident-response-new-attacks-new-response.md`
-  - `content/episodes/episode-59-wifi-pineapple-unboxing-the-hacker-device-from-tv-shows.md`
-  - `content/episodes/episode-60-crypto-kidnappings-lost-keys-and-million-dollar-bug-bounties.md`
-  - `content/episodes/episode-61-ai-attacks-need-ai-defense-ransomwares-new-danger-and-how-a-top-cyber-expert-is-.md`
-- **Result**: All episodes with transcripts now show collapsible accordion with blue gradient header
-
-**Commits**:
-- `94bcf9d` - Add episode numbers to cards and fix transcript headings for collapsible feature
-- `733e1a4` - Update SESSION_CONTEXT.md documentation
-- `e837062` - Add 301 redirects for old URLs from previous site
-
-**Status**: ✅ DEPLOYED TO PRODUCTION (December 5, 2025)
-- Episode numbers displayed consistently across all episode cards
-- Search functionality enhanced with episode number support
-- All transcript accordions working correctly
-- 23 301 redirects active for old URLs to fix Google Search Console 404 errors
-- Production package: 7.7MB (111 pages)
-- Pushed to GitHub and auto-deployed to Netlify staging
-
----
-
-### December 3, 2025 - Hero Redesign Page Mockups + Font Selection Complete
-
-**Hero Redesign Work**: Completed full-page mockups for all major pages (Episodes, About, Contact, Blog, Home) and finalized typography system with PT Serif selection
-
-**Design System Finalized**:
-- **Typography**:
-  - **Oswald** (sans-serif, weights 600/700) - Main headings, page titles, section titles (uppercase, bold)
-  - **PT Serif** (serif, weights 400/700) - Body text, descriptions, paragraphs (confident, readable, substantial feel)
-  - **Bebas Neue** (sans-serif condensed) - Labels, buttons, UI elements (uppercase, compact)
-- **Color Palette** (updated from initial exploration):
-  - **Primary Red**: #D74444 (brand color, CTAs, accents)
-  - **Navy**: #2B4D7D (primary dark), #3A5F99 (light), #1F3859 (darker)
-  - **Teal**: #4A9B9B (primary accent), #6BB8B8 (light) - replaced gold/cyan from initial concepts
-  - **Silver**: #C0C0C0 (secondary accent)
-  - **Cream**: #F5F1E8 (backgrounds), #E8E0D0 (darker variant)
-- **Design Principles**:
-  - Premium art deco aesthetic (1950s-60s retro badge style)
-  - Compact hero sections (learned from Episodes page feedback)
-  - Art deco geometric patterns and corner accents
-  - Gradient backgrounds (navy, red) with teal accents
-  - Circular badge motifs from logo
-  - Consistent visual language across all pages
-
-**Font Selection Process**:
-- **Initial Font**: Crimson Pro (serif body font)
-- **User Feedback**: "Hard to read", "too ornate", "too dainty" - needed more confident, substantial feel
-- **Requirements**: Better readability, less ornate, still distinctive (avoid generic AI look), complements art deco aesthetic
-- **Fonts Tested**:
-  1. **Lora** - Traditional serif, too similar to Crimson Pro
-  2. **Source Serif Pro** - Better readability, user feedback: "It's better"
-  3. **Merriweather** - Screen-optimized serif, user feedback: "best so far", "easiest to read", "less dainty", "more confident"
-  4. **PT Serif** - Substantial, grounded, screen-designed - user feedback: "I like it"
-  5. **Bitter** - Slab serif, bold geometric (shown for comparison)
-  6. **Spectral** - Google's digital reading font (shown for comparison)
-- **Final Selection**: **PT Serif** - Selected for confident, substantial feel with excellent screen readability
-- **All Mockups Updated**: All 5 HTML mockup files updated from Crimson Pro to PT Serif
-- **Font Test Files Created**: 6 test files created for side-by-side comparison
-
-**Pages Completed**:
-
-1. **Episodes Page v3** (`temp/hero-redesigns/episodes-page-v3.html`)
-   - **User Feedback Addressed**:
-     - Reduced hero height dramatically (episode thumbnails now immediately visible)
-     - Removed all icons/emojis from platform buttons (YouTube, Spotify, Apple, Amazon)
-   - **Features**:
-     - Compact hero with stats bar (65 Episodes, 50+ Guests, 60hrs Content)
-     - Search input + Category/Sort dropdowns
-     - Vertical episode cards with 16:9 thumbnail aspect ratio
-     - Episode number badges, category tags, platform buttons
-     - Two-column responsive grid
-   - **Status**: ✅ Approved ("satisfactory")
-
-2. **About Page** (`temp/hero-redesigns/about-page-mockup.html`)
-   - **Sections**:
-     - Compact hero with tagline
-     - Our Story section (centered narrative)
-     - Meet Your Hosts (Joe Patti & Adam Roth) - two-column card layout
-     - What You'll Get (3 benefits with icon circles)
-     - Stats section (65+ Episodes, 50+ Guests, 60hrs Content)
-     - Newsletter signup (red gradient background)
-   - **Features**:
-     - Square host images with "Co-Host" badges
-     - Icon circles with double-border treatment
-     - LinkedIn links for hosts
-     - Responsive grid layouts
-   - **Status**: ✅ Approved ("satisfactory")
-
-3. **Contact Page** (`temp/hero-redesigns/contact-page-mockup.html`)
-   - **Layout**: Two-column (contact form left, info cards right)
-   - **Features**:
-     - Compact hero section
-     - Full contact form (Name, Email, Subject dropdown, Message textarea)
-     - Formspree integration with AJAX submission
-     - Success/error status messages
-     - Contact info cards (Email, Social Media, Response Time)
-     - "Interested in Being a Guest?" section with red left border
-   - **Form Fields**: 6 subject options (Guest Submission, Partnership, Consulting, Sponsorship, Press, General)
-   - **Status**: ✅ Approved ("acceptable")
-
-4. **Blog Page** (`temp/hero-redesigns/blog-page-mockup.html`)
-   - **Layout**: Two-column (blog grid left, newsletter sidebar right)
-   - **Controls**: Search + Category dropdown + Tag dropdown + Sort dropdown
-   - **Features**:
-     - Compact hero section
-     - Blog cards with vertical left accent bar (appears on hover)
-     - Red category tags (vs teal for episodes)
-     - Tag pills below metadata
-     - "Read More" buttons with arrow animation
-     - Sticky newsletter sidebar (red gradient)
-   - **Sample Content**: 6 blog posts across different categories
-   - **Status**: ✅ Approved ("acceptable")
-
-5. **Homepage** (`temp/hero-redesigns/homepage-full-mockup-v2.html`)
-   - **Sections**:
-     - Full hero with animated accents, stats badges, platform links
-     - Featured Episodes section (3 episode cards)
-     - Featured Blog Posts section (3 blog cards)
-     - About teaser section
-     - Newsletter signup (red gradient)
-   - **Features**:
-     - Premium art deco hero with geometric patterns
-     - Consistent card styling across sections
-     - Episode/blog cards with hover effects
-     - Platform links with underline animations
-   - **Status**: ✅ Complete (updated to PT Serif)
-
-**Files Created**:
-- `temp/hero-redesigns/episodes-page-v3.html` (updated to PT Serif)
-- `temp/hero-redesigns/about-page-mockup.html` (updated to PT Serif)
-- `temp/hero-redesigns/contact-page-mockup.html` (updated to PT Serif)
-- `temp/hero-redesigns/blog-page-mockup.html` (updated to PT Serif)
-- `temp/hero-redesigns/homepage-full-mockup-v2.html` (updated to PT Serif)
-- Font test files (for comparison):
-  - `temp/hero-redesigns/homepage-lora-font-test.html`
-  - `temp/hero-redesigns/homepage-source-serif-test.html`
-  - `temp/hero-redesigns/homepage-merriweather-test.html`
-  - `temp/hero-redesigns/homepage-pt-serif-test.html`
-  - `temp/hero-redesigns/homepage-bitter-test.html`
-  - `temp/hero-redesigns/homepage-spectral-test.html`
-
-**Remaining Work**:
-- Partnership page mockup
-- Individual episode page redesign (if needed)
-- Individual blog post page redesign (if needed)
-- Integration with Hugo templates (convert mockups to Hugo layouts)
-- Responsive testing across breakpoints
-- Deploy to staging for review
-
-**Typography Reference**:
-- Display/Headers: Oswald (uppercase, bold, geometric art deco feel)
-- Body/Content: PT Serif (sentence case, confident serif, substantial readability)
-- UI Elements: Bebas Neue (uppercase, condensed, utilitarian)
-
----
-
-### December 2, 2025 - Episode 64 + Enhanced Features Deployment
-
-**Episode 64 Published**: "Bonus: Holiday Scams Unwrapped: Tips to Stay Safe this Season"
-- **Published**: December 2, 2025
-- **Category**: Educational
-- **Duration**: 32:38
-- **Description**: Holiday scam protection tips: gift card fraud, phone payments for teens, seasonal cybersecurity threats
-- **SEO Optimized**:
-  - Title: 53 characters (optimized with `seo_title`)
-  - Description: 145 characters (within 120-155 range)
-- **Features**: Full transcript with collapsible accordion
-- **Related Episodes**: Manually specified (Episodes 61 & 58)
-
-**🆕 Feature 1: Collapsible Transcript Accordion**
-- **File**: `layouts/episodes/single.html` (lines 93-176)
-- **Implementation**: Native HTML `<details>` element
-- **Functionality**:
-  - Auto-detects episodes with "Full Episode Transcript" heading
-  - Renders transcript in collapsible accordion (collapsed by default)
-  - Blue gradient header matching site design
-  - Max height with scroll (600px desktop, 400px mobile)
-  - Smooth animations, hover effects
-  - Episodes without transcripts unaffected
-- **SEO Benefits**:
-  - ✅ Content remains in DOM for full indexing
-  - ✅ Google officially supports `<details>` (no hidden content penalty)
-  - ✅ All transcript text searchable and rankable
-  - ✅ Direct link available: `#transcript`
-- **UX Benefits**:
-  - ✅ Page not overwhelmingly long on load
-  - ✅ User controls when to view transcript
-  - ✅ Accessible (keyboard nav, screen readers)
-  - ✅ Mobile-friendly
-
-**🆕 Feature 2: Manual Related Episodes**
-- **File**: `layouts/episodes/single.html` (lines 162-174)
-- **Functionality**:
-  - Episodes can specify custom related episodes via frontmatter
-  - Uses `related_episodes` array field
-  - Falls back to auto-generated category matching if not specified
-- **Use Cases**:
-  - Series episodes
-  - Thematic connections across categories
-  - Cross-promotion
-  - Featured episodes
-- **Example**:
-  ```yaml
-  related_episodes:
-    - "episode-61-ai-attacks-need-ai-defense.md"
-    - "episode-58-travel-router-unboxing.md"
-  ```
-
-**🆕 Episode 64 Platform Links Update + Homepage Fix** (December 2, 2025 - Later)
-- **Updated Episode 64 Platform URLs**:
-  - YouTube: https://youtu.be/BdiHfxcg1P4 (unchanged)
-  - Spotify: https://tinyurl.com/3dzccabe (updated to tinyurl)
-  - Apple: https://tinyurl.com/3emej8hy (updated to tinyurl)
-  - Amazon: https://tinyurl.com/3w3cfke9 (updated to tinyurl)
-- **Fixed Homepage "Listen Now" Button**:
-  - Changed from hardcoded YouTube channel link to episode-specific YouTube URL
-  - File: `layouts/index.html` (line 74-76)
-  - Now uses `{{ .Params.platforms.youtube }}` for dynamic episode links
-  - Applies to all current and future episodes automatically
-
-**Commits**:
-- `07c1c90` - Publish Episode 64: Holiday Scams Unwrapped bonus episode
-- `a9b7612` - Add collapsible transcript accordion for episode pages
-- `1f43f64` - Update documentation for Episode 64 and new features
-- `f1a29d6` - Update design spec with collapsible transcript and manual related episodes
-- `6d64a53` - Update Episode 64 platform links and fix homepage Listen Now button
-- `546abf8` - Update production deployment package
-
-**Production Package**: `production-deployment.zip` (7.7MB)
-- ✅ Deployed to GoDaddy production (December 2, 2025)
-- ✅ Episode 64 live with updated platform links
-- ✅ Homepage "Listen Now" button links to episode-specific YouTube URLs
-- ✅ Collapsible transcript accordion active
-- ✅ Manual related episodes feature active
-- ✅ All 111 pages built and minified
-
----
-
-### November 29, 2025 - Title Tag Audit Script and Additional SEO Title Optimizations
-- **Created Title Tag Audit Script**: `scripts/audit_title_tags.py`
-  - Comprehensive audit tool for all content types (episodes, blog posts, pages)
-  - Checks both `title` and optional `seo_title` fields
-  - Only validates effective title (what appears in HTML `<title>` tag) against 60/70 char limits
-  - Detects identical titles (wasteful duplication)
-  - Shows both full and SEO titles side-by-side in summary for easy comparison
-  - Provides suggestions for shortening overly long titles
-- **Extended SEO Title Support**: Added `seo_title` to non-episode content
-  - Homepage: `seo_title: "Security Cocktail Hour Podcast"` (36 chars)
-  - Episode 40: Updated to `seo_title: "Fighting Cybersecurity Threats Together"` (39 chars)
-  - Episode 53: Updated to `seo_title: "New Rules of Cyber Incident Response | Lisa Landau,Tim Shipp"` (67 chars)
-  - Episode 55: Updated to `seo_title: "Firmware, Fire & the Future of Cyber | Paul Asadoorian"` (60 chars)
-  - Blog post (when-nanoseconds-matter): `seo_title: "When Nanoseconds Matter: Securing High-Performance Environments"` (64 chars)
-- **Documentation Updated**:
-  - Updated `docs/SEO-TITLE-TAG-STANDARDS.md` reference section with current implementation (20 pages)
-  - Added audit script reference to tools list
-  - Updated `docs/README.md` to document new audit script
-- **Status**: 20 pages now have optimized SEO titles (17 episodes, 1 blog post, 1 homepage, 1 other page)
-
-### November 29, 2025 (continued) - Image Optimization with ImageMagick
-- **Image Optimization Implemented**: Optimized all episode images using ImageMagick
-- **Backup Created**: Full backup to `image-backups/backup-2025-11-29/` (6.4MB)
-- **PNG to JPG Conversion Testing**:
-  - episode-017.png → episode-017.jpg (217K → 61K, 72% savings) ✅ Kept
-  - episode-047.png → episode-047.jpg (430K → 354K, 18% savings) ✅ Kept
-  - episode-053.png → episode-053.jpg (39K → 116K) ❌ Restored to PNG (increased size)
-  - episode-056.png → episode-056.jpg (36K → 108K) ❌ Restored to PNG (increased size)
-- **JPG Optimization with ImageMagick** (quality 85, -strip for metadata removal):
-  - episode-025.jpg: 0.5KB saved
-  - episode-029.jpg: 7.5KB saved
-  - episode-047.jpg: 107.3KB saved (largest improvement!)
-  - episode-058.jpg: 7.7KB saved
-  - episode-059.jpg: 0.3KB saved
-- **PNG Optimization Attempted**: All 3 PNG files already optimally compressed (no improvement possible)
-- **Total Results**:
-  - 51 images processed (48 JPG + 3 PNG)
-  - ~123KB total savings (6.0MB → 5.9MB)
-  - All optimizations non-destructive (files only replaced if smaller)
-  - High quality maintained (85% JPG quality, 95% PNG quality)
-- **Tools Used**: ImageMagick 7.1.2-8 (via Homebrew on macOS)
-- **Status**: All episode images optimized and ready for production deployment
-
-### November 29, 2025 (continued) - Production Deployment Fixes
-- **Issue 1: 403 Forbidden Error on Production**
-  - Cause: .htaccess file had restrictive permissions (600) preventing Apache from reading it
-  - Fix: Changed static/.htaccess permissions to 644 (rw-r--r--)
-  - Rebuilt production-deployment.zip with correct permissions
-  - Commit: eeb748b - "Fix .htaccess file permissions for production deployment"
-  - Status: ✅ Resolved - production site accessible
-- **Issue 2: Episode Page Footer Layout Broken**
-  - Cause: Overly broad CSS selector (.container > div) affecting footer layout
-  - Symptoms: Footer displayed in malformed single-column layout instead of 4-column grid
-  - Fix: Made episode page grid styles more specific (.section .container > div)
-  - This prevents episode 2-column layout from interfering with footer 4-column grid
-  - Commit: d75379d - "Fix episode page footer CSS conflict"
-  - Status: ✅ Resolved - footer displays correctly on all pages
-- **Production Deployment Package**: Updated production-deployment.zip (7.6MB)
-  - Includes all fixes: .htaccess permissions, footer CSS, image optimizations
-  - Deployed to GoDaddy cPanel production successfully
-
-### November 29, 2025 (continued) - Search Engine Submission
-- **Sitemap Submitted to Search Engines**
-  - Sitemap URL: `https://securitycocktailhour.com/sitemap.xml`
-  - Google Search Console: ✅ Submitted
-  - Bing Webmaster Tools: ✅ Submitted
-  - Contains all 110 pages (episodes, blog posts, main pages)
-- **Expected Timeline**:
-  - Google: Initial crawling within 24-48 hours, full indexing 1-4 weeks
-  - Bing: Initial crawling within 3-7 days
-- **SEO Benefits Now Active**:
-  - Optimized title tags (≤60 chars) for better click-through rates
-  - Meta descriptions (120-155 chars) for compelling search snippets
-  - Schema.org markup for rich results (podcast episodes, blog posts)
-  - Image optimization (123KB saved) for faster page loads
-  - Clean URLs with trailing slashes (no duplicate content issues)
-- **Status**: Production site live with full SEO optimization, submitted to search engines
-
-### November 28, 2025 - SEO Title Tag Optimization Complete
-- **Implemented dual-title system** for search engines
-  - `title`: Full title for Schema.org, RSS feeds, page display
-  - `seo_title`: Shortened version (≤60 chars) for search engine `<title>` tag
-- **Optimized 17 episode pages**: Episodes 17, 29, 37, 39, 40, 42, 43, 47, 48, 49, 50, 53, 55, 60, 61, 62, 63
-- **Created comprehensive documentation**: `docs/SEO-TITLE-TAG-STANDARDS.md`
-- **Updated templates**: Episodes use `seo_title` if available, fallback to `title`
-- **Commits**: 8c26e4d, 9f4172e, 8fdc3ab
-- **Status**: Complete - All episode pages have optimal title tags for search engines
-
-### November 28, 2025 - About Page Meta Description & URL Generation Fix
-- **Fixed**: About page meta description exceeded 155 char limit (was 197 chars)
-- **New**: "Meet Joe Patti and Adam Roth, the cybersecurity pros behind Security Cocktail Hour podcast. Real conversations about security challenges." (143 chars)
-- **Fixed**: URL generation filter `urlize` compatibility issue
-- **Solution**: Used `anchorize` filter (Hugo-native) instead
-- **Commit**: a80e2f5 - "Fix About page meta description and URL generation"
-- **Status**: ✅ All pages now 100% compliant with SEO standards
-
-### November 28, 2025 - Trailing Slash SEO Fix Implemented
-- **Issue**: Pages accessible with/without trailing slash (duplicate content for SEO)
-- **Solution**: Added .htaccess rules to enforce trailing slashes with 301 redirects
-- **File**: `static/.htaccess` - Apache rules for GoDaddy cPanel
-- **Commit**: e73d5e9 - "Implement trailing slash SEO fix"
-- **Status**: ✅ Enforced on production, prevents duplicate content issues
-
-### November 28, 2025 - SEO Audit Complete + Documentation Cleanup
-- **Documentation Reorganization**:
-  - Moved SEO-related docs to `docs/` for better organization
-  - Created `docs/reports/` for audit records
-  - Archived temporary reports from temp/
-- **Commit**: d5a7993 - "Complete site-wide SEO optimization and documentation reorganization"
-
----
-
 ## Production Deployment
 
-**Production Deployment File**: `production-deployment-20251208-143839.zip` (7.9MB)
+**Production Deployment File**: `production-deployment-20251210-124818.zip` (7.9MB)
 - Location: Project root directory
-- Contents: All 113 pages (Episode 65) + newsletter signup page + optimized images + SEO fixes + cache-busting
+- Contents: All 134 pages (Episode 65 + Job Scams blog post) + newsletter signup page + optimized images + SEO fixes + cache-busting
 - Status: ✅ DEPLOYED TO PRODUCTION
-- Last Updated: December 8, 2025
+- Last Updated: December 10, 2025
 
 **Deployment Process**:
-1. Download `production-deployment.zip`
+1. Download `production-deployment-20251210-124818.zip`
 2. Log into GoDaddy cPanel File Manager
 3. Navigate to `public_html/`
 4. Delete old files (backup first if needed)
-5. Upload and extract `production-deployment.zip`
+5. Upload and extract `production-deployment-20251210-124818.zip`
 6. Verify `.htaccess` permissions are 644
 7. Test site at https://securitycocktailhour.com/
 
@@ -999,11 +462,11 @@ magick input.jpg -quality 85 -strip output.jpg
 **Phase 1 (MVP)**: ✅ Complete
 - All core pages live
 - All integrations working
-- 64 episodes published
+- 65 episodes published
 
 **Phase 2 (Blog)**: ✅ Complete
 - Blog feature implemented
-- 3 blog posts published
+- 4 blog posts published
 - Full SEO optimization
 
 **Phase 3 (SEO)**: ✅ Complete
@@ -1017,9 +480,10 @@ magick input.jpg -quality 85 -strip output.jpg
 - Collapsible transcript accordion (SEO-friendly)
 - Manual related episodes override
 - Episode 64 published with full transcript
-- Production package ready for deployment
+- Episode number display on all cards
+- Episode number search functionality
 
-**Phase 4 (Hero Redesign)**: 🔄 In Progress (Started December 3, 2025 - Currently December 8, 2025)
+**Phase 4 (Hero Redesign)**: 🔄 In Progress (Started December 3, 2025)
 - ✅ Logo design DNA analysis complete
 - ✅ 6 initial design concepts created and reviewed
 - ✅ Premium Art Deco aesthetic selected and finalized
@@ -1041,10 +505,11 @@ magick input.jpg -quality 85 -strip output.jpg
 - ⏳ Responsive testing pending
 - ⏳ Staging/production deployment pending (awaiting user approval)
 
-**Production Status**: ✅ LIVE (Deployed December 8, 2025)
+**Production Status**: ✅ LIVE (Deployed December 10, 2025)
 - Site: https://securitycocktailhour.com/
 - Newsletter page live at https://securitycocktailhour.com/newsletter/ (accessible from footer)
 - Episode 65 live and accessible (Job Scams - December 8, 2025)
+- Blog post "4 Dangerous Job Scams Targeting Professionals in 2025" featured on homepage
 - Episode numbers displayed on all episode cards (Episodes page and Homepage)
 - Search functionality enhanced with episode number support
 - Collapsible transcript accordion working across all episode pages
@@ -1052,7 +517,7 @@ magick input.jpg -quality 85 -strip output.jpg
 - All SEO optimizations active
 - Cache-busting implemented (CSS updates load properly)
 - Submitted to search engines (Google & Bing)
-- 113 pages live (65 episodes + 3 blog posts + newsletter + main pages)
+- 134 pages live (65 episodes + 4 blog posts + newsletter + main pages)
 
 ---
 
