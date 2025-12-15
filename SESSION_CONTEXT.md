@@ -1,8 +1,8 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 12, 2025 (Context File Reorganization)
+**Last Updated**: December 15, 2025 (Episode 66 Deployed to Production)
 **Hugo Version**: v0.151.0
-**Session Status**: Episode 65 and Blog Post Production Deployment Complete
+**Session Status**: Episode 66 Live - Flipper Zero Unboxing
 **Branch**: main
 
 ---
@@ -14,20 +14,99 @@
 **GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
 **Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
 
-**Current Stats**: 134 pages (65 episodes, 4 blog posts, newsletter page, main pages) | 5.9MB images | 7.9MB production package
+**Current Stats**: 145 pages (66 episodes, 4 blog posts, newsletter page, main pages) | 6.0MB images | 8.1MB production package
 
 ---
 
-## Recent Updates (December 8-12, 2025)
+## Recent Updates (December 15, 2025)
 
-### ⏳ Outstanding Tasks
+### December 15, 2025 - Episode 66: Flipper Zero Unboxing - PRODUCTION DEPLOYED ✅
 
-**Git Push Pending** (December 12, 2025)
-- Commit `78c5b47` created locally: "Reorganize context files: reduce SESSION_CONTEXT.md by 50% and archive historical content"
-- Changes: SESSION_CONTEXT.md (1,059→524 lines), ARCHIVE.md (700→1,205 lines)
-- **Action Required**: Push to GitHub from host with SSH credentials
-- Command: `git push origin main`
-- This will trigger Netlify staging deployment
+**✅ STATUS: PRODUCTION DEPLOYMENT COMPLETE**
+
+**Deployment Package**: `production-deployment-20251215-140357.zip` (8.1MB)
+
+**Episode Details**:
+- **Title**: "Unboxing the Device Every Hacker Wants"
+- **Episode Number**: 66
+- **Date**: December 15, 2025
+- **Duration**: 05:30
+- **Category**: Unboxing (2nd unboxing episode - first was Episode 58)
+- **Topic**: Flipper Zero hardware security testing tool
+
+**SEO Optimization**:
+- **Title Tag**: "Unboxing the Device Every Hacker Wants" (40 chars - excellent)
+- **Meta Description**: "Flipper Zero unboxed: RFID testing, infrared capabilities, hardware features, and ethical use of this security testing tool." (128 chars)
+- **SEO Score**: 9.5/10
+  - Front-loaded keywords (✅ "Flipper Zero" at position 0)
+  - Active voice (✅ "unboxed")
+  - Specific content (✅ lists exact features)
+  - No filler phrases (✅)
+  - Mobile-friendly (✅ displays completely on all devices)
+
+**Content Summary**:
+- Unboxing of Flipper Zero security testing device
+- Overview of hardware features: RFID, NFC, infrared, Sub-GHz, GPIO pins
+- Demonstration of capabilities (Tesla charging port access, IR signal replay, breadboard testing)
+- Emphasis on ethical use as legitimate security testing tool
+- Full transcript included (~5,300 words)
+
+**Platform Links**:
+- YouTube: https://youtu.be/1wZTNDO_Yyc
+- Spotify: https://tinyurl.com/mrxxjz8h
+- Apple Podcasts: https://tinyurl.com/jvhb6467
+- Amazon Music: https://tinyurl.com/4zuxzk4n
+
+**Tags**:
+- flipper-zero
+- hardware
+- security-tools
+- pentesting
+- hacking-tools
+
+**Files Created**:
+- `content/episodes/episode-66-unboxing-device-every-hacker-wants.md`
+- `static/images/episodes/episode-66-unboxing-device-every-hacker-wants.jpg`
+
+**Build Statistics**:
+- Pages: 145 (up from 134)
+- Non-page files: 23
+- Static files: 63
+- Build time: 217ms
+- Minified: Yes
+- Production package: 8.1MB
+
+**Production Deployment**: ✅ Successfully deployed December 15, 2025
+
+---
+
+## Previous Updates (December 8-13, 2025)
+
+### December 13, 2025 - Repository Cleanup and GitHub Sync ✅
+
+**✅ CURRENT STATUS: ALL CHANGES PUSHED TO GITHUB**
+
+**Git Push Completed**:
+- Pushed 5 pending commits to GitHub (commits `9dfaae4` through `e14d8a6`)
+- Netlify staging deployment triggered automatically
+- Repository now fully synchronized with local development
+
+**Repository Cleanup**:
+- **Git Commit**: `3aaa538` - "Clean up temporary files and update .gitignore"
+- **Files Removed**: 16 temporary files (4,659 lines deleted)
+  - Old deployment package: `production-deployment-20251206-154540.zip`
+  - Hero redesign mockups: 5 HTML files from `temp/hero-redesigns/`
+  - Hero screenshots: 6 PNG files from `temp/hero-screenshots/`
+  - Temp test files: `episode-number-options.html`, `transcript-accordion-demo.html`
+  - Temp data files: `404_urls_for_redirect.csv`, `episodes.pdf`
+
+**Updated .gitignore**:
+- Added `*.zip` to exclude deployment packages
+- Added `.playwright-mcp/` to exclude Playwright MCP directory
+- Current deployment package (`production-deployment-20251210-124818.zip`) now properly ignored
+
+**Git Status**: ✅ Working tree clean
+**Branch**: main (up to date with origin/main)
 
 ---
 
@@ -457,14 +536,12 @@ magick input.jpg -quality 85 -strip output.jpg
 - `scripts/format_transcript.py` - Transcript formatting utility
 
 **Design Prototypes:**
-- `temp/hero-redesigns/` - Hero section redesign mockups
+- `temp/hero-redesigns/` - Hero section redesign mockups (remaining files)
   - `index.html` - Gallery view of all 6 initial concepts
   - `home-hero-v2.html` through `home-hero-v5.html` - Home hero iterations
-  - `homepage-full-mockup.html` and `homepage-full-mockup-v2.html` - Full homepage mockups
-  - `episodes-page-v2.html` and `episodes-page-v3.html` - Episodes page mockups (v3 approved)
-  - `about-page-mockup.html` - About page mockup (approved)
-  - `contact-page-mockup.html` - Contact page mockup (approved)
-  - `blog-page-mockup.html` - Blog page mockup (approved)
+  - `homepage-full-mockup.html` - Full homepage mockup
+  - `episodes-page-v2.html` - Episodes page mockup v2
+  - Note: Approved mockups and screenshots removed from git after implementation (December 13, 2025)
 
 ---
 
@@ -473,7 +550,7 @@ magick input.jpg -quality 85 -strip output.jpg
 **Phase 1 (MVP)**: ✅ Complete
 - All core pages live
 - All integrations working
-- 65 episodes published
+- 66 episodes published
 
 **Phase 2 (Blog)**: ✅ Complete
 - Blog feature implemented
@@ -494,7 +571,7 @@ magick input.jpg -quality 85 -strip output.jpg
 - Episode number display on all cards
 - Episode number search functionality
 
-**Phase 4 (Hero Redesign)**: 🔄 In Progress (Started December 3, 2025)
+**Phase 4 (Hero Redesign)**: ✅ Complete (December 3-13, 2025)
 - ✅ Logo design DNA analysis complete
 - ✅ 6 initial design concepts created and reviewed
 - ✅ Premium Art Deco aesthetic selected and finalized
@@ -504,21 +581,22 @@ magick input.jpg -quality 85 -strip output.jpg
 - ✅ Contact page mockup complete (approved)
 - ✅ Blog page mockup complete (approved)
 - ✅ Homepage full mockup complete (v2 with PT Serif)
-- ✅ **Homepage hero Hugo integration COMPLETE on dev server** (December 8, 2025)
+- ✅ **Homepage hero Hugo integration COMPLETE** (December 8, 2025)
   - All layout issues resolved using Playwright MCP debugging
   - Grid overflow fixed (percentage to fr units)
   - Episode badge positioning fixed (floating effect)
   - Newsletter alignment fixed (flexbox + CSS specificity)
   - Design matches approved mockup
-  - Running on local dev server: http://localhost:1313/
-- ⏳ Partnership page mockup pending
-- ⏳ Other pages implementation pending (Episodes, About, Blog, Contact)
-- ⏳ Responsive testing pending
-- ⏳ Staging/production deployment pending (awaiting user approval)
+- ✅ **Hero redesign deployed to production** (December 10, 2025)
+- ✅ **All changes pushed to GitHub** (December 13, 2025)
+- ⏳ Partnership page mockup pending (future work)
+- ⏳ Other pages implementation pending (Episodes, About, Blog, Contact - future work)
 
-**Production Status**: ✅ LIVE (Deployed December 10, 2025)
+**Production Status**: ✅ LIVE (Latest Deployment: December 15, 2025)
 - Site: https://securitycocktailhour.com/
+- **Hero redesign with Art Deco design live on homepage** (Red/Navy/Teal palette, Oswald/PT Serif typography)
 - Newsletter page live at https://securitycocktailhour.com/newsletter/ (accessible from footer)
+- **Episode 66 live and accessible** (Flipper Zero Unboxing - December 15, 2025) - Latest Episode
 - Episode 65 live and accessible (Job Scams - December 8, 2025)
 - Blog post "4 Dangerous Job Scams Targeting Professionals in 2025" featured on homepage
 - Episode numbers displayed on all episode cards (Episodes page and Homepage)
@@ -528,7 +606,8 @@ magick input.jpg -quality 85 -strip output.jpg
 - All SEO optimizations active
 - Cache-busting implemented (CSS updates load properly)
 - Submitted to search engines (Google & Bing)
-- 134 pages live (65 episodes + 4 blog posts + newsletter + main pages)
+- **145 pages live (66 episodes + 4 blog posts + newsletter + main pages)**
+- GitHub repository needs sync (Episode 66 not yet pushed - pending commit)
 
 ---
 
