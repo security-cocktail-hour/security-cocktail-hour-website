@@ -196,9 +196,9 @@
     </div>
 
     <!-- No Results Message -->
-    <div id="no-results" style="display: none; text-align: center; padding: 3rem 0;">
-      <p style="font-size: 1.25rem; color: rgba(45, 45, 45, 0.6);">No blog posts found matching your search.</p>
-      <button onclick="resetFilters()" class="btn btn-secondary" style="margin-top: 1rem;">Clear Filters</button>
+    <div id="no-results" style="display: none; text-align: center; padding: 3rem 0; width: 100%; max-width: 600px; margin: 0 auto;">
+      <p style="font-size: 1.25rem; color: rgba(45, 45, 45, 0.6); margin-bottom: 1.5rem;">No blog posts found matching your search.</p>
+      <button onclick="resetFilters()" class="btn btn-secondary">Clear Filters</button>
     </div>
   </div>
 </section>
@@ -222,10 +222,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const selectedTag = tagFilter.value;
     const sortOrder = sortFilter.value;
 
-    const articles = Array.from(blogGrid.querySelectorAll('.blog-card'));
+    const articleLinks = Array.from(blogGrid.querySelectorAll('.blog-card-link'));
     let visibleCount = 0;
 
-    articles.forEach(article => {
+    articleLinks.forEach(link => {
+      const article = link.querySelector('.blog-card');
       const title = article.dataset.title || '';
       const category = article.dataset.category || '';
       const tags = article.dataset.tags || '';
@@ -235,22 +236,24 @@ document.addEventListener('DOMContentLoaded', function() {
       const matchesTag = !selectedTag || tags.toLowerCase().includes(selectedTag.toLowerCase());
 
       if (matchesSearch && matchesCategory && matchesTag) {
-        article.style.display = '';
+        link.style.display = '';
         visibleCount++;
       } else {
-        article.style.display = 'none';
+        link.style.display = 'none';
       }
     });
 
     // Sort articles
-    const visibleArticles = articles.filter(article => article.style.display !== 'none');
+    const visibleArticles = articleLinks.filter(link => link.style.display !== 'none');
     visibleArticles.sort((a, b) => {
-      const dateA = new Date(a.dataset.date);
-      const dateB = new Date(b.dataset.date);
+      const articleA = a.querySelector('.blog-card');
+      const articleB = b.querySelector('.blog-card');
+      const dateA = new Date(articleA.dataset.date);
+      const dateB = new Date(articleB.dataset.date);
       return sortOrder === 'newest' ? dateB - dateA : dateA - dateB;
     });
 
-    visibleArticles.forEach(article => blogGrid.appendChild(article));
+    visibleArticles.forEach(link => blogGrid.appendChild(link));
 
     // Show/hide no results message
     noResults.style.display = visibleCount === 0 ? 'block' : 'none';
