@@ -112,6 +112,38 @@
 
 ---
 
+## Production Build Process
+
+**STANDARD METHOD: Always use the automated build script**
+
+```bash
+./scripts/build_production.sh
+```
+
+**What it does:**
+1. Validates .htaccess file integrity (before build)
+2. Runs `hugo --minify` to build production site
+3. Re-validates .htaccess in built package (after build)
+4. Creates timestamped deployment ZIP: `production-deployment-YYYYMMDD-HHMMSS.zip`
+5. Displays validation summary and deployment instructions
+
+**Why use this instead of manual build:**
+- ✓ Prevents broken 404 error pages from reaching production
+- ✓ Ensures all 24 required 301 redirects are present
+- ✓ Validates security headers and performance config
+- ✓ Catches .htaccess errors before deployment
+- ✓ Creates properly named, timestamped packages
+
+**Exit codes:**
+- 0 = All checks passed, safe to deploy
+- 1 = Validation failed, DO NOT deploy (fix errors first)
+
+**When requested to "build for production" or "create production package":**
+- Use `./scripts/build_production.sh` (automated, with validation)
+- NOT `hugo --minify` (manual, no validation)
+
+---
+
 ## Quick Reference Commands
 
 ```bash
