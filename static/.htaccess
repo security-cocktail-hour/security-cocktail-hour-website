@@ -43,6 +43,9 @@ Redirect 301 /merchandise1 /partnership/
 
 # ============================================================================
 
+# Custom 404 Error Page
+ErrorDocument 404 /404.html
+
 # Enable mod_rewrite for URL manipulation
 <IfModule mod_rewrite.c>
     RewriteEngine On
