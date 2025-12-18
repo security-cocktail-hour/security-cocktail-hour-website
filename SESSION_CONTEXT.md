@@ -122,7 +122,14 @@ cd "/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/website/redes
 hugo server -D
 # Access at http://localhost:1313/
 
-# Build for production
+# Build for production (RECOMMENDED - with validation)
+./scripts/build_production.sh
+# Creates: production-deployment-YYYYMMDD-HHMMSS.zip
+
+# Validate .htaccess file integrity
+python3 scripts/validate_htaccess.py
+
+# Manual build for production (without validation)
 hugo --minify
 
 # Create new episode

@@ -21,6 +21,44 @@
 
 ---
 
+## Pre-Deployment Validation (NEW - December 2025)
+
+**IMPORTANT:** Always run this validation BEFORE deploying to production!
+
+### Validate .htaccess File Integrity
+
+This prevents broken 301 redirects and 404 error pages from being deployed.
+
+```bash
+# Navigate to project directory
+cd "/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/website/redesign 2025-10/security-cocktail-hour-website"
+
+# Run validation script
+python3 scripts/validate_htaccess.py
+```
+
+**Expected Output:**
+```
+✓ ALL CHECKS PASSED - SAFE TO DEPLOY
+```
+
+**If validation fails:**
+- DO NOT deploy to production
+- Review error messages
+- Fix issues in `static/.htaccess`
+- Rebuild: `hugo --minify`
+- Re-run validation
+
+**What it checks:**
+- ErrorDocument 404 directive present
+- All 24 required 301 redirects present
+- No duplicate redirects
+- HTTPS redirect rules
+- Security headers configured
+- Performance optimizations enabled
+
+---
+
 ## Step-by-Step Deployment Instructions
 
 ### Step 1: Backup Existing Site (IMPORTANT!)
