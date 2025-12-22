@@ -1,0 +1,38 @@
+1.
+67
+2.
+Flipper Zero Firmware Update: If at first you don't succeed...
+3.
+2025-12-22
+4.
+No guest
+5.
+No guest
+6.
+Hardware Security
+7.
+15:55
+8. 
+Keeping your Flipper Zero's firmware updated is critical for security and performance—but the update process isn't always smooth. In this episode, we'll walk you through every step of updating your Flipper Zero firmware, including how to work through a snag you might encounter.
+
+Whether you're a security professional, pentester, or hardware enthusiast, regular firmware maintenance is essential for keeping your tools secure and functional. This guide shows you what it takes for the popular Flipper Zero.
+
+00:00 Introduction to Flipper Zero
+02:30 Laptop connection and app
+06:20 Begin Update
+07:23 This doesn't look right
+09:40 Definitely not right
+10:27 Success
+12:57 Next steps
+9. 
+YouTube: https://youtu.be/MTljEV7yn0c
+Spotify: https://open.spotify.com/episode/0QRRm3I9TOxvwSdapRRSrI?si=Zp2R7q5NRaaWRKfng086Vg
+Apple Podcasts: https://tinyurl.com/45vp35h9
+Amazon Music: https://tinyurl.com/bdd3nx4h
+10.
+'working/Flipper Zero Firmware Update thumb.jpg'
+11.
+'working/ep67 transcript - Davinci (with names).txt'
+12.
+episode-66-unboxing-device-every-hacker-wants.md
+episode-06.md

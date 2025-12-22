@@ -1,6 +1,6 @@
 # New Episode Deployment Process
 
-**Last Updated**: December 2, 2025
+**Last Updated**: December 21, 2025
 
 ---
 
@@ -17,47 +17,65 @@ This document outlines the process for adding new episodes to the Security Cockt
 Place the episode details in a text file (e.g., `working/content-answers.txt`) with the following information:
 
 ```
-1. [Episode Number]
-2. [Full Episode Title]
-3. [Publication Date in YYYY-MM-DD format]
-4. [Guest Name]
-5. [Guest Bio - can be short form like "Guest Name, Title, Company"]
-6. [Category - must be one of: AI, Career, Career Bio, Cryptocurrency Security, Educational, General, Hardware Security, Identity, Incident Response, Legal, Operational Technology (OT), Sales, Small Business, Threat Intel, Unboxing, Users]
-7. [Duration in HH:MM:SS or MM:SS format]
-8. [Episode Description - SEO-optimized meta description, 120-155 characters maximum]
-
+1. Episode Number
+2. Full Episode Title (the complete title as you want it displayed)
+3. Publication Date (YYYY-MM-DD format)
+4. Guest Name (or "No guest" for solo episodes)
+5. Guest Bio (short form like "Guest Name, Title, Company")
+6. Category (must be one of: AI, Career, Career Bio, Cryptocurrency Security, Educational, General, Hardware Security, Identity, Incident Response, Legal, Operational Technology (OT), Sales, Small Business, Threat Intel, Unboxing, Users)
+7. Duration (HH:MM:SS or MM:SS format)
+8. Full Description (multiple paragraphs of body content for the episode page - this is where you explain what the episode is about, key topics covered, etc.)
 9. Platform URLs:
-YouTube: [URL]
-Spotify: [URL]
-Apple: [URL or note if not yet available]
-Amazon: [URL or note if not yet available]
-
-10. [Path to episode thumbnail image]
+   YouTube: [URL]
+   Spotify: [URL]
+   Apple: [URL or note if not yet available]
+   Amazon: [URL or note if not yet available]
+10. Episode thumbnail image path
+11. Transcript file path (optional - if you have a transcript)
+12. Related Episodes (optional - filenames like "episode-64-title.md, episode-45-title.md")
 ```
 
 **Example:**
 ```
-1. 62
-2. AI in Cybersecurity: How CISOs Are Actually Using LLMs with Myke Lyons (Cribl CISO)
-3. 2025-11-03
-4. Myke Lyons
-5. Myke Lyons, CISO, Cribl
-6. AI
-7. 57:50
-8. Join Security Cocktail Hour hosts Joe Patti and Adam Roth for an in-depth conversation with Myke Lyons...
+1. 66
+2. Unboxing the Device Every Hacker Wants
+3. 2025-12-15
+4. No guest
+5. N/A
+6. Unboxing
+7. 05:30
+8. Pretty much everyone in the cybersecurity business has heard of the Flipper Zero, but many security pros have never actually seen one.
 
-00:00 Intro
-00:38 Welcome Myke Lyons
-[timestamps]
+Since not everyone has the time to get their hands on one, we did and are unboxing it in this quick 5-minute episode.
 
-#AI #LLM #Cybersecurity [hashtags]
+This surprisingly compact hardware can:
+- Test RFID systems and vulnerabilities
+- Check infrared device security
+- Identify wireless protocol weaknesses
+- Run custom security testing apps
 
-9.
-YouTube: https://youtu.be/lnbMS2B8lWk
-Spotify: https://open.spotify.com/episode/...
-Apple and Amazon URLs won't be available until it's published.
-10. "working/episode-thumbnail.jpg"
+If you're defending networks, you need tools. This episode is the first in a series where we'll give you a look at the tools you can use to fight the bad guys.
+
+9. Platform URLs:
+YouTube: https://youtu.be/1wZTNDO_Yyc
+Spotify: https://tinyurl.com/mrxxjz8h
+Apple: https://tinyurl.com/jvhb6467
+Amazon: https://tinyurl.com/4zuxzk4n
+10. working/episode-66-thumbnail.jpg
+11. working/transcript-ep-066.txt
+12. (none)
 ```
+
+### Claude Will Auto-Generate SEO Metadata
+
+**You do NOT need to provide these** - Claude will generate them based on your full title and description, then present them for your approval:
+
+1. **SEO Title** (only if full title exceeds 60 characters) - optimized for search results
+2. **Meta Description** (120-155 chars) - SEO-compliant description for search snippets
+3. **Tags** (5-8 relevant tags) - for categorization and SEO
+4. **Topics Discussed** (bulleted list) - extracted from your full description
+
+**Approval Process**: Claude will show you these generated items with character counts, you can approve or request revisions, and once approved, deployment proceeds.
 
 ### 2. Episode Thumbnail Image
 
@@ -78,27 +96,66 @@ Simply tell Claude Code:
 Or if you want to preview first:
 > "We're releasing a new episode. I have the copy and graphics. I want to preview it on the dev site before creating the production package."
 
-### Step 2: Claude Will Process
+### Step 2: Claude Will Generate SEO Metadata
 
 Claude will automatically:
 1. Read the episode details from your content file
-2. Copy the episode image to `static/images/episodes/episode-XXX.jpg`
-3. Create the episode markdown file with proper formatting:
-   - Bulleted timestamps (not plain text)
-   - Bulleted topics (no hashtags)
-   - Proper front matter with all metadata
+2. Analyze the full title and description
+3. Generate SEO-compliant metadata:
+   - **SEO Title** (if full title > 60 chars)
+   - **Meta Description** (120-155 chars)
+   - **Tags** (5-8 relevant tags)
+   - **Topics Discussed** (bulleted list)
+4. Present these for your approval with character counts
+
+**Example Output:**
+```
+SEO Title: "Unboxing the Device Every Hacker Wants" (40 chars) ✓
+Meta Description: "Flipper Zero unboxed: RFID testing, infrared capabilities, hardware features, and ethical use of this security testing tool." (128 chars) ✓
+Tags: flipper-zero, hardware, security-tools, pentesting, hacking-tools
+Topics Discussed:
+- RFID and NFC Testing
+- Infrared Signal Replay
+- Wireless Protocol Testing
+- Hardware Security Tools
+- Ethical Hacking
+```
+
+### Step 3: Review and Approve/Revise
+
+Review the generated metadata:
+- Check SEO title length and clarity
+- Verify meta description is compelling and accurate
+- Ensure tags are relevant
+- Confirm topics list is complete
+
+Then either:
+- **Approve**: "Looks good, proceed"
+- **Revise**: "Make the description more action-oriented" or "Add 'sub-ghz' as a tag"
+
+### Step 4: Claude Builds Episode and Dev Preview
+
+Once you approve the metadata, Claude will:
+1. Copy the episode image to `static/images/episodes/episode-XXX.jpg`
+2. Copy transcript (if provided) and format it properly
+3. Create the episode markdown file with:
+   - Approved SEO metadata in front matter
+   - Full description as body content
+   - Collapsible transcript section (if provided)
+   - Related episodes (if specified)
 4. Start the Hugo dev server with future posts enabled (`hugo server -D -F`)
 5. Let you preview at http://localhost:1313/
 
-### Step 3: Review and Approve
+### Step 5: Review Dev Site and Approve
 
 Review the episode on the dev site:
 - Check the homepage shows the new episode
 - Verify the episode page displays correctly
-- Check image, timestamps, topics formatting
+- Check image, description, topics, transcript formatting
 - Test platform links
+- Verify SEO metadata appears correctly
 
-### Step 4: Build and Deploy
+### Step 6: Build and Deploy
 
 Once approved, tell Claude:
 > "I'm satisfied with this. Commit and build for production."
@@ -110,7 +167,7 @@ Claude will:
 4. Build production site (`hugo --minify`)
 5. Create `production-deployment.zip` package
 
-### Step 5: Upload to GoDaddy
+### Step 7: Upload to GoDaddy
 
 Manually upload `production-deployment.zip` to GoDaddy cPanel:
 1. Log into GoDaddy cPanel
@@ -143,61 +200,49 @@ See [GODADDY-DEPLOYMENT-INSTRUCTIONS.md](../GODADDY-DEPLOYMENT-INSTRUCTIONS.md) 
 - Claude always starts dev server with `-F` flag to show future posts
 - You can preview future-dated episodes locally before they go live
 
-### SEO Standards
+### SEO Standards (Auto-Generated)
 
-**CRITICAL REQUIREMENTS**: All episodes must comply with SEO standards.
+**AUTOMATED COMPLIANCE**: Claude automatically generates SEO-compliant metadata based on your content.
 
 #### Meta Description Standards
 
-**Character Limits:**
-- **Target**: 120 characters (optimal for mobile)
-- **Maximum**: 155 characters (hard limit - Google truncates beyond this)
+Claude generates meta descriptions following these rules:
+- **Length**: 120-155 characters (optimal range)
+- **Content**: Concise, compelling, action-oriented
+- **Structure**: Front-load keywords, include guest name if applicable
+- **Voice**: Active voice, no filler words
+- **Completeness**: Full sentences, no truncation
 
-**Requirements:**
-- ✅ Concise and compelling
-- ✅ Include guest name if applicable
-- ✅ Mention key topics covered
-- ✅ Active voice, action-oriented
-- ✅ Front-load important keywords
-- ✅ Complete sentences (no truncation)
-- ❌ No filler words or redundant phrases
-- ❌ Never exceed 155 characters
-
-**Good Example (127 chars):**
-> "Jatin Mannepalli explores high-frequency trading security challenges, incident response, and custom hardware with Joe and Adam."
-
-**Bad Example (656 chars - WAY too long):**
-> "In this episode of the Security Cocktail Hour, guest Jatin Mannepalli introduces co-hosts Joe Patti and Adam Roth the high-speed, high stakes world of high frequency trading (HFT) and its many security challenges..."
+**You Review and Approve**: Claude presents the generated description with character count for your approval before proceeding.
 
 **Reference:** See `docs/SEO-META-DESCRIPTION-STANDARDS.md` for complete guidelines.
 
-#### Title Tag Standards (Optional)
+#### SEO Title Standards
 
-**When to Add**: If the full episode title exceeds 60 characters, consider adding an optional `seo_title` field.
+Claude generates optimized SEO titles when needed:
+- **When**: Only if full title exceeds 60 characters
+- **Length**: 50-60 characters (optimal for search results)
+- **Purpose**: Prevents truncation in search results while preserving full title for page display
 
-**Character Limits:**
-- **Target**: 50-60 characters (optimal for search results)
-- **Maximum**: 60 characters (Google truncates around 60-70 chars)
-
-**Implementation:**
+**Dual-Title System:**
 ```yaml
 ---
-title: "Full Episode Title with Guest Name and Context"
-seo_title: "Shortened Title for Search Results"  # Optional, only if title > 60 chars
+title: "Full Episode Title with Guest Name and Context"  # For page display, Schema.org
+seo_title: "Shortened Title for Search Results"  # For HTML <title> tag only
 ---
 ```
 
-**Benefits:**
-- ✅ Better search result appearance
-- ✅ No truncation on mobile devices
-- ✅ Full title preserved for page display and Schema.org
-- ✅ SEO title used only in HTML `<title>` tag
+**You Review and Approve**: Claude shows the generated SEO title with character count for your approval.
 
 **Reference:** See `docs/SEO-TITLE-TAG-STANDARDS.md` for complete guidelines and examples.
 
-**Tools Available:**
-- Run `python3 scripts/audit_meta_descriptions.py` to check all descriptions
-- See `docs/reports/meta-description-audit-2025-11-27.md` for complete audit results
+#### Tags and Topics
+
+Claude automatically generates:
+- **Tags**: 5-8 relevant tags based on episode content (for SEO and categorization)
+- **Topics Discussed**: Bulleted list extracted from your full description
+
+**You Review and Approve**: You can request additions, removals, or revisions to both before proceeding.
 
 ### Episode Transcripts (Optional)
 
@@ -270,34 +315,38 @@ ls content/episodes/ | grep -i "topic-keyword"
 - Cross-promote different categories
 - Feature flagship episodes
 
-### Episode Format Standards
+### Episode Content Structure
 
-All episodes follow the standardized format documented in [SESSION_CONTEXT.md](../SESSION_CONTEXT.md#episode-content-structure):
+Episodes are automatically structured with:
 
-**Episode Timestamps:**
-```markdown
-## Episode Timestamps
-
-- 00:00 Intro
-- 00:38 Welcome Guest Name
-- 02:42 Topic description
+**Front Matter (Auto-Generated):**
+```yaml
+---
+title: "Full Episode Title"
+seo_title: "SEO Title"  # Only if title > 60 chars
+date: 2025-12-21
+category: "Category"
+duration: "HH:MM:SS"
+image: "/images/episodes/episode-XXX.jpg"
+description: "SEO meta description (120-155 chars)"
+platforms:
+  youtube: "URL"
+  spotify: "URL"
+  apple: "URL"
+  amazon: "URL"
+tags:
+  - tag1
+  - tag2
+related_episodes:  # Optional
+  - "episode-XX-title.md"
+---
 ```
 
-**Topics Discussed:**
-```markdown
-## Topics Discussed
-
-- AI
-- Cybersecurity
-- CISO
-- Data Security
-```
-
-**Key Rules:**
-- Use **bullet points** (dashes) for both sections
-- Do NOT use hashtags (#) in Topics Discussed
-- Homepage shows only description field
-- Individual episode pages show all sections
+**Body Content:**
+- Your full description (multiple paragraphs)
+- Additional sections as needed
+- Topics Discussed (auto-generated bulleted list)
+- Full Episode Transcript (auto-formatted in collapsible accordion)
 
 ### Platform URLs
 
@@ -369,12 +418,25 @@ Current package size: ~7.8MB (optimized)
 "We're releasing a new episode. Content is in @working/content-answers.txt"
 ```
 
-**Preview first:**
+**Review generated SEO metadata:**
+Claude will present SEO title, meta description, tags, and topics for your approval.
+
+**Approve metadata:**
 ```
-"I want to see it on the dev site before building for production."
+"Looks good, proceed with the episode"
 ```
 
-**Approve and deploy:**
+**Request revisions:**
+```
+"Make the description more action-oriented"
+"Add 'ransomware' as a tag"
+"The SEO title is too long, shorten it"
+```
+
+**Preview on dev site:**
+After metadata approval, Claude builds the episode and starts dev server.
+
+**Approve final build:**
 ```
 "I'm satisfied. Commit and build for production."
 ```
