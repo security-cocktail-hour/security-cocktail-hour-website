@@ -10,8 +10,8 @@ description: "Learn how to update your Flipper Zero firmware with this complete 
 platforms:
   youtube: "https://youtu.be/MTljEV7yn0c"
   spotify: "https://open.spotify.com/episode/0QRRm3I9TOxvwSdapRRSrI?si=Zp2R7q5NRaaWRKfng086Vg"
-  apple: "https://tinyurl.com/45vp35h9"
-  amazon: "https://tinyurl.com/bdd3nx4h"
+  apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000742339491"
+  amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/episodes/d2e05c83-3c31-4aeb-a1d6-aa013a86d861/security-cocktail-hour-flipper-zero-firmware-update-if-at-first-you-don't-succeed"
 tags:
   - flipper-zero
   - firmware-update
