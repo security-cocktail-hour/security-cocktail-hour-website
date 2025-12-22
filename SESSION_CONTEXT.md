@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 21, 2025
+**Last Updated**: December 22, 2025
 **Hugo Version**: v0.151.0
 **Branch**: main
 
@@ -8,10 +8,11 @@
 
 ## Current Session
 
-**Today's Focus**: 404 error page handling and Google indexing fix
-- Fixed 404 error page to display custom page instead of Apache default
-- Verified all 24 existing 301 redirects are working correctly
-- Production package deployed successfully
+**Today's Focus**: Episode 67 deployment and new episode workflow improvements
+- Published Episode 67: "Flipper Zero Firmware Update: If at first you don't succeed..."
+- Created DaVinci Resolve transcript formatter script
+- Updated NEW-EPISODE-DEPLOYMENT.md with improved workflow (auto-generate SEO metadata)
+- Production package ready for deployment
 
 ---
 
@@ -22,11 +23,32 @@
 **GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
 **Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
 
-**Current Stats**: 145 pages (66 episodes, 4 blog posts, newsletter page, main pages) | 6.0MB images | 8.1MB production package
+**Current Stats**: 154 pages (67 episodes, 4 blog posts, newsletter page, main pages) | 6.0MB images | 8.2MB production package
 
 ---
 
 ## Recent Completed Work (Last 7 Days)
+
+### December 22, 2025 - Episode 67: Flipper Zero Firmware Update ✅
+- **Episode 67** ready for production deployment
+- Title: "Flipper Zero Firmware Update: If at first you don't succeed..."
+- Topic: Firmware update walkthrough with troubleshooting
+- Duration: 15:55
+- Category: Hardware Security
+- Full transcript included (~440 lines)
+- SEO optimized: 53-char title, 155-char description
+- **New Tools Created**:
+  - `scripts/format_davinci_transcript.py` - Converts DaVinci Resolve transcript format to episode format
+  - Handles timecode conversion from `[HH:MM:SS:FF]` to `(MM:SS)`
+- **Episode Workflow Improvement**:
+  - Updated `docs/NEW-EPISODE-DEPLOYMENT.md` with new auto-generation workflow
+  - Claude now auto-generates SEO title, meta description, tags, and topics
+  - User reviews and approves generated metadata before deployment
+  - Streamlines episode creation process
+- Related episodes: Episode 66 (Flipper Zero Unboxing), Episode 6
+- Commit: `4405873`
+- Production package: `production-deployment-20251222-105612.zip` (8.2MB, 367 files)
+- Status: ✅ READY FOR DEPLOYMENT
 
 ### December 17, 2025 - 404 Error Page, Validation System & cPanel Cleanup ✅
 - **404 Error Handling** - Added `ErrorDocument 404 /404.html` directive to .htaccess
@@ -76,11 +98,11 @@
 
 ## Production Deployment
 
-**Latest Production Package**: `production-deployment-20251217-214752.zip` (8.1MB)
-- Contents: 145 pages (66 episodes + 4 blog posts + newsletter + main pages), 352 files
-- Includes: 404 error page fix and verified 301 redirects for Google indexing
-- Status: ✅ DEPLOYED TO PRODUCTION
-- Deployed: December 17, 2025
+**Latest Production Package**: `production-deployment-20251222-105612.zip` (8.2MB)
+- Contents: 154 pages (67 episodes + 4 blog posts + newsletter + main pages), 367 files
+- Includes: Episode 67 (Flipper Zero Firmware Update)
+- Status: ✅ READY FOR DEPLOYMENT
+- Built: December 22, 2025
 
 **Deployment Process**:
 1. Download latest production package
@@ -251,7 +273,7 @@ magick input.jpg -quality 85 -strip output.jpg
 - ✅ **Complete Art Deco redesign deployed to production**
 - ✅ **All changes pushed to GitHub**
 
-**Production Status**: ✅ LIVE (Latest Deployment: December 17, 2025)
+**Production Status**: ✅ LIVE (Latest Deployment: December 17, 2025) | Episode 67 Ready for Deployment (December 22, 2025)
 - Site: https://securitycocktailhour.com/
 - **Complete Art Deco design system live across ALL pages** (Red/Navy/Teal palette, Oswald/PT Serif/Bebas Neue typography)
   - Homepage with redesigned hero section
@@ -262,7 +284,8 @@ magick input.jpg -quality 85 -strip output.jpg
   - Partnership page
   - Newsletter page
   - All individual episode and blog post pages
-- **Episode 66 live and accessible** (Flipper Zero Unboxing - December 15, 2025) - Latest Episode
+- **Episode 67 ready for deployment** (Flipper Zero Firmware Update - December 22, 2025) - Latest Episode
+- Episode 66 live and accessible (Flipper Zero Unboxing - December 15, 2025)
 - Episode 65 live and accessible (Job Scams - December 8, 2025)
 - Blog post "4 Dangerous Job Scams Targeting Professionals in 2025" featured on homepage
 - Episode numbers displayed on all episode cards (Episodes page and Homepage)
@@ -274,8 +297,8 @@ magick input.jpg -quality 85 -strip output.jpg
 - All SEO optimizations active
 - Cache-busting implemented (CSS updates load properly)
 - Submitted to search engines (Google & Bing)
-- **145 pages live (66 episodes + 4 blog posts + newsletter + main pages)**
-- **GitHub repository synchronized** (404 fix pushed December 17, 2025 - commit `1770355`)
+- **154 pages ready (67 episodes + 4 blog posts + newsletter + main pages)**
+- **GitHub repository synchronized** (Episode 67 pushed December 22, 2025 - commit `4405873`)
 
 ---
 
