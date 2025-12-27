@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 22, 2025
+**Last Updated**: December 27, 2025
 **Hugo Version**: v0.151.0
 **Branch**: main
 
@@ -8,11 +8,11 @@
 
 ## Current Session
 
-**Today's Focus**: Episode 67 deployment and new episode workflow improvements
-- Published Episode 67: "Flipper Zero Firmware Update: If at first you don't succeed..."
-- Created DaVinci Resolve transcript formatter script
-- Updated NEW-EPISODE-DEPLOYMENT.md with improved workflow (auto-generate SEO metadata)
-- Production package ready for deployment
+**Today's Focus**: Episode 6 full transcript addition
+- Added complete 38-minute transcript to Episode 6 (Flipper Zero and Other Totally Legit Hacking Tools)
+- Converted DaVinci Resolve transcript format to episode format using format_davinci_transcript.py
+- Updated Episode Highlights with 5 key topic bullets covering ethics, responsible disclosure, Amazon ban, real-world vulnerabilities, and debunking hype
+- Fixed name typo (Joe Patty → Joe Patti)
 
 ---
 
@@ -28,6 +28,39 @@
 ---
 
 ## Recent Completed Work (Last 7 Days)
+
+### December 27, 2025 - Episode 6 Full Transcript Addition ✅
+- **Episode 6** full transcript added to production
+- Title: "Flipper Zero and Other Totally Legit Hacking Tools"
+- Added complete 38-minute transcript (~411 lines of dialogue)
+- Converted from DaVinci Resolve format using format_davinci_transcript.py
+- Updated Episode Highlights section with 5 key topic bullets:
+  - White hat vs. black hat: The ethics of security tools
+  - Responsible disclosure: When and how to report vulnerabilities
+  - Why Amazon banned it (and why that misses the point)
+  - Real stakes: Cars, building systems, and IoT vulnerabilities
+  - Debunking the hype: What the Flipper Zero CAN'T do
+- Transcript displayed in collapsible accordion (SEO-friendly)
+- Fixed name typo (Joe Patty → Joe Patti) in opening line
+- Commit: `df14c75`
+- Production package: `production-deployment-20251227-182404.zip` (8.2MB, 367 files)
+- Status: ✅ DEPLOYED TO PRODUCTION
+
+### December 22, 2025 - Episode 67 Platform URL Updates ✅
+- **Episode 67** platform URLs updated
+- Replaced Apple Podcasts tinyurl with full episode URL
+- Replaced Amazon Music tinyurl with full episode URL
+- URLs now point directly to episode on each platform
+- **Episode Deployment Skill Created**:
+  - `episode-deploy.skill` - Automated episode deployment workflow (23KB)
+  - Includes transcript format detection and conversion
+  - Auto-generates SEO metadata (title, description, tags, topics)
+  - Three interactive approval checkpoints (SEO review, dev preview, production confirmation)
+  - References: seo-standards.md, transcript-formats.md, episode-workflow.md, git-standards.md
+  - Scripts: format_davinci_transcript.py, format_transcript.py
+- Commit: `1529046`
+- Production package: `production-deployment-20251222-131949.zip` (8.2MB, 367 files)
+- Status: ✅ DEPLOYED TO PRODUCTION
 
 ### December 22, 2025 - Episode 67: Flipper Zero Firmware Update ✅
 - **Episode 67** deployed to production
@@ -98,11 +131,11 @@
 
 ## Production Deployment
 
-**Latest Production Package**: `production-deployment-20251222-105612.zip` (8.2MB)
+**Latest Production Package**: `production-deployment-20251227-182404.zip` (8.2MB)
 - Contents: 154 pages (67 episodes + 4 blog posts + newsletter + main pages), 367 files
-- Includes: Episode 67 (Flipper Zero Firmware Update)
+- Includes: Episode 6 (Flipper Zero and Other Totally Legit Hacking Tools) with full 38-minute transcript
 - Status: ✅ DEPLOYED TO PRODUCTION
-- Deployed: December 22, 2025
+- Deployed: December 27, 2025
 
 **Deployment Process**:
 1. Download latest production package
@@ -273,7 +306,7 @@ magick input.jpg -quality 85 -strip output.jpg
 - ✅ **Complete Art Deco redesign deployed to production**
 - ✅ **All changes pushed to GitHub**
 
-**Production Status**: ✅ LIVE (Latest Deployment: December 22, 2025)
+**Production Status**: ✅ LIVE (Latest Deployment: December 27, 2025)
 - Site: https://securitycocktailhour.com/
 - **Complete Art Deco design system live across ALL pages** (Red/Navy/Teal palette, Oswald/PT Serif/Bebas Neue typography)
   - Homepage with redesigned hero section
@@ -285,6 +318,7 @@ magick input.jpg -quality 85 -strip output.jpg
   - Newsletter page
   - All individual episode and blog post pages
 - **Episode 67 live and accessible** (Flipper Zero Firmware Update - December 22, 2025) - Latest Episode
+- **Episode 6 full transcript added** (Flipper Zero and Other Totally Legit Hacking Tools - December 27, 2025) - 38-minute transcript with collapsible accordion
 - Episode 66 live and accessible (Flipper Zero Unboxing - December 15, 2025)
 - Episode 65 live and accessible (Job Scams - December 8, 2025)
 - Blog post "4 Dangerous Job Scams Targeting Professionals in 2025" featured on homepage
@@ -298,7 +332,7 @@ magick input.jpg -quality 85 -strip output.jpg
 - Cache-busting implemented (CSS updates load properly)
 - Submitted to search engines (Google & Bing)
 - **154 pages live (67 episodes + 4 blog posts + newsletter + main pages)**
-- **GitHub repository synchronized** (Episode 67 pushed December 22, 2025 - commit `4405873`)
+- **GitHub repository synchronized** (Episode 6 transcript pushed December 27, 2025 - commit `df14c75`)
 
 ---
 
