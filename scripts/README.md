@@ -124,8 +124,10 @@ python3 scripts/capture_hero_sections.py
 ```
 
 **Requirements:**
-- Playwright installed: `pip install playwright`
+- Playwright Python library installed: `pip install playwright`
 - Playwright browsers installed: `playwright install`
+
+**Note:** This script uses the Playwright Python library directly, which is separate from the Playwright MCP server. The Python library must be installed even if Playwright MCP is not configured.
 
 **What it does:**
 - Launches local development server

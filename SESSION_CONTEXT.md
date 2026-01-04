@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: December 27, 2025
+**Last Updated**: January 4, 2026
 **Hugo Version**: v0.151.0
 **Branch**: main
 
@@ -8,11 +8,18 @@
 
 ## Current Session
 
-**Today's Focus**: Episode 6 full transcript addition
-- Added complete 38-minute transcript to Episode 6 (Flipper Zero and Other Totally Legit Hacking Tools)
-- Converted DaVinci Resolve transcript format to episode format using format_davinci_transcript.py
-- Updated Episode Highlights with 5 key topic bullets covering ethics, responsible disclosure, Amazon ban, real-world vulnerabilities, and debunking hype
-- Fixed name typo (Joe Patty → Joe Patti)
+**Today's Focus**: Claude Code context optimization and documentation updates
+- **Configuration Changes:**
+  - Disabled global plugins (frontend-design, document-skills, example-skills) in `~/.claude/settings.json`
+  - Removed Playwright MCP from global configuration via `claude mcp remove playwright`
+  - Context savings: ~55-65k tokens per session (27-32% of total)
+  - Plugins remain installed and available - enable per-project as needed
+- **Documentation Updates:**
+  - Added "Claude Code Configuration" section to SESSION_CONTEXT.md with complete plugin management guide
+  - Updated ARCHIVE.md with January 4, 2026 historical entry
+  - Updated scripts/README.md to clarify Playwright Python library vs MCP distinction
+  - Verified all other documentation files (NEW-EPISODE-DEPLOYMENT.md, episode-deploy.skill, etc.)
+- **Result:** Lean global configuration with on-demand plugin loading for specific tasks
 
 ---
 
@@ -27,103 +34,82 @@
 
 ---
 
+## Claude Code Configuration
+
+### Context Optimization (Updated: January 4, 2026)
+
+To maximize available context for episode deployment and content work, plugins and MCP servers are disabled globally by default. Enable them on-demand when needed for specific tasks.
+
+**Global Settings** (`~/.claude/settings.json`):
+```json
+{
+  "enabledPlugins": {
+    "frontend-design@claude-code-plugins": false,
+    "document-skills@anthropic-agent-skills": false,
+    "example-skills@anthropic-agent-skills": false
+  }
+}
+```
+
+**MCP Servers**:
+- Playwright MCP: Removed from global config (load on-demand when needed)
+
+**Context Savings**: ~55-65k tokens saved per session (27-32% of total context)
+
+### When to Enable Plugins
+
+Plugins are **installed but disabled globally**. Enable per-project as needed:
+
+**Frontend Design Work** (design mockups, visual debugging):
+- Enable `frontend-design@claude-code-plugins`
+- Use case: Art Deco redesign, hero section mockups, page layouts
+
+**Document Processing** (spreadsheets, presentations, Word docs):
+- Enable `document-skills@anthropic-agent-skills` or `example-skills@anthropic-agent-skills`
+- Includes: xlsx (Excel), docx (Word), pptx (PowerPoint), pdf
+- Use case: Data analysis, report generation, presentation creation
+
+**Web Testing/Screenshots** (requires Playwright MCP):
+- Load on-demand: `claude mcp add --scope local --transport stdio playwright -- npx -y @playwright/mcp@latest`
+- Use case: Layout debugging, screenshot automation, browser testing
+
+### How to Enable Plugins for a Project
+
+Create or edit `.claude/settings.local.json` in the project directory:
+
+```json
+{
+  "enabledPlugins": {
+    "document-skills@anthropic-agent-skills": true
+  }
+}
+```
+
+This overrides the global `false` setting for that project only.
+
+**Note**: Project-local overrides take priority over global settings. Restart Claude Code after changing plugin configuration.
+
+---
+
 ## Recent Completed Work (Last 7 Days)
 
-### December 27, 2025 - Episode 6 Full Transcript Addition ✅
-- **Episode 6** full transcript added to production
-- Title: "Flipper Zero and Other Totally Legit Hacking Tools"
-- Added complete 38-minute transcript (~411 lines of dialogue)
-- Converted from DaVinci Resolve format using format_davinci_transcript.py
-- Updated Episode Highlights section with 5 key topic bullets:
-  - White hat vs. black hat: The ethics of security tools
-  - Responsible disclosure: When and how to report vulnerabilities
-  - Why Amazon banned it (and why that misses the point)
-  - Real stakes: Cars, building systems, and IoT vulnerabilities
-  - Debunking the hype: What the Flipper Zero CAN'T do
-- Transcript displayed in collapsible accordion (SEO-friendly)
-- Fixed name typo (Joe Patty → Joe Patti) in opening line
-- Commit: `df14c75`
-- Production package: `production-deployment-20251227-182404.zip` (8.2MB, 367 files)
-- Status: ✅ DEPLOYED TO PRODUCTION
-
-### December 22, 2025 - Episode 67 Platform URL Updates ✅
-- **Episode 67** platform URLs updated
-- Replaced Apple Podcasts tinyurl with full episode URL
-- Replaced Amazon Music tinyurl with full episode URL
-- URLs now point directly to episode on each platform
-- **Episode Deployment Skill Created**:
-  - `episode-deploy.skill` - Automated episode deployment workflow (23KB)
-  - Includes transcript format detection and conversion
-  - Auto-generates SEO metadata (title, description, tags, topics)
-  - Three interactive approval checkpoints (SEO review, dev preview, production confirmation)
-  - References: seo-standards.md, transcript-formats.md, episode-workflow.md, git-standards.md
-  - Scripts: format_davinci_transcript.py, format_transcript.py
-- Commit: `1529046`
-- Production package: `production-deployment-20251222-131949.zip` (8.2MB, 367 files)
-- Status: ✅ DEPLOYED TO PRODUCTION
-
-### December 22, 2025 - Episode 67: Flipper Zero Firmware Update ✅
-- **Episode 67** deployed to production
-- Title: "Flipper Zero Firmware Update: If at first you don't succeed..."
-- Topic: Firmware update walkthrough with troubleshooting
-- Duration: 15:55
-- Category: Hardware Security
-- Full transcript included (~440 lines)
-- SEO optimized: 53-char title, 155-char description
-- **New Tools Created**:
-  - `scripts/format_davinci_transcript.py` - Converts DaVinci Resolve transcript format to episode format
-  - Handles timecode conversion from `[HH:MM:SS:FF]` to `(MM:SS)`
-- **Episode Workflow Improvement**:
-  - Updated `docs/NEW-EPISODE-DEPLOYMENT.md` with new auto-generation workflow
-  - Claude now auto-generates SEO title, meta description, tags, and topics
-  - User reviews and approves generated metadata before deployment
-  - Streamlines episode creation process
-- Related episodes: Episode 66 (Flipper Zero Unboxing), Episode 6
-- Commit: `4405873`
-- Production package: `production-deployment-20251222-105612.zip` (8.2MB, 367 files)
-- Status: ✅ DEPLOYED TO PRODUCTION
-
-### December 17, 2025 - 404 Error Page, Validation System & cPanel Cleanup ✅
-- **404 Error Handling** - Added `ErrorDocument 404 /404.html` directive to .htaccess
-- **Google Indexing** - Fixed issue where Apache default 404 was shown instead of custom page
-- **301 Redirects** - Verified all 24 existing redirects working correctly (from Google Search Console report)
-  - 6 transcript page redirects
-  - 8 episode list page redirects
-  - 3 info page redirects
-  - 1 support page redirect
-  - 6 store/merchandise redirects
-- **Custom 404 Page** - Users now see branded 404 page with navigation and 5-second auto-redirect
-- **Validation System Created** - Prevents broken .htaccess from reaching production
-  - `scripts/validate_htaccess.py` - Validates all 24 redirects, 404 config, security headers
-  - `scripts/build_production.sh` - Automated build with validation (now standard method)
-  - Updated deployment documentation with validation requirements
-  - Created `scripts/README.md` with complete documentation
-- **cPanel Server Cleanup** - Removed leftover `.htaccess` file from home directory
-  - Issue: Production ZIP was accidentally extracted in home directory instead of `public_html/`
-  - Removed: `.htaccess` file from `/home/nfgitkw863go/` (should only exist in `public_html/`)
-  - Impact: None - production site in `public_html/` was unaffected
-  - Note for future: Always extract production packages directly into `public_html/`
-- Commits: `1770355` (404 fix), `42e3058` (validation system), `b4f1786` (SESSION_CONTEXT update)
-- Production package: `production-deployment-20251217-214752.zip` (8.1MB, 352 files)
-- Status: ✅ DEPLOYED TO PRODUCTION
-
-### December 16, 2025 - Search Functionality Bug Fixes ✅
-- **Episodes page search** - Fixed large gap issue when filtering results
-- **Blog page search** - Fixed same layout issue
-- **Root cause**: JavaScript was hiding `.episode-card` instead of `.episode-card-link` wrappers
-- **Also fixed**: Centered no-results messages with proper width constraints
-- Commits: `d938b75` (episodes), `33ef736` (blog)
-- Production package: `production-deployment-20251216-151412.zip` (8.1MB, 352 files)
-- Status: ✅ DEPLOYED TO PRODUCTION
-
-### December 15, 2025 - Episode 66: Flipper Zero Unboxing ✅
-- **Episode 66** deployed to production
-- Title: "Unboxing the Device Every Hacker Wants"
-- Topic: Flipper Zero hardware security testing tool
-- Full transcript included (~5,300 words)
-- SEO score: 9.5/10
-- Production package: `production-deployment-20251215-140357.zip` (8.1MB)
-- Status: ✅ Live at https://securitycocktailhour.com/
+### January 4, 2026 - Claude Code Context Optimization ✅
+- **Context Optimization** - Disabled global plugins and removed Playwright MCP to free up context
+- **Plugins Disabled Globally**:
+  - `frontend-design@claude-code-plugins`
+  - `document-skills@anthropic-agent-skills`
+  - `example-skills@anthropic-agent-skills`
+- **MCP Servers**: Removed Playwright MCP from global configuration via `claude mcp remove playwright`
+- **Context Savings**: ~55-65k tokens per session (27-32% reduction)
+- **Configuration Approach**: Plugins remain installed but disabled globally; enable per-project as needed
+- **Documentation Updated**:
+  - Added "Claude Code Configuration" section to SESSION_CONTEXT.md
+  - Updated ARCHIVE.md with historical entries (January 4, 2026 + December entries)
+  - Updated scripts/README.md to clarify Playwright Python library vs MCP
+  - Verified all other documentation files
+  - Archived older entries from SESSION_CONTEXT.md to ARCHIVE.md
+- **Result**: Lean global configuration optimized for episode deployment and content maintenance work
+- Status: ✅ COMPLETE
 
 **For detailed deployment history, see ARCHIVE.md**
 
@@ -214,7 +200,8 @@ git push origin main  # Triggers Netlify staging deployment
 python scripts/audit_title_tags.py
 python scripts/audit_meta_descriptions.py
 
-# Capture hero section screenshots (requires Playwright)
+# Capture hero section screenshots (requires Playwright MCP)
+# First load Playwright: claude mcp add --scope local --transport stdio playwright -- npx -y @playwright/mcp@latest
 python3 scripts/capture_hero_sections.py
 
 # Image optimization (if ImageMagick installed)
