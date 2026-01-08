@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Session Context
 
-**Last Updated**: January 4, 2026
+**Last Updated**: January 8, 2026
 **Hugo Version**: v0.151.0
 **Branch**: main
 
@@ -8,18 +8,19 @@
 
 ## Current Session
 
-**Today's Focus**: Claude Code context optimization and documentation updates
-- **Configuration Changes:**
-  - Disabled global plugins (frontend-design, document-skills, example-skills) in `~/.claude/settings.json`
-  - Removed Playwright MCP from global configuration via `claude mcp remove playwright`
-  - Context savings: ~55-65k tokens per session (27-32% of total)
-  - Plugins remain installed and available - enable per-project as needed
-- **Documentation Updates:**
-  - Added "Claude Code Configuration" section to SESSION_CONTEXT.md with complete plugin management guide
-  - Updated ARCHIVE.md with January 4, 2026 historical entry
-  - Updated scripts/README.md to clarify Playwright Python library vs MCP distinction
-  - Verified all other documentation files (NEW-EPISODE-DEPLOYMENT.md, episode-deploy.skill, etc.)
-- **Result:** Lean global configuration with on-demand plugin loading for specific tasks
+**Today's Focus**: Pre-deployment test suite implementation
+- **Test Suite Created:**
+  - Comprehensive Playwright-based testing in `scripts/tests/`
+  - Smart episode testing strategy: newest 5 + one from each block of 10
+  - Coverage: 25+ pages (8 static, 12 episodes, 5 blog posts) in 4-5 minutes
+  - Automated failure screenshot capture for debugging
+  - Master test runner with CLI options (--static, --episodes, --blog)
+- **Documentation Updated:**
+  - Added Step 5.5 to NEW-EPISODE-DEPLOYMENT.md (pre-deployment testing workflow)
+  - Created comprehensive testing documentation in scripts/tests/README.md
+  - Added cleanup step for test screenshots
+  - Updated deployment approval workflow
+- **Result:** Quality gate between manual review and production deployment - catches technical issues before reaching production
 
 ---
 
@@ -92,6 +93,31 @@ This overrides the global `false` setting for that project only.
 ---
 
 ## Recent Completed Work (Last 7 Days)
+
+### January 8, 2026 - Pre-Deployment Test Suite Implementation ✅
+- **Test Suite Created** - Comprehensive Playwright-based testing for quality assurance before production
+- **Test Scripts** (`scripts/tests/`):
+  - `test_helpers.py` - Content discovery and validation utilities (360 lines)
+  - `test_static_pages.py` - Test 8 static pages (364 lines)
+  - `test_episodes.py` - Smart episode testing with block strategy (412 lines)
+  - `test_blog.py` - Blog list and post testing (397 lines)
+  - `run_all_tests.py` - Master test runner with CLI options (142 lines)
+  - `README.md` - Complete testing documentation (179 lines)
+- **Testing Strategy**:
+  - Smart episode selection: Always test newest 5 + one from each block of 10 older episodes
+  - Deterministic and scalable as site grows (currently tests 12 of 67 episodes)
+  - Blog posts: Test 5 latest (currently all 4, prepared for growth)
+  - Static pages: Test all 8 pages (homepage, about, contact, partnership, resources, newsletter, privacy, terms)
+- **Coverage**: 25+ pages tested in 4-5 minutes
+- **Validation**: Page loads, SEO metadata, navigation, platform links, forms, search/filter, console errors, transcript sections, related episodes
+- **Screenshot Capture**: Automatic failure screenshots for debugging (saved to `scripts/tests/test_screenshots/`)
+- **Documentation Updated**:
+  - Added Step 5.5 to `docs/NEW-EPISODE-DEPLOYMENT.md` (run pre-deployment tests)
+  - Integration workflow: Manual review → Automated tests → Clean up → Production build
+  - Added troubleshooting section for test failures
+  - Updated Quick Reference with testing commands
+- **Git**: Committed 19 files (4,069+ additions) and pushed to GitHub
+- Status: ✅ COMPLETE
 
 ### January 4, 2026 - Claude Code Context Optimization ✅
 - **Context Optimization** - Disabled global plugins and removed Playwright MCP to free up context
@@ -196,6 +222,15 @@ git add -A
 git commit -m "Description"
 git push origin main  # Triggers Netlify staging deployment
 
+# Run pre-deployment tests (RECOMMENDED before production)
+python3 scripts/tests/run_all_tests.py          # All tests (~4-5 min)
+python3 scripts/tests/run_all_tests.py --static  # Static pages only (~15 sec)
+python3 scripts/tests/run_all_tests.py --episodes # Episodes only (~2-3 min)
+python3 scripts/tests/run_all_tests.py --blog    # Blog only (~1 min)
+
+# Clean up after testing
+rm -rf scripts/tests/test_screenshots
+
 # Run SEO audit scripts
 python scripts/audit_title_tags.py
 python scripts/audit_meta_descriptions.py
@@ -215,10 +250,11 @@ magick input.jpg -quality 85 -strip output.jpg
 **Essential Documentation:**
 - `SESSION_CONTEXT.md` - This file (current working context)
 - `ARCHIVE.md` - Historical fixes and detailed reference material
-- `docs/NEW-EPISODE-DEPLOYMENT.md` - New episode workflow
+- `docs/NEW-EPISODE-DEPLOYMENT.md` - New episode workflow (includes Step 5.5: pre-deployment testing)
 - `docs/SEO-TITLE-TAG-STANDARDS.md` - Title tag standards and implementation
 - `docs/SEO-META-DESCRIPTION-STANDARDS.md` - Meta description standards
 - `GODADDY-DEPLOYMENT-INSTRUCTIONS.md` - Production deployment guide
+- `scripts/tests/README.md` - Pre-deployment testing documentation
 
 **Design Documentation:**
 - `docs/design_specs/sch_design_spec_v1_3.md` - Master design specification (Art Deco - December 2025)
@@ -226,10 +262,20 @@ magick input.jpg -quality 85 -strip output.jpg
 - `docs/design_specs/partnership_page_spec.md` - Partnership page specification (v1.1)
 
 **Scripts:**
+- `scripts/build_production.sh` - Production build with .htaccess validation
+- `scripts/validate_htaccess.py` - Validate .htaccess file integrity
 - `scripts/audit_title_tags.py` - Title tag audit tool
 - `scripts/audit_meta_descriptions.py` - Meta description audit tool
 - `scripts/capture_hero_sections.py` - Playwright automation to capture hero section screenshots
 - `scripts/format_transcript.py` - Transcript formatting utility
+
+**Testing Scripts** (`scripts/tests/`):
+- `run_all_tests.py` - Master test runner (all, static, episodes, blog)
+- `test_static_pages.py` - Test 8 static pages
+- `test_episodes.py` - Smart episode testing (newest 5 + block sampling)
+- `test_blog.py` - Blog list and post testing
+- `test_helpers.py` - Content discovery and validation utilities
+- `README.md` - Complete testing documentation
 
 **Design Prototypes:**
 - `temp/hero-redesigns/` - Hero section redesign mockups (remaining files)
