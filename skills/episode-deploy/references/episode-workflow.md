@@ -13,9 +13,11 @@ This document outlines the complete workflow for deploying new episodes to the S
 5. **Build episode files** (markdown, image, transcript)
 6. **Start dev server** for preview
 7. **User approves** final episode
-8. **Commit to git** and push to GitHub
-9. **Build production package** with validation
-10. **User deploys to GoDaddy** manually
+8. **Run pre-deployment tests** (automated test suite)
+9. **Clean up test screenshots** (remove test artifacts)
+10. **Commit to git** and push to GitHub
+11. **Build production package** with validation
+12. **User deploys to GoDaddy** manually
 
 ---
 
@@ -352,12 +354,116 @@ Wait for user approval:
 - Wait for next approval
 
 **If approved:**
-- Stop dev server
-- Proceed to Step 8
+- Proceed to Step 8 (Run Pre-Deployment Tests)
 
 ---
 
-## Step 8: Commit to Git and Push
+## Step 8: Run Pre-Deployment Tests
+
+After user approves the dev site preview, run the automated test suite to validate all pages before committing.
+
+### Execute Test Suite
+
+```bash
+python3 scripts/tests/run_all_tests.py
+```
+
+**What gets tested:**
+- **8 static pages**: Homepage, About, Contact, Partnership, Resources, Newsletter, Privacy, Terms
+- **~12 episode pages**: Newest 5 episodes + one from each block of 10 older episodes
+- **~5 blog posts**: Latest blog posts
+- **Total**: ~25 pages tested in 4-5 minutes
+
+**Validation checks for each page:**
+- Page loads successfully
+- Title contains expected text
+- Navigation links present and correct
+- SEO metadata present (title, description, og tags)
+- Platform links correct (for episodes)
+- Forms display correctly (contact, newsletter)
+- Search and filter functionality works
+- No console errors (except favicon warnings)
+
+### Test Success
+
+If all tests pass, you'll see:
+
+```
+================================================================================
+FINAL TEST SUMMARY
+================================================================================
+Static Pages:  ✅ PASSED (52/52)
+Episodes:      ✅ PASSED (140/140)
+Blog:          ✅ PASSED (44/44)
+
+TOTAL: 236 passed, 0 failed
+Duration: 4m 18s
+================================================================================
+
+✅ ALL TESTS PASSED - Ready for deployment!
+```
+
+**Action:** Proceed to Step 9 (Clean Up Test Screenshots)
+
+### Test Failure
+
+If any tests fail, you'll see:
+
+```
+❌ 6 TEST(S) FAILED - Review errors before deployment
+
+Failed test screenshots saved in: scripts/tests/test_screenshots/
+```
+
+**Action:**
+1. Review error messages in test output
+2. Check screenshot files in `scripts/tests/test_screenshots/` directory
+3. Fix the identified issues:
+   - Episode frontmatter errors
+   - Missing images
+   - Broken links
+   - Template issues
+4. Re-run tests: `python3 scripts/tests/run_all_tests.py`
+5. Repeat until all tests pass
+6. **DO NOT proceed to commit/build until tests pass**
+
+### Common Test Failures
+
+**Missing platform links:**
+- Check episode frontmatter has all platform URLs
+- Verify URLs are valid
+
+**SEO metadata issues:**
+- Check title and description are present in frontmatter
+- Verify character counts are within limits
+
+**Image not found:**
+- Verify image copied to `static/images/episodes/`
+- Check filename matches frontmatter image path
+
+**Transcript formatting:**
+- Verify transcript section uses correct markdown headings
+- Check speaker timestamps are properly formatted
+
+---
+
+## Step 9: Clean Up Test Screenshots
+
+After all tests pass, clean up test artifacts:
+
+```bash
+rm -rf scripts/tests/test_screenshots
+```
+
+This removes any screenshot files that may have been created during testing (only created on failures during test development).
+
+**Note:** This directory may not exist if all tests passed on first run. The command is safe to run even if the directory doesn't exist.
+
+**Action:** Proceed to Step 10 (Commit to Git and Push)
+
+---
+
+## Step 10: Commit to Git and Push
 
 ### Stop Dev Server
 
@@ -415,7 +521,7 @@ Report commit hash and success to user.
 
 ---
 
-## Step 9: Build Production Package
+## Step 11: Build Production Package
 
 ### Use Automated Build Script
 
@@ -467,7 +573,7 @@ If validation fails:
 
 ---
 
-## Step 10: User Deploys to GoDaddy
+## Step 12: User Deploys to GoDaddy
 
 **This step is ALWAYS manual** - never attempt to automate GoDaddy deployment.
 
@@ -498,7 +604,7 @@ Once confirmed, proceed to update SESSION_CONTEXT.md.
 
 ---
 
-## Step 11: Update SESSION_CONTEXT.md (Optional)
+## Step 13: Update SESSION_CONTEXT.md (Optional)
 
 **Important:** Always ask before updating SESSION_CONTEXT.md.
 
@@ -634,4 +740,4 @@ Please provide:
 
 ---
 
-**Last Updated**: December 22, 2025
+**Last Updated**: January 8, 2026

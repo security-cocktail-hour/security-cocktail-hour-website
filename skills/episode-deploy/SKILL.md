@@ -13,7 +13,7 @@ This skill automates the episode deployment process while maintaining critical a
 
 ## Workflow
 
-The episode deployment follows an 11-step workflow with three key approval checkpoints:
+The episode deployment follows a 13-step workflow with three key approval checkpoints:
 
 ### Phase 1: Content Preparation
 1. **Gather episode information** - Read episode details from `working/content-answers.txt`
@@ -27,14 +27,16 @@ The episode deployment follows an 11-step workflow with three key approval check
 
 ### Phase 3: Final Approval (APPROVAL CHECKPOINT 2)
 7. **User approves final episode** - Review on dev site at localhost:1313
+8. **Run pre-deployment tests** - Execute automated test suite to validate all pages
+9. **Clean up test screenshots** - Remove test artifacts after successful tests
 
 ### Phase 4: Production Deployment
-8. **Commit to git and push** - Standard git workflow with formatted message
-9. **Build production package** - Run `./scripts/build_production.sh` with validation
+10. **Commit to git and push** - Standard git workflow with formatted message
+11. **Build production package** - Run `./scripts/build_production.sh` with validation
 
 ### Phase 5: Manual Deployment (APPROVAL CHECKPOINT 3)
-10. **User deploys to GoDaddy** - Manual upload to cPanel (never automated)
-11. **Update SESSION_CONTEXT** - Ask before updating (optional)
+12. **User deploys to GoDaddy** - Manual upload to cPanel (never automated)
+13. **Update SESSION_CONTEXT** - Ask before updating (optional)
 
 **Complete workflow details:** See `references/episode-workflow.md`
 
@@ -181,6 +183,53 @@ Let me know when you're satisfied or if you need changes.
 
 If changes requested, make them and continue in dev mode until approved.
 
+### Pre-Deployment Testing
+
+**After dev site approval, run automated test suite:**
+
+```bash
+python3 scripts/tests/run_all_tests.py
+```
+
+**Test Coverage:**
+- 8 static pages (homepage, about, contact, partnership, resources, newsletter, privacy, terms)
+- ~12 episodes (newest 5 + one from each block of 10)
+- ~5 latest blog posts
+- Total: ~25 pages tested in 4-5 minutes
+
+**Validation checks:**
+- Page loads successfully
+- Title and navigation correct
+- SEO metadata present
+- Platform links work
+- No console errors
+- Forms display correctly
+- Search/filter functionality
+
+**If tests pass:**
+```
+✅ ALL TESTS PASSED - Ready for deployment!
+```
+
+Clean up test artifacts:
+```bash
+rm -rf scripts/tests/test_screenshots
+```
+
+Proceed to commit and build.
+
+**If tests fail:**
+```
+❌ X TEST(S) FAILED - Review errors before deployment
+
+Failed test screenshots saved in: scripts/tests/test_screenshots/
+```
+
+- Review error messages and screenshots
+- Fix issues in the episode or site files
+- Re-run tests until all pass
+- Do not proceed to commit/build until tests pass
+
 ### Checkpoint 3: Production Deployment
 
 After building production package, inform user:
@@ -275,6 +324,38 @@ When updating, modify:
 4. "Current Site Status" (increment episode count, update latest episode reference)
 
 ## Error Handling
+
+### Pre-Deployment Test Failures
+
+When tests fail:
+1. Review the test output to identify which tests failed
+2. Check the screenshot files in `scripts/tests/test_screenshots/` for visual debugging
+3. Explain the issue to the user with specific details:
+   - Which page failed
+   - What validation check failed
+   - Likely cause (e.g., missing platform link, incorrect frontmatter)
+4. Recommend specific fix
+5. After fix, re-run tests: `python3 scripts/tests/run_all_tests.py`
+6. **DO NOT proceed to commit/build until all tests pass**
+
+**Example:**
+```
+Pre-deployment tests failed (3 tests):
+
+Episode 67 page:
+- Missing Spotify platform link
+- Fix: Add spotify URL to episode frontmatter
+
+Homepage:
+- New episode card not displaying
+- Fix: Check episode date is not in future, or use -F flag with Hugo server
+
+Blog page:
+- Search functionality test failed
+- Fix: Already known issue, may need template adjustment
+
+Please fix these issues and I'll re-run the tests.
+```
 
 ### Unknown Transcript Format
 
