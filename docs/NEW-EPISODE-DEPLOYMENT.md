@@ -1,6 +1,6 @@
 # New Episode Deployment Process
 
-**Last Updated**: December 21, 2025
+**Last Updated**: January 8, 2026
 
 ---
 
@@ -155,10 +155,66 @@ Review the episode on the dev site:
 - Test platform links
 - Verify SEO metadata appears correctly
 
+### Step 5.5: Run Pre-Deployment Tests
+
+After you've reviewed the dev site and are satisfied with the new episode, run the automated test suite to validate everything works correctly:
+
+```bash
+python3 scripts/tests/run_all_tests.py
+```
+
+**What gets tested:**
+- ✅ New episode appears on homepage (latest episode section)
+- ✅ Episode page loads correctly with all metadata
+- ✅ All platform links present (YouTube, Spotify, Apple, Amazon)
+- ✅ SEO metadata valid (title, description, og tags)
+- ✅ Navigation working across all pages
+- ✅ Related episodes displaying (if specified)
+- ✅ Transcript section present (if included)
+- ✅ No console errors
+- ✅ All static pages still functioning
+- ✅ Episodes list page search/filter working
+- ✅ Blog page search/filter working
+
+**Expected result:**
+```
+================================================================================
+FINAL TEST SUMMARY
+================================================================================
+Static Pages:  ✅ PASSED
+Episodes:      ✅ PASSED
+Blog:          ✅ PASSED
+
+TOTAL: 236+ passed, 0 failed
+Duration: 4-5 minutes
+================================================================================
+
+✅ ALL TESTS PASSED - Ready for deployment!
+```
+
+**If tests fail:**
+1. Review error messages in terminal output
+2. Check failed test screenshots in `scripts/tests/test_screenshots/`
+3. Fix issues in the episode markdown or templates
+4. Re-run tests until all pass
+
+**Quick test option (faster):**
+If you only want to test the homepage and new episode quickly:
+```bash
+python3 scripts/tests/run_all_tests.py --static --episodes
+```
+This runs in ~30 seconds and tests the most critical pages.
+
+**After all tests pass, clean up screenshots:**
+```bash
+rm -rf scripts/tests/test_screenshots
+```
+This removes any failure screenshots from previous test runs.
+
 ### Step 6: Build and Deploy
 
-Once approved, tell Claude:
-> "I'm satisfied with this. Commit and build for production."
+Once all tests pass, tell Claude:
+> "Tests passed. Commit and build for production."
 
 Claude will:
 1. Stop the dev server
@@ -409,6 +465,23 @@ Current package size: ~7.8MB (optimized)
 - Images optimized for web
 - Hugo minifies HTML/CSS/JS
 
+### Test Failures
+
+**If pre-deployment tests fail:**
+
+1. **Review the error output** - Terminal shows which specific test failed
+2. **Check screenshots** - Failed tests save screenshots to `scripts/tests/test_screenshots/`
+3. **Common issues:**
+   - Missing platform links: Add all 4 platform URLs to episode frontmatter
+   - Episode not on homepage: Check episode date isn't in the future
+   - Broken navigation: Verify Hugo server is still running
+   - SEO metadata missing: Ensure `seo_title` and `description` in frontmatter
+4. **Fix the issue** in the episode markdown file
+5. **Re-run tests** until all pass
+6. **Clean up screenshots** with `rm -rf scripts/tests/test_screenshots`
+
+**For detailed test documentation**, see `scripts/tests/README.md`
+
 ---
 
 ## Quick Reference
@@ -436,9 +509,19 @@ Claude will present SEO title, meta description, tags, and topics for your appro
 **Preview on dev site:**
 After metadata approval, Claude builds the episode and starts dev server.
 
-**Approve final build:**
+**Run pre-deployment tests:**
 ```
-"I'm satisfied. Commit and build for production."
+python3 scripts/tests/run_all_tests.py
+```
+
+**Clean up after testing:**
+```
+rm -rf scripts/tests/test_screenshots
+```
+
+**Approve final build (after tests pass):**
+```
+"Tests passed. Commit and build for production."
 ```
 
 **Change episode date:**
@@ -462,6 +545,7 @@ After metadata approval, Claude builds the episode and starts dev server.
 - This file: `NEW-EPISODE-DEPLOYMENT.md`
 - Session context: `SESSION_CONTEXT.md`
 - GoDaddy deployment: `GODADDY-DEPLOYMENT-INSTRUCTIONS.md`
+- Testing documentation: `scripts/tests/README.md`
 
 **Staging Sites:**
 - Netlify: Auto-deploys from GitHub
@@ -480,9 +564,11 @@ After metadata approval, Claude builds the episode and starts dev server.
 3. **Add thumbnail image** to `working/` directory
 4. **Tell Claude**: "We're releasing a new episode. Content in @working/content-answers.txt"
 5. **Preview** at http://localhost:1313/
-6. **Approve**: "Commit and build for production"
-7. **Upload** `production-deployment.zip` to GoDaddy cPanel
-8. **Verify** episode appears on https://securitycocktailhour.com/
+6. **Run tests**: `python3 scripts/tests/run_all_tests.py`
+7. **Clean up**: `rm -rf scripts/tests/test_screenshots`
+8. **Approve**: "Tests passed. Commit and build for production"
+9. **Upload** `production-deployment.zip` to GoDaddy cPanel
+10. **Verify** episode appears on https://securitycocktailhour.com/
 
 ---
 
