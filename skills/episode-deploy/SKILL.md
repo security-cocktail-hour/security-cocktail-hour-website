@@ -36,7 +36,7 @@ The episode deployment follows a 13-step workflow with three key approval checkp
 
 ### Phase 5: Manual Deployment (APPROVAL CHECKPOINT 3)
 12. **User deploys to GoDaddy** - Manual upload to cPanel (never automated)
-13. **Update SESSION_CONTEXT** - Ask before updating (optional)
+13. **Update CLAUDE.md** - Ask before updating (optional)
 
 **Complete workflow details:** See `references/episode-workflow.md`
 
@@ -309,12 +309,12 @@ If validation fails:
 - Recommend fix
 - Wait for user decision
 
-## SESSION_CONTEXT Updates
+## CLAUDE.md Updates
 
 **Always ask before updating CLAUDE.md**
 
 User may request:
-- "Update SESSION_CONTEXT with Episode [XX]"
+- "Update CLAUDE.md with Episode [XX]"
 - "Update session context"
 
 When updating, modify:

@@ -165,7 +165,7 @@ Root directory:
 - When issues are fully resolved
 - For historical reference
 - Technical troubleshooting details
-- Keep out of SESSION_CONTEXT when resolved
+- Keep out of CLAUDE.md when resolved
 
 **Design Specs**:
 - When implementing new features

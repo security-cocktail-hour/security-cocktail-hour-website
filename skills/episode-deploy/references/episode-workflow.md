@@ -609,7 +609,7 @@ Once confirmed, proceed to update CLAUDE.md.
 **Important:** Always ask before updating CLAUDE.md.
 
 User may respond:
-- "Update SESSION_CONTEXT with Episode [XX]"
+- "Update CLAUDE.md with Episode [XX]"
 - "Update session context"
 
 **What to update:**
