@@ -600,13 +600,13 @@ User will respond with:
 - "deployed"
 - "live"
 
-Once confirmed, proceed to update SESSION_CONTEXT.md.
+Once confirmed, proceed to update CLAUDE.md.
 
 ---
 
-## Step 13: Update SESSION_CONTEXT.md (Optional)
+## Step 13: Update CLAUDE.md (Optional)
 
-**Important:** Always ask before updating SESSION_CONTEXT.md.
+**Important:** Always ask before updating CLAUDE.md.
 
 User may respond:
 - "Update SESSION_CONTEXT with Episode [XX]"

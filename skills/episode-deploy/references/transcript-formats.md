@@ -211,7 +211,7 @@ When encountering a new transcript format:
 5. **Update Documentation:**
    - Add format to this document
    - Update NEW-EPISODE-DEPLOYMENT.md if needed
-   - Note the change in SESSION_CONTEXT.md
+   - Note the change in CLAUDE.md
 
 ---
 

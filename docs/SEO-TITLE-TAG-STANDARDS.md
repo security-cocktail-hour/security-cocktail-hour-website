@@ -241,4 +241,4 @@ description: ""
 
 ---
 
-**For questions or updates, see SESSION_CONTEXT.md**
+**For questions or updates, see CLAUDE.md**

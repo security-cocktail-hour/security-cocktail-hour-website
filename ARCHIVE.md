@@ -45,11 +45,11 @@
 - No impact on `scripts/capture_hero_sections.py` (uses Playwright Python library, not MCP)
 
 **Documentation Updated:**
-- SESSION_CONTEXT.md - Added "Claude Code Configuration" section
+- CLAUDE.md - Added "Claude Code Configuration" section
 - scripts/README.md - Clarified Playwright Python library vs MCP distinction
 - ARCHIVE.md - This entry
 
-**See:** SESSION_CONTEXT.md for complete configuration details and usage instructions.
+**See:** CLAUDE.md for complete configuration details and usage instructions.
 
 ---
 
@@ -595,7 +595,7 @@
 
 **Git Status**:
 - Branch: `hero-redesign`
-- Modified: SESSION_CONTEXT.md, layouts/index.html, layouts/_default/baseof.html, static/css/main.css
+- Modified: CLAUDE.md, layouts/index.html, layouts/_default/baseof.html, static/css/main.css
 
 **Hugo Server**: Running on http://localhost:1313/
 
@@ -781,7 +781,7 @@
 - Fixed homepage template to show only description for latest episode (no timestamps/topics)
 - Standardized episode format documentation (bulleted timestamps and topics)
 - Created NEW-EPISODE-DEPLOYMENT.md with complete deployment workflow
-- Updated SESSION_CONTEXT.md with episode content structure
+- Updated CLAUDE.md with episode content structure
 
 **November 3, 2025 - Episode 62 Fixes:**
 - Updated Episode 62 platform URLs (Apple and Amazon episode-specific links)
@@ -1662,7 +1662,7 @@ If a deployment breaks something:
 
 **Commits**:
 - `94bcf9d` - Add episode numbers to cards and fix transcript headings for collapsible feature
-- `733e1a4` - Update SESSION_CONTEXT.md documentation
+- `733e1a4` - Update CLAUDE.md documentation
 - `e837062` - Add 301 redirects for old URLs from previous site
 
 **Status**: ✅ DEPLOYED TO PRODUCTION (December 5, 2025)
@@ -1784,4 +1784,4 @@ If a deployment breaks something:
 
 **End of Archive**
 **Last Updated**: December 12, 2025
-**For current working context, see SESSION_CONTEXT.md**
+**For current working context, see CLAUDE.md**

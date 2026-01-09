@@ -198,7 +198,7 @@ EOF
 - Build output: `public/*`
 - Production packages: `production-deployment-*.zip`
 - Temporary files: `*.tmp`, `*.bak`
-- SESSION_CONTEXT.md (unless explicitly requested)
+- CLAUDE.md (unless explicitly requested)
 
 ### Git Add Command
 

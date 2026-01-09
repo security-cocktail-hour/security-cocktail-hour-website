@@ -290,7 +290,7 @@ When properly implemented, optimized meta descriptions provide:
 | Date | Change | Reference |
 |------|--------|-----------|
 | 2025-11-27 | Initial standards established | Site-wide audit and fix |
-| 2025-11-27 | 63 pages optimized to compliance | See SESSION_CONTEXT.md |
+| 2025-11-27 | 63 pages optimized to compliance | See CLAUDE.md |
 
 ---
 

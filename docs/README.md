@@ -15,7 +15,7 @@
 ## Project Documentation
 
 ### Working Context
-- [SESSION_CONTEXT.md](../SESSION_CONTEXT.md) - Current project status and recent updates (in root)
+- [CLAUDE.md](../CLAUDE.md) - Current project status and recent updates (in root)
 - [ARCHIVE.md](../ARCHIVE.md) - Historical fixes and reference material (in root)
 
 ### Content Creation
@@ -145,7 +145,7 @@ docs/
     └── trailing-slash-seo-fix-2025-11-28.md
 
 Root directory:
-├── SESSION_CONTEXT.md (current working context)
+├── CLAUDE.md (current working context)
 └── ARCHIVE.md (historical reference)
 ```
 
@@ -155,7 +155,7 @@ Root directory:
 
 ### When to Update Documentation
 
-**SESSION_CONTEXT.md**:
+**CLAUDE.md**:
 - After completing major features
 - When making significant updates
 - Before/after deployments
@@ -186,7 +186,7 @@ Root directory:
 1. **Adding Episodes**: docs/NEW-EPISODE-DEPLOYMENT.md
 2. **Writing Blog Posts**: docs/BLOG-DOCUMENTATION.md
 3. **SEO Standards**: docs/SEO-META-DESCRIPTION-STANDARDS.md & docs/SEO-TITLE-TAG-STANDARDS.md
-4. **Current Status**: SESSION_CONTEXT.md (root)
+4. **Current Status**: CLAUDE.md (root)
 5. **Design System**: docs/design_specs/sch_design_spec_v1_3.md
 
 ### For Developers
@@ -218,7 +218,7 @@ Root directory:
 
 **Need Help?**
 
-- Check SESSION_CONTEXT.md for current project status
+- Check CLAUDE.md for current project status
 - Search this README for specific topics
 - Review relevant design specs for implementation details
 - Consult SEO standards before creating content

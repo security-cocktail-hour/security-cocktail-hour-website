@@ -311,7 +311,7 @@ If validation fails:
 
 ## SESSION_CONTEXT Updates
 
-**Always ask before updating SESSION_CONTEXT.md**
+**Always ask before updating CLAUDE.md**
 
 User may request:
 - "Update SESSION_CONTEXT with Episode [XX]"

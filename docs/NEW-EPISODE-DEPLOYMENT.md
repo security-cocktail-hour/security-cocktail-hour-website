@@ -543,7 +543,7 @@ rm -rf scripts/tests/test_screenshots
 
 **Documentation:**
 - This file: `NEW-EPISODE-DEPLOYMENT.md`
-- Session context: `SESSION_CONTEXT.md`
+- Session context: `CLAUDE.md`
 - GoDaddy deployment: `GODADDY-DEPLOYMENT-INSTRUCTIONS.md`
 - Testing documentation: `scripts/tests/README.md`
 
@@ -574,4 +574,4 @@ rm -rf scripts/tests/test_screenshots
 
 **Need Help?**
 
-Refer to [SESSION_CONTEXT.md](../SESSION_CONTEXT.md) for detailed project documentation and technical details.
+Refer to [CLAUDE.md](../CLAUDE.md) for detailed project documentation and technical details.

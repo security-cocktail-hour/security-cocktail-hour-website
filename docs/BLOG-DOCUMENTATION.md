@@ -566,5 +566,5 @@ hugo version
 
 ---
 
-**For overall site documentation, see ../SESSION_CONTEXT.md**
+**For overall site documentation, see ../CLAUDE.md**
 **For deployment instructions, see ../GODADDY-DEPLOYMENT-INSTRUCTIONS.md**

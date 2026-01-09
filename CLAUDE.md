@@ -1,4 +1,4 @@
-# Security Cocktail Hour Website - Session Context
+# Security Cocktail Hour Website - Claude Context
 
 **Last Updated**: January 8, 2026
 **Hugo Version**: v0.151.0
@@ -8,7 +8,9 @@
 
 ## Current Session
 
-**Today's Focus**: Pre-deployment test suite implementation
+**Today's Focus**: Pre-deployment test suite implementation + Configuration documentation audit
+
+### Pre-Deployment Test Suite ✅
 - **Test Suite Created:**
   - Comprehensive Playwright-based testing in `scripts/tests/`
   - Smart episode testing strategy: newest 5 + one from each block of 10
@@ -21,6 +23,20 @@
   - Added cleanup step for test screenshots
   - Updated deployment approval workflow
 - **Result:** Quality gate between manual review and production deployment - catches technical issues before reaching production
+
+### Configuration Documentation Audit ✅
+- **Audited Claude Code Configuration**: Reviewed actual plugin, skill, and MCP server state
+- **Updated CLAUDE.md**: Corrected "Claude Code Configuration" section to reflect actual current state
+  - document-skills plugin: Enabled globally (16 skills loaded)
+  - Playwright MCP: Configured globally (22 tools loaded)
+  - Total context usage: 23k tokens (11% of 200k) - efficient and well-balanced
+- **Corrected January 4 entry**: Updated to accurately reflect configuration documentation work
+- **Renamed SESSION_CONTEXT.md to CLAUDE.md**: Aligned with Claude Code community conventions
+  - Used `git mv` to preserve history
+  - Updated 11 files with references (ARCHIVE.md, docs/, skills/)
+  - Changed header from "Session Context" to "Claude Context"
+  - CLAUDE.md is the standard convention for project-specific context
+- **Result:** Documentation now accurately reflects actual system state and follows standard conventions
 
 ---
 
@@ -37,47 +53,80 @@
 
 ## Claude Code Configuration
 
-### Context Optimization (Updated: January 4, 2026)
+### Current Configuration (Updated: January 8, 2026)
 
-To maximize available context for episode deployment and content work, plugins and MCP servers are disabled globally by default. Enable them on-demand when needed for specific tasks.
+**Context Usage**: ~23k tokens (11% of 200k budget) - Optimized for episode deployment and general website work
 
 **Global Settings** (`~/.claude/settings.json`):
 ```json
 {
   "enabledPlugins": {
-    "frontend-design@claude-code-plugins": false,
-    "document-skills@anthropic-agent-skills": false,
-    "example-skills@anthropic-agent-skills": false
+    "frontend-design@claude-plugins-official": false,
+    "document-skills@anthropic-agent-skills": true
   }
 }
 ```
 
-**MCP Servers**:
-- Playwright MCP: Removed from global config (load on-demand when needed)
+**MCP Servers** (Global):
+- Playwright MCP: Configured and running (`npx -y @playwright/mcp@latest`)
+- Provides browser automation for testing and debugging
 
-**Context Savings**: ~55-65k tokens saved per session (27-32% of total context)
+**Project Settings** (`.claude/settings.local.json`):
+```json
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Skill(frontend-design)"
+    ]
+  }
+}
+```
 
-### When to Enable Plugins
+### What's Currently Loaded
 
-Plugins are **installed but disabled globally**. Enable per-project as needed:
+**Skills** (1.3k tokens):
+- document-skills plugin provides 16 skills: xlsx, docx, pptx, pdf, frontend-design, doc-coauthoring, internal-comms, canvas-design, algorithmic-art, web-artifacts-builder, mcp-builder, theme-factory, brand-guidelines, slack-gif-creator, skill-creator, webapp-testing
 
-**Frontend Design Work** (design mockups, visual debugging):
-- Enable `frontend-design@claude-code-plugins`
-- Use case: Art Deco redesign, hero section mockups, page layouts
+**MCP Tools** (3.4k tokens):
+- Playwright MCP provides 22 browser automation tools for testing, screenshots, and debugging
 
-**Document Processing** (spreadsheets, presentations, Word docs):
-- Enable `document-skills@anthropic-agent-skills` or `example-skills@anthropic-agent-skills`
-- Includes: xlsx (Excel), docx (Word), pptx (PowerPoint), pdf
-- Use case: Data analysis, report generation, presentation creation
+**Total Context Breakdown**:
+- System prompt: 3.0k tokens (1.5%)
+- System tools: 14.8k tokens (7.4%)
+- MCP tools: 3.4k tokens (1.7%)
+- Skills: 1.3k tokens (0.7%)
+- Messages: ~8 tokens (0.0%)
+- **Free space: 132k tokens (66.2%)**
 
-**Web Testing/Screenshots** (requires Playwright MCP):
-- Load on-demand: `claude mcp add --scope local --transport stdio playwright -- npx -y @playwright/mcp@latest`
-- Use case: Layout debugging, screenshot automation, browser testing
+### Configuration Notes
 
-### How to Enable Plugins for a Project
+- **document-skills enabled globally**: Provides comprehensive document processing capabilities (Word, Excel, PowerPoint, PDF) always available
+- **Playwright MCP configured globally**: Essential for pre-deployment testing workflow and visual debugging
+- **frontend-design disabled globally**: Available via Skill tool when needed for design mockups
+- **Context is not constrained**: With 132k tokens free (66%), the current configuration provides good balance between capability and efficiency
+- **Pre-deployment testing**: Current setup supports the automated test suite in `scripts/tests/`
 
-Create or edit `.claude/settings.local.json` in the project directory:
+### Modifying Configuration
 
+**To disable document-skills globally** (if context becomes constrained):
+```bash
+# Edit ~/.claude/settings.json
+{
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": false,
+    "document-skills@anthropic-agent-skills": false
+  }
+}
+```
+
+**To remove Playwright MCP**:
+```bash
+claude mcp remove playwright
+```
+
+**To enable on-demand for a specific project**:
+Create `.claude/settings.local.json`:
 ```json
 {
   "enabledPlugins": {
@@ -86,9 +135,7 @@ Create or edit `.claude/settings.local.json` in the project directory:
 }
 ```
 
-This overrides the global `false` setting for that project only.
-
-**Note**: Project-local overrides take priority over global settings. Restart Claude Code after changing plugin configuration.
+**Note**: Restart Claude Code after changing configuration.
 
 ---
 
@@ -119,22 +166,21 @@ This overrides the global `false` setting for that project only.
 - **Git**: Committed 19 files (4,069+ additions) and pushed to GitHub
 - Status: ✅ COMPLETE
 
-### January 4, 2026 - Claude Code Context Optimization ✅
-- **Context Optimization** - Disabled global plugins and removed Playwright MCP to free up context
-- **Plugins Disabled Globally**:
-  - `frontend-design@claude-code-plugins`
-  - `document-skills@anthropic-agent-skills`
-  - `example-skills@anthropic-agent-skills`
-- **MCP Servers**: Removed Playwright MCP from global configuration via `claude mcp remove playwright`
-- **Context Savings**: ~55-65k tokens per session (27-32% reduction)
-- **Configuration Approach**: Plugins remain installed but disabled globally; enable per-project as needed
+### January 4, 2026 - Documentation and Configuration Review ✅
+- **Configuration Documentation** - Documented Claude Code configuration approach
+- **Current Configuration State**:
+  - `document-skills@anthropic-agent-skills`: Enabled globally (provides 16 document/design skills)
+  - `frontend-design@claude-plugins-official`: Disabled globally (available via Skill tool when needed)
+  - Playwright MCP: Configured globally (essential for pre-deployment testing workflow)
+- **Context Usage**: Efficient at ~23k tokens (11% of 200k budget) with 132k tokens free (66.2%)
+- **Configuration Approach**: Balance between capability and efficiency - core tools always available, specialized tools on-demand
 - **Documentation Updated**:
-  - Added "Claude Code Configuration" section to SESSION_CONTEXT.md
+  - Added "Claude Code Configuration" section to CLAUDE.md
   - Updated ARCHIVE.md with historical entries (January 4, 2026 + December entries)
   - Updated scripts/README.md to clarify Playwright Python library vs MCP
   - Verified all other documentation files
-  - Archived older entries from SESSION_CONTEXT.md to ARCHIVE.md
-- **Result**: Lean global configuration optimized for episode deployment and content maintenance work
+  - Archived older entries from CLAUDE.md to ARCHIVE.md
+- **Result**: Well-documented configuration optimized for episode deployment, testing, and content work
 - Status: ✅ COMPLETE
 
 **For detailed deployment history, see ARCHIVE.md**
@@ -248,7 +294,7 @@ magick input.jpg -quality 85 -strip output.jpg
 ## Key Documentation Files
 
 **Essential Documentation:**
-- `SESSION_CONTEXT.md` - This file (current working context)
+- `CLAUDE.md` - This file (project context and working reference)
 - `ARCHIVE.md` - Historical fixes and detailed reference material
 - `docs/NEW-EPISODE-DEPLOYMENT.md` - New episode workflow (includes Step 5.5: pre-deployment testing)
 - `docs/SEO-TITLE-TAG-STANDARDS.md` - Title tag standards and implementation
