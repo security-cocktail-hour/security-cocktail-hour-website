@@ -8,9 +8,34 @@
 
 ## Current Session
 
-**Today's Focus**: Blog post deployment skill implementation + First blog deployment
+**Today's Focus**: Skill structure reorganization + Global configuration standards
 
-### Blog Post Deployment Skill ✅
+### Skill Structure Reorganization ✅
+- **Reorganized to Official Structure**: Moved skills from `skills/` to `.claude/skills/` (official Claude Code structure)
+  - Moved `episode-deploy` to `.claude/skills/episode-deploy/`
+  - Moved `blog-deploy` to `.claude/skills/blog-deploy/`
+  - Removed obsolete `skills/` directory
+  - Removed `.skill` package files (not needed per official docs)
+  - Cleaned up duplicate `blog-deploy/` directory from project root
+- **Git Commits**:
+  - Commit `13eb697`: Main reorganization (moved skills, removed packages)
+  - Commit `0b21b1f`: Cleanup of obsolete blog-deploy directory
+- **Result**: Project now follows official Claude Code structure, eliminates packaging step, cleaner project root
+
+### Global Configuration Standards ✅
+- **Created `~/.claude/CLAUDE.md`**: Global directives that apply to ALL projects
+  - Skill organization standards (always use `.claude/skills/` for project skills)
+  - Anti-patterns documented (no duplicate directories, no .skill packages)
+  - Pre-creation checklist for skills
+  - Links to official Claude Code documentation
+- **Benefits**:
+  - Prevents structural mistakes across all projects
+  - ~450 tokens per conversation (0.2% overhead)
+  - Single source for cross-project standards
+  - Can be extended with other global preferences
+- **Result**: Future skills will automatically follow official structure, preventing the duplicate directory issue experienced today
+
+### Blog Post Deployment Skill ✅ (Earlier Today)
 - **Skill Created**: `blog-deploy.skill` - Automated blog post deployment workflow
   - Modeled after episode-deploy skill but simplified for blog posts (no transcript processing)
   - 10-step workflow in 3 phases with approval checkpoints
@@ -143,6 +168,7 @@
 - **frontend-design disabled globally**: Available via Skill tool when needed for design mockups
 - **Context is not constrained**: With 132k tokens free (66%), the current configuration provides good balance between capability and efficiency
 - **Pre-deployment testing**: Current setup supports the automated test suite in `scripts/tests/`
+- **Global CLAUDE.md**: `~/.claude/CLAUDE.md` contains cross-project standards (skill structure, etc.) - applies to ALL projects automatically
 
 ### Modifying Configuration
 
@@ -177,6 +203,28 @@ Create `.claude/settings.local.json`:
 ---
 
 ## Recent Completed Work (Last 7 Days)
+
+### January 9, 2026 - Skill Structure Reorganization ✅
+- **Reorganized to Official Claude Code Structure** - Moved skills from `skills/` to `.claude/skills/`
+- **Actions Taken**:
+  - Moved `episode-deploy` and `blog-deploy` to `.claude/skills/` directory
+  - Removed old `skills/` directory (no longer needed)
+  - Removed `.skill` package files (episode-deploy.skill, blog-deploy.skill)
+  - Cleaned up obsolete `blog-deploy/` directory from project root
+- **Official Structure Adopted**:
+  - `.claude/skills/episode-deploy/` - SKILL.md + references/ + scripts/
+  - `.claude/skills/blog-deploy/` - SKILL.md + references/
+  - Follows official documentation at https://code.claude.com/docs/en/skills
+- **Benefits**:
+  - No packaging/build step required (skills load directly from source)
+  - Cleaner project root (no package files or duplicate directories)
+  - Aligns with official Claude Code best practices
+  - Project-scoped skills shared via git repository
+- **Global Standards Created**: Created `~/.claude/CLAUDE.md` with skill organization standards to prevent structural mistakes in ALL projects
+- **Git Commits**:
+  - Commit `13eb697`: Main reorganization
+  - Commit `0b21b1f`: Cleanup of duplicate blog-deploy directory
+- Status: ✅ COMPLETE
 
 ### January 9, 2026 - Blog Post Deployment Skill ✅
 - **Custom Skill Created** - `blog-deploy.skill` for automated blog post deployment
@@ -399,12 +447,12 @@ magick input.jpg -quality 85 -strip output.jpg
 - `README.md` - Complete testing documentation
 
 **Custom Skills:**
-- `episode-deploy.skill` - Automated episode deployment workflow (13 steps, 3 phases)
-  - Location: Project root
+- `episode-deploy` - Automated episode deployment workflow (13 steps, 3 phases)
+  - Location: `.claude/skills/episode-deploy/`
   - Usage: Triggers automatically when user requests episode deployment
   - Features: Transcript processing, SEO generation, testing, git workflow
-- `blog-deploy.skill` - Automated blog post deployment workflow (10 steps, 3 phases)
-  - Location: Project root
+- `blog-deploy` - Automated blog post deployment workflow (10 steps, 3 phases)
+  - Location: `.claude/skills/blog-deploy/`
   - Usage: Triggers automatically when user requests blog post deployment
   - Features: SEO generation, content validation, testing, git workflow
   - Template: `working/blog-answers.txt.template` (9-field input format)
