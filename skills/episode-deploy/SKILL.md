@@ -106,27 +106,44 @@ When transcript file is provided:
 
 ## SEO Metadata Generation
 
-Auto-generate SEO-compliant metadata based on user's full title and description:
+Auto-generate SEO-compliant metadata based on user's full title and description.
 
-### SEO Title (Conditional)
+### Where to Find Standards
+
+**All SEO standards are documented in the project documentation:**
+
+- **SEO titles:** See `docs/SEO-TITLE-TAG-STANDARDS.md`
+  - 50-60 characters (optimal)
+  - Dual-title system (full title + seo_title if needed)
+  - Keywords first, remove filler words
+
+- **Meta descriptions:** See `docs/SEO-META-DESCRIPTION-STANDARDS.md`
+  - 120-155 characters (strict requirement)
+  - Active voice, front-load keywords
+  - No filler phrases
+
+- **Tags and topics:** See `docs/NEW-EPISODE-DEPLOYMENT.md`
+  - 5-8 tags per episode
+  - Lowercase with hyphens
+  - Mix of specific and general
+
+### Generation Strategy
+
+**Read the project documentation files above using the Read tool to understand current standards, then:**
+
+#### SEO Title (Conditional)
 - **Generate only if:** Full title exceeds 60 characters
-- **Requirements:** 50-60 chars, keywords first, remove filler words
 - **Example:** "AI in Cybersecurity: How CISOs Are Actually Using LLMs" (59 chars)
 
-### Meta Description (Always Required)
-- **Requirements:** 120-155 chars, active voice, front-load keywords, no filler phrases
+#### Meta Description (Always Required)
 - **Format:** "[Guest name] [action verb] [key topics] with Joe and Adam."
 - **Example:** "Learn how to update your Flipper Zero firmware with this complete walkthrough, including troubleshooting tips for common issues." (155 chars)
 
-### Tags (Always Required)
-- **Requirements:** 5-8 tags, lowercase with hyphens, mix of specific and general
+#### Tags (Always Required)
 - **Example:** `flipper-zero`, `firmware-update`, `hardware-security`, `security-tools`, `troubleshooting`
 
-### Topics Discussed (Always Required)
-- **Requirements:** 4-7 topics, brief but descriptive (3-8 words), title case
+#### Topics Discussed (Always Required)
 - **Example:** "Flipper Zero Device Overview", "Firmware Update Process", "Troubleshooting Update Issues"
-
-**Complete SEO guidelines:** See `references/seo-standards.md`
 
 ## Approval Checkpoints
 
