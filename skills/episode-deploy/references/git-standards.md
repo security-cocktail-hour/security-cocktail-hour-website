@@ -446,7 +446,7 @@ After commit and push:
 
 - [ ] Verify commit was created (git log)
 - [ ] Verify push succeeded (git status)
-- [ ] Note commit hash for SESSION_CONTEXT update
+- [ ] Note commit hash for CLAUDE.md update
 - [ ] Proceed to production build
 
 ---
