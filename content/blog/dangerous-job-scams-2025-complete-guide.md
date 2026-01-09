@@ -10,7 +10,7 @@ author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
 category: "Scam Awareness"
 tags: ["job-scams", "employment-fraud", "AI-deepfakes", "cryptocurrency-scams", "malware", "interview-fraud", "reshipping-scams", "mystery-shopper-scams", "career-safety", "cybersecurity-awareness"]
 description: "AI deepfakes, malware, and crypto scams are targeting job seekers. Learn to spot these 4 dangerous employment scams in 2025 and protect yourself."
-featured: true
+featured: false
 related_episode: "episode-65-job-scams-are-getting-worse-four-of-the-most-dangerous"
 ---
 

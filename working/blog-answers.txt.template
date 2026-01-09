@@ -1,0 +1,48 @@
+1. Blog Post Title
+[Full article title - Target ≤60 characters]
+
+2. Publication Date
+[YYYY-MM-DD format]
+
+3. Author Name
+[Joe Patti / Adam Roth / other]
+
+4. Category
+[AI Security / Career / Cloud Security / Hardware Security / Network Security / Application Security / Threat Intelligence / Compliance & Governance / Security Operations / General]
+
+5. Featured
+[yes / no] (Note: Maximum 2 featured posts on homepage)
+
+6. Related Episode
+[episode-XX-title-slug.md / none]
+
+7. Article Content
+[Full markdown content with H2 headings, paragraphs, lists, etc.]
+
+[Opening paragraph that hooks readers and introduces the topic]
+
+## [First Main Section]
+
+[Content with paragraphs, lists, bold text, etc.]
+
+## [Second Main Section]
+
+[Content with paragraphs, lists, bold text, etc.]
+
+## [Additional Sections as Needed]
+
+[Content continues...]
+
+[Conclusion paragraph or section]
+
+8. Key Takeaways
+[3-5 bulleted points summarizing main lessons - will be formatted in dedicated ## Key Takeaways section]
+- [Actionable takeaway 1 in 1-2 sentences]
+- [Actionable takeaway 2 in 1-2 sentences]
+- [Actionable takeaway 3 in 1-2 sentences]
+- [Actionable takeaway 4 in 1-2 sentences (optional)]
+- [Actionable takeaway 5 in 1-2 sentences (optional)]
+
+9. Blog Image Path
+[Path to hero image file / none]
+[Recommended: 1200×630px, <500KB, JPG/PNG/WebP format]

@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Claude Context
 
-**Last Updated**: January 8, 2026
+**Last Updated**: January 9, 2026
 **Hugo Version**: v0.151.0
 **Branch**: main
 
@@ -8,7 +8,25 @@
 
 ## Current Session
 
-**Today's Focus**: Pre-deployment test suite implementation + Configuration documentation audit
+**Today's Focus**: Blog post deployment skill implementation
+
+### Blog Post Deployment Skill ✅
+- **Skill Created**: `blog-deploy.skill` - Automated blog post deployment workflow
+  - Modeled after episode-deploy skill but simplified for blog posts (no transcript processing)
+  - 10-step workflow in 3 phases with approval checkpoints
+  - Auto-generates SEO metadata (description, tags, key takeaways)
+  - Content structure validation (H2 headings, paragraph length, article length)
+  - Pre-deployment test integration (`python3 scripts/tests/run_all_tests.py --blog`)
+  - Featured post management (warns if exceeding 2 featured posts)
+  - Git commit with standardized format
+- **Hybrid Documentation Approach** (Option 3):
+  - **Bundled** (skill-specific, 3 files, 45KB): workflow, input format, git standards
+  - **Referenced** (project docs): SEO standards, blog documentation, content guidelines
+  - **Benefit**: Single source of truth - skill stays current when project docs update
+  - **No duplication**: Removed 33KB of duplicated content from skill bundle
+- **Template Created**: `working/blog-answers.txt.template` - Input format with 9 fields
+- **Skill Package**: `blog-deploy.skill` (24KB, down from 37KB) - 35% smaller, easier to maintain
+- **Result**: Streamlined blog post deployment with quality control, references authoritative project docs
 
 ### Pre-Deployment Test Suite ✅
 - **Test Suite Created:**
@@ -140,6 +158,38 @@ Create `.claude/settings.local.json`:
 ---
 
 ## Recent Completed Work (Last 7 Days)
+
+### January 9, 2026 - Blog Post Deployment Skill ✅
+- **Custom Skill Created** - `blog-deploy.skill` for automated blog post deployment
+- **Skill Structure**:
+  - Main skill file: `blog-deploy/SKILL.md` (detailed workflow and instructions)
+  - 3 bundled reference files (45KB): workflow, input format, git standards
+  - Input template: `working/blog-answers.txt.template` (9-field format)
+  - Skill package: `blog-deploy.skill` (24KB zip file)
+- **Hybrid Documentation Approach** (Option 3 - Best Practice):
+  - Bundles skill-specific workflow documentation (what the skill does)
+  - References project documentation directly (content standards, SEO rules)
+  - Benefits: Single source of truth, stays current automatically, 35% smaller package
+  - Removed: Duplicated SEO standards and content guidelines (33KB saved)
+- **Workflow Design** (10 steps, 3 phases):
+  - Phase 1: Content Prep (gather info, auto-generate SEO, get approval)
+  - Phase 2: Build & Test (build files, dev preview, run tests, cleanup)
+  - Phase 3: Production (git commit, build package, manual GoDaddy deploy, update docs)
+- **Key Features**:
+  - Auto-generates SEO metadata: meta description (120-155 chars), tags (5-8), author profiles
+  - Content structure validation: H2 headings, paragraph length, article word count
+  - Featured post management: Warns if exceeding 2 featured posts on homepage
+  - Pre-deployment testing: Integrates with `scripts/tests/run_all_tests.py --blog`
+  - Standardized git commits: Formatted commit messages with blog post details
+  - Reads current standards from project docs using Read tool
+- **Simplifications vs Episode Skill**:
+  - No transcript processing (not applicable to blog posts)
+  - Simpler input format (9 fields vs 12)
+  - Optional images (not required)
+  - Faster testing (~1 minute blog tests vs 4-5 minutes all tests)
+  - 30% simpler workflow overall
+- **Maintenance**: Easy - update `docs/BLOG-DOCUMENTATION.md` or `docs/SEO-META-DESCRIPTION-STANDARDS.md` and skill automatically uses new standards
+- Status: ✅ COMPLETE - Ready to use for next blog post deployment
 
 ### January 8, 2026 - Pre-Deployment Test Suite Implementation ✅
 - **Test Suite Created** - Comprehensive Playwright-based testing for quality assurance before production
@@ -322,6 +372,17 @@ magick input.jpg -quality 85 -strip output.jpg
 - `test_blog.py` - Blog list and post testing
 - `test_helpers.py` - Content discovery and validation utilities
 - `README.md` - Complete testing documentation
+
+**Custom Skills:**
+- `episode-deploy.skill` - Automated episode deployment workflow (13 steps, 3 phases)
+  - Location: Project root
+  - Usage: Triggers automatically when user requests episode deployment
+  - Features: Transcript processing, SEO generation, testing, git workflow
+- `blog-deploy.skill` - Automated blog post deployment workflow (10 steps, 3 phases)
+  - Location: Project root
+  - Usage: Triggers automatically when user requests blog post deployment
+  - Features: SEO generation, content validation, testing, git workflow
+  - Template: `working/blog-answers.txt.template` (9-field input format)
 
 **Design Prototypes:**
 - `temp/hero-redesigns/` - Hero section redesign mockups (remaining files)
