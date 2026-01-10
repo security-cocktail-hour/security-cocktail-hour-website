@@ -25,8 +25,1367 @@ Tune in to hear our discussion with Gabrielle Hempel.
 
 ## Full Episode Transcript
 
-**[0:00]:**
-[Music]
+*Joe Patti (1:00:05)*
+Okay, Adam, how are you doing today?
+
+*Adam Roth (1:00:08)*
+I'm sorry, you're talking to me? Yeah, I'm talking to you.
+
+*Joe Patti (1:00:11)*
+I'm talking to you.
+
+*Adam Roth (1:00:12)*
+You're not talking to Deadpool that way.
+
+*Joe Patti (1:00:15)*
+Yeah, well, this is the Halloween episode. And I guess that's the closest you're gonna get to a costume is the Deadpool hat.
+
+*Adam Roth (1:00:21)*
+Which is very stylish. You mean the birthday edition? You mean the birthday edition? There's two of us who had a birthday. Well, having a birthday. Where's yours?
+
+*Joe Patti (1:00:29)*
+My birthday was quite a while ago. My costume is, I'm like, I got my own motorcycle jacket. This is the closest I get to having a costume. So yeah. Yeah. I wasn't gonna slick my hair back. That's like too much.
+
+*Joe Patti (1:00:41)*
+I don't have that much spirit, what can I tell you?
+
+*Joe Patti (1:00:44)*
+But we have a guest who's definitely way more in the spirit than we have.
+
+*Adam Roth (1:00:52)*
+I'm kind of embarrassed. Oh, for me? No, for me, cuz I'm the one that kind of said, let's get costumes.
+
+*Joe Patti (1:00:58)*
+Yeah, this was all your idea. And Gabrielle played along, our guest. I did. I played along and I'm not a costume guy. And you, well,
+
+*Joe Patti (1:01:09)*
+you got chocolate martini, so that's cool. You're fine.
+
+*Gabrielle Hempel (1:01:12)*
+I did have this at my disposal already, though. I did not buy it for the podcast, so.
+
+*Joe Patti (1:01:17)*
+No, good.
+
+*Gabrielle Hempel (1:01:17)*
+I don't know whether that makes me weird or.
+
+*Joe Patti (1:01:19)*
+No, that's perfect, cuz we got no expense budget for costumes or anything. So we're glad you didn't spend anything.
+
+*Joe Patti (1:01:28)*
+All right, so Gabrielle, why don't you tell us a little bit about yourself and your costume if you'd like.
+
+*Gabrielle Hempel (1:01:34)*
+Yeah, I got a cool back house. Look, it's got like-
+
+*Joe Patti (1:01:38)*
+It's got like back wings and everything.
+
+*Gabrielle Hempel (1:01:41)*
+Yeah.
+
+*Joe Patti (1:01:41)*
+All right.
+
+*Gabrielle Hempel (1:01:42)*
+It's funny, each of us seen the look on the fifth, so I got twin 15-year-old boys and walked out of the room and they were like, what? Are you wearing one of them? Just like he walked out of the door and he went back in and shut the door. He was like, nope, not today.
+
+*Joe Patti (1:01:55)*
+You know what that reminds me of? Reminds you of like a Roadrunner cartoon and like, like Wile E. Coyote gets the Acme bat suit and tries to fly. If we drink enough, can we get you to like, you know, to pull a roof or something?
+
+*Gabrielle Hempel (1:02:07)*
+No. Well, I got mountains right outside my window. Like I live like up on the bench of a mountain. I could get some air.
+
+*Adam Roth (1:02:14)*
+All right, I gotta stop this here. Full disclosure here, please do not train. These stunts are home.
+
+*Adam Roth (1:02:20)*
+The people in this podcast are professionals on what they do.
+
+*Joe Patti (1:02:24)*
+Yes, but we can't professional. We have no, by the way, we have no costing budget and no health insurance for this. So, you know, what about those?
+
+*Gabrielle Hempel (1:02:33)*
+Probably don't want to. Well,
+
+*Joe Patti (1:02:38)*
+we're not very big on compliance. You know, we're just trying to avoid copyright strikes here. So don't don't how many popular tunes, please.
+
+*Adam Roth (1:02:44)*
+Let me put a teaser out there.
+
+*Adam Roth (1:02:49)*
+What we recorded yesterday did require protective gear.
+
+*Gabrielle Hempel (1:02:53)*
+Oh, what kind of protective gear we talking?
+
+*Adam Roth (1:02:57)*
+Oh,
+
+*Adam Roth (1:02:59)*
+I mean, have
+
+*Gabrielle Hempel (1:03:00)*
+you done anything that requires a full hazmat suit yet? Because I can take you to some of those places.
+
+*Adam Roth (1:03:04)*
+No, I've done that also as an EMT. But but but let's just say it required headgear, gloves and a mouthpiece.
+
+*Joe Patti (1:03:16)*
+And it wasn't that I'm just going to the supermarket. That's not how it usually goes.
+
+*Joe Patti (1:03:21)*
+That's not true.
+
+*Adam Roth (1:03:22)*
+I usually go to the supermarket.
+
+*Gabrielle Hempel (1:03:23)*
+People are looking very supermarket or going to for real.
+
+*Joe Patti (1:03:27)*
+Seriously.
+
+*Gabrielle Hempel (1:03:31)*
+But yeah, no, I'm Gabby Gabrielle. Whatever you want to call me. A lot of people only know me by my like Twitter handle, too, which is pretty weird.
+
+*Gabrielle Hempel (1:03:40)*
+So I get called Gab Smash a lot. That's my Twitter handle. I came from a whole group. That's awesome. Like I used to power lift and like when I would finish like a PR lift or something, I don't know. I just instead of Hulk smash, I would yell Gab Smash because it was funny. And then when I went to make a Twitter, I couldn't think of a name and put that is my name. And now I don't think I can undo it.
+
+*Adam Roth (1:04:02)*
+So that's great. You live in definitely on the internet. So
+
+*Gabrielle Hempel (1:04:07)*
+yeah, I work in security. I've had a lot of different roles in security. My journey into security was pretty freaking weird. I think we were talking about that a little bit at some point. But yeah, why?
+
+*Joe Patti (1:04:20)*
+I definitely want to hear about that because you know, well, we've talked on the show a lot. We kind of did the requisite. So how do you get into security? And you know, there are a lot of people who kind of my own experience or my own take is that a lot of people, especially the old timers came in through, you know, originally networking and then got into security and started doing more security stuff, more networking. That's how Adam did it. That's how I sort of. And I, you know, I kind of came in. I was more on the whole side as just the administrator doing, you know, taking care of computers and stuff. But yours was very different and very interesting. Actually much cooler than either of ours.
+
+*Gabrielle Hempel (1:05:00)*
+Not really.
+
+*Gabrielle Hempel (1:05:03)*
+It was really funny. I was actually on another podcast recently and it was the theme of the episode was how a lot of my career moves and like how I've moved into security has been built off of spite. Spite.
+
+*Joe Patti (1:05:15)*
+All right.
+
+*Gabrielle Hempel (1:05:15)*
+And being stubborn because people tell me I can't do something or that makes me want to go do it. So.
+
+*Joe Patti (1:05:25)*
+So. So that's the trick. Okay. You definitely can't jump off the top of the building.
+
+*Gabrielle Hempel (1:05:33)*
+I mean,
+
+*Gabrielle Hempel (1:05:35)*
+I haven't tried yet.
+
+*Joe Patti (1:05:36)*
+So I would recommend.
+
+*Adam Roth (1:05:38)*
+I don't want you to jump, but I have a funny feeling. If anybody I know told me not to jump off of a mountain.
+
+*Adam Roth (1:05:47)*
+I have a funny feeling you would soar.
+
+*Gabrielle Hempel (1:05:48)*
+But don't do it, please.
+
+*Adam Roth (1:05:50)*
+Wow.
+
+*Gabrielle Hempel (1:05:51)*
+That's a kind of compliment, whether it means I'm like actually like some sort of weird witch or something or like just very aerodynamic.
+
+*Joe Patti (1:05:59)*
+He didn't say with a broom. Come on.
+
+*Adam Roth (1:06:01)*
+I think it's a little bit of a little bit of both. But you know, and I'm kind of giving that PII a little bit. But since my birthday is on Halloween for me, I'm talking about, you know, I believe in witches, you know, I know witches are the theme of my birthday.
+
+*Gabrielle Hempel (1:06:23)*
+I love I love witches. I my mom is super in a genealogy and we're very, very Irish. Like my mom is a citizen, like just a very Irish family and she traced our lineage back way back into the day. But we were some very druidic people in Ireland. So that's okay. Yeah. So I think it's pretty rad. I'm like, all right, that's that's that's cool. Maybe I have some powers or something that I need to try and await the weekend. I don't know.
+
+*Adam Roth (1:06:58)*
+You know, one year on my birthday.
+
+*Adam Roth (1:07:04)*
+Oh, God, decades and decades ago, a balloon, it was not done by my family, floated down in front of my window. It's a happy birthday. And it wasn't my family that did it.
+
+*Gabrielle Hempel (1:07:16)*
+That's some horror movie shit.
+
+*Adam Roth (1:07:17)*
+I'm telling you the truth. Can't make it up.
+
+*Gabrielle Hempel (1:07:20)*
+We love to swear on here. Yeah.
+
+*Gabrielle Hempel (1:07:23)*
+Okay, it's gonna make sure I've got the mouth of someone that lived in New York for a long time. So yeah, you'll see how we are. Yeah, but they don't like that here in Utah.
+
+*Adam Roth (1:07:35)*
+Oh, because you know, you respect it's a lot of Mormon, right? So.
+
+*Adam Roth (1:07:40)*
+It was really scary to see that balloon because I was mortified. I like, yeah, dad, mom, you did that.
+
+*Joe Patti (1:07:47)*
+Did it come out of the sewer? And was there a clown?
+
+*Adam Roth (1:07:50)*
+I know that. I had bedrooms like my bedroom now. The window was in front of it.
+
+*Adam Roth (1:07:56)*
+No, I didn't see any clowns in this. Well, some of the D.E.P. workers, but that's another story. Yeah, that's right. Tell me them are my friends.
+
+*Gabrielle Hempel (1:08:03)*
+So that's wild. Yeah, stuff like that is like there's some supernatural stuff that happens sometimes. I'm like, is that a coin? Like there's no way. Like, I don't know. There's just weird stuff where I'm just like, but I'm also very much a skeptic in many areas of life. So I'm just I don't know. I have an internal war with myself. Like, what do I believe?
+
+*Adam Roth (1:08:24)*
+Are you a school? I know. I know we should be getting to astrology, but are you a Scorpio? I don't remember.
+
+*Gabrielle Hempel (1:08:30)*
+I'm a Libra.
+
+*Adam Roth (1:08:31)*
+I'm a Libra. Just like my wife. Oh, God.
+
+*Speaker 4 (1:08:35)*
+I don't know what that means.
+
+*Joe Patti (1:08:38)*
+But I'm a Libra. I don't know what that means. But whatever.
+
+*Gabrielle Hempel (1:08:40)*
+I'm not astrology either.
+
+*Gabrielle Hempel (1:08:43)*
+I'm a Scorpio. I think it's interesting, but it's one of those things where like I won't take it to heart, I guess.
+
+*Joe Patti (1:08:50)*
+I think that's for entertainment purposes only. That's what I tell my daughter.
+
+*Adam Roth (1:08:53)*
+You know what's funny? That's fine. My current job, I was doing some work in an area of New York City and a woman walked up to me and she said something weird like, are you a Scorpio? I might even be making this up. And I know I just gave them. Was it like Whole Foods? No, I'm not. No, no, no, no. This was on a street that we were helping to do some work. And woman walked up and goes, you're a Scorpio. I looked at her like, do you know me? She goes, no, I don't know you. I go, you just walk up to somebody and tell me you're a Scorpio? She goes, yeah. She goes, you're one of those stubborn types. I'm like, I'm not stubborn at all. What are you talking about? She goes, there you go.
+
+*Joe Patti (1:09:29)*
+That's such a scam. She probably did that to like a hundred people. You know, she's with her husband.
+
+*Adam Roth (1:09:35)*
+Her husband's like, what are you doing to this guy?
+
+*Joe Patti (1:09:38)*
+Oh, that's it. I don't know. Do you know why I probably-- Did you end up giving her any money? Let me put it that way.
+
+*Adam Roth (1:09:44)*
+No, I gave him my social security number because you said you would help me.
+
+*Gabrielle Hempel (1:09:47)*
+Oh, there you go.
+
+*Adam Roth (1:09:48)*
+That's cool.
+
+*Gabrielle Hempel (1:09:49)*
+Was she going to like hook you up with an Nigerian prince?
+
+*Adam Roth (1:09:53)*
+I've already-- or princess. And yes. Oh, sorry. Yeah, well, I mean, like, you know, it depends on your pronouns and stuff. But yeah, she did. We're talking right now. I've been sending her money to come to New York. Perfect.
+
+*Gabrielle Hempel (1:10:06)*
+Yeah. Nice. Just make sure, you know, if she asks for iTunes gift cards or whatever, you go to oblige.
+
+*Adam Roth (1:10:12)*
+No, I did that my old job. I bought a couple of gift cards and I put it on my company credit card.
+
+*Adam Roth (1:10:19)*
+Nice.
+
+*Joe Patti (1:10:20)*
+Oh. So, Gadsmack, tell us a bit about your-- Gadsmack. Gadsmack. Tell us a bit about your interesting journey into security.
+
+*Gabrielle Hempel (1:10:29)*
+Yeah. So, my undergraduate degree,
+
+*Gabrielle Hempel (1:10:35)*
+I studied neuroscience and psychology and not anything to do with computers. So, after that, I didn't really know what I wanted to do. I knew I didn't want to like keep going to school for that. It was interesting, but it was like too much chemistry classes.
+
+*Joe Patti (1:10:53)*
+You had enough brain surgery. You were like, this is getting boring.
+
+*Speaker 4 (1:10:56)*
+I'm done.
+
+*Gabrielle Hempel (1:10:57)*
+I am good. I'm too smart for this. I know.
+
+*Gabrielle Hempel (1:11:02)*
+So, yeah, I ended up working in pharmaceutical regulation for a couple of years doing studies, like regulation studies for the FDA and stuff like that. And with that, also worked on medical devices, which is kind of how my interest in security was peaked a little bit because I kept dealing with a couple of medical device manufacturers that had vulnerabilities in some of their devices.
+
+*Gabrielle Hempel (1:11:28)*
+And that was not my area of expertise. I could talk all day about some of your compliance with pharmaceuticals and risk analysis and form consent and all kinds of stuff. But when it came to medical device vulnerabilities, everyone at my company was just like, how do we approach this? We didn't even have a security team at that company.
+
+*Joe Patti (1:11:47)*
+Oh, that's frightening. I mean, what kind of devices were these? Like total life-saving things? Or, oh, this is going to be bad. I can tell. We're waiting. We're waiting.
+
+*Joe Patti (1:11:58)*
+Yeah,
+
+*Gabrielle Hempel (1:12:00)*
+the one that I worked on the most was a pacemaker,
+
+*Gabrielle Hempel (1:12:05)*
+an internal defibrillator.
+
+*Gabrielle Hempel (1:12:09)*
+So I think I'm trying to think of what else I think it was mostly pacemakers that I've worked with, like that had vulnerabilities at that point. There were a couple of infusion pumps as well, like what you see in hospital rooms that you give people drugs. And if you read on those read up on those, there's a lot of hackers that have done some really cool work with some of those too. But like I know with the pacemaker stuff, it was actually the programmer for the pacemaker that had the vulnerability.
+
+*Gabrielle Hempel (1:12:34)*
+But you could put anything you wanted on that and then just send it to the pacemaker, which was not ideal.
+
+*Joe Patti (1:12:38)*
+Wait, you mean you could like upload whatever code you wanted to this like, like something?
+
+*Adam Roth (1:12:43)*
+Well, I'm gabsmash. We spoke about this when we were first getting this episode together.
+
+*Adam Roth (1:12:50)*
+And my father-in-law was having some serious chest pains and we were like, what is that? And whatever. I mean, I don't want to get into too much with him, with his medical background. But we ended up finding out that the pacemaker was overclocked.
+
+*Adam Roth (1:13:09)*
+And when we started asking who made these changes,
+
+*Adam Roth (1:13:12)*
+nobody knew. So he ended up in the ER.
+
+*Adam Roth (1:13:16)*
+They kind of tried to figure out which, because we know that the manufacturers allow multiple hospitals and multiple organizations to log in.
+
+*Adam Roth (1:13:27)*
+And it wasn't, they claim, I can't see the data, a good account of who logged in, who did what. But we know the original setting was one and the other setting was another 10 beats per minute, which caused him discomfort and almost put him into cardiac arrest.
+
+*Adam Roth (1:13:46)*
+And this is evident of how it works. And for those who don't know how it works also, typically, if you have a pacemaker, they usually put a receiving station in your house and that receiving station sends data back.
+
+*Adam Roth (1:14:03)*
+I believe via a kind of a Bluetooth, it's not necessarily paired, but and then that unit that's plugged in is usually cellular.
+
+*Adam Roth (1:14:12)*
+And it sends the data back, but it's bi-directional. So instructions are sent back to the pacemaker. So when you're within range of the pacemaker,
+
+*Adam Roth (1:14:21)*
+they can send a shock. I believe they can change the beats per minute. They can make it upper or lower as far as stuff. So everything's remotely controlled. Are you serious? I mean, I'm not.
+
+*Joe Patti (1:14:33)*
+I can see the benefit of that. But the idea of walking around the house and knowing someone's got like a freaking remote control from my heart or something is like maybe I know too much about security. But that's really the way these things are. And you have no control over that.
+
+*Adam Roth (1:14:48)*
+It's just someone else is running that. And I'll default to GAP Smash. I love that name, by the way.
+
+*Adam Roth (1:14:55)*
+I'll default to GAP Smash, but I don't know if there's a certificate. I don't know if it's telnet. I don't know how you connect to it once you're within vicinity. I mean, I don't know how it's programmed. I don't know how you identify who is the right receiver. I know nothing about that. But I do know the basics. That is how it works.
+
+*Gabrielle Hempel (1:15:13)*
+Yeah, I mean, it's probably changed a lot since I've looked at them because I haven't and I have one in the closet over there actually that I was going to mess with at some point. But I haven't gotten around to playing with it yet. I keep saying, oh, that'll be a good winter project. And then I have too much stuff to do in the winter.
+
+*Joe Patti (1:15:28)*
+So you've got that in the closet. Who's got the pacemakers? A random person?
+
+*Gabrielle Hempel (1:15:33)*
+And I think the pacemakers in that box, too. I think it's both the pacemaker and the programmer are still in the box.
+
+*Joe Patti (1:15:38)*
+Oh, OK. I was just
+
+*Gabrielle Hempel (1:15:40)*
+going to. No, no, no. I wasn't going to sit here and say, no wonder if any of my neighbors have a pacemaker.
+
+*Gabrielle Hempel (1:15:46)*
+A dead come here.
+
+*Adam Roth (1:15:50)*
+No humans or any animals will be hurt during this testing.
+
+*Gabrielle Hempel (1:15:53)*
+No, no, no, no, no, no. I would not especially having worked in the compliance part and knowing what what goes into human testing. Yeah, I'm good. I'm not I'm not touching that with a 10 foot pole. So but yeah, no. So it's essentially I think back then it was Bluetooth. I think they've changed some of the protocols now. I'm really not sure what they are. I have to read myself back up on some of the new pacemaker programmers. But yeah, you could you could put any kind of code you wanted on there and there wasn't really, you know, good access like Adam was saying to like good audit logging essentially as to who had done what with that controller or there could be multiple multiple controllers that worked with a single pacemaker things along those lines. So it gets really, really messy.
+
+*Gabrielle Hempel (1:16:40)*
+And same with the infusion pumps were my favorite because they had hard coded credentials like a lot of the infusion pumps you see in hospitals have their credentials already hard coded, which is something that's kind of fun to play with. If I'm ever in the hospital, I'm like, I wonder what this does. And then people are like, stop, don't touch that.
+
+*Adam Roth (1:16:58)*
+So that's part of the credentials as part of it. I don't know. That being said, Gabs, I have a lot of friends of mine who are wondering. And one nurse in particular told me that she was I'm trying to be careful how I said this. She was witness to some pumps that were changed.
+
+*Adam Roth (1:17:16)*
+And what she alluded to was the suspicion that somebody hacked these pumps. But I was not part again, I want to be careful what I said, I was not part of the investigation. I have no expertise in these pumps. She was a nurse. They found that a lot of these pumps were changed. I don't know what level how much, you know, it could have been a floor, it could have been a patch, could have been an upgrade. From what I'm aware, nobody died. But it was something that she was careful to say to me, but also a witness to it.
+
+*Gabrielle Hempel (1:17:51)*
+Yeah, yeah, it's one of the things where I think I don't think it's ever been a lot of the vulnerabilities were kind of caught before anything terrible could happen. I don't know of any deaths that are directly related to any of these vulnerabilities, which is good.
+
+*Gabrielle Hempel (1:18:07)*
+But it sucks that they exist either way. I mean, that's just scary. Everything's connected. I think, especially in the medical industry,
+
+*Gabrielle Hempel (1:18:15)*
+I saw things have moved really fast, right? Think about the innovation just in medicine in the last 10 years or so. But that same security innovation hasn't really caught up to some of that medicine, medical innovation, or at least the emphasis on security has not stayed, you know, neck and neck with the emphasis on the medical innovation. And that's it started to fall behind, I think, in a lot of different critical infrastructure sectors. You could say the same about some of the energy sector stuff that's out there. I'm sure EMS, like some of the EMS infrastructure, I'm sure you've seen it and have been horrified at.
+
+*Adam Roth (1:18:51)*
+Thankfully, as an EMT, we're in the field and we don't have a lot of remote control to our equipment. Thank God. The only things that have been happening in these in previous years is that people would throw fake calls over radios. You know, not the same what we're talking about. No, but terrible. And maybe send messages through the KDT or MDT's, keyboard data terminals, mobile data terminals. But that was back then, different technology. But, you know, it's funny, it's not like somebody, a previous guest once sat in the coach of an airplane and was accused of taking over controls of the avionics of an airplane. I mean, that never happened.
+
+*Gabrielle Hempel (1:19:34)*
+Was it Chris? Was it Chris?
+
+*Joe Patti (1:19:35)*
+I'm not. Oh, please. Everyone knows who it is.
+
+*Gabrielle Hempel (1:19:38)*
+Come on. He was just a keynote. So my company had our conference this past week and he was one of our keynotes. I was so excited. I got to actually sit and talk to him for like half an hour. And I was so excited because I have followed his work forever. I mean, you know, if you're in security, you know who he is. Right. So I was so excited to get to meet him. My boss was like, I don't even know who this person is. And I was like, you have to go talk to me.
+
+*Adam Roth (1:20:00)*
+So did you tell me to be on the show?
+
+*Gabrielle Hempel (1:20:02)*
+No, because we didn't talk about I didn't know he had been a guest on the show yet. So I'll have to bug him. We were he were buddy, but best buddies on LinkedIn now. So I'll have to. Oh, you and I would be FFS. We are. I can have more than one. It's like Myspace.
+
+*Adam Roth (1:20:17)*
+Myspace. I don't even know. I spent my life. Oh, God.
+
+*Joe Patti (1:20:20)*
+Wow.
+
+*Gabrielle Hempel (1:20:21)*
+You know, we're not old enough to date myself with.
+
+*Joe Patti (1:20:25)*
+I thought you were trying to cater to us that think of we think of we were old to talk about Myspace, you know.
+
+*Adam Roth (1:20:29)*
+So I used I used to talk to my friends on BBS's or bulletin board services with a dial up back then. It was a 300 modem. Then I moved to 1200 and then I moved to 2400. And then I really took off and I got the 56 K. Wow. Wow.
+
+*Gabrielle Hempel (1:20:47)*
+You know, the sound that that 1200 modem makes is the sound that my brain makes when I try to think.
+
+*Gabrielle Hempel (1:20:54)*
+Whenever I try to think that's just what I hear in my brain. I don't know.
+
+*Joe Patti (1:20:58)*
+Well, here's here's what scares me about this medical stuff. And I mean, I don't know how it is, but, you know, OK, you got the hacker side and hopefully this stuff is secure. You can't break into some of these stations. But even even the legitimate use. I mean, unfortunately, I've been spending a lot of time in hospitals lately like, you know, you talk about infusion pumps, you go to like a like a chemo or something. There's like 20 people, you know, 20 pumps and all these things. You know, are they doing a good job of not even the security of it, but remembering which is which are they making? You know, how quality control do they have? Are they making sure that, you know, the right person is with the with the right one? If you're saying they don't even have an audit trail, I mean, if someone does get sick and they even trace it back for diagnosis, you know, did this person get the right thing? Did they get the right setting? That really that's kind of freaking me out, to be honest.
+
+*Adam Roth (1:21:51)*
+You know, think about that, right? You know exactly what you're saying. And guess, correct me if I'm wrong. The fact that was changed is one big thing. The fact that no one detected it, at least in my father-in-law two months later, is even worse. What audit, what controls do you have to check to see what the settings are? And you know, and by the way, Gav Smash, I love seeing that.
+
+*Joe Patti (1:22:10)*
+You love saying that. Oh boy.
+
+*Adam Roth (1:22:12)*
+And Joe Smash.
+
+*Speaker 4 (1:22:13)*
+You sure have a mother-in-law too, yeah.
+
+*Adam Roth (1:22:14)*
+Yeah.
+
+*Adam Roth (1:22:17)*
+Joe Donuts. So, um,
+
+*Adam Roth (1:22:20)*
+what, I'm sorry.
+
+*Adam Roth (1:22:25)*
+Joe Donuts. Joey Donuts.
+
+*Adam Roth (1:22:28)*
+What's even scarier is, is that, yeah, medical equipment is an issue.
+
+*Adam Roth (1:22:34)*
+But what about if somebody is doing some kind of surgery, robotics, and somebody gets on that equipment? Now once, in one of the training sessions I've done, one of the well-known lecturers said that they were doing a red team, blue team or purple team, and they were by mistake, well not by mistake, they did it on purpose, but they didn't know the IP. The IP was not putting a list of restrictions. And they got onto that server during the surgery. And when they kind of got access to the camera, they were like, "What the hell? Back off. Stop everything right away. Not the surgery, but no more work." Because goth of the day, you crash that server in the middle of the surgery. That's horrible. But, you know, on the other hand, what if you're a hacker and you traversed to that server?
+
+*Adam Roth (1:23:27)*
+You know? So it's bad.
+
+*Gabrielle Hempel (1:23:29)*
+The nice thing is, is a lot of hacker groups kind of have their own code of ethics. One that I saw a few years ago kind of in the field while I was working was there was a hospital that had been attacked.
+
+*Gabrielle Hempel (1:23:45)*
+Once the hacking group realized it was a hospital, I think it was attached to a university somewhere,
+
+*Gabrielle Hempel (1:23:51)*
+so they thought it was the university. Once they realized it was a hospital, they backed off, unlocked everything. They were like, "No, we're not touching something that is touching actual human lives." A lot of hacking groups, I think are out there for financial gain or IP or anything along those lines, but once they get to a point where they are harming physical people,
+
+*Gabrielle Hempel (1:24:11)*
+that's where they draw the line. Not saying that they're good people either way, but I'm just saying. I have seen that before where they're definitely, they will back off if they realize it's a medical institution or something along those lines.
+
+*Joe Patti (1:24:24)*
+Well, I've heard that too. And we've had people talking about that where they're like, "They're there to make money. They're not there to kill people or anything." However, we are seeing more and more ransomware attacks against hospitals. They used to be kind of off limits until they realized they could make a lot of money off them and they were really good target. And you got to think there that even if they're not intending to hurt someone, they can make some big mistakes. And you've heard about these hospitals, now being, like I said, been spending time in hospitals, there are no more charts. There's no more paper. There's a PC in every room. Everything is with iPads and all. If stuff goes down, they can't deliver care. They don't know who they're talking to or what their condition is or anything.
+
+*Adam Roth (1:25:08)*
+Federally, there's a mandate to do EMR, electronic medical records, but not everybody's still doing it. They get them fined when they do. So there's still a lot of paper records. However,
+
+*Adam Roth (1:25:19)*
+eventually it's supposed to end up as EMR. And the reason why also, I think, is a lot of entities are now sharing data with each other, whether they're using Eclipse or what's the other ones or-- Yeah, they're sharing data with Google too. Yeah, Epic, Epic, I'm sorry, Epic. Epic is one of the really big ones. Yeah, yeah. So I log into Epic and I'm putting 17 organizations together and getting data.
+
+*Gabrielle Hempel (1:25:44)*
+Yeah, the fact that a lot of them don't talk to each other is scary too. Like I feel like I've moved what, four or five times in the last like six or seven years. And it's every time I get a new doctor, it's like, all right, time to figure out a new system. Because I feel like none of them kind of overlap. You can't transfer your records very easily. Oh, no. Things like that. But no, it depends on it. It really depends. Regionally, sometimes you can, but like moving across the country was just kind of a new ballpark it seemed like.
+
+*Joe Patti (1:26:12)*
+Wow, because I remember in the old days when someone would move, you know, in medicine, you know, you go to a new doctor or whatever, and they'd be like, oh, oh, I need your records, who's your old doctor? And they'd call them and they'd fax it over, which I guess sounds archaic, but sort of works, you know, but now I guess they got to deal with interoperability and formats and all that kind of stuff, you know?
+
+*Adam Roth (1:26:36)*
+Yeah, some people will send the other doctor a link to log in as a temporary provider and they get access to your records. One of my doctors,
+
+*Adam Roth (1:26:51)*
+I told him I was changing and he understood. And he said the one pager, he wrote himself with all the major, like, you know, these are the top hits. I'm like, that's it? It's really like the 60 pages.
+
+*Joe Patti (1:27:06)*
+He wrote a one pager? Dude, I know you're a mess. You need more than a page. Come on.
+
+*Adam Roth (1:27:09)*
+Yeah, it's true.
+
+*Gabrielle Hempel (1:27:11)*
+But, I'm sorry. One of the crazy things, so once I left my job in medicine, I actually got more access to medicine in some ways. Like, I moved to security.
+
+*Gabrielle Hempel (1:27:24)*
+I was part of getting into security was, you know, my stubbornness because I was dating a guy at the time who was,
+
+*Gabrielle Hempel (1:27:30)*
+he actually had his own company in the tech space and they did all right. But he was a really smart person. He just wasn't a good person. But he basically told me, he was like, I don't, you're not smart enough to ever work in something like security or even tech, honestly. I totally agree. And I was just like, okay.
+
+*Gabrielle Hempel (1:27:53)*
+Serious? That's kind of shitty. So, I went and did it anyway. But I got that, we talked kind of a little bit at the beginning about your average journey into security. And I got that from a lot of people. People would be like, oh, well, you have to start at help desk. And then you have to do sys admin. Then maybe you can do network stuff. Then maybe you can do security, but you can't just go into security. People would tell me that all the time. And I was like, nah, there's got to be another way.
+
+*Adam Roth (1:28:17)*
+I'm going to tell you why that is. And I might say it's a catchall for everybody. The only reason why I sort of believe in it is that a lot of people don't have the structure to understand. So when I started doing work,
+
+*Adam Roth (1:28:34)*
+as I used to, when I used to go take my original certification test, when I used to ride the horse to the attesting center, that's how old it is.
+
+*Gabrielle Hempel (1:28:43)*
+It was a horse, not a dinosaur.
+
+*Adam Roth (1:28:45)*
+Come on, Gav smash. And by the way, start referring to me as chocolate martini.
+
+*Adam Roth (1:28:51)*
+So,
+
+*Adam Roth (1:28:52)*
+yeah,
+
+*Adam Roth (1:28:54)*
+the beginning was, yeah, to kind of learn Microsoft. Because that was the only thing really back then, the big thing, right? Linux was around and Unix was around, I guess. Unix more in ZenX and Banyan vines, whatever. But then when I learned that, I started learning networking. And then this woman that was in networking said to me, you know, I know you want to get into the sexiness of networking, but you've got to get the baseline of understanding how things work. And you'd be surprised as a guy that was a hiring manager. And by the way, you talk about people talking about, you know, being smart enough, a certain person here that was my boss and it wasn't you. So, you know, I got to hire everybody else on my team. I didn't get to hire you. I'm stuck with you. Oh, God, we hear this every episode. Yeah, so that being said, I'm never going to forget you. But then you start learning networking and you learned about broadcaster means, and you learned about forwarders and you learned about ports. And then when you get to security, you kind of have to know all of that. It doesn't mean that you weren't capable of doing it, but a lot of people don't have that, that, what's the word, that drive, that ambition, that motivation to learn all the aspects of it. And I know that you're a security person, but it doesn't mean what's right for most people is right for you. So that's why I kind of see how people build up to that.
+
+*Gabrielle Hempel (1:30:16)*
+And by the way, that's how I did it. Oh, no. And I think that's, that's especially back in, you know, 20 years ago, that's how it had to be because...
+
+*Joe Patti (1:30:23)*
+Right. Yeah, that's old school.
+
+*Gabrielle Hempel (1:30:25)*
+The only field that security touched was tech.
+
+*Gabrielle Hempel (1:30:29)*
+But the interesting, I think now when you look at it, security touches every field, whether you're in medicine or finance or doing some critical infrastructure stuff, or any field that you're in, there's security as part of it, because everything's just done so largely online at this point. And that's why I think that now it's a little bit friendlier for people to try and get into security different ways than maybe it was back in the day. There was kind of only one path back in the day, and now it's like, okay, you can take a lot of different paths. But at the same time, like you're saying as well, there's, it takes a lot of self-starting and drive. And self-auditing is like really what I find myself doing a lot, because I went straight from not working in tech at all to being a security analyst.
+
+*Joe Patti (1:31:12)*
+That is a little bit unusual, unless you... I know. ...got some kind of training or got a degree or something.
+
+*Adam Roth (1:31:18)*
+Which is why we know she's a witch.
+
+*Gabrielle Hempel (1:31:19)*
+I did a lot of self-study and like kind of brought myself up to speed in a lot of areas to the point where I understood what was going on. But they also told me, they were like, "You're going to sink or swim. If you can't figure this job out, like we're giving you, we're taking a chance on you essentially.
+
+*Gabrielle Hempel (1:31:36)*
+If you do well in this role, then you'll learn a lot and you'll have that experience. If you don't, then you're just not going to do well. Like you're not going to last here." So it was definitely, it was a sink or swim role where I really had to work, improve myself. And it was for a consulting company, like one of just outside the big four. I was with Accenture. So worked 24 seven pretty much for a couple of years just to bring myself up to some speed. And I still, I self audit a lot. I still have a lot of gaps coming from not working in security to going into security. I learned security backwards is how I say it a lot of the time. I learned all the security stuff. I can talk all day about a lot of your security topics, malware, like encryption, things like that. If you ask me, like you were saying networking questions, I'm like, "Good
+
+*Joe Patti (1:32:27)*
+luck." Here's the thing, you're right. That's the old school thing. Now there actually is training. There are even degrees when we started out, there was nothing like that. So you can get into it, although you jump right from something totally different to analysts. It's still a little unusual.
+
+*Joe Patti (1:32:45)*
+But at the same time,
+
+*Joe Patti (1:32:50)*
+don't feel bad that you have gaps ever. Because security has gotten so wide, you can't know everything. I mean, even as a manager, I go and go and look at these things. I'll look at a job description and they basically list, they're like, "We want someone who's not even done, but managed all these technologies." I'm like, "Nobody's done
+
+*Adam Roth (1:33:10)*
+all of that." I mean, let's create everything. So yeah, so we want cyber security engineering needed, must have 20 years of experience,
+
+*Adam Roth (1:33:21)*
+must understand networking, SPF, BGP,
+
+*Adam Roth (1:33:27)*
+is able to speak Cantonese for our Cantonese people.
+
+*Adam Roth (1:33:31)*
+The best is entry level, 20 years experience.
+
+*Gabrielle Hempel (1:33:34)*
+Oh yeah. I see that all the time.
+
+*Adam Roth (1:33:36)*
+I see a lot. 20 years in cyber? I mean, I know cyber's been around longer than 20.
+
+*Joe Patti (1:33:41)*
+Well, maybe not 20 for entry level, but you know.
+
+*Gabrielle Hempel (1:33:43)*
+No, but I see a lot. We're still like eight to 10 for entry level. I'm like, "Are you serious, dude?" Most people I know that have eight to 10 years of experience are pretty squarely senior level at this point.
+
+*Adam Roth (1:33:54)*
+You know, I have a master's in cyber security. Well,
+
+*Adam Roth (1:34:00)*
+here's a point. Joey was like, "What are you doing?"
+
+*Joe Patti (1:34:03)*
+Aren't you both special? No, you might have a background.
+
+*Adam Roth (1:34:04)*
+Yeah.
+
+*Adam Roth (1:34:07)*
+So I actually want to go for a PhD. Me too. So we'll hang out together. But the reason why I want to do it is for only one reason. I want people to say, "Doctor,
+
+*Adam Roth (1:34:17)*
+doctor, doctor, doctor."
+
+*Gabrielle Hempel (1:34:18)*
+Same. And I want to teach. That was the reason I got my master's was mostly because I want to teach. That and I kind of wanted some sort of degree in cyber security because my undergrad was not at all and wanted to get that on my resume too. So I went to NYU.
+
+*Gabrielle Hempel (1:34:34)*
+I did. It's global security conflict and cyber crime is actually the name of the master's program. But for all intents and purposes, it's like global affairs on cyber security.
+
+*Joe Patti (1:34:46)*
+Oh, you went to NYU in Brooklyn there?
+
+*Joe Patti (1:34:49)*
+What was Poly?
+
+*Gabrielle Hempel (1:34:52)*
+No, I was actually in Woolworth building. So I was squarely in Woodworth.
+
+*Adam Roth (1:34:56)*
+Oh, 250 Woodway.
+
+*Adam Roth (1:34:58)*
+233 Woodway?
+
+*Speaker 5 (1:35:00)*
+Yeah.
+
+*Adam Roth (1:35:00)*
+Yeah. So the real NYU. Good for you. So there's three things I want to say really quickly. I'm going to get a whale for that.
+
+*Gabrielle Hempel (1:35:08)*
+From Brooklyn to the engineering school, right? Isn't Tan and Brooklyn?
+
+*Joe Patti (1:35:11)*
+Yeah, exactly. Yeah, that's it. It used to be Brooklyn, Holly.
+
+*Gabrielle Hempel (1:35:13)*
+The other schools, but it still was an MS. But I liked that it had the global affairs side of things too, because my end goal, right? I would love to either work for a while and then soft retire someday and go work for a Department of State doing really cool stuff in cyber security with some of the stuff that's going on in the world. But I mean, short term, not short term, I guess, in private sector though. I want to be in that CISO kind of role. And I know a lot of people will roll their eyes and they're like, "Oh my God." I like having the blame for the time,
+
+*Speaker 4 (1:35:45)*
+but I also like to do that picture of everything. I like understanding how all of the different pieces of a cyber security program work for it and what those outside pieces are that influence the cyber security program. And that's why I kind of want to be in that role.
+
+*Joe Patti (1:35:59)*
+Yeah. You know, I can understand. I mean, I can tell you a little bit from experience. I can understand wanting to get the CISO thing out of your system. It's like, "Yeah, I want to sit in the big chair. I want to do this."
+
+*Speaker 5 (1:36:08)*
+Yeah.
+
+*Joe Patti (1:36:09)*
+Yeah. I can tell you it's a lot more fun to say that you're the CISO than it is to be the CISO. I know.
+
+*Gabrielle Hempel (1:36:18)*
+I've heard that from many people.
+
+*Speaker 5 (1:36:19)*
+It's not an easy job.
+
+*Gabrielle Hempel (1:36:22)*
+Totally get that that's the case. And I know it's not an easy job, but I like the big picture strategy side of things. And right now I'm just biting my... I've only been in security for five years.
+
+*Adam Roth (1:36:33)*
+That's a lifetime. I'm ready for a lot of people.
+
+*Gabrielle Hempel (1:36:36)*
+Yeah, but most it's like, mostly that's the issue I'm having right now. I've worked in engineering. I've worked in quite a few different roles in cybersecurity. I have a lot of experience, but at this point is the time. I don't have enough time on paper yet to be in that director level role or anything along those lines.
+
+*Adam Roth (1:36:53)*
+I'll tell you this. I'll tell you this. I want to go on a rant for one second. Right? Number one, my cybersecurity degree, even though I value the institution, really didn't do anything for me other than challenge me. A lot of my learning came from my certifications that I went really hard into and I learned. And I spent a lot of time saying, "But before I make it, this is nothing wrong with getting a degree." But a lot of people in my classes had no formal experience in cybersecurity.
+
+*Adam Roth (1:37:23)*
+First of all, number one, God bless America. A lot of them were military. They were going on what they deserved. They got paid due to degrees and I respect that and I value them tremendously. But that's what they did. They went into cybersecurity hoping to get into cybersecurity eventually when they got into the military. And I hope they do because there's such a shortage of cybersecurity professionals. The second part of that rant is they're hiring everybody these days because they don't get enough cybersecurity people.
+
+*Speaker 5 (1:37:55)*
+Not everybody.
+
+*Adam Roth (1:37:56)*
+Not a bad way.
+
+*Joe Patti (1:37:57)*
+That depends. Things have changed quite a bit. It's actually been a lot of talk on LinkedIn about this that believe it or not makes some sense.
+
+*Joe Patti (1:38:07)*
+The cybersecurity shortage is not at all levels. A lot of it is entry level, getting those people in. And it boils down to someone like yourself, Gab Smash, can do really well if you're a self-starter and want to learn because a lot of these companies just don't want to teach people. They don't want to invest the time. They don't want to invest the money. And they know that if they do, they're probably going to skip out somewhere else.
+
+*Joe Patti (1:38:36)*
+So there's a lot of shortages there. But as you go to the more senior and especially the manager director levels, there's actually a lot there. And until the market opens up a little bit, it's going to be really tough to find opportunities there. Like a couple of years ago, if you had managed a security team for two years or something, you could be a CISO or you could be a director. They just needed anyone. And people would take a chance on you. Now that things are tight or not so much, but that's going to change over time.
+
+*Gabrielle Hempel (1:39:13)*
+Well, I still need that management experience. I have management experience way back in the day when I worked in retail and stuff, but it's a different ballgame with security. And I don't have that management experience in security yet. I've been an individual contributor at most of the roles I've been in.
+
+*Joe Patti (1:39:26)*
+Well, I can tell you as a long time security manager, security people are pain in the ass.
+
+*Gabrielle Hempel (1:39:34)*
+Oh yeah, I know.
+
+*Joe Patti (1:39:35)*
+They are not. It's like managing like a sports team where it's not easy.
+
+*Adam Roth (1:39:43)*
+The other thing I'm going to add as the last part of my rant is that a lot of the opportunities I have seen in cybersecurity is through a vast, your vast networking.
+
+*Gabrielle Hempel (1:39:55)*
+And the people that are really good- Why do you think my LinkedIn looks the way it does?
+
+*Adam Roth (1:40:00)*
+So the point I'm thinking is that, you know, you know, Joe and I have had this conversation about who do you add on LinkedIn, who do you don't. And I've been selective, but I still have thousands of people. And when I look for opportunities, I typically start reaching out to people who I know and it has a going, you know, do you have any opportunities? And sometimes people reach out to me. And this is how I got my last position.
+
+*Adam Roth (1:40:27)*
+The CEO of my current company, incredible guy, military guy, was asking me to join other organizations. And finally we came to the consensus that the right opportunity, the right time, everything worked out. But my position before when I worked for Joe was because my friend brought me in there. And the position before that, I believe, was because my other friend brought me in. So my point I'm making is, it's not always easy when you start going to recruiters and God bless recruiters. But a lot of the opportunities you don't want to get in management is somebody that knows you personally, that can vouch for you personally, that knows what your worth is, because a lot of times it's more personal than not. We're recruiters. I'm not saying there's not good recruiters out there. There are. No, they aren't. Some of the recruiters are trying to make money and they have a hard job. But there are recruiters out there that really know you and they can place you in the right opportunity. That's what I'm talking about. You'll get a management position when you want, but it's gotta be somebody probably that you know that make it easier.
+
+*Joe Patti (1:41:28)*
+Well, I can also tell you, just let me let you know, the best way to break into management is to get promoted into it. You know, because still it's crazy. It makes no sense, but the top tech person on a team who knows absolutely nothing about management will get promoted to management. The supervisor
+
+*Gabrielle Hempel (1:41:45)*
+will never-- I feel like my last organization was not the place for that. My current organization is a fantastic place for that. They are very big. A lot of people have worked their way up from being support and are now managers and stuff like that. They're just very big on promoting from within. They're also, they listen to their employees, which I really like. If I come up with a suggestion for the program that I'm working in or whatever, I end up with a skip level with a VP and hang out and talk about that and then they implement it. And it's really, it's kind of cool to see that level of listening from management in a company too. So I feel like I'm in a good place to do that and potentially move into management there and then get my feet wet at that point. But yeah, it's definitely one of those things where
+
+*Gabrielle Hempel (1:42:38)*
+I'm just kind of biding my time at this point until I have the experience and stuff. But same like Adam, you were saying as well with knowing people. I think after that first cybersecurity role that I finally got with no experience. I worked there for a couple of years, worked my way up to a senior level analyst and stuff like that. And then every single job I think I've had since then has been through social media or word of mouth. Either somebody saw that I spoke at a conference and they liked what I spoke about and they wanted to talk about a role or somebody knew me, wanted to introduce me to someone. Every single role I think I've gotten since that first one has been on a personal basis somewhere, which is huge.
+
+*Joe Patti (1:43:21)*
+Wow.
+
+*Joe Patti (1:43:23)*
+So here's the other big thing about going into management. This is a Joe's School of Management. When you get into that, you got to learn to manage. Yeah. And you need to put the same kind of effort and whatever project into it that you did when you went into security and learned security. It's not the same. By every management book, read it and realize that 90% of it is going to be crap. But yeah, learn from people.
+
+*Gabrielle Hempel (1:43:49)*
+I've got a couple of them. What's the one that I have? Oh, Extreme Ownership by the guy that was the Navy SEAL. That's a really good one.
+
+*Joe Patti (1:43:59)*
+I read that one recently. Jocko something, right? I think I read that one.
+
+*Speaker 5 (1:44:03)*
+What is his name?
+
+*Joe Patti (1:44:04)*
+Is that his name?
+
+*Gabrielle Hempel (1:44:04)*
+I see. I can forget
+
+*Joe Patti (1:44:07)*
+a name like that.
+
+*Gabrielle Hempel (1:44:08)*
+Vision sucks. I know I'm the worst, but it's really good.
+
+*Adam Roth (1:44:11)*
+Willie, you're a bat. That's right. Division does suck with bats, aren't they?
+
+*Adam Roth (1:44:17)*
+They're pretty much blind.
+
+*Gabrielle Hempel (1:44:18)*
+Blind as a bat, you know. Oh, Gabe Smash.
+
+*Adam Roth (1:44:19)*
+I'll get you glasses.
+
+*Gabrielle Hempel (1:44:22)*
+I, man, I need to get my brother just got Leesick and I'm so jealous.
+
+*Gabrielle Hempel (1:44:27)*
+I want to get Leesick so I can see again.
+
+*Joe Patti (1:44:29)*
+I'm too chickenshit to get Leesick. I've been avoiding these.
+
+*Adam Roth (1:44:32)*
+I thought I got Leesick, but I'm afraid somebody will get access to the equipment and then shoot my eyes out.
+
+*Gabrielle Hempel (1:44:36)*
+That was in a final destination, maybe.
+
+*Gabrielle Hempel (1:44:41)*
+Don't watch that one if you ever want to get Leesick. No. It's pretty scarring, but he has a government job opportunity that he needs vision for. So, yes, he had to have corrected vision to go do that.
+
+*Adam Roth (1:44:53)*
+So, nice.
+
+*Speaker 5 (1:44:54)*
+I know.
+
+*Adam Roth (1:44:55)*
+No, yeah, he sees. Not you see. He sees.
+
+*Adam Roth (1:45:00)*
+So, there's one other point that I read I missed. Sorry. I have to finish it. So, the other part
+
+*Joe Patti (1:45:05)*
+is- Is this rant going to go on? We're going to need another episode for this rant that just keeps going.
+
+*Adam Roth (1:45:08)*
+No, this last part of the rant, I think. So, the other part is being in cybersecurity is kind of like being a doctor, right? You have a general practitioner.
+
+*Adam Roth (1:45:17)*
+It's not to take away from the school from doctors. So, I'm just, so you could be a general practitioner in cybersecurity, you know, and then someone will say, "Oh, we need a networking security engineer," which is kind of what I was at one point. So, anybody who thinks they need to know everything in cybersecurity is wrong. There's only one thing you need to know, especially if you're managing people in cybersecurity, is you need to know you're not the smartest person in the room. I was going to say, "Smartest guy." You're not the smartest person in the room. You just need to surround yourself with smart people. So, you need an endpoint engineer like Joe did in the past. You need a cybersecurity network engineer. You need maybe a cloud engineer. Those are the things that you need in bigger enterprise organizations. You need a lot of people that are kind of sort of siloed, but know a little bit of everything. So, there's no way you can know everything. You can't know networking and, you know, like there are people that want cybersecurity engineers to understand how do we, you know, take over routing protocols. I mean, who does that? It's very rare that you find somebody. You have to be in a, like a major financial institution. You find somebody who does exactly that.
+
+*Gabrielle Hempel (1:46:26)*
+Yeah. Yeah, no, I pride myself in consistently being the dumbest person in the room. That's, I love it though. Like I don't, I love being like my team at work, especially every single one of them is so good at like something very specific. And that's what makes our team, the team at work awesome, because if there's something very, like there's one guy who's like a DRHA architecture wizard. Wow.
+
+*Adam Roth (1:46:56)*
+So like, and you have a question.
+
+*Adam Roth (1:47:00)*
+DRHA in, in, in, in operating systems, like, you know, servers or a DRHA in networking or DRHA in cloud, because they all three different things too.
+
+*Gabrielle Hempel (1:47:10)*
+Yeah.
+
+*Gabrielle Hempel (1:47:12)*
+Mostly having to do with our product since we're a SIM tool. So, anything surrounding our product that has to do with like our architecting it in a DRHA environment. He's very good with, there's like another person who was a support manager for years and years and years. So any like weird question I have about the tool, I can be like, Hey, have you ever seen this? And chances are he's like, yeah, I have. Here's how you fix it.
+
+*Adam Roth (1:47:32)*
+Just one point I want to say, so Joe usually does this for those who are watching that are not normally in networking and cyber, DRs, disaster recovery, HAs, high availability. And what makes this important is if you're a person that's using a computer and you're trying to connect to a website or something, and then you see that you pretty much have access to that website all the time. If one server goes down, the other server gets up. If one router goes down, the other router comes up. So that high availability means you pretty much have 99.99% availability.
+
+*Gabrielle Hempel (1:48:05)*
+Yeah. Like all of my certifications were done in AWS, either architecting or security. And that's a big hallmark of that exam too, is just understanding how to create infrastructure. So that like, if your availability zone in one area goes down, that it'll just fail over to another one and not having a ton of angry people calling that their website's not working all the time.
+
+*Adam Roth (1:48:28)*
+That's why makes Amazon so attractive these days and Google and.
+
+*Joe Patti (1:48:32)*
+Well, you got to design it right. But then realize also it's not quite as redundant as they say it is. They haven't had an outage in a while, but in any case, now here's the other thing. Here's the other bit of bad news. Okay. I'm going to get a little, a little philosophical. Remember all those, all those skills that you build and all these things that you do now, they have a finite lifetime.
+
+*Adam Roth (1:48:55)*
+Yeah.
+
+*Joe Patti (1:48:56)*
+About two months,
+
+*Joe Patti (1:48:58)*
+but you know, you got to be looking forward to what's going to be here next. Cause you know, as we look at our very depressingly long careers, you know, things have changed quite a bit and it's amazing in security because the things that, you know, we're working on even, you know, that were hot two years ago are not so hot. And now AI came from out of nowhere. Now it's like, Hey, I, you know, the world. So, you know, you got to keep as seductive as it can be to be, I want to be the ultimate expert in this. It's like, okay, you can be for a while for now, but you got to keep moving.
+
+*Gabrielle Hempel (1:49:34)*
+You know, I am not one to speak in absolutes, but I, the one I will say is if you're not willing to continue to learn or adapt to a changing environment, then you will fail in security.
+
+*Adam Roth (1:49:45)*
+Yeah. It's an everyday learning experience. And that's what I see a lot of my friends and colleagues do. Oh, I don't know this, boom, boom, boom. But I'm going to argue with Joe because AWS, Amazon, Azure, their products change. Sometimes within two months or a month or three months and they change the names and they change the way and they change the licensing. Oh, it's E five. It's E three. It's E two. It's E 1000. You know, that lies. You need to keep up to date like you're saying constantly. So yeah, Joe's correct. The overall technology. You just said the same thing I said. What are you working with him?
+
+*Adam Roth (1:50:20)*
+Was I?
+
+*Gabrielle Hempel (1:50:21)*
+Yeah. Crap. I know. Now you got to find a new angle, man.
+
+*Joe Patti (1:50:24)*
+You just want to argue with me.
+
+*Adam Roth (1:50:28)*
+Joe, I did all my arguing fighting yesterday.
+
+*Gabrielle Hempel (1:50:31)*
+Just trying to find something to argue about.
+
+*Adam Roth (1:50:33)*
+Oh, you want to fight?
+
+*Gabrielle Hempel (1:50:34)*
+Yeah, I do. All right, come down. We'll go to the gym. I'll be there. I'm down. Let's do it.
+
+*Joe Patti (1:50:39)*
+Okay. We know how to film it. We're good at it now.
+
+*Gabrielle Hempel (1:50:42)*
+So I've been in the ring. I lived when I was in Connecticut. I lived like right across the street from a place that did like crossway kind of stuff. And then they also had an MMA school there because it was during the pandemic and I literally didn't have anything else to do or go anywhere else. I would walk across the street every day and train at these places.
+
+*Adam Roth (1:50:58)*
+So part of the teaser is that we did three rounds of boxing. That's going to come out eventually. And one hour after hours. And I can respectfully say.
+
+*Adam Roth (1:51:13)*
+When I did the three rounds yesterday,
+
+*Adam Roth (1:51:16)*
+I lost.
+
+*Adam Roth (1:51:18)*
+I got my ass kicked. Was somebody half my age?
+
+*Gabrielle Hempel (1:51:20)*
+Hey, that's important though, to be able to admit that.
+
+*Joe Patti (1:51:23)*
+I give you a lot of credit for doing it because I was just standing there holding the camera.
+
+*Speaker 5 (1:51:27)*
+Yeah, that's a lot, man.
+
+*Adam Roth (1:51:28)*
+Like that's three rounds, three minutes, nine minutes, total fighting.
+
+*Gabrielle Hempel (1:51:32)*
+Dude, three minute rounds are rough. Like that sounds easy until you get in there and you're like, like usually after two minutes, I'm like, I'm going to die.
+
+*Adam Roth (1:51:39)*
+Like I was being a wise guy. I was keeping my hands down and trying to say, hey, come on. Yeah, let's go.
+
+*Gabrielle Hempel (1:51:43)*
+Okay. Yeah, we did two minute rounds and that was that is the longest two minutes of your life.
+
+*Adam Roth (1:51:50)*
+He was half my he was half my weight. And I wonder the bad things about me is when I get in the ring, I tend to use a lot of my weight, like a move people or come in. And I said, let me just regular fight. Let me regular fight. And I even went up to my trainer friend owner and I said, it's very humbling because when I don't use my weight, you're going to kick the shit out of me every single time.
+
+*Gabrielle Hempel (1:52:13)*
+So that's something I really had to learn with MMA stuff is like Tae Kwon Do, especially being a tall person, I was always really good at the kicks and I put distance between me and a person and kick and like I'm able to keep them kind of at legs length, if you will, like, because that's what I do best. So getting into MMA and being forced to get comfortable with being up close to someone and up in your zone and using your hands a lot more was really different.
+
+*Adam Roth (1:52:44)*
+So Tae Kwon Do and I sparred a lot of it was just point sparring, right? You're like, point, stop. Yeah. And then but doing three minute rounds, I'm sitting there looking at the clock, I call it over.
+
+*Speaker 5 (1:52:57)*
+Yeah, please.
+
+*Adam Roth (1:52:57)*
+I'm like, let me look so stupid in front of Joe, in front of Joe's son, in front of my wife, in front of the gym, in front of the millions of people that are going to watch us on our podcast.
+
+*Adam Roth (1:53:08)*
+Millions.
+
+*Gabrielle Hempel (1:53:08)*
+I'll say it out there. We'll get it to a million.
+
+*Joe Patti (1:53:12)*
+Let's get it there, Adam. Adam, you showed more heart yesterday than I can. Then when I used to work for you. You say.
+
+*Adam Roth (1:53:20)*
+And what? I'm challenging Ryan Reynolds to three two minute rounds.
+
+*Joe Patti (1:53:25)*
+Well, Ryan, I'm sure he's going to see what when he watches every episode as he does, watches this one, you know, that you got the Deadpool hat on. So, you know, oh, actually, we have a new segment on the show. We've been trying to get Ryan Reynolds on on the show. That's like Adam's, I don't know, aspirational guests. So what's the what's the Ryan Stalking report for this week? You've been Jason Emadol or we've
+
+*Adam Roth (1:53:50)*
+been no, but we have an attorney. Remember, they said if I'm not successful, then it's not Storkin. That's right.
+
+*Joe Patti (1:53:55)*
+So so far you're in the clear legally.
+
+*Adam Roth (1:53:57)*
+So I found his email address, I believe, and I emailed a lot of the people that work for him. And I know they read it, but they had not responded.
+
+*Gabrielle Hempel (1:54:05)*
+You try reaching out to Blake,
+
+*Adam Roth (1:54:07)*
+his wife. Yeah, then that's really going to be stalking. But no, no, I know.
+
+*Gabrielle Hempel (1:54:14)*
+I know of her. I know they were all at the Chiefs game because they're all friends with.
+
+*Speaker 5 (1:54:18)*
+Oh, yeah.
+
+*Joe Patti (1:54:19)*
+Oh, yeah. We can get to him through Taylor Swift. That would be much easier.
+
+*Speaker 5 (1:54:22)*
+Yeah, easy.
+
+*Gabrielle Hempel (1:54:26)*
+There's like a whole like degrees of Kevin Bacon here. I went to college. I went to college with Travis Kelsey. I was I don't know him, but like I went to UC the same time that he did. He was on our football team when I was there.
+
+*Adam Roth (1:54:39)*
+So so his his the 14000 degrees of separation. Taylor Swift has an Israeli bodyguard. I have Israeli friends. My Israeli friends are on the IDF. One of my Israeli friends, our Israeli friend, might have the capability through a certain group within the IDF, maybe be able to find the Israeli bodyguard. That Israeli bodyguard can go back to Taylor Swift. Taylor Swift can go and disclose laterally.
+
+*Joe Patti (1:55:13)*
+Okay, this is kind of like, you know, it's kind of like it's kind of like pen testing. You know, you got to keep just moving from one. To the next lateral movement. We're we're lateral moving through Ryan's.
+
+*Adam Roth (1:55:25)*
+I really emailed them. Some of these people that work for maximum effort live in Brooklyn.
+
+*Joe Patti (1:55:33)*
+Oh, there you go.
+
+*Joe Patti (1:55:35)*
+Well, you know, you know, everyone who lives in Brooklyn, you got to know someone who knows them.
+
+*Gabrielle Hempel (1:55:38)*
+I don't think I have any like cool connects with him. The only like, my only claim to fame is on Twitter.
+
+*Gabrielle Hempel (1:55:45)*
+John Saina follows me on Twitter for some reason. Don't know why.
+
+*Gabrielle Hempel (1:55:48)*
+It is actually John Saina. He went. Really? He went. He went. It's the only reason the kids think I'm cool.
+
+*Gabrielle Hempel (1:55:57)*
+But he went on like this following spree of people and info suck for some reason. So there's like a handful of people that work in our industry that he follows for. No, and I thought it was a joke at first and I clicked on his profile. I was like, Oh God, that's actually like, so
+
+*Adam Roth (1:56:10)*
+Joe, I'm surprised Joe didn't don't get mad at me. I email a certain very famous celebrity.
+
+*Adam Roth (1:56:18)*
+And I said something nasty that was that was involved with our.
+
+*Adam Roth (1:56:24)*
+Business. What?
+
+*Joe Patti (1:56:26)*
+And you tell me about this.
+
+*Gabrielle Hempel (1:56:29)*
+Joe was like, I do not recall that.
+
+*Joe Patti (1:56:30)*
+So you know, I'm just about the whole knowledge of what
+
+*Adam Roth (1:56:33)*
+I'm going to say is. Oh,
+
+*Joe Patti (1:56:36)*
+geez. Remember that? What? Anyway, he's
+
+*Speaker 4 (1:56:43)*
+like, let's pivot.
+
+*Joe Patti (1:56:44)*
+Yeah. Next topic.
+
+*Speaker 5 (1:56:46)*
+Yeah.
+
+*Joe Patti (1:56:49)*
+Actually, especially since we're now since we've done the stalking update.
+
+*Joe Patti (1:56:52)*
+This kind of brings us to last call. We're kind of getting to the end here.
+
+*Adam Roth (1:56:56)*
+Well, you said last cold. We didn't even talk about what alcohol did we.
+
+*Gabrielle Hempel (1:57:00)*
+I can tell you what I'm drinking. I filled my cup up really. I know I'm like trying to detox now, but I've been traveling for work for the last two weeks. You know how much I'm during. I've been doing more than the last two weeks and I think I have in the last year.
+
+*Joe Patti (1:57:09)*
+Wow. Congratulations. All right. Thank you. What do you have there?
+
+*Gabrielle Hempel (1:57:14)*
+I have basil hayden on the rocks. So drinking some bourbon today.
+
+*Speaker 4 (1:57:20)*
+Have you ever had basil hayden?
+
+*Joe Patti (1:57:21)*
+I have never heard of basil hayden. I thought I'd at least heard of most.
+
+*Gabrielle Hempel (1:57:26)*
+It is a really good bourbon.
+
+*Gabrielle Hempel (1:57:29)*
+I love to send you some because my brother lives in Kentucky and I was, I've always been a whiskey person, but I was exposed to some of the really good bourbon that they have there because it's everywhere and the bourbon trail is there and all kinds of stuff. You know, we should do a security cocktail hour and do the bourbon trail.
+
+*Joe Patti (1:57:47)*
+Yes. On the road. There we go.
+
+*Gabrielle Hempel (1:57:49)*
+Because it would be fun to trail the bourbon, but to be hilarious to see the two New York guys in the hills of Kentucky because it is just.
+
+*Joe Patti (1:57:58)*
+Oh, we blend. Don't worry.
+
+*Gabrielle Hempel (1:58:01)*
+An adventure.
+
+*Joe Patti (1:58:02)*
+I am sure you do.
+
+*Gabrielle Hempel (1:58:03)*
+Yeah. I am sure you do.
+
+*Adam Roth (1:58:06)*
+Once I open my mouth, they know exactly where I'm from.
+
+*Gabrielle Hempel (1:58:09)*
+Yeah. And it won't be a little bit like people in New York or people in. Kentucky are awesome, but like, yeah, it's just funny and very different.
+
+*Adam Roth (1:58:17)*
+Different culture. For one of my companies, I had to travel to Arkansas, though it was interesting because when I went to the airport, the woman said, Oh, can you use the kiosk? She worked for the airline and I'm like, she goes, where are you going? I go, Arkansas. She goes, is that an international destination?
+
+*Adam Roth (1:58:34)*
+And then the guys, well, be honest.
+
+*Joe Patti (1:58:35)*
+So metaphorically, I don't know.
+
+*Adam Roth (1:58:37)*
+So the guy next to me, she's sitting there going.
+
+*Adam Roth (1:58:43)*
+I go, no, it's a state called Arkansas. She's like, never heard of it.
+
+*Joe Patti (1:58:48)*
+And they're flying.
+
+*Adam Roth (1:58:49)*
+That's so New York. She was like a kiosk or airline person at the line that says, can you go to the kiosk, please?
+
+*Gabrielle Hempel (1:59:00)*
+I don't know, man. People in New York don't realize that places outside of New York exist sometimes.
+
+*Joe Patti (1:59:04)*
+Oh, I know. They exist. It's true. Well, some stuff exists.
+
+*Gabrielle Hempel (1:59:07)*
+Like, it depends on the person. There's definitely some people that like New
+
+*Adam Roth (1:59:12)*
+York is the center of the universe. It is the center of the universe. We know that already. So that being said, when I did go to Arkansas, this is what I was bringing up. I'm like, how are you doing to go? Oh, what's up, New Yorker?
+
+*Adam Roth (1:59:23)*
+I suck it up in my mouth. Oh, where are you from? I bet you're from Brooklyn. I'm like, no, I grew up in Queens, lived in Brooklyn and now I'm in San Juan. They're like, yeah, but you're from New York. I can tell. Even the UK, they made fun of me. Why die? Why die?
+
+*Joe Patti (1:59:37)*
+So here's a quick, funny story. We had a little issue with a vendor. We were dealing with a call center. Adam was on call. And so he gets the call, whatever. And there's this big blow up. The information doesn't go through, whatever. We have a problem with this alert. So I got to get involved. I talked to the manager and I'm like, what the hell is going on? What's the deal? And the analyst on the phone who was in Canada claimed that he couldn't understand Adam's Brooklyn accent.
+
+*Joe Patti (2:00:14)*
+He got an earful for that. You know, like what?
+
+*Adam Roth (2:00:16)*
+Yeah, but I'm the one complaining that I don't understand him.
+
+*Gabrielle Hempel (2:00:20)*
+Still take calls with your girl because I'm going to start prank calling you.
+
+*Gabrielle Hempel (2:00:25)*
+Okay.
+
+*Gabrielle Hempel (2:00:26)*
+What is everyone else drinking?
+
+*Adam Roth (2:00:30)*
+French 75 in Mickey Mouse cup. Mickey Mouse cup. Wow.
+
+*Joe Patti (2:00:35)*
+I finished mine, but I was drinking a scotch because we're doing bourbon shortly. We got another recording to do.
+
+*Gabrielle Hempel (2:00:42)*
+So I want to get into scotch and I met a very nice gentleman from Wales when I was at a conference last week. And we had a long conversation about the best beer on earth, which is Guinness. And also, you know, whiskey and stuff like that. But he's a scotch connoisseur. And he was telling me all these kinds of scotch to try that. I don't remember what any of them are.
+
+*Joe Patti (2:01:03)*
+Scotch connoisseur. It's God, it's very complicated. You know, I mean, I want
+
+*Gabrielle Hempel (2:01:08)*
+to try it. I like whiskey and whiskey bourbon are my favorites. So like scotch is naturally kind of like the third horseman there, right? Third musketeer, but
+
+*Adam Roth (2:01:15)*
+I was going to try to be fancy and say, you know, you're drinking guano.
+
+*Adam Roth (2:01:22)*
+I don't know if you know, guano. That's that shit.
+
+*Speaker 4 (2:01:24)*
+Yeah.
+
+*Joe Patti (2:01:25)*
+Yeah. Oh, that's disgusting.
+
+*Speaker 4 (2:01:26)*
+I'm a bat. Why would I not know what that is?
+
+*Joe Patti (2:01:28)*
+It's that cannibalism. I don't know. Have
+
+*Gabrielle Hempel (2:01:33)*
+you heard of that coffee, though, that they make out of like it's like certain monkeys eat the beans and then shit them out and they make coffee out of the beans that they take out of their shit and supposedly like the best coffee in the world. I'm not eating monkey shit. Yeah, it's really expensive. It's one of those things where I was like, I think I heard about it in Singapore when I was there. And I was like,
+
+*Adam Roth (2:01:56)*
+I'm going to have to try.
+
+*Gabrielle Hempel (2:01:58)*
+If I would like try that, like, I don't know. I'm kind of curious.
+
+*Joe Patti (2:02:01)*
+You know, that sounds like a bar bet that some marketing guys get together and they said, what is the most ridiculous, most disgusting thing we can get people to pay a premium for? Yeah, monkey shit. Why not?
+
+*Gabrielle Hempel (2:02:11)*
+So like last weekend, we were in Southern Utah and we rented some side by sides, you know, those like crazy, like off-road, like little things that people use. We had some of those and we were in Southern Utah and we were on the dirt bike trails. And I'm the one, like you should not ever go with me on one of those because I'll be like, if we roll it, we're fine as long as we don't like die. Right. So but we kept taking it off of dirt bike jumps. My boyfriend's like, are you serious? You want to do this? And I was like, yeah, let's do it. Like, what are you scared? And like, obviously, you know, when you say that to someone, that's just egging it on, especially for someone as competitive as he is. So we went over a couple of jumps. Definitely tipped, did not roll, but tipped a couple of times. And the night ended with one of my friends. We found this little lake thing that definitely had like quicksand at the bottom.
+
+*Adam Roth (2:03:01)*
+Oh, God.
+
+*Gabrielle Hempel (2:03:03)*
+And I was like,
+
+*Gabrielle Hempel (2:03:05)*
+you should try and drive yours through that. And one of my friends, he just bought a new machine. And those things are expensive, right? Like they I don't know if you know how much they cost, but they're like 10 grand. I'm much 35.
+
+*Adam Roth (2:03:13)*
+Oh, I thought they were expensive.
+
+*Gabrielle Hempel (2:03:15)*
+They cost like what a car costs. Like literally, I just bought a new SUV and my SUV costs that. So it's like, why why are people spending 35, 40 grand on a tomb buggy?
+
+*Joe Patti (2:03:25)*
+And drive it into quicksand. That makes sense.
+
+*Gabrielle Hempel (2:03:27)*
+You know, but I was like, you should see if you can drive it through the lake and not get stuck. And he was like, okay. And he got stuck. So I have a picture of it. It's really funny.
+
+*Gabrielle Hempel (2:03:37)*
+I can pull it up and show it to you actually on here because that's hilarious.
+
+*Gabrielle Hempel (2:03:40)*
+But it's a picture of it in all of its glory, setting in the water. Um, beautiful scenery, though.
+
+*Adam Roth (2:03:50)*
+Nice. Oh, wow.
+
+*Adam Roth (2:03:53)*
+I, I, I, um, I did a doon buggy in the Middle East. Oh, they're so fun. It went to a desert and stuff. My family was really cool. And then you pick a place to eat lunch and we ate lunch and it was very nice. The problem is people don't realize when you're renting a doon buggy and you're going in the desert, you got to wear goggles. Yeah, we had to get goggles because my goggles were covered. Yeah. Covered. I had to keep on wiping. I had to stop wiping my goggles. Stop wiping my goggles.
+
+*Gabrielle Hempel (2:04:24)*
+Even out there, it was like that just with the red dirt and stuff. It's Utah's crazy because I live up North. So I'm actually like on the bench of a mountain. So, um, I live like half an hour from Snow Basin. So lots of skiing and fun stuff out here. But then if you go, that's three hours South just all the mesas and we ride outside of Zion. So it's a cool state. If you like doing stuff outdoors, if you guys are ever out here and want to get into some trouble, let me know.
+
+*Joe Patti (2:04:48)*
+Yeah, we do our outdoor stuff, you know.
+
+*Gabrielle Hempel (2:04:50)*
+Yeah.
+
+*Joe Patti (2:04:51)*
+Rooftop bars, you know.
+
+*Adam Roth (2:04:53)*
+Well, we rent a doon buggy. I'll come out there and then we'll go to the gym and fight.
+
+*Adam Roth (2:04:58)*
+Sounds good.
+
+*Joe Patti (2:04:58)*
+There we go. All right. Fighting on the road. Okay.
+
+*Gabrielle Hempel (2:05:01)*
+Or you can go out there and fight.
+
+*Adam Roth (2:05:04)*
+That's what I'm saying. Nature fight. Yeah, nature fight. Let's get in there. We'll get like four cones, big tall cones.
+
+*Gabrielle Hempel (2:05:09)*
+We can do it on the edge of a cliff.
+
+*Adam Roth (2:05:10)*
+That's it. No, why I won't do it because-- In
+
+*Joe Patti (2:05:14)*
+the middle of nowhere, unsanctioned, uncivilized.
+
+*Adam Roth (2:05:17)*
+So if I hit you, you would just be able to fly off the cliff. Yeah. If you hit me, I'm going to plummet to my death.
+
+*Gabrielle Hempel (2:05:24)*
+Well, you can put a parachute on you or something.
+
+*Adam Roth (2:05:26)*
+Yeah. Safety first. I can't even operate on remote control.
+
+*Adam Roth (2:05:35)*
+I think we're there, right, Joe? We did some good episode here, huh?
+
+*Joe Patti (2:05:38)*
+All right. Location shoots. There we go. We need a sponsor.
+
+*Adam Roth (2:05:42)*
+Okay.
+
+*Joe Patti (2:05:42)*
+Get Ryan on the horn.
+
+*Adam Roth (2:05:44)*
+All right. ryan goonbugies.com.
+
+*Joe Patti (2:05:46)*
+There we go. All right.
+
+*Joe Patti (2:05:50)*
+Gabby, Gabsmash, thank you so much for joining. This has been a blast.
+
+*Adam Roth (2:05:54)*
+Oh, a lot of fun. She has a-- what's a cool plant in the back? I have like 12 of those.
+
+*Joe Patti (2:06:00)*
+A plant?
+
+*Gabrielle Hempel (2:06:00)*
+She has one like a succulent or one of these guys. Is it an aloe plant? Is it an aloe? Yeah.
+
+*Adam Roth (2:06:06)*
+I love aloe plants. So the aloe plant-- I know we were supposed to end it right here, but the aloe plants have pups, Joe. They have pups. They have pups. So they have little pups in the plant, and they keep on reproducing. So we've been trying to give away aloe. Do you want one?
+
+*Joe Patti (2:06:20)*
+Is that like the thing they put in Chetkov's ear that made him like, you know-- No, that wasn't aloe.
+
+*Gabrielle Hempel (2:06:25)*
+The aloe plants are awesome, though, because if you ever have sunburn, like you can break off a leaf of the aloe plant and just like rub the gel on you, and it's the same thing that's in the sun-- like aloe after sun aloe, it's the best.
+
+*Joe Patti (2:06:35)*
+I was going to say, why do that when you can go to the drugstore, but whatever.
+
+*Adam Roth (2:06:39)*
+It's better. Because I keep on reproducing, and I have now-- I have like 10 aloe plants in my house. The one aloe plant's like this big.
+
+*Joe Patti (2:06:46)*
+You've got an invasive species, man. You better watch out. It's going to take over.
+
+*Gabrielle Hempel (2:06:50)*
+You guys got lanternflies? We can have invasive species.
+
+*Adam Roth (2:06:54)*
+Oh, yeah, we got those. Those things are nasty. Don't bring them here. I've been eating them in order to stop them. Oh, god. All right, now you gross me out.
+
+*Joe Patti (2:07:01)*
+Okay, all right. On that note, don't eat lanternflies.
+
+*Joe Patti (2:07:06)*
+Okay. Gabby, thanks again for joining. We've had a blast.
+
+*Gabrielle Hempel (2:07:09)*
+Yes, thank you.
+
+*Joe Patti (2:07:11)*
+Happy Halloween, everyone.
+
+*Adam Roth (2:07:13)*
+Yeah, happy Halloween, Gabsmash. That wings. That wings.
+
+*Gabrielle Hempel (2:07:18)*
+I can't show them while here. There you go.
+
+*Speaker 4 (2:07:19)*
+All right.
+
+*Joe Patti (2:07:20)*
+Take care.
+
+*Gabrielle Hempel (2:07:22)*
+All right. See ya
 
 **[0:05]:**
 okay Adam how you doing today I'm sorry you're talking to me yeah I'm talk I'm talking to you I'm

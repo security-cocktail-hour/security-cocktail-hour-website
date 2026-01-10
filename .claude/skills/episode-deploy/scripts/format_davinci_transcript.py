@@ -7,8 +7,12 @@ Input format:
 Speaker Name
  Dialogue text...
 
-Output format:
+Output format (episodes under 60 minutes):
 *Speaker Name (MM:SS)*
+Dialogue text...
+
+Output format (episodes 60+ minutes):
+*Speaker Name (H:MM:SS)*
 Dialogue text...
 """
 
@@ -16,7 +20,7 @@ import re
 import sys
 
 def convert_timecode(timecode_str):
-    """Convert [HH:MM:SS:FF - HH:MM:SS:FF] to (MM:SS) using start time."""
+    """Convert [HH:MM:SS:FF - HH:MM:SS:FF] to (MM:SS) or (H:MM:SS) using start time."""
     # Extract start time from bracket format
     match = re.match(r'\[(\d+):(\d+):(\d+):\d+ - \d+:\d+:\d+:\d+\]', timecode_str)
     if match:
@@ -24,10 +28,11 @@ def convert_timecode(timecode_str):
         minutes = int(match.group(2))
         seconds = int(match.group(3))
 
-        # Convert to total minutes and seconds
-        total_minutes = (hours * 60) + minutes
-
-        return f"({total_minutes:02d}:{seconds:02d})"
+        # If hour component exists, use H:MM:SS format
+        if hours > 0:
+            return f"({hours}:{minutes:02d}:{seconds:02d})"
+        else:
+            return f"({minutes:02d}:{seconds:02d})"
     return "(00:00)"
 
 def format_davinci_transcript(input_file, output_file):

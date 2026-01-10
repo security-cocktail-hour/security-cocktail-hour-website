@@ -19,7 +19,16 @@ Dialogue text here...
 More dialogue text...
 ```
 
-**Example:**
+**For episodes over 60 minutes:**
+```
+*Speaker Name (H:MM:SS)*
+Dialogue text here...
+
+*Another Speaker (HH:MM:SS)*
+More dialogue text...
+```
+
+**Example (under 60 minutes):**
 ```
 *Joe (00:00)*
 Welcome to Security Cocktail Hour. Today we're talking about the Flipper Zero firmware update.
@@ -28,11 +37,21 @@ Welcome to Security Cocktail Hour. Today we're talking about the Flipper Zero fi
 This is going to be an interesting demonstration.
 ```
 
+**Example (over 60 minutes):**
+```
+*Joe Patti (1:02:43)*
+We've been talking about this for over an hour now.
+
+*Adam Roth (1:04:52)*
+Time flies when you're having fun with security topics.
+```
+
 **Characteristics:**
 - Speaker name in bold/italics: `*Speaker Name (MM:SS)*`
-- Timecode in parentheses: `(MM:SS)` format
+- Timecode in parentheses: `(MM:SS)` format for episodes under 60 minutes
+- Timecode in parentheses: `(H:MM:SS)` or `(HH:MM:SS)` format for episodes 60+ minutes
 - Blank line between entries
-- Dialogue text immediately follows speaker line
+- Dialogue text immediately follows speaker line (or may be on same line)
 
 **Handler Script:** None (this is the target format)
 
@@ -76,9 +95,9 @@ python3 scripts/format_davinci_transcript.py input.txt output.txt
 
 **Conversion Details:**
 - Extracts start timecode only (ignores end time)
-- Converts `[HH:MM:SS:FF]` to `(MM:SS)` format
-- Calculates total minutes: `(hours * 60) + minutes`
-- Formats as `(MM:SS)` with leading zeros
+- Converts `[HH:MM:SS:FF]` to `(MM:SS)` or `(H:MM:SS)` format depending on episode length
+- For episodes under 60 minutes: Formats as `(MM:SS)` with leading zeros
+- For episodes 60+ minutes: Formats as `(H:MM:SS)` to include hour component
 - Combines multiline dialogue into single paragraph
 - Preserves speaker names exactly as provided
 
@@ -143,8 +162,8 @@ When a transcript is provided, detect the format automatically by examining the 
    - If found → Use `format_transcript.py`
 
 3. **Check if already in standard format:**
-   - Look for lines matching: `*Speaker (MM:SS)*`
-   - Pattern: `\*.*\(\d+:\d+\)\*`
+   - Look for lines matching: `*Speaker (MM:SS)*` or `*Speaker (H:MM:SS)*`
+   - Pattern: `\*.*\((\d+:)?\d+:\d+\)\*` (optional hour component)
    - If found → No conversion needed
 
 ### Sample Detection Code
@@ -169,8 +188,8 @@ def detect_transcript_format(file_path):
     if re.search(r'\[\d+:\d+:\d+:\d+ - \d+:\d+:\d+:\d+\]', content):
         return 'davinci'
 
-    # Check for standard format
-    if re.search(r'\*.*\(\d+:\d+\)\*', content):
+    # Check for standard format (with optional hour component)
+    if re.search(r'\*.*\((\d+:)?\d+:\d+\)\*', content):
         return 'standard'
 
     # Check for generic format
@@ -270,4 +289,58 @@ The Hugo template `layouts/episodes/single.html` automatically detects `## Full 
 
 ---
 
-**Last Updated**: December 22, 2025
+## Hour+ Episodes Timestamp Format
+
+### Overview
+
+Episodes longer than 60 minutes require a different timestamp format to include the hour component.
+
+### Format Rules
+
+**Episodes under 60 minutes:**
+- Use `(MM:SS)` format
+- Examples: `(00:00)`, `(15:30)`, `(59:59)`
+
+**Episodes 60 minutes or longer:**
+- Use `(H:MM:SS)` or `(HH:MM:SS)` format
+- Single-digit hours: `(1:02:43)`, `(2:15:00)`
+- Double-digit hours (rare): `(10:30:15)`
+
+### Real Examples
+
+From Episode 60 (1:05:09 duration):
+```
+*Joe Patti (1:00:35)*
+Okay, well, you know what? My algorithmic expert...
+
+*Adam (1:02:48)*
+Well, for me, Joe, like I go every three months...
+
+*Yev Broshevan (1:04:06)*
+Yeah, that's true...
+```
+
+### Detection Pattern
+
+To detect hour+ timestamps in transcripts:
+```python
+# Pattern that matches both MM:SS and H:MM:SS formats
+pattern = r'\*.*\((\d+:)?\d+:\d+\)\*'
+
+# Examples that match:
+# *Joe (00:00)*          → MM:SS format
+# *Joe (15:30)*          → MM:SS format
+# *Joe Patti (1:02:43)*  → H:MM:SS format
+# *Adam (1:04:52)*       → H:MM:SS format
+```
+
+### Script Behavior
+
+The `format_davinci_transcript.py` script should:
+- Check if any hour component is > 0
+- If hours > 0: Output `(H:MM:SS)` format
+- If hours = 0: Output `(MM:SS)` format
+
+---
+
+**Last Updated**: January 9, 2026

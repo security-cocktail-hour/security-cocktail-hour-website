@@ -89,14 +89,19 @@ When transcript file is provided:
 1. **Detect format** by examining file content:
    - DaVinci: Look for `[HH:MM:SS:FF - HH:MM:SS:FF]` pattern
    - Generic: Look for `Speaker [MM:SS]` pattern
-   - Standard: Look for `*Speaker (MM:SS)*` pattern
+   - Standard: Look for `*Speaker (MM:SS)*` or `*Speaker (H:MM:SS)*` pattern
 
 2. **Convert using appropriate script:**
    - DaVinci → `scripts/format_davinci_transcript.py`
    - Generic → `scripts/format_transcript.py`
    - Standard → No conversion needed
 
-3. **Handle unknown formats:**
+3. **Hour+ Episode Handling:**
+   - Episodes under 60 minutes: Use `(MM:SS)` format
+   - Episodes 60+ minutes: Use `(H:MM:SS)` format (e.g., `*Joe Patti (1:02:43)*`)
+   - Conversion scripts automatically detect and format based on hour component
+
+4. **Handle unknown formats:**
    - Describe what was found in the file
    - Recommend creating new handler script
    - Ask user how to proceed
