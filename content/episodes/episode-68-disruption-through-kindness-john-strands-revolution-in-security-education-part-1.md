@@ -11,8 +11,8 @@ description: "John Strand tears down broken security education to rebuild it. Wh
 platforms:
   youtube: "https://youtu.be/lPo1Ir_t8FA"
   spotify: "https://open.spotify.com/episode/3Q6BzQwO0C8927jWt0Vmnm?si=N7Rv_l33TwmT8iX-tuizGA"
-  apple: ""
-  amazon: ""
+  apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000744869067"
+  amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/episodes/e3d56a8d-cf8f-4c86-b470-60833cdf404c/security-cocktail-hour-disruption-through-kindness-john-strand's-revolution-in-security-education-part-1"
 tags:
   - security-education
   - career-development
