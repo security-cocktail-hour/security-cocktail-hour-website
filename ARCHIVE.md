@@ -2,7 +2,7 @@
 
 **Purpose**: This file contains historical fixes, detailed troubleshooting information, and reference material that is not needed for day-to-day work but is preserved for future reference.
 
-**Last Updated**: January 4, 2026
+**Last Updated**: January 12, 2026
 
 ---
 
@@ -18,6 +18,114 @@
 ---
 
 ## Fixed Issues - Chronological
+
+### January 10, 2026 - Transcript Format Standardization ✅
+
+**Standardized All Episode Transcripts** - Reviewed and fixed formatting across all 6 episodes with transcripts:
+
+**Transcript Fixes:**
+- Episode 21: Completely replaced old format (`**[M:SS]:**` with no speaker names) with properly formatted 1362-line transcript using DaVinci Resolve source
+- Episode 53: Fixed inline timestamp formatting (pattern: `**Joe [00:02]:** text` → `*Joe (00:02)* text`)
+- Episode 59: Removed non-speaker lines (`**[0:00]** *[Music]*`), fixed timestamps
+- Episode 60: Converted to proper hour+ format (`*Joe Patti (1:02:43)*`)
+- Episode 61: Standardized from `**Speaker [MM:SS]:**` to `*Speaker (MM:SS)*`
+- Episode 6: Verified already correct (no changes needed)
+
+**Hour+ Timestamp Support:**
+- Modified `format_davinci_transcript.py` to output `(H:MM:SS)` for episodes 60+ minutes
+- Updated both script copies: `scripts/` and `.claude/skills/episode-deploy/scripts/`
+- Added comprehensive "Hour+ Episodes Timestamp Format" documentation section
+- Updated episode-deploy SKILL.md with hour+ handling instructions
+
+**Format Rules Established:**
+- Episodes <60 minutes: `*Speaker (MM:SS)*` format (e.g., `(15:30)`)
+- Episodes 60+ minutes: `*Speaker (H:MM:SS)*` format (e.g., `(1:02:43)`)
+- Detection pattern: `\*.*\((\d+:)?\d+:\d+\)\*` (optional hour component)
+
+**Documentation**: Updated `.claude/skills/episode-deploy/references/transcript-formats.md` with real examples from Episode 60
+
+**Git**: Committed 9 files (2,246 insertions, 803 deletions) - commit `fb18328`
+
+**Result**: All transcripts follow standard format, future hour+ episodes will be handled automatically
+
+**Status**: ✅ COMPLETE
+
+---
+
+### January 9, 2026 - Skill Structure Reorganization ✅
+
+**Reorganized to Official Claude Code Structure** - Moved skills from `skills/` to `.claude/skills/`:
+
+**Actions Taken:**
+- Moved `episode-deploy` and `blog-deploy` to `.claude/skills/` directory
+- Removed old `skills/` directory (no longer needed)
+- Removed `.skill` package files (episode-deploy.skill, blog-deploy.skill)
+- Cleaned up obsolete `blog-deploy/` directory from project root
+
+**Official Structure Adopted:**
+- `.claude/skills/episode-deploy/` - SKILL.md + references/ + scripts/
+- `.claude/skills/blog-deploy/` - SKILL.md + references/
+- Follows official documentation at https://code.claude.com/docs/en/skills
+
+**Benefits:**
+- No packaging/build step required (skills load directly from source)
+- Cleaner project root (no package files or duplicate directories)
+- Aligns with official Claude Code best practices
+- Project-scoped skills shared via git repository
+
+**Global Standards Created**: Created `~/.claude/CLAUDE.md` with skill organization standards to prevent structural mistakes in ALL projects
+
+**Git Commits:**
+- Commit `13eb697`: Main reorganization
+- Commit `0b21b1f`: Cleanup of duplicate blog-deploy directory
+
+**Status**: ✅ COMPLETE
+
+---
+
+### January 9, 2026 - Blog Post Deployment Skill ✅
+
+**Custom Skill Created** - `blog-deploy` for automated blog post deployment:
+
+**Skill Structure:**
+- Main skill file: `.claude/skills/blog-deploy/SKILL.md` (detailed workflow and instructions)
+- 3 bundled reference files (45KB): workflow, input format, git standards
+- Input template: `working/blog-answers.txt.template` (9-field format)
+
+**Hybrid Documentation Approach** (Option 3 - Best Practice):
+- Bundles skill-specific workflow documentation (what the skill does)
+- References project documentation directly (content standards, SEO rules)
+- Benefits: Single source of truth, stays current automatically, 35% smaller package
+- Removed: Duplicated SEO standards and content guidelines (33KB saved)
+
+**Workflow Design** (10 steps, 3 phases):
+- Phase 1: Content Prep (gather info, auto-generate SEO, get approval)
+- Phase 2: Build & Test (build files, dev preview, run tests, cleanup)
+- Phase 3: Production (git commit, build package, manual GoDaddy deploy, update docs)
+
+**Key Features:**
+- Auto-generates SEO metadata: meta description (120-155 chars), tags (5-8), author profiles
+- Content structure validation: H2 headings, paragraph length, article word count
+- Featured post management: Warns if exceeding 2 featured posts on homepage
+- Pre-deployment testing: Integrates with `scripts/tests/run_all_tests.py --blog`
+- Standardized git commits: Formatted commit messages with blog post details
+- Reads current standards from project docs using Read tool
+
+**Simplifications vs Episode Skill:**
+- No transcript processing (not applicable to blog posts)
+- Simpler input format (9 fields vs 12)
+- Optional images (not required)
+- Faster testing (~1 minute blog tests vs 4-5 minutes all tests)
+- 30% simpler workflow overall
+
+**First Blog Deployment**: "When Cyber Meets Kinetic: Venezuela and the New Reality for Defenders"
+- Full SEO optimization (151-char description, 6 tags, 5 key takeaways)
+- Featured on homepage (replaced Job Scams post)
+- Git commit `a28d613` - Deployed January 9, 2026
+
+**Status**: ✅ COMPLETE
+
+---
 
 ### January 4, 2026 - Claude Code Context Optimization ✅
 
