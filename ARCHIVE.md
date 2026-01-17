@@ -2,7 +2,7 @@
 
 **Purpose**: This file contains historical fixes, detailed troubleshooting information, and reference material that is not needed for day-to-day work but is preserved for future reference.
 
-**Last Updated**: January 12, 2026
+**Last Updated**: January 17, 2026
 
 ---
 
@@ -18,6 +18,33 @@
 ---
 
 ## Fixed Issues - Chronological
+
+### January 12, 2026 - Episode 68 Deployment ✅
+
+**Episode 68 Deployed to Production** - "Disruption Through Kindness | John Strand's Revolution in Security Education | Part 1"
+
+**Episode Details:**
+- Guest: John Strand (Black Hills Information Security founder)
+- Duration: 27:38 minutes
+- Category: Career
+- Full 405-line transcript embedded
+- All 4 platform links (YouTube, Spotify, Apple Podcasts, Amazon Music)
+
+**Technical Workflow:**
+- Transcript converted from Generic format using sed command
+- SEO metadata: 57-char title, 143-char description, 8 tags, 6 topics
+- Pre-deployment tests: 245 passed (Playwright Python library installed)
+- Git commits: `aa3a582` (initial episode), `9848e18` (platform URLs)
+- Production package: `production-deployment-20260112-135323.zip` (8.5MB, 420 files, 184 pages)
+- All validation checks passed (15/15)
+
+**Challenge Solved:** format_transcript.py was hardcoded for Episode 51, used sed command as workaround
+
+**Deployment:** ✅ LIVE at https://securitycocktailhour.com/
+
+**Status:** ✅ COMPLETE
+
+---
 
 ### January 10, 2026 - Transcript Format Standardization ✅
 
@@ -124,6 +151,42 @@
 - Git commit `a28d613` - Deployed January 9, 2026
 
 **Status**: ✅ COMPLETE
+
+---
+
+### January 8, 2026 - Pre-Deployment Test Suite Implementation ✅
+
+**Test Suite Created** - Comprehensive Playwright-based testing for quality assurance before production
+
+**Test Scripts** (`scripts/tests/`):
+- `test_helpers.py` - Content discovery and validation utilities (360 lines)
+- `test_static_pages.py` - Test 8 static pages (364 lines)
+- `test_episodes.py` - Smart episode testing with block strategy (412 lines)
+- `test_blog.py` - Blog list and post testing (397 lines)
+- `run_all_tests.py` - Master test runner with CLI options (142 lines)
+- `README.md` - Complete testing documentation (179 lines)
+
+**Testing Strategy:**
+- Smart episode selection: Always test newest 5 + one from each block of 10 older episodes
+- Deterministic and scalable as site grows (currently tests 12 of 67 episodes)
+- Blog posts: Test 5 latest (currently all 4, prepared for growth)
+- Static pages: Test all 8 pages (homepage, about, contact, partnership, resources, newsletter, privacy, terms)
+
+**Coverage:** 25+ pages tested in 4-5 minutes
+
+**Validation:** Page loads, SEO metadata, navigation, platform links, forms, search/filter, console errors, transcript sections, related episodes
+
+**Screenshot Capture:** Automatic failure screenshots for debugging (saved to `scripts/tests/test_screenshots/`)
+
+**Documentation Updated:**
+- Added Step 5.5 to `docs/NEW-EPISODE-DEPLOYMENT.md` (run pre-deployment tests)
+- Integration workflow: Manual review → Automated tests → Clean up → Production build
+- Added troubleshooting section for test failures
+- Updated Quick Reference with testing commands
+
+**Git:** Committed 19 files (4,069+ additions) and pushed to GitHub
+
+**Status:** ✅ COMPLETE
 
 ---
 
@@ -1021,6 +1084,18 @@ Created `convert_episodes.py` to batch convert 7 CSV files to Hugo markdown form
 ---
 
 ## Design System Details
+
+### Design Prototypes (Historical)
+
+Located in `temp/hero-redesigns/`:
+- `index.html` - Gallery view of all 6 initial concepts
+- `home-hero-v2.html` through `home-hero-v5.html` - Home hero iterations
+- `homepage-full-mockup.html` - Full homepage mockup
+- `episodes-page-v2.html` - Episodes page mockup v2
+
+Note: Approved mockups and screenshots removed from git after implementation (December 13, 2025)
+
+---
 
 ### Typography
 

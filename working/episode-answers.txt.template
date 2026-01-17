@@ -1,0 +1,56 @@
+1. Episode Number
+[Episode number only, e.g., 69]
+
+2. Full Episode Title
+[Complete episode title - Target ≤60 characters for SEO optimization]
+[Example: "Flipper Zero Firmware Update Walkthrough"]
+
+3. Publication Date
+[YYYY-MM-DD format, e.g., 2026-01-15]
+
+4. Guest Name
+[Guest full name / "No guest" if solo episode]
+[Example: "Gabrielle Hempel" or "No guest"]
+
+5. Guest Bio
+[1-2 sentence bio with title and credentials / "N/A" if no guest]
+[Example: "Gabrielle Hempel is a Senior Security Engineer at TechCorp with 10 years of experience in penetration testing and red team operations."]
+
+6. Category
+[Select one: AI Security / Career / Cloud Security / Hardware Security / Network Security / Application Security / Threat Intelligence / Compliance & Governance / Security Operations / General]
+
+7. Duration
+[Format: HH:MM:SS or MM:SS, e.g., "45:30" or "1:15:45"]
+
+8. Full Description
+[2-3 paragraphs describing the episode content]
+[First paragraph should hook listeners and introduce the main topic]
+[Subsequent paragraphs cover key discussion points and takeaways]
+[Keep conversational and engaging - this appears on the episode page]
+
+Example:
+In this episode, we walk through the complete process of updating your Flipper Zero firmware. Whether you're a new owner or experienced user, this guide covers everything you need to know.
+
+We cover the official update methods, troubleshooting common issues, and what to do when things go wrong. Plus, we discuss the latest firmware features and why keeping your device updated matters for security research.
+
+9. Platform URLs
+[Provide all available platform links]
+YouTube: [Full YouTube video URL]
+Spotify: [Full Spotify episode URL]
+Apple Podcasts: [Full Apple Podcasts episode URL]
+Amazon Music: [Full Amazon Music episode URL or "none"]
+
+10. Episode Thumbnail Image Path
+[Relative path to episode image file, e.g., "static/images/episodes/episode-69-thumbnail.jpg"]
+[Recommended: 1200×630px, <500KB, JPG/PNG/WebP format]
+
+11. Transcript File Path
+[Relative path to transcript file / "none" if no transcript available]
+[Example: "working/episode-69-transcript.txt" or "none"]
+[Note: Supported formats - DaVinci Resolve, Generic, Standard]
+[Hour+ episodes: Script will automatically use (H:MM:SS) format for 60+ minute episodes]
+
+12. Related Episodes
+[Space-separated list of related episode filenames / "none"]
+[Example: "episode-67-flipper-zero-update.md episode-6-flipper-zero-tools.md" or "none"]
+[Note: These create manual "Related Episodes" links on the episode page]
