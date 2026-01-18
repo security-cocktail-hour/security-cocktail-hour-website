@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Claude Context
 
-**Last Updated**: January 17, 2026
+**Last Updated**: January 18, 2026
 **Hugo Version**: v0.151.0
 **Branch**: main
 
@@ -89,6 +89,7 @@ python scripts/audit_meta_descriptions.py   # SEO audit
 **Custom Skills** (`.claude/skills/`):
 - `episode-deploy` - Automated episode deployment (transcript processing, SEO, testing, git)
 - `blog-deploy` - Automated blog deployment (SEO, validation, testing, git)
+- `cpanel-deploy` - **NOT FUNCTIONAL** - GoDaddy SSH auth issues; use manual deployment
 
 ---
 
