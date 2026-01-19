@@ -1,0 +1,40 @@
+1. Episode Number
+69
+
+2. Full Episode Title
+Why Cybersecurity is Ripe for Disruption | John Strand | Part 2
+
+3. Publication Date
+2026-01-19
+
+4. Guest Name
+John Strand
+
+5. Guest Bio
+John is the owner of Black Hills Information Security, a company specializing in penetration testing and security architecture services, and is one of the premier voices in the security industry.
+
+6. Category
+General
+
+7. Duration
+30:05
+
+8. Full Description
+In part 2 of our discussion, John Strand tells us how the cybersecurity industry has turned stagnant, with a lack of innovation and an investment model that isn't going to turn that around any time soon. We explore why venture capital funding hasn't led to the breakthrough products the industry needs, and what's holding back real innovation. John also highlights the leaders in the security industry who are actively giving back to the community, and he and Adam try to one-up each other over who's stayed in the most disgusting hotel room.
+
+9. Platform URLs
+YouTube: https://youtu.be/EPIaVkwms10
+Spotify: https://open.spotify.com/episode/5scNgrPRoiSUHJsfqwGQ9H?si=n98JzBg2SQGllSeRLsZHiQ
+
+10. Episode Thumbnail Image Path
+working/John Strand part 2 thumb.jpg
+
+11. Transcript File Path
+working/john-strand-2025-10-edit-2-part-2-with-intro - transcript.txt
+
+12. Related Episodes
+episode-68-disruption-through-kindness-john-strands-revolution-in-security-education-part-1 episode-55-firmware-fire-and-the-future-of-cybersecurity-smoked-manhattans-with-paul-asadoo
+
+[Space-separated list of related episode filenames / "none"]
+[Example: "episode-67-flipper-zero-update.md episode-6-flipper-zero-tools.md" or "none"]
+[Note: These create manual "Related Episodes" links on the episode page]
