@@ -19,13 +19,15 @@
 **GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
 **Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
 
-**Current Stats**: 206 pages (68 episodes, 6 blog posts, newsletter, main pages) | 8.6MB production package
+**Current Stats**: 206 pages (69 episodes, 6 blog posts, newsletter, main pages) | 8.6MB production package
 
 ---
 
 ## Recent Completed Work
 
 **January 22, 2026** - Blog Post: "The SLA Wake-Up Call: You're Only Getting Pennies on the Dollar" deployed to production.
+
+**January 18, 2026** - Episode 69: "Why Cybersecurity is Ripe for Disruption | John Strand | Part 2" deployed to production.
 
 **January 12, 2026** - Episode 68: "Disruption Through Kindness | John Strand's Revolution in Security Education | Part 1" deployed to production.
 
@@ -101,7 +103,7 @@ python scripts/audit_meta_descriptions.py   # SEO audit
 
 **Production**: https://securitycocktailhour.com/ - 206 pages live
 - Art Deco design (Red/Navy/Teal, Oswald/PT Serif/Bebas Neue)
-- Latest: Blog Post "The SLA Wake-Up Call" (Jan 22, 2026)
+- Latest: Blog Post "The SLA Wake-Up Call" (Jan 22, 2026), Episode 69 (Jan 18, 2026)
 - All features working: search, transcripts, 404 page, 301 redirects, SEO
 
 **For detailed phase history, see ARCHIVE.md**
