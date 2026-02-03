@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Claude Context
 
-**Last Updated**: January 22, 2026
+**Last Updated**: February 2, 2026
 **Hugo Version**: v0.151.0
 **Branch**: main
 
@@ -19,17 +19,13 @@
 **GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
 **Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
 
-**Current Stats**: 206 pages (69 episodes, 6 blog posts, newsletter, main pages) | 8.6MB production package
+**Current Stats**: 219 pages (70 episodes, 6 blog posts, newsletter, main pages) | 8.8MB production package
 
 ---
 
 ## Recent Completed Work
 
-**January 22, 2026** - Blog Post: "The SLA Wake-Up Call: You're Only Getting Pennies on the Dollar" deployed to production.
-
-**January 18, 2026** - Episode 69: "Why Cybersecurity is Ripe for Disruption | John Strand | Part 2" deployed to production.
-
-**January 12, 2026** - Episode 68: "Disruption Through Kindness | John Strand's Revolution in Security Education | Part 1" deployed to production.
+**February 2, 2026** - Episode 70: "Securing Mars Rovers and Space Stations with NASA's Former CIO Renee Wynn" deployed to production.
 
 **For detailed history, see ARCHIVE.md**
 
@@ -47,7 +43,7 @@
 
 **Deploy to GoDaddy**: Upload ZIP to `public_html/`, extract, verify `.htaccess` permissions (644). See `GODADDY-DEPLOYMENT-INSTRUCTIONS.md`.
 
-**Latest Package**: `production-deployment-20260122-203407.zip` (8.6MB, 206 pages)
+**Latest Package**: `production-deployment-20260202-194707.zip` (8.8MB, 219 pages)
 
 ---
 
@@ -101,9 +97,9 @@ python scripts/audit_meta_descriptions.py   # SEO audit
 
 **All Phases Complete**: MVP | Blog | SEO | UX Enhancements | Art Deco Redesign
 
-**Production**: https://securitycocktailhour.com/ - 206 pages live
+**Production**: https://securitycocktailhour.com/ - 219 pages live
 - Art Deco design (Red/Navy/Teal, Oswald/PT Serif/Bebas Neue)
-- Latest: Blog Post "The SLA Wake-Up Call" (Jan 22, 2026), Episode 69 (Jan 18, 2026)
+- Latest: Episode 70 "Securing Mars Rovers and Space Stations" (Feb 2, 2026), Blog Post "The SLA Wake-Up Call" (Jan 22, 2026)
 - All features working: search, transcripts, 404 page, 301 redirects, SEO
 
 **For detailed phase history, see ARCHIVE.md**
