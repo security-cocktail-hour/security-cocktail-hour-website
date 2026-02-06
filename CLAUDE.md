@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Claude Context
 
-**Last Updated**: February 2, 2026
+**Last Updated**: February 5, 2026
 **Hugo Version**: v0.151.0
 **Branch**: main
 
@@ -19,11 +19,13 @@
 **GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
 **Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
 
-**Current Stats**: 219 pages (70 episodes, 6 blog posts, newsletter, main pages) | 8.8MB production package
+**Current Stats**: 234 pages (70 episodes, 7 blog posts, newsletter, main pages) | 8.8MB production package
 
 ---
 
 ## Recent Completed Work
+
+**February 5, 2026** - Blog Post: "OpenClaw's security reputation is well-deserved. Here's how to use it anyway" deployed. Featured post (replaced Shadow AI). Related to Episode 51.
 
 **February 2, 2026** - Episode 70: "Securing Mars Rovers and Space Stations with NASA's Former CIO Renee Wynn" deployed to production.
 
@@ -43,7 +45,7 @@
 
 **Deploy to GoDaddy**: Upload ZIP to `public_html/`, extract, verify `.htaccess` permissions (644). See `GODADDY-DEPLOYMENT-INSTRUCTIONS.md`.
 
-**Latest Package**: `production-deployment-20260202-194707.zip` (8.8MB, 219 pages)
+**Latest Package**: `production-deployment-20260205-195620.zip` (8.8MB, 234 pages)
 
 ---
 
@@ -97,9 +99,9 @@ python scripts/audit_meta_descriptions.py   # SEO audit
 
 **All Phases Complete**: MVP | Blog | SEO | UX Enhancements | Art Deco Redesign
 
-**Production**: https://securitycocktailhour.com/ - 219 pages live
+**Production**: https://securitycocktailhour.com/ - 234 pages live
 - Art Deco design (Red/Navy/Teal, Oswald/PT Serif/Bebas Neue)
-- Latest: Episode 70 "Securing Mars Rovers and Space Stations" (Feb 2, 2026), Blog Post "The SLA Wake-Up Call" (Jan 22, 2026)
+- Latest: Episode 70 "Securing Mars Rovers and Space Stations" (Feb 2, 2026), Blog Post "OpenClaw's security reputation is well-deserved" (Feb 5, 2026)
 - All features working: search, transcripts, 404 page, 301 redirects, SEO
 
 **For detailed phase history, see ARCHIVE.md**
