@@ -20,7 +20,7 @@ This document provides a step-by-step workflow for deploying new blog posts to t
 
 **Input file:** `working/blog-answers.txt`
 
-Read and parse the 9 numbered fields:
+Read and parse the 8 numbered fields:
 
 ```
 1. Blog Post Title
@@ -44,15 +44,12 @@ Read and parse the 9 numbered fields:
 7. Article Content
 [Full markdown content with H2 headings, paragraphs, lists, etc.]
 
-8. Key Takeaways
-[3-5 bulleted points summarizing main lessons]
-
-9. Blog Image Path
+8. Blog Image Path
 [path to image file / none]
 ```
 
 **Validation:**
-- Check all required fields are present (1-4, 7)
+- Check all required fields are present (1-4, 7 required; 5-6, 8 optional)
 - Verify date format is YYYY-MM-DD
 - Confirm category matches predefined list
 - Validate author name (for bio lookup)
@@ -113,10 +110,11 @@ author_twitter: "@SecCocktailHour"
 author_linkedin: "https://www.linkedin.com/in/adam-roth-security/"
 ```
 
-#### Key Takeaways Structure
-- **Source:** Field 8 from blog-answers.txt
-- **Format:** Verify it's a bulleted list
-- **Validation:** Count bullet points (should be 3-5)
+#### Key Takeaways (Auto-Generated)
+- **Source:** Analyze full article content to synthesize 3-5 key takeaways
+- **Tone:** Match the author's voice and writing style from the article
+- **Format:** Bulleted list, each takeaway 1-2 sentences, actionable and specific
+- **Approval:** Presented at Checkpoint 1 for user review; revise until approved
 - **Ensure:** Dedicated H2 section `## Key Takeaways` will be added to content
 
 ---
@@ -128,7 +126,7 @@ Before proceeding, check content structure for SEO best practices:
 **Required elements:**
 - ✅ Opening paragraph (first paragraph)
 - ✅ H2 headings (at least 2 for content organization)
-- ✅ Key Takeaways section (from field 8)
+- ✅ Key Takeaways section (auto-generated)
 
 **Check for:**
 - H2 headings: `grep -c "^## " [content]`
@@ -240,7 +238,7 @@ related_episode: "[episode-filename.md or omit if none]"
 **Content structure:**
 1. Opening paragraph
 2. H2 sections with content
-3. `## Key Takeaways` section (from field 8)
+3. `## Key Takeaways` section (auto-generated, approved at Checkpoint 1)
 4. Conclusion paragraph/section
 
 **Confirm file created:**

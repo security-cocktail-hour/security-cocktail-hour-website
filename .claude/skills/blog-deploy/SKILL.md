@@ -44,7 +44,7 @@ The blog post deployment follows a 10-step workflow with three key approval chec
 
 ## Blog Post Information Format
 
-User provides blog post details in `working/blog-answers.txt` with 9 numbered fields:
+User provides blog post details in `working/blog-answers.txt` with 8 numbered fields:
 
 1. **Blog Post Title** - Full article title (typically ≤60 chars, no separate SEO title needed)
 2. **Publication Date** - YYYY-MM-DD format
@@ -53,8 +53,7 @@ User provides blog post details in `working/blog-answers.txt` with 9 numbered fi
 5. **Featured** - "yes" or "no" (maximum 2 featured posts on homepage)
 6. **Related Episode** - Episode filename (e.g., "episode-67-flipper-zero-firmware-update.md") or "none"
 7. **Article Content** - Full markdown content with H2 headings, paragraphs, lists
-8. **Key Takeaways** - 3-5 bulleted points summarizing main lessons
-9. **Blog Image Path** - Path to hero image (optional, e.g., `working/blog-image.jpg`)
+8. **Blog Image Path** - Path to hero image (optional, e.g., `working/blog-image.jpg`)
 
 Parse this file to extract all information before proceeding.
 
@@ -99,10 +98,13 @@ Auto-generate SEO-compliant metadata based on user's title and content.
 - **Strategy:** Extract from category + content topics + key takeaways
 - **Example:** `job-scams`, `social-engineering`, `cybersecurity-awareness`, `professional-security`, `scam-prevention`
 
-#### Key Takeaways Structure (Always Required)
-- **Validation:** Ensure user provided key takeaways in field 8
-- **Format:** Markdown bulleted list in dedicated section
-- **Note:** This is provided by user in input but may need formatting guidance
+#### Key Takeaways (Auto-Generated)
+- **Strategy:** Analyze the full article content and synthesize 3-5 key takeaways
+- **Format:** Markdown bulleted list, each takeaway 1-2 sentences
+- **Tone:** Match the author's voice and writing style from the article
+- **Focus:** Actionable insights and practical lessons, not just content summaries
+- **Presented at Checkpoint 1** for user approval; revise until approved
+- **Inserted** as a dedicated `## Key Takeaways` section in the blog post
 
 #### Author Information (Auto-Populated)
 - **Lookup:** Match author name to predefined profiles in `docs/BLOG-DOCUMENTATION.md`
@@ -371,7 +373,6 @@ When blog post details are incomplete:
 **Optional fields:**
 - Featured (defaults to "no")
 - Related Episode (defaults to "none")
-- Key Takeaways (can be generated if missing, but better if provided)
 - Blog Image Path (optional)
 
 ---
