@@ -28,3 +28,6 @@
 
 # Playwright MCP
 .playwright-mcp/
+
+# Test screenshots
+test_screenshots/
