@@ -1,0 +1,296 @@
+{{ define "title" }}Store - Security Cocktail Hour Podcast{{ end }}
+
+{{ define "main" }}
+
+<!-- ========== HERO ========== -->
+<section class="store-hero">
+  <div class="corner-accent corner-accent-tl"></div>
+  <div class="corner-accent corner-accent-tr"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">OFFICIAL <span>MERCH</span></h1>
+    <p class="hero-subtitle">Support the podcast and show you're serious about security. Every sale helps keep the conversations going.</p>
+    <div class="hero-deco-line">
+      <span class="line"></span>
+      <span class="diamond"></span>
+      <span class="line"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DRINKWARE ========== -->
+<div class="section-full-cream">
+  <div class="section-inner">
+    <div class="store-section-header">
+      <h2 class="store-section-title">Drinkware</h2>
+      <div class="store-section-title-underline"></div>
+      <p class="store-section-subtitle">Raise a glass &mdash; or a mug &mdash; to cybersecurity.</p>
+    </div>
+    <div class="store-product-grid store-cols-2">
+
+      <!-- Mug -->
+      <div class="store-product-card">
+        <div class="store-product-image">
+          <img src="{{ "images/store/mug.png" | relURL }}" alt="Security Cocktail Hour Coffee Mug" loading="lazy">
+        </div>
+        <div class="store-product-content">
+          <h3 class="store-product-name">Coffee Mug</h3>
+          <p class="store-product-description">Have your coffee with us in the same mug we use on the podcast.</p>
+          <div class="store-product-price">$15.99</div>
+          <a href="https://buy.stripe.com/3cs15Z5kRazK0rCfZk" class="store-btn-buy" target="_blank" rel="noopener">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Flask -->
+      <div class="store-product-card">
+        <div class="store-product-image">
+          <img src="{{ "images/store/flask.png" | relURL }}" alt="Security Cocktail Hour Drinking Flask" loading="lazy">
+        </div>
+        <div class="store-product-content">
+          <h3 class="store-product-name">Drinking Flask</h3>
+          <p class="store-product-description">The very same flask gifted to the security luminaries we've hosted on the show.</p>
+          <div class="store-product-price">$49.99</div>
+          <a href="https://buy.stripe.com/4gw7unaFb5fqfmwbJ5" class="store-btn-buy" target="_blank" rel="noopener">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Divider -->
+<div class="store-art-deco-divider" style="background: var(--white);">
+  <span class="line"></span>
+  <span class="circle"></span>
+  <span class="diamond"></span>
+  <span class="circle"></span>
+  <span class="line"></span>
+</div>
+
+<!-- ========== APPAREL ========== -->
+<div class="section-full-white">
+  <div class="section-inner">
+    <div class="store-section-header">
+      <h2 class="store-section-title">Apparel</h2>
+      <div class="store-section-title-underline"></div>
+      <p class="store-section-subtitle">Wear your security credentials with style.</p>
+    </div>
+    <div class="store-product-grid store-cols-3">
+
+      <!-- T-Shirt -->
+      <div class="store-product-card">
+        <div class="store-product-image">
+          <img src="{{ "images/store/t-shirt.png" | relURL }}" alt="Security Cocktail Hour T-Shirt" loading="lazy">
+        </div>
+        <div class="store-product-content">
+          <h3 class="store-product-name">T-Shirt</h3>
+          <p class="store-product-description">The only thing better than a hardcore security pro's classic black T-shirt is one with the Security Cocktail Hour logo.</p>
+          <div class="store-product-price">$30.99</div>
+          <div class="store-product-size-select">
+            <label for="size-tshirt">Size</label>
+            <select id="size-tshirt" data-product="tshirt">
+              <option value="S">Small</option>
+              <option value="M">Medium</option>
+              <option value="L" selected>Large</option>
+              <option value="XL">X Large</option>
+              <option value="2XL">2X Large</option>
+            </select>
+          </div>
+          <a href="https://buy.stripe.com/eVadSL00x4bma2c6or" class="store-btn-buy" data-product="tshirt" target="_blank" rel="noopener">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Polo Shirt -->
+      <div class="store-product-card">
+        <div class="store-product-image">
+          <img src="{{ "images/store/polo-shirt.png" | relURL }}" alt="Security Cocktail Hour Polo Shirt" loading="lazy">
+        </div>
+        <div class="store-product-content">
+          <h3 class="store-product-name">Polo Shirt</h3>
+          <p class="store-product-description">Timeless security pro style with a polished touch. Black polo with embroidered logo.</p>
+          <div class="store-product-price">$40.99</div>
+          <div class="store-product-size-select">
+            <label for="size-polo">Size</label>
+            <select id="size-polo" data-product="polo">
+              <option value="S">Small</option>
+              <option value="M">Medium</option>
+              <option value="L" selected>Large</option>
+              <option value="XL">X Large</option>
+              <option value="2XL">2X Large</option>
+            </select>
+          </div>
+          <a href="https://buy.stripe.com/fZecOH8x3eQ00rC5ks" class="store-btn-buy" data-product="polo" target="_blank" rel="noopener">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Sweatshirt -->
+      <div class="store-product-card">
+        <div class="store-product-image">
+          <img src="{{ "images/store/sweatshirt.png" | relURL }}" alt="Security Cocktail Hour Sweatshirt" loading="lazy">
+        </div>
+        <div class="store-product-content">
+          <h3 class="store-product-name">Sweatshirt</h3>
+          <p class="store-product-description">Stay warm in style with our black sweatshirt featuring the Security Cocktail Hour logo.</p>
+          <div class="store-product-price">$56.99</div>
+          <div class="store-product-size-select">
+            <label for="size-sweat">Size</label>
+            <select id="size-sweat" data-product="sweatshirt">
+              <option value="S">Small</option>
+              <option value="M">Medium</option>
+              <option value="L" selected>Large</option>
+              <option value="XL">X Large</option>
+              <option value="2XL">2X Large</option>
+            </select>
+          </div>
+          <a href="https://buy.stripe.com/9AQ3e728F5fqgqA28n" class="store-btn-buy" data-product="sweatshirt" target="_blank" rel="noopener">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Polo Cap -->
+      <div class="store-product-card">
+        <div class="store-product-image">
+          <img src="{{ "images/store/polo-cap.png" | relURL }}" alt="Security Cocktail Hour Polo Cap" loading="lazy">
+        </div>
+        <div class="store-product-content">
+          <h3 class="store-product-name">Polo Cap</h3>
+          <p class="store-product-description">For those cold days.</p>
+          <div class="store-product-price">$30.99</div>
+          <a href="https://buy.stripe.com/3cs8yr5kRcHSa2c4gq" class="store-btn-buy" target="_blank" rel="noopener">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Divider -->
+<div class="store-art-deco-divider" style="background: var(--cream);">
+  <span class="line"></span>
+  <span class="circle"></span>
+  <span class="diamond"></span>
+  <span class="circle"></span>
+  <span class="line"></span>
+</div>
+
+<!-- ========== GEAR & ACCESSORIES ========== -->
+<div class="section-full-cream">
+  <div class="section-inner">
+    <div class="store-section-header">
+      <h2 class="store-section-title">Gear &amp; Accessories</h2>
+      <div class="store-section-title-underline"></div>
+      <p class="store-section-subtitle">Small items, big security energy.</p>
+    </div>
+    <div class="store-product-grid store-cols-4">
+
+      <!-- Tactical Patch -->
+      <div class="store-product-card">
+        <div class="store-product-image">
+          <img src="{{ "images/store/patch.png" | relURL }}" alt="Security Cocktail Hour Tactical Patch" loading="lazy">
+        </div>
+        <div class="store-product-content">
+          <h3 class="store-product-name">Tactical Patch</h3>
+          <p class="store-product-description">A patch for your backpack you won't see on everyone else's gear.</p>
+          <div class="store-product-price">$7.99</div>
+          <a href="https://buy.stripe.com/7sIaGz4gN9vGgqA6oI" class="store-btn-buy" target="_blank" rel="noopener">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Journal -->
+      <div class="store-product-card">
+        <div class="store-product-image">
+          <img src="{{ "images/store/journal.png" | relURL }}" alt="Security Cocktail Hour Journal" loading="lazy">
+        </div>
+        <div class="store-product-content">
+          <h3 class="store-product-name">Journal</h3>
+          <p class="store-product-description">The safest way to store your passwords. Try hacking a physical notebook.</p>
+          <div class="store-product-price">$15.99</div>
+          <a href="https://buy.stripe.com/9AQaGz7sZ0Za2zK28q" class="store-btn-buy" target="_blank" rel="noopener">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Pen -->
+      <div class="store-product-card">
+        <div class="store-product-image">
+          <img src="{{ "images/store/pen.png" | relURL }}" alt="Security Cocktail Hour Pen" loading="lazy">
+        </div>
+        <div class="store-product-content">
+          <h3 class="store-product-name">Pen</h3>
+          <p class="store-product-description">A highly secure pen to write your secrets. Guaranteed un-hackable.</p>
+          <div class="store-product-price">$3.99</div>
+          <a href="https://buy.stripe.com/dR6g0T5kR9vG4HSfZh" class="store-btn-buy" target="_blank" rel="noopener">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- M&Ms -->
+      <div class="store-product-card">
+        <div class="store-product-image">
+          <img src="{{ "images/store/mm.png" | relURL }}" alt="Security Cocktail Hour M&amp;M's" loading="lazy">
+        </div>
+        <div class="store-product-content">
+          <h3 class="store-product-name">M&amp;M's</h3>
+          <p class="store-product-description">Sweeten your security game. Small bag, approx. 15 pieces.</p>
+          <div class="store-product-price">$5.99</div>
+          <a href="https://buy.stripe.com/4gwbKD8x36jub6g4gE" class="store-btn-buy" target="_blank" rel="noopener">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ========== RETURN POLICY ========== -->
+<div style="background: var(--white);">
+  <div class="store-art-deco-divider">
+    <span class="line"></span>
+    <span class="circle"></span>
+    <span class="diamond"></span>
+    <span class="circle"></span>
+    <span class="line"></span>
+  </div>
+  <div class="store-return-policy">
+    <h3>Return &amp; Shipping Policy</h3>
+    <p>All items purchased are final sale. Items not in stock may take 2&ndash;3 weeks to ship. Thank you for your understanding and support.</p>
+  </div>
+</div>
+
+<!-- Size → Stripe Link Mapping -->
+<script>
+(function() {
+  var stripeLinks = {
+    tshirt: {
+      S:   'https://buy.stripe.com/7sIcOH8x3gY80rC4gh',
+      M:   'https://buy.stripe.com/8wM5mf8x3cHScak146',
+      L:   'https://buy.stripe.com/eVadSL00x4bma2c6or',
+      XL:  'https://buy.stripe.com/7sI7uneVr6jua2cdQU',
+      '2XL': 'https://buy.stripe.com/00gg0TfZvdLWcak28d'
+    },
+    polo: {
+      S:   'https://buy.stripe.com/28oeWP14B4bmfmwaEK',
+      M:   'https://buy.stripe.com/aEUdSLeVr7ny8Y8dQX',
+      L:   'https://buy.stripe.com/fZecOH8x3eQ00rC5ks',
+      XL:  'https://buy.stripe.com/dR6aGz28F6judeobIR',
+      '2XL': 'https://buy.stripe.com/3cscOH8x3dLWfmw8wH'
+    },
+    sweatshirt: {
+      S:   'https://buy.stripe.com/fZe9CvaFbazK3DOfZa',
+      M:   'https://buy.stripe.com/14k2a328F7nya2cfZb',
+      L:   'https://buy.stripe.com/9AQ3e728F5fqgqA28n',
+      XL:  'https://buy.stripe.com/9AQ15ZeVrazK6Q07sI',
+      '2XL': 'https://buy.stripe.com/fZe9Cv3cJ4bmfmwbIZ'
+    }
+  };
+
+  // Update Buy Now link when size changes
+  document.querySelectorAll('.store-product-size-select select').forEach(function(select) {
+    select.addEventListener('change', function() {
+      var product = this.getAttribute('data-product');
+      var size = this.value;
+      var btn = document.querySelector('.store-btn-buy[data-product="' + product + '"]');
+      if (btn && stripeLinks[product] && stripeLinks[product][size]) {
+        btn.href = stripeLinks[product][size];
+      }
+    });
+  });
+})();
+</script>
+
+{{ end }}

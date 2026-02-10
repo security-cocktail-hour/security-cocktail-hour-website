@@ -43,7 +43,6 @@ EXPECTED_REDIRECTS = [
     '/bios',
     '/guest-appearances',
     '/support-us',
-    '/store',
     '/store-2',
     '/store-|-pens%2C-mugs-%26-more',
     '/store-|-clothing',

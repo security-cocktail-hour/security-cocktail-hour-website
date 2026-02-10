@@ -33,13 +33,12 @@ Redirect 301 /guest-appearances /about/
 # Old support page → Partnership page
 Redirect 301 /support-us /partnership/
 
-# Old store/merchandise pages → Partnership page (update when store is created)
-Redirect 301 /store /partnership/
-Redirect 301 /store-2 /partnership/
-Redirect 301 /store-|-pens%2C-mugs-%26-more /partnership/
-Redirect 301 /store-|-clothing /partnership/
-Redirect 301 /merchandise /partnership/
-Redirect 301 /merchandise1 /partnership/
+# Old store/merchandise pages → Store page
+Redirect 301 /store-2 /store/
+Redirect 301 /store-|-pens%2C-mugs-%26-more /store/
+Redirect 301 /store-|-clothing /store/
+Redirect 301 /merchandise /store/
+Redirect 301 /merchandise1 /store/
 
 # ============================================================================
 
