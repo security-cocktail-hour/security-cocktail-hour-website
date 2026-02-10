@@ -11,6 +11,8 @@ description: "John Strand exposes why VC funding stifles security innovation and
 platforms:
   youtube: "https://youtu.be/EPIaVkwms10"
   spotify: "https://open.spotify.com/episode/5scNgrPRoiSUHJsfqwGQ9H?si=n98JzBg2SQGllSeRLsZHiQ"
+  apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000745783201"
+  amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/episodes/a83f7447-b3d3-4f0b-b66f-a79ef06a4520/security-cocktail-hour-why-cybersecurity-is-ripe-for-disruption-john-strand-part-2"
 tags:
   - cybersecurity-industry
   - venture-capital
