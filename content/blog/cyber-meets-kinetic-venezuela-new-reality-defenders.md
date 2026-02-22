@@ -9,7 +9,7 @@ author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
 category: "General"
 tags: ["cyber-kinetic-warfare", "critical-infrastructure", "cyber-operations", "threat-modeling", "national-security", "power-grid-security"]
 description: "Venezuela operation shows cyber-kinetic integration in modern warfare. What this means for defenders and the threats you need to prepare for now."
-featured: true
+featured: false
 ---
 
 Here's something that doesn't happen every day: You're on a plane back to the US after spending a holiday abroad, you finish watching a movie, and to kill some time you connect your phone to the plane's WiFi (with a VPN of course) to check out the news. And you find out we've just taken over a South American country.
