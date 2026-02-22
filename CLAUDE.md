@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Claude Context
 
-**Last Updated**: February 10, 2026
+**Last Updated**: February 22, 2026
 **Hugo Version**: v0.151.0
 **Branch**: main
 
@@ -19,11 +19,13 @@
 **GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
 **Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
 
-**Current Stats**: 235 pages (70 episodes, 7 blog posts, store, newsletter, main pages) | 9.8MB production package
+**Current Stats**: 243 pages (70 episodes, 8 blog posts, newsletter, main pages) | 9.7MB production package
 
 ---
 
 ## Recent Completed Work
+
+**February 22, 2026** - Blog Post: "OpenClaw turned AI security upside down. That's actually good news." deployed. Featured post (replaced Venezuela post). Related to Episode 51. Store hidden from site (draft: true, removed from nav/footer) — content preserved for future launch.
 
 **February 10, 2026** - Store page deployed. 10 products (22 SKUs) with Stripe checkout links. Sections: Drinkware, Apparel, Gear & Accessories. Added to nav and footer. Old store/merchandise redirects updated from /partnership/ to /store/.
 
@@ -47,7 +49,7 @@
 
 **Deploy to GoDaddy**: Upload ZIP to `public_html/`, extract, verify `.htaccess` permissions (644). See `GODADDY-DEPLOYMENT-INSTRUCTIONS.md`.
 
-**Latest Package**: `production-deployment-20260210-120312.zip` (9.8MB, 235 pages)
+**Latest Package**: `production-deployment-20260222-173314.zip` (9.7MB, 243 pages)
 
 ---
 
@@ -101,9 +103,10 @@ python scripts/audit_meta_descriptions.py   # SEO audit
 
 **All Phases Complete**: MVP | Blog | SEO | UX Enhancements | Art Deco Redesign
 
-**Production**: https://securitycocktailhour.com/ - 235 pages live
+**Production**: https://securitycocktailhour.com/ - 243 pages live
 - Art Deco design (Red/Navy/Teal, Oswald/PT Serif/Bebas Neue)
-- Latest: Store page (Feb 10, 2026), Episode 70 "Securing Mars Rovers and Space Stations" (Feb 2, 2026), Blog Post "OpenClaw's security reputation is well-deserved" (Feb 5, 2026)
-- All features working: store, search, transcripts, 404 page, 301 redirects, SEO
+- Latest: Blog Post "OpenClaw turned AI security upside down" (Feb 22, 2026), Blog Post "OpenClaw's security reputation is well-deserved" (Feb 5, 2026), Episode 70 "Securing Mars Rovers and Space Stations" (Feb 2, 2026)
+- Store hidden (draft: true) — ready to re-enable when store launches
+- All features working: search, transcripts, 404 page, 301 redirects, SEO
 
 **For detailed phase history, see ARCHIVE.md**
