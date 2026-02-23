@@ -2,7 +2,7 @@
 
 **Purpose**: This file contains historical fixes, detailed troubleshooting information, and reference material that is not needed for day-to-day work but is preserved for future reference.
 
-**Last Updated**: February 2, 2026
+**Last Updated**: February 23, 2026
 
 ---
 
@@ -18,6 +18,30 @@
 ---
 
 ## Fixed Issues - Chronological
+
+### February 10, 2026 - Store Page Deployment ✅
+
+**Store Page Deployed to Production** - 10 products (22 SKUs) with Stripe checkout links. Sections: Drinkware, Apparel, Gear & Accessories. Added to nav and footer. Old store/merchandise redirects updated from /partnership/ to /store/.
+
+**Status:** ✅ COMPLETE
+
+---
+
+### February 5, 2026 - Blog Post Deployment ✅
+
+**Blog Post Deployed to Production** - "OpenClaw's security reputation is well-deserved. Here's how to use it anyway". Featured post (replaced Shadow AI). Related to Episode 51.
+
+**Status:** ✅ COMPLETE
+
+---
+
+### February 2, 2026 - Episode 70 Deployment ✅
+
+**Episode 70 Deployed to Production** - "Securing Mars Rovers and Space Stations with NASA's Former CIO Renee Wynn"
+
+**Status:** ✅ COMPLETE
+
+---
 
 ### January 22, 2026 - Blog Post Deployment ✅
 
