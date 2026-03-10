@@ -9,7 +9,7 @@ author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
 category: "AI Security"
 tags: ["openclaw", "ai-agents", "prompt-injection", "agentic-ai", "ai-security", "credential-security", "open-source-security"]
 description: "OpenClaw is powerful but fundamentally insecure. Why its reputation is deserved, why prompt injection can't be fixed, and how to use it safely."
-featured: true
+featured: false
 related_episode: "episode-51-agentic-ai-security-full-speed-into-the-unknown"
 ---
 

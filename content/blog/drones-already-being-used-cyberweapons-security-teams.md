@@ -1,0 +1,60 @@
+---
+title: "Drones Are Already Being Used as Cyberweapons — Here's What Security Teams Need to Know"
+date: 2026-03-10
+draft: false
+author: "Joe Patti"
+author_bio: "Joe Patti is a cybersecurity practitioner with over 30 years of experience securing highly visible organizations in the Fortune 500, AmLaw 100 and government. He is co-host of the Security Cocktail Hour podcast."
+author_twitter: "@SecCocktailHour"
+author_linkedin: "https://www.linkedin.com/in/joe-patti-infosec/"
+category: "General"
+tags: ["drone-security", "war-flying", "dji", "cybersecurity-threats", "physical-security", "wireless-security", "uas"]
+description: "Drone cyberattacks on financial institutions are documented. CVE-2026-1743 exposed DJI auth flaws. Security teams must start defending the Z-axis."
+featured: true
+image: "/images/blog/thumbnail-luke-warflying.jpg"
+---
+
+In the past three months, drone cybersecurity has gone from a niche concern to a five-alarm fire.
+
+In December 2025, the FCC added all foreign-produced drones and their critical components to its Covered List, the same honor previously bestowed upon Huawei for their questionable allegiances. In February 2026, a researcher discovered that DJI's ROMO robot vacuums had exposed live camera feeds and floor plans from 7,000 devices. Weeks later, CVE-2026-1743 revealed DJI's Enhanced Wi-Fi Pairing protocol on Mavic Mini, Air, Spark, and Mini SE drones lacks basic replay attack protections. And at NDSS 2026, UC Irvine researchers published FlyTrap, demonstrating that a specially designed umbrella graphic can manipulate autonomous drone tracking algorithms, pulling drones off course or forcing them to crash.
+
+That's all in the past 90 days.
+
+## The Warnings Were Already There
+
+While all this good news was emerging, we sat down with Luke Canfield, a cybersecurity professional and drone researcher who speaks at DEFCON and BSides conferences, to record [Episode 72 of the Security Cocktail Hour](https://youtu.be/YKSxyI-m-PE). What he described was a threat landscape that the recent news has now validated.
+
+Luke walked through **war-flying** — using drones as airborne hacking platforms. The concept is straightforward: strap a Wi-Fi Pineapple and a headless Kali Linux instance with an LTE modem to a consumer drone, fly it to a target and run man-in-the-middle attacks from the air, or any other attack of your choice.
+
+This has already happened. Luke cited three documented cases of drones with Wi-Fi Pineapples attacking financial institutions. In one case, a Matrice 600 drone was found on a rooftop after running for extended periods. In another, a drone hovered outside a 30th-floor office window. The attackers were caught because of their own mistakes, not because defenders were checking the skies.
+
+That last point is the one that stuck: **we don't look up.** Luke calls it the Z-axis problem. Cybersecurity teams think in two dimensions — network perimeters, endpoints, applications, the kinds of things that fit well on a nice flat network diagram. The third dimension — above — is unmonitored and largely unconsidered.
+
+## The Scale Is Already Enormous
+
+The drone threat isn't limited to lone hackers. Mexican cartels have been conducting an estimated 330 drone airspace incursions per day at the US-Mexico border — 60,000 reported flights in a six-month period. They build custom fixed-wing drones with parachute drop mechanisms. They hire naval architects to build submarines. A drone is simple by comparison.
+
+Meanwhile, the barrier to building an undetectable drone keeps falling. Luke estimates $200 and a 3D printer gets you an aircraft with no serial number, no registration, and no attribution path. Ukraine's conflict has accelerated drone technology by an estimated 15 years in two, and those innovations are diffusing globally.
+
+## What Comes Next Is Worse
+
+The development Luke flagged that should concern every CISO is Part 108, the FAA's forthcoming beyond-visual-line-of-sight regulations. When commercial drone delivery goes mainstream (Amazon, Walmart, DoorDash), the airspace above commercial and residential areas will fill with routine drone traffic. At that point, a malicious drone with an easily copied corporate logo becomes the next social engineering attack. It sits on a rooftop, runs an evil twin access point, and no one questions it because delivery drones are everywhere.
+
+The FCC's December 2025 Covered List addition signals that regulators are starting to recognize this. But that action addresses supply chain risk (foreign-manufactured components), not operational security. Even if every drone in US airspace is domestically produced, the war-flying threat remains, especially when you can put together a DIY drone for $200.
+
+## Key Takeaways
+
+- Drone-based cyberattacks against financial institutions have already been documented — this is not a theoretical threat
+- CVE-2026-1743 shows that even the largest consumer drone manufacturer ships code with fundamental cryptographic weaknesses
+- The FCC's Covered List action addresses supply chain risk but doesn't solve the operational security gap, and DIY drones remain a threat
+- Security teams need to start thinking in three dimensions: the Z-axis above your facility is an unmonitored attack surface
+- As commercial drone delivery scales under Part 108, social engineering attacks via disguised drones become viable
+
+## Go Deeper
+
+Luke Canfield covers all of this — and much more — in our latest episode. If you want the 20-minute version with the most compelling segments, start with the [highlight reel](https://youtu.be/dk2LIDako2M). For the full 88-minute conversation covering war-flying, cartel operations, drone detection, DIY drone building, Ukraine's impact, FPV racing, and the submersible drone a teenager built in his backyard pool, watch the [full Episode 72](https://youtu.be/YKSxyI-m-PE).
+
+**Sources:**
+- [CVE-2026-1743 — NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-1743)
+- [DJI ROMO Security Breach — DroneXL](https://dronexl.co/2026/02/17/dji-romo-security-breach/)
+- [FCC Covered List Update — FCC.gov](https://www.fcc.gov/document/fcc-updates-covered-list-add-certain-uas-and-uas-components-0)
+- [FlyTrap: Physical Attack on Autonomous Drones — UC Irvine / NDSS 2026](https://news.uci.edu/2026/02/25/uc-irvine-researchers-expose-critical-security-vulnerability-in-autonomous-drones/)
