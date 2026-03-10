@@ -1,0 +1,55 @@
+1. Episode Number
+72
+
+2. Full Episode Title
+Drones Are the Next Cyber Weapon — And We're Not Ready | Luke Canfield
+
+3. Publication Date
+2026-03-10
+
+4. Guest Name
+Luke Canfield
+
+5. Guest Bio
+Luke Canfield is a cybersecurity professional and drone researcher based in West Virginia. He speaks at security conferences including DEFCON, BSides Delaware, and upcoming events in Denver on drone security, war-flying, and disaster response. His research focuses on the intersection of drones, radio frequency, and offensive security.
+
+6. Category
+Hardware Security
+
+7. Duration
+1:28:04
+
+8. Full Description
+Luke Canfield has been building, flying, and hacking drones for years. In this episode, he walks us through what's actually happening at the intersection of drones and cybersecurity — from war-flying (strapping a Wi-Fi Pineapple to a drone for aerial man-in-the-middle attacks) to the Mexican cartels that pioneered weaponized drone operations two years before ISIS, to the teenager who built a submersible drone in his backyard pool.
+
+This isn't theoretical. There have already been real attacks against financial institutions using drones as cyber attack platforms. And as commercial drone delivery (Amazon, Walmart, DoorDash) goes mainstream, the attack surface is about to get much bigger. Luke explains why human cognitive bias — we don't look up — is the fundamental security gap, and why "security exists in three dimensions" should be every CISO's new mantra.
+
+### What We Cover
+
+- War-flying: using drones as airborne hacking platforms
+- Real-world cases of drone-based cyberattacks on financial institutions
+- How Mexican cartels conduct 330+ drone airspace incursions per day at the US border
+- DIY drone building: $200 and a 3D printer gets you an untraceable aircraft
+- Drone detection methods: RF tracking, acoustic sensors, radar, AI/CCTV
+- Ukraine's impact: how the conflict advanced drone technology by 15 years
+- FAA regulations (Part 107/108) and fines up to $100,000
+- Drones for disaster response: mesh networks, radio repeaters, wildfire fighting
+- Active shooter response with FPV racing drones
+- The coming Part 108 era and why a fake Amazon sticker may be the next attack vector
+
+### Listen Now
+
+9. Platform URLs
+YouTube: https://youtu.be/YKSxyI-m-PE
+Spotify: https://open.spotify.com/episode/18TYWLjiLpqGX995iDmqdL?si=K4fZ2CQbSiijDeFKpZmXkA
+Apple:
+Amazon:
+
+10. Episode thumbnail image path
+/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/content/Completed Episodes/SCH E072 Luke Canfield/thumbnail luke warflying.jpg
+
+11. Transcript file path
+/Users/joe/Library/CloudStorage/Dropbox/Security Cocktail Hour/content/Completed Episodes/SCH E072 Luke Canfield/luke-canfield-2026-01-edit-1_transcript.txt
+
+12. Related Episodes
+episode-70-securing-mars-rovers-and-space-stations-with-nasas-former-cio-renee-wynn.md
