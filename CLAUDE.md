@@ -1,6 +1,6 @@
 # Security Cocktail Hour Website - Claude Context
 
-**Last Updated**: February 23, 2026
+**Last Updated**: March 11, 2026
 **Hugo Version**: v0.151.0
 **Branch**: main
 
@@ -9,6 +9,8 @@
 ## Current Session
 
 *Use this section for active work. Clear when complete.*
+
+**Pending**: Google Search Console re-crawl in progress (Validate Fix initiated Mar 11, 2026). Check back in a few days to confirm 404 count drops.
 
 ---
 
@@ -19,15 +21,15 @@
 **GitHub Repository**: https://github.com/security-cocktail-hour/security-cocktail-hour-website
 **Local Dev Server**: http://localhost:1313/ (when running `hugo server -D`)
 
-**Current Stats**: 252 pages (71 episodes, 8 blog posts, newsletter, main pages) | 9.9MB production package
+**Current Stats**: 274 pages (72 episodes, 9 blog posts, newsletter, main pages) | 10MB production package
 
 ---
 
 ## Recent Completed Work
 
-**February 23, 2026** - Episode 71: Added Apple Podcasts and Amazon Music links. Redeployed to production.
+**March 11, 2026** - Fixed Google Search Console 404 indexing errors (25 URLs). Converted `Redirect 301` to `RewriteRule` directives to fix double-redirect conflict with trailing slash rule. Added 5 missing redirects. Deployed to production, GSC Validate Fix initiated.
 
-**February 22, 2026** - Blog Post: "OpenClaw turned AI security upside down. That's actually good news." deployed. Featured post (replaced Venezuela post). Related to Episode 51. Store hidden from site (draft: true, removed from nav/footer) — content preserved for future launch.
+**March 11, 2026** - Episode 72 & blog post deployed.
 
 **For detailed history, see ARCHIVE.md**
 
@@ -45,7 +47,7 @@
 
 **Deploy to GoDaddy**: Upload ZIP to `public_html/`, extract, verify `.htaccess` permissions (644). See `GODADDY-DEPLOYMENT-INSTRUCTIONS.md`.
 
-**Latest Package**: `production-deployment-20260223-182907.zip` (9.9MB, 252 pages)
+**Latest Package**: `production-deployment-20260311-154056.zip` (10MB, 274 pages)
 
 ---
 
@@ -99,9 +101,9 @@ python scripts/audit_meta_descriptions.py   # SEO audit
 
 **All Phases Complete**: MVP | Blog | SEO | UX Enhancements | Art Deco Redesign
 
-**Production**: https://securitycocktailhour.com/ - 252 pages live
+**Production**: https://securitycocktailhour.com/ - 274 pages live
 - Art Deco design (Red/Navy/Teal, Oswald/PT Serif/Bebas Neue)
-- Latest: Episode 71 "Breaking Vulnerability Management's 30-Year Logjam" (Feb 23, 2026), Blog Post "OpenClaw turned AI security upside down" (Feb 22, 2026), Blog Post "OpenClaw's security reputation is well-deserved" (Feb 5, 2026)
+- Latest: Episode 72 "Drones Are the Next Cyber Weapon" (Mar 11, 2026), Blog Post "Drones Are Already Being Used as Cyberweapons" (Mar 10, 2026)
 - Store hidden (draft: true) — ready to re-enable when store launches
 - All features working: search, transcripts, 404 page, 301 redirects, SEO
 

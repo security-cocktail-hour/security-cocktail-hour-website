@@ -2,7 +2,7 @@
 
 **Purpose**: This file contains historical fixes, detailed troubleshooting information, and reference material that is not needed for day-to-day work but is preserved for future reference.
 
-**Last Updated**: February 23, 2026
+**Last Updated**: March 11, 2026
 
 ---
 
@@ -18,6 +18,34 @@
 ---
 
 ## Fixed Issues - Chronological
+
+### March 11, 2026 - Google Search Console 404 Indexing Fix ✅
+
+**Problem:** Google Search Console reported 25 URLs as "Not found (404)" with 146 total not-indexed pages. Google email notification triggered investigation.
+
+**Root Cause:** The `.htaccess` file used `Redirect 301` directives (mod_alias) for old site URLs, but the `RewriteRule` trailing slash rule (mod_rewrite) fired first. This caused a double-redirect chain: e.g., `/consulting` → `/consulting/` (trailing slash) → `/about//` (Redirect prefix match appending extra `/`). Google's crawler saw the intermediate hop as a 404.
+
+**Fix:**
+- Converted all `Redirect 301` directives to `RewriteRule` directives with `[L,R=301]` flags
+- Placed them inside `<IfModule mod_rewrite.c>` BEFORE the trailing slash rule
+- Used `/?$` suffix to handle both with and without trailing slash
+- Added 5 missing redirects: `/co-host-appearances`, `/afterparties`, `/gallery`, `/episodes-31-40-1`, `/store`
+- Updated `scripts/validate_htaccess.py` to recognize `RewriteRule`-based redirects
+- Store redirects now point to homepage (store is draft:true)
+
+**Deployed:** Production ZIP `production-deployment-20260311-154056.zip`, GSC "Validate Fix" initiated.
+
+**Status:** ✅ COMPLETE (awaiting Google re-crawl)
+
+---
+
+### March 11, 2026 - Episode 72 & Blog Post Deployment ✅
+
+Episode 72: "Drones Are the Next Cyber Weapon" with Luke Canfield deployed. Blog post "Drones Are Already Being Used as Cyberweapons" deployed (featured, replaced OpenClaw). Episode image location: `static/images/` (not `content/episodes/images/`). Transcript: 384 speaker entries, 1,532 lines, generic format converted to standard with asterisks.
+
+**Status:** ✅ COMPLETE
+
+---
 
 ### February 10, 2026 - Store Page Deployment ✅
 
