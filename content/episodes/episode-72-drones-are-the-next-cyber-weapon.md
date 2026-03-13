@@ -11,8 +11,8 @@ description: "Luke Canfield reveals war-flying attacks on financial institutions
 platforms:
   youtube: "https://youtu.be/YKSxyI-m-PE"
   spotify: "https://open.spotify.com/episode/18TYWLjiLpqGX995iDmqdL?si=K4fZ2CQbSiijDeFKpZmXkA"
-  apple: ""
-  amazon: ""
+  apple: "https://podcasts.apple.com/us/podcast/security-cocktail-hour/id1679376200?i=1000754652084"
+  amazon: "https://music.amazon.com/podcasts/d11e431a-f7b1-4bb0-8671-024afce9ade6/episodes/073a3578-3132-4cd7-880f-e4eb59610612/security-cocktail-hour-drones-are-the-next-cyber-weapon-%E2%80%94-and-we're-not-ready"
 tags:
   - drone-security
   - war-flying
